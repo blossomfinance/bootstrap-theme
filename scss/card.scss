@@ -1,0 +1,69 @@
+
+@import "../node_modules/bootstrap/scss/card";
+
+/**
+ * Example
+ *
+ * @section
+ * @page Card
+ *
+ * @example
+ * <div class="card" style="width: 18rem;">
+ *   <div class="card-body">
+ *     <h5 class="card-title">Card title</h5>
+ *     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+ *     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+ *     <a href="#" class="card-link">Card link</a>
+ *     <a href="#" class="card-link">Another link</a>
+ *   </div>
+ * </div>
+ */
+
+/**
+ * Backround Color
+ *
+ * @section
+ * @page Card
+ *
+ * @example
+ * <div class="card bg-light m-2" style="width: 18rem;">
+ *   <div class="card-body">
+ *     Some card text
+ *   </div>
+ * </div>
+ * <div class="card bg-grape text-white m-2" style="width: 18rem;">
+ *   <div class="card-body">
+ *     <h5 class="card-title">Ready for Withdrawal</h5>
+ *     <p>You should withdrawl to your bank account or reinvest into another holding.</p>
+ *     <button type="button" class="btn btn-grape btn-block btn-lg btn-arrow-right">Withdraw Funds</button>
+ *   </div>
+ * </div>
+ */
+
+/**
+ * Shadow
+ *
+ * @section
+ * @page Card
+ *
+ * @example
+ * <div class="card shadow-sm mb-4" style="width: 18rem;">
+ *   <div class="card-body">
+ *     <h5 class="card-title">Card title</h5>
+ *     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+ *   </div>
+ * </div>
+ * <div class="card shadow mb-4" style="width: 18rem;">
+ *   <div class="card-body">
+ *     <h5 class="card-title">Card title</h5>
+ *     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+ *   </div>
+ * </div>
+ * <div class="card shadow-lg mb-4" style="width: 18rem;">
+ *   <div class="card-body">
+ *     <h5 class="card-title">Card title</h5>
+ *     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+ *   </div>
+ * </div>
+
+ */

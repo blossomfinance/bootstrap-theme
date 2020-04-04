@@ -4,5 +4,14 @@
 
 const theme = require('./index');
 
-// start the livereload
-theme.browserSync();
+try {
+
+  // build to capture any changes
+  theme.compileSass();
+  theme.buildStyleguide();
+
+  // start the livereload
+  theme.browserSync();
+} catch (err) {
+  console.error(err);
+}

@@ -1,0 +1,132 @@
+
+@import "../node_modules/bootstrap/scss/buttons";
+
+// overide calcualted btn color via color-yiq() function
+.btn-primary {
+  color: $white;
+}
+
+// TODO: btn-arrow-right
+.btn-arrow-left {
+  content: '←';
+}
+
+.bg-grape .btn-grape {
+  background-color: rgba($white, 0.16) !important;
+}
+
+/**
+ * Arrows
+ *
+ * @section
+ * @page Buttons
+ *
+ * @example
+ *
+ * <button type="button" class="btn btn-warning btn-arrow-left">
+ *   Go Back
+ * </button>
+ *
+ * <button type="button" class="btn btn-primary btn-arrow-right">
+ *   Withdraw Funds
+ * </button>
+ *
+ * <div class="card bg-light mt-4 mb-4" style="width: 20rem;">
+ *   <div class="card-body">
+ *     <h4 class="card-title">A Card Title</h4>
+ *     <p>Now is a good time do it:</p>
+ *     <button type="button" class="btn btn-primary btn-arrow-right btn-block btn-lg">
+ *       Withdraw Funds
+ *     </button>
+ *   </div>
+ * </div>
+ */
+.btn-arrow-right {
+  text-align: left;
+  padding-left: $btn-padding-x * 2;
+  padding-right: $btn-padding-x * 2;
+  &:after {
+    margin-left: $btn-padding-x;
+    content: '→';
+    float: right;
+  }
+}
+
+.btn-arrow-left {
+  text-align: right;
+  padding-right: $btn-padding-x * 2;
+  padding-left: $btn-padding-x * 2;
+  &:after {
+    margin-right: $btn-padding-x;
+    content: '←';
+    float: left;
+  }
+}
+
+/**
+ * Basic
+ *
+ * @section
+ * @page Buttons
+ *
+ * @example
+ * <button type="button" class="btn btn-primary">Primary</button>
+ * <button type="button" class="btn btn-secondary">Secondary</button>
+ * <button type="button" class="btn btn-success">Success</button>
+ * <button type="button" class="btn btn-danger">Danger</button>
+ * <button type="button" class="btn btn-warning">Warning</button>
+ * <button type="button" class="btn btn-info">Info</button>
+ * <button type="button" class="btn btn-light">Light</button>
+ * <button type="button" class="btn btn-dark">Dark</button>
+
+ * <button type="button" class="btn btn-link">Link</button>
+ */
+
+/**
+ * Outline buttons
+ *
+ * In need of a button, but not the hefty background colors they bring?
+ * Replace the default modifier classes with the `.btn-outline-*` ones
+ * to remove all background images and colors on any button.
+ *
+ * @section
+ * @page Buttons
+ *
+ * @example
+ * <button type="button" class="btn btn-outline-primary">Primary</button>
+ * <button type="button" class="btn btn-outline-secondary">Secondary</button>
+ * <button type="button" class="btn btn-outline-success">Success</button>
+ * <button type="button" class="btn btn-outline-danger">Danger</button>
+ * <button type="button" class="btn btn-outline-warning">Warning</button>
+ * <button type="button" class="btn btn-outline-info">Info</button>
+ * <button type="button" class="btn btn-outline-light">Light</button>
+ * <button type="button" class="btn btn-outline-dark">Dark</button>
+ */
+
+/**
+ * Sizes
+ *
+ * Fancy larger or smaller buttons? Add `.btn-lg` or `.btn-sm` for additional sizes.
+ *
+ * @section
+ * @page Buttons
+ *
+ * @example
+ * <button type="button" class="btn btn-primary btn-lg">Large button</button>
+ * <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+ * <button type="button" class="btn btn-primary btn-sm">Small button</button>
+ * <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+ */
+
+/**
+ * Block Level
+ *
+ * Create block level buttons—those that span the full width of a parent—by adding `.btn-block`
+ *
+ * @section
+ * @page Buttons
+ *
+ * @example
+ * <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+ * <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+ */

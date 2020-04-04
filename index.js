@@ -9,19 +9,23 @@ const sass = require('node-sass');
 const pkg = require('./package.json');
 
 function sassSrcFile() {
-  return path.join(__dirname, pkg.src, 'custom.scss');
+  return path.join(__dirname, pkg.srcDir, pkg.srcFile);
 }
 
 function sassSrcGlob() {
-  return path.join(pkg.src, '*.scss');
+  return path.join(pkg.srcDir, '*.scss');
 }
 
 function cssDestFile() {
-  return path.join(__dirname, pkg.dest, 'all.css');
+  return path.join(__dirname, pkg.destDir, pkg.destFile);
 }
 
 function cssDestGlob() {
-  return path.join(pkg.dest, '*.css');
+  return path.join(pkg.destDir, '*.css');
+}
+
+function cssDestWebUrl() {
+  return path.join(pkg.destDir, pkg.destFile);
 }
 
 function compileSass() {
@@ -35,7 +39,13 @@ function compileSass() {
 
 function buildStyleguide() {
   // build styleguide into index.html file
-  livingcss(cssDestGlob());
+  livingcss(cssDestGlob(), {
+    preprocess: function(context, template, Handlebars) {
+      context.title = 'Blossom Bootstrap Theme';
+      context.footerHTML = '&copy; Blossom Labs, Inc. https://blossomfinance.com/';
+      context.globalStylesheets = [cssDestWebUrl()];
+    }
+  });
 }
 
 
@@ -48,6 +58,7 @@ module.exports = {
   buildStyleguide,
   browserSync: function browserSync() {
     return initBrowserSync({
+      loadcss: false,
       logFileChanges: true,
       // two things to watch:
       // 1. source code, need to rebuild living style guide
@@ -57,8 +68,12 @@ module.exports = {
         {
           match: [sassSrcGlob()],
           fn: function() {
-            compileSass();
-            buildStyleguide();
+            try {
+              compileSass();
+              buildStyleguide();
+            } catch (err) {
+              console.error(err);
+            }
           }
         },
 

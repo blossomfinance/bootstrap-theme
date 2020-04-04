@@ -3,8 +3,10 @@
   "version": "0.0.1",
   "description": "Blossom base branded theme for Bootstrap 4",
   "main": "index.js",
-  "src": "scss",
-  "dest": "dist",
+  "srcDir": "scss",
+  "srcFile": "custom.scss",
+  "destDir": "dist",
+  "destFile": "all.css",
   "scripts": {
     "start": "node start.js",
     "test": "echo \"Error: no test specified\" && exit 1"

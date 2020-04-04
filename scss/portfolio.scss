@@ -1,18 +1,11 @@
 
-/**
- * Portfolio
- *
- * List of portfolio items for the user
- *
- * @section
- */
 .portfolio-list {
 
   /**
    * Portfolio Card
    *
    * @section
-   * @sectionof Portfolio
+   * @page Portfolio
    *
    * @example
    * <main class="portfolio-list">
@@ -24,6 +17,7 @@
    * </main>
    */
   .card {
-    @extend .card-drop-shadow;
+    @extend .card;
+    @extend .shadow;
   }
 }

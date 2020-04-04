@@ -12,7 +12,8 @@ Blossom base branded theme for Bootstrap 4
 
 - Clone repo: `git clone git@github.com:blossomfinance/bootstrap-theme.git`
 - `cd bootstrap-theme`
-- `nvm install` this installs the Node.js (run inside this project directory)
+- `nvm install` this installs the correct Node.js version
+- `nvm use` (maybe not necessary?)
 - `npm install` this installs the dependencies
 
 ## View Style Guide
@@ -22,6 +23,8 @@ Launch the styleguide with live-reload enabled:
 ```
 npm start
 ```
+
+Your changes to the `.scss` will automatically reload the browser.
 
 ## Theming Bootstrap Workflow
 

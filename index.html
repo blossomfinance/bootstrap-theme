@@ -8473,7 +8473,7 @@
   /**
    * @section Typography
    * @example
-   * <h1>h1. Bootstrap heading</h1>
+   * <h1>h1. Bootstrap heading ASDFASDFASDF</h1>
    * <h2>h2. Bootstrap heading</h2>
    * <h3>h3. Bootstrap heading</h3>
    * <h4>h4. Bootstrap heading</h4>
@@ -10150,8 +10150,24 @@
    *   </div>
    * </div>
    */
+  /**
+   * Card Drop Shadow
+   *
+   * Add drop shadow to the card border
+   *
+   * @section
+   * @sectionof Card
+   *
+   * @example
+   * <div class="card card-drop-shadow" style="width: 18rem;">
+   *   <div class="card-body">
+   *     <h5 class="card-title">Card title</h5>
+   *     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+   *   </div>
+   * </div>
+   */
   .card-drop-shadow, .portfolio-list .card {
-    box-shadow: #000 1px 1px 1px; }
+    box-shadow: #000 3px 3px 3px; }
   
   /**
    * <div class="card card-drop-shadow">
@@ -10161,14 +10177,28 @@
    * </div>
    */
   /**
-   * @section Portfolio Card
-   * @example
-   * <main class="portfolio-list">
-   *   <section class="card">
-   *     <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
-   *   </section>
-   * </main>
+   * Portfolio
+   *
+   * List of portfolio items for the user
+   *
+   * @section
    */
+  .portfolio-list {
+    /**
+     * Portfolio Card
+     *
+     * @section
+     * @sectionof Portfolio
+     *
+     * @example
+     * <main class="portfolio-list">
+     *   <section class="card">
+     *     <div class="card-body">
+     *       <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
+     *     </div>
+     *   </section>
+     * </main>
+     */ }
   
   
       </style>
@@ -10234,7 +10264,7 @@
         <article class="livingcss__article" id="typography">
           <h1 class="livingcss__article-title">Typography</h1><div class="livingcss__section-description"></div>
 
-<livingcss-example><h1>h1. Bootstrap heading</h1>
+<livingcss-example><h1>h1. Bootstrap heading ASDFASDFASDF</h1>
 <h2>h2. Bootstrap heading</h2>
 <h3>h3. Bootstrap heading</h3>
 <h4>h4. Bootstrap heading</h4>
@@ -10242,7 +10272,7 @@
 <h6>h6. Bootstrap heading</h6></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;h1&gt;h1. Bootstrap heading&lt;/h1&gt;
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;h1&gt;h1. Bootstrap heading ASDFASDFASDF&lt;/h1&gt;
 &lt;h2&gt;h2. Bootstrap heading&lt;/h2&gt;
 &lt;h3&gt;h3. Bootstrap heading&lt;/h3&gt;
 &lt;h4&gt;h4. Bootstrap heading&lt;/h4&gt;
@@ -10304,25 +10334,53 @@
 &lt;/div&gt;</code></pre>
 </div>
 
-        </article>
-        <article class="livingcss__article" id="portfolio-card">
-          <h1 class="livingcss__article-title">Portfolio Card</h1><div class="livingcss__section-description"></div>
+<section class="livingcss__section" id="card-card-drop-shadow">
+  <h2>Card Drop Shadow</h2><div class="livingcss__section-description"><p>Add drop shadow to the card border</p></div>
+
+<livingcss-example><div class="card card-drop-shadow" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;card card-drop-shadow&quot; style&#x3D;&quot;width: 18rem;&quot;&gt;
+  &lt;div class&#x3D;&quot;card-body&quot;&gt;
+    &lt;h5 class&#x3D;&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class&#x3D;&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card&#x27;s content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+</section>        </article>
+        <article class="livingcss__article" id="portfolio">
+          <h1 class="livingcss__article-title">Portfolio</h1><div class="livingcss__section-description"><p>List of portfolio items for the user</p></div>
+
+
+
+<section class="livingcss__section" id="portfolio-portfolio-card">
+  <h2>Portfolio Card</h2><div class="livingcss__section-description"></div>
 
 <livingcss-example><main class="portfolio-list">
   <section class="card">
-    <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
+    <div class="card-body">
+      <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
+    </div>
   </section>
 </main></livingcss-example>
 
 <div class="livingcss__section-markup">
   <pre class="livingcss__section-code"><code class="language-markup">&lt;main class&#x3D;&quot;portfolio-list&quot;&gt;
   &lt;section class&#x3D;&quot;card&quot;&gt;
-    &lt;h2 class&#x3D;&quot;card-title&quot;&gt;Zero-emission Waste Incineration Facility in Bali&lt;/h2&gt;
+    &lt;div class&#x3D;&quot;card-body&quot;&gt;
+      &lt;h2 class&#x3D;&quot;card-title&quot;&gt;Zero-emission Waste Incineration Facility in Bali&lt;/h2&gt;
+    &lt;/div&gt;
   &lt;/section&gt;
 &lt;/main&gt;</code></pre>
 </div>
 
-        </article>
+</section>        </article>
 
       </main>
 
@@ -10331,7 +10389,7 @@
           <a class="livingcss__nav-link" href="#typography">Typography</a>
           <a class="livingcss__nav-link" href="#buttons">Buttons</a>
           <a class="livingcss__nav-link" href="#card">Card</a>
-          <a class="livingcss__nav-link" href="#portfolio-card">Portfolio Card</a>
+          <a class="livingcss__nav-link" href="#portfolio">Portfolio</a>
         </div>
       </nav>
 

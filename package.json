@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "Blossom base branded theme for Bootstrap 4",
   "main": "index.js",
+  "src": "scss",
+  "dest": "dist",
   "scripts": {
+    "start": "node start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,6 +31,7 @@
     "bootstrap": "^4.4.1"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.7",
     "livingcss": "^6.0.3",
     "node-sass": "^4.13.1"
   }

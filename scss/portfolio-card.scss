@@ -1,5 +1,28 @@
 
+/**
+ * Portfolio
+ *
+ * List of portfolio items for the user
+ *
+ * @section
+ */
 .portfolio-list {
+
+  /**
+   * Portfolio Card
+   *
+   * @section
+   * @sectionof Portfolio
+   *
+   * @example
+   * <main class="portfolio-list">
+   *   <section class="card">
+   *     <div class="card-body">
+   *       <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
+   *     </div>
+   *   </section>
+   * </main>
+   */
   .card {
     @extend .card-drop-shadow;
   }

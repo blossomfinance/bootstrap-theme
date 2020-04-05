@@ -4930,7 +4930,8 @@ hr {
 
 small,
 .small,
-.portfolio section .list-group-flush > li p {
+.portfolio section .list-group-flush > li p,
+.portfolio-list > header ul {
   font-size: 80%;
   font-weight: 400; }
 
@@ -4943,13 +4944,13 @@ mark,
   padding-left: 0;
   list-style: none; }
 
-.list-inline {
+.list-inline, .portfolio-list > header ul {
   padding-left: 0;
   list-style: none; }
 
-.list-inline-item {
+.list-inline-item, .portfolio-list > header ul li {
   display: inline-block; }
-  .list-inline-item:not(:last-child) {
+  .list-inline-item:not(:last-child), .portfolio-list > header ul li:not(:last-child) {
     margin-right: 0.5rem; }
 
 .initialism {
@@ -5706,7 +5707,7 @@ mark,
 /**
  * @page Grid
  */
-.btn, .portfolio-list .card-total-holdings header + button, .portfolio-list .card header + button {
+.btn, .portfolio-list .card-total-holdings .btn-wrap-left, .portfolio-list .card .btn-wrap-left {
   display: inline-block;
   font-weight: 600;
   color: #192228;
@@ -5722,19 +5723,23 @@ mark,
   border-radius: 12px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
-    .btn, .portfolio-list .card-total-holdings header + button, .portfolio-list .card header + button {
+    .btn, .portfolio-list .card-total-holdings .btn-wrap-left, .portfolio-list .card .btn-wrap-left {
       transition: none; } }
-  .btn:hover, .portfolio-list .card-total-holdings header + button:hover, .portfolio-list .card header + button:hover {
+  .btn:hover, .portfolio-list .card-total-holdings .btn-wrap-left:hover, .portfolio-list .card .btn-wrap-left:hover {
     color: #192228;
     text-decoration: none; }
-  .btn:focus, .portfolio-list .card-total-holdings header + button:focus, .portfolio-list .card header + button:focus, .btn.focus, .portfolio-list .card-total-holdings header + button.focus, .portfolio-list .card header + button.focus {
+  .btn:focus, .portfolio-list .card-total-holdings .btn-wrap-left:focus, .portfolio-list .card .btn-wrap-left:focus, .btn.focus, .portfolio-list .card-total-holdings .focus.btn-wrap-left, .portfolio-list .card .focus.btn-wrap-left {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(88, 207, 238, 0.25); }
-  .btn.disabled, .portfolio-list .card-total-holdings header + button.disabled, .portfolio-list .card header + button.disabled, .btn:disabled, .portfolio-list .card-total-holdings header + button:disabled, .portfolio-list .card header + button:disabled {
+  .btn.disabled, .portfolio-list .card-total-holdings .disabled.btn-wrap-left, .portfolio-list .card .disabled.btn-wrap-left, .btn:disabled, .portfolio-list .card-total-holdings .btn-wrap-left:disabled, .portfolio-list .card .btn-wrap-left:disabled {
     opacity: 0.65; }
 
-a.btn.disabled,
-fieldset:disabled a.btn {
+a.btn.disabled, .portfolio-list .card-total-holdings a.disabled.btn-wrap-left, .portfolio-list .card a.disabled.btn-wrap-left,
+fieldset:disabled a.btn,
+fieldset:disabled .portfolio-list .card-total-holdings a.btn-wrap-left,
+.portfolio-list .card-total-holdings fieldset:disabled a.btn-wrap-left,
+fieldset:disabled .portfolio-list .card a.btn-wrap-left,
+.portfolio-list .card fieldset:disabled a.btn-wrap-left {
   pointer-events: none; }
 
 .btn-primary {
@@ -5815,40 +5820,40 @@ fieldset:disabled a.btn {
     .show > .btn-success.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(91, 204, 38, 0.5); }
 
-.btn-info, .portfolio .alert-info .btn, .portfolio .alert-info .portfolio-list .card-total-holdings header + button, .portfolio-list .card-total-holdings .portfolio .alert-info header + button, .portfolio .alert-info .portfolio-list .card header + button, .portfolio-list .card .portfolio .alert-info header + button {
+.btn-info, .portfolio .alert-info .btn, .portfolio .alert-info .portfolio-list .card-total-holdings .btn-wrap-left, .portfolio-list .card-total-holdings .portfolio .alert-info .btn-wrap-left, .portfolio .alert-info .portfolio-list .card .btn-wrap-left, .portfolio-list .card .portfolio .alert-info .btn-wrap-left {
   color: #ffffff;
   background-color: #5b6bb6;
   border-color: #5b6bb6; }
-  .btn-info:hover, .portfolio .alert-info .btn:hover, .portfolio .alert-info .portfolio-list .card-total-holdings header + button:hover, .portfolio-list .card-total-holdings .portfolio .alert-info header + button:hover, .portfolio .alert-info .portfolio-list .card header + button:hover, .portfolio-list .card .portfolio .alert-info header + button:hover {
+  .btn-info:hover, .portfolio .alert-info .btn:hover, .portfolio .alert-info .portfolio-list .card-total-holdings .btn-wrap-left:hover, .portfolio-list .card-total-holdings .portfolio .alert-info .btn-wrap-left:hover, .portfolio .alert-info .portfolio-list .card .btn-wrap-left:hover, .portfolio-list .card .portfolio .alert-info .btn-wrap-left:hover {
     color: #ffffff;
     background-color: #4858a2;
     border-color: #44539a; }
-  .btn-info:focus, .portfolio .alert-info .btn:focus, .portfolio .alert-info .portfolio-list .card-total-holdings header + button:focus, .portfolio-list .card-total-holdings .portfolio .alert-info header + button:focus, .portfolio .alert-info .portfolio-list .card header + button:focus, .portfolio-list .card .portfolio .alert-info header + button:focus, .btn-info.focus, .portfolio .alert-info .focus.btn, .portfolio .alert-info .portfolio-list .card-total-holdings header + button.focus, .portfolio-list .card-total-holdings .portfolio .alert-info header + button.focus, .portfolio .alert-info .portfolio-list .card header + button.focus, .portfolio-list .card .portfolio .alert-info header + button.focus {
+  .btn-info:focus, .portfolio .alert-info .btn:focus, .portfolio .alert-info .portfolio-list .card-total-holdings .btn-wrap-left:focus, .portfolio-list .card-total-holdings .portfolio .alert-info .btn-wrap-left:focus, .portfolio .alert-info .portfolio-list .card .btn-wrap-left:focus, .portfolio-list .card .portfolio .alert-info .btn-wrap-left:focus, .btn-info.focus, .portfolio .alert-info .focus.btn, .portfolio .alert-info .portfolio-list .card-total-holdings .focus.btn-wrap-left, .portfolio-list .card-total-holdings .portfolio .alert-info .focus.btn-wrap-left, .portfolio .alert-info .portfolio-list .card .focus.btn-wrap-left, .portfolio-list .card .portfolio .alert-info .focus.btn-wrap-left {
     color: #ffffff;
     background-color: #4858a2;
     border-color: #44539a;
     box-shadow: 0 0 0 0.2rem rgba(116, 129, 193, 0.5); }
-  .btn-info.disabled, .portfolio .alert-info .disabled.btn, .portfolio .alert-info .portfolio-list .card-total-holdings header + button.disabled, .portfolio-list .card-total-holdings .portfolio .alert-info header + button.disabled, .portfolio .alert-info .portfolio-list .card header + button.disabled, .portfolio-list .card .portfolio .alert-info header + button.disabled, .btn-info:disabled, .portfolio .alert-info .btn:disabled, .portfolio .alert-info .portfolio-list .card-total-holdings header + button:disabled, .portfolio-list .card-total-holdings .portfolio .alert-info header + button:disabled, .portfolio .alert-info .portfolio-list .card header + button:disabled, .portfolio-list .card .portfolio .alert-info header + button:disabled {
+  .btn-info.disabled, .portfolio .alert-info .disabled.btn, .portfolio .alert-info .portfolio-list .card-total-holdings .disabled.btn-wrap-left, .portfolio-list .card-total-holdings .portfolio .alert-info .disabled.btn-wrap-left, .portfolio .alert-info .portfolio-list .card .disabled.btn-wrap-left, .portfolio-list .card .portfolio .alert-info .disabled.btn-wrap-left, .btn-info:disabled, .portfolio .alert-info .btn:disabled, .portfolio .alert-info .portfolio-list .card-total-holdings .btn-wrap-left:disabled, .portfolio-list .card-total-holdings .portfolio .alert-info .btn-wrap-left:disabled, .portfolio .alert-info .portfolio-list .card .btn-wrap-left:disabled, .portfolio-list .card .portfolio .alert-info .btn-wrap-left:disabled {
     color: #ffffff;
     background-color: #5b6bb6;
     border-color: #5b6bb6; }
-  .btn-info:not(:disabled):not(.disabled):active, .portfolio .alert-info .btn:not(:disabled):not(.disabled):active, .portfolio .alert-info .portfolio-list .card-total-holdings header + button:not(:disabled):not(.disabled):active, .portfolio-list .card-total-holdings .portfolio .alert-info header + button:not(:disabled):not(.disabled):active, .portfolio .alert-info .portfolio-list .card header + button:not(:disabled):not(.disabled):active, .portfolio-list .card .portfolio .alert-info header + button:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .portfolio .alert-info .btn:not(:disabled):not(.disabled).active, .portfolio .alert-info .portfolio-list .card-total-holdings header + button:not(:disabled):not(.disabled).active, .portfolio-list .card-total-holdings .portfolio .alert-info header + button:not(:disabled):not(.disabled).active, .portfolio .alert-info .portfolio-list .card header + button:not(:disabled):not(.disabled).active, .portfolio-list .card .portfolio .alert-info header + button:not(:disabled):not(.disabled).active,
+  .btn-info:not(:disabled):not(.disabled):active, .portfolio .alert-info .btn:not(:disabled):not(.disabled):active, .portfolio .alert-info .portfolio-list .card-total-holdings .btn-wrap-left:not(:disabled):not(.disabled):active, .portfolio-list .card-total-holdings .portfolio .alert-info .btn-wrap-left:not(:disabled):not(.disabled):active, .portfolio .alert-info .portfolio-list .card .btn-wrap-left:not(:disabled):not(.disabled):active, .portfolio-list .card .portfolio .alert-info .btn-wrap-left:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .portfolio .alert-info .btn:not(:disabled):not(.disabled).active, .portfolio .alert-info .portfolio-list .card-total-holdings .btn-wrap-left:not(:disabled):not(.disabled).active, .portfolio-list .card-total-holdings .portfolio .alert-info .btn-wrap-left:not(:disabled):not(.disabled).active, .portfolio .alert-info .portfolio-list .card .btn-wrap-left:not(:disabled):not(.disabled).active, .portfolio-list .card .portfolio .alert-info .btn-wrap-left:not(:disabled):not(.disabled).active,
   .show > .btn-info.dropdown-toggle,
   .portfolio .alert-info .show > .dropdown-toggle.btn,
-  .portfolio .alert-info .portfolio-list .card-total-holdings .show > header + button.dropdown-toggle,
-  .portfolio-list .card-total-holdings .portfolio .alert-info .show > header + button.dropdown-toggle,
-  .portfolio .alert-info .portfolio-list .card .show > header + button.dropdown-toggle,
-  .portfolio-list .card .portfolio .alert-info .show > header + button.dropdown-toggle {
+  .portfolio .alert-info .portfolio-list .card-total-holdings .show > .dropdown-toggle.btn-wrap-left,
+  .portfolio-list .card-total-holdings .portfolio .alert-info .show > .dropdown-toggle.btn-wrap-left,
+  .portfolio .alert-info .portfolio-list .card .show > .dropdown-toggle.btn-wrap-left,
+  .portfolio-list .card .portfolio .alert-info .show > .dropdown-toggle.btn-wrap-left {
     color: #ffffff;
     background-color: #44539a;
     border-color: #404f91; }
-    .btn-info:not(:disabled):not(.disabled):active:focus, .portfolio .alert-info .btn:not(:disabled):not(.disabled):active:focus, .portfolio .alert-info .portfolio-list .card-total-holdings header + button:not(:disabled):not(.disabled):active:focus, .portfolio-list .card-total-holdings .portfolio .alert-info header + button:not(:disabled):not(.disabled):active:focus, .portfolio .alert-info .portfolio-list .card header + button:not(:disabled):not(.disabled):active:focus, .portfolio-list .card .portfolio .alert-info header + button:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus, .portfolio .alert-info .btn:not(:disabled):not(.disabled).active:focus, .portfolio .alert-info .portfolio-list .card-total-holdings header + button:not(:disabled):not(.disabled).active:focus, .portfolio-list .card-total-holdings .portfolio .alert-info header + button:not(:disabled):not(.disabled).active:focus, .portfolio .alert-info .portfolio-list .card header + button:not(:disabled):not(.disabled).active:focus, .portfolio-list .card .portfolio .alert-info header + button:not(:disabled):not(.disabled).active:focus,
+    .btn-info:not(:disabled):not(.disabled):active:focus, .portfolio .alert-info .btn:not(:disabled):not(.disabled):active:focus, .portfolio .alert-info .portfolio-list .card-total-holdings .btn-wrap-left:not(:disabled):not(.disabled):active:focus, .portfolio-list .card-total-holdings .portfolio .alert-info .btn-wrap-left:not(:disabled):not(.disabled):active:focus, .portfolio .alert-info .portfolio-list .card .btn-wrap-left:not(:disabled):not(.disabled):active:focus, .portfolio-list .card .portfolio .alert-info .btn-wrap-left:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus, .portfolio .alert-info .btn:not(:disabled):not(.disabled).active:focus, .portfolio .alert-info .portfolio-list .card-total-holdings .btn-wrap-left:not(:disabled):not(.disabled).active:focus, .portfolio-list .card-total-holdings .portfolio .alert-info .btn-wrap-left:not(:disabled):not(.disabled).active:focus, .portfolio .alert-info .portfolio-list .card .btn-wrap-left:not(:disabled):not(.disabled).active:focus, .portfolio-list .card .portfolio .alert-info .btn-wrap-left:not(:disabled):not(.disabled).active:focus,
     .show > .btn-info.dropdown-toggle:focus,
     .portfolio .alert-info .show > .dropdown-toggle.btn:focus,
-    .portfolio .alert-info .portfolio-list .card-total-holdings .show > header + button.dropdown-toggle:focus,
-    .portfolio-list .card-total-holdings .portfolio .alert-info .show > header + button.dropdown-toggle:focus,
-    .portfolio .alert-info .portfolio-list .card .show > header + button.dropdown-toggle:focus,
-    .portfolio-list .card .portfolio .alert-info .show > header + button.dropdown-toggle:focus {
+    .portfolio .alert-info .portfolio-list .card-total-holdings .show > .dropdown-toggle.btn-wrap-left:focus,
+    .portfolio-list .card-total-holdings .portfolio .alert-info .show > .dropdown-toggle.btn-wrap-left:focus,
+    .portfolio .alert-info .portfolio-list .card .show > .dropdown-toggle.btn-wrap-left:focus,
+    .portfolio-list .card .portfolio .alert-info .show > .dropdown-toggle.btn-wrap-left:focus {
       box-shadow: 0 0 0 0.2rem rgba(116, 129, 193, 0.5); }
 
 .btn-warning {
@@ -6501,34 +6506,34 @@ fieldset:disabled a.btn {
     .show > .btn-fog.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(169, 174, 179, 0.5); }
 
-.btn-concrete, .portfolio-list .card-total-holdings header + button, .portfolio-list .card header + button {
+.btn-concrete, .portfolio-list .card-total-holdings .btn-wrap-left, .portfolio-list .card .btn-wrap-left {
   color: #192228;
   background-color: #dde4eb;
   border-color: #dde4eb; }
-  .btn-concrete:hover, .portfolio-list .card-total-holdings header + button:hover, .portfolio-list .card header + button:hover {
+  .btn-concrete:hover, .portfolio-list .card-total-holdings .btn-wrap-left:hover, .portfolio-list .card .btn-wrap-left:hover {
     color: #192228;
     background-color: #c5d1dd;
     border-color: #bdcbd8; }
-  .btn-concrete:focus, .portfolio-list .card-total-holdings header + button:focus, .portfolio-list .card header + button:focus, .btn-concrete.focus, .portfolio-list .card-total-holdings header + button.focus, .portfolio-list .card header + button.focus {
+  .btn-concrete:focus, .portfolio-list .card-total-holdings .btn-wrap-left:focus, .portfolio-list .card .btn-wrap-left:focus, .btn-concrete.focus, .portfolio-list .card-total-holdings .focus.btn-wrap-left, .portfolio-list .card .focus.btn-wrap-left {
     color: #192228;
     background-color: #c5d1dd;
     border-color: #bdcbd8;
     box-shadow: 0 0 0 0.2rem rgba(192, 199, 206, 0.5); }
-  .btn-concrete.disabled, .portfolio-list .card-total-holdings header + button.disabled, .portfolio-list .card header + button.disabled, .btn-concrete:disabled, .portfolio-list .card-total-holdings header + button:disabled, .portfolio-list .card header + button:disabled {
+  .btn-concrete.disabled, .portfolio-list .card-total-holdings .disabled.btn-wrap-left, .portfolio-list .card .disabled.btn-wrap-left, .btn-concrete:disabled, .portfolio-list .card-total-holdings .btn-wrap-left:disabled, .portfolio-list .card .btn-wrap-left:disabled {
     color: #192228;
     background-color: #dde4eb;
     border-color: #dde4eb; }
-  .btn-concrete:not(:disabled):not(.disabled):active, .portfolio-list .card-total-holdings header + button:not(:disabled):not(.disabled):active, .portfolio-list .card header + button:not(:disabled):not(.disabled):active, .btn-concrete:not(:disabled):not(.disabled).active, .portfolio-list .card-total-holdings header + button:not(:disabled):not(.disabled).active, .portfolio-list .card header + button:not(:disabled):not(.disabled).active,
+  .btn-concrete:not(:disabled):not(.disabled):active, .portfolio-list .card-total-holdings .btn-wrap-left:not(:disabled):not(.disabled):active, .portfolio-list .card .btn-wrap-left:not(:disabled):not(.disabled):active, .btn-concrete:not(:disabled):not(.disabled).active, .portfolio-list .card-total-holdings .btn-wrap-left:not(:disabled):not(.disabled).active, .portfolio-list .card .btn-wrap-left:not(:disabled):not(.disabled).active,
   .show > .btn-concrete.dropdown-toggle,
-  .portfolio-list .card-total-holdings .show > header + button.dropdown-toggle,
-  .portfolio-list .card .show > header + button.dropdown-toggle {
+  .portfolio-list .card-total-holdings .show > .dropdown-toggle.btn-wrap-left,
+  .portfolio-list .card .show > .dropdown-toggle.btn-wrap-left {
     color: #192228;
     background-color: #bdcbd8;
     border-color: #b5c4d3; }
-    .btn-concrete:not(:disabled):not(.disabled):active:focus, .portfolio-list .card-total-holdings header + button:not(:disabled):not(.disabled):active:focus, .portfolio-list .card header + button:not(:disabled):not(.disabled):active:focus, .btn-concrete:not(:disabled):not(.disabled).active:focus, .portfolio-list .card-total-holdings header + button:not(:disabled):not(.disabled).active:focus, .portfolio-list .card header + button:not(:disabled):not(.disabled).active:focus,
+    .btn-concrete:not(:disabled):not(.disabled):active:focus, .portfolio-list .card-total-holdings .btn-wrap-left:not(:disabled):not(.disabled):active:focus, .portfolio-list .card .btn-wrap-left:not(:disabled):not(.disabled):active:focus, .btn-concrete:not(:disabled):not(.disabled).active:focus, .portfolio-list .card-total-holdings .btn-wrap-left:not(:disabled):not(.disabled).active:focus, .portfolio-list .card .btn-wrap-left:not(:disabled):not(.disabled).active:focus,
     .show > .btn-concrete.dropdown-toggle:focus,
-    .portfolio-list .card-total-holdings .show > header + button.dropdown-toggle:focus,
-    .portfolio-list .card .show > header + button.dropdown-toggle:focus {
+    .portfolio-list .card-total-holdings .show > .dropdown-toggle.btn-wrap-left:focus,
+    .portfolio-list .card .show > .dropdown-toggle.btn-wrap-left:focus {
       box-shadow: 0 0 0 0.2rem rgba(192, 199, 206, 0.5); }
 
 .btn-ivory {
@@ -7489,10 +7494,10 @@ input[type="button"].btn-block {
 .bg-grape .btn-grape,
 .alert-info .btn-info,
 .portfolio .alert-info .btn,
-.portfolio .alert-info .portfolio-list .card-total-holdings header + button,
-.portfolio-list .card-total-holdings .portfolio .alert-info header + button,
-.portfolio .alert-info .portfolio-list .card header + button,
-.portfolio-list .card .portfolio .alert-info header + button {
+.portfolio .alert-info .portfolio-list .card-total-holdings .btn-wrap-left,
+.portfolio-list .card-total-holdings .portfolio .alert-info .btn-wrap-left,
+.portfolio .alert-info .portfolio-list .card .btn-wrap-left,
+.portfolio-list .card .portfolio .alert-info .btn-wrap-left {
   background-color: rgba(255, 255, 255, 0.16); }
 
 /**
@@ -7521,11 +7526,11 @@ input[type="button"].btn-block {
  *   </div>
  * </div>
  */
-.btn-arrow-right, .portfolio-list .card-total-holdings header + button, .portfolio-list .card header + button {
+.btn-arrow-right, .portfolio-list .card-total-holdings .btn-wrap-left, .portfolio-list .card .btn-wrap-left {
   text-align: left;
   padding-left: 2rem;
   padding-right: 2rem; }
-  .btn-arrow-right:after, .portfolio-list .card-total-holdings header + button:after, .portfolio-list .card header + button:after {
+  .btn-arrow-right:after, .portfolio-list .card-total-holdings .btn-wrap-left:after, .portfolio-list .card .btn-wrap-left:after {
     margin-left: 1rem;
     content: '→';
     float: right; }
@@ -7603,19 +7608,19 @@ input[type="button"].btn-block {
  * <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
  * <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
  */
-.nav, .portfolio-list .card-total-holdings button + nav, .portfolio-list .card button + nav {
+.nav, .portfolio-list .card-total-holdings nav, .portfolio-list .card nav {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none; }
 
-.nav-link, .portfolio-list .card-total-holdings button + nav > a, .portfolio-list .card button + nav > a {
+.nav-link, .portfolio-list .card-total-holdings nav > a, .portfolio-list .card nav > a {
   display: block;
   padding: 0.5rem 0.5rem; }
-  .nav-link:hover, .portfolio-list .card-total-holdings button + nav > a:hover, .portfolio-list .card button + nav > a:hover, .nav-link:focus, .portfolio-list .card-total-holdings button + nav > a:focus, .portfolio-list .card button + nav > a:focus {
+  .nav-link:hover, .portfolio-list .card-total-holdings nav > a:hover, .portfolio-list .card nav > a:hover, .nav-link:focus, .portfolio-list .card-total-holdings nav > a:focus, .portfolio-list .card nav > a:focus {
     text-decoration: none; }
-  .nav-link.disabled, .portfolio-list .card-total-holdings button + nav > a.disabled, .portfolio-list .card button + nav > a.disabled {
+  .nav-link.disabled, .portfolio-list .card-total-holdings nav > a.disabled, .portfolio-list .card nav > a.disabled {
     color: #959ea6;
     pointer-events: none;
     cursor: default; }
@@ -7624,22 +7629,22 @@ input[type="button"].btn-block {
   border-bottom: 1px solid #c2c7cc; }
   .nav-tabs .nav-item {
     margin-bottom: -1px; }
-  .nav-tabs .nav-link, .nav-tabs .portfolio-list .card-total-holdings button + nav > a, .portfolio-list .card-total-holdings .nav-tabs button + nav > a, .nav-tabs .portfolio-list .card button + nav > a, .portfolio-list .card .nav-tabs button + nav > a {
+  .nav-tabs .nav-link, .nav-tabs .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-tabs nav > a, .nav-tabs .portfolio-list .card nav > a, .portfolio-list .card .nav-tabs nav > a {
     border: 1px solid transparent;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px; }
-    .nav-tabs .nav-link:hover, .nav-tabs .portfolio-list .card-total-holdings button + nav > a:hover, .portfolio-list .card-total-holdings .nav-tabs button + nav > a:hover, .nav-tabs .portfolio-list .card button + nav > a:hover, .portfolio-list .card .nav-tabs button + nav > a:hover, .nav-tabs .nav-link:focus, .nav-tabs .portfolio-list .card-total-holdings button + nav > a:focus, .portfolio-list .card-total-holdings .nav-tabs button + nav > a:focus, .nav-tabs .portfolio-list .card button + nav > a:focus, .portfolio-list .card .nav-tabs button + nav > a:focus {
+    .nav-tabs .nav-link:hover, .nav-tabs .portfolio-list .card-total-holdings nav > a:hover, .portfolio-list .card-total-holdings .nav-tabs nav > a:hover, .nav-tabs .portfolio-list .card nav > a:hover, .portfolio-list .card .nav-tabs nav > a:hover, .nav-tabs .nav-link:focus, .nav-tabs .portfolio-list .card-total-holdings nav > a:focus, .portfolio-list .card-total-holdings .nav-tabs nav > a:focus, .nav-tabs .portfolio-list .card nav > a:focus, .portfolio-list .card .nav-tabs nav > a:focus {
       border-color: #f8f9fa #f8f9fa #c2c7cc; }
-    .nav-tabs .nav-link.disabled, .nav-tabs .portfolio-list .card-total-holdings button + nav > a.disabled, .portfolio-list .card-total-holdings .nav-tabs button + nav > a.disabled, .nav-tabs .portfolio-list .card button + nav > a.disabled, .portfolio-list .card .nav-tabs button + nav > a.disabled {
+    .nav-tabs .nav-link.disabled, .nav-tabs .portfolio-list .card-total-holdings nav > a.disabled, .portfolio-list .card-total-holdings .nav-tabs nav > a.disabled, .nav-tabs .portfolio-list .card nav > a.disabled, .portfolio-list .card .nav-tabs nav > a.disabled {
       color: #959ea6;
       background-color: transparent;
       border-color: transparent; }
-  .nav-tabs .nav-link.active, .nav-tabs .portfolio-list .card-total-holdings button + nav > a.active, .portfolio-list .card-total-holdings .nav-tabs button + nav > a.active, .nav-tabs .portfolio-list .card button + nav > a.active, .portfolio-list .card .nav-tabs button + nav > a.active,
+  .nav-tabs .nav-link.active, .nav-tabs .portfolio-list .card-total-holdings nav > a.active, .portfolio-list .card-total-holdings .nav-tabs nav > a.active, .nav-tabs .portfolio-list .card nav > a.active, .portfolio-list .card .nav-tabs nav > a.active,
   .nav-tabs .nav-item.show .nav-link,
-  .nav-tabs .nav-item.show .portfolio-list .card-total-holdings button + nav > a,
-  .portfolio-list .card-total-holdings .nav-tabs .nav-item.show button + nav > a,
-  .nav-tabs .nav-item.show .portfolio-list .card button + nav > a,
-  .portfolio-list .card .nav-tabs .nav-item.show button + nav > a {
+  .nav-tabs .nav-item.show .portfolio-list .card-total-holdings nav > a,
+  .portfolio-list .card-total-holdings .nav-tabs .nav-item.show nav > a,
+  .nav-tabs .nav-item.show .portfolio-list .card nav > a,
+  .portfolio-list .card .nav-tabs .nav-item.show nav > a {
     color: #7a807f;
     background-color: #ffffff;
     border-color: #c2c7cc #c2c7cc #ffffff; }
@@ -7648,15 +7653,15 @@ input[type="button"].btn-block {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
 
-.nav-pills .nav-link, .nav-pills .portfolio-list .card-total-holdings button + nav > a, .portfolio-list .card-total-holdings .nav-pills button + nav > a, .nav-pills .portfolio-list .card button + nav > a, .portfolio-list .card .nav-pills button + nav > a {
+.nav-pills .nav-link, .nav-pills .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-pills nav > a, .nav-pills .portfolio-list .card nav > a, .portfolio-list .card .nav-pills nav > a {
   border-radius: 4px; }
 
-.nav-pills .nav-link.active, .nav-pills .portfolio-list .card-total-holdings button + nav > a.active, .portfolio-list .card-total-holdings .nav-pills button + nav > a.active, .nav-pills .portfolio-list .card button + nav > a.active, .portfolio-list .card .nav-pills button + nav > a.active,
+.nav-pills .nav-link.active, .nav-pills .portfolio-list .card-total-holdings nav > a.active, .portfolio-list .card-total-holdings .nav-pills nav > a.active, .nav-pills .portfolio-list .card nav > a.active, .portfolio-list .card .nav-pills nav > a.active,
 .nav-pills .show > .nav-link,
-.nav-pills .portfolio-list .card-total-holdings button + nav.show > a,
-.portfolio-list .card-total-holdings .nav-pills button + nav.show > a,
-.nav-pills .portfolio-list .card button + nav.show > a,
-.portfolio-list .card .nav-pills button + nav.show > a {
+.nav-pills .portfolio-list .card-total-holdings nav.show > a,
+.portfolio-list .card-total-holdings .nav-pills nav.show > a,
+.nav-pills .portfolio-list .card nav.show > a,
+.portfolio-list .card .nav-pills nav.show > a {
   color: #ffffff;
   background-color: #58cfee; }
 
@@ -7675,14 +7680,14 @@ input[type="button"].btn-block {
 .tab-content > .active {
   display: block; }
 
-.nav-link-plain a.nav-link, .portfolio-list .card-total-holdings button + nav a.nav-link, .portfolio-list .card button + nav a.nav-link, .nav-link-plain .portfolio-list .card-total-holdings button + nav > a, .portfolio-list .card-total-holdings .nav-link-plain button + nav > a, .portfolio-list .card-total-holdings button + nav > a, .portfolio-list .card .card-total-holdings button + nav > a, .portfolio-list .card-total-holdings .card button + nav > a, .nav-link-plain .portfolio-list .card button + nav > a, .portfolio-list .card .nav-link-plain button + nav > a, .portfolio-list .card-total-holdings .card button + nav > a, .portfolio-list .card .card-total-holdings button + nav > a, .portfolio-list .card button + nav > a {
+.nav-link-plain a.nav-link, .portfolio-list .card-total-holdings nav a.nav-link, .portfolio-list .card nav a.nav-link, .nav-link-plain .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-plain nav > a, .portfolio-list .card-total-holdings nav > a, .portfolio-list .card .card-total-holdings nav > a, .portfolio-list .card-total-holdings .card nav > a, .nav-link-plain .portfolio-list .card nav > a, .portfolio-list .card .nav-link-plain nav > a, .portfolio-list .card-total-holdings .card nav > a, .portfolio-list .card .card-total-holdings nav > a, .portfolio-list .card nav > a {
   color: #7a807f;
   text-decoration: "none"; }
-  .nav-link-plain a.nav-link:hover, .portfolio-list .card-total-holdings button + nav a.nav-link:hover, .portfolio-list .card button + nav a.nav-link:hover, .nav-link-plain .portfolio-list .card-total-holdings button + nav > a:hover, .portfolio-list .card-total-holdings .nav-link-plain button + nav > a:hover, .portfolio-list .card-total-holdings button + nav > a:hover, .nav-link-plain .portfolio-list .card button + nav > a:hover, .portfolio-list .card .nav-link-plain button + nav > a:hover, .portfolio-list .card-total-holdings .card button + nav > a:hover, .portfolio-list .card .card-total-holdings button + nav > a:hover, .portfolio-list .card button + nav > a:hover {
+  .nav-link-plain a.nav-link:hover, .portfolio-list .card-total-holdings nav a.nav-link:hover, .portfolio-list .card nav a.nav-link:hover, .nav-link-plain .portfolio-list .card-total-holdings nav > a:hover, .portfolio-list .card-total-holdings .nav-link-plain nav > a:hover, .portfolio-list .card-total-holdings nav > a:hover, .nav-link-plain .portfolio-list .card nav > a:hover, .portfolio-list .card .nav-link-plain nav > a:hover, .portfolio-list .card-total-holdings .card nav > a:hover, .portfolio-list .card .card-total-holdings nav > a:hover, .portfolio-list .card nav > a:hover {
     color: #192228;
     text-decoration: underline; }
 
-.nav-sm, .portfolio-list .card-total-holdings button + nav, .portfolio-list .card button + nav {
+.nav-sm, .portfolio-list .card-total-holdings nav, .portfolio-list .card nav {
   font-size: 11px;
   line-height: 24px; }
 
@@ -7942,11 +7947,11 @@ input[type="button"].btn-block {
   .badge:empty {
     display: none; }
 
-.btn .badge, .portfolio-list .card-total-holdings header + button .badge, .portfolio-list .card header + button .badge {
+.btn .badge, .portfolio-list .card-total-holdings .btn-wrap-left .badge, .portfolio-list .card .btn-wrap-left .badge {
   position: relative;
   top: -1px; }
 
-.badge-pill {
+.badge-pill, .portfolio-list > header ul li .badge {
   padding-right: 0.6em;
   padding-left: 0.6em;
   border-radius: 10rem; }
@@ -9427,7 +9432,7 @@ input[type="button"].btn-block {
 .align-top {
   vertical-align: top !important; }
 
-.align-middle, .portfolio section .list-group-flush > li p {
+.align-middle, .portfolio section .list-group-flush > li p, .portfolio-list > header ul li {
   vertical-align: middle !important; }
 
 .align-bottom {
@@ -9748,7 +9753,7 @@ button.bg-black:focus {
 .border-right {
   border-right: 1px solid #c2c7cc !important; }
 
-.border-bottom, .portfolio section header {
+.border-bottom, .portfolio section header, .portfolio-list .card-total-holdings nav, .portfolio-list .card nav {
   border-bottom: 1px solid #c2c7cc !important; }
 
 .border-left {
@@ -9925,7 +9930,7 @@ button.bg-black:focus {
 .d-inline {
   display: inline !important; }
 
-.d-inline-block {
+.d-inline-block, .portfolio-list > header ul li .badge {
   display: inline-block !important; }
 
 .d-block {
@@ -9940,7 +9945,7 @@ button.bg-black:focus {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .portfolio section .list-group-flush > li, .portfolio-list .card-total-holdings .item-summary, .portfolio-list .card .item-summary, .portfolio-list .card-total-holdings .item-details article.quote, .portfolio-list .card .item-details article.quote {
+.d-flex, .portfolio section .list-group-flush > li, .portfolio-list > header, .portfolio-list .card-total-holdings .item-summary, .portfolio-list .card .item-summary, .portfolio-list .card-total-holdings .item-details article.quote, .portfolio-list .card .item-details article.quote {
   display: flex !important; }
 
 .d-inline-flex {
@@ -10116,7 +10121,7 @@ button.bg-black:focus {
 .flex-shrink-1 {
   flex-shrink: 1 !important; }
 
-.justify-content-start, .nav-link-plain a.nav-link, .portfolio-list .card-total-holdings button + nav a.nav-link, .portfolio-list .card button + nav a.nav-link, .nav-link-plain .portfolio-list .card-total-holdings button + nav > a, .portfolio-list .card-total-holdings .nav-link-plain button + nav > a, .portfolio-list .card-total-holdings button + nav > a, .portfolio-list .card .card-total-holdings button + nav > a, .portfolio-list .card-total-holdings .card button + nav > a, .nav-link-plain .portfolio-list .card button + nav > a, .portfolio-list .card .nav-link-plain button + nav > a, .portfolio-list .card button + nav > a {
+.justify-content-start, .nav-link-plain a.nav-link, .portfolio-list .card-total-holdings nav a.nav-link, .portfolio-list .card nav a.nav-link, .nav-link-plain .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-plain nav > a, .portfolio-list .card-total-holdings nav > a, .portfolio-list .card .card-total-holdings nav > a, .portfolio-list .card-total-holdings .card nav > a, .nav-link-plain .portfolio-list .card nav > a, .portfolio-list .card .nav-link-plain nav > a, .portfolio-list .card nav > a {
   justify-content: flex-start !important; }
 
 .justify-content-end, .portfolio-list .card-total-holdings .item-summary, .portfolio-list .card .item-summary {
@@ -10125,7 +10130,7 @@ button.bg-black:focus {
 .justify-content-center {
   justify-content: center !important; }
 
-.justify-content-between {
+.justify-content-between, .portfolio-list > header {
   justify-content: space-between !important; }
 
 .justify-content-around {
@@ -10584,7 +10589,7 @@ button.bg-black:focus {
 .w-75 {
   width: 75% !important; }
 
-.w-100 {
+.w-100, .portfolio-list > header {
   width: 100% !important; }
 
 .w-auto {
@@ -10685,7 +10690,7 @@ button.bg-black:focus {
 .m-0, .portfolio-list .card-total-holdings .item-details article.caption-image img + p, .portfolio-list .card .item-details article.caption-image img + p {
   margin: 0 !important; }
 
-.mt-0,
+.mt-0, .portfolio-list > header h1,
 .my-0 {
   margin-top: 0 !important; }
 
@@ -10693,18 +10698,18 @@ button.bg-black:focus {
 .mx-0 {
   margin-right: 0 !important; }
 
-.mb-0, .card-total-holdings h1 small:last-child, .portfolio section header, .portfolio section .list-group-flush > li p,
+.mb-0, .card-total-holdings h2 small:last-child, .portfolio section header, .portfolio section .list-group-flush > li p,
 .my-0 {
   margin-bottom: 0 !important; }
 
-.ml-0, .nav-link-plain a.nav-link:first-child, .portfolio-list .card-total-holdings button + nav a.nav-link:first-child, .portfolio-list .card button + nav a.nav-link:first-child, .nav-link-plain .portfolio-list .card-total-holdings button + nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-plain button + nav > a:first-child, .portfolio-list .card-total-holdings button + nav > a:first-child, .nav-link-plain .portfolio-list .card button + nav > a:first-child, .portfolio-list .card .nav-link-plain button + nav > a:first-child, .portfolio-list .card-total-holdings .card button + nav > a:first-child, .portfolio-list .card .card-total-holdings button + nav > a:first-child, .portfolio-list .card button + nav > a:first-child,
+.ml-0, .nav-link-plain a.nav-link:first-child, .portfolio-list .card-total-holdings nav a.nav-link:first-child, .portfolio-list .card nav a.nav-link:first-child, .nav-link-plain .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-plain nav > a:first-child, .portfolio-list .card-total-holdings nav > a:first-child, .nav-link-plain .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-plain nav > a:first-child, .portfolio-list .card-total-holdings .card nav > a:first-child, .portfolio-list .card .card-total-holdings nav > a:first-child, .portfolio-list .card nav > a:first-child,
 .mx-0 {
   margin-left: 0 !important; }
 
 .m-1 {
   margin: 0.25rem !important; }
 
-.mt-1, .card-total-holdings h1 small:last-child,
+.mt-1, .card-total-holdings h2 small:last-child,
 .my-1 {
   margin-top: 0.25rem !important; }
 
@@ -10723,11 +10728,11 @@ button.bg-black:focus {
 .m-2 {
   margin: 0.5rem !important; }
 
-.mt-2, .portfolio section ul.list-unstyled > li .media-body p,
+.mt-2, .portfolio section ul.list-unstyled > li .media-body p, .portfolio-list .card-total-holdings nav, .portfolio-list .card nav,
 .my-2 {
   margin-top: 0.5rem !important; }
 
-.mr-2,
+.mr-2, .portfolio-list > header ul li .badge,
 .mx-2 {
   margin-right: 0.5rem !important; }
 
@@ -10761,15 +10766,15 @@ button.bg-black:focus {
 .m-4 {
   margin: 1.5rem !important; }
 
-.mt-4, .portfolio-list .card-total-holdings button + nav, .portfolio-list .card button + nav, .portfolio-list .card-total-holdings .item-details, .portfolio-list .card .item-details,
+.mt-4, .portfolio-list .card-total-holdings .item-details, .portfolio-list .card .item-details,
 .my-4 {
   margin-top: 1.5rem !important; }
 
-.mr-4, .portfolio section .list-group-flush > li .badge,
+.mr-4, .portfolio section .list-group-flush > li .badge, .portfolio-list > header ul li,
 .mx-4 {
   margin-right: 1.5rem !important; }
 
-.mb-4, .card-total-holdings, .portfolio .alert-info .alert-heading, .portfolio section .list-group-flush, .portfolio section ul.list-unstyled, .portfolio-list .card-total-holdings header, .portfolio-list .card header, .portfolio-list .card-total-holdings .item-summary, .portfolio-list .card .item-summary,
+.mb-4, .card-total-holdings, .portfolio .alert-info .alert-heading, .portfolio section .list-group-flush, .portfolio section ul.list-unstyled, .portfolio-list > header h1, .portfolio-list .card-total-holdings header, .portfolio-list .card header, .portfolio-list .card-total-holdings .item-summary, .portfolio-list .card .item-summary,
 .my-4 {
   margin-bottom: 1.5rem !important; }
 
@@ -10813,7 +10818,7 @@ button.bg-black:focus {
 .badge-sq {
   padding-bottom: 0 !important; }
 
-.pl-0, .nav-link-plain a.nav-link:first-child, .portfolio-list .card-total-holdings button + nav a.nav-link:first-child, .portfolio-list .card button + nav a.nav-link:first-child, .nav-link-plain .portfolio-list .card-total-holdings button + nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-plain button + nav > a:first-child, .portfolio-list .card-total-holdings button + nav > a:first-child, .nav-link-plain .portfolio-list .card button + nav > a:first-child, .portfolio-list .card .nav-link-plain button + nav > a:first-child, .portfolio-list .card-total-holdings .card button + nav > a:first-child, .portfolio-list .card .card-total-holdings button + nav > a:first-child, .portfolio-list .card button + nav > a:first-child,
+.pl-0, .nav-link-plain a.nav-link:first-child, .portfolio-list .card-total-holdings nav a.nav-link:first-child, .portfolio-list .card nav a.nav-link:first-child, .nav-link-plain .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-plain nav > a:first-child, .portfolio-list .card-total-holdings nav > a:first-child, .nav-link-plain .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-plain nav > a:first-child, .portfolio-list .card-total-holdings .card nav > a:first-child, .portfolio-list .card .card-total-holdings nav > a:first-child, .portfolio-list .card nav > a:first-child,
 .px-0 {
   padding-left: 0 !important; }
 
@@ -12109,7 +12114,7 @@ button.bg-black:focus {
 .text-lowercase {
   text-transform: lowercase !important; }
 
-.text-uppercase, .card-total-holdings .card-title, .card-total-holdings h1 small:last-child, .portfolio-list .card-total-holdings header + button, .portfolio-list .card header + button, .portfolio-list .card-total-holdings .item-summary .amount-principal small, .portfolio-list .card .item-summary .amount-principal small, .portfolio-list .card-total-holdings .item-summary .amount-profit small, .portfolio-list .card .item-summary .amount-profit small, .portfolio-list .card-total-holdings .item-summary .percent-apr small, .portfolio-list .card .item-summary .percent-apr small, .portfolio-list .card-total-holdings .item-summary .amount-current-value small, .portfolio-list .card .item-summary .amount-current-value small {
+.text-uppercase, .card-total-holdings .card-title, .card-total-holdings h2 small:last-child, .portfolio-list > header h1, .portfolio-list .card-total-holdings .btn-wrap-left, .portfolio-list .card .btn-wrap-left, .portfolio-list .card-total-holdings .item-summary .amount-principal small, .portfolio-list .card .item-summary .amount-principal small, .portfolio-list .card-total-holdings .item-summary .amount-profit small, .portfolio-list .card .item-summary .amount-profit small, .portfolio-list .card-total-holdings .item-summary .percent-apr small, .portfolio-list .card .item-summary .percent-apr small, .portfolio-list .card-total-holdings .item-summary .amount-current-value small, .portfolio-list .card .item-summary .amount-current-value small {
   text-transform: uppercase !important; }
 
 .text-capitalize {
@@ -12124,7 +12129,7 @@ button.bg-black:focus {
 .font-weight-normal, .portfolio .alert-info .alert-heading {
   font-weight: 400 !important; }
 
-.font-weight-bold, .card-total-holdings h1, .portfolio .alert-info .badge {
+.font-weight-bold, .card-total-holdings h2, .portfolio .alert-info .badge, .portfolio-list > header h1, .portfolio-list > header ul li, .portfolio-list .card-total-holdings .btn-wrap-left, .portfolio-list .card .btn-wrap-left {
   font-weight: 600 !important; }
 
 .font-weight-bolder {
@@ -12355,7 +12360,7 @@ a.text-black:hover, a.text-black:focus {
 .text-body {
   color: #192228 !important; }
 
-.text-muted, .portfolio section .list-group-flush > li p, .portfolio section ul.list-unstyled > li .media-body small {
+.text-muted, .portfolio section .list-group-flush > li p, .portfolio section ul.list-unstyled > li .media-body small, .portfolio-list > header ul li {
   color: #7a807f !important; }
 
 .text-black-50 {
@@ -12399,18 +12404,18 @@ a.text-black:hover, a.text-black:focus {
  *     <section class="card-total-holdings">
  *       <div class="card-body">
  *         <small class="card-title">Total Holdings</small>
- *         <h1>
+ *         <h2>
  *           $680,050
  *           <small>As of Saturday, July 22nd, 2019</small>
- *         </h1>
+ *         </h2>
  *       </div>
  *     </section>
  *     <section>
  *       <header>
- *         <h2>
+ *         <h3>
  *           Action
  *           <small>Items</small>
- *         </h2>
+ *         </h3>
  *       </header>
  *       <ul class="list-group-flush">
  *         <li>
@@ -12441,10 +12446,10 @@ a.text-black:hover, a.text-black:focus {
  *     </section>
  *     <section>
  *       <header>
- *         <h2>
+ *         <h3>
  *           New
  *           <small>Offerings</small>
- *         </h2>
+ *         </h3>
  *       </header>
  *       <ul class="list-unstyled">
  *         <li>
@@ -12466,7 +12471,7 @@ a.text-black:hover, a.text-black:focus {
  *       <div class="card-body" style="height: 50rem;">
  *         <header>
  *           <small class="symbol">BLS:ZWIB</small>
- *           <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
+ *           <h3 class="card-title">Zero-emission Waste Incineration Facility in Bali</h3>
  *           <small class="status">Activated: January 1, 2019</small>
  *         </header>
  *       </div>
@@ -12485,10 +12490,10 @@ a.text-black:hover, a.text-black:focus {
  *   <section class="card card-total-holdings">
  *     <div class="card-body">
  *       <small class="card-title">Total Holdings</small>
- *       <h1>
+ *       <h2>
  *         $680,050
  *         <small>As of Saturday, July 22nd, 2019</small>
- *       </h1>
+ *       </h2>
  *     </div>
  *   </section>
  * </div>
@@ -12499,11 +12504,11 @@ a.text-black:hover, a.text-black:focus {
   line-height: 13px;
   letter-spacing: -0.11px; }
 
-.card-total-holdings h1 {
+.card-total-holdings h2 {
   font-size: 36px;
   line-height: 49px;
   letter-spacing: 0.25px; }
-  .card-total-holdings h1 small:last-child {
+  .card-total-holdings h2 small:last-child {
     display: block;
     font-size: 10px;
     line-height: 10px;
@@ -12548,10 +12553,10 @@ a.text-black:hover, a.text-black:focus {
      *   <aside>
      *     <section>
      *       <header>
-     *         <h2>
+     *         <h3>
      *           Action
      *           <small>Items</small>
-     *         </h2>
+     *         </h3>
      *       </header>
      *     </section>
      *   </aside>
@@ -12568,10 +12573,10 @@ a.text-black:hover, a.text-black:focus {
      *   <aside>
      *     <section>
      *       <header>
-     *         <h2>
+     *         <h3>
      *           Simple
      *           <small>Example</small>
-     *         </h2>
+     *         </h3>
      *       </header>
      *       <ul class="list-group-flush">
      *         <li>
@@ -12591,10 +12596,10 @@ a.text-black:hover, a.text-black:focus {
 
      *     <section>
      *       <header>
-     *         <h2>
+     *         <h3>
      *           Badge
      *           <small>Example</small>
-     *         </h2>
+     *         </h3>
      *       </header>
      *       <ul class="list-group-flush">
      *         <li>
@@ -12654,16 +12659,146 @@ a.text-black:hover, a.text-black:focus {
      *   </aside>
      * </div>
      */ }
-  .portfolio section header h2 {
-    font-size: 2rem;
+  .portfolio section header h3 {
+    font-size: 1.75rem;
     font-weight: 600; }
-    .portfolio section header h2 small {
+    .portfolio section header h3 small {
       font-size: 2rem;
       font-weight: 300; }
 
+/**
+ * Full Example
+ *
+ * Put it all together and what do you get?
+ *
+ * @section
+ * @page Portfolio List
+ *
+ * @example
+ * <main class="portfolio-list">
+ *   <header class="d-flex justify-content-between w-100">
+ *     <h1>Portfolio Holdings</h1>
+ *     <ul class="list-inline small">
+ *       <li>
+ *         <span class="badge badge-primary"></span>
+ *         Actual
+ *       </li>
+ *       <li>
+ *         <span class="badge badge-light"></span>
+ *         Target
+ *       </li>
+ *       <li>
+ *         <span class="badge badge-secondary"></span>
+ *         Projected Return
+ *       </li>
+ *     </ul>
+ *   </header>
+ *   <article class="card">
+ *     <div class="card-body">
+ *       <div class="row">
+ *         <div class="col-4">
+ *           <header>
+ *             <small class="symbol">BLS:ZWIB</small>
+ *             <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
+ *             <small class="status">Activated: January 1, 2019</small>
+ *           </header>
+ *           <button class="btn-wrap-left">Invest More</button>
+ *           <nav>
+ *             <a href="#">Sell/Trade</a>
+ *             <a href="#">Offering Docs</a>
+ *             <a href="#">Financials</a>
+ *           </nav>
+ *         </div>
+ *         <div class="col-8">
+ *           <section class="item-summary">
+ *             <div class="amount-principal">
+ *               $100,000
+ *               <small>You Invested</small>
+ *             </div>
+ *             <div class="amount-profit">
+ *               + $4,000
+ *               <small>You've Earned</small>
+ *             </div>
+ *             <div class="percent-apr">
+ *               11.90%
+ *               <small>Projected Return<super>&dagger;</super></small>
+ *             </div>
+ *             <div class="amount-current-value">
+ *               <div>
+ *                 $100,000
+ *                 <small>Currently Worth</small>
+ *               </div>
+ *             </div>
+ *           </section>
+ *           <img src="/images/performance-graph.png" class="img-fluid" />
+ *         </div>
+ *       </div>
+ *       <aside class="item-details">
+ *         <h3>Your investment at work</h3>
+ *         <div class="row">
+ *           <article class="caption-image">
+ *             <img src="/images/donuts.jpg" />
+ *             <p>
+ *               Siti Fatimah Sweet Treats & Baked Goods Street Cart
+ *             </p>
+ *           </article>
+ *           <article class="caption-image">
+ *             <img src="/images/chinese-street-food.jpg" />
+ *             <p>
+ *               Making a difference and transforming a passion into a business
+ *             </p>
+ *           </article>
+ *           <article class="quote">
+ *             <blockquote class="quote">
+ *               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+ *               <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+ *             </blockquote>
+ *           </article>
+ *         </div>
+ *       </aside>
+ *     </div>
+ *   </article>
+ * </main>
+ */
 .portfolio-list {
   /**
+   * Header
+   *
+   * Label and legend for the chart
+   *
+   * @section
+   * @page Portfolio List
+   *
+   * @example
+   * <main class="portfolio-list">
+   *   <header>
+   *     <h1>Portfolio Holdings</h1>
+   *     <ul>
+   *       <li>
+   *         <span class="badge badge-primary"></span>
+   *         Actual
+   *       </li>
+   *       <li>
+   *         <span class="badge badge-light"></span>
+   *         Target
+   *       </li>
+   *       <li>
+   *         <span class="badge badge-secondary"></span>
+   *         Projected Return
+   *       </li>
+   *     </ul>
+   *   </header>
+   *   <article class="card">
+   *     <div class="card-body">
+   *       CARD CONTENT HERE
+   *     </div>
+   *   </article>
+   * </main>
+   */
+  /**
    * Card
+   *
+   * Each portfolio item is represented as a card
    *
    * @section
    * @page Portfolio List
@@ -12672,146 +12807,134 @@ a.text-black:hover, a.text-black:focus {
    * <main class="portfolio-list">
    *   <article class="card">
    *     <div class="card-body">
-   *       <div class="row">
-   *         <div class="col-4">
-   *           <header>
-   *             <small class="symbol">BLS:ZWIB</small>
-   *             <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
-   *             <small class="status">Activated: January 1, 2019</small>
-   *           </header>
-   *           <button>Invest More</button>
-   *           <nav>
-   *             <a href="#">Sell/Trade</a>
-   *             <a href="#">Offering Docs</a>
-   *             <a href="#">Financials</a>
-   *           </nav>
-   *         </div>
-   *         <div class="col-8">
-   *           <section class="item-summary">
-   *             <div class="amount-principal">
-   *               $100,000
-   *               <small>You Invested</small>
-   *             </div>
-   *             <div class="amount-profit">
-   *               + $4,000
-   *               <small>You've Earned</small>
-   *             </div>
-   *             <div class="percent-apr">
-   *               11.90%
-   *               <small>Projected Return<super>&dagger;</super></small>
-   *             </div>
-   *             <div class="amount-current-value">
-   *               <div>
-   *                 $100,000
-   *                 <small>Currently Worth</small>
-   *               </div>
-   *             </div>
-   *           </section>
-   *           <img src="/images/performance-graph.png" class="img-fluid" />
-   *         </div>
-   *       </div>
-
-   *       <aside class="item-details">
-   *         <h3>Your investment at work</h3>
-   *         <div class="row">
-   *           <article class="caption-image">
-   *             <img src="/images/donuts.jpg" />
-   *             <p>
-   *               Siti Fatimah Sweet Treats & Baked Goods Street Cart
-   *             </p>
-   *           </article>
-   *           <article class="caption-image">
-   *             <img src="/images/chinese-street-food.jpg" />
-   *             <p>
-   *               Making a difference and transforming a passion into a business
-   *             </p>
-   *           </article>
-   *           <article class="quote">
-   *             <blockquote class="quote">
-   *               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-   *               <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-   *             </blockquote>
-   *           </article>
-   *         </div>
-   *       </aside>
+   *       CARD CONTENT HERE
    *     </div>
    *   </article>
    * </main>
    */ }
-  .portfolio-list .card-total-holdings header .symbol, .portfolio-list .card header .symbol {
-    text-transform: uppercase;
-    font-size: 11px;
-    line-height: 11px;
-    letter-spacing: 0.5px;
-    color: #7a807f; }
-  .portfolio-list .card-total-holdings header .status, .portfolio-list .card header .status {
-    font-size: 11px;
-    line-height: 11px;
-    letter-spacing: 0.5px;
+  .portfolio-list > header h1 {
+    font-size: 1rem;
     color: #959ea6; }
-  .portfolio-list .card-total-holdings header h2, .portfolio-list .card header h2 {
-    font-size: 22px;
-    line-height: 26px;
-    margin-bottom: 6px; }
-  .portfolio-list .card-total-holdings header + button, .portfolio-list .card header + button {
-    height: 40px;
-    border-top-right-radius: 1000px;
-    border-bottom-right-radius: 1000px;
-    margin-left: -32px;
-    font-size: 11px;
-    line-height: 11px; }
-    .portfolio-list .card-total-holdings header + button:after, .portfolio-list .card header + button:after {
-      padding-left: 64px; }
-  .portfolio-list .card-total-holdings .item-summary .amount-principal, .portfolio-list .card .item-summary .amount-principal {
-    color: #192228;
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: 600; }
-    .portfolio-list .card-total-holdings .item-summary .amount-principal small, .portfolio-list .card .item-summary .amount-principal small {
-      display: block;
-      color: #959ea6;
-      font-size: 10px;
-      line-height: 20px; }
-  .portfolio-list .card-total-holdings .item-summary .amount-profit, .portfolio-list .card .item-summary .amount-profit {
-    color: #04b5a6;
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: 600; }
-    .portfolio-list .card-total-holdings .item-summary .amount-profit small, .portfolio-list .card .item-summary .amount-profit small {
-      display: block;
-      color: #959ea6;
-      font-size: 10px;
-      line-height: 20px; }
-  .portfolio-list .card-total-holdings .item-summary .percent-apr, .portfolio-list .card .item-summary .percent-apr {
-    color: #206f8a;
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: 600; }
-    .portfolio-list .card-total-holdings .item-summary .percent-apr small, .portfolio-list .card .item-summary .percent-apr small {
-      display: block;
+  .portfolio-list > header ul li .badge {
+    height: 14px;
+    width: 14px;
+    margin-bottom: -3px; }
+  .portfolio-list .card-total-holdings, .portfolio-list .card {
+    /**
+     * Card Header
+     *
+     * Provides an overview of the asset type including its status
+     *
+     * @section
+     * @page Portfolio List
+     *
+     * @example
+     * <main class="portfolio-list">
+     *   <article class="card">
+     *     <div class="card-body">
+     *       <header>
+     *         <small class="symbol">BLS:ZWIB</small>
+     *         <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
+     *         <small class="status">Activated: January 1, 2019</small>
+     *       </header>
+     *     </div>
+     *   </article>
+     * </main>
+     */
+    /**
+     * Button Wrap Left
+     *
+     * A highly stylized button that looks like its wrapping the card
+     *
+     * @page Portfolio List
+     * @section
+     *
+     * @example
+     * <main class="portfolio-list">
+     *   <article class="card">
+     *     <div class="card-body">
+     *       <button class="btn-wrap-left">Get in the Chopper</button>
+     *     </div>
+     *   </article>
+     * </main>
+     */ }
+    .portfolio-list .card-total-holdings header .symbol, .portfolio-list .card header .symbol {
+      text-transform: uppercase;
+      font-size: 11px;
+      line-height: 11px;
+      letter-spacing: 0.5px;
+      color: #7a807f; }
+    .portfolio-list .card-total-holdings header .status, .portfolio-list .card header .status {
+      font-size: 11px;
+      line-height: 11px;
+      letter-spacing: 0.5px;
+      color: #959ea6; }
+    .portfolio-list .card-total-holdings header h2, .portfolio-list .card header h2 {
+      font-size: 22px;
+      line-height: 26px;
+      margin-bottom: 6px; }
+    .portfolio-list .card-total-holdings .btn-wrap-left, .portfolio-list .card .btn-wrap-left {
+      height: 40px;
+      border-top-right-radius: 1000px;
+      border-bottom-right-radius: 1000px;
+      margin-left: -32px;
+      font-size: 11px;
+      line-height: 11px; }
+      .portfolio-list .card-total-holdings .btn-wrap-left:after, .portfolio-list .card .btn-wrap-left:after {
+        padding-left: 64px; }
+    .portfolio-list .card-total-holdings nav, .portfolio-list .card nav {
+      margin-left: -32px;
+      padding-left: 32px; }
+    .portfolio-list .card-total-holdings .item-summary .amount-principal, .portfolio-list .card .item-summary .amount-principal {
+      color: #192228;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 600; }
+      .portfolio-list .card-total-holdings .item-summary .amount-principal small, .portfolio-list .card .item-summary .amount-principal small {
+        display: block;
+        color: #959ea6;
+        font-size: 10px;
+        line-height: 20px; }
+    .portfolio-list .card-total-holdings .item-summary .amount-profit, .portfolio-list .card .item-summary .amount-profit {
+      color: #04b5a6;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 600; }
+      .portfolio-list .card-total-holdings .item-summary .amount-profit small, .portfolio-list .card .item-summary .amount-profit small {
+        display: block;
+        color: #959ea6;
+        font-size: 10px;
+        line-height: 20px; }
+    .portfolio-list .card-total-holdings .item-summary .percent-apr, .portfolio-list .card .item-summary .percent-apr {
       color: #206f8a;
-      font-size: 10px;
-      line-height: 20px; }
-  .portfolio-list .card-total-holdings .item-summary .amount-current-value, .portfolio-list .card .item-summary .amount-current-value {
-    color: #206f8a;
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: 600;
-    font-size: 20px; }
-    .portfolio-list .card-total-holdings .item-summary .amount-current-value small, .portfolio-list .card .item-summary .amount-current-value small {
-      display: block;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 600; }
+      .portfolio-list .card-total-holdings .item-summary .percent-apr small, .portfolio-list .card .item-summary .percent-apr small {
+        display: block;
+        color: #206f8a;
+        font-size: 10px;
+        line-height: 20px; }
+    .portfolio-list .card-total-holdings .item-summary .amount-current-value, .portfolio-list .card .item-summary .amount-current-value {
       color: #206f8a;
-      font-size: 10px;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 600;
+      font-size: 20px; }
+      .portfolio-list .card-total-holdings .item-summary .amount-current-value small, .portfolio-list .card .item-summary .amount-current-value small {
+        display: block;
+        color: #206f8a;
+        font-size: 10px;
+        line-height: 20px; }
+    .portfolio-list .card-total-holdings .item-details h3, .portfolio-list .card .item-details h3 {
+      font-size: 18px; }
+    .portfolio-list .card-total-holdings .item-details article.caption-image, .portfolio-list .card .item-details article.caption-image {
+      font-size: 14px;
+      font-weight: 600;
       line-height: 20px; }
-  .portfolio-list .card-total-holdings .item-details h3, .portfolio-list .card .item-details h3 {
-    font-size: 18px; }
-  .portfolio-list .card-total-holdings .item-details article.caption-image, .portfolio-list .card .item-details article.caption-image {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 20px; }
-  .portfolio-list .card-total-holdings .item-details article.quote, .portfolio-list .card .item-details article.quote {
-    background-image: url("/images/quote-bg-grape.jpg"); }
-    .portfolio-list .card-total-holdings .item-details article.quote blockquote, .portfolio-list .card .item-details article.quote blockquote {
-      font-size: 16px;
-      line-height: 28px;
-      letter-spacing: -0.5px; }
+    .portfolio-list .card-total-holdings .item-details article.quote, .portfolio-list .card .item-details article.quote {
+      background-image: url("/images/quote-bg-grape.jpg"); }
+      .portfolio-list .card-total-holdings .item-details article.quote blockquote, .portfolio-list .card .item-details article.quote blockquote {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: -0.5px; }

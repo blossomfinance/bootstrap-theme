@@ -11,18 +11,18 @@
  *     <section class="card-total-holdings">
  *       <div class="card-body">
  *         <small class="card-title">Total Holdings</small>
- *         <h1>
+ *         <h2>
  *           $680,050
  *           <small>As of Saturday, July 22nd, 2019</small>
- *         </h1>
+ *         </h2>
  *       </div>
  *     </section>
  *     <section>
  *       <header>
- *         <h2>
+ *         <h3>
  *           Action
  *           <small>Items</small>
- *         </h2>
+ *         </h3>
  *       </header>
  *       <ul class="list-group-flush">
  *         <li>
@@ -53,10 +53,10 @@
  *     </section>
  *     <section>
  *       <header>
- *         <h2>
+ *         <h3>
  *           New
  *           <small>Offerings</small>
- *         </h2>
+ *         </h3>
  *       </header>
  *       <ul class="list-unstyled">
  *         <li>
@@ -78,7 +78,7 @@
  *       <div class="card-body" style="height: 50rem;">
  *         <header>
  *           <small class="symbol">BLS:ZWIB</small>
- *           <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
+ *           <h3 class="card-title">Zero-emission Waste Incineration Facility in Bali</h3>
  *           <small class="status">Activated: January 1, 2019</small>
  *         </header>
  *       </div>
@@ -98,10 +98,10 @@
  *   <section class="card card-total-holdings">
  *     <div class="card-body">
  *       <small class="card-title">Total Holdings</small>
- *       <h1>
+ *       <h2>
  *         $680,050
  *         <small>As of Saturday, July 22nd, 2019</small>
- *       </h1>
+ *       </h2>
  *     </div>
  *   </section>
  * </div>
@@ -120,7 +120,7 @@
     letter-spacing: -0.11px;
   }
 
-  h1 {
+  h2 {
     @extend .font-weight-bold;
 
     font-size: 36px;
@@ -196,10 +196,10 @@
      *   <aside>
      *     <section>
      *       <header>
-     *         <h2>
+     *         <h3>
      *           Action
      *           <small>Items</small>
-     *         </h2>
+     *         </h3>
      *       </header>
      *     </section>
      *   </aside>
@@ -209,8 +209,8 @@
       @extend .border-bottom;
       @extend .pb-1;
       @extend .mb-0;
-      h2 {
-        font-size: $h2-font-size;
+      h3 {
+        font-size: $h3-font-size;
         font-weight: $font-weight-bold;
         small {
           font-size: $h2-font-size;
@@ -230,10 +230,10 @@
      *   <aside>
      *     <section>
      *       <header>
-     *         <h2>
+     *         <h3>
      *           Simple
      *           <small>Example</small>
-     *         </h2>
+     *         </h3>
      *       </header>
      *       <ul class="list-group-flush">
      *         <li>
@@ -253,10 +253,10 @@
 
      *     <section>
      *       <header>
-     *         <h2>
+     *         <h3>
      *           Badge
      *           <small>Example</small>
-     *         </h2>
+     *         </h3>
      *       </header>
      *       <ul class="list-group-flush">
      *         <li>

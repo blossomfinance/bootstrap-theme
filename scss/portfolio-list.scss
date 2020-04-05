@@ -19,10 +19,177 @@ $portfolio-list-card-details-article-line-height: 20px !default;
 $portfolio-list-card-details-article-blockquote-font-size: 16px !default;
 $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
 
+/**
+ * Full Example
+ *
+ * Put it all together and what do you get?
+ *
+ * @section
+ * @page Portfolio List
+ *
+ * @example
+ * <main class="portfolio-list">
+ *   <header class="d-flex justify-content-between w-100">
+ *     <h1>Portfolio Holdings</h1>
+ *     <ul class="list-inline small">
+ *       <li>
+ *         <span class="badge badge-primary"></span>
+ *         Actual
+ *       </li>
+ *       <li>
+ *         <span class="badge badge-light"></span>
+ *         Target
+ *       </li>
+ *       <li>
+ *         <span class="badge badge-secondary"></span>
+ *         Projected Return
+ *       </li>
+ *     </ul>
+ *   </header>
+ *   <article class="card">
+ *     <div class="card-body">
+ *       <div class="row">
+ *         <div class="col-4">
+ *           <header>
+ *             <small class="symbol">BLS:ZWIB</small>
+ *             <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
+ *             <small class="status">Activated: January 1, 2019</small>
+ *           </header>
+ *           <button class="btn-wrap-left">Invest More</button>
+ *           <nav>
+ *             <a href="#">Sell/Trade</a>
+ *             <a href="#">Offering Docs</a>
+ *             <a href="#">Financials</a>
+ *           </nav>
+ *         </div>
+ *         <div class="col-8">
+ *           <section class="item-summary">
+ *             <div class="amount-principal">
+ *               $100,000
+ *               <small>You Invested</small>
+ *             </div>
+ *             <div class="amount-profit">
+ *               + $4,000
+ *               <small>You've Earned</small>
+ *             </div>
+ *             <div class="percent-apr">
+ *               11.90%
+ *               <small>Projected Return<super>&dagger;</super></small>
+ *             </div>
+ *             <div class="amount-current-value">
+ *               <div>
+ *                 $100,000
+ *                 <small>Currently Worth</small>
+ *               </div>
+ *             </div>
+ *           </section>
+ *           <img src="/images/performance-graph.png" class="img-fluid" />
+ *         </div>
+ *       </div>
+ *       <aside class="item-details">
+ *         <h3>Your investment at work</h3>
+ *         <div class="row">
+ *           <article class="caption-image">
+ *             <img src="/images/donuts.jpg" />
+ *             <p>
+ *               Siti Fatimah Sweet Treats & Baked Goods Street Cart
+ *             </p>
+ *           </article>
+ *           <article class="caption-image">
+ *             <img src="/images/chinese-street-food.jpg" />
+ *             <p>
+ *               Making a difference and transforming a passion into a business
+ *             </p>
+ *           </article>
+ *           <article class="quote">
+ *             <blockquote class="quote">
+ *               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+ *               <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+ *             </blockquote>
+ *           </article>
+ *         </div>
+ *       </aside>
+ *     </div>
+ *   </article>
+ * </main>
+ */
+
 .portfolio-list {
+
+
+  /**
+   * Header
+   *
+   * Label and legend for the chart
+   *
+   * @section
+   * @page Portfolio List
+   *
+   * @example
+   * <main class="portfolio-list">
+   *   <header>
+   *     <h1>Portfolio Holdings</h1>
+   *     <ul>
+   *       <li>
+   *         <span class="badge badge-primary"></span>
+   *         Actual
+   *       </li>
+   *       <li>
+   *         <span class="badge badge-light"></span>
+   *         Target
+   *       </li>
+   *       <li>
+   *         <span class="badge badge-secondary"></span>
+   *         Projected Return
+   *       </li>
+   *     </ul>
+   *   </header>
+   *   <article class="card">
+   *     <div class="card-body">
+   *       CARD CONTENT HERE
+   *     </div>
+   *   </article>
+   * </main>
+   */
+  & > header {
+    @extend .d-flex;
+    @extend .justify-content-between;
+    @extend .w-100;
+
+    h1 {
+      font-size: $font-size-base;
+      color: $gray-600;
+      @extend .font-weight-bold;
+      @extend .text-uppercase;
+      @extend .mt-0;
+      @extend .mb-4;
+    }
+
+    ul {
+      @extend .list-inline;
+      @extend .small;
+      li {
+        @extend .list-inline-item;
+        @extend .font-weight-bold;
+        @extend .align-middle;
+        @extend .text-muted;
+        @extend .mr-4;
+        .badge {
+          @extend .badge-pill;
+          @extend .d-inline-block;
+          @extend .mr-2;
+          height: 14px;
+          width: 14px;
+          margin-bottom: -3px;
+        }
+      }
+    }
+  }
 
   /**
    * Card
+   *
+   * Each portfolio item is represented as a card
    *
    * @section
    * @page Portfolio List
@@ -31,68 +198,7 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
    * <main class="portfolio-list">
    *   <article class="card">
    *     <div class="card-body">
-   *       <div class="row">
-   *         <div class="col-4">
-   *           <header>
-   *             <small class="symbol">BLS:ZWIB</small>
-   *             <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
-   *             <small class="status">Activated: January 1, 2019</small>
-   *           </header>
-   *           <button>Invest More</button>
-   *           <nav>
-   *             <a href="#">Sell/Trade</a>
-   *             <a href="#">Offering Docs</a>
-   *             <a href="#">Financials</a>
-   *           </nav>
-   *         </div>
-   *         <div class="col-8">
-   *           <section class="item-summary">
-   *             <div class="amount-principal">
-   *               $100,000
-   *               <small>You Invested</small>
-   *             </div>
-   *             <div class="amount-profit">
-   *               + $4,000
-   *               <small>You've Earned</small>
-   *             </div>
-   *             <div class="percent-apr">
-   *               11.90%
-   *               <small>Projected Return<super>&dagger;</super></small>
-   *             </div>
-   *             <div class="amount-current-value">
-   *               <div>
-   *                 $100,000
-   *                 <small>Currently Worth</small>
-   *               </div>
-   *             </div>
-   *           </section>
-   *           <img src="/images/performance-graph.png" class="img-fluid" />
-   *         </div>
-   *       </div>
-
-   *       <aside class="item-details">
-   *         <h3>Your investment at work</h3>
-   *         <div class="row">
-   *           <article class="caption-image">
-   *             <img src="/images/donuts.jpg" />
-   *             <p>
-   *               Siti Fatimah Sweet Treats & Baked Goods Street Cart
-   *             </p>
-   *           </article>
-   *           <article class="caption-image">
-   *             <img src="/images/chinese-street-food.jpg" />
-   *             <p>
-   *               Making a difference and transforming a passion into a business
-   *             </p>
-   *           </article>
-   *           <article class="quote">
-   *             <blockquote class="quote">
-   *               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-   *               <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-   *             </blockquote>
-   *           </article>
-   *         </div>
-   *       </aside>
+   *       CARD CONTENT HERE
    *     </div>
    *   </article>
    * </main>
@@ -108,6 +214,27 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
       color: $color;
     }
 
+    /**
+     * Card Header
+     *
+     * Provides an overview of the asset type including its status
+     *
+     * @section
+     * @page Portfolio List
+     *
+     * @example
+     * <main class="portfolio-list">
+     *   <article class="card">
+     *     <div class="card-body">
+     *       <header>
+     *         <small class="symbol">BLS:ZWIB</small>
+     *         <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
+     *         <small class="status">Activated: January 1, 2019</small>
+     *       </header>
+     *     </div>
+     *   </article>
+     * </main>
+     */
     header {
       @extend .mb-4;
 
@@ -127,15 +254,32 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
       }
     }
 
-    header + button {
+    /**
+     * Button Wrap Left
+     *
+     * A highly stylized button that looks like its wrapping the card
+     *
+     * @page Portfolio List
+     * @section
+     *
+     * @example
+     * <main class="portfolio-list">
+     *   <article class="card">
+     *     <div class="card-body">
+     *       <button class="btn-wrap-left">Get in the Chopper</button>
+     *     </div>
+     *   </article>
+     * </main>
+     */
+    .btn-wrap-left {
       @extend .btn;
       @extend .btn-concrete;
       @extend .btn-arrow-right;
       @extend .text-uppercase;
+      @extend .font-weight-bold;
       height: 40px;
       border-top-right-radius: 1000px;
       border-bottom-right-radius: 1000px;
-      // TODO: calculate this based on grid
       margin-left: -1 * $card-spacer-x;
       font-size: $portfolio-list-sm-font-size;
       line-height: $portfolio-list-sm-font-size;
@@ -144,11 +288,14 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
       }
     }
 
-    button + nav {
+    nav {
       @extend .nav;
       @extend .nav-sm;
       @extend .nav-link-plain;
-      @extend .mt-4;
+      @extend .mt-2;
+      @extend .border-bottom;
+      margin-left: -1 * $card-spacer-x;
+      padding-left: $card-spacer-x;
       & > a {
         @extend .nav-link;
       }

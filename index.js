@@ -51,7 +51,9 @@ function buildStyleguide() {
     preprocess: function(context, template, Handlebars) {
       context.title = 'Blossom Bootstrap Theme';
       context.footerHTML = '&copy; Blossom Labs, Inc. https://blossomfinance.com/';
-      context.globalStylesheets = [cssDestWebUrl()];
+      context.globalStylesheets = [
+        cssDestWebUrl(),
+      ];
     }
   });
 }
@@ -69,8 +71,13 @@ module.exports = {
       // serve the files and inject the reload snippet
       server: {
         baseDir: pkg.destDir,
-        index: 'overview.html'
+        index: 'overview.html',
       },
+
+      serveStatic: [{
+        route: 'webfonts',
+        dir: path.join(__dirname, 'node_modules/@fortawesome/fontawesome-free/webfonts'),
+      }],
 
       // allow serving in heroku
       port: process.env.PORT || '3000',

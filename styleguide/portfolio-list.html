@@ -8125,11 +8125,11 @@
         <nav class="livingcss__container livingcss__main-nav">
           <a class="livingcss__nav-link livingcss__nav-link--main " href="typeography.html">Typeography</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="portfolio-sidebar.html">Portfolio Sidebar</a>
-          <a class="livingcss__nav-link livingcss__nav-link--main " href="portfolio-list.html">Portfolio List</a>
+          <a class="livingcss__nav-link livingcss__nav-link--main livingcss__nav-link--active" href="portfolio-list.html">Portfolio List</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="grid.html">Grid</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="overview.html">Overview</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="card.html">Card</a>
-          <a class="livingcss__nav-link livingcss__nav-link--main livingcss__nav-link--active" href="buttons.html">Buttons</a>
+          <a class="livingcss__nav-link livingcss__nav-link--main " href="buttons.html">Buttons</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="badge.html">Badge</a>
         </nav>
       </div>
@@ -8141,127 +8141,147 @@
 
       <main class="livingcss__main" role="main">
 
-        <article class="livingcss__article" id="arrows">
-          <h1 class="livingcss__article-title">Arrows</h1><div class="livingcss__section-description"></div>
+        <article class="livingcss__article" id="card">
+          <h1 class="livingcss__article-title">Card</h1><div class="livingcss__section-description"></div>
 
-<livingcss-example><button type="button" class="btn btn-warning btn-arrow-left">
-  Go Back
-</button>
+<livingcss-example><main class="portfolio-list">
+  <article class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-4">
+          <header>
+            <small class="symbol">BLS:ZWIB</small>
+            <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
+            <small class="status">Activated: January 1, 2019</small>
+          </header>
+          <button>Invest More</button>
+          <nav>
+            <a href="#">Sell/Trade</a>
+            <a href="#">Offering Docs</a>
+            <a href="#">Financials</a>
+          </nav>
+        </div>
+        <div class="col-8">
+          <section class="item-summary">
+            <div class="amount-principal">
+              $100,000
+              <small>You Invested</small>
+            </div>
+            <div class="amount-profit">
+              + $4,000
+              <small>You've Earned</small>
+            </div>
+            <div class="percent-apr">
+              11.90%
+              <small>Projected Return<super>&dagger;</super></small>
+            </div>
+            <div class="amount-current-value">
+              <div>
+                $100,000
+                <small>Currently Worth</small>
+              </div>
+            </div>
+          </section>
+          <img src="/images/performance-graph.png" class="img-fluid" />
+        </div>
+      </div>
 
-<button type="button" class="btn btn-primary btn-arrow-right">
-  Withdraw Funds
-</button>
-
-<div class="card bg-light mt-4 mb-4" style="width: 20rem;">
-  <div class="card-body">
-    <h4 class="card-title">A Card Title</h4>
-    <p>Now is a good time do it:</p>
-    <button type="button" class="btn btn-primary btn-arrow-right btn-block btn-lg">
-      Withdraw Funds
-    </button>
-  </div>
-</div></livingcss-example>
-
-<div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning btn-arrow-left&quot;&gt;
-  Go Back
-&lt;/button&gt;
-
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary btn-arrow-right&quot;&gt;
-  Withdraw Funds
-&lt;/button&gt;
-
-&lt;div class&#x3D;&quot;card bg-light mt-4 mb-4&quot; style&#x3D;&quot;width: 20rem;&quot;&gt;
-  &lt;div class&#x3D;&quot;card-body&quot;&gt;
-    &lt;h4 class&#x3D;&quot;card-title&quot;&gt;A Card Title&lt;/h4&gt;
-    &lt;p&gt;Now is a good time do it:&lt;/p&gt;
-    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary btn-arrow-right btn-block btn-lg&quot;&gt;
-      Withdraw Funds
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-</div>
-
-        </article>
-        <article class="livingcss__article" id="basic">
-          <h1 class="livingcss__article-title">Basic</h1><div class="livingcss__section-description"></div>
-
-<livingcss-example><button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
-
-<button type="button" class="btn btn-link">Link</button></livingcss-example>
-
-<div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-light&quot;&gt;Light&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;
-
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;</code></pre>
-</div>
-
-        </article>
-        <article class="livingcss__article" id="outline-buttons">
-          <h1 class="livingcss__article-title">Outline buttons</h1><div class="livingcss__section-description"><p>In need of a button, but not the hefty background colors they bring?
-Replace the default modifier classes with the <code>.btn-outline-*</code> ones
-to remove all background images and colors on any button.</p></div>
-
-<livingcss-example><button type="button" class="btn btn-outline-primary">Primary</button>
-<button type="button" class="btn btn-outline-secondary">Secondary</button>
-<button type="button" class="btn btn-outline-success">Success</button>
-<button type="button" class="btn btn-outline-danger">Danger</button>
-<button type="button" class="btn btn-outline-warning">Warning</button>
-<button type="button" class="btn btn-outline-info">Info</button>
-<button type="button" class="btn btn-outline-light">Light</button>
-<button type="button" class="btn btn-outline-dark">Dark</button></livingcss-example>
+      <aside class="item-details">
+        <h3>Your investment at work</h3>
+        <div class="row">
+          <article class="caption-image">
+            <img src="/images/donuts.jpg" />
+            <p>
+              Siti Fatimah Sweet Treats & Baked Goods Street Cart
+            </p>
+          </article>
+          <article class="caption-image">
+            <img src="/images/chinese-street-food.jpg" />
+            <p>
+              Making a difference and transforming a passion into a business
+            </p>
+          </article>
+          <article class="quote">
+            <blockquote class="quote">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+          </article>
+        </div>
+      </aside>
+    </div>
+  </article>
+</main></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-primary&quot;&gt;Primary&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-secondary&quot;&gt;Secondary&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-success&quot;&gt;Success&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-danger&quot;&gt;Danger&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-warning&quot;&gt;Warning&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-info&quot;&gt;Info&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-light&quot;&gt;Light&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-dark&quot;&gt;Dark&lt;/button&gt;</code></pre>
-</div>
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;main class&#x3D;&quot;portfolio-list&quot;&gt;
+  &lt;article class&#x3D;&quot;card&quot;&gt;
+    &lt;div class&#x3D;&quot;card-body&quot;&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-4&quot;&gt;
+          &lt;header&gt;
+            &lt;small class&#x3D;&quot;symbol&quot;&gt;BLS:ZWIB&lt;/small&gt;
+            &lt;h2 class&#x3D;&quot;card-title&quot;&gt;Zero-emission Waste Incineration Facility in Bali&lt;/h2&gt;
+            &lt;small class&#x3D;&quot;status&quot;&gt;Activated: January 1, 2019&lt;/small&gt;
+          &lt;/header&gt;
+          &lt;button&gt;Invest More&lt;/button&gt;
+          &lt;nav&gt;
+            &lt;a href&#x3D;&quot;#&quot;&gt;Sell/Trade&lt;/a&gt;
+            &lt;a href&#x3D;&quot;#&quot;&gt;Offering Docs&lt;/a&gt;
+            &lt;a href&#x3D;&quot;#&quot;&gt;Financials&lt;/a&gt;
+          &lt;/nav&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-8&quot;&gt;
+          &lt;section class&#x3D;&quot;item-summary&quot;&gt;
+            &lt;div class&#x3D;&quot;amount-principal&quot;&gt;
+              $100,000
+              &lt;small&gt;You Invested&lt;/small&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;amount-profit&quot;&gt;
+              + $4,000
+              &lt;small&gt;You&#x27;ve Earned&lt;/small&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;percent-apr&quot;&gt;
+              11.90%
+              &lt;small&gt;Projected Return&lt;super&gt;&amp;dagger;&lt;/super&gt;&lt;/small&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;amount-current-value&quot;&gt;
+              &lt;div&gt;
+                $100,000
+                &lt;small&gt;Currently Worth&lt;/small&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/section&gt;
+          &lt;img src&#x3D;&quot;/images/performance-graph.png&quot; class&#x3D;&quot;img-fluid&quot; /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
 
-        </article>
-        <article class="livingcss__article" id="sizes">
-          <h1 class="livingcss__article-title">Sizes</h1><div class="livingcss__section-description"><p>Fancy larger or smaller buttons? Add <code>.btn-lg</code> or <code>.btn-sm</code> for additional sizes.</p></div>
-
-<livingcss-example><button type="button" class="btn btn-primary btn-lg">Large button</button>
-<button type="button" class="btn btn-secondary btn-lg">Large button</button>
-<button type="button" class="btn btn-primary btn-sm">Small button</button>
-<button type="button" class="btn btn-secondary btn-sm">Small button</button></livingcss-example>
-
-<div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary btn-lg&quot;&gt;Large button&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary btn-lg&quot;&gt;Large button&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary btn-sm&quot;&gt;Small button&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary btn-sm&quot;&gt;Small button&lt;/button&gt;</code></pre>
-</div>
-
-        </article>
-        <article class="livingcss__article" id="block-level">
-          <h1 class="livingcss__article-title">Block Level</h1><div class="livingcss__section-description"><p>Create block level buttons—those that span the full width of a parent—by adding <code>.btn-block</code></p></div>
-
-<livingcss-example><button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button></livingcss-example>
-
-<div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary btn-lg btn-block&quot;&gt;Block level button&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary btn-lg btn-block&quot;&gt;Block level button&lt;/button&gt;</code></pre>
+      &lt;aside class&#x3D;&quot;item-details&quot;&gt;
+        &lt;h3&gt;Your investment at work&lt;/h3&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+          &lt;article class&#x3D;&quot;caption-image&quot;&gt;
+            &lt;img src&#x3D;&quot;/images/donuts.jpg&quot; /&gt;
+            &lt;p&gt;
+              Siti Fatimah Sweet Treats &amp; Baked Goods Street Cart
+            &lt;/p&gt;
+          &lt;/article&gt;
+          &lt;article class&#x3D;&quot;caption-image&quot;&gt;
+            &lt;img src&#x3D;&quot;/images/chinese-street-food.jpg&quot; /&gt;
+            &lt;p&gt;
+              Making a difference and transforming a passion into a business
+            &lt;/p&gt;
+          &lt;/article&gt;
+          &lt;article class&#x3D;&quot;quote&quot;&gt;
+            &lt;blockquote class&#x3D;&quot;quote&quot;&gt;
+              &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+              &lt;footer class&#x3D;&quot;blockquote-footer&quot;&gt;Someone famous in &lt;cite title&#x3D;&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+            &lt;/blockquote&gt;
+          &lt;/article&gt;
+        &lt;/div&gt;
+      &lt;/aside&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+&lt;/main&gt;</code></pre>
 </div>
 
         </article>
@@ -8270,11 +8290,7 @@ to remove all background images and colors on any button.</p></div>
 
       <nav class="livingcss__nav">
         <div class="livingcss__nav-container">
-          <a class="livingcss__nav-link" href="#arrows">Arrows</a>
-          <a class="livingcss__nav-link" href="#basic">Basic</a>
-          <a class="livingcss__nav-link" href="#outline-buttons">Outline buttons</a>
-          <a class="livingcss__nav-link" href="#sizes">Sizes</a>
-          <a class="livingcss__nav-link" href="#block-level">Block Level</a>
+          <a class="livingcss__nav-link" href="#card">Card</a>
         </div>
       </nav>
 

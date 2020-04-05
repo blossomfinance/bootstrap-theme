@@ -1,0 +1,71 @@
+
+@import "../node_modules/bootstrap/scss/badge";
+
+@mixin badge-subtle-variant($color) {
+  $color-value: theme-color($color);
+  color: $color-value;
+  background-color: theme-color-level($color, -9)
+}
+
+@each $color, $value in $theme-colors {
+  .badge-subtle-#{$color} {
+    @include badge-subtle-variant($color);
+  }
+}
+
+/**
+ * Subtle Badge
+ *
+ * Reverse the colors to create a more subtle effect
+ *
+ * @page Badge
+ * @section
+ *
+ * @example
+ * <h1>
+ *   Money!
+ *   <span class="badge badge-subtle-mint">$</span>
+ * </h1>
+ * <p>
+ *   Status
+ *   <span class="badge badge-subtle-sky">active</span>
+ * </p>
+ * <h3>
+ *   <span class="badge badge-subtle-warning">active</span>
+ * </h3>
+ */
+
+/**
+ * Square Icon Badge
+ *
+ * Make a nicely squared badge with large icon in the center
+ *
+ * @page Badge
+ * @section
+ *
+ * @example
+ * <span class="badge badge-subtle-mint badge-lg badge-sq">
+ *   <i class="fas fa-money-bill-wave-alt"></i>
+ * </span>
+ */
+.badge-sq {
+  font-size: $font-size-base * 1.25;
+  line-height: $font-size-base * 1.5;
+  @extend .py-0;
+  @extend .text-center;
+  height: 48px;
+  width: 48px;
+  box-sizing: border-box;
+  padding-left: $badge-border-radius;
+  padding-right: $badge-border-radius;
+  i {
+    box-sizing: border-box;
+    min-width: 22px;
+    &:before {
+      box-sizing: border-box;
+      width: 100%;
+      line-height: 48px;
+      height: 48px;
+    }
+  }
+}

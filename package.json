@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/blossomfinance/bootstrap-theme#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "bootstrap": "^4.4.1"
   },
   "devDependencies": {

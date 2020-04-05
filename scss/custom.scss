@@ -6,6 +6,14 @@
 @import "variables";
 
 //////////////////////////////////////////////////////////////////
+// Icons
+//////////////////////////////////////////////////////////////////
+
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
+//////////////////////////////////////////////////////////////////
 // Required
 //////////////////////////////////////////////////////////////////
 
@@ -58,12 +66,12 @@
 @import "card";
 // @import "../node_modules/bootstrap/scss/breadcrumb";
 // @import "../node_modules/bootstrap/scss/pagination";
-@import "../node_modules/bootstrap/scss/badge";
+@import "badge";
 @import "../node_modules/bootstrap/scss/jumbotron";
 @import "alert";
 // @import "../node_modules/bootstrap/scss/progress";
-// @import "../node_modules/bootstrap/scss/media";
-// @import "../node_modules/bootstrap/scss/list-group";
+@import "../node_modules/bootstrap/scss/media";
+@import "../node_modules/bootstrap/scss/list-group";
 // @import "../node_modules/bootstrap/scss/close";
 // @import "../node_modules/bootstrap/scss/toasts";
 // @import "../node_modules/bootstrap/scss/modal";
@@ -77,5 +85,6 @@
 //////////////////////////////////////////////////////////////////
 // Blossom custom modules
 //////////////////////////////////////////////////////////////////
+
 @import "portfolio-sidebar";
 @import "portfolio-list";

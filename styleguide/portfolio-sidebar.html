@@ -8124,12 +8124,12 @@
       <div class="livingcss__main-nav-container">
         <nav class="livingcss__container livingcss__main-nav">
           <a class="livingcss__nav-link livingcss__nav-link--main " href="typeography.html">Typeography</a>
-          <a class="livingcss__nav-link livingcss__nav-link--main " href="portfolio-sidebar.html">Portfolio Sidebar</a>
+          <a class="livingcss__nav-link livingcss__nav-link--main livingcss__nav-link--active" href="portfolio-sidebar.html">Portfolio Sidebar</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="portfolio-list.html">Portfolio List</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="grid.html">Grid</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="overview.html">Overview</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="card.html">Card</a>
-          <a class="livingcss__nav-link livingcss__nav-link--main livingcss__nav-link--active" href="buttons.html">Buttons</a>
+          <a class="livingcss__nav-link livingcss__nav-link--main " href="buttons.html">Buttons</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="badge.html">Badge</a>
         </nav>
       </div>
@@ -8141,41 +8141,223 @@
 
       <main class="livingcss__main" role="main">
 
-        <article class="livingcss__article" id="arrows">
-          <h1 class="livingcss__article-title">Arrows</h1><div class="livingcss__section-description"></div>
+        <article class="livingcss__article" id="full-example">
+          <h1 class="livingcss__article-title">Full Example</h1><div class="livingcss__section-description"></div>
 
-<livingcss-example><button type="button" class="btn btn-warning btn-arrow-left">
-  Go Back
-</button>
+<livingcss-example><div class="portfolio row">
+  <aside class="col-8">
+    <section class="card-total-holdings">
+      <div class="card-body">
+        <small class="card-title">Total Holdings</small>
+        <h1>
+          $680,050
+          <small>As of Saturday, July 22nd, 2019</small>
+        </h1>
+      </div>
+    </section>
+    <section>
+      <header>
+        <h2>
+          Action
+          <small>Items</small>
+        </h2>
+      </header>
+      <ul class="list-group-flush">
+        <li>
+          <span class="badge badge-sq badge-subtle-sky">
+            <i class="fas fa-signature"></i>
+          </span>
+          <p>
+            Your signature is required to complete your investment in Sumatra Coffee Roastery & Farm.
+          </p>
+        </li>
+        <li>
+          <span class="badge badge-sq badge-subtle-mint">
+            <i class="fas fa-money-bill-wave-alt"></i>
+          </span>
+          <p>
+            Complete your deposit by September 31, 2019 to lock in your investment in Zero waste textile facility in Jakarta.
+          </p>
+        </li>
+        <li>
+          <span class="badge badge-sq badge-subtle-elephant">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <p>
+            Complete your deposit by September 31, 2019 to lock in your investment in Zero waste textile facility in Jakarta.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <header>
+        <h2>
+          New
+          <small>Offerings</small>
+        </h2>
+      </header>
+      <ul class="list-unstyled">
+        <li>
+          <img src="/images/mining-portrait.jpg" style="width: 112px" />
+          <div class="media-body">
+          <p>Ethical cobolt mining in Camaroon</p>
+          <small>Launching November, 2019</small>
+        </li>
+        <li>
+          <img src="/images/fishing-portrait.jpg" />
+          <div class="media-body">
+          <p>Sustainable fishing in Nusa Tenggara Timur, Indonesia</p>
+          <small>Launching February, 2020</small>
+        </li>
+      </ul>
+  </aside>
+  <main class="portfolio-list col-4">
+    <article class="card">
+      <div class="card-body" style="height: 50rem;">
+        <header>
+          <small class="symbol">BLS:ZWIB</small>
+          <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
+          <small class="status">Activated: January 1, 2019</small>
+        </header>
+      </div>
+    </article>
+  </main>
+</div></livingcss-example>
 
-<button type="button" class="btn btn-primary btn-arrow-right">
-  Withdraw Funds
-</button>
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;portfolio row&quot;&gt;
+  &lt;aside class&#x3D;&quot;col-8&quot;&gt;
+    &lt;section class&#x3D;&quot;card-total-holdings&quot;&gt;
+      &lt;div class&#x3D;&quot;card-body&quot;&gt;
+        &lt;small class&#x3D;&quot;card-title&quot;&gt;Total Holdings&lt;/small&gt;
+        &lt;h1&gt;
+          $680,050
+          &lt;small&gt;As of Saturday, July 22nd, 2019&lt;/small&gt;
+        &lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+      &lt;header&gt;
+        &lt;h2&gt;
+          Action
+          &lt;small&gt;Items&lt;/small&gt;
+        &lt;/h2&gt;
+      &lt;/header&gt;
+      &lt;ul class&#x3D;&quot;list-group-flush&quot;&gt;
+        &lt;li&gt;
+          &lt;span class&#x3D;&quot;badge badge-sq badge-subtle-sky&quot;&gt;
+            &lt;i class&#x3D;&quot;fas fa-signature&quot;&gt;&lt;/i&gt;
+          &lt;/span&gt;
+          &lt;p&gt;
+            Your signature is required to complete your investment in Sumatra Coffee Roastery &amp; Farm.
+          &lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;span class&#x3D;&quot;badge badge-sq badge-subtle-mint&quot;&gt;
+            &lt;i class&#x3D;&quot;fas fa-money-bill-wave-alt&quot;&gt;&lt;/i&gt;
+          &lt;/span&gt;
+          &lt;p&gt;
+            Complete your deposit by September 31, 2019 to lock in your investment in Zero waste textile facility in Jakarta.
+          &lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;span class&#x3D;&quot;badge badge-sq badge-subtle-elephant&quot;&gt;
+            &lt;i class&#x3D;&quot;fas fa-file-alt&quot;&gt;&lt;/i&gt;
+          &lt;/span&gt;
+          &lt;p&gt;
+            Complete your deposit by September 31, 2019 to lock in your investment in Zero waste textile facility in Jakarta.
+          &lt;/p&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+      &lt;header&gt;
+        &lt;h2&gt;
+          New
+          &lt;small&gt;Offerings&lt;/small&gt;
+        &lt;/h2&gt;
+      &lt;/header&gt;
+      &lt;ul class&#x3D;&quot;list-unstyled&quot;&gt;
+        &lt;li&gt;
+          &lt;img src&#x3D;&quot;/images/mining-portrait.jpg&quot; style&#x3D;&quot;width: 112px&quot; /&gt;
+          &lt;div class&#x3D;&quot;media-body&quot;&gt;
+          &lt;p&gt;Ethical cobolt mining in Camaroon&lt;/p&gt;
+          &lt;small&gt;Launching November, 2019&lt;/small&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;img src&#x3D;&quot;/images/fishing-portrait.jpg&quot; /&gt;
+          &lt;div class&#x3D;&quot;media-body&quot;&gt;
+          &lt;p&gt;Sustainable fishing in Nusa Tenggara Timur, Indonesia&lt;/p&gt;
+          &lt;small&gt;Launching February, 2020&lt;/small&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+  &lt;/aside&gt;
+  &lt;main class&#x3D;&quot;portfolio-list col-4&quot;&gt;
+    &lt;article class&#x3D;&quot;card&quot;&gt;
+      &lt;div class&#x3D;&quot;card-body&quot; style&#x3D;&quot;height: 50rem;&quot;&gt;
+        &lt;header&gt;
+          &lt;small class&#x3D;&quot;symbol&quot;&gt;BLS:ZWIB&lt;/small&gt;
+          &lt;h2 class&#x3D;&quot;card-title&quot;&gt;Zero-emission Waste Incineration Facility in Bali&lt;/h2&gt;
+          &lt;small class&#x3D;&quot;status&quot;&gt;Activated: January 1, 2019&lt;/small&gt;
+        &lt;/header&gt;
+      &lt;/div&gt;
+    &lt;/article&gt;
+  &lt;/main&gt;
+&lt;/div&gt;</code></pre>
+</div>
 
-<div class="card bg-light mt-4 mb-4" style="width: 20rem;">
-  <div class="card-body">
-    <h4 class="card-title">A Card Title</h4>
-    <p>Now is a good time do it:</p>
-    <button type="button" class="btn btn-primary btn-arrow-right btn-block btn-lg">
+        </article>
+        <article class="livingcss__article" id="holdings-card">
+          <h1 class="livingcss__article-title">Holdings Card</h1><div class="livingcss__section-description"></div>
+
+<livingcss-example><div style="width: 20rem;">
+  <section class="card card-total-holdings">
+    <div class="card-body">
+      <small class="card-title">Total Holdings</small>
+      <h1>
+        $680,050
+        <small>As of Saturday, July 22nd, 2019</small>
+      </h1>
+    </div>
+  </section>
+</div></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div style&#x3D;&quot;width: 20rem;&quot;&gt;
+  &lt;section class&#x3D;&quot;card card-total-holdings&quot;&gt;
+    &lt;div class&#x3D;&quot;card-body&quot;&gt;
+      &lt;small class&#x3D;&quot;card-title&quot;&gt;Total Holdings&lt;/small&gt;
+      &lt;h1&gt;
+        $680,050
+        &lt;small&gt;As of Saturday, July 22nd, 2019&lt;/small&gt;
+      &lt;/h1&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+        </article>
+        <article class="livingcss__article" id="actionable-alert">
+          <h1 class="livingcss__article-title">Actionable Alert</h1><div class="livingcss__section-description"></div>
+
+<livingcss-example><div class="portfolio" style="width: 20rem;">
+  <div class="alert alert-info" role="alert">
+    <span class="badge">$89,423</span>
+    <h5 class="alert-heading">Ready for Withdrawl</h5>
+    <p>You should withdrawl to your bank account or reinvest into another holding.</p>
+    <button type="button" class="btn btn-lg btn-arrow-right btn-block">
       Withdraw Funds
     </button>
   </div>
 </div></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning btn-arrow-left&quot;&gt;
-  Go Back
-&lt;/button&gt;
-
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary btn-arrow-right&quot;&gt;
-  Withdraw Funds
-&lt;/button&gt;
-
-&lt;div class&#x3D;&quot;card bg-light mt-4 mb-4&quot; style&#x3D;&quot;width: 20rem;&quot;&gt;
-  &lt;div class&#x3D;&quot;card-body&quot;&gt;
-    &lt;h4 class&#x3D;&quot;card-title&quot;&gt;A Card Title&lt;/h4&gt;
-    &lt;p&gt;Now is a good time do it:&lt;/p&gt;
-    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary btn-arrow-right btn-block btn-lg&quot;&gt;
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;portfolio&quot; style&#x3D;&quot;width: 20rem;&quot;&gt;
+  &lt;div class&#x3D;&quot;alert alert-info&quot; role&#x3D;&quot;alert&quot;&gt;
+    &lt;span class&#x3D;&quot;badge&quot;&gt;$89,423&lt;/span&gt;
+    &lt;h5 class&#x3D;&quot;alert-heading&quot;&gt;Ready for Withdrawl&lt;/h5&gt;
+    &lt;p&gt;You should withdrawl to your bank account or reinvest into another holding.&lt;/p&gt;
+    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-lg btn-arrow-right btn-block&quot;&gt;
       Withdraw Funds
     &lt;/button&gt;
   &lt;/div&gt;
@@ -8183,85 +8365,213 @@
 </div>
 
         </article>
-        <article class="livingcss__article" id="basic">
-          <h1 class="livingcss__article-title">Basic</h1><div class="livingcss__section-description"></div>
+        <article class="livingcss__article" id="section-heading">
+          <h1 class="livingcss__article-title">Section Heading</h1><div class="livingcss__section-description"></div>
 
-<livingcss-example><button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
-
-<button type="button" class="btn btn-link">Link</button></livingcss-example>
+<livingcss-example><div class="portfolio">
+  <aside>
+    <section>
+      <header>
+        <h2>
+          Action
+          <small>Items</small>
+        </h2>
+      </header>
+    </section>
+  </aside>
+</div></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-light&quot;&gt;Light&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;
-
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;</code></pre>
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;portfolio&quot;&gt;
+  &lt;aside&gt;
+    &lt;section&gt;
+      &lt;header&gt;
+        &lt;h2&gt;
+          Action
+          &lt;small&gt;Items&lt;/small&gt;
+        &lt;/h2&gt;
+      &lt;/header&gt;
+    &lt;/section&gt;
+  &lt;/aside&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
         </article>
-        <article class="livingcss__article" id="outline-buttons">
-          <h1 class="livingcss__article-title">Outline buttons</h1><div class="livingcss__section-description"><p>In need of a button, but not the hefty background colors they bring?
-Replace the default modifier classes with the <code>.btn-outline-*</code> ones
-to remove all background images and colors on any button.</p></div>
+        <article class="livingcss__article" id="list-group-flush">
+          <h1 class="livingcss__article-title">List Group Flush</h1><div class="livingcss__section-description"></div>
 
-<livingcss-example><button type="button" class="btn btn-outline-primary">Primary</button>
-<button type="button" class="btn btn-outline-secondary">Secondary</button>
-<button type="button" class="btn btn-outline-success">Success</button>
-<button type="button" class="btn btn-outline-danger">Danger</button>
-<button type="button" class="btn btn-outline-warning">Warning</button>
-<button type="button" class="btn btn-outline-info">Info</button>
-<button type="button" class="btn btn-outline-light">Light</button>
-<button type="button" class="btn btn-outline-dark">Dark</button></livingcss-example>
+<livingcss-example><div class="portfolio">
+  <aside>
+    <section>
+      <header>
+        <h2>
+          Simple
+          <small>Example</small>
+        </h2>
+      </header>
+      <ul class="list-group-flush">
+        <li>
+          To get what you love, you must first be patient with what you hate.
+        </li>
+        <li>
+          A man of bad character punishes his own soul.
+        </li>
+        <li>
+          The real friend is the one who, when you ask him to follow you, doesn’t ask where?
+        </li>
+        <li>
+          For good health control your diet.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <header>
+        <h2>
+          Badge
+          <small>Example</small>
+        </h2>
+      </header>
+      <ul class="list-group-flush">
+        <li>
+          <span class="badge badge-sq badge-subtle-sky">
+            <i class="fas fa-signature"></i>
+          </span>
+          <p>
+            Your signature is required to complete your investment in Sumatra Coffee Roastery & Farm.
+          </p>
+        </li>
+        <li>
+          <span class="badge badge-sq badge-subtle-mint">
+            <i class="fas fa-money-bill-wave-alt"></i>
+          </span>
+          <p>
+            Complete your deposit by September 31, 2019 to lock in your investment in Zero waste textile facility in Jakarta.
+          </p>
+        </li>
+        <li>
+          <span class="badge badge-sq badge-subtle-elephant">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <p>
+            Complete your deposit by September 31, 2019 to lock in your investment in Zero waste textile facility in Jakarta.
+          </p>
+        </li>
+      </ul>
+    </section>
+  </aside>
+</div></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-primary&quot;&gt;Primary&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-secondary&quot;&gt;Secondary&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-success&quot;&gt;Success&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-danger&quot;&gt;Danger&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-warning&quot;&gt;Warning&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-info&quot;&gt;Info&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-light&quot;&gt;Light&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-dark&quot;&gt;Dark&lt;/button&gt;</code></pre>
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;portfolio&quot;&gt;
+  &lt;aside&gt;
+    &lt;section&gt;
+      &lt;header&gt;
+        &lt;h2&gt;
+          Simple
+          &lt;small&gt;Example&lt;/small&gt;
+        &lt;/h2&gt;
+      &lt;/header&gt;
+      &lt;ul class&#x3D;&quot;list-group-flush&quot;&gt;
+        &lt;li&gt;
+          To get what you love, you must first be patient with what you hate.
+        &lt;/li&gt;
+        &lt;li&gt;
+          A man of bad character punishes his own soul.
+        &lt;/li&gt;
+        &lt;li&gt;
+          The real friend is the one who, when you ask him to follow you, doesn’t ask where?
+        &lt;/li&gt;
+        &lt;li&gt;
+          For good health control your diet.
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/section&gt;
+
+    &lt;section&gt;
+      &lt;header&gt;
+        &lt;h2&gt;
+          Badge
+          &lt;small&gt;Example&lt;/small&gt;
+        &lt;/h2&gt;
+      &lt;/header&gt;
+      &lt;ul class&#x3D;&quot;list-group-flush&quot;&gt;
+        &lt;li&gt;
+          &lt;span class&#x3D;&quot;badge badge-sq badge-subtle-sky&quot;&gt;
+            &lt;i class&#x3D;&quot;fas fa-signature&quot;&gt;&lt;/i&gt;
+          &lt;/span&gt;
+          &lt;p&gt;
+            Your signature is required to complete your investment in Sumatra Coffee Roastery &amp; Farm.
+          &lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;span class&#x3D;&quot;badge badge-sq badge-subtle-mint&quot;&gt;
+            &lt;i class&#x3D;&quot;fas fa-money-bill-wave-alt&quot;&gt;&lt;/i&gt;
+          &lt;/span&gt;
+          &lt;p&gt;
+            Complete your deposit by September 31, 2019 to lock in your investment in Zero waste textile facility in Jakarta.
+          &lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;span class&#x3D;&quot;badge badge-sq badge-subtle-elephant&quot;&gt;
+            &lt;i class&#x3D;&quot;fas fa-file-alt&quot;&gt;&lt;/i&gt;
+          &lt;/span&gt;
+          &lt;p&gt;
+            Complete your deposit by September 31, 2019 to lock in your investment in Zero waste textile facility in Jakarta.
+          &lt;/p&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/section&gt;
+  &lt;/aside&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
         </article>
-        <article class="livingcss__article" id="sizes">
-          <h1 class="livingcss__article-title">Sizes</h1><div class="livingcss__section-description"><p>Fancy larger or smaller buttons? Add <code>.btn-lg</code> or <code>.btn-sm</code> for additional sizes.</p></div>
+        <article class="livingcss__article" id="list-group-media">
+          <h1 class="livingcss__article-title">List Group Media</h1><div class="livingcss__section-description"></div>
 
-<livingcss-example><button type="button" class="btn btn-primary btn-lg">Large button</button>
-<button type="button" class="btn btn-secondary btn-lg">Large button</button>
-<button type="button" class="btn btn-primary btn-sm">Small button</button>
-<button type="button" class="btn btn-secondary btn-sm">Small button</button></livingcss-example>
+<livingcss-example><div class="portfolio">
+  <aside style="width: 20rem;">
+    <section>
+      <ul class="list-unstyled">
+        <li>
+          <img src="/images/mining-portrait.jpg" />
+          <div class="media-body">
+          <p>Ethical cobolt mining in Camaroon</p>
+          <small>Launching November 2019</small>
+        </li>
+        <li>
+          <img src="/images/fishing-portrait.jpg" />
+          <div class="media-body">
+          <p>Ethical cobolt mining in Camaroon</p>
+          <small>Launching November 2019</small>
+        </li>
+      </ul>
+    </section>
+  </aside>
+</div></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary btn-lg&quot;&gt;Large button&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary btn-lg&quot;&gt;Large button&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary btn-sm&quot;&gt;Small button&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary btn-sm&quot;&gt;Small button&lt;/button&gt;</code></pre>
-</div>
-
-        </article>
-        <article class="livingcss__article" id="block-level">
-          <h1 class="livingcss__article-title">Block Level</h1><div class="livingcss__section-description"><p>Create block level buttons—those that span the full width of a parent—by adding <code>.btn-block</code></p></div>
-
-<livingcss-example><button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button></livingcss-example>
-
-<div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary btn-lg btn-block&quot;&gt;Block level button&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary btn-lg btn-block&quot;&gt;Block level button&lt;/button&gt;</code></pre>
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;portfolio&quot;&gt;
+  &lt;aside style&#x3D;&quot;width: 20rem;&quot;&gt;
+    &lt;section&gt;
+      &lt;ul class&#x3D;&quot;list-unstyled&quot;&gt;
+        &lt;li&gt;
+          &lt;img src&#x3D;&quot;/images/mining-portrait.jpg&quot; /&gt;
+          &lt;div class&#x3D;&quot;media-body&quot;&gt;
+          &lt;p&gt;Ethical cobolt mining in Camaroon&lt;/p&gt;
+          &lt;small&gt;Launching November 2019&lt;/small&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;img src&#x3D;&quot;/images/fishing-portrait.jpg&quot; /&gt;
+          &lt;div class&#x3D;&quot;media-body&quot;&gt;
+          &lt;p&gt;Ethical cobolt mining in Camaroon&lt;/p&gt;
+          &lt;small&gt;Launching November 2019&lt;/small&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/section&gt;
+  &lt;/aside&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
         </article>
@@ -8270,11 +8580,12 @@ to remove all background images and colors on any button.</p></div>
 
       <nav class="livingcss__nav">
         <div class="livingcss__nav-container">
-          <a class="livingcss__nav-link" href="#arrows">Arrows</a>
-          <a class="livingcss__nav-link" href="#basic">Basic</a>
-          <a class="livingcss__nav-link" href="#outline-buttons">Outline buttons</a>
-          <a class="livingcss__nav-link" href="#sizes">Sizes</a>
-          <a class="livingcss__nav-link" href="#block-level">Block Level</a>
+          <a class="livingcss__nav-link" href="#full-example">Full Example</a>
+          <a class="livingcss__nav-link" href="#holdings-card">Holdings Card</a>
+          <a class="livingcss__nav-link" href="#actionable-alert">Actionable Alert</a>
+          <a class="livingcss__nav-link" href="#section-heading">Section Heading</a>
+          <a class="livingcss__nav-link" href="#list-group-flush">List Group Flush</a>
+          <a class="livingcss__nav-link" href="#list-group-media">List Group Media</a>
         </div>
       </nav>
 

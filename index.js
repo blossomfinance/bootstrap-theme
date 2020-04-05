@@ -77,6 +77,7 @@ module.exports = {
 
       // extra info on command line
       logFileChanges: true,
+      logConnections: true,
 
       // two things to watch:
       // 1. source code, need to rebuild living style guide

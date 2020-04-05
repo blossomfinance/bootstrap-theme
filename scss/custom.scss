@@ -18,28 +18,35 @@
 //////////////////////////////////////////////////////////////////
 
 @import "../node_modules/bootstrap/scss/root";
-
 @import "../node_modules/bootstrap/scss/reboot";
+
+/**
+ * Getting Started
+ *
+ * This theme is built on [Bootstrap 4](https://getbootstrap.com/docs/4.0/) using reccomending theming practices.
+ * The first place to start is by readint the [Bootstrap 4](https://getbootstrap.com/docs/4.0/) docs.
+ *
+ * @page Overview
+ * @section
+ * @example
+ * <div class="container-fluid">
+ *   <div class="row">
+ *     <div class="col">
+ *       <h1>
+ *         Welcome to Bootstrap 4, themed right!<br/>
+ *         <small>With a LivingCSS Styleguide</small>
+ *       </h1>
+ *     </div>
+ *   </div>
+ * </div>
+ */
 
 @import "type";
 // @import "../node_modules/bootstrap/scss/images";
-/**
- * @page Images
- */
 // @import "../node_modules/bootstrap/scss/code";
-// @import "../node_modules/bootstrap/scss/grid";
-/**
- * @page Grid
- */
+@import "grid";
 // @import "../node_modules/bootstrap/scss/tables";
-/**
- * @page Tables
- */
 // @import "../node_modules/bootstrap/scss/forms";
-/**
- * @page Forms
- */
-
 @import "buttons";
 // @import "../node_modules/bootstrap/scss/transitions";
 // @import "../node_modules/bootstrap/scss/dropdown";
@@ -52,14 +59,8 @@
 // @import "../node_modules/bootstrap/scss/breadcrumb";
 // @import "../node_modules/bootstrap/scss/pagination";
 // @import "../node_modules/bootstrap/scss/badge";
-// @import "../node_modules/bootstrap/scss/jumbotron";
-/**
- * @page Jumbotron
- */
-// @import "../node_modules/bootstrap/scss/alert";
-/**
- * @page Alert
- */
+@import "../node_modules/bootstrap/scss/jumbotron";
+@import "../node_modules/bootstrap/scss/alert";
 // @import "../node_modules/bootstrap/scss/progress";
 // @import "../node_modules/bootstrap/scss/media";
 // @import "../node_modules/bootstrap/scss/list-group";
@@ -68,9 +69,6 @@
 // @import "../node_modules/bootstrap/scss/modal";
 // @import "../node_modules/bootstrap/scss/tooltip";
 // @import "../node_modules/bootstrap/scss/popover";
-/**
- * @page Popover
- */
 // @import "../node_modules/bootstrap/scss/carousel";
 // @import "../node_modules/bootstrap/scss/spinners";
 @import "../node_modules/bootstrap/scss/utilities";

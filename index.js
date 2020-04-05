@@ -67,7 +67,10 @@ module.exports = {
   browserSync: function browserSync() {
     return initBrowserSync({
       // serve the files and inject the reload snippet
-      server: pkg.destDir,
+      server: {
+        baseDir: pkg.destDir,
+        index: 'overview.html'
+      },
 
       // allow serving in heroku
       port: process.env.PORT || '3000',

@@ -5704,9 +5704,6 @@ mark,
   .offset-xl-11 {
     margin-left: 91.66667%; } }
 
-/**
- * @page Grid
- */
 .btn, .portfolio-list .card-total-holdings .btn-wrap-left, .portfolio-list .card .btn-wrap-left {
   display: inline-block;
   font-weight: 600;
@@ -12651,7 +12648,7 @@ a.text-black:hover, a.text-black:focus {
      *         <li>
      *           <img src="/images/fishing-portrait.jpg" />
      *           <div class="media-body">
-     *           <p>Ethical cobolt mining in Camaroon</p>
+     *           <p>Tasty fishing in fancy Faroe Islands</p>
      *           <small>Launching November 2019</small>
      *         </li>
      *       </ul>

@@ -69,6 +69,9 @@ module.exports = {
       // serve the files and inject the reload snippet
       server: pkg.destDir,
 
+      // allow serving in heroku
+      port: process.env.PORT || '3000',
+
       // avoid inlining css, which is the default
       loadcss: false,
 

@@ -5,7 +5,7 @@
   "main": "index.js",
   "srcDir": "scss",
   "srcFile": "custom.scss",
-  "destDir": "dist",
+  "destDir": "styleguide",
   "destFile": "all.css",
   "scripts": {
     "start": "node start.js",

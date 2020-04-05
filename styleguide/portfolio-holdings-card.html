@@ -8124,7 +8124,7 @@
       <div class="livingcss__main-nav-container">
         <nav class="livingcss__container livingcss__main-nav">
           <a class="livingcss__nav-link livingcss__nav-link--main " href="typeography.html">Typeography</a>
-          <a class="livingcss__nav-link livingcss__nav-link--main livingcss__nav-link--active" href="portfolio.html">Portfolio</a>
+          <a class="livingcss__nav-link livingcss__nav-link--main livingcss__nav-link--active" href="portfolio-holdings-card.html">Portfolio Holdings Card</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="grid.html">Grid</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="overview.html">Overview</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="card.html">Card</a>
@@ -8139,146 +8139,40 @@
 
       <main class="livingcss__main" role="main">
 
-        <article class="livingcss__article" id="portfolio-holdings-card">
-          <h1 class="livingcss__article-title">Portfolio Holdings Card</h1><div class="livingcss__section-description"></div>
+        <article class="livingcss__article" id="portfolio-card">
+          <h1 class="livingcss__article-title">Portfolio Card</h1><div class="livingcss__section-description"></div>
 
 <livingcss-example><main class="portfolio-list">
-  <article class="card">
+  <section class="card">
     <div class="card-body">
       <div class="row">
-        <div class="col-4">
-          <header>
-            <small class="symbol">BLS:ZWIB</small>
-            <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
-            <small class="status">Activated: January 1, 2019</small>
-          </header>
-          <button>Invest More</button>
-          <nav>
-            <a href="#">Sell/Trade</a>
-            <a href="#">Offering Docs</a>
-            <a href="#">Financials</a>
-          </nav>
+        <div class="col">
+          <small class="ticker-symbol">BLS:ZWIB</small>
+          <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
+          <small class="status">Activated: January 1, 2019</small>
         </div>
-        <div class="col-8">
-          <section class="item-summary">
-            <div class="amount-principal">
-              $100,000
-              <small>You Invested</small>
-            </div>
-            <div class="amount-profit">
-              + $4,000
-              <small>You've Earned</small>
-            </div>
-            <div class="percent-apr">
-              11.90%
-              <small>Projected Return<super>&dagger;</super></small>
-            </div>
-            <div class="amount-current-value">
-              <div>
-                $100,000
-                <small>Currently Worth</small>
-              </div>
-            </div>
-          </section>
-          <img src="/images/performance-graph.png" class="img-fluid" />
-        </div>
+        <div class="col">
+        </div
       </div>
-
-      <aside class="item-details">
-        <h3>Your investment at work</h3>
-        <div class="row">
-          <article class="caption-image">
-            <img src="/images/donuts.jpg" />
-            <p>
-              Siti Fatimah Sweet Treats & Baked Goods Street Cart
-            </p>
-          </article>
-          <article class="caption-image">
-            <img src="/images/chinese-street-food.jpg" />
-            <p>
-              Making a difference and transforming a passion into a business
-            </p>
-          </article>
-          <article class="quote">
-            <blockquote class="quote">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-            </blockquote>
-          </article>
-        </div>
-      </aside>
     </div>
-  </article>
+  </section>
 </main></livingcss-example>
 
 <div class="livingcss__section-markup">
   <pre class="livingcss__section-code"><code class="language-markup">&lt;main class&#x3D;&quot;portfolio-list&quot;&gt;
-  &lt;article class&#x3D;&quot;card&quot;&gt;
+  &lt;section class&#x3D;&quot;card&quot;&gt;
     &lt;div class&#x3D;&quot;card-body&quot;&gt;
       &lt;div class&#x3D;&quot;row&quot;&gt;
-        &lt;div class&#x3D;&quot;col-4&quot;&gt;
-          &lt;header&gt;
-            &lt;small class&#x3D;&quot;symbol&quot;&gt;BLS:ZWIB&lt;/small&gt;
-            &lt;h2 class&#x3D;&quot;card-title&quot;&gt;Zero-emission Waste Incineration Facility in Bali&lt;/h2&gt;
-            &lt;small class&#x3D;&quot;status&quot;&gt;Activated: January 1, 2019&lt;/small&gt;
-          &lt;/header&gt;
-          &lt;button&gt;Invest More&lt;/button&gt;
-          &lt;nav&gt;
-            &lt;a href&#x3D;&quot;#&quot;&gt;Sell/Trade&lt;/a&gt;
-            &lt;a href&#x3D;&quot;#&quot;&gt;Offering Docs&lt;/a&gt;
-            &lt;a href&#x3D;&quot;#&quot;&gt;Financials&lt;/a&gt;
-          &lt;/nav&gt;
+        &lt;div class&#x3D;&quot;col&quot;&gt;
+          &lt;small class&#x3D;&quot;ticker-symbol&quot;&gt;BLS:ZWIB&lt;/small&gt;
+          &lt;h2 class&#x3D;&quot;card-title&quot;&gt;Zero-emission Waste Incineration Facility in Bali&lt;/h2&gt;
+          &lt;small class&#x3D;&quot;status&quot;&gt;Activated: January 1, 2019&lt;/small&gt;
         &lt;/div&gt;
-        &lt;div class&#x3D;&quot;col-8&quot;&gt;
-          &lt;section class&#x3D;&quot;item-summary&quot;&gt;
-            &lt;div class&#x3D;&quot;amount-principal&quot;&gt;
-              $100,000
-              &lt;small&gt;You Invested&lt;/small&gt;
-            &lt;/div&gt;
-            &lt;div class&#x3D;&quot;amount-profit&quot;&gt;
-              + $4,000
-              &lt;small&gt;You&#x27;ve Earned&lt;/small&gt;
-            &lt;/div&gt;
-            &lt;div class&#x3D;&quot;percent-apr&quot;&gt;
-              11.90%
-              &lt;small&gt;Projected Return&lt;super&gt;&amp;dagger;&lt;/super&gt;&lt;/small&gt;
-            &lt;/div&gt;
-            &lt;div class&#x3D;&quot;amount-current-value&quot;&gt;
-              &lt;div&gt;
-                $100,000
-                &lt;small&gt;Currently Worth&lt;/small&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/section&gt;
-          &lt;img src&#x3D;&quot;/images/performance-graph.png&quot; class&#x3D;&quot;img-fluid&quot; /&gt;
-        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col&quot;&gt;
+        &lt;/div
       &lt;/div&gt;
-
-      &lt;aside class&#x3D;&quot;item-details&quot;&gt;
-        &lt;h3&gt;Your investment at work&lt;/h3&gt;
-        &lt;div class&#x3D;&quot;row&quot;&gt;
-          &lt;article class&#x3D;&quot;caption-image&quot;&gt;
-            &lt;img src&#x3D;&quot;/images/donuts.jpg&quot; /&gt;
-            &lt;p&gt;
-              Siti Fatimah Sweet Treats &amp; Baked Goods Street Cart
-            &lt;/p&gt;
-          &lt;/article&gt;
-          &lt;article class&#x3D;&quot;caption-image&quot;&gt;
-            &lt;img src&#x3D;&quot;/images/chinese-street-food.jpg&quot; /&gt;
-            &lt;p&gt;
-              Making a difference and transforming a passion into a business
-            &lt;/p&gt;
-          &lt;/article&gt;
-          &lt;article class&#x3D;&quot;quote&quot;&gt;
-            &lt;blockquote class&#x3D;&quot;quote&quot;&gt;
-              &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
-              &lt;footer class&#x3D;&quot;blockquote-footer&quot;&gt;Someone famous in &lt;cite title&#x3D;&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
-            &lt;/blockquote&gt;
-          &lt;/article&gt;
-        &lt;/div&gt;
-      &lt;/aside&gt;
     &lt;/div&gt;
-  &lt;/article&gt;
+  &lt;/section&gt;
 &lt;/main&gt;</code></pre>
 </div>
 
@@ -8288,7 +8182,7 @@
 
       <nav class="livingcss__nav">
         <div class="livingcss__nav-container">
-          <a class="livingcss__nav-link" href="#portfolio-holdings-card">Portfolio Holdings Card</a>
+          <a class="livingcss__nav-link" href="#portfolio-card">Portfolio Card</a>
         </div>
       </nav>
 

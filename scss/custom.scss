@@ -42,7 +42,7 @@
  */
 
 @import "type";
-// @import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/images";
 // @import "../node_modules/bootstrap/scss/code";
 @import "grid";
 // @import "../node_modules/bootstrap/scss/tables";
@@ -53,7 +53,7 @@
 // @import "../node_modules/bootstrap/scss/button-group";
 // @import "../node_modules/bootstrap/scss/input-group";
 // @import "../node_modules/bootstrap/scss/custom-forms";
-// @import "../node_modules/bootstrap/scss/nav";
+@import "nav";
 // @import "../node_modules/bootstrap/scss/navbar";
 @import "card";
 // @import "../node_modules/bootstrap/scss/breadcrumb";

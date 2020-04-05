@@ -1,0 +1,35 @@
+@import "../node_modules/bootstrap/scss/nav";
+
+$nav-sm-font-size: 11px !default;
+$nav-sm-line-height: 24px !default;
+
+@mixin plain-nav-link(
+  $color: $body-color,
+  $text-decoration: $link-decoration,
+  $color-hover: $link-hover-color,
+  $text-decoration-hover: $link-hover-decoration
+) {
+  a.nav-link {
+    color: $color;
+    text-decoration: $text-decoration;
+    @extend .justify-content-start;
+    &:first-child {
+      @extend .pl-0;
+      @extend .ml-0;
+    }
+
+    @include hover() {
+      color: $color-hover;
+      text-decoration: $text-decoration-hover;
+    }
+  }
+}
+
+.nav-link-plain {
+  @include plain-nav-link($elephant, 'none', $midnight);
+}
+
+.nav-sm {
+  font-size: $nav-sm-font-size;
+  line-height: $nav-sm-line-height;
+}

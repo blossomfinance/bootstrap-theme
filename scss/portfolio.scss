@@ -1,23 +1,245 @@
 
+$portfolio-list-sm-font-size: 11px !default;
+$portfolio-list-sm-letter-spacing: 0.5px !default;
+
+$portfolio-list-card-item-heading-font-size: 22px !default;
+$portfolio-list-card-item-heading-line-height: 26px !default;
+$portfolio-list-card-item-heading-margin-bottom: 6px !default;
+
+$portfolio-list-card-item-label-font-size: 10px !default;
+$portfolio-list-card-item-label-line-height: 20px !default;
+$portfolio-list-card-item-value-font-size: 18px !default;
+$portfolio-list-card-item-value-font-weight: $font-weight-bold !default;
+$portfolio-list-card-item-value-line-height: 20px !default;
+
+$portfolio-list-card-details-heading-font-size: 18px !default;
+$portfolio-list-card-details-article-font-size: 14px !default;
+$portfolio-list-card-details-article-font-weight: $font-weight-bold !default;
+$portfolio-list-card-details-article-line-height: 20px !default;
+$portfolio-list-card-details-article-blockquote-font-size: 16px !default;
+$portfolio-list-card-details-article-blockquote-line-height: 28px !default;
+
 .portfolio-list {
 
   /**
-   * Portfolio Card
+   * Portfolio Holdings Card
    *
    * @section
    * @page Portfolio
    *
    * @example
    * <main class="portfolio-list">
-   *   <section class="card">
+   *   <article class="card">
    *     <div class="card-body">
-   *       <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
+   *       <div class="row">
+   *         <div class="col-4">
+   *           <header>
+   *             <small class="symbol">BLS:ZWIB</small>
+   *             <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
+   *             <small class="status">Activated: January 1, 2019</small>
+   *           </header>
+   *           <button>Invest More</button>
+   *           <nav>
+   *             <a href="#">Sell/Trade</a>
+   *             <a href="#">Offering Docs</a>
+   *             <a href="#">Financials</a>
+   *           </nav>
+   *         </div>
+   *         <div class="col-8">
+   *           <section class="item-summary">
+   *             <div class="amount-principal">
+   *               $100,000
+   *               <small>You Invested</small>
+   *             </div>
+   *             <div class="amount-profit">
+   *               + $4,000
+   *               <small>You've Earned</small>
+   *             </div>
+   *             <div class="percent-apr">
+   *               11.90%
+   *               <small>Projected Return<super>&dagger;</super></small>
+   *             </div>
+   *             <div class="amount-current-value">
+   *               <div>
+   *                 $100,000
+   *                 <small>Currently Worth</small>
+   *               </div>
+   *             </div>
+   *           </section>
+   *           <img src="/images/performance-graph.png" class="img-fluid" />
+   *         </div>
+   *       </div>
+
+   *       <aside class="item-details">
+   *         <h3>Your investment at work</h3>
+   *         <div class="row">
+   *           <article class="caption-image">
+   *             <img src="/images/donuts.jpg" />
+   *             <p>
+   *               Siti Fatimah Sweet Treats & Baked Goods Street Cart
+   *             </p>
+   *           </article>
+   *           <article class="caption-image">
+   *             <img src="/images/chinese-street-food.jpg" />
+   *             <p>
+   *               Making a difference and transforming a passion into a business
+   *             </p>
+   *           </article>
+   *           <article class="quote">
+   *             <blockquote class="quote">
+   *               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+   *               <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+   *             </blockquote>
+   *           </article>
+   *         </div>
+   *       </aside>
    *     </div>
-   *   </section>
+   *   </article>
    * </main>
    */
   .card {
     @extend .card;
-    @extend .shadow;
+    @extend .shadow-sm;
+
+    @mixin card-small-text($color) {
+      font-size: $portfolio-list-sm-font-size;
+      line-height: $portfolio-list-sm-font-size;
+      letter-spacing: $portfolio-list-sm-letter-spacing;
+      color: $color;
+    }
+
+    header {
+      @extend .mb-4;
+
+      .symbol {
+        text-transform: uppercase;
+        @include card-small-text($gray-700);
+      }
+
+      .status {
+        @include card-small-text($gray-600);
+      }
+
+      h2 {
+        font-size: $portfolio-list-card-item-heading-font-size;
+        line-height: $portfolio-list-card-item-heading-line-height;
+        margin-bottom: $portfolio-list-card-item-heading-margin-bottom;
+      }
+    }
+
+    header + button {
+      @extend .btn;
+      @extend .btn-concrete;
+      @extend .btn-arrow-right;
+      @extend .text-uppercase;
+      height: 40px;
+      border-top-right-radius: 1000px;
+      border-bottom-right-radius: 1000px;
+      // TODO: calculate this based on grid
+      margin-left: -1 * $card-spacer-x;
+      font-size: $portfolio-list-sm-font-size;
+      line-height: $portfolio-list-sm-font-size;
+      &:after {
+        padding-left: 2 * $card-spacer-x;
+      }
+    }
+
+    button + nav {
+      @extend .nav;
+      @extend .nav-sm;
+      @extend .nav-link-plain;
+      @extend .mt-4;
+      & > a {
+        @extend .nav-link;
+      }
+    }
+
+    @mixin label-value-variant($label-color, $value-color) {
+      @extend .col;
+      @extend .text-right;
+      @extend .p-3;
+      color: $value-color;
+      font-size: $portfolio-list-card-item-value-font-size;
+      line-height: $portfolio-list-card-item-value-line-height;
+      font-weight: $portfolio-list-card-item-value-font-weight;
+      small {
+        display: block;
+        color: $label-color;
+        font-size: $portfolio-list-card-item-label-font-size;
+        line-height: $portfolio-list-card-item-label-line-height;
+        @extend .text-uppercase;
+      }
+    }
+
+    .item-summary {
+      @extend .d-flex;
+      @extend .justify-content-end;
+      @extend .mb-4;
+
+      .amount-principal {
+        @include label-value-variant($gray-600, $gray-900);
+      }
+
+      .amount-profit {
+        @include label-value-variant($gray-600, $ocean);
+      }
+
+      .percent-apr {
+        @include label-value-variant($blueberry, $blueberry);
+        @extend .font-italic;
+        small {
+          @extend .text-uppercase;
+        }
+      }
+
+      .amount-current-value {
+        @include label-value-variant($blueberry, $blueberry);
+        @extend .bg-robin-egg;
+        @extend .rounded;
+        // this one is slightly bigger
+        font-size: $portfolio-list-card-item-value-font-size * (1 + (1/9));
+      }
+    }
+
+    .item-details {
+      @extend .mt-4;
+      @extend .font-weight-light;
+      h3 {
+        font-size: $portfolio-list-card-details-heading-font-size;
+        @extend .font-italic;
+      }
+      article {
+        &.caption-image {
+          @extend .col;
+          font-size: $portfolio-list-card-details-article-font-size;
+          font-weight: $portfolio-list-card-details-article-font-weight;
+          line-height: $portfolio-list-card-details-article-line-height;
+          img {
+            @extend .img-fluid;
+            @extend .rounded;
+            @extend .mb-2;
+          }
+          img + p {
+            @extend .m-0;
+          }
+        }
+
+        &.quote {
+          @extend .col;
+          @extend .d-flex;
+          @extend .align-items-stretch;
+          @extend .rounded;
+          @extend .p-4;
+          @extend .text-white;
+          background-image: url('/images/quote-bg-grape.jpg');
+          blockquote {
+            @extend .font-italic;
+            font-size: $portfolio-list-card-details-article-blockquote-font-size;
+            line-height: $portfolio-list-card-details-article-blockquote-line-height;
+            letter-spacing: -0.5px;
+          }
+        }
+      }
+    }
   }
 }

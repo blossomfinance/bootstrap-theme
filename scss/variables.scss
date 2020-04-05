@@ -5,6 +5,7 @@ $white:       #ffffff;
 $cloud:       #f3f4f5;
 $moon:        #f7f8f9;
 $milk:        #f8f9fa;
+$fog:         #c2c7cc;
 $concrete:    #dde4eb;
 $ivory:       #dfe1e2;
 $aluminium:   #959ea6;
@@ -15,8 +16,8 @@ $black:       #000000;
 
 // mapping blossom grays->bootstrap default grays
 $gray-100:    $cloud;
-$gray-200:    $moon;
-$gray-300:    $milk;
+$gray-200:    $milk;
+$gray-300:    $fog;
 $gray-400:    $concrete;
 $gray-500:    $ivory;
 $gray-600:    $aluminium;
@@ -26,30 +27,32 @@ $gray-900:    $midnight;
 
 // blossom's custom color set
 
-$blueberry: #206f8a;
-$sky: #58cfee;
-$grape: #5b6bb6;
-$ocean: #04b5a6;
-$mint: #23be5f;
-$grass: #3ec300;
-$leaf: #34c36b;
-$sun: #ffd62f;
-$clay: #e04c2d;
-$sea :#d2eaf2;
-$lavander: #dee1f0;
-$water: #def5fc;
+$blueberry:       #206f8a;
+$saphire:         #1d96bf;
+$robin-egg:       rgba($saphire, 0.2);
+$sky:             #58cfee;
+$grape:           #5b6bb6;
+$ocean:           #04b5a6;
+$mint:            #23be5f;
+$grass:           #3ec300;
+$leaf:            #34c36b;
+$sun:             #ffd62f;
+$clay:            #e04c2d;
+$sea:             #d2eaf2;
+$lavander:        #dee1f0;
+$water:           #def5fc;
 
 // override bootstap default color set
-$blue:    $sky;
-$indigo:  #6610f2; // TODO: not matched to our palate (yet)
-$purple:  $grape;
-$pink:    #e83e8c; // TODO: not matched to our palate (yet)
-$red:     $clay;
-$orange:  #fd7e14; // TODO: not matched to our palate (yet)
-$yellow:  $sun;
-$green:   $grass;
-$teal:    $ocean;
-$cyan:    $blueberry;
+$blue:            $sky;
+$indigo:          #6610f2; // TODO: not matched to our palate (yet)
+$purple:          $grape;
+$pink:            #e83e8c; // TODO: not matched to our palate (yet)
+$red:             $clay;
+$orange:          #fd7e14; // TODO: not matched to our palate (yet)
+$yellow:          $sun;
+$green:           $grass;
+$teal:            $ocean;
+$cyan:            $blueberry;
 
 // override bootstrap theme colors
 $primary:       $sky;
@@ -70,6 +73,8 @@ $theme-colors: (
   "leaf":         $leaf,
   "ocean":        $ocean,
   "sky":          $sky,
+  "saphire":      $saphire,
+  "robin-egg":    $robin-egg,
   "blueberry":    $blueberry,
   "grape":        $grape,
   "indigo":       $indigo,
@@ -82,6 +87,7 @@ $theme-colors: (
   "cloud":        $cloud,
   "moon":         $moon,
   "milk":         $milk,
+  "fog":          $fog,
   "concrete":     $concrete,
   "ivory":        $ivory,
   "aluminium":    $aluminium,
@@ -240,18 +246,18 @@ $theme-colors: (
 // $border-width:                1px !default;
 // $border-color:                $gray-300 !default;
 //
-// $border-radius:               .25rem !default;
+$border-radius:               4px;
 // $border-radius-lg:            .3rem !default;
 // $border-radius-sm:            .2rem !default;
 //
 // $rounded-pill:                50rem !default;
 
-$box-shadow-color-sm:         rgba($midnight, 0.025);
-$box-shadow-sm:               0 0.5rem 1.5rem $box-shadow-color-sm;
-$box-shadow-color:            rgba($midnight, 0.05);
+$box-shadow-color-sm:         rgba($midnight, 0.05);
+$box-shadow-sm:               0 1rem 3rem $box-shadow-color-sm;
+$box-shadow-color:            rgba($midnight, 0.15);
 $box-shadow:                  0 1rem 3rem $box-shadow-color;
-$box-shadow-color-lg:         rgba($midnight, 0.075);
-$box-shadow-lg:               0 1.5rem 6rem $box-shadow-color-lg;
+$box-shadow-color-lg:         rgba($midnight, 0.3);
+$box-shadow-lg:               0 1rem 3rem $box-shadow-color-lg;
 //
 // $component-active-color:      $white !default;
 // $component-active-bg:         theme-color("primary") !default;
@@ -701,7 +707,7 @@ $btn-border-radius-sm:        5px;
 // // Navs
 //
 // $nav-link-padding-y:                .5rem !default;
-// $nav-link-padding-x:                1rem !default;
+$nav-link-padding-x:                .5rem;
 // $nav-link-disabled-color:           $gray-600 !default;
 //
 // $nav-tabs-border-color:             $gray-300 !default;
@@ -831,8 +837,8 @@ $btn-border-radius-sm:        5px;
 //
 // // Cards
 //
-// $card-spacer-y:                     .75rem !default;
-// $card-spacer-x:                     1.25rem !default;
+$card-spacer-y:                     16px;
+$card-spacer-x:                     32px;
 $card-border-width:                 0;
 $card-border-radius:                14px;
 // $card-border-color:                 rgba($black, .125) !default;

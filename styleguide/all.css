@@ -29,6 +29,8 @@
   --leaf: #34c36b;
   --ocean: #04b5a6;
   --sky: #58cfee;
+  --saphire: #1d96bf;
+  --robin-egg: rgba(29, 150, 191, 0.2);
   --blueberry: #206f8a;
   --grape: #5b6bb6;
   --indigo: #6610f2;
@@ -39,6 +41,7 @@
   --cloud: #f3f4f5;
   --moon: #f7f8f9;
   --milk: #f8f9fa;
+  --fog: #c2c7cc;
   --concrete: #dde4eb;
   --ivory: #dfe1e2;
   --aluminium: #959ea6;
@@ -440,6 +443,29 @@ mark,
  * <h5>h5. Bootstrap heading</h5>
  * <h6>h6. Bootstrap heading</h6>
  */
+.img-fluid, .portfolio-list .card .item-details article.caption-image img {
+  max-width: 100%;
+  height: auto; }
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #ffffff;
+  border: 1px solid #c2c7cc;
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto; }
+
+.figure {
+  display: inline-block; }
+
+.figure-img {
+  margin-bottom: 0.5rem;
+  line-height: 1; }
+
+.figure-caption {
+  font-size: 90%;
+  color: #959ea6; }
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -491,12 +517,12 @@ mark,
 .no-gutters {
   margin-right: 0;
   margin-left: 0; }
-  .no-gutters > .col,
+  .no-gutters > .col, .portfolio-list .card .item-summary .no-gutters > .amount-principal, .portfolio-list .card .item-summary .no-gutters > .amount-profit, .portfolio-list .card .item-summary .no-gutters > .percent-apr, .portfolio-list .card .item-summary .no-gutters > .amount-current-value, .portfolio-list .card .item-details .no-gutters > article.caption-image, .portfolio-list .card .item-details .no-gutters > article.quote,
   .no-gutters > [class*="col-"] {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .portfolio-list .card .item-summary .amount-principal, .portfolio-list .card .item-summary .amount-profit, .portfolio-list .card .item-summary .percent-apr, .portfolio-list .card .item-summary .amount-current-value, .portfolio-list .card .item-details article.caption-image, .portfolio-list .card .item-details article.quote,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
@@ -507,7 +533,7 @@ mark,
   padding-right: 15px;
   padding-left: 15px; }
 
-.col {
+.col, .portfolio-list .card .item-summary .amount-principal, .portfolio-list .card .item-summary .amount-profit, .portfolio-list .card .item-summary .percent-apr, .portfolio-list .card .item-summary .amount-current-value, .portfolio-list .card .item-details article.caption-image, .portfolio-list .card .item-details article.quote {
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%; }
@@ -1142,7 +1168,7 @@ mark,
 /**
  * @page Grid
  */
-.btn {
+.btn, .portfolio-list .card header + button {
   display: inline-block;
   font-weight: 600;
   color: #192228;
@@ -1158,15 +1184,15 @@ mark,
   border-radius: 12px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
-    .btn {
+    .btn, .portfolio-list .card header + button {
       transition: none; } }
-  .btn:hover {
+  .btn:hover, .portfolio-list .card header + button:hover {
     color: #192228;
     text-decoration: none; }
-  .btn:focus, .btn.focus {
+  .btn:focus, .portfolio-list .card header + button:focus, .btn.focus, .portfolio-list .card header + button.focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(88, 207, 238, 0.25); }
-  .btn.disabled, .btn:disabled {
+  .btn.disabled, .portfolio-list .card header + button.disabled, .btn:disabled, .portfolio-list .card header + button:disabled {
     opacity: 0.65; }
 
 a.btn.disabled,
@@ -1589,6 +1615,58 @@ fieldset:disabled a.btn {
     .show > .btn-sky.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(79, 181, 208, 0.5); }
 
+.btn-saphire {
+  color: #ffffff;
+  background-color: #1d96bf;
+  border-color: #1d96bf; }
+  .btn-saphire:hover {
+    color: #ffffff;
+    background-color: #187c9e;
+    border-color: #167393; }
+  .btn-saphire:focus, .btn-saphire.focus {
+    color: #ffffff;
+    background-color: #187c9e;
+    border-color: #167393;
+    box-shadow: 0 0 0 0.2rem rgba(63, 166, 201, 0.5); }
+  .btn-saphire.disabled, .btn-saphire:disabled {
+    color: #ffffff;
+    background-color: #1d96bf;
+    border-color: #1d96bf; }
+  .btn-saphire:not(:disabled):not(.disabled):active, .btn-saphire:not(:disabled):not(.disabled).active,
+  .show > .btn-saphire.dropdown-toggle {
+    color: #ffffff;
+    background-color: #167393;
+    border-color: #156b88; }
+    .btn-saphire:not(:disabled):not(.disabled):active:focus, .btn-saphire:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-saphire.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(63, 166, 201, 0.5); }
+
+.btn-robin-egg {
+  color: #ffffff;
+  background-color: rgba(29, 150, 191, 0.2);
+  border-color: rgba(29, 150, 191, 0.2); }
+  .btn-robin-egg:hover {
+    color: #ffffff;
+    background-color: rgba(24, 124, 158, 0.2);
+    border-color: rgba(22, 115, 147, 0.2); }
+  .btn-robin-egg:focus, .btn-robin-egg.focus {
+    color: #ffffff;
+    background-color: rgba(24, 124, 158, 0.2);
+    border-color: rgba(22, 115, 147, 0.2);
+    box-shadow: 0 0 0 0.2rem rgba(168, 214, 230, 0.5); }
+  .btn-robin-egg.disabled, .btn-robin-egg:disabled {
+    color: #ffffff;
+    background-color: rgba(29, 150, 191, 0.2);
+    border-color: rgba(29, 150, 191, 0.2); }
+  .btn-robin-egg:not(:disabled):not(.disabled):active, .btn-robin-egg:not(:disabled):not(.disabled).active,
+  .show > .btn-robin-egg.dropdown-toggle {
+    color: #ffffff;
+    background-color: rgba(22, 115, 147, 0.2);
+    border-color: rgba(21, 107, 136, 0.2); }
+    .btn-robin-egg:not(:disabled):not(.disabled):active:focus, .btn-robin-egg:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-robin-egg.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(168, 214, 230, 0.5); }
+
 .btn-blueberry {
   color: #ffffff;
   background-color: #206f8a;
@@ -1849,30 +1927,58 @@ fieldset:disabled a.btn {
     .show > .btn-milk.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(215, 217, 219, 0.5); }
 
-.btn-concrete {
+.btn-fog {
+  color: #192228;
+  background-color: #c2c7cc;
+  border-color: #c2c7cc; }
+  .btn-fog:hover {
+    color: #192228;
+    background-color: #adb4bb;
+    border-color: #a6aeb5; }
+  .btn-fog:focus, .btn-fog.focus {
+    color: #192228;
+    background-color: #adb4bb;
+    border-color: #a6aeb5;
+    box-shadow: 0 0 0 0.2rem rgba(169, 174, 179, 0.5); }
+  .btn-fog.disabled, .btn-fog:disabled {
+    color: #192228;
+    background-color: #c2c7cc;
+    border-color: #c2c7cc; }
+  .btn-fog:not(:disabled):not(.disabled):active, .btn-fog:not(:disabled):not(.disabled).active,
+  .show > .btn-fog.dropdown-toggle {
+    color: #192228;
+    background-color: #a6aeb5;
+    border-color: #9fa7af; }
+    .btn-fog:not(:disabled):not(.disabled):active:focus, .btn-fog:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-fog.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(169, 174, 179, 0.5); }
+
+.btn-concrete, .portfolio-list .card header + button {
   color: #192228;
   background-color: #dde4eb;
   border-color: #dde4eb; }
-  .btn-concrete:hover {
+  .btn-concrete:hover, .portfolio-list .card header + button:hover {
     color: #192228;
     background-color: #c5d1dd;
     border-color: #bdcbd8; }
-  .btn-concrete:focus, .btn-concrete.focus {
+  .btn-concrete:focus, .portfolio-list .card header + button:focus, .btn-concrete.focus, .portfolio-list .card header + button.focus {
     color: #192228;
     background-color: #c5d1dd;
     border-color: #bdcbd8;
     box-shadow: 0 0 0 0.2rem rgba(192, 199, 206, 0.5); }
-  .btn-concrete.disabled, .btn-concrete:disabled {
+  .btn-concrete.disabled, .portfolio-list .card header + button.disabled, .btn-concrete:disabled, .portfolio-list .card header + button:disabled {
     color: #192228;
     background-color: #dde4eb;
     border-color: #dde4eb; }
-  .btn-concrete:not(:disabled):not(.disabled):active, .btn-concrete:not(:disabled):not(.disabled).active,
-  .show > .btn-concrete.dropdown-toggle {
+  .btn-concrete:not(:disabled):not(.disabled):active, .portfolio-list .card header + button:not(:disabled):not(.disabled):active, .btn-concrete:not(:disabled):not(.disabled).active, .portfolio-list .card header + button:not(:disabled):not(.disabled).active,
+  .show > .btn-concrete.dropdown-toggle,
+  .portfolio-list .card .show > header + button.dropdown-toggle {
     color: #192228;
     background-color: #bdcbd8;
     border-color: #b5c4d3; }
-    .btn-concrete:not(:disabled):not(.disabled):active:focus, .btn-concrete:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-concrete.dropdown-toggle:focus {
+    .btn-concrete:not(:disabled):not(.disabled):active:focus, .portfolio-list .card header + button:not(:disabled):not(.disabled):active:focus, .btn-concrete:not(:disabled):not(.disabled).active:focus, .portfolio-list .card header + button:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-concrete.dropdown-toggle:focus,
+    .portfolio-list .card .show > header + button.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(192, 199, 206, 0.5); }
 
 .btn-ivory {
@@ -2367,6 +2473,48 @@ fieldset:disabled a.btn {
     .show > .btn-outline-sky.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(88, 207, 238, 0.5); }
 
+.btn-outline-saphire {
+  color: #1d96bf;
+  border-color: #1d96bf; }
+  .btn-outline-saphire:hover {
+    color: #ffffff;
+    background-color: #1d96bf;
+    border-color: #1d96bf; }
+  .btn-outline-saphire:focus, .btn-outline-saphire.focus {
+    box-shadow: 0 0 0 0.2rem rgba(29, 150, 191, 0.5); }
+  .btn-outline-saphire.disabled, .btn-outline-saphire:disabled {
+    color: #1d96bf;
+    background-color: transparent; }
+  .btn-outline-saphire:not(:disabled):not(.disabled):active, .btn-outline-saphire:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-saphire.dropdown-toggle {
+    color: #ffffff;
+    background-color: #1d96bf;
+    border-color: #1d96bf; }
+    .btn-outline-saphire:not(:disabled):not(.disabled):active:focus, .btn-outline-saphire:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-saphire.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(29, 150, 191, 0.5); }
+
+.btn-outline-robin-egg {
+  color: rgba(29, 150, 191, 0.2);
+  border-color: rgba(29, 150, 191, 0.2); }
+  .btn-outline-robin-egg:hover {
+    color: #ffffff;
+    background-color: rgba(29, 150, 191, 0.2);
+    border-color: rgba(29, 150, 191, 0.2); }
+  .btn-outline-robin-egg:focus, .btn-outline-robin-egg.focus {
+    box-shadow: 0 0 0 0.2rem rgba(29, 150, 191, 0.5); }
+  .btn-outline-robin-egg.disabled, .btn-outline-robin-egg:disabled {
+    color: rgba(29, 150, 191, 0.2);
+    background-color: transparent; }
+  .btn-outline-robin-egg:not(:disabled):not(.disabled):active, .btn-outline-robin-egg:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-robin-egg.dropdown-toggle {
+    color: #ffffff;
+    background-color: rgba(29, 150, 191, 0.2);
+    border-color: rgba(29, 150, 191, 0.2); }
+    .btn-outline-robin-egg:not(:disabled):not(.disabled):active:focus, .btn-outline-robin-egg:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-robin-egg.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(29, 150, 191, 0.5); }
+
 .btn-outline-blueberry {
   color: #206f8a;
   border-color: #206f8a; }
@@ -2576,6 +2724,27 @@ fieldset:disabled a.btn {
     .btn-outline-milk:not(:disabled):not(.disabled):active:focus, .btn-outline-milk:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-milk.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }
+
+.btn-outline-fog {
+  color: #c2c7cc;
+  border-color: #c2c7cc; }
+  .btn-outline-fog:hover {
+    color: #192228;
+    background-color: #c2c7cc;
+    border-color: #c2c7cc; }
+  .btn-outline-fog:focus, .btn-outline-fog.focus {
+    box-shadow: 0 0 0 0.2rem rgba(194, 199, 204, 0.5); }
+  .btn-outline-fog.disabled, .btn-outline-fog:disabled {
+    color: #c2c7cc;
+    background-color: transparent; }
+  .btn-outline-fog:not(:disabled):not(.disabled):active, .btn-outline-fog:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-fog.dropdown-toggle {
+    color: #192228;
+    background-color: #c2c7cc;
+    border-color: #c2c7cc; }
+    .btn-outline-fog:not(:disabled):not(.disabled):active:focus, .btn-outline-fog:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-fog.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(194, 199, 204, 0.5); }
 
 .btn-outline-concrete {
   color: #dde4eb;
@@ -2796,11 +2965,11 @@ input[type="button"].btn-block {
  *   </div>
  * </div>
  */
-.btn-arrow-right {
+.btn-arrow-right, .portfolio-list .card header + button {
   text-align: left;
   padding-left: 2rem;
   padding-right: 2rem; }
-  .btn-arrow-right:after {
+  .btn-arrow-right:after, .portfolio-list .card header + button:after {
     margin-left: 1rem;
     content: '→';
     float: right; }
@@ -2878,6 +3047,85 @@ input[type="button"].btn-block {
  * <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
  * <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
  */
+.nav, .portfolio-list .card button + nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none; }
+
+.nav-link, .portfolio-list .card button + nav > a {
+  display: block;
+  padding: 0.5rem 0.5rem; }
+  .nav-link:hover, .portfolio-list .card button + nav > a:hover, .nav-link:focus, .portfolio-list .card button + nav > a:focus {
+    text-decoration: none; }
+  .nav-link.disabled, .portfolio-list .card button + nav > a.disabled {
+    color: #959ea6;
+    pointer-events: none;
+    cursor: default; }
+
+.nav-tabs {
+  border-bottom: 1px solid #c2c7cc; }
+  .nav-tabs .nav-item {
+    margin-bottom: -1px; }
+  .nav-tabs .nav-link, .nav-tabs .portfolio-list .card button + nav > a, .portfolio-list .card .nav-tabs button + nav > a {
+    border: 1px solid transparent;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px; }
+    .nav-tabs .nav-link:hover, .nav-tabs .portfolio-list .card button + nav > a:hover, .portfolio-list .card .nav-tabs button + nav > a:hover, .nav-tabs .nav-link:focus, .nav-tabs .portfolio-list .card button + nav > a:focus, .portfolio-list .card .nav-tabs button + nav > a:focus {
+      border-color: #f8f9fa #f8f9fa #c2c7cc; }
+    .nav-tabs .nav-link.disabled, .nav-tabs .portfolio-list .card button + nav > a.disabled, .portfolio-list .card .nav-tabs button + nav > a.disabled {
+      color: #959ea6;
+      background-color: transparent;
+      border-color: transparent; }
+  .nav-tabs .nav-link.active, .nav-tabs .portfolio-list .card button + nav > a.active, .portfolio-list .card .nav-tabs button + nav > a.active,
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-item.show .portfolio-list .card button + nav > a,
+  .portfolio-list .card .nav-tabs .nav-item.show button + nav > a {
+    color: #7a807f;
+    background-color: #ffffff;
+    border-color: #c2c7cc #c2c7cc #ffffff; }
+  .nav-tabs .dropdown-menu {
+    margin-top: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+
+.nav-pills .nav-link, .nav-pills .portfolio-list .card button + nav > a, .portfolio-list .card .nav-pills button + nav > a {
+  border-radius: 4px; }
+
+.nav-pills .nav-link.active, .nav-pills .portfolio-list .card button + nav > a.active, .portfolio-list .card .nav-pills button + nav > a.active,
+.nav-pills .show > .nav-link,
+.nav-pills .portfolio-list .card button + nav.show > a,
+.portfolio-list .card .nav-pills button + nav.show > a {
+  color: #ffffff;
+  background-color: #58cfee; }
+
+.nav-fill .nav-item {
+  flex: 1 1 auto;
+  text-align: center; }
+
+.nav-justified .nav-item {
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: center; }
+
+.tab-content > .tab-pane {
+  display: none; }
+
+.tab-content > .active {
+  display: block; }
+
+.nav-link-plain a.nav-link, .portfolio-list .card button + nav a.nav-link, .nav-link-plain .portfolio-list .card button + nav > a, .portfolio-list .card .nav-link-plain button + nav > a, .portfolio-list .card button + nav > a {
+  color: #7a807f;
+  text-decoration: "none"; }
+  .nav-link-plain a.nav-link:hover, .portfolio-list .card button + nav a.nav-link:hover, .nav-link-plain .portfolio-list .card button + nav > a:hover, .portfolio-list .card .nav-link-plain button + nav > a:hover, .portfolio-list .card button + nav > a:hover {
+    color: #192228;
+    text-decoration: underline; }
+
+.nav-sm, .portfolio-list .card button + nav {
+  font-size: 11px;
+  line-height: 24px; }
+
 .card, .portfolio-list .card {
   position: relative;
   display: flex;
@@ -2901,13 +3149,13 @@ input[type="button"].btn-block {
 .card-body {
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem; }
+  padding: 32px; }
 
 .card-title {
-  margin-bottom: 0.75rem; }
+  margin-bottom: 16px; }
 
 .card-subtitle {
-  margin-top: -0.375rem;
+  margin-top: -8px;
   margin-bottom: 0; }
 
 .card-text:last-child {
@@ -2917,10 +3165,10 @@ input[type="button"].btn-block {
   text-decoration: none; }
 
 .card-link + .card-link {
-  margin-left: 1.25rem; }
+  margin-left: 32px; }
 
 .card-header {
-  padding: 0.75rem 1.25rem;
+  padding: 16px 32px;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 0 solid rgba(0, 0, 0, 0.125); }
@@ -2930,21 +3178,21 @@ input[type="button"].btn-block {
     border-top: 0; }
 
 .card-footer {
-  padding: 0.75rem 1.25rem;
+  padding: 16px 32px;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 0 solid rgba(0, 0, 0, 0.125); }
   .card-footer:last-child {
     border-radius: 0 0 14px 14px; }
 
 .card-header-tabs {
-  margin-right: -0.625rem;
-  margin-bottom: -0.75rem;
-  margin-left: -0.625rem;
+  margin-right: -16px;
+  margin-bottom: -16px;
+  margin-left: -16px;
   border-bottom: 0; }
 
 .card-header-pills {
-  margin-right: -0.625rem;
-  margin-left: -0.625rem; }
+  margin-right: -16px;
+  margin-left: -16px; }
 
 .card-img-overlay {
   position: absolute;
@@ -2970,7 +3218,7 @@ input[type="button"].btn-block {
   border-bottom-right-radius: 14px;
   border-bottom-left-radius: 14px; }
 
-.card-deck .card {
+.card-deck .card, .card-deck .portfolio-list .card, .portfolio-list .card-deck .card {
   margin-bottom: 15px; }
 
 @media (min-width: 576px) {
@@ -2979,7 +3227,7 @@ input[type="button"].btn-block {
     flex-flow: row wrap;
     margin-right: -15px;
     margin-left: -15px; }
-    .card-deck .card {
+    .card-deck .card, .card-deck .portfolio-list .card, .portfolio-list .card-deck .card {
       flex: 1 0 0%;
       margin-right: 15px;
       margin-bottom: 0;
@@ -2995,7 +3243,7 @@ input[type="button"].btn-block {
     .card-group > .card, .portfolio-list .card-group > .card {
       flex: 1 0 0%;
       margin-bottom: 0; }
-      .card-group > .card + .card, .portfolio-list .card-group > .card + .card {
+      .card-group > .card + .card, .portfolio-list .card-group > .card + .card, .portfolio-list .card-group > .card + .card, .portfolio-list .card-group > .card + .card {
         margin-left: 0;
         border-left: 0; }
       .card-group > .card:not(:last-child), .portfolio-list .card-group > .card:not(:last-child) {
@@ -3021,8 +3269,8 @@ input[type="button"].btn-block {
         .portfolio-list .card-group > .card:not(:first-child) .card-footer {
           border-bottom-left-radius: 0; } }
 
-.card-columns .card {
-  margin-bottom: 0.75rem; }
+.card-columns .card, .card-columns .portfolio-list .card, .portfolio-list .card-columns .card {
+  margin-bottom: 16px; }
 
 @media (min-width: 576px) {
   .card-columns {
@@ -3030,7 +3278,7 @@ input[type="button"].btn-block {
     column-gap: 1.25rem;
     orphans: 1;
     widows: 1; }
-    .card-columns .card {
+    .card-columns .card, .card-columns .portfolio-list .card, .portfolio-list .card-columns .card {
       display: inline-block;
       width: 100%; } }
 
@@ -3071,12 +3319,12 @@ input[type="button"].btn-block {
  * @page Card
  *
  * @example
- * <div class="card bg-light m-2" style="width: 18rem;">
+ * <div class="card bg-light m-4" style="width: 18rem;">
  *   <div class="card-body">
  *     Some card text
  *   </div>
  * </div>
- * <div class="card bg-grape text-white m-2 rounded-lg" style="width: 18rem;">
+ * <div class="card bg-grape text-white m-4" style="width: 18rem;">
  *   <div class="card-body">
  *     <h5 class="card-title">Ready for Withdrawal</h5>
  *     <p>You should withdrawl to your bank account or reinvest into another holding.</p>
@@ -3091,19 +3339,19 @@ input[type="button"].btn-block {
  * @page Card
  *
  * @example
- * <div class="card shadow-sm mb-4" style="width: 18rem;">
+ * <div class="card shadow-sm mb-5" style="width: 18rem;">
  *   <div class="card-body">
  *     <h5 class="card-title">Card title</h5>
  *     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
  *   </div>
  * </div>
- * <div class="card shadow mb-4" style="width: 18rem;">
+ * <div class="card shadow mt-5 mb-5" style="width: 18rem;">
  *   <div class="card-body">
  *     <h5 class="card-title">Card title</h5>
  *     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
  *   </div>
  * </div>
- * <div class="card shadow-lg mb-4" style="width: 18rem;">
+ * <div class="card shadow-lg m5-5 mb-5" style="width: 18rem;">
  *   <div class="card-body">
  *     <h5 class="card-title">Card title</h5>
  *     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -3114,7 +3362,7 @@ input[type="button"].btn-block {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #f7f8f9;
+  background-color: #f8f9fa;
   border-radius: 0.3rem; }
   @media (min-width: 576px) {
     .jumbotron {
@@ -3130,7 +3378,7 @@ input[type="button"].btn-block {
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
-  border-radius: 0.25rem; }
+  border-radius: 4px; }
 
 .alert-heading {
   color: inherit; }
@@ -3291,6 +3539,24 @@ input[type="button"].btn-block {
   .alert-sky .alert-link {
     color: #204c57; }
 
+.alert-saphire {
+  color: #0f4e63;
+  background-color: #d2eaf2;
+  border-color: #c0e2ed; }
+  .alert-saphire hr {
+    border-top-color: #acd9e7; }
+  .alert-saphire .alert-link {
+    color: #082b37; }
+
+.alert-robin-egg {
+  color: rgba(3, 16, 21, 0.584);
+  background-color: rgba(249, 252, 253, 0.84);
+  border-color: rgba(246, 251, 252, 0.776); }
+  .alert-robin-egg hr {
+    border-top-color: rgba(227, 243, 246, 0.776); }
+  .alert-robin-egg .alert-link {
+    color: rgba(0, 0, 0, 0.584); }
+
 .alert-blueberry {
   color: #113a48;
   background-color: #d2e2e8;
@@ -3380,6 +3646,15 @@ input[type="button"].btn-block {
     border-top-color: #ececf6; }
   .alert-milk .alert-link {
     color: #686868; }
+
+.alert-fog {
+  color: #65676a;
+  background-color: #f3f4f5;
+  border-color: #eeeff1; }
+  .alert-fog hr {
+    border-top-color: #e0e2e5; }
+  .alert-fog .alert-link {
+    color: #4c4e50; }
 
 .alert-concrete {
   color: #73777a;
@@ -3590,6 +3865,24 @@ button.bg-sky:hover,
 button.bg-sky:focus {
   background-color: #2ac2e9 !important; }
 
+.bg-saphire {
+  background-color: #1d96bf !important; }
+
+a.bg-saphire:hover, a.bg-saphire:focus,
+button.bg-saphire:hover,
+button.bg-saphire:focus {
+  background-color: #167393 !important; }
+
+.bg-robin-egg, .portfolio-list .card .item-summary .amount-current-value {
+  background-color: rgba(29, 150, 191, 0.2) !important; }
+
+a.bg-robin-egg:hover, .portfolio-list .card .item-summary a.amount-current-value:hover, a.bg-robin-egg:focus, .portfolio-list .card .item-summary a.amount-current-value:focus,
+button.bg-robin-egg:hover,
+.portfolio-list .card .item-summary button.amount-current-value:hover,
+button.bg-robin-egg:focus,
+.portfolio-list .card .item-summary button.amount-current-value:focus {
+  background-color: rgba(22, 115, 147, 0.2) !important; }
+
 .bg-blueberry {
   background-color: #206f8a !important; }
 
@@ -3670,6 +3963,14 @@ button.bg-milk:hover,
 button.bg-milk:focus {
   background-color: #dae0e5 !important; }
 
+.bg-fog {
+  background-color: #c2c7cc !important; }
+
+a.bg-fog:hover, a.bg-fog:focus,
+button.bg-fog:hover,
+button.bg-fog:focus {
+  background-color: #a6aeb5 !important; }
+
 .bg-concrete {
   background-color: #dde4eb !important; }
 
@@ -3733,19 +4034,19 @@ button.bg-black:focus {
   background-color: transparent !important; }
 
 .border {
-  border: 1px solid #f8f9fa !important; }
+  border: 1px solid #c2c7cc !important; }
 
 .border-top {
-  border-top: 1px solid #f8f9fa !important; }
+  border-top: 1px solid #c2c7cc !important; }
 
 .border-right {
-  border-right: 1px solid #f8f9fa !important; }
+  border-right: 1px solid #c2c7cc !important; }
 
 .border-bottom {
-  border-bottom: 1px solid #f8f9fa !important; }
+  border-bottom: 1px solid #c2c7cc !important; }
 
 .border-left {
-  border-left: 1px solid #f8f9fa !important; }
+  border-left: 1px solid #c2c7cc !important; }
 
 .border-0 {
   border: 0 !important; }
@@ -3810,6 +4111,12 @@ button.bg-black:focus {
 .border-sky {
   border-color: #58cfee !important; }
 
+.border-saphire {
+  border-color: #1d96bf !important; }
+
+.border-robin-egg {
+  border-color: rgba(29, 150, 191, 0.2) !important; }
+
 .border-blueberry {
   border-color: #206f8a !important; }
 
@@ -3840,6 +4147,9 @@ button.bg-black:focus {
 .border-milk {
   border-color: #f8f9fa !important; }
 
+.border-fog {
+  border-color: #c2c7cc !important; }
+
 .border-concrete {
   border-color: #dde4eb !important; }
 
@@ -3867,24 +4177,24 @@ button.bg-black:focus {
 .rounded-sm {
   border-radius: 0.2rem !important; }
 
-.rounded {
-  border-radius: 0.25rem !important; }
+.rounded, .portfolio-list .card .item-summary .amount-current-value, .portfolio-list .card .item-details article.caption-image img, .portfolio-list .card .item-details article.quote {
+  border-radius: 4px !important; }
 
 .rounded-top {
-  border-top-left-radius: 0.25rem !important;
-  border-top-right-radius: 0.25rem !important; }
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important; }
 
 .rounded-right {
-  border-top-right-radius: 0.25rem !important;
-  border-bottom-right-radius: 0.25rem !important; }
+  border-top-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important; }
 
 .rounded-bottom {
-  border-bottom-right-radius: 0.25rem !important;
-  border-bottom-left-radius: 0.25rem !important; }
+  border-bottom-right-radius: 4px !important;
+  border-bottom-left-radius: 4px !important; }
 
 .rounded-left {
-  border-top-left-radius: 0.25rem !important;
-  border-bottom-left-radius: 0.25rem !important; }
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important; }
 
 .rounded-lg {
   border-radius: 0.3rem !important; }
@@ -3924,7 +4234,7 @@ button.bg-black:focus {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex {
+.d-flex, .portfolio-list .card .item-summary, .portfolio-list .card .item-details article.quote {
   display: flex !important; }
 
 .d-inline-flex {
@@ -4100,10 +4410,10 @@ button.bg-black:focus {
 .flex-shrink-1 {
   flex-shrink: 1 !important; }
 
-.justify-content-start {
+.justify-content-start, .nav-link-plain a.nav-link, .portfolio-list .card button + nav a.nav-link, .nav-link-plain .portfolio-list .card button + nav > a, .portfolio-list .card .nav-link-plain button + nav > a, .portfolio-list .card button + nav > a {
   justify-content: flex-start !important; }
 
-.justify-content-end {
+.justify-content-end, .portfolio-list .card .item-summary {
   justify-content: flex-end !important; }
 
 .justify-content-center {
@@ -4127,7 +4437,7 @@ button.bg-black:focus {
 .align-items-baseline {
   align-items: baseline !important; }
 
-.align-items-stretch {
+.align-items-stretch, .portfolio-list .card .item-details article.quote {
   align-items: stretch !important; }
 
 .align-content-start {
@@ -4547,14 +4857,14 @@ button.bg-black:focus {
   clip: auto;
   white-space: normal; }
 
-.shadow-sm {
-  box-shadow: 0 0.5rem 1.5rem rgba(25, 34, 40, 0.025) !important; }
-
-.shadow, .portfolio-list .card {
+.shadow-sm, .portfolio-list .card {
   box-shadow: 0 1rem 3rem rgba(25, 34, 40, 0.05) !important; }
 
+.shadow {
+  box-shadow: 0 1rem 3rem rgba(25, 34, 40, 0.15) !important; }
+
 .shadow-lg {
-  box-shadow: 0 1.5rem 6rem rgba(25, 34, 40, 0.075) !important; }
+  box-shadow: 0 1rem 3rem rgba(25, 34, 40, 0.3) !important; }
 
 .shadow-none {
   box-shadow: none !important; }
@@ -4618,7 +4928,7 @@ button.bg-black:focus {
   content: "";
   background-color: rgba(0, 0, 0, 0); }
 
-.m-0 {
+.m-0, .portfolio-list .card .item-details article.caption-image img + p {
   margin: 0 !important; }
 
 .mt-0,
@@ -4633,7 +4943,7 @@ button.bg-black:focus {
 .my-0 {
   margin-bottom: 0 !important; }
 
-.ml-0,
+.ml-0, .nav-link-plain a.nav-link:first-child, .portfolio-list .card button + nav a.nav-link:first-child, .nav-link-plain .portfolio-list .card button + nav > a:first-child, .portfolio-list .card .nav-link-plain button + nav > a:first-child, .portfolio-list .card button + nav > a:first-child,
 .mx-0 {
   margin-left: 0 !important; }
 
@@ -4667,7 +4977,7 @@ button.bg-black:focus {
 .mx-2 {
   margin-right: 0.5rem !important; }
 
-.mb-2,
+.mb-2, .portfolio-list .card .item-details article.caption-image img,
 .my-2 {
   margin-bottom: 0.5rem !important; }
 
@@ -4697,7 +5007,7 @@ button.bg-black:focus {
 .m-4 {
   margin: 1.5rem !important; }
 
-.mt-4,
+.mt-4, .portfolio-list .card button + nav, .portfolio-list .card .item-details,
 .my-4 {
   margin-top: 1.5rem !important; }
 
@@ -4705,7 +5015,7 @@ button.bg-black:focus {
 .mx-4 {
   margin-right: 1.5rem !important; }
 
-.mb-4,
+.mb-4, .portfolio-list .card header, .portfolio-list .card .item-summary,
 .my-4 {
   margin-bottom: 1.5rem !important; }
 
@@ -4747,7 +5057,7 @@ button.bg-black:focus {
 .py-0 {
   padding-bottom: 0 !important; }
 
-.pl-0,
+.pl-0, .nav-link-plain a.nav-link:first-child, .portfolio-list .card button + nav a.nav-link:first-child, .nav-link-plain .portfolio-list .card button + nav > a:first-child, .portfolio-list .card .nav-link-plain button + nav > a:first-child, .portfolio-list .card button + nav > a:first-child,
 .px-0 {
   padding-left: 0 !important; }
 
@@ -4789,7 +5099,7 @@ button.bg-black:focus {
 .px-2 {
   padding-left: 0.5rem !important; }
 
-.p-3 {
+.p-3, .portfolio-list .card .item-summary .amount-principal, .portfolio-list .card .item-summary .amount-profit, .portfolio-list .card .item-summary .percent-apr, .portfolio-list .card .item-summary .amount-current-value {
   padding: 1rem !important; }
 
 .pt-3,
@@ -4808,7 +5118,7 @@ button.bg-black:focus {
 .px-3 {
   padding-left: 1rem !important; }
 
-.p-4 {
+.p-4, .portfolio-list .card .item-details article.quote {
   padding: 1.5rem !important; }
 
 .pt-4,
@@ -5996,7 +6306,7 @@ button.bg-black:focus {
 .text-left {
   text-align: left !important; }
 
-.text-right {
+.text-right, .portfolio-list .card .item-summary .amount-principal, .portfolio-list .card .item-summary .amount-profit, .portfolio-list .card .item-summary .percent-apr, .portfolio-list .card .item-summary .amount-current-value {
   text-align: right !important; }
 
 .text-center {
@@ -6037,13 +6347,13 @@ button.bg-black:focus {
 .text-lowercase {
   text-transform: lowercase !important; }
 
-.text-uppercase {
+.text-uppercase, .portfolio-list .card header + button, .portfolio-list .card .item-summary .amount-principal small, .portfolio-list .card .item-summary .amount-profit small, .portfolio-list .card .item-summary .percent-apr small, .portfolio-list .card .item-summary .amount-current-value small {
   text-transform: uppercase !important; }
 
 .text-capitalize {
   text-transform: capitalize !important; }
 
-.font-weight-light {
+.font-weight-light, .portfolio-list .card .item-details {
   font-weight: 300 !important; }
 
 .font-weight-lighter {
@@ -6058,10 +6368,10 @@ button.bg-black:focus {
 .font-weight-bolder {
   font-weight: 700 !important; }
 
-.font-italic {
+.font-italic, .portfolio-list .card .item-summary .percent-apr, .portfolio-list .card .item-details h3, .portfolio-list .card .item-details article.quote blockquote {
   font-style: italic !important; }
 
-.text-white {
+.text-white, .portfolio-list .card .item-details article.quote {
   color: #ffffff !important; }
 
 .text-primary {
@@ -6160,6 +6470,18 @@ a.text-ocean:hover, a.text-ocean:focus {
 a.text-sky:hover, a.text-sky:focus {
   color: #17b8e2 !important; }
 
+.text-saphire {
+  color: #1d96bf !important; }
+
+a.text-saphire:hover, a.text-saphire:focus {
+  color: #13627d !important; }
+
+.text-robin-egg {
+  color: rgba(29, 150, 191, 0.2) !important; }
+
+a.text-robin-egg:hover, a.text-robin-egg:focus {
+  color: rgba(19, 98, 125, 0.2) !important; }
+
 .text-blueberry {
   color: #206f8a !important; }
 
@@ -6196,7 +6518,7 @@ a.text-sea:hover, a.text-sea:focus {
 a.text-water:hover, a.text-water:focus {
   color: #98e0f6 !important; }
 
-.text-white {
+.text-white, .portfolio-list .card .item-details article.quote {
   color: #ffffff !important; }
 
 a.text-white:hover, a.text-white:focus {
@@ -6219,6 +6541,12 @@ a.text-moon:hover, a.text-moon:focus {
 
 a.text-milk:hover, a.text-milk:focus {
   color: #cbd3da !important; }
+
+.text-fog {
+  color: #c2c7cc !important; }
+
+a.text-fog:hover, a.text-fog:focus {
+  color: #98a1a9 !important; }
 
 .text-concrete {
   color: #dde4eb !important; }
@@ -6299,17 +6627,155 @@ a.text-black:hover, a.text-black:focus {
 
 .portfolio-list {
   /**
-   * Portfolio Card
+   * Portfolio Holdings Card
    *
    * @section
    * @page Portfolio
    *
    * @example
    * <main class="portfolio-list">
-   *   <section class="card">
+   *   <article class="card">
    *     <div class="card-body">
-   *       <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
+   *       <div class="row">
+   *         <div class="col-4">
+   *           <header>
+   *             <small class="symbol">BLS:ZWIB</small>
+   *             <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
+   *             <small class="status">Activated: January 1, 2019</small>
+   *           </header>
+   *           <button>Invest More</button>
+   *           <nav>
+   *             <a href="#">Sell/Trade</a>
+   *             <a href="#">Offering Docs</a>
+   *             <a href="#">Financials</a>
+   *           </nav>
+   *         </div>
+   *         <div class="col-8">
+   *           <section class="item-summary">
+   *             <div class="amount-principal">
+   *               $100,000
+   *               <small>You Invested</small>
+   *             </div>
+   *             <div class="amount-profit">
+   *               + $4,000
+   *               <small>You've Earned</small>
+   *             </div>
+   *             <div class="percent-apr">
+   *               11.90%
+   *               <small>Projected Return<super>&dagger;</super></small>
+   *             </div>
+   *             <div class="amount-current-value">
+   *               <div>
+   *                 $100,000
+   *                 <small>Currently Worth</small>
+   *               </div>
+   *             </div>
+   *           </section>
+   *           <img src="/images/performance-graph.png" class="img-fluid" />
+   *         </div>
+   *       </div>
+
+   *       <aside class="item-details">
+   *         <h3>Your investment at work</h3>
+   *         <div class="row">
+   *           <article class="caption-image">
+   *             <img src="/images/donuts.jpg" />
+   *             <p>
+   *               Siti Fatimah Sweet Treats & Baked Goods Street Cart
+   *             </p>
+   *           </article>
+   *           <article class="caption-image">
+   *             <img src="/images/chinese-street-food.jpg" />
+   *             <p>
+   *               Making a difference and transforming a passion into a business
+   *             </p>
+   *           </article>
+   *           <article class="quote">
+   *             <blockquote class="quote">
+   *               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+   *               <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+   *             </blockquote>
+   *           </article>
+   *         </div>
+   *       </aside>
    *     </div>
-   *   </section>
+   *   </article>
    * </main>
    */ }
+  .portfolio-list .card header .symbol {
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 11px;
+    letter-spacing: 0.5px;
+    color: #7a807f; }
+  .portfolio-list .card header .status {
+    font-size: 11px;
+    line-height: 11px;
+    letter-spacing: 0.5px;
+    color: #959ea6; }
+  .portfolio-list .card header h2 {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 6px; }
+  .portfolio-list .card header + button {
+    height: 40px;
+    border-top-right-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+    margin-left: -32px;
+    font-size: 11px;
+    line-height: 11px; }
+    .portfolio-list .card header + button:after {
+      padding-left: 64px; }
+  .portfolio-list .card .item-summary .amount-principal {
+    color: #192228;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600; }
+    .portfolio-list .card .item-summary .amount-principal small {
+      display: block;
+      color: #959ea6;
+      font-size: 10px;
+      line-height: 20px; }
+  .portfolio-list .card .item-summary .amount-profit {
+    color: #04b5a6;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600; }
+    .portfolio-list .card .item-summary .amount-profit small {
+      display: block;
+      color: #959ea6;
+      font-size: 10px;
+      line-height: 20px; }
+  .portfolio-list .card .item-summary .percent-apr {
+    color: #206f8a;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600; }
+    .portfolio-list .card .item-summary .percent-apr small {
+      display: block;
+      color: #206f8a;
+      font-size: 10px;
+      line-height: 20px; }
+  .portfolio-list .card .item-summary .amount-current-value {
+    color: #206f8a;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    font-size: 20px; }
+    .portfolio-list .card .item-summary .amount-current-value small {
+      display: block;
+      color: #206f8a;
+      font-size: 10px;
+      line-height: 20px; }
+  .portfolio-list .card .item-details h3 {
+    font-size: 18px; }
+  .portfolio-list .card .item-details article.caption-image {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px; }
+  .portfolio-list .card .item-details article.quote {
+    background-image: url("/images/quote-bg-grape.jpg"); }
+    .portfolio-list .card .item-details article.quote blockquote {
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: -0.5px; }

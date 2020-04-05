@@ -1,0 +1,70 @@
+
+/**
+ * Total Holdings Card
+ *
+ * @section
+ * @page Portfolio
+ *
+ * @example
+ * <div style="width: 20rem;">
+ *   <section class="card card-total-holdings">
+ *     <div class="card-body">
+ *       <small class="card-title">Total Holdings</small>
+ *       <h1>
+ *         $680,050
+ *         <small>As of Saturday, July 22nd, 2019</small>
+ *       </h1>
+ *     </div>
+ *   </section>
+ * </div>
+ */
+.card-total-holdings {
+  @extend .card;
+  @extend .bg-light;
+
+  .card-title {
+    display: block;
+    @extend .text-uppercase;
+    @extend .text-grape;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: -0.11px;
+  }
+
+  h1 {
+    @extend .font-weight-bold;
+
+    font-size: 36px;
+    line-height: 49px;
+    letter-spacing: 0.25px;
+
+    small:last-child {
+      display: block;
+      @extend .text-uppercase;
+      @extend .mt-1;
+      @extend .mb-0;
+      font-size: 10px;
+      line-height: 10px;
+      color: $slate;
+    }
+  }
+}
+
+/**
+ * Alert
+ *
+ * @section
+ * @page Portfolio
+ *
+ * @example
+ * <div style="width: 20rem;">
+ *   <div class="alert alert-info" role="alert">
+ *     <span class="badge badge-warning float-right">$89,423</span>
+ *     <h5 class="alert-heading mb-4">Well done!</h5>
+ *     <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+ *     <button type="button" class="btn btn-lg btn-arrow-right btn-block btn-info">
+ *       Withdraw Funds
+ *     </button>
+ *   </div>
+ * </div>
+ */

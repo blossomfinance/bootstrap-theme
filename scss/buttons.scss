@@ -11,7 +11,8 @@
   content: '←';
 }
 
-.bg-grape .btn-grape {
+.bg-grape .btn-grape,
+.alert-info .btn-info {
   background-color: rgba($white, 0.16);
 }
 

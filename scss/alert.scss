@@ -1,0 +1,13 @@
+
+@import "../node_modules/bootstrap/scss/alert";
+
+.alert-info {
+  .alert-heading {
+    @extend .text-white;
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}

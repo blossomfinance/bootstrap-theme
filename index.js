@@ -16,16 +16,24 @@ function sassSrcGlob() {
   return path.join(pkg.srcDir, '*.scss');
 }
 
+function cssDestDir() {
+  return path.join(__dirname, pkg.destDir);
+}
+
 function cssDestFile() {
   return path.join(__dirname, pkg.destDir, pkg.destFile);
 }
 
 function cssDestGlob() {
-  return path.join(pkg.destDir, '*.css');
+  return path.join(cssDestDir(), '*.css');
 }
 
 function cssDestWebUrl() {
-  return path.join(pkg.destDir, pkg.destFile);
+  return pkg.destFile;
+}
+
+function htmlDestFileGlob() {
+  return path.join(pkg.destDir, '*.html');
 }
 
 function compileSass() {
@@ -39,7 +47,7 @@ function compileSass() {
 
 function buildStyleguide() {
   // build styleguide into index.html file
-  livingcss(cssDestGlob(), {
+  livingcss(sassSrcGlob(), cssDestDir(), {
     preprocess: function(context, template, Handlebars) {
       context.title = 'Blossom Bootstrap Theme';
       context.footerHTML = '&copy; Blossom Labs, Inc. https://blossomfinance.com/';
@@ -58,11 +66,18 @@ module.exports = {
   buildStyleguide,
   browserSync: function browserSync() {
     return initBrowserSync({
+      // serve the files and inject the reload snippet
+      server: pkg.destDir,
+
+      // avoid inlining css, which is the default
       loadcss: false,
+
+      // extra info on command line
       logFileChanges: true,
+
       // two things to watch:
       // 1. source code, need to rebuild living style guide
-      // 2.
+      // 2. compiled styleguide html, need to reload browser
       files: [
         // rebuild when source code has changed
         {
@@ -78,10 +93,8 @@ module.exports = {
         },
 
         // reload when html page updates
-        '*.html'
+        htmlDestFileGlob()
       ],
-      // serve the files and inject the reload snippet
-      server: true,
     });
   }
 };

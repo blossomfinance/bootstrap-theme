@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "livingcss": "^6.0.3",
+    "livingcss": "git+https://github.com/matmar10/livingcss.git#unmerged-issues",
     "node-sass": "^4.13.1"
   }
 }

@@ -1,0 +1,94 @@
+
+/**
+ * Authenticated
+ *
+ * Responsive navigation for authenticated user
+ *
+ * @page Navbar
+ * @section
+ *
+ * @example
+ * <nav class="navbar navbar-expand-lg navbar-light">
+ *   <a class="navbar-brand" href="#">
+ *     <img src="/images/blossom-logo-horizontal-blue.svg" height="40" alt="">
+ *   </a>
+ *   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+ *     <span class="navbar-toggler-icon"></span>
+ *   </button>
+ *   <div class="collapse navbar-collapse" id="main-navigation-items">
+ *     <ul class="navbar-nav ml-auto">
+ *       <li class="nav-item active">
+ *         <a class="nav-link" href="#">Portfolio</span></a>
+ *       </li>
+ *       <li class="nav-item">
+ *         <a class="nav-link" href="#">Investments</a>
+ *       </li>
+ *       <li class="nav-item">
+ *         <a class="nav-link" href="#">Cash</a>
+ *       </li>
+ *       <li class="nav-item avatar">
+ *         <a class="nav-link">
+ *           <img src="https://static.diverseui.com/female-84.jpg" />
+ *         </a>
+ *       </li>
+ *     </ul>
+ *   </div>
+ * </nav>
+ */
+@import "../node_modules/bootstrap/scss/navbar";
+
+$navbar-nav-item-border-width: 4px !default;
+$navbar-nav-item-active-border-color: $primary;
+$navbar-nav-item-hover-border-color: lighten($navbar-nav-item-active-border-color, 20%);
+$navbar-nav-link-margin-x: 1rem;
+
+nav {
+
+  // box-shadow: 0 2px 10px 0 rgba(#9BA3A9, 0.15);
+  box-shadow: 0 12px 10px -10px rgba(#9BA3A9, 0.15);
+  .navbar-nav {
+    // @extend .d-flex;
+    // @extend .align-items-stretch;
+    // @extend .h-100;
+    @extend .font-weight-bold;
+    .nav-item {
+      margin-left: $navbar-nav-link-margin-x;
+      margin-right: $navbar-nav-link-margin-x;
+
+      a {
+        @extend .d-inline-block;
+        line-height: $navbar-brand-height;
+        font-size: 14px;
+        padding-top: $navbar-brand-padding-y;
+        padding-bottom: $navbar-brand-padding-y - $navbar-nav-item-border-width;
+        border-bottom: $navbar-nav-item-border-width solid transparent;
+
+        &:hover {
+          border-bottom: $navbar-nav-item-border-width solid $navbar-nav-item-hover-border-color;
+        }
+      }
+
+      &.active {
+        a {
+          border-bottom: $navbar-nav-item-border-width solid $navbar-nav-item-active-border-color;
+          box-shadow: 0 2px 8px -8px rgba($navbar-nav-item-active-border-color, 0.3);
+        }
+      }
+
+      &.avatar {
+        @extend .d-flex;
+        @extend .align-items-center;
+        a {
+          display: inline;
+          padding-top: 0;
+          padding-bottom: 0;
+          img {
+            @extend .rounded-circle;
+            width: $navbar-brand-height;
+            height: $navbar-brand-height;
+          }
+        }
+      }
+    }
+  }
+}

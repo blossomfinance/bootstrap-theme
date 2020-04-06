@@ -9,9 +9,10 @@
   "destFile": "all.css",
   "destCleanFile": "all.clean.css",
   "scripts": {
-    "app": "npm run build && node app.js",
-    "build": "node bin/build.js",
+    "app:demo": "npm run build && node app.js",
+    "app:styleguide": "node bin/styleguide.js",
     "start": "node bin/start.js",
+    "build": "node bin/build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

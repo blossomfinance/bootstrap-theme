@@ -2,16 +2,8 @@
 
 'use strict';
 
-const theme = require('./index');
-
-try {
-  // build to capture any changes
-  theme.compileSass();
-  theme.buildStyleguide();
-
-  // start the livereload
-  theme.browserSync();
-} catch (err) {
-  // eslint-disable-next-line no-console
-  console.error(err);
+if (process.env.APP === 'styleguide') {
+  require('./styleguide');
+} else {
+  require('./../app');
 }

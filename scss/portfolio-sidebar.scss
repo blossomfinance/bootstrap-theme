@@ -109,7 +109,6 @@
 .card-total-holdings {
   @extend .card;
   @extend .bg-light;
-  @extend .mb-4;
 
   .card-title {
     display: block;
@@ -183,177 +182,195 @@
 }
 
 .portfolio {
-  section {
+  aside {
 
-    /**
-     * Section Heading
-     *
-     * @section
-     * @page Portfolio Sidebar
-     *
-     * @example
-     * <div class="portfolio">
-     *   <aside>
-     *     <section>
-     *       <header>
-     *         <h3>
-     *           Action
-     *           <small>Items</small>
-     *         </h3>
-     *       </header>
-     *     </section>
-     *   </aside>
-     * </div>
-     */
-    header {
-      @extend .border-bottom;
-      @extend .pb-1;
-      @extend .mb-0;
-      h3 {
-        font-size: $h3-font-size;
-        font-weight: $font-weight-bold;
-        small {
-          font-size: $h2-font-size;
-          font-weight: $font-weight-light;
-        }
+    section {
+      @extend .mt-5;
+      @extend .mb-5;
+
+      &:first-child {
+        @extend .mt-0;
       }
-    }
 
-    /**
-     * List Group Flush
-     *
-     * @section
-     * @page Portfolio Sidebar
-     *
-     * @example
-     * <div class="portfolio">
-     *   <aside>
-     *     <section>
-     *       <header>
-     *         <h3>
-     *           Simple
-     *           <small>Example</small>
-     *         </h3>
-     *       </header>
-     *       <ul class="list-group-flush">
-     *         <li>
-     *           To get what you love, you must first be patient with what you hate.
-     *         </li>
-     *         <li>
-     *           A man of bad character punishes his own soul.
-     *         </li>
-     *         <li>
-     *           The real friend is the one who, when you ask him to follow you, doesn’t ask where?
-     *         </li>
-     *         <li>
-     *           For good health control your diet.
-     *         </li>
-     *       </ul>
-     *     </section>
-
-     *     <section>
-     *       <header>
-     *         <h3>
-     *           Badge
-     *           <small>Example</small>
-     *         </h3>
-     *       </header>
-     *       <ul class="list-group-flush">
-     *         <li>
-     *           <span class="badge badge-sq badge-subtle-sky">
-     *             <i class="fas fa-signature"></i>
-     *           </span>
-     *           <p>
-     *             Your signature is required to complete your investment in Sumatra Coffee Roastery & Farm.
-     *           </p>
-     *         </li>
-     *         <li>
-     *           <span class="badge badge-sq badge-subtle-mint">
-     *             <i class="fas fa-money-bill-wave-alt"></i>
-     *           </span>
-     *           <p>
-     *             Complete your deposit by September 31, 2019 to lock in your investment in Zero waste textile facility in Jakarta.
-     *           </p>
-     *         </li>
-     *         <li>
-     *           <span class="badge badge-sq badge-subtle-elephant">
-     *             <i class="fas fa-file-alt"></i>
-     *           </span>
-     *           <p>
-     *             Complete your deposit by September 31, 2019 to lock in your investment in Zero waste textile facility in Jakarta.
-     *           </p>
-     *         </li>
-     *       </ul>
-     *     </section>
-     *   </aside>
-     * </div>
-     */
-    .list-group-flush {
-      @extend .list-group;
-      @extend .mb-4;
-      & > li {
-        @extend .list-group-item;
-        @extend .d-flex;
-        @extend .align-items-center;
-        @extend .mr-5;
-        .badge {
-          @extend .mr-4;
-        }
-        p {
-          @extend .text-muted;
-          @extend .small;
-          @extend .align-middle;
-          @extend .mb-0;
-        }
-      }
-    }
-
-    /**
-     * List Group Media
-     *
-     * @page Portfolio Sidebar
-     * @section
-     *
-     * @example
-     * <div class="portfolio">
-     *   <aside style="width: 20rem;">
-     *     <section>
-     *       <ul class="list-unstyled">
-     *         <li>
-     *           <img src="/images/mining-portrait.jpg" />
-     *           <div class="media-body">
-     *           <p>Ethical cobolt mining in Camaroon</p>
-     *           <small>Launching November 2019</small>
-     *         </li>
-     *         <li>
-     *           <img src="/images/fishing-portrait.jpg" />
-     *           <div class="media-body">
-     *           <p>Tasty fishing in fancy Faroe Islands</p>
-     *           <small>Launching November 2019</small>
-     *         </li>
-     *       </ul>
-     *     </section>
-     *   </aside>
-     * </div>
-     */
-    ul.list-unstyled {
-      @extend .mb-4;
-      & > li {
-        @extend .media;
-        @extend .pt-4;
-        @extend .pb-4;
-        img {
-          @extend .w-40;
-          @extend .mr-3;
-          @extend .rounded-lg;
-        }
-        .media-body {
-          p {
-            @extend .mt-2;
-            @extend .mb-2;
-          }
+      /**
+       * Section Heading
+       *
+       * @section
+       * @page Portfolio Sidebar
+       *
+       * @example
+       * <div class="portfolio">
+       *   <aside>
+       *     <section>
+       *       <header>
+       *         <h3>
+       *           Action
+       *           <small>Items</small>
+       *         </h3>
+       *       </header>
+       *     </section>
+       *   </aside>
+       * </div>
+       */
+      header {
+        @extend .border-bottom;
+        @extend .pb-1;
+        @extend .mb-0;
+        h3 {
+          font-size: $h3-font-size;
+          font-weight: $font-weight-bold;
           small {
+            font-size: $h3-font-size;
+            font-weight: $font-weight-light;
+          }
+        }
+      }
+
+      /**
+       * List Group Flush
+       *
+       * @section
+       * @page Portfolio Sidebar
+       *
+       * @example
+       * <div class="portfolio">
+       *   <aside>
+       *     <section>
+       *       <header>
+       *         <h3>
+       *           Simple
+       *           <small>Example</small>
+       *         </h3>
+       *       </header>
+       *       <ul class="list-group-flush">
+       *         <li>
+       *           To get what you love, you must first be patient with what you hate.
+       *         </li>
+       *         <li>
+       *           A man of bad character punishes his own soul.
+       *         </li>
+       *         <li>
+       *           The real friend is the one who, when you ask him to follow you, doesn’t ask where?
+       *         </li>
+       *         <li>
+       *           For good health control your diet.
+       *         </li>
+       *       </ul>
+       *     </section>
+
+       *     <section>
+       *       <header>
+       *         <h3>
+       *           Badge
+       *           <small>Example</small>
+       *         </h3>
+       *       </header>
+       *       <ul class="list-group-flush">
+       *         <li>
+       *           <span class="badge badge-sq badge-subtle-sky">
+       *             <i class="fas fa-signature"></i>
+       *           </span>
+       *           <p>
+       *             Your signature is required to complete your investment in Sumatra Coffee Roastery & Farm.
+       *           </p>
+       *         </li>
+       *         <li>
+       *           <span class="badge badge-sq badge-subtle-mint">
+       *             <i class="fas fa-money-bill-wave-alt"></i>
+       *           </span>
+       *           <p>
+       *             Complete your deposit by September 31, 2019 to lock in your investment in Zero waste textile facility in Jakarta.
+       *           </p>
+       *         </li>
+       *         <li>
+       *           <span class="badge badge-sq badge-subtle-elephant">
+       *             <i class="fas fa-file-alt"></i>
+       *           </span>
+       *           <p>
+       *             Complete your deposit by September 31, 2019 to lock in your investment in Zero waste textile facility in Jakarta.
+       *           </p>
+       *         </li>
+       *       </ul>
+       *     </section>
+       *   </aside>
+       * </div>
+       */
+      .list-group-flush {
+        @extend .list-group;
+        @extend .mb-0;
+
+        & > li {
+          @extend .list-group-item;
+          @extend .d-flex;
+          @extend .align-items-center;
+          border: none;
+          background: linear-gradient($list-group-border-color, $list-group-border-color) bottom no-repeat;
+          background-size: 85% 1px;
+          background-position: left bottom;
+          &:last-child {
+            background: none;
+            @extend .mb-0;
+            @extend .pb-0;
+          }
+          .badge {
+            @extend .mr-4;
+          }
+          p {
             @extend .text-muted;
+            @extend .align-middle;
+            @extend .mb-0;
+            font-size: 11px;
+            line-height: 14px;
+          }
+        }
+      }
+
+      /**
+       * List Group Media
+       *
+       * @page Portfolio Sidebar
+       * @section
+       *
+       * @example
+       * <div class="portfolio">
+       *   <aside style="width: 20rem;">
+       *     <section>
+       *       <ul class="list-unstyled">
+       *         <li>
+       *           <img src="/images/mining-portrait.jpg" />
+       *           <div class="media-body">
+       *           <p>Ethical cobolt mining in Camaroon</p>
+       *           <small>Launching November 2019</small>
+       *         </li>
+       *         <li>
+       *           <img src="/images/fishing-portrait.jpg" />
+       *           <div class="media-body">
+       *           <p>Tasty fishing in fancy Faroe Islands</p>
+       *           <small>Launching November 2019</small>
+       *         </li>
+       *       </ul>
+       *     </section>
+       *   </aside>
+       * </div>
+       */
+      ul.list-unstyled {
+        & > li {
+          @extend .media;
+          @extend .pt-4;
+          @extend .pb-4;
+          img {
+            @extend .w-40;
+            @extend .mr-3;
+            @extend .rounded-lg;
+          }
+          .media-body {
+            p {
+              @extend .mt-2;
+              @extend .mb-2;
+            }
+            small {
+              @extend .text-muted;
+            }
           }
         }
       }

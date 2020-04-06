@@ -138,26 +138,26 @@ $theme-colors: (
 // $enable-deprecation-messages:                 true !default;
 //
 //
-// // Spacing
-// //
-// // Control the default styling of most Bootstrap elements by modifying these
-// // variables. Mostly focused on spacing.
-// // You can add more entries to the $spacers map, should you need more variation.
+// Spacing
 //
-// $spacer: 1rem !default;
-// $spacers: () !default;
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+$spacer: 1rem;
+$spacers: () !default;
 // // stylelint-disable-next-line scss/dollar-variable-default
-// $spacers: map-merge(
-//   (
-//     0: 0,
-//     1: ($spacer * .25),
-//     2: ($spacer * .5),
-//     3: $spacer,
-//     4: ($spacer * 1.5),
-//     5: ($spacer * 3)
-//   ),
-//   $spacers
-// );
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 6),
+  ),
+  $spacers
+);
 //
 // // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: (
@@ -187,8 +187,8 @@ $sizes: (
 // //
 // // Settings for the `<body>` element.
 //
-// $body-bg:                   $white !default;
-// $body-color:                $gray-900 !default;
+$body-bg:                   $milk;
+$body-color:                $gray-900;
 //
 //
 // // Links
@@ -257,7 +257,7 @@ $sizes: (
 // $line-height-sm:              1.5 !default;
 //
 // $border-width:                1px !default;
-// $border-color:                $gray-300 !default;
+$border-color:                rgba($gray-600, 0.3);
 //
 $border-radius:               4px;
 $border-radius-lg:            14px;
@@ -320,7 +320,7 @@ $font-weight-bolder:          700;
 //
 // $h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 2;
-// $h3-font-size:                $font-size-base * 1.75 !default;
+$h3-font-size:                $font-size-base * 1.5;
 // $h4-font-size:                $font-size-base * 1.5 !default;
 // $h5-font-size:                $font-size-base * 1.25 !default;
 // $h6-font-size:                $font-size-base !default;
@@ -1035,7 +1035,7 @@ $alert-color-level:                 -8;
 //
 // $list-group-color:                  null !default;
 // $list-group-bg:                     $white !default;
-// $list-group-border-color:           rgba($black, .125) !default;
+$list-group-border-color:           rgba($aluminium, .3);
 // $list-group-border-width:           $border-width !default;
 // $list-group-border-radius:          $border-radius !default;
 //

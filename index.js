@@ -24,6 +24,10 @@ function cssDestFile() {
   return path.join(__dirname, pkg.destDir, pkg.destFile);
 }
 
+function cssDestCleanFile() {
+  return path.join(__dirname, pkg.destDir, pkg.destCleanFile);
+}
+
 function cssDestGlob() {
   return path.join(cssDestDir(), '*.css');
 }
@@ -48,13 +52,13 @@ function compileSass() {
 function buildStyleguide() {
   // build styleguide into index.html file
   livingcss(sassSrcGlob(), cssDestDir(), {
-    preprocess: function(context, template, Handlebars) {
+    preprocess: function (context) {
       context.title = 'Blossom Bootstrap Theme';
       context.footerHTML = '&copy; Blossom Labs, Inc. https://blossomfinance.com/';
       context.globalStylesheets = [
         cssDestWebUrl(),
       ];
-    }
+    },
   });
 }
 
@@ -63,6 +67,7 @@ module.exports = {
   sassSrcFile,
   sassSrcGlob,
   cssDestFile,
+  cssDestCleanFile,
   cssDestGlob,
   compileSass,
   buildStyleguide,
@@ -96,19 +101,20 @@ module.exports = {
         // rebuild when source code has changed
         {
           match: [sassSrcGlob()],
-          fn: function() {
+          fn: function () {
             try {
               compileSass();
               buildStyleguide();
             } catch (err) {
+              // eslint-disable-next-line no-console
               console.error(err);
             }
-          }
+          },
         },
 
         // reload when html page updates
-        htmlDestFileGlob()
+        htmlDestFileGlob(),
       ],
     });
-  }
+  },
 };

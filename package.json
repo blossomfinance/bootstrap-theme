@@ -7,8 +7,11 @@
   "srcFile": "custom.scss",
   "destDir": "styleguide",
   "destFile": "all.css",
+  "destCleanFile": "all.clean.css",
   "scripts": {
-    "start": "node start.js",
+    "app": "npm run build && node app.js",
+    "build": "node bin/build.js",
+    "start": "node bin/start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -35,7 +38,13 @@
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
+    "eslint-plugin-es-beautifier": "^1.0.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "handlebars": "^3.0.8",
+    "handlebars-layouts": "^3.1.4",
     "livingcss": "git+https://github.com/matmar10/livingcss.git#unmerged-issues",
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "strip-css-comments": "^4.1.0"
   }
 }

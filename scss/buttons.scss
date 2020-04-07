@@ -131,3 +131,90 @@
  * <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
  * <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
  */
+
+
+/**
+ * Button Link Arrow
+ *
+ * Create a button with a directional arrow in a box in any theme color you'd like:
+ *
+ * @section
+ * @page Buttons
+ *
+ * @example
+ * <div class="p-2">
+ *   <p>
+ *     <a href="#" class="btn btn-link-arrow-left-primary">View Project Details</a>
+ *   </p>
+ *   <p>
+ *     <a href="#" class="btn btn-link-arrow-right-secondary">View Project Details</a>
+ *   </p>
+ *   <p>
+ *     <a href="#" class="btn btn-link-arrow-left-warning">View Project Details</a>
+ *   </p>
+ *   <p>
+ *     <a href="#" class="btn btn-link-arrow-right-grass">View Project Details</a>
+ *   </p>
+ * </div>
+ */
+
+%btn-link-arrow {
+  @extend .btn;
+  @extend .btn-link;
+  @extend .pl-0;
+  @extend .pr-0;
+  font-size: 14px;
+}
+
+@mixin btn-link-arrow-content($fa-icon) {
+  @extend .d-inline-block;
+  @extend .text-center;
+  @extend %fa-icon;
+  @extend .fas;
+  content: fa-content($fa-icon);
+  line-height: 32px;
+  width: 32px;
+  height: 32px;
+}
+
+%btn-link-arrow-left {
+  @extend %btn-link-arrow;
+  &:after {
+    @include btn-link-arrow-content($fa-var-long-arrow-alt-left);
+    @extend .ml-4;
+  }
+}
+
+%btn-link-arrow-right {
+  @extend %btn-link-arrow;
+  &:before {
+    @include btn-link-arrow-content($fa-var-long-arrow-alt-right);
+    @extend .mr-4;
+  }
+}
+
+@mixin btn-link-arrow-color-variant($color, $arrow-color: 'white') {
+  @extend .text-#{$color};
+  &:after {
+    @extend .text-#{$arrow-color};
+    @extend .bg-#{$color};
+  }
+  &:before {
+    @extend .text-#{$arrow-color};
+    @extend .bg-#{$color};
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-link-arrow-right-#{$color} {
+    @extend %btn-link-arrow-right;
+    @include btn-link-arrow-color-variant($color);
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-link-arrow-left-#{$color} {
+    @extend %btn-link-arrow-left;
+    @include btn-link-arrow-color-variant($color);
+  }
+}

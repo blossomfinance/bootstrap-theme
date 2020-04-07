@@ -6,15 +6,41 @@
   * @page Campaign List
   *
   * @example
-  * <div class="p-5">
-  *   <div class="card campaign shadow rounded-bottom" style="width: 30rem;">
-  *     <img src="/images/chinese-street-food.jpg" class="card-img-top" alt="...">
-  *     <div class="card-body">
-  *       <small>Microfinance</small>
-  *       <h2 class="card-title">Card title</h2>
-  *       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  *       <a href="#" class="btn btn-primary">View Project Details</a>
-  *     </div>
+  * <div class="campaign-list">
+  *   <div class="row">
+  *     <article class="campaign">
+  *       <div class="card rounded-bottom">
+  *         <img class="card-img-top" src="/images/chinese-street-food.jpg" />
+  *         <div class="card-body">
+  *           <small class="card-text">Microfinance</small>
+  *           <h2 class="card-title">Traditional Market Sellers & Micro-Businesses</h2>
+  *           <p class="card-text">Invest in traditional market traders in Indonesia's cultural heartland.</p>
+  *           <a href="#" class="btn btn-link-arrow-right-secondary">View Project Details</a>
+  *         </div>
+  *       </div>
+  *     </article>
   *   </div>
   * </div>
   */
+.campaign-list {
+  .campaign {
+    @extend .col-4;
+    @extend .mb-4;
+
+    .card {
+      @extend .shadow;
+      img {
+        @extend .card-img-top;
+      }
+      .card-body {
+        small {
+          @extend .d-block;
+          @extend .mb-2;
+          @extend .text-xsmall;
+          @extend .text-primary;
+          @extend .text-uppercase;
+        }
+      }
+    }
+  }
+}

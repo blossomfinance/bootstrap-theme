@@ -3,8 +3,8 @@
 /**
  * Headings
  *
- * @page Typeography
  * @section
+ * @page Typeography
  *
  * @example
  * <h1>h1. Bootstrap heading</h1>
@@ -13,4 +13,101 @@
  * <h4>h4. Bootstrap heading</h4>
  * <h5>h5. Bootstrap heading</h5>
  * <h6>h6. Bootstrap heading</h6>
+ * <h2>Vivamus luctus vel lorem at maximus. Nam placerat eget ante at pulvinar. Suspendisse potenti. Phasellus maximus ipsum commodo dignissim imperdiet. Aliquam faucibus est et nisl varius, vel euismod metus lobortis. Sed libero massa, posuere sed porttitor non, semper congue orci. Donec at velit risus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</h2>
  */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -1px;
+}
+
+/**
+ * Card Headings
+ *
+ * Automatically adjusted to fit cards more nicely
+ *
+ * @section
+ * @page Typeography
+ *
+ * @example
+ * <div style="width: 30rem">
+ *   <div class="card shadow">
+ *     <div class="card-body">
+ *       <h1 class="card-title">H1: Card title</h1>
+ *       <p class="card-text">Invest in traditional market traders in Indonesia's cultural heartland.</p>
+ *       <h2 class="card-title">H2: Card title</h2>
+ *       <p class="card-text">Invest in traditional market traders in Indonesia's cultural heartland.</p>
+ *       <h3 class="card-title">H3: Card title</h3>
+ *       <p class="card-text">Invest in traditional market traders in Indonesia's cultural heartland.</p>
+ *       <h4 class="card-title">H4: Card title</h4>
+ *       <p class="card-text">Invest in traditional market traders in Indonesia's cultural heartland.</p>
+ *       <h5 class="card-title">H5: Card title</h5>
+ *       <p class="card-text">Invest in traditional market traders in Indonesia's cultural heartland.</p>
+ *     </div>
+ *   </div>
+ * </div>
+ */
+
+$card-heading-line-height-ratio: 1.5 !default;
+
+$card-heading-h1-font-size: 30px !default;
+$card-heading-h2-font-size: 24px !default;
+$card-heading-h3-font-size: 20px !default;
+$card-heading-h4-font-size: 16px !default;
+$card-heading-h5-font-size: 14px !default;
+
+.card {
+  h1.card-title {
+    font-size: $card-heading-h1-font-size;
+    line-height: $card-heading-h1-font-size * $card-heading-line-height-ratio;
+    @extend .mb-1;
+  }
+  h2.card-title {
+    font-size: $card-heading-h2-font-size;
+    line-height: $card-heading-h2-font-size * $card-heading-line-height-ratio;
+    @extend .mb-1;
+  }
+  h3.card-title {
+    font-size: $card-heading-h3-font-size;
+    line-height: $card-heading-h3-font-size * $card-heading-line-height-ratio;
+    @extend .mb-1;
+  }
+  h4.card-title {
+    font-size: $card-heading-h4-font-size;
+    line-height: $card-heading-h4-font-size * $card-heading-line-height-ratio;
+    @extend .mb-1;
+  }
+  h5.card-title {
+    font-size: $card-heading-h5-font-size;
+    line-height: $card-heading-h5-font-size * $card-heading-line-height-ratio;
+    @extend .mb-1;
+  }
+}
+
+/**
+ * Paragraphs
+ *
+ * @section
+ * @page Typeography
+ *
+ * @example
+ * <div class="p-4 m-4">
+ *   <p>Invest in traditional market traders in Indonesia's cultural heartland.</p>
+ * </div>
+ */
+p {
+  color: $gray-600;
+}
+
+/**
+ * Extra Small Text
+ *
+ * Make text even smaller than the normal `.small` and `<small>`
+ *
+ * @section
+ * @page Typeography
+ *
+ * @example
+ * <p class="text-xsmall"
+ */
+.text-xsmall {
+  font-size: 11px;
+}

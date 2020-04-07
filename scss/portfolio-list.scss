@@ -248,6 +248,7 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
       }
 
       h2 {
+        @extend .text-midnight;
         font-size: $portfolio-list-card-item-heading-font-size;
         line-height: $portfolio-list-card-item-heading-line-height;
         margin-bottom: $portfolio-list-card-item-heading-margin-bottom;
@@ -292,7 +293,7 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
       @extend .nav;
       @extend .nav-xs;
       @extend .nav-link-elephant;
-      @extend .mt-2;
+      @extend .mt-4;
       @extend .border-bottom;
       margin-left: -1 * $card-spacer-x;
       padding-left: $card-spacer-x;
@@ -352,6 +353,7 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
       @extend .mt-4;
       @extend .font-weight-light;
       h3 {
+        @extend .text-midnight;
         font-size: $portfolio-list-card-details-heading-font-size;
         @extend .font-italic;
       }

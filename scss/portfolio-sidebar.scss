@@ -121,10 +121,12 @@
 
   h2 {
     @extend .font-weight-bold;
+    @extend .text-midnight;
 
     font-size: 36px;
     line-height: 49px;
     letter-spacing: 0.25px;
+    @extend .text-midnight;
 
     small:last-child {
       display: block;
@@ -216,7 +218,10 @@
         @extend .border-bottom;
         @extend .pb-1;
         @extend .mb-0;
+        margin-right: -16px;
+        margin-left: -16px;
         h3 {
+          @extend .text-midnight;
           font-size: $h3-font-size;
           font-weight: $font-weight-bold;
           small {

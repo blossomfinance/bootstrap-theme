@@ -12528,7 +12528,7 @@ button.btn-link-arrow-left-black:focus:before {
 .m-2 {
   margin: 0.5rem !important; }
 
-.mt-2, .portfolio aside section ul.list-unstyled > li .media-body p, .portfolio-list .card-total-holdings nav, .portfolio-list .card nav,
+.mt-2, .portfolio aside section ul.list-unstyled > li .media-body p,
 .my-2 {
   margin-top: 0.5rem !important; }
 
@@ -12580,7 +12580,7 @@ button.btn-link-arrow-left-black:focus:before {
 .m-4 {
   margin: 1.5rem !important; }
 
-.mt-4, .portfolio-list .card-total-holdings .item-details, .portfolio-list .card .item-details,
+.mt-4, .portfolio-list .card-total-holdings nav, .portfolio-list .card nav, .portfolio-list .card-total-holdings .item-details, .portfolio-list .card .item-details,
 .my-4 {
   margin-top: 1.5rem !important; }
 
@@ -14530,7 +14530,7 @@ a.text-elephant:hover, a.btn-link-arrow-right-elephant:hover, a.btn-link-arrow-l
 a.text-slate:hover, a.btn-link-arrow-right-slate:hover, a.btn-link-arrow-left-slate:hover, a.text-slate:focus, a.btn-link-arrow-right-slate:focus, a.btn-link-arrow-left-slate:focus {
   color: #161819 !important; }
 
-.text-midnight, .btn-link-arrow-right-midnight, .btn-link-arrow-left-midnight {
+.text-midnight, .btn-link-arrow-right-midnight, .btn-link-arrow-left-midnight, .card-total-holdings h2, .portfolio aside section header h3, .portfolio-list .card-total-holdings header h2, .portfolio-list .card header h2, .portfolio-list .card-total-holdings .item-details h3, .portfolio-list .card .item-details h3 {
   color: #192228 !important; }
 
 a.text-midnight:hover, a.btn-link-arrow-right-midnight:hover, a.btn-link-arrow-left-midnight:hover, a.text-midnight:focus, a.btn-link-arrow-right-midnight:focus, a.btn-link-arrow-left-midnight:focus {
@@ -14904,12 +14904,15 @@ a.text-black:hover, a.btn-link-arrow-right-black:hover, a.btn-link-arrow-left-bl
        *   </aside>
        * </div>
        */ }
-  .portfolio aside section header h3 {
-    font-size: 1.5rem;
-    font-weight: 600; }
-    .portfolio aside section header h3 small {
+  .portfolio aside section header {
+    margin-right: -16px;
+    margin-left: -16px; }
+    .portfolio aside section header h3 {
       font-size: 1.5rem;
-      font-weight: 300; }
+      font-weight: 600; }
+      .portfolio aside section header h3 small {
+        font-size: 1.5rem;
+        font-weight: 300; }
   .portfolio aside section .list-group-flush > li {
     border: none;
     background: linear-gradient(rgba(149, 158, 166, 0.3), rgba(149, 158, 166, 0.3)) bottom no-repeat;

@@ -5,10 +5,6 @@
 const theme = require('./../');
 
 try {
-  // build to capture any changes
-  theme.compileSass();
-  theme.buildStyleguide();
-
   // start the livereload
   theme.browserSync();
 } catch (err) {

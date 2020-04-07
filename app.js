@@ -32,9 +32,14 @@ app.get('/', function (req, res) {
   res.render('portfolio');
 });
 
-app.get('/campaigns', function (req, res) {
-  res.render('campaigns');
+app.get('/portfolio', function (req, res) {
+  res.render('portfolio');
 });
+
+app.get('/investments', function (req, res) {
+  res.render('campaign-list');
+});
+
 app.get('/campaign-detail', function (req, res) {
   res.render('campaign-detail');
 });

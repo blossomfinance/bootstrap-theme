@@ -8266,8 +8266,97 @@ header nav {
  *     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
  *   </div>
  * </div>
-
  */
+/**
+ * Partially Rounded
+ *
+ * Utility to allow rounding just one side of the card
+ *
+ * @section
+ * @page Card
+ *
+ * @example
+ * <div class="container">
+ *   <div class="row pt-5 pb-5">
+ *     <div class="col-6">
+ *       <div class="card shadow rounded-top">
+ *         <img src="/images/chinese-street-food.jpg" class="card-img-top" alt="...">
+ *         <div class="card-body">
+ *           <small class="card-text text-muted">Microfinance</small>
+ *           <h2 class="card-title">Rounded Top</h2>
+ *           <p class="card-text">With the image on the TOP</p>
+ *           <a href="#" class="btn btn-primary">View Project Details</a>
+ *         </div>
+ *       </div>
+ *     </div>
+ *     <div class="col-6 mb-4">
+ *       <div class="card shadow rounded-top">
+ *         <div class="card-body">
+ *           <small class="card-text text-muted">Microfinance</small>
+ *           <h2 class="card-title">Rounded Top</h2>
+ *           <p class="card-text">With the image on the BOTTOM</p>
+ *           <a href="#" class="btn btn-primary">View Project Details</a>
+ *         </div>
+ *         <img src="/images/chinese-street-food.jpg" class="card-img-top" alt="...">
+ *       </div>
+ *     </div>
+ *     <div class="col-6">
+ *       <div class="card shadow rounded-bottom">
+ *         <img src="/images/chinese-street-food.jpg" class="card-img-top" alt="...">
+ *         <div class="card-body">
+ *           <small class="card-text text-muted">Microfinance</small>
+ *           <h2 class="card-title">Rounded Bottom</h2>
+ *           <p class="card-text">With the image on the TOP</p>
+ *           <a href="#" class="btn btn-primary">View Project Details</a>
+ *         </div>
+ *       </div>
+ *     </div>
+ *     <div class="col-6">
+ *       <div class="card shadow rounded-bottom">
+ *         <div class="card-body">
+ *           <small class="card-text text-muted">Microfinance</small>
+ *           <h2 class="card-title">Rounded Bottom</h2>
+ *           <p class="card-text">With the image on the BOTTOM</p>
+ *           <a href="#" class="btn btn-primary">View Project Details</a>
+ *         </div>
+ *         <img src="/images/chinese-street-food.jpg" class="card-img-top" alt="...">
+ *       </div>
+ *     </div>
+ *   </div>
+ * </div>
+ */
+.card.rounded-top, .rounded-top.card-total-holdings {
+  border-top-left-radius: 14px !important;
+  border-top-right-radius: 14px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important; }
+  .card.rounded-top .card-img-top:first-child, .rounded-top.card-total-holdings .card-img-top:first-child {
+    border-top-left-radius: 14px !important;
+    border-top-right-radius: 14px !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important; }
+  .card.rounded-top .card-img-top:last-child, .rounded-top.card-total-holdings .card-img-top:last-child {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important; }
+
+.card.rounded-bottom, .rounded-bottom.card-total-holdings {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 14px !important;
+  border-bottom-right-radius: 14px !important; }
+  .card.rounded-bottom .card-img-top:first-child, .rounded-bottom.card-total-holdings .card-img-top:first-child {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important; }
+  .card.rounded-bottom .card-img-top:last-child, .rounded-bottom.card-total-holdings .card-img-top:last-child {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 14px !important;
+    border-bottom-right-radius: 14px !important; }
+
 .badge {
   display: inline-block;
   padding: 0.25em 0.4em;
@@ -12957,6 +13046,34 @@ a.text-black:hover, a.text-black:focus {
 .invisible {
   visibility: hidden !important; }
 
+/**
+  * Card
+  *
+  * @section
+  * @page Campaign List
+  *
+  * @example
+  * <div class="p-5">
+  *   <div class="card campaign shadow rounded-bottom" style="width: 30rem;">
+  *     <img src="/images/chinese-street-food.jpg" class="card-img-top" alt="...">
+  *     <div class="card-body">
+  *       <small>Microfinance</small>
+  *       <h2 class="card-title">Card title</h2>
+  *       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  *       <a href="#" class="btn btn-primary">View Project Details</a>
+  *     </div>
+  *   </div>
+  * </div>
+  */
+/**
+  * Full Example
+  *
+  * @section
+  * @page Campaign Detail
+  *
+  * @example
+  * <code>// TODO: implement me</code>
+  */
 /**
  * Full Example
  *

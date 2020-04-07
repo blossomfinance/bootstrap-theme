@@ -65,5 +65,107 @@
  *     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
  *   </div>
  * </div>
-
  */
+
+/**
+ * Partially Rounded
+ *
+ * Utility to allow rounding just one side of the card
+ *
+ * @section
+ * @page Card
+ *
+ * @example
+ * <div class="container">
+ *   <div class="row pt-5 pb-5">
+ *     <div class="col-6">
+ *       <div class="card shadow rounded-top">
+ *         <img src="/images/chinese-street-food.jpg" class="card-img-top" alt="...">
+ *         <div class="card-body">
+ *           <small class="card-text text-muted">Microfinance</small>
+ *           <h2 class="card-title">Rounded Top</h2>
+ *           <p class="card-text">With the image on the TOP</p>
+ *           <a href="#" class="btn btn-primary">View Project Details</a>
+ *         </div>
+ *       </div>
+ *     </div>
+ *     <div class="col-6 mb-4">
+ *       <div class="card shadow rounded-top">
+ *         <div class="card-body">
+ *           <small class="card-text text-muted">Microfinance</small>
+ *           <h2 class="card-title">Rounded Top</h2>
+ *           <p class="card-text">With the image on the BOTTOM</p>
+ *           <a href="#" class="btn btn-primary">View Project Details</a>
+ *         </div>
+ *         <img src="/images/chinese-street-food.jpg" class="card-img-top" alt="...">
+ *       </div>
+ *     </div>
+ *     <div class="col-6">
+ *       <div class="card shadow rounded-bottom">
+ *         <img src="/images/chinese-street-food.jpg" class="card-img-top" alt="...">
+ *         <div class="card-body">
+ *           <small class="card-text text-muted">Microfinance</small>
+ *           <h2 class="card-title">Rounded Bottom</h2>
+ *           <p class="card-text">With the image on the TOP</p>
+ *           <a href="#" class="btn btn-primary">View Project Details</a>
+ *         </div>
+ *       </div>
+ *     </div>
+ *     <div class="col-6">
+ *       <div class="card shadow rounded-bottom">
+ *         <div class="card-body">
+ *           <small class="card-text text-muted">Microfinance</small>
+ *           <h2 class="card-title">Rounded Bottom</h2>
+ *           <p class="card-text">With the image on the BOTTOM</p>
+ *           <a href="#" class="btn btn-primary">View Project Details</a>
+ *         </div>
+ *         <img src="/images/chinese-street-food.jpg" class="card-img-top" alt="...">
+ *       </div>
+ *     </div>
+ *   </div>
+ * </div>
+ */
+.card {
+
+  &.rounded-top {
+    border-top-left-radius: $card-border-radius !important;
+    border-top-right-radius: $card-border-radius !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+
+    // make sure cap image is properly rounded too or it will appear square
+    .card-img-top:first-child {
+      border-top-left-radius: $card-border-radius !important;
+      border-top-right-radius: $card-border-radius !important;
+      border-bottom-left-radius: 0px !important;
+      border-bottom-right-radius: 0px !important;
+    }
+    .card-img-top:last-child {
+      border-top-left-radius: 0px !important;
+      border-top-right-radius: 0px !important;
+      border-bottom-left-radius: 0px !important;
+      border-bottom-right-radius: 0px !important;
+    }
+  }
+
+  &.rounded-bottom {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: $card-border-radius !important;
+    border-bottom-right-radius: $card-border-radius !important;
+
+    // make sure cap image is properly rounded too or it will appear square
+    .card-img-top:first-child {
+      border-top-left-radius: 0px !important;
+      border-top-right-radius: 0px !important;
+      border-bottom-left-radius: 0px !important;
+      border-bottom-right-radius: 0px !important;
+    }
+    .card-img-top:last-child {
+      border-top-left-radius: 0px !important;
+      border-top-right-radius: 0px !important;
+      border-bottom-left-radius: $card-border-radius !important;
+      border-bottom-right-radius: $card-border-radius !important;
+    }
+  }
+}

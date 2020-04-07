@@ -8127,9 +8127,9 @@
           <a class="livingcss__nav-link livingcss__nav-link--main " href="typeography.html">Typeography</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="badge.html">Badge</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="portfolio-sidebar.html">Portfolio Sidebar</a>
-          <a class="livingcss__nav-link livingcss__nav-link--main livingcss__nav-link--active" href="portfolio-list.html">Portfolio List</a>
+          <a class="livingcss__nav-link livingcss__nav-link--main " href="portfolio-list.html">Portfolio List</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="navbar.html">Navbar</a>
-          <a class="livingcss__nav-link livingcss__nav-link--main " href="nav.html">Nav</a>
+          <a class="livingcss__nav-link livingcss__nav-link--main livingcss__nav-link--active" href="nav.html">Nav</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="buttons.html">Buttons</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="card.html">Card</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="campaign-list.html">Campaign List</a>
@@ -8144,309 +8144,123 @@
 
       <main class="livingcss__main" role="main">
 
-        <article class="livingcss__article" id="full-example">
-          <h1 class="livingcss__article-title">Full Example</h1><div class="livingcss__section-description"><p>Put it all together and what do you get?</p></div>
+        <article class="livingcss__article" id="plain-colored-link">
+          <h1 class="livingcss__article-title">Plain Colored Link</h1><div class="livingcss__section-description"><p>Make a nav element appear as text, instead of a link</p></div>
 
-<livingcss-example><main class="portfolio-list">
-  <header class="d-flex justify-content-between w-100">
-    <h1>Portfolio Holdings</h1>
-    <ul class="list-inline small">
-      <li>
-        <span class="badge badge-primary"></span>
-        Actual
-      </li>
-      <li>
-        <span class="badge badge-light"></span>
-        Target
-      </li>
-      <li>
-        <span class="badge badge-secondary"></span>
-        Projected Return
-      </li>
-    </ul>
-  </header>
-  <article class="card">
-    <div class="card-body">
-      <div class="row">
-        <div class="col-4">
-          <header>
-            <small class="symbol">BLS:ZWIB</small>
-            <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
-            <small class="status">Activated: January 1, 2019</small>
-          </header>
-          <button class="btn-wrap-left">Invest More</button>
-          <nav>
-            <a href="#">Sell/Trade</a>
-            <a href="#">Offering Docs</a>
-            <a href="#">Financials</a>
-          </nav>
-        </div>
-        <div class="col-8">
-          <section class="item-summary">
-            <div class="amount-principal">
-              $100,000
-              <small>You Invested</small>
-            </div>
-            <div class="amount-profit">
-              + $4,000
-              <small>You've Earned</small>
-            </div>
-            <div class="percent-apr">
-              11.90%
-              <small>Projected Return<super>&dagger;</super></small>
-            </div>
-            <div class="amount-current-value">
-              <div>
-                $100,000
-                <small>Currently Worth</small>
-              </div>
-            </div>
-          </section>
-          <img src="/images/performance-graph.png" class="img-fluid" />
-        </div>
-      </div>
-      <aside class="item-details">
-        <h3>Your investment at work</h3>
-        <div class="row">
-          <article class="caption-image">
-            <img src="/images/donuts.jpg" />
-            <p>
-              Siti Fatimah Sweet Treats & Baked Goods Street Cart
-            </p>
-          </article>
-          <article class="caption-image">
-            <img src="/images/chinese-street-food.jpg" />
-            <p>
-              Making a difference and transforming a passion into a business
-            </p>
-          </article>
-          <article class="quote">
-            <blockquote class="quote">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-            </blockquote>
-          </article>
-        </div>
-      </aside>
-    </div>
-  </article>
-</main></livingcss-example>
+<livingcss-example><nav class="nav nav-link-elephant">
+  <a class="nav-link" href="#">Item One</a>
+  <a class="nav-link" href="#">Item Two</a>
+  <a class="nav-link" href="#">Item Three</a>
+</nav>
+<nav class="nav nav-link-grape">
+  <a class="nav-link" href="#">Item One</a>
+  <a class="nav-link" href="#">Item Two</a>
+  <a class="nav-link" href="#">Item Three</a>
+</nav>
+<nav class="nav nav-link-warning">
+  <a class="nav-link" href="#">Item One</a>
+  <a class="nav-link" href="#">Item Two</a>
+  <a class="nav-link" href="#">Item Three</a>
+</nav></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;main class&#x3D;&quot;portfolio-list&quot;&gt;
-  &lt;header class&#x3D;&quot;d-flex justify-content-between w-100&quot;&gt;
-    &lt;h1&gt;Portfolio Holdings&lt;/h1&gt;
-    &lt;ul class&#x3D;&quot;list-inline small&quot;&gt;
-      &lt;li&gt;
-        &lt;span class&#x3D;&quot;badge badge-primary&quot;&gt;&lt;/span&gt;
-        Actual
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;span class&#x3D;&quot;badge badge-light&quot;&gt;&lt;/span&gt;
-        Target
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;span class&#x3D;&quot;badge badge-secondary&quot;&gt;&lt;/span&gt;
-        Projected Return
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/header&gt;
-  &lt;article class&#x3D;&quot;card&quot;&gt;
-    &lt;div class&#x3D;&quot;card-body&quot;&gt;
-      &lt;div class&#x3D;&quot;row&quot;&gt;
-        &lt;div class&#x3D;&quot;col-4&quot;&gt;
-          &lt;header&gt;
-            &lt;small class&#x3D;&quot;symbol&quot;&gt;BLS:ZWIB&lt;/small&gt;
-            &lt;h2 class&#x3D;&quot;card-title&quot;&gt;Zero-emission Waste Incineration Facility in Bali&lt;/h2&gt;
-            &lt;small class&#x3D;&quot;status&quot;&gt;Activated: January 1, 2019&lt;/small&gt;
-          &lt;/header&gt;
-          &lt;button class&#x3D;&quot;btn-wrap-left&quot;&gt;Invest More&lt;/button&gt;
-          &lt;nav&gt;
-            &lt;a href&#x3D;&quot;#&quot;&gt;Sell/Trade&lt;/a&gt;
-            &lt;a href&#x3D;&quot;#&quot;&gt;Offering Docs&lt;/a&gt;
-            &lt;a href&#x3D;&quot;#&quot;&gt;Financials&lt;/a&gt;
-          &lt;/nav&gt;
-        &lt;/div&gt;
-        &lt;div class&#x3D;&quot;col-8&quot;&gt;
-          &lt;section class&#x3D;&quot;item-summary&quot;&gt;
-            &lt;div class&#x3D;&quot;amount-principal&quot;&gt;
-              $100,000
-              &lt;small&gt;You Invested&lt;/small&gt;
-            &lt;/div&gt;
-            &lt;div class&#x3D;&quot;amount-profit&quot;&gt;
-              + $4,000
-              &lt;small&gt;You&#x27;ve Earned&lt;/small&gt;
-            &lt;/div&gt;
-            &lt;div class&#x3D;&quot;percent-apr&quot;&gt;
-              11.90%
-              &lt;small&gt;Projected Return&lt;super&gt;&amp;dagger;&lt;/super&gt;&lt;/small&gt;
-            &lt;/div&gt;
-            &lt;div class&#x3D;&quot;amount-current-value&quot;&gt;
-              &lt;div&gt;
-                $100,000
-                &lt;small&gt;Currently Worth&lt;/small&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/section&gt;
-          &lt;img src&#x3D;&quot;/images/performance-graph.png&quot; class&#x3D;&quot;img-fluid&quot; /&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;aside class&#x3D;&quot;item-details&quot;&gt;
-        &lt;h3&gt;Your investment at work&lt;/h3&gt;
-        &lt;div class&#x3D;&quot;row&quot;&gt;
-          &lt;article class&#x3D;&quot;caption-image&quot;&gt;
-            &lt;img src&#x3D;&quot;/images/donuts.jpg&quot; /&gt;
-            &lt;p&gt;
-              Siti Fatimah Sweet Treats &amp; Baked Goods Street Cart
-            &lt;/p&gt;
-          &lt;/article&gt;
-          &lt;article class&#x3D;&quot;caption-image&quot;&gt;
-            &lt;img src&#x3D;&quot;/images/chinese-street-food.jpg&quot; /&gt;
-            &lt;p&gt;
-              Making a difference and transforming a passion into a business
-            &lt;/p&gt;
-          &lt;/article&gt;
-          &lt;article class&#x3D;&quot;quote&quot;&gt;
-            &lt;blockquote class&#x3D;&quot;quote&quot;&gt;
-              &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
-              &lt;footer class&#x3D;&quot;blockquote-footer&quot;&gt;Someone famous in &lt;cite title&#x3D;&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
-            &lt;/blockquote&gt;
-          &lt;/article&gt;
-        &lt;/div&gt;
-      &lt;/aside&gt;
-    &lt;/div&gt;
-  &lt;/article&gt;
-&lt;/main&gt;</code></pre>
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;nav class&#x3D;&quot;nav nav-link-elephant&quot;&gt;
+  &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Item One&lt;/a&gt;
+  &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Item Two&lt;/a&gt;
+  &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Item Three&lt;/a&gt;
+&lt;/nav&gt;
+&lt;nav class&#x3D;&quot;nav nav-link-grape&quot;&gt;
+  &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Item One&lt;/a&gt;
+  &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Item Two&lt;/a&gt;
+  &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Item Three&lt;/a&gt;
+&lt;/nav&gt;
+&lt;nav class&#x3D;&quot;nav nav-link-warning&quot;&gt;
+  &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Item One&lt;/a&gt;
+  &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Item Two&lt;/a&gt;
+  &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Item Three&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
 </div>
 
         </article>
-        <article class="livingcss__article" id="header">
-          <h1 class="livingcss__article-title">Header</h1><div class="livingcss__section-description"><p>Label and legend for the chart</p></div>
+        <article class="livingcss__article" id="sizes">
+          <h1 class="livingcss__article-title">Sizes</h1><div class="livingcss__section-description"><p>Decrease the size of the navigation element</p></div>
 
-<livingcss-example><main class="portfolio-list">
-  <header>
-    <h1>Portfolio Holdings</h1>
-    <ul>
-      <li>
-        <span class="badge badge-primary"></span>
-        Actual
-      </li>
-      <li>
-        <span class="badge badge-light"></span>
-        Target
-      </li>
-      <li>
-        <span class="badge badge-secondary"></span>
-        Projected Return
-      </li>
-    </ul>
-  </header>
-  <article class="card">
-    <div class="card-body">
-      CARD CONTENT HERE
-    </div>
-  </article>
-</main></livingcss-example>
+<livingcss-example><ul class="nav nav-sm">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Microfinance</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Other Category</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">New</a>
+  </li>
+</ul>
+<ul class="nav nav-xs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Microfinance</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Other Category</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">New</a>
+  </li>
+</ul></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;main class&#x3D;&quot;portfolio-list&quot;&gt;
-  &lt;header&gt;
-    &lt;h1&gt;Portfolio Holdings&lt;/h1&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;span class&#x3D;&quot;badge badge-primary&quot;&gt;&lt;/span&gt;
-        Actual
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;span class&#x3D;&quot;badge badge-light&quot;&gt;&lt;/span&gt;
-        Target
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;span class&#x3D;&quot;badge badge-secondary&quot;&gt;&lt;/span&gt;
-        Projected Return
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/header&gt;
-  &lt;article class&#x3D;&quot;card&quot;&gt;
-    &lt;div class&#x3D;&quot;card-body&quot;&gt;
-      CARD CONTENT HERE
-    &lt;/div&gt;
-  &lt;/article&gt;
-&lt;/main&gt;</code></pre>
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;ul class&#x3D;&quot;nav nav-sm&quot;&gt;
+  &lt;li class&#x3D;&quot;nav-item&quot;&gt;
+    &lt;a class&#x3D;&quot;nav-link active&quot; href&#x3D;&quot;#&quot;&gt;Microfinance&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class&#x3D;&quot;nav-item&quot;&gt;
+    &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Other Category&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class&#x3D;&quot;nav-item&quot;&gt;
+    &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;New&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class&#x3D;&quot;nav nav-xs&quot;&gt;
+  &lt;li class&#x3D;&quot;nav-item&quot;&gt;
+    &lt;a class&#x3D;&quot;nav-link active&quot; href&#x3D;&quot;#&quot;&gt;Microfinance&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class&#x3D;&quot;nav-item&quot;&gt;
+    &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Other Category&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class&#x3D;&quot;nav-item&quot;&gt;
+    &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;New&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
 </div>
 
         </article>
-        <article class="livingcss__article" id="card">
-          <h1 class="livingcss__article-title">Card</h1><div class="livingcss__section-description"><p>Each portfolio item is represented as a card</p></div>
+        <article class="livingcss__article" id="pills">
+          <h1 class="livingcss__article-title">Pills</h1><div class="livingcss__section-description"><p>Blossom-styled version of the pill navigation items</p></div>
 
-<livingcss-example><main class="portfolio-list">
-  <article class="card">
-    <div class="card-body">
-      CARD CONTENT HERE
-    </div>
-  </article>
-</main></livingcss-example>
-
-<div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;main class&#x3D;&quot;portfolio-list&quot;&gt;
-  &lt;article class&#x3D;&quot;card&quot;&gt;
-    &lt;div class&#x3D;&quot;card-body&quot;&gt;
-      CARD CONTENT HERE
-    &lt;/div&gt;
-  &lt;/article&gt;
-&lt;/main&gt;</code></pre>
-</div>
-
-        </article>
-        <article class="livingcss__article" id="card-header">
-          <h1 class="livingcss__article-title">Card Header</h1><div class="livingcss__section-description"><p>Provides an overview of the asset type including its status</p></div>
-
-<livingcss-example><main class="portfolio-list">
-  <article class="card">
-    <div class="card-body">
-      <header>
-        <small class="symbol">BLS:ZWIB</small>
-        <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
-        <small class="status">Activated: January 1, 2019</small>
-      </header>
-    </div>
-  </article>
-</main></livingcss-example>
+<livingcss-example><ul class="nav nav-pills nav-sm">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Microfinance</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Other Category</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">New</a>
+  </li>
+</ul></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;main class&#x3D;&quot;portfolio-list&quot;&gt;
-  &lt;article class&#x3D;&quot;card&quot;&gt;
-    &lt;div class&#x3D;&quot;card-body&quot;&gt;
-      &lt;header&gt;
-        &lt;small class&#x3D;&quot;symbol&quot;&gt;BLS:ZWIB&lt;/small&gt;
-        &lt;h2 class&#x3D;&quot;card-title&quot;&gt;Zero-emission Waste Incineration Facility in Bali&lt;/h2&gt;
-        &lt;small class&#x3D;&quot;status&quot;&gt;Activated: January 1, 2019&lt;/small&gt;
-      &lt;/header&gt;
-    &lt;/div&gt;
-  &lt;/article&gt;
-&lt;/main&gt;</code></pre>
-</div>
-
-        </article>
-        <article class="livingcss__article" id="button-wrap-left">
-          <h1 class="livingcss__article-title">Button Wrap Left</h1><div class="livingcss__section-description"><p>A highly stylized button that looks like its wrapping the card</p></div>
-
-<livingcss-example><main class="portfolio-list">
-  <article class="card">
-    <div class="card-body">
-      <button class="btn-wrap-left">Get in the Chopper</button>
-    </div>
-  </article>
-</main></livingcss-example>
-
-<div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;main class&#x3D;&quot;portfolio-list&quot;&gt;
-  &lt;article class&#x3D;&quot;card&quot;&gt;
-    &lt;div class&#x3D;&quot;card-body&quot;&gt;
-      &lt;button class&#x3D;&quot;btn-wrap-left&quot;&gt;Get in the Chopper&lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/article&gt;
-&lt;/main&gt;</code></pre>
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;ul class&#x3D;&quot;nav nav-pills nav-sm&quot;&gt;
+  &lt;li class&#x3D;&quot;nav-item&quot;&gt;
+    &lt;a class&#x3D;&quot;nav-link active&quot; href&#x3D;&quot;#&quot;&gt;Microfinance&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class&#x3D;&quot;nav-item&quot;&gt;
+    &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Other Category&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class&#x3D;&quot;nav-item&quot;&gt;
+    &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;New&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
 </div>
 
         </article>
@@ -8455,11 +8269,9 @@
 
       <nav class="livingcss__nav">
         <div class="livingcss__nav-container">
-          <a class="livingcss__nav-link" href="#full-example">Full Example</a>
-          <a class="livingcss__nav-link" href="#header">Header</a>
-          <a class="livingcss__nav-link" href="#card">Card</a>
-          <a class="livingcss__nav-link" href="#card-header">Card Header</a>
-          <a class="livingcss__nav-link" href="#button-wrap-left">Button Wrap Left</a>
+          <a class="livingcss__nav-link" href="#plain-colored-link">Plain Colored Link</a>
+          <a class="livingcss__nav-link" href="#sizes">Sizes</a>
+          <a class="livingcss__nav-link" href="#pills">Pills</a>
         </div>
       </nav>
 

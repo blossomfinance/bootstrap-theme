@@ -290,8 +290,8 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
 
     nav {
       @extend .nav;
-      @extend .nav-sm;
-      @extend .nav-link-plain;
+      @extend .nav-xs;
+      @extend .nav-link-elephant;
       @extend .mt-2;
       @extend .border-bottom;
       margin-left: -1 * $card-spacer-x;

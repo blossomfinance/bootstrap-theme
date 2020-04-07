@@ -29,19 +29,25 @@ app.use('', express.static(path.join(__dirname, 'styleguide')));
 app.use('/webfonts', express.static(path.join(__dirname, 'node_modules/@fortawesome/fontawesome-free/webfonts')));
 
 app.get('/', function (req, res) {
-  res.render('portfolio');
+  res.redirect('/portfolio');
 });
 
 app.get('/portfolio', function (req, res) {
-  res.render('portfolio');
+  res.render('portfolio', {
+    portfolio: true,
+  });
 });
 
 app.get('/investments', function (req, res) {
-  res.render('campaign-list');
+  res.render('campaign-list', {
+    investments: true,
+  });
 });
 
-app.get('/campaign-detail', function (req, res) {
-  res.render('campaign-detail');
+app.get('/investments/bmt-bin-ummah-2-variable-profit-rate-sukuk', function (req, res) {
+  res.render('campaign-detail', {
+    investments: true,
+  });
 });
 
 const port = process.env.PORT || 9191;

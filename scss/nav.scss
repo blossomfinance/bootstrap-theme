@@ -1,16 +1,43 @@
 @import "../node_modules/bootstrap/scss/nav";
 
-$nav-sm-font-size: 11px !default;
-$nav-sm-line-height: 24px !default;
+$nav-sm-font-size: 14px !default;
+$nav-sm-line-height: 26px !default;
+$nav-xs-font-size: 11px !default;
+$nav-xs-line-height: 24px !default;
+$nav-pills-border-width: 2px;
 
-@mixin plain-nav-link(
-  $color: $body-color,
-  $text-decoration: $link-decoration,
-  $color-hover: $link-hover-color,
+/**
+ * Plain Colored Link
+ *
+ * Make a nav element appear as text, instead of a link
+ *
+ * @section
+ * @page Nav
+ *
+ * @example
+ * <nav class="nav nav-link-elephant">
+ *   <a class="nav-link" href="#">Item One</a>
+ *   <a class="nav-link" href="#">Item Two</a>
+ *   <a class="nav-link" href="#">Item Three</a>
+ * </nav>
+ * <nav class="nav nav-link-grape">
+ *   <a class="nav-link" href="#">Item One</a>
+ *   <a class="nav-link" href="#">Item Two</a>
+ *   <a class="nav-link" href="#">Item Three</a>
+ * </nav>
+ * <nav class="nav nav-link-warning">
+ *   <a class="nav-link" href="#">Item One</a>
+ *   <a class="nav-link" href="#">Item Two</a>
+ *   <a class="nav-link" href="#">Item Three</a>
+ * </nav>
+ */
+@mixin plain-nav-link-variant(
+  $color-value,
+  $text-decoration: 'none',
   $text-decoration-hover: $link-hover-decoration
 ) {
   a.nav-link {
-    color: $color;
+    color: $color-value;
     text-decoration: $text-decoration;
     @extend .justify-content-start;
     &:first-child {
@@ -19,17 +46,113 @@ $nav-sm-line-height: 24px !default;
     }
 
     @include hover() {
-      color: $color-hover;
+      color: darken($color-value, 15%);
       text-decoration: $text-decoration-hover;
     }
   }
 }
 
-.nav-link-plain {
-  @include plain-nav-link($elephant, 'none', $midnight);
+@each $color, $value in $theme-colors {
+  .nav-link-#{$color} {
+    @include plain-nav-link-variant($value);
+  }
 }
 
+
+/**
+ * Sizes
+ *
+ * Decrease the size of the navigation element
+ *
+ * @section
+ * @page Nav
+ *
+ * @example
+ * <ul class="nav nav-sm">
+ *   <li class="nav-item">
+ *     <a class="nav-link active" href="#">Microfinance</a>
+ *   </li>
+ *   <li class="nav-item">
+ *     <a class="nav-link" href="#">Other Category</a>
+ *   </li>
+ *   <li class="nav-item">
+ *     <a class="nav-link" href="#">New</a>
+ *   </li>
+ * </ul>
+ * <ul class="nav nav-xs">
+ *   <li class="nav-item">
+ *     <a class="nav-link active" href="#">Microfinance</a>
+ *   </li>
+ *   <li class="nav-item">
+ *     <a class="nav-link" href="#">Other Category</a>
+ *   </li>
+ *   <li class="nav-item">
+ *     <a class="nav-link" href="#">New</a>
+ *   </li>
+ * </ul>
+ */
 .nav-sm {
-  font-size: $nav-sm-font-size;
-  line-height: $nav-sm-line-height;
+  font-size: $nav-sm-font-size !important;
+  line-height: $nav-sm-line-height !important;
+}
+.nav-xs {
+  font-size: $nav-xs-font-size !important;
+  line-height: $nav-xs-line-height !important;
+}
+
+/**
+ * Pills
+ *
+ * Blossom-styled version of the pill navigation items
+ *
+ * @section
+ * @page Nav
+ *
+ * @example
+ * <ul class="nav nav-pills nav-sm">
+ *   <li class="nav-item">
+ *     <a class="nav-link active" href="#">Microfinance</a>
+ *   </li>
+ *   <li class="nav-item">
+ *     <a class="nav-link" href="#">Other Category</a>
+ *   </li>
+ *   <li class="nav-item">
+ *     <a class="nav-link" href="#">New</a>
+ *   </li>
+ * </ul>
+ */
+.nav-pills {
+  .nav-item {
+    border: $nav-pills-border-width solid $primary;
+    border-radius: $nav-pills-border-radius;
+    @extend .mx-2;
+    &:hover {
+      @extend .bg-primary;
+      @extend .text-white;
+      .nav-link {
+        @extend .text-white;
+      }
+    }
+  }
+  .nav-link {
+    @extend .px-3;
+  }
+  &.nav-sm {
+    .nav-item {
+      @extend .mx-2;
+    }
+    .nav-link {
+      @extend .py-0;
+      @extend .px-3;
+    }
+  }
+  &.nav-xs {
+    .nav-item {
+      @extend .mx-1;
+    }
+    .nav-link {
+      @extend .py-0;
+      @extend .px-1;
+    }
+  }
 }

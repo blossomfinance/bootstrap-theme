@@ -1,3 +1,46 @@
+/**
+ * Header
+ *
+ * @section
+ * @page Campaign List
+ *
+ * @example
+ * <div class="campaign-list">
+ *   <header>
+ *     <h1>Investments</h1>
+ *     <div class="row">
+ *       <div class="col-12">
+ *         <ul class="nav">
+ *           <li class="nav-item">
+ *             <a class="nav-link active" href="#">Microfinance</a>
+ *           </li>
+ *           <li class="nav-item">
+ *             <a class="nav-link" href="#">Other Category</a>
+ *           </li>
+ *           <li class="nav-item">
+ *             <a class="nav-link" href="#">New</a>
+ *           </li>
+ *         </ul>
+ *       </div>
+ *     </div>
+ *   </header>
+ * </div>
+ */
+.campaign-list {
+  header {
+    @extend .my-5;
+    h1 {
+      @extend .mb-4;
+      @extend .text-center;
+    }
+    .nav {
+      @extend .nav-pills;
+      @extend .nav-sm;
+      @extend .d-flex;
+      @extend .justify-content-center;
+    }
+  }
+}
 
  /**
   * Card

@@ -8,13 +8,13 @@
     </button>
     <div class="collapse navbar-collapse" id="main-navigation-items">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
+        <li class="nav-item {{#if portfolio}}active{{/if}}">
           <a class="nav-link" href="/">Portfolio</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {{#if investments}}active{{/if}}">
           <a class="nav-link" href="/investments">Investments</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {{#if cash}}active{{/if}}">
           <a class="nav-link" href="#">Cash</a>
         </li>
         <li class="nav-item avatar">

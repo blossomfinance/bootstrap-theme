@@ -104,7 +104,10 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
  *           <article class="quote">
  *             <blockquote class="quote">
  *               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
- *               <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+ *               <footer class="blockquote-footer">
+ *                 <img src="/images/worker-with-cloth-headgear.png" />
+ *                 <cite title="Source Title">Famega Sulianto</cite>
+ *               </footer>
  *             </blockquote>
  *           </article>
  *         </div>
@@ -205,7 +208,13 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
    */
   .card {
     @extend .card;
+    @extend .pt-0;
     @extend .shadow-sm;
+
+    .card-body {
+      // TODO: spacing variable
+      padding-top: 20px !important;
+    }
 
     @mixin card-small-text($color) {
       font-size: $portfolio-list-sm-font-size;
@@ -370,6 +379,7 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
           }
           img + p {
             @extend .m-0;
+            @extend .text-slate;
           }
         }
 
@@ -378,14 +388,43 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
           @extend .d-flex;
           @extend .align-items-stretch;
           @extend .rounded;
-          @extend .p-4;
+          @extend .pb-6;
           @extend .text-white;
-          background-image: url('/images/quote-bg-grape.jpg');
           blockquote {
             @extend .font-italic;
+            @extend .rounded;
+            @extend .py-2;
+            @extend .px-3;
+            p {
+              @extend .text-white;
+            }
+            background-image: url('/images/quote-bg-grape.jpg');
             font-size: $portfolio-list-card-details-article-blockquote-font-size;
             line-height: $portfolio-list-card-details-article-blockquote-line-height;
             letter-spacing: -0.5px;
+            position: relative;
+            $blockquote-footer-offset: map-get($spacers, '5');
+            .blockquote-footer {
+              @extend .text-aluminium;
+              position: absolute;
+              bottom: -30px;
+              &:before {
+                content: '';
+              }
+              img {
+                @extend .float-left;
+                @extend .rounded-pill;
+                @extend .border;
+                @extend .border-white;
+                @extend .mr-3;
+                max-width: 40px;
+              }
+              cite {
+                @extend .mt-3;
+                @extend .d-inline-block;
+                font-size: 13px;
+              }
+            }
           }
         }
       }

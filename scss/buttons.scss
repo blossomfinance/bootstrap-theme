@@ -6,14 +6,9 @@
   color: $white;
 }
 
-// TODO: btn-arrow-right
-.btn-arrow-left {
-  content: '←';
-}
-
 .bg-grape .btn-grape,
 .alert-info .btn-info {
-  background-color: rgba($white, 0.16);
+  background-color: rgba($white, 0.16) !important;
 }
 
 /**
@@ -23,45 +18,57 @@
  * @page Buttons
  *
  * @example
- *
- * <button type="button" class="btn btn-warning btn-arrow-left">
- *   Go Back
- * </button>
- *
+ * <div class="mb-2">
+ *   <button type="button" class="btn btn-warning btn-arrow-left">
+ *     Go Back
+ *   </button>
+ * </div>
  * <button type="button" class="btn btn-primary btn-arrow-right">
  *   Withdraw Funds
  * </button>
- *
- * <div class="card bg-light mt-4 mb-4" style="width: 20rem;">
- *   <div class="card-body">
- *     <h4 class="card-title">A Card Title</h4>
- *     <p>Now is a good time do it:</p>
- *     <button type="button" class="btn btn-primary btn-arrow-right btn-block btn-lg">
- *       Withdraw Funds
- *     </button>
- *   </div>
+ * <div class="mt-2" style="width: 20rem">
+ *   <button type="button" class="btn btn-primary btn-arrow-right btn-block btn-lg">
+ *     Withdraw Funds
+ *   </button>
  * </div>
  */
-.btn-arrow-right {
-  text-align: left;
+@mixin btn-arrow-variant($icon, $direction) {
+  @extend .d-flex;
+  @extend .align-items-center;
+  @extend .justify-content-between;
   padding-left: $btn-padding-x * 2;
   padding-right: $btn-padding-x * 2;
-  &:after {
-    margin-left: $btn-padding-x;
-    content: '→';
-    float: right;
+  @if $direction == 'right' {
+    text-align: left;
+    @extend .order-0;
+  } @else {
+    text-align: right;
+    @extend .order-1;
+  }
+  &:before {
+    @extend .fas;
+    @extend %fa-icon;
+    // @extend .align-middle;
+    content: fa-content($icon);
+    // line-height: 1.5rem;
+    @if $direction == 'right' {
+      margin-left: $btn-padding-x * 2;
+      float: right;
+      @extend .order-1;
+    } @else {
+      margin-right: $btn-padding-x * 2;
+      float: left;
+      @extend .order-0;
+    }
   }
 }
 
+.btn-arrow-right {
+  @include btn-arrow-variant($fa-var-long-arrow-alt-right, 'right');
+}
+
 .btn-arrow-left {
-  text-align: right;
-  padding-right: $btn-padding-x * 2;
-  padding-left: $btn-padding-x * 2;
-  &:after {
-    margin-right: $btn-padding-x;
-    content: '←';
-    float: left;
-  }
+  @include btn-arrow-variant($fa-var-long-arrow-alt-left, 'left');
 }
 
 /**

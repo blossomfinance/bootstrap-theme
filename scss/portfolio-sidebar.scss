@@ -34,7 +34,7 @@
  *           </p>
  *         </li>
  *         <li>
- *           <span class="badge badge-sq badge-subtle-mint">
+ *           <span class="badge badge-sq badge-subtle-ocean">
  *             <i class="fas fa-money-bill-wave-alt"></i>
  *           </span>
  *           <p>
@@ -109,11 +109,10 @@
 .card-total-holdings {
   @extend .card;
   @extend .bg-light;
-
+  @extend .text-center;
   .card-title {
     display: block;
     @extend .text-uppercase;
-    @extend .text-grape;
     font-size: 13px;
     line-height: 13px;
     letter-spacing: -0.11px;
@@ -122,6 +121,7 @@
   h2 {
     @extend .font-weight-bold;
     @extend .text-midnight;
+    @extend .mb-0;
 
     font-size: 36px;
     line-height: 49px;
@@ -216,10 +216,10 @@
        */
       header {
         @extend .border-bottom;
-        @extend .pb-1;
-        @extend .mb-0;
-        margin-right: -16px;
-        margin-left: -16px;
+        margin-left: -0.5 * $spacer;
+        margin-right: -0.5 * $spacer;
+        padding-left: $spacer / 2;
+        padding-right: $spacer / 2;
         h3 {
           @extend .text-midnight;
           font-size: $h3-font-size;
@@ -307,18 +307,29 @@
         & > li {
           @extend .list-group-item;
           @extend .d-flex;
+          @extend .pl-0;
+          @extend .py-4;
           @extend .align-items-center;
-          border: none;
-          background: linear-gradient($list-group-border-color, $list-group-border-color) bottom no-repeat;
-          background-size: 85% 1px;
-          background-position: left bottom;
+
+          &:before {
+            @extend .border-bottom;
+            @extend .d-block;
+          }
+          // TODO: border bottom as pseudo element
+          // <---- 40px       8px ---->
+          // border: none;
+          // background: linear-gradient($list-group-border-color, $list-group-border-color) bottom no-repeat;
+          // // TODO: is there a width - 32px
+          // background-size: 85% 1px;
+          // background-position: left bottom;
+          @extend .border-0;
           &:last-child {
             background: none;
             @extend .mb-0;
             @extend .pb-0;
           }
           .badge {
-            @extend .mr-4;
+            @extend .mr-3;
           }
           p {
             @extend .text-muted;

@@ -46,7 +46,7 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
  *       </li>
  *     </ul>
  *   </header>
- *   <article class="card">
+ *   <article class="card expanded">
  *     <div class="card-body">
  *       <div class="row">
  *         <div class="col-4">
@@ -55,7 +55,7 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
  *             <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
  *             <small class="status">Activated: January 1, 2019</small>
  *           </header>
- *           <button class="btn-wrap-left">Invest More</button>
+ *           <button class="btn btn-wrap-left btn-concrete btn-arrow-right">Invest More</button>
  *           <nav>
  *             <a href="#">Sell/Trade</a>
  *             <a href="#">Offering Docs</a>
@@ -76,7 +76,7 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
  *               11.90%
  *               <small>Projected Return<super>&dagger;</super></small>
  *             </div>
- *             <div class="amount-current-value">
+ *             <div class="amount-current-value-active">
  *               <div>
  *                 $100,000
  *                 <small>Currently Worth</small>
@@ -112,6 +112,49 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
  *           </article>
  *         </div>
  *       </aside>
+ *     </div>
+ *   </article>
+ *   <article class="card collapsed">
+ *     <div class="card-body">
+ *       <div class="row">
+ *         <div class="col-4">
+ *           <header>
+ *             <small class="symbol">BLS:ZWIB</small>
+ *             <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
+ *             <small class="status">Fully Matured: August 31, 2019</small>
+ *           </header>
+ *           <button class="btn btn-wrap-left btn-success-icon">
+ *             Investment Matured
+ *           </button>
+ *           <nav>
+ *             <a href="#">Offering Docs</a>
+ *             <a href="#">Financials</a>
+ *           </nav>
+ *         </div>
+ *         <div class="col-8">
+ *           <section class="item-summary">
+ *             <div class="amount-principal">
+ *               $100,000
+ *               <small>You Invested</small>
+ *             </div>
+ *             <div class="amount-profit">
+ *               + $4,000
+ *               <small>You've Earned</small>
+ *             </div>
+ *             <div class="percent-apr">
+ *               11.90%
+ *               <small>Projected Return<super>&dagger;</super></small>
+ *             </div>
+ *             <div class="amount-current-value-matured">
+ *               <div>
+ *                 $100,000
+ *                 <small>Currently Worth</small>
+ *               </div>
+ *             </div>
+ *           </section>
+ *           <img src="/images/performance-graph.png" class="img-fluid" />
+ *         </div>
+ *       </div>
  *     </div>
  *   </article>
  * </main>
@@ -209,6 +252,7 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
   .card {
     @extend .card;
     @extend .pt-0;
+    @extend .mb-5;
     @extend .shadow-sm;
 
     .card-body {
@@ -264,40 +308,6 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
       }
     }
 
-    /**
-     * Button Wrap Left
-     *
-     * A highly stylized button that looks like its wrapping the card
-     *
-     * @page Portfolio List
-     * @section
-     *
-     * @example
-     * <main class="portfolio-list">
-     *   <article class="card">
-     *     <div class="card-body">
-     *       <button class="btn-wrap-left">Get in the Chopper</button>
-     *     </div>
-     *   </article>
-     * </main>
-     */
-    .btn-wrap-left {
-      @extend .btn;
-      @extend .btn-concrete;
-      @extend .btn-arrow-right;
-      @extend .text-uppercase;
-      @extend .font-weight-bold;
-      height: 40px;
-      border-top-right-radius: 1000px;
-      border-bottom-right-radius: 1000px;
-      margin-left: -1 * $card-spacer-x;
-      font-size: $portfolio-list-sm-font-size;
-      line-height: $portfolio-list-sm-font-size;
-      &:after {
-        padding-left: 2 * $card-spacer-x;
-      }
-    }
-
     nav {
       @extend .nav;
       @extend .nav-xs;
@@ -349,12 +359,42 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
         }
       }
 
-      .amount-current-value {
-        @include label-value-variant($blueberry, $blueberry);
-        @extend .bg-robin-egg;
+      %amount-current-value {
         @extend .rounded;
-        // this one is slightly bigger
         font-size: $portfolio-list-card-item-value-font-size * (1 + (1/9));
+      }
+
+      @mixin amount-current-value-variant($state, $color, $bg-color) {
+        @extend %amount-current-value;
+        @include label-value-variant($color, $color);
+        background-color: $bg-color;
+      }
+
+      $portfolio-states: () !default;
+      $portfolio-states: map-merge(
+        (
+          'funding': rgba($info, 0.2),
+          'active': rgba($secondary, 0.2),
+          'matured': $success
+        ),
+        $portfolio-states
+      );
+
+      $portfolio-states-colors: () !default;
+      $portfolio-states-colors: map-merge(
+        (
+          'funding': $info,
+          'active': $secondary,
+          'matured': $white
+        ),
+        $portfolio-states-colors
+      );
+      
+      @each $state, $bg-color in $portfolio-states {
+        .amount-current-value-#{$state} {
+          $color: map-get($portfolio-states-colors, $state);
+          @include amount-current-value-variant($state, $color, $bg-color);
+        }
       }
     }
 
@@ -363,8 +403,9 @@ $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
       @extend .font-weight-light;
       h3 {
         @extend .text-midnight;
-        font-size: $portfolio-list-card-details-heading-font-size;
         @extend .font-italic;
+        @extend .font-weight-bold;
+        font-size: $portfolio-list-card-details-heading-font-size;
       }
       article {
         &.caption-image {

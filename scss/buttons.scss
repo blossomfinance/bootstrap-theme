@@ -225,3 +225,93 @@
     @include btn-link-arrow-color-variant($color);
   }
 }
+
+/**
+ * Button Success
+ *
+ * Indicate something successful has happened
+ *
+ * @section
+ * @page Buttons
+ *
+ * @example
+ * <div class="p-2">
+ *   <button class="btn btn-success-icon">It's done!</button>
+ * </div>
+ */
+$btn-icon-line-height: 1.5rem !default;
+.btn-success-icon {
+  @extend .btn-success;
+  @extend .bg-success;
+  @extend .text-white;
+  @extend .d-flex;
+  @extend .justify-content-center;
+  @extend .align-items-center;
+  &:before {
+    @extend .fas;
+    @extend %fa-icon;
+    content: fa-content($fa-var-check-circle);
+    font-size: $btn-icon-line-height;
+    margin-right: $btn-padding-x;
+  }
+}
+
+/**
+ * Button Wrap
+ *
+ * A highly stylized button that looks like its wrapping its container
+ *
+ * @page buttons
+ * @section
+ *
+ * @example
+ * <main class="p-5">
+ *   <div class="card mb-4">
+ *     <div class="card-body">
+ *       <button class="btn btn-wrap-left btn-concrete btn-arrow-right">More fun games I know</button>
+ *     </div>
+ *   </div>
+ *   <div class="card mb-4">
+ *     <div class="card-body">
+ *       <button class="btn btn-wrap-right btn-success">All completed!</button>
+ *     </div>
+ *   </div>
+ * </main>
+ */
+
+ @mixin btn-wrap-variant(
+   $direction,
+   $spacing-x,
+   $font-size: $font-size-sm,
+   $height: $spacer
+ ) {
+   @extend .text-uppercase;
+   @extend .font-weight-bold;
+   padding-left: $btn-padding-x * 2;
+   padding-right: $btn-padding-x * 2;
+   height: $height;
+   border-top-right-radius: 1000px;
+   border-bottom-right-radius: 1000px;
+   font-size: $font-size;
+   line-height: $font-size;
+   @if $direction == 'left' {
+     margin-left: -1 * $card-spacer-x;
+     &:after {
+       padding-left: 2 * $card-spacer-x;
+     }
+   } @else {
+     margin-right: -1 * $card-spacer-x;
+     &:after {
+       padding-left: 2 * $card-spacer-x;
+     }
+   }
+ }
+
+.card {
+  .btn-wrap-left {
+    @include btn-wrap-variant('left', $card-spacer-x);
+  }
+  .btn-wrap-right {
+    @include btn-wrap-variant('right', $card-spacer-x);
+  }
+}

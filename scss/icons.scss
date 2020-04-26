@@ -1,0 +1,27 @@
+
+// font awesome
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands";
+
+// blossom custom icons
+
+@import "../node_modules/blossom-svg-webfont-icons/dist/scss/icons";
+
+$icon-size-adjustments: (
+  'growth': 1.25,
+  'calendar': 1,
+  'microfinance': 1,
+  'globe': 1.25,
+  'scales-of-justice': 1.25,
+  'trading-bars': 0.9,
+);
+
+@each $icon, $multiplier in $icon-size-adjustments {
+  .icon-#{$icon} {
+    position: relative;
+    &:before {
+      font-size: 1em * $multiplier !important;
+    }
+  }
+}

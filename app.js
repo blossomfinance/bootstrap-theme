@@ -27,6 +27,7 @@ app.disable('view cache');
 
 app.use('', express.static(path.join(__dirname, 'styleguide')));
 app.use('/webfonts', express.static(path.join(__dirname, 'node_modules/@fortawesome/fontawesome-free/webfonts')));
+app.use('/fonts', express.static(path.join(__dirname, 'node_modules/blossom-svg-webfont-icons/dist/fonts')));
 
 app.get('/', function (req, res) {
   res.redirect('/portfolio');

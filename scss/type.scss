@@ -85,6 +85,8 @@ $card-heading-h5-font-size: 14px !default;
 /**
  * Paragraphs
  *
+ * Several sentences related by topic.
+ *
  * @section
  * @page Typeography
  *
@@ -97,6 +99,24 @@ p {
   color: $gray-600;
 }
 
+/**
+ * Lead
+ *
+ * Make the text stand out from normal text
+ *
+ * @section
+ * @page Typeography
+ *
+ * @example
+ * <div class="p4 m4">
+ *   <p>This is what normal text looks like</p>
+ *   <p class="lead">This text should stand out</p>
+ *   <p>And then this is more normal text.</p>
+ * </div>
+ */
+.lead {
+  color: $gray-900 !important;
+}
 /**
  * Extra Small Text
  *
@@ -164,14 +184,7 @@ p {
     font-size: $font-size-base;
     line-height: $font-size-base;
   }
-  & > dt {
-    @extend .text-elephant;
-    @extend .font-weight-light;
-  }
-  & > dd {
-    @extend .text-midnight;
-    @extend .font-weight-bolder;
-  }
+
   dd + dt {
     @extend .mb-4;
   }
@@ -187,5 +200,60 @@ p {
     dd + dt {
       @extend .mb-0;
     }
+  }
+
+  &.dl-grid {
+    // @extend .d-flex;
+  }
+
+  &.dl-icon {
+    @extend .px-5;
+    & > dd,
+    & > dt {
+      margin-left: 56px !important;
+    }
+
+    dt {
+      position: relative;
+      i {
+        position: absolute;
+        left: -54px;
+        bottom: 8px;
+        font-size: 40px;
+      }
+    }
+  }
+
+  // typography
+  dt {
+    @extend .font-weight-light;
+  }
+  dd {
+    @extend .font-weight-bolder;
+  }
+}
+
+
+// colors
+:not(.bg-dark) {
+  dt {
+    @extend .text-elephant;
+  }
+  dd {
+    @extend .text-midnight;
+  }
+}
+
+.dl.bg-dark {
+  @extend .text-white;
+  color: $white !important;
+  & > * {
+    color: $white !important;
+  }
+  & > dt {
+    @extend .text-white;
+  }
+  & > dd {
+    @extend .text-white;
   }
 }

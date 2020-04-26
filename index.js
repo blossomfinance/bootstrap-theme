@@ -82,6 +82,9 @@ module.exports = {
       serveStatic: [{
         route: 'webfonts',
         dir: path.join(__dirname, 'node_modules/@fortawesome/fontawesome-free/webfonts'),
+      }, {
+        route: 'fonts',
+        dir: path.join(__dirname, 'node_modules/blossom-svg-webfont-icons/dist/fonts'),
       }],
 
       // allow serving in heroku

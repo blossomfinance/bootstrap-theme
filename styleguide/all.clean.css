@@ -4868,6 +4868,299 @@
   font-family: 'Font Awesome 5 Brands';
   font-weight: 400; }
 
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons.eot?39508ce7e7167b4a13c9bb76c8849648");
+  src: url("../fonts/icons.eot?39508ce7e7167b4a13c9bb76c8849648#iefix") format("embedded-opentype"), url("../fonts/icons.woff?39508ce7e7167b4a13c9bb76c8849648") format("woff"), url("../fonts/icons.ttf?39508ce7e7167b4a13c9bb76c8849648") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.icon {
+  font-family: "icons";
+  display: inline-block;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-amount:before {
+  content: "\f101"; }
+
+.icon-application-form:before {
+  content: "\f102"; }
+
+.icon-bank-transaction:before {
+  content: "\f103"; }
+
+.icon-bank:before {
+  content: "\f104"; }
+
+.icon-battery:before {
+  content: "\f105"; }
+
+.icon-blossom-flower:before {
+  content: "\f106"; }
+
+.icon-blossom-horizontal:before {
+  content: "\f107"; }
+
+.icon-blossom-square:before {
+  content: "\f108"; }
+
+.icon-briefcase-l:before {
+  content: "\f109"; }
+
+.icon-briefcase:before {
+  content: "\f10a"; }
+
+.icon-calendar:before {
+  content: "\f10b"; }
+
+.icon-charity:before {
+  content: "\f10c"; }
+
+.icon-construction:before {
+  content: "\f10d"; }
+
+.icon-curved-arrow:before {
+  content: "\f10e"; }
+
+.icon-down-arrow-outline:before {
+  content: "\f10f"; }
+
+.icon-envelope:before {
+  content: "\f110"; }
+
+.icon-extrnal-link:before {
+  content: "\f111"; }
+
+.icon-fast:before {
+  content: "\f112"; }
+
+.icon-financial-statement:before {
+  content: "\f113"; }
+
+.icon-finish-flag:before {
+  content: "\f114"; }
+
+.icon-globe:before {
+  content: "\f115"; }
+
+.icon-good-people:before {
+  content: "\f116"; }
+
+.icon-growth-graph:before {
+  content: "\f117"; }
+
+.icon-growth-icon:before {
+  content: "\f118"; }
+
+.icon-growth:before {
+  content: "\f119"; }
+
+.icon-halal:before {
+  content: "\f11a"; }
+
+.icon-hello-sign-logo:before {
+  content: "\f11b"; }
+
+.icon-hijabi:before {
+  content: "\f11c"; }
+
+.icon-house:before {
+  content: "\f11d"; }
+
+.icon-identification:before {
+  content: "\f11e"; }
+
+.icon-indonesia-national-monument:before {
+  content: "\f11f"; }
+
+.icon-indonesia-underwriters:before {
+  content: "\f120"; }
+
+.icon-indonesia1:before {
+  content: "\f121"; }
+
+.icon-institution:before {
+  content: "\f122"; }
+
+.icon-insurance:before {
+  content: "\f123"; }
+
+.icon-invest-in-indonesia:before {
+  content: "\f124"; }
+
+.icon-investment:before {
+  content: "\f125"; }
+
+.icon-jakarta-people:before {
+  content: "\f126"; }
+
+.icon-link-wallet:before {
+  content: "\f127"; }
+
+.icon-locations:before {
+  content: "\f128"; }
+
+.icon-lock-password:before {
+  content: "\f129"; }
+
+.icon-mans-clothing:before {
+  content: "\f12a"; }
+
+.icon-market-l:before {
+  content: "\f12b"; }
+
+.icon-market:before {
+  content: "\f12c"; }
+
+.icon-maximum:before {
+  content: "\f12d"; }
+
+.icon-metamask:before {
+  content: "\f12e"; }
+
+.icon-microfinance:before {
+  content: "\f12f"; }
+
+.icon-min-icon:before {
+  content: "\f130"; }
+
+.icon-minimum:before {
+  content: "\f131"; }
+
+.icon-owner:before {
+  content: "\f132"; }
+
+.icon-passport:before {
+  content: "\f133"; }
+
+.icon-percentage-of-pie:before {
+  content: "\f134"; }
+
+.icon-person-report:before {
+  content: "\f135"; }
+
+.icon-personal-interview:before {
+  content: "\f136"; }
+
+.icon-personal-story:before {
+  content: "\f137"; }
+
+.icon-price-discount:before {
+  content: "\f138"; }
+
+.icon-protect-family:before {
+  content: "\f139"; }
+
+.icon-qr-code:before {
+  content: "\f13a"; }
+
+.icon-rupiah:before {
+  content: "\f13b"; }
+
+.icon-scales-of-justice:before {
+  content: "\f13c"; }
+
+.icon-select-checkbox:before {
+  content: "\f13d"; }
+
+.icon-settings-icon:before {
+  content: "\f13e"; }
+
+.icon-settings-l:before {
+  content: "\f13f"; }
+
+.icon-settings:before {
+  content: "\f140"; }
+
+.icon-shake-hands:before {
+  content: "\f141"; }
+
+.icon-sign:before {
+  content: "\f142"; }
+
+.icon-signed:before {
+  content: "\f143"; }
+
+.icon-social-uplift:before {
+  content: "\f144"; }
+
+.icon-stable-exchange-rate:before {
+  content: "\f145"; }
+
+.icon-stock-trading:before {
+  content: "\f146"; }
+
+.icon-tax:before {
+  content: "\f147"; }
+
+.icon-toggle-drawer:before {
+  content: "\f148"; }
+
+.icon-tr-pend:before {
+  content: "\f149"; }
+
+.icon-trading-bars:before {
+  content: "\f14a"; }
+
+.icon-user:before {
+  content: "\f14b"; }
+
+.icon-verify-convo:before {
+  content: "\f14c"; }
+
+.icon-verify-questions:before {
+  content: "\f14d"; }
+
+.icon-wallet-l:before {
+  content: "\f14e"; }
+
+.icon-wallet-linked:before {
+  content: "\f14f"; }
+
+.icon-wallet:before {
+  content: "\f150"; }
+
+.icon-world-map:before {
+  content: "\f151"; }
+
+.icon-growth {
+  position: relative; }
+  .icon-growth:before {
+    font-size: 1.25em !important; }
+
+.icon-calendar {
+  position: relative; }
+  .icon-calendar:before {
+    font-size: 1em !important; }
+
+.icon-microfinance {
+  position: relative; }
+  .icon-microfinance:before {
+    font-size: 1em !important; }
+
+.icon-globe {
+  position: relative; }
+  .icon-globe:before {
+    font-size: 1.25em !important; }
+
+.icon-scales-of-justice {
+  position: relative; }
+  .icon-scales-of-justice:before {
+    font-size: 1.25em !important; }
+
+.icon-trading-bars {
+  position: relative; }
+  .icon-trading-bars:before {
+    font-size: 0.9em !important; }
+
 :root {
   --blue: #58cfee;
   --indigo: #6610f2;
@@ -4946,7 +5239,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #192228;
+  color: #3a3f42;
   text-align: left;
   background-color: #f8f9fa; }
 
@@ -5186,6 +5479,9 @@ template {
 [hidden] {
   display: none !important; }
 
+body.bleed {
+  background-color: #ffffff; }
+
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -5213,8 +5509,8 @@ h6, .h6 {
   font-size: 1rem; }
 
 .lead {
-  font-size: 1.25rem;
-  font-weight: 300; }
+  font-size: 1.15rem;
+  font-weight: 400; }
 
 .display-1 {
   font-size: 6rem;
@@ -5231,7 +5527,7 @@ h6, .h6 {
   font-weight: 600;
   line-height: 1.2; }
 
-.display-4 {
+.display-4, .campaign header h1, .campaign main h2 {
   font-size: 3.5rem;
   font-weight: 600;
   line-height: 1.2; }
@@ -5311,6 +5607,10 @@ p {
   color: #959ea6; }
 
 
+.lead {
+  color: #192228 !important; }
+
+
 .text-xsmall, .campaign-list .campaign .card .card-body small, .campaign-list .campaign .card-total-holdings .card-body small {
   font-size: 11px; }
 
@@ -5320,11 +5620,28 @@ p {
   font-size: 1rem;
   line-height: 1rem; }
 
-.dl-horizontal {
+.dl.dl-horizontal {
   flex-flow: column wrap;
-  max-height: 86px; }
+  max-height: 48px; }
 
-.img-fluid, .portfolio-list .card-total-holdings .item-info-feed article.caption-image img, .portfolio-list .card .item-info-feed article.caption-image img {
+.dl.dl-icon > dd,
+.dl.dl-icon > dt {
+  margin-left: 56px !important; }
+
+.dl.dl-icon dt {
+  position: relative; }
+  .dl.dl-icon dt i {
+    position: absolute;
+    left: -54px;
+    bottom: 8px;
+    font-size: 40px; }
+
+.dl.bg-dark, .dl.btn-link-arrow-right-dark:after, .dl.btn-link-arrow-right-dark:before, .dl.btn-link-arrow-left-dark:after, .dl.btn-link-arrow-left-dark:before {
+  color: #ffffff !important; }
+  .dl.bg-dark > *, .dl.btn-link-arrow-right-dark:after > *, .dl.btn-link-arrow-right-dark:before > *, .dl.btn-link-arrow-left-dark:after > *, .dl.btn-link-arrow-left-dark:before > * {
+    color: #ffffff !important; }
+
+.img-fluid, .campaign .img-splash, .portfolio-list .card-total-holdings .item-info-feed article.caption-image img, .portfolio-list .card .item-info-feed article.caption-image img {
   max-width: 100%;
   height: auto; }
 
@@ -6049,7 +6366,7 @@ p {
 .btn, .btn-link-arrow-left-primary, .btn-link-arrow-left-secondary, .btn-link-arrow-left-success, .btn-link-arrow-left-info, .btn-link-arrow-left-warning, .btn-link-arrow-left-danger, .btn-link-arrow-left-light, .btn-link-arrow-left-dark, .btn-link-arrow-left-clay, .btn-link-arrow-left-orange, .btn-link-arrow-left-sun, .btn-link-arrow-left-mint, .btn-link-arrow-left-grass, .btn-link-arrow-left-leaf, .btn-link-arrow-left-ocean, .btn-link-arrow-left-sky, .btn-link-arrow-left-saphire, .btn-link-arrow-left-robin-egg, .btn-link-arrow-left-blueberry, .btn-link-arrow-left-grape, .btn-link-arrow-left-indigo, .btn-link-arrow-left-lavander, .btn-link-arrow-left-sea, .btn-link-arrow-left-water, .btn-link-arrow-left-white, .btn-link-arrow-left-cloud, .btn-link-arrow-left-moon, .btn-link-arrow-left-milk, .btn-link-arrow-left-fog, .btn-link-arrow-left-concrete, .btn-link-arrow-left-ivory, .btn-link-arrow-left-aluminium, .btn-link-arrow-left-elephant, .btn-link-arrow-left-slate, .btn-link-arrow-left-midnight, .btn-link-arrow-left-black, .btn-link-arrow-right-primary, .btn-link-arrow-right-secondary, .btn-link-arrow-right-success, .btn-link-arrow-right-info, .btn-link-arrow-right-warning, .btn-link-arrow-right-danger, .btn-link-arrow-right-light, .btn-link-arrow-right-dark, .btn-link-arrow-right-clay, .btn-link-arrow-right-orange, .btn-link-arrow-right-sun, .btn-link-arrow-right-mint, .btn-link-arrow-right-grass, .btn-link-arrow-right-leaf, .btn-link-arrow-right-ocean, .btn-link-arrow-right-sky, .btn-link-arrow-right-saphire, .btn-link-arrow-right-robin-egg, .btn-link-arrow-right-blueberry, .btn-link-arrow-right-grape, .btn-link-arrow-right-indigo, .btn-link-arrow-right-lavander, .btn-link-arrow-right-sea, .btn-link-arrow-right-water, .btn-link-arrow-right-white, .btn-link-arrow-right-cloud, .btn-link-arrow-right-moon, .btn-link-arrow-right-milk, .btn-link-arrow-right-fog, .btn-link-arrow-right-concrete, .btn-link-arrow-right-ivory, .btn-link-arrow-right-aluminium, .btn-link-arrow-right-elephant, .btn-link-arrow-right-slate, .btn-link-arrow-right-midnight, .btn-link-arrow-right-black {
   display: inline-block;
   font-weight: 600;
-  color: #192228;
+  color: #3a3f42;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -6065,7 +6382,7 @@ p {
     .btn, .btn-link-arrow-left-primary, .btn-link-arrow-left-secondary, .btn-link-arrow-left-success, .btn-link-arrow-left-info, .btn-link-arrow-left-warning, .btn-link-arrow-left-danger, .btn-link-arrow-left-light, .btn-link-arrow-left-dark, .btn-link-arrow-left-clay, .btn-link-arrow-left-orange, .btn-link-arrow-left-sun, .btn-link-arrow-left-mint, .btn-link-arrow-left-grass, .btn-link-arrow-left-leaf, .btn-link-arrow-left-ocean, .btn-link-arrow-left-sky, .btn-link-arrow-left-saphire, .btn-link-arrow-left-robin-egg, .btn-link-arrow-left-blueberry, .btn-link-arrow-left-grape, .btn-link-arrow-left-indigo, .btn-link-arrow-left-lavander, .btn-link-arrow-left-sea, .btn-link-arrow-left-water, .btn-link-arrow-left-white, .btn-link-arrow-left-cloud, .btn-link-arrow-left-moon, .btn-link-arrow-left-milk, .btn-link-arrow-left-fog, .btn-link-arrow-left-concrete, .btn-link-arrow-left-ivory, .btn-link-arrow-left-aluminium, .btn-link-arrow-left-elephant, .btn-link-arrow-left-slate, .btn-link-arrow-left-midnight, .btn-link-arrow-left-black, .btn-link-arrow-right-primary, .btn-link-arrow-right-secondary, .btn-link-arrow-right-success, .btn-link-arrow-right-info, .btn-link-arrow-right-warning, .btn-link-arrow-right-danger, .btn-link-arrow-right-light, .btn-link-arrow-right-dark, .btn-link-arrow-right-clay, .btn-link-arrow-right-orange, .btn-link-arrow-right-sun, .btn-link-arrow-right-mint, .btn-link-arrow-right-grass, .btn-link-arrow-right-leaf, .btn-link-arrow-right-ocean, .btn-link-arrow-right-sky, .btn-link-arrow-right-saphire, .btn-link-arrow-right-robin-egg, .btn-link-arrow-right-blueberry, .btn-link-arrow-right-grape, .btn-link-arrow-right-indigo, .btn-link-arrow-right-lavander, .btn-link-arrow-right-sea, .btn-link-arrow-right-water, .btn-link-arrow-right-white, .btn-link-arrow-right-cloud, .btn-link-arrow-right-moon, .btn-link-arrow-right-milk, .btn-link-arrow-right-fog, .btn-link-arrow-right-concrete, .btn-link-arrow-right-ivory, .btn-link-arrow-right-aluminium, .btn-link-arrow-right-elephant, .btn-link-arrow-right-slate, .btn-link-arrow-right-midnight, .btn-link-arrow-right-black {
       transition: none; } }
   .btn:hover, .btn-link-arrow-left-primary:hover, .btn-link-arrow-left-secondary:hover, .btn-link-arrow-left-success:hover, .btn-link-arrow-left-info:hover, .btn-link-arrow-left-warning:hover, .btn-link-arrow-left-danger:hover, .btn-link-arrow-left-light:hover, .btn-link-arrow-left-dark:hover, .btn-link-arrow-left-clay:hover, .btn-link-arrow-left-orange:hover, .btn-link-arrow-left-sun:hover, .btn-link-arrow-left-mint:hover, .btn-link-arrow-left-grass:hover, .btn-link-arrow-left-leaf:hover, .btn-link-arrow-left-ocean:hover, .btn-link-arrow-left-sky:hover, .btn-link-arrow-left-saphire:hover, .btn-link-arrow-left-robin-egg:hover, .btn-link-arrow-left-blueberry:hover, .btn-link-arrow-left-grape:hover, .btn-link-arrow-left-indigo:hover, .btn-link-arrow-left-lavander:hover, .btn-link-arrow-left-sea:hover, .btn-link-arrow-left-water:hover, .btn-link-arrow-left-white:hover, .btn-link-arrow-left-cloud:hover, .btn-link-arrow-left-moon:hover, .btn-link-arrow-left-milk:hover, .btn-link-arrow-left-fog:hover, .btn-link-arrow-left-concrete:hover, .btn-link-arrow-left-ivory:hover, .btn-link-arrow-left-aluminium:hover, .btn-link-arrow-left-elephant:hover, .btn-link-arrow-left-slate:hover, .btn-link-arrow-left-midnight:hover, .btn-link-arrow-left-black:hover, .btn-link-arrow-right-primary:hover, .btn-link-arrow-right-secondary:hover, .btn-link-arrow-right-success:hover, .btn-link-arrow-right-info:hover, .btn-link-arrow-right-warning:hover, .btn-link-arrow-right-danger:hover, .btn-link-arrow-right-light:hover, .btn-link-arrow-right-dark:hover, .btn-link-arrow-right-clay:hover, .btn-link-arrow-right-orange:hover, .btn-link-arrow-right-sun:hover, .btn-link-arrow-right-mint:hover, .btn-link-arrow-right-grass:hover, .btn-link-arrow-right-leaf:hover, .btn-link-arrow-right-ocean:hover, .btn-link-arrow-right-sky:hover, .btn-link-arrow-right-saphire:hover, .btn-link-arrow-right-robin-egg:hover, .btn-link-arrow-right-blueberry:hover, .btn-link-arrow-right-grape:hover, .btn-link-arrow-right-indigo:hover, .btn-link-arrow-right-lavander:hover, .btn-link-arrow-right-sea:hover, .btn-link-arrow-right-water:hover, .btn-link-arrow-right-white:hover, .btn-link-arrow-right-cloud:hover, .btn-link-arrow-right-moon:hover, .btn-link-arrow-right-milk:hover, .btn-link-arrow-right-fog:hover, .btn-link-arrow-right-concrete:hover, .btn-link-arrow-right-ivory:hover, .btn-link-arrow-right-aluminium:hover, .btn-link-arrow-right-elephant:hover, .btn-link-arrow-right-slate:hover, .btn-link-arrow-right-midnight:hover, .btn-link-arrow-right-black:hover {
-    color: #192228;
+    color: #3a3f42;
     text-decoration: none; }
   .btn:focus, .btn-link-arrow-left-primary:focus, .btn-link-arrow-left-secondary:focus, .btn-link-arrow-left-success:focus, .btn-link-arrow-left-info:focus, .btn-link-arrow-left-warning:focus, .btn-link-arrow-left-danger:focus, .btn-link-arrow-left-light:focus, .btn-link-arrow-left-dark:focus, .btn-link-arrow-left-clay:focus, .btn-link-arrow-left-orange:focus, .btn-link-arrow-left-sun:focus, .btn-link-arrow-left-mint:focus, .btn-link-arrow-left-grass:focus, .btn-link-arrow-left-leaf:focus, .btn-link-arrow-left-ocean:focus, .btn-link-arrow-left-sky:focus, .btn-link-arrow-left-saphire:focus, .btn-link-arrow-left-robin-egg:focus, .btn-link-arrow-left-blueberry:focus, .btn-link-arrow-left-grape:focus, .btn-link-arrow-left-indigo:focus, .btn-link-arrow-left-lavander:focus, .btn-link-arrow-left-sea:focus, .btn-link-arrow-left-water:focus, .btn-link-arrow-left-white:focus, .btn-link-arrow-left-cloud:focus, .btn-link-arrow-left-moon:focus, .btn-link-arrow-left-milk:focus, .btn-link-arrow-left-fog:focus, .btn-link-arrow-left-concrete:focus, .btn-link-arrow-left-ivory:focus, .btn-link-arrow-left-aluminium:focus, .btn-link-arrow-left-elephant:focus, .btn-link-arrow-left-slate:focus, .btn-link-arrow-left-midnight:focus, .btn-link-arrow-left-black:focus, .btn-link-arrow-right-primary:focus, .btn-link-arrow-right-secondary:focus, .btn-link-arrow-right-success:focus, .btn-link-arrow-right-info:focus, .btn-link-arrow-right-warning:focus, .btn-link-arrow-right-danger:focus, .btn-link-arrow-right-light:focus, .btn-link-arrow-right-dark:focus, .btn-link-arrow-right-clay:focus, .btn-link-arrow-right-orange:focus, .btn-link-arrow-right-sun:focus, .btn-link-arrow-right-mint:focus, .btn-link-arrow-right-grass:focus, .btn-link-arrow-right-leaf:focus, .btn-link-arrow-right-ocean:focus, .btn-link-arrow-right-sky:focus, .btn-link-arrow-right-saphire:focus, .btn-link-arrow-right-robin-egg:focus, .btn-link-arrow-right-blueberry:focus, .btn-link-arrow-right-grape:focus, .btn-link-arrow-right-indigo:focus, .btn-link-arrow-right-lavander:focus, .btn-link-arrow-right-sea:focus, .btn-link-arrow-right-water:focus, .btn-link-arrow-right-white:focus, .btn-link-arrow-right-cloud:focus, .btn-link-arrow-right-moon:focus, .btn-link-arrow-right-milk:focus, .btn-link-arrow-right-fog:focus, .btn-link-arrow-right-concrete:focus, .btn-link-arrow-right-ivory:focus, .btn-link-arrow-right-aluminium:focus, .btn-link-arrow-right-elephant:focus, .btn-link-arrow-right-slate:focus, .btn-link-arrow-right-midnight:focus, .btn-link-arrow-right-black:focus, .btn.focus, .focus.btn-link-arrow-left-primary, .focus.btn-link-arrow-left-secondary, .focus.btn-link-arrow-left-success, .focus.btn-link-arrow-left-info, .focus.btn-link-arrow-left-warning, .focus.btn-link-arrow-left-danger, .focus.btn-link-arrow-left-light, .focus.btn-link-arrow-left-dark, .focus.btn-link-arrow-left-clay, .focus.btn-link-arrow-left-orange, .focus.btn-link-arrow-left-sun, .focus.btn-link-arrow-left-mint, .focus.btn-link-arrow-left-grass, .focus.btn-link-arrow-left-leaf, .focus.btn-link-arrow-left-ocean, .focus.btn-link-arrow-left-sky, .focus.btn-link-arrow-left-saphire, .focus.btn-link-arrow-left-robin-egg, .focus.btn-link-arrow-left-blueberry, .focus.btn-link-arrow-left-grape, .focus.btn-link-arrow-left-indigo, .focus.btn-link-arrow-left-lavander, .focus.btn-link-arrow-left-sea, .focus.btn-link-arrow-left-water, .focus.btn-link-arrow-left-white, .focus.btn-link-arrow-left-cloud, .focus.btn-link-arrow-left-moon, .focus.btn-link-arrow-left-milk, .focus.btn-link-arrow-left-fog, .focus.btn-link-arrow-left-concrete, .focus.btn-link-arrow-left-ivory, .focus.btn-link-arrow-left-aluminium, .focus.btn-link-arrow-left-elephant, .focus.btn-link-arrow-left-slate, .focus.btn-link-arrow-left-midnight, .focus.btn-link-arrow-left-black, .focus.btn-link-arrow-right-primary, .focus.btn-link-arrow-right-secondary, .focus.btn-link-arrow-right-success, .focus.btn-link-arrow-right-info, .focus.btn-link-arrow-right-warning, .focus.btn-link-arrow-right-danger, .focus.btn-link-arrow-right-light, .focus.btn-link-arrow-right-dark, .focus.btn-link-arrow-right-clay, .focus.btn-link-arrow-right-orange, .focus.btn-link-arrow-right-sun, .focus.btn-link-arrow-right-mint, .focus.btn-link-arrow-right-grass, .focus.btn-link-arrow-right-leaf, .focus.btn-link-arrow-right-ocean, .focus.btn-link-arrow-right-sky, .focus.btn-link-arrow-right-saphire, .focus.btn-link-arrow-right-robin-egg, .focus.btn-link-arrow-right-blueberry, .focus.btn-link-arrow-right-grape, .focus.btn-link-arrow-right-indigo, .focus.btn-link-arrow-right-lavander, .focus.btn-link-arrow-right-sea, .focus.btn-link-arrow-right-water, .focus.btn-link-arrow-right-white, .focus.btn-link-arrow-right-cloud, .focus.btn-link-arrow-right-moon, .focus.btn-link-arrow-right-milk, .focus.btn-link-arrow-right-fog, .focus.btn-link-arrow-right-concrete, .focus.btn-link-arrow-right-ivory, .focus.btn-link-arrow-right-aluminium, .focus.btn-link-arrow-right-elephant, .focus.btn-link-arrow-right-slate, .focus.btn-link-arrow-right-midnight, .focus.btn-link-arrow-right-black {
     outline: 0;
@@ -8038,8 +8355,84 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%; }
 
+
+.btn-arrow-right, .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-active.card-total-holdings .btn-wrap-left, .portfolio-list .card-active.card .btn-wrap-left {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: left; }
+  .btn-arrow-right:before, .portfolio-list .card-funding.card-total-holdings .btn-wrap-left:before, .portfolio-list .card-funding.card .btn-wrap-left:before, .portfolio-list .card-active.card-total-holdings .btn-wrap-left:before, .portfolio-list .card-active.card .btn-wrap-left:before {
+    content: "\f30b";
+    margin-left: 2rem;
+    float: right; }
+
+.btn-arrow-left {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: right; }
+  .btn-arrow-left:before {
+    content: "\f30a";
+    margin-right: 2rem;
+    float: left; }
+
+
+
+
+
+
+.btn-link-arrow-left-primary, .btn-link-arrow-left-secondary, .btn-link-arrow-left-success, .btn-link-arrow-left-info, .btn-link-arrow-left-warning, .btn-link-arrow-left-danger, .btn-link-arrow-left-light, .btn-link-arrow-left-dark, .btn-link-arrow-left-clay, .btn-link-arrow-left-orange, .btn-link-arrow-left-sun, .btn-link-arrow-left-mint, .btn-link-arrow-left-grass, .btn-link-arrow-left-leaf, .btn-link-arrow-left-ocean, .btn-link-arrow-left-sky, .btn-link-arrow-left-saphire, .btn-link-arrow-left-robin-egg, .btn-link-arrow-left-blueberry, .btn-link-arrow-left-grape, .btn-link-arrow-left-indigo, .btn-link-arrow-left-lavander, .btn-link-arrow-left-sea, .btn-link-arrow-left-water, .btn-link-arrow-left-white, .btn-link-arrow-left-cloud, .btn-link-arrow-left-moon, .btn-link-arrow-left-milk, .btn-link-arrow-left-fog, .btn-link-arrow-left-concrete, .btn-link-arrow-left-ivory, .btn-link-arrow-left-aluminium, .btn-link-arrow-left-elephant, .btn-link-arrow-left-slate, .btn-link-arrow-left-midnight, .btn-link-arrow-left-black, .btn-link-arrow-right-primary, .btn-link-arrow-right-secondary, .btn-link-arrow-right-success, .btn-link-arrow-right-info, .btn-link-arrow-right-warning, .btn-link-arrow-right-danger, .btn-link-arrow-right-light, .btn-link-arrow-right-dark, .btn-link-arrow-right-clay, .btn-link-arrow-right-orange, .btn-link-arrow-right-sun, .btn-link-arrow-right-mint, .btn-link-arrow-right-grass, .btn-link-arrow-right-leaf, .btn-link-arrow-right-ocean, .btn-link-arrow-right-sky, .btn-link-arrow-right-saphire, .btn-link-arrow-right-robin-egg, .btn-link-arrow-right-blueberry, .btn-link-arrow-right-grape, .btn-link-arrow-right-indigo, .btn-link-arrow-right-lavander, .btn-link-arrow-right-sea, .btn-link-arrow-right-water, .btn-link-arrow-right-white, .btn-link-arrow-right-cloud, .btn-link-arrow-right-moon, .btn-link-arrow-right-milk, .btn-link-arrow-right-fog, .btn-link-arrow-right-concrete, .btn-link-arrow-right-ivory, .btn-link-arrow-right-aluminium, .btn-link-arrow-right-elephant, .btn-link-arrow-right-slate, .btn-link-arrow-right-midnight, .btn-link-arrow-right-black {
+  font-size: 14px; }
+
+.btn-link-arrow-left-primary:after, .btn-link-arrow-left-secondary:after, .btn-link-arrow-left-success:after, .btn-link-arrow-left-info:after, .btn-link-arrow-left-warning:after, .btn-link-arrow-left-danger:after, .btn-link-arrow-left-light:after, .btn-link-arrow-left-dark:after, .btn-link-arrow-left-clay:after, .btn-link-arrow-left-orange:after, .btn-link-arrow-left-sun:after, .btn-link-arrow-left-mint:after, .btn-link-arrow-left-grass:after, .btn-link-arrow-left-leaf:after, .btn-link-arrow-left-ocean:after, .btn-link-arrow-left-sky:after, .btn-link-arrow-left-saphire:after, .btn-link-arrow-left-robin-egg:after, .btn-link-arrow-left-blueberry:after, .btn-link-arrow-left-grape:after, .btn-link-arrow-left-indigo:after, .btn-link-arrow-left-lavander:after, .btn-link-arrow-left-sea:after, .btn-link-arrow-left-water:after, .btn-link-arrow-left-white:after, .btn-link-arrow-left-cloud:after, .btn-link-arrow-left-moon:after, .btn-link-arrow-left-milk:after, .btn-link-arrow-left-fog:after, .btn-link-arrow-left-concrete:after, .btn-link-arrow-left-ivory:after, .btn-link-arrow-left-aluminium:after, .btn-link-arrow-left-elephant:after, .btn-link-arrow-left-slate:after, .btn-link-arrow-left-midnight:after, .btn-link-arrow-left-black:after {
+  content: "\f30a";
+  line-height: 32px;
+  width: 32px;
+  height: 32px; }
+
+.btn-link-arrow-right-primary:before, .btn-link-arrow-right-secondary:before, .btn-link-arrow-right-success:before, .btn-link-arrow-right-info:before, .btn-link-arrow-right-warning:before, .btn-link-arrow-right-danger:before, .btn-link-arrow-right-light:before, .btn-link-arrow-right-dark:before, .btn-link-arrow-right-clay:before, .btn-link-arrow-right-orange:before, .btn-link-arrow-right-sun:before, .btn-link-arrow-right-mint:before, .btn-link-arrow-right-grass:before, .btn-link-arrow-right-leaf:before, .btn-link-arrow-right-ocean:before, .btn-link-arrow-right-sky:before, .btn-link-arrow-right-saphire:before, .btn-link-arrow-right-robin-egg:before, .btn-link-arrow-right-blueberry:before, .btn-link-arrow-right-grape:before, .btn-link-arrow-right-indigo:before, .btn-link-arrow-right-lavander:before, .btn-link-arrow-right-sea:before, .btn-link-arrow-right-water:before, .btn-link-arrow-right-white:before, .btn-link-arrow-right-cloud:before, .btn-link-arrow-right-moon:before, .btn-link-arrow-right-milk:before, .btn-link-arrow-right-fog:before, .btn-link-arrow-right-concrete:before, .btn-link-arrow-right-ivory:before, .btn-link-arrow-right-aluminium:before, .btn-link-arrow-right-elephant:before, .btn-link-arrow-right-slate:before, .btn-link-arrow-right-midnight:before, .btn-link-arrow-right-black:before {
+  content: "\f30b";
+  line-height: 32px;
+  width: 32px;
+  height: 32px; }
+
+
+.btn-success-icon:before, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left:before, .portfolio-list .card-matured.card .btn-wrap-left:before {
+  content: "\f058";
+  font-size: 1.5rem;
+  margin-right: 1rem; }
+
+
+.card .btn-wrap-left, .card-total-holdings .btn-wrap-left {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 40px;
+  border-top-right-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  margin-left: -32px; }
+  .card .btn-wrap-left:after, .card-total-holdings .btn-wrap-left:after {
+    padding-left: 64px; }
+
+.card .btn-wrap-right, .card-total-holdings .btn-wrap-right {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 40px;
+  border-top-right-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  margin-right: -32px; }
+  .card .btn-wrap-right:after, .card-total-holdings .btn-wrap-right:after {
+    padding-left: 64px; }
+
+.btn-pill {
+  border-top-right-radius: 1000px !important;
+  border-bottom-right-radius: 1000px !important;
+  border-top-left-radius: 1000px !important;
+  border-bottom-left-radius: 1000px !important; }
+
 .btn-primary {
-  color: #ffffff; }
+  color: #ffffff !important; }
 
 .bg-grape .btn-grape, .btn-link-arrow-right-grape:after .btn-grape, .btn-link-arrow-right-grape:before .btn-grape, .btn-link-arrow-left-grape:after .btn-grape, .btn-link-arrow-left-grape:before .btn-grape, .bg-grape .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .bg-grape .btn-wrap-left, .btn-link-arrow-right-grape:after .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .btn-link-arrow-right-grape:after .btn-wrap-left, .btn-link-arrow-right-grape:before .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .btn-link-arrow-right-grape:before .btn-wrap-left, .btn-link-arrow-left-grape:after .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .btn-link-arrow-left-grape:after .btn-wrap-left, .btn-link-arrow-left-grape:before .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .btn-link-arrow-left-grape:before .btn-wrap-left, .bg-grape .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .bg-grape .btn-wrap-left, .btn-link-arrow-right-grape:after .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .btn-link-arrow-right-grape:after .btn-wrap-left, .btn-link-arrow-right-grape:before .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .btn-link-arrow-right-grape:before .btn-wrap-left, .btn-link-arrow-left-grape:after .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .btn-link-arrow-left-grape:after .btn-wrap-left, .btn-link-arrow-left-grape:before .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .btn-link-arrow-left-grape:before .btn-wrap-left,
 .alert-info .btn-info,
@@ -8117,76 +8510,6 @@ input[type="button"].btn-block {
 .portfolio .alert-info .btn-link-arrow-right-midnight,
 .portfolio .alert-info .btn-link-arrow-right-black {
   background-color: rgba(255, 255, 255, 0.16) !important; }
-
-
-.btn-arrow-right, .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-active.card-total-holdings .btn-wrap-left, .portfolio-list .card-active.card .btn-wrap-left {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  text-align: left; }
-  .btn-arrow-right:before, .portfolio-list .card-funding.card-total-holdings .btn-wrap-left:before, .portfolio-list .card-funding.card .btn-wrap-left:before, .portfolio-list .card-active.card-total-holdings .btn-wrap-left:before, .portfolio-list .card-active.card .btn-wrap-left:before {
-    content: "\f30b";
-    margin-left: 2rem;
-    float: right; }
-
-.btn-arrow-left {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  text-align: right; }
-  .btn-arrow-left:before {
-    content: "\f30a";
-    margin-right: 2rem;
-    float: left; }
-
-
-
-
-
-
-.btn-link-arrow-left-primary, .btn-link-arrow-left-secondary, .btn-link-arrow-left-success, .btn-link-arrow-left-info, .btn-link-arrow-left-warning, .btn-link-arrow-left-danger, .btn-link-arrow-left-light, .btn-link-arrow-left-dark, .btn-link-arrow-left-clay, .btn-link-arrow-left-orange, .btn-link-arrow-left-sun, .btn-link-arrow-left-mint, .btn-link-arrow-left-grass, .btn-link-arrow-left-leaf, .btn-link-arrow-left-ocean, .btn-link-arrow-left-sky, .btn-link-arrow-left-saphire, .btn-link-arrow-left-robin-egg, .btn-link-arrow-left-blueberry, .btn-link-arrow-left-grape, .btn-link-arrow-left-indigo, .btn-link-arrow-left-lavander, .btn-link-arrow-left-sea, .btn-link-arrow-left-water, .btn-link-arrow-left-white, .btn-link-arrow-left-cloud, .btn-link-arrow-left-moon, .btn-link-arrow-left-milk, .btn-link-arrow-left-fog, .btn-link-arrow-left-concrete, .btn-link-arrow-left-ivory, .btn-link-arrow-left-aluminium, .btn-link-arrow-left-elephant, .btn-link-arrow-left-slate, .btn-link-arrow-left-midnight, .btn-link-arrow-left-black, .btn-link-arrow-right-primary, .btn-link-arrow-right-secondary, .btn-link-arrow-right-success, .btn-link-arrow-right-info, .btn-link-arrow-right-warning, .btn-link-arrow-right-danger, .btn-link-arrow-right-light, .btn-link-arrow-right-dark, .btn-link-arrow-right-clay, .btn-link-arrow-right-orange, .btn-link-arrow-right-sun, .btn-link-arrow-right-mint, .btn-link-arrow-right-grass, .btn-link-arrow-right-leaf, .btn-link-arrow-right-ocean, .btn-link-arrow-right-sky, .btn-link-arrow-right-saphire, .btn-link-arrow-right-robin-egg, .btn-link-arrow-right-blueberry, .btn-link-arrow-right-grape, .btn-link-arrow-right-indigo, .btn-link-arrow-right-lavander, .btn-link-arrow-right-sea, .btn-link-arrow-right-water, .btn-link-arrow-right-white, .btn-link-arrow-right-cloud, .btn-link-arrow-right-moon, .btn-link-arrow-right-milk, .btn-link-arrow-right-fog, .btn-link-arrow-right-concrete, .btn-link-arrow-right-ivory, .btn-link-arrow-right-aluminium, .btn-link-arrow-right-elephant, .btn-link-arrow-right-slate, .btn-link-arrow-right-midnight, .btn-link-arrow-right-black {
-  font-size: 14px; }
-
-.btn-link-arrow-left-primary:after, .btn-link-arrow-left-secondary:after, .btn-link-arrow-left-success:after, .btn-link-arrow-left-info:after, .btn-link-arrow-left-warning:after, .btn-link-arrow-left-danger:after, .btn-link-arrow-left-light:after, .btn-link-arrow-left-dark:after, .btn-link-arrow-left-clay:after, .btn-link-arrow-left-orange:after, .btn-link-arrow-left-sun:after, .btn-link-arrow-left-mint:after, .btn-link-arrow-left-grass:after, .btn-link-arrow-left-leaf:after, .btn-link-arrow-left-ocean:after, .btn-link-arrow-left-sky:after, .btn-link-arrow-left-saphire:after, .btn-link-arrow-left-robin-egg:after, .btn-link-arrow-left-blueberry:after, .btn-link-arrow-left-grape:after, .btn-link-arrow-left-indigo:after, .btn-link-arrow-left-lavander:after, .btn-link-arrow-left-sea:after, .btn-link-arrow-left-water:after, .btn-link-arrow-left-white:after, .btn-link-arrow-left-cloud:after, .btn-link-arrow-left-moon:after, .btn-link-arrow-left-milk:after, .btn-link-arrow-left-fog:after, .btn-link-arrow-left-concrete:after, .btn-link-arrow-left-ivory:after, .btn-link-arrow-left-aluminium:after, .btn-link-arrow-left-elephant:after, .btn-link-arrow-left-slate:after, .btn-link-arrow-left-midnight:after, .btn-link-arrow-left-black:after {
-  content: "\f30a";
-  line-height: 32px;
-  width: 32px;
-  height: 32px; }
-
-.btn-link-arrow-right-primary:before, .btn-link-arrow-right-secondary:before, .btn-link-arrow-right-success:before, .btn-link-arrow-right-info:before, .btn-link-arrow-right-warning:before, .btn-link-arrow-right-danger:before, .btn-link-arrow-right-light:before, .btn-link-arrow-right-dark:before, .btn-link-arrow-right-clay:before, .btn-link-arrow-right-orange:before, .btn-link-arrow-right-sun:before, .btn-link-arrow-right-mint:before, .btn-link-arrow-right-grass:before, .btn-link-arrow-right-leaf:before, .btn-link-arrow-right-ocean:before, .btn-link-arrow-right-sky:before, .btn-link-arrow-right-saphire:before, .btn-link-arrow-right-robin-egg:before, .btn-link-arrow-right-blueberry:before, .btn-link-arrow-right-grape:before, .btn-link-arrow-right-indigo:before, .btn-link-arrow-right-lavander:before, .btn-link-arrow-right-sea:before, .btn-link-arrow-right-water:before, .btn-link-arrow-right-white:before, .btn-link-arrow-right-cloud:before, .btn-link-arrow-right-moon:before, .btn-link-arrow-right-milk:before, .btn-link-arrow-right-fog:before, .btn-link-arrow-right-concrete:before, .btn-link-arrow-right-ivory:before, .btn-link-arrow-right-aluminium:before, .btn-link-arrow-right-elephant:before, .btn-link-arrow-right-slate:before, .btn-link-arrow-right-midnight:before, .btn-link-arrow-right-black:before {
-  content: "\f30b";
-  line-height: 32px;
-  width: 32px;
-  height: 32px; }
-
-
-.btn-success-icon:before, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left:before, .portfolio-list .card-matured.card .btn-wrap-left:before {
-  content: "\f058";
-  font-size: 1.5rem;
-  margin-right: 1rem; }
-
-
-.card .btn-wrap-left, .card-total-holdings .btn-wrap-left {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  height: 40px;
-  border-top-right-radius: 1000px;
-  border-bottom-right-radius: 1000px;
-  font-size: 0.75rem;
-  line-height: 0.75rem;
-  margin-left: -32px; }
-  .card .btn-wrap-left:after, .card-total-holdings .btn-wrap-left:after {
-    padding-left: 64px; }
-
-.card .btn-wrap-right, .card-total-holdings .btn-wrap-right {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  height: 40px;
-  border-top-right-radius: 1000px;
-  border-bottom-right-radius: 1000px;
-  font-size: 0.75rem;
-  line-height: 0.75rem;
-  margin-right: -32px; }
-  .card .btn-wrap-right:after, .card-total-holdings .btn-wrap-right:after {
-    padding-left: 64px; }
 
 .nav, .portfolio-list .card-total-holdings nav, .portfolio-list .card nav {
   display: flex;
@@ -9628,10 +9951,16 @@ header nav {
       padding: 80px 0; } }
 
 .jumbotron-fluid {
-  background-color: #ffffff;
-  padding-right: 0;
   padding-left: 0;
+  padding-right: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #ffffff;
   border-radius: 0; }
+  @media (min-width: 576px) {
+    .jumbotron-fluid {
+      padding-top: 80px;
+      padding-bottom: 80px; } }
 
 .alert {
   position: relative;
@@ -10699,7 +11028,7 @@ header nav {
     text-decoration: none;
     background-color: #f3f4f5; }
   .list-group-item-action:active {
-    color: #192228;
+    color: #3a3f42;
     background-color: #f8f9fa; }
 
 .list-group-item, .portfolio aside section .list-group-flush > li {
@@ -12033,7 +12362,7 @@ button.btn-link-arrow-left-black:focus:before {
 .d-inline-block, .btn-link-arrow-left-primary:after, .btn-link-arrow-left-secondary:after, .btn-link-arrow-left-success:after, .btn-link-arrow-left-info:after, .btn-link-arrow-left-warning:after, .btn-link-arrow-left-danger:after, .btn-link-arrow-left-light:after, .btn-link-arrow-left-dark:after, .btn-link-arrow-left-clay:after, .btn-link-arrow-left-orange:after, .btn-link-arrow-left-sun:after, .btn-link-arrow-left-mint:after, .btn-link-arrow-left-grass:after, .btn-link-arrow-left-leaf:after, .btn-link-arrow-left-ocean:after, .btn-link-arrow-left-sky:after, .btn-link-arrow-left-saphire:after, .btn-link-arrow-left-robin-egg:after, .btn-link-arrow-left-blueberry:after, .btn-link-arrow-left-grape:after, .btn-link-arrow-left-indigo:after, .btn-link-arrow-left-lavander:after, .btn-link-arrow-left-sea:after, .btn-link-arrow-left-water:after, .btn-link-arrow-left-white:after, .btn-link-arrow-left-cloud:after, .btn-link-arrow-left-moon:after, .btn-link-arrow-left-milk:after, .btn-link-arrow-left-fog:after, .btn-link-arrow-left-concrete:after, .btn-link-arrow-left-ivory:after, .btn-link-arrow-left-aluminium:after, .btn-link-arrow-left-elephant:after, .btn-link-arrow-left-slate:after, .btn-link-arrow-left-midnight:after, .btn-link-arrow-left-black:after, .btn-link-arrow-right-primary:before, .btn-link-arrow-right-secondary:before, .btn-link-arrow-right-success:before, .btn-link-arrow-right-info:before, .btn-link-arrow-right-warning:before, .btn-link-arrow-right-danger:before, .btn-link-arrow-right-light:before, .btn-link-arrow-right-dark:before, .btn-link-arrow-right-clay:before, .btn-link-arrow-right-orange:before, .btn-link-arrow-right-sun:before, .btn-link-arrow-right-mint:before, .btn-link-arrow-right-grass:before, .btn-link-arrow-right-leaf:before, .btn-link-arrow-right-ocean:before, .btn-link-arrow-right-sky:before, .btn-link-arrow-right-saphire:before, .btn-link-arrow-right-robin-egg:before, .btn-link-arrow-right-blueberry:before, .btn-link-arrow-right-grape:before, .btn-link-arrow-right-indigo:before, .btn-link-arrow-right-lavander:before, .btn-link-arrow-right-sea:before, .btn-link-arrow-right-water:before, .btn-link-arrow-right-white:before, .btn-link-arrow-right-cloud:before, .btn-link-arrow-right-moon:before, .btn-link-arrow-right-milk:before, .btn-link-arrow-right-fog:before, .btn-link-arrow-right-concrete:before, .btn-link-arrow-right-ivory:before, .btn-link-arrow-right-aluminium:before, .btn-link-arrow-right-elephant:before, .btn-link-arrow-right-slate:before, .btn-link-arrow-right-midnight:before, .btn-link-arrow-right-black:before, header nav .navbar-nav .nav-item a, .portfolio-list > header ul li .badge, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote .blockquote-footer cite, .portfolio-list .card .item-info-feed article.quote blockquote .blockquote-footer cite {
   display: inline-block !important; }
 
-.d-block, .campaign-list .campaign .card .card-body small, .campaign-list .campaign .card-total-holdings .card-body small, .portfolio aside section .list-group-flush > li:before {
+.d-block, .campaign-list .campaign .card .card-body small, .campaign-list .campaign .card-total-holdings .card-body small, .campaign header small, .portfolio aside section .list-group-flush > li:before {
   display: block !important; }
 
 .d-table {
@@ -12045,7 +12374,7 @@ button.btn-link-arrow-left-black:focus:before {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .dl-horizontal, .btn-arrow-right, .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-active.card-total-holdings .btn-wrap-left, .portfolio-list .card-active.card .btn-wrap-left, .btn-arrow-left, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, header nav .navbar-nav .nav-item.avatar, .campaign-list header .nav, .campaign-list header .portfolio-list .card-total-holdings nav, .portfolio-list .card-total-holdings .campaign-list header nav, .campaign-list header .portfolio-list .card nav, .portfolio-list .card .campaign-list header nav, .portfolio aside section .list-group-flush > li, .item-summary, .portfolio-list > header, .portfolio-list .card-total-holdings .item-details, .portfolio-list .card .item-details, .portfolio-list .card-total-holdings .item-info-feed article.quote, .portfolio-list .card .item-info-feed article.quote {
+.d-flex, .dl.dl-horizontal, .btn-arrow-right, .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-active.card-total-holdings .btn-wrap-left, .portfolio-list .card-active.card .btn-wrap-left, .btn-arrow-left, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, header nav .navbar-nav .nav-item.avatar, .campaign-list header .nav, .campaign-list header .portfolio-list .card-total-holdings nav, .portfolio-list .card-total-holdings .campaign-list header nav, .campaign-list header .portfolio-list .card nav, .portfolio-list .card .campaign-list header nav, .portfolio aside section .list-group-flush > li, .item-summary, .portfolio-list > header, .portfolio-list .card-total-holdings .item-details, .portfolio-list .card .item-details, .portfolio-list .card-total-holdings .item-info-feed article.quote, .portfolio-list .card .item-info-feed article.quote {
   display: flex !important; }
 
 .d-inline-flex {
@@ -12787,7 +13116,7 @@ button.btn-link-arrow-left-black:focus:before {
   content: "";
   background-color: rgba(0, 0, 0, 0); }
 
-.m-0, .dl > *, .portfolio-list .card-total-holdings .item-info-feed article.caption-image img + p, .portfolio-list .card .item-info-feed article.caption-image img + p {
+.m-0, .dl, .dl > *, .dl.dl-horizontal > *, .portfolio-list .card-total-holdings .item-info-feed article.caption-image img + p, .portfolio-list .card .item-info-feed article.caption-image img + p {
   margin: 0 !important; }
 
 .mt-0, .portfolio aside section:first-child, .portfolio-list > header h1,
@@ -12798,7 +13127,7 @@ button.btn-link-arrow-left-black:focus:before {
 .mx-0 {
   margin-right: 0 !important; }
 
-.mb-0, .alert-small p:last-child, .card-total-holdings h2, .card-total-holdings h2 small:last-child, .portfolio aside section .list-group-flush, .portfolio aside section .list-group-flush > li:last-child, .portfolio aside section .list-group-flush > li p,
+.mb-0, .dl.dl-horizontal > *, .dl.dl-horizontal dd + dt, .alert-small p:last-child, .card-total-holdings h2, .card-total-holdings h2 small:last-child, .portfolio aside section .list-group-flush, .portfolio aside section .list-group-flush > li:last-child, .portfolio aside section .list-group-flush > li p,
 .my-0 {
   margin-bottom: 0 !important; }
 
@@ -12825,7 +13154,7 @@ button.btn-link-arrow-left-black:focus:before {
 .portfolio-list .card nav.nav-pills .nav-item {
   margin-right: 4px !important; }
 
-.mb-1, .card h1.card-title, .card-total-holdings h1.card-title, .card h2.card-title, .card-total-holdings h2.card-title, .card h3.card-title, .card-total-holdings h3.card-title, .card h4.card-title, .card-total-holdings h4.card-title, .card h5.card-title, .card-total-holdings h5.card-title,
+.mb-1, .card h1.card-title, .card-total-holdings h1.card-title, .card h2.card-title, .card-total-holdings h2.card-title, .card h3.card-title, .card-total-holdings h3.card-title, .card h4.card-title, .card-total-holdings h4.card-title, .card h5.card-title, .card-total-holdings h5.card-title, .campaign header small,
 .my-1 {
   margin-bottom: 4px !important; }
 
@@ -12904,7 +13233,7 @@ button.btn-link-arrow-left-black:focus:before {
 .mx-4 {
   margin-right: 32px !important; }
 
-.mb-4, .campaign-list header h1, .campaign-list .campaign, .portfolio .alert-info .alert-heading, .portfolio-list .card-total-holdings header, .portfolio-list .card header,
+.mb-4, .dl dd + dt, .campaign-list header h1, .campaign-list .campaign, .campaign main section, .portfolio .alert-info .alert-heading, .portfolio-list .card-total-holdings header, .portfolio-list .card header,
 .my-4 {
   margin-bottom: 32px !important; }
 
@@ -12924,7 +13253,7 @@ button.btn-link-arrow-left-black:focus:before {
 .mx-5 {
   margin-right: 40px !important; }
 
-.mb-5, .portfolio aside section, .portfolio-list .card,
+.mb-5, .campaign header, .portfolio aside section, .portfolio-list .card,
 .my-5,
 .campaign-list header {
   margin-bottom: 40px !important; }
@@ -12952,7 +13281,7 @@ button.btn-link-arrow-left-black:focus:before {
 .mx-6 {
   margin-left: 48px !important; }
 
-.p-0 {
+.p-0, .dl {
   padding: 0 !important; }
 
 .pt-0, .portfolio-list .card,
@@ -12993,7 +13322,7 @@ button.btn-link-arrow-left-black:focus:before {
 .px-0 {
   padding-right: 0 !important; }
 
-.pb-0, .portfolio aside section .list-group-flush > li:last-child,
+.pb-0, .campaign header, .portfolio aside section .list-group-flush > li:last-child,
 .py-0,
 .nav-pills.nav-sm .nav-link,
 .campaign-list header .nav .nav-link,
@@ -13219,7 +13548,8 @@ button.btn-link-arrow-left-black:focus:before {
   padding-top: 40px !important; }
 
 .pr-5,
-.px-5 {
+.px-5,
+.dl.dl-icon {
   padding-right: 40px !important; }
 
 .pb-5,
@@ -13227,7 +13557,8 @@ button.btn-link-arrow-left-black:focus:before {
   padding-bottom: 40px !important; }
 
 .pl-5,
-.px-5 {
+.px-5,
+.dl.dl-icon {
   padding-left: 40px !important; }
 
 .p-6 {
@@ -14589,7 +14920,7 @@ button.btn-link-arrow-left-black:focus:before {
 .text-right, .item-summary .amount-principal, .item-summary .amount-profit, .item-summary .percent-apr, .item-summary .amount-current-value-info, .item-summary .portfolio-list .card-funding.card-total-holdings .amount-current-value, .portfolio-list .card-funding.card-total-holdings .item-summary .amount-current-value, .item-summary .portfolio-list .card-funding.card .amount-current-value, .portfolio-list .card-funding.card .item-summary .amount-current-value, .item-summary .amount-current-value-secondary, .item-summary .portfolio-list .card-active.card-total-holdings .amount-current-value, .portfolio-list .card-active.card-total-holdings .item-summary .amount-current-value, .item-summary .portfolio-list .card-active.card .amount-current-value, .portfolio-list .card-active.card .item-summary .amount-current-value, .item-summary .amount-current-value-success, .item-summary .portfolio-list .card-matured.card-total-holdings .amount-current-value, .portfolio-list .card-matured.card-total-holdings .item-summary .amount-current-value, .item-summary .portfolio-list .card-matured.card .amount-current-value, .portfolio-list .card-matured.card .item-summary .amount-current-value {
   text-align: right !important; }
 
-.text-center, .btn-link-arrow-left-primary:after, .btn-link-arrow-left-secondary:after, .btn-link-arrow-left-success:after, .btn-link-arrow-left-info:after, .btn-link-arrow-left-warning:after, .btn-link-arrow-left-danger:after, .btn-link-arrow-left-light:after, .btn-link-arrow-left-dark:after, .btn-link-arrow-left-clay:after, .btn-link-arrow-left-orange:after, .btn-link-arrow-left-sun:after, .btn-link-arrow-left-mint:after, .btn-link-arrow-left-grass:after, .btn-link-arrow-left-leaf:after, .btn-link-arrow-left-ocean:after, .btn-link-arrow-left-sky:after, .btn-link-arrow-left-saphire:after, .btn-link-arrow-left-robin-egg:after, .btn-link-arrow-left-blueberry:after, .btn-link-arrow-left-grape:after, .btn-link-arrow-left-indigo:after, .btn-link-arrow-left-lavander:after, .btn-link-arrow-left-sea:after, .btn-link-arrow-left-water:after, .btn-link-arrow-left-white:after, .btn-link-arrow-left-cloud:after, .btn-link-arrow-left-moon:after, .btn-link-arrow-left-milk:after, .btn-link-arrow-left-fog:after, .btn-link-arrow-left-concrete:after, .btn-link-arrow-left-ivory:after, .btn-link-arrow-left-aluminium:after, .btn-link-arrow-left-elephant:after, .btn-link-arrow-left-slate:after, .btn-link-arrow-left-midnight:after, .btn-link-arrow-left-black:after, .btn-link-arrow-right-primary:before, .btn-link-arrow-right-secondary:before, .btn-link-arrow-right-success:before, .btn-link-arrow-right-info:before, .btn-link-arrow-right-warning:before, .btn-link-arrow-right-danger:before, .btn-link-arrow-right-light:before, .btn-link-arrow-right-dark:before, .btn-link-arrow-right-clay:before, .btn-link-arrow-right-orange:before, .btn-link-arrow-right-sun:before, .btn-link-arrow-right-mint:before, .btn-link-arrow-right-grass:before, .btn-link-arrow-right-leaf:before, .btn-link-arrow-right-ocean:before, .btn-link-arrow-right-sky:before, .btn-link-arrow-right-saphire:before, .btn-link-arrow-right-robin-egg:before, .btn-link-arrow-right-blueberry:before, .btn-link-arrow-right-grape:before, .btn-link-arrow-right-indigo:before, .btn-link-arrow-right-lavander:before, .btn-link-arrow-right-sea:before, .btn-link-arrow-right-water:before, .btn-link-arrow-right-white:before, .btn-link-arrow-right-cloud:before, .btn-link-arrow-right-moon:before, .btn-link-arrow-right-milk:before, .btn-link-arrow-right-fog:before, .btn-link-arrow-right-concrete:before, .btn-link-arrow-right-ivory:before, .btn-link-arrow-right-aluminium:before, .btn-link-arrow-right-elephant:before, .btn-link-arrow-right-slate:before, .btn-link-arrow-right-midnight:before, .btn-link-arrow-right-black:before, .badge-sq, .campaign-list header h1, .card-total-holdings {
+.text-center, .btn-link-arrow-left-primary:after, .btn-link-arrow-left-secondary:after, .btn-link-arrow-left-success:after, .btn-link-arrow-left-info:after, .btn-link-arrow-left-warning:after, .btn-link-arrow-left-danger:after, .btn-link-arrow-left-light:after, .btn-link-arrow-left-dark:after, .btn-link-arrow-left-clay:after, .btn-link-arrow-left-orange:after, .btn-link-arrow-left-sun:after, .btn-link-arrow-left-mint:after, .btn-link-arrow-left-grass:after, .btn-link-arrow-left-leaf:after, .btn-link-arrow-left-ocean:after, .btn-link-arrow-left-sky:after, .btn-link-arrow-left-saphire:after, .btn-link-arrow-left-robin-egg:after, .btn-link-arrow-left-blueberry:after, .btn-link-arrow-left-grape:after, .btn-link-arrow-left-indigo:after, .btn-link-arrow-left-lavander:after, .btn-link-arrow-left-sea:after, .btn-link-arrow-left-water:after, .btn-link-arrow-left-white:after, .btn-link-arrow-left-cloud:after, .btn-link-arrow-left-moon:after, .btn-link-arrow-left-milk:after, .btn-link-arrow-left-fog:after, .btn-link-arrow-left-concrete:after, .btn-link-arrow-left-ivory:after, .btn-link-arrow-left-aluminium:after, .btn-link-arrow-left-elephant:after, .btn-link-arrow-left-slate:after, .btn-link-arrow-left-midnight:after, .btn-link-arrow-left-black:after, .btn-link-arrow-right-primary:before, .btn-link-arrow-right-secondary:before, .btn-link-arrow-right-success:before, .btn-link-arrow-right-info:before, .btn-link-arrow-right-warning:before, .btn-link-arrow-right-danger:before, .btn-link-arrow-right-light:before, .btn-link-arrow-right-dark:before, .btn-link-arrow-right-clay:before, .btn-link-arrow-right-orange:before, .btn-link-arrow-right-sun:before, .btn-link-arrow-right-mint:before, .btn-link-arrow-right-grass:before, .btn-link-arrow-right-leaf:before, .btn-link-arrow-right-ocean:before, .btn-link-arrow-right-sky:before, .btn-link-arrow-right-saphire:before, .btn-link-arrow-right-robin-egg:before, .btn-link-arrow-right-blueberry:before, .btn-link-arrow-right-grape:before, .btn-link-arrow-right-indigo:before, .btn-link-arrow-right-lavander:before, .btn-link-arrow-right-sea:before, .btn-link-arrow-right-water:before, .btn-link-arrow-right-white:before, .btn-link-arrow-right-cloud:before, .btn-link-arrow-right-moon:before, .btn-link-arrow-right-milk:before, .btn-link-arrow-right-fog:before, .btn-link-arrow-right-concrete:before, .btn-link-arrow-right-ivory:before, .btn-link-arrow-right-aluminium:before, .btn-link-arrow-right-elephant:before, .btn-link-arrow-right-slate:before, .btn-link-arrow-right-midnight:before, .btn-link-arrow-right-black:before, .badge-sq, .campaign-list header h1, .campaign main h2, .card-total-holdings {
   text-align: center !important; }
 
 @media (min-width: 576px) {
@@ -14633,7 +14964,7 @@ button.btn-link-arrow-left-black:focus:before {
 .text-capitalize, .item-summary .percent-apr small {
   text-transform: capitalize !important; }
 
-.font-weight-light, .dl > dt, .portfolio-list .card-total-holdings .item-info-feed, .portfolio-list .card .item-info-feed {
+.font-weight-light, .dl dt, .campaign header aside, .portfolio-list .card-total-holdings .item-info-feed, .portfolio-list .card .item-info-feed {
   font-weight: 300 !important; }
 
 .font-weight-lighter {
@@ -14645,13 +14976,13 @@ button.btn-link-arrow-left-black:focus:before {
 .font-weight-bold, .card .btn-wrap-left, .card-total-holdings .btn-wrap-left, .card .btn-wrap-right, .card-total-holdings .btn-wrap-right, header nav .navbar-nav, .card-total-holdings h2, .portfolio .alert-info .badge, .portfolio-list > header h1, .portfolio-list > header ul li, .portfolio-list .card-total-holdings .item-info-feed h3, .portfolio-list .card .item-info-feed h3 {
   font-weight: 600 !important; }
 
-.font-weight-bolder, .dl > dd {
+.font-weight-bolder, .dl dd {
   font-weight: 700 !important; }
 
 .font-italic, .item-summary .percent-apr, .portfolio-list .card-total-holdings .item-info-feed h3, .portfolio-list .card .item-info-feed h3, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote, .portfolio-list .card .item-info-feed article.quote blockquote {
   font-style: italic !important; }
 
-.text-white, .btn-link-arrow-right-primary:after, .btn-link-arrow-right-primary:before, .btn-link-arrow-right-secondary:after, .btn-link-arrow-right-secondary:before, .btn-link-arrow-right-success:after, .btn-link-arrow-right-success:before, .btn-link-arrow-right-info:after, .btn-link-arrow-right-info:before, .btn-link-arrow-right-warning:after, .btn-link-arrow-right-warning:before, .btn-link-arrow-right-danger:after, .btn-link-arrow-right-danger:before, .btn-link-arrow-right-light:after, .btn-link-arrow-right-light:before, .btn-link-arrow-right-dark:after, .btn-link-arrow-right-dark:before, .btn-link-arrow-right-clay:after, .btn-link-arrow-right-clay:before, .btn-link-arrow-right-orange:after, .btn-link-arrow-right-orange:before, .btn-link-arrow-right-sun:after, .btn-link-arrow-right-sun:before, .btn-link-arrow-right-mint:after, .btn-link-arrow-right-mint:before, .btn-link-arrow-right-grass:after, .btn-link-arrow-right-grass:before, .btn-link-arrow-right-leaf:after, .btn-link-arrow-right-leaf:before, .btn-link-arrow-right-ocean:after, .btn-link-arrow-right-ocean:before, .btn-link-arrow-right-sky:after, .btn-link-arrow-right-sky:before, .btn-link-arrow-right-saphire:after, .btn-link-arrow-right-saphire:before, .btn-link-arrow-right-robin-egg:after, .btn-link-arrow-right-robin-egg:before, .btn-link-arrow-right-blueberry:after, .btn-link-arrow-right-blueberry:before, .btn-link-arrow-right-grape:after, .btn-link-arrow-right-grape:before, .btn-link-arrow-right-indigo:after, .btn-link-arrow-right-indigo:before, .btn-link-arrow-right-lavander:after, .btn-link-arrow-right-lavander:before, .btn-link-arrow-right-sea:after, .btn-link-arrow-right-sea:before, .btn-link-arrow-right-water:after, .btn-link-arrow-right-water:before, .btn-link-arrow-right-white, .btn-link-arrow-right-white:after, .btn-link-arrow-right-white:before, .btn-link-arrow-right-cloud:after, .btn-link-arrow-right-cloud:before, .btn-link-arrow-right-moon:after, .btn-link-arrow-right-moon:before, .btn-link-arrow-right-milk:after, .btn-link-arrow-right-milk:before, .btn-link-arrow-right-fog:after, .btn-link-arrow-right-fog:before, .btn-link-arrow-right-concrete:after, .btn-link-arrow-right-concrete:before, .btn-link-arrow-right-ivory:after, .btn-link-arrow-right-ivory:before, .btn-link-arrow-right-aluminium:after, .btn-link-arrow-right-aluminium:before, .btn-link-arrow-right-elephant:after, .btn-link-arrow-right-elephant:before, .btn-link-arrow-right-slate:after, .btn-link-arrow-right-slate:before, .btn-link-arrow-right-midnight:after, .btn-link-arrow-right-midnight:before, .btn-link-arrow-right-black:after, .btn-link-arrow-right-black:before, .btn-link-arrow-left-primary:after, .btn-link-arrow-left-primary:before, .btn-link-arrow-left-secondary:after, .btn-link-arrow-left-secondary:before, .btn-link-arrow-left-success:after, .btn-link-arrow-left-success:before, .btn-link-arrow-left-info:after, .btn-link-arrow-left-info:before, .btn-link-arrow-left-warning:after, .btn-link-arrow-left-warning:before, .btn-link-arrow-left-danger:after, .btn-link-arrow-left-danger:before, .btn-link-arrow-left-light:after, .btn-link-arrow-left-light:before, .btn-link-arrow-left-dark:after, .btn-link-arrow-left-dark:before, .btn-link-arrow-left-clay:after, .btn-link-arrow-left-clay:before, .btn-link-arrow-left-orange:after, .btn-link-arrow-left-orange:before, .btn-link-arrow-left-sun:after, .btn-link-arrow-left-sun:before, .btn-link-arrow-left-mint:after, .btn-link-arrow-left-mint:before, .btn-link-arrow-left-grass:after, .btn-link-arrow-left-grass:before, .btn-link-arrow-left-leaf:after, .btn-link-arrow-left-leaf:before, .btn-link-arrow-left-ocean:after, .btn-link-arrow-left-ocean:before, .btn-link-arrow-left-sky:after, .btn-link-arrow-left-sky:before, .btn-link-arrow-left-saphire:after, .btn-link-arrow-left-saphire:before, .btn-link-arrow-left-robin-egg:after, .btn-link-arrow-left-robin-egg:before, .btn-link-arrow-left-blueberry:after, .btn-link-arrow-left-blueberry:before, .btn-link-arrow-left-grape:after, .btn-link-arrow-left-grape:before, .btn-link-arrow-left-indigo:after, .btn-link-arrow-left-indigo:before, .btn-link-arrow-left-lavander:after, .btn-link-arrow-left-lavander:before, .btn-link-arrow-left-sea:after, .btn-link-arrow-left-sea:before, .btn-link-arrow-left-water:after, .btn-link-arrow-left-water:before, .btn-link-arrow-left-white, .btn-link-arrow-left-white:after, .btn-link-arrow-left-white:before, .btn-link-arrow-left-cloud:after, .btn-link-arrow-left-cloud:before, .btn-link-arrow-left-moon:after, .btn-link-arrow-left-moon:before, .btn-link-arrow-left-milk:after, .btn-link-arrow-left-milk:before, .btn-link-arrow-left-fog:after, .btn-link-arrow-left-fog:before, .btn-link-arrow-left-concrete:after, .btn-link-arrow-left-concrete:before, .btn-link-arrow-left-ivory:after, .btn-link-arrow-left-ivory:before, .btn-link-arrow-left-aluminium:after, .btn-link-arrow-left-aluminium:before, .btn-link-arrow-left-elephant:after, .btn-link-arrow-left-elephant:before, .btn-link-arrow-left-slate:after, .btn-link-arrow-left-slate:before, .btn-link-arrow-left-midnight:after, .btn-link-arrow-left-midnight:before, .btn-link-arrow-left-black:after, .btn-link-arrow-left-black:before, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, .nav-pills .nav-item:hover, .campaign-list header .nav .nav-item:hover, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover, .campaign-list header .portfolio-list .card nav .nav-item:hover, .portfolio-list .card .campaign-list header nav .nav-item:hover, .nav-pills .nav-item:hover .nav-link, .campaign-list header .nav .nav-item:hover .nav-link, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover .nav-link, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover .nav-link, .campaign-list header .portfolio-list .card nav .nav-item:hover .nav-link, .portfolio-list .card .campaign-list header nav .nav-item:hover .nav-link, .nav-pills .nav-item:hover .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-pills .nav-item:hover nav > a, .campaign-list header .nav .nav-item:hover .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .campaign-list header .nav .nav-item:hover nav > a, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover nav > a, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover nav > a, .campaign-list header .portfolio-list .card nav .nav-item:hover .card-total-holdings nav > a, .portfolio-list .card .campaign-list header nav .nav-item:hover .card-total-holdings nav > a, .nav-pills .nav-item:hover .portfolio-list .card nav > a, .portfolio-list .card .nav-pills .nav-item:hover nav > a, .campaign-list header .nav .nav-item:hover .portfolio-list .card nav > a, .portfolio-list .card .campaign-list header .nav .nav-item:hover nav > a, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover .card nav > a, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover .card nav > a, .campaign-list header .portfolio-list .card nav .nav-item:hover nav > a, .portfolio-list .card .campaign-list header nav .nav-item:hover nav > a, .portfolio-list .card-total-holdings .item-info-feed article.quote, .portfolio-list .card .item-info-feed article.quote, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote p, .portfolio-list .card .item-info-feed article.quote blockquote p {
+.text-white, .dl.bg-dark, .dl.btn-link-arrow-right-dark:after, .dl.btn-link-arrow-right-dark:before, .dl.btn-link-arrow-left-dark:after, .dl.btn-link-arrow-left-dark:before, .dl.bg-dark > dt, .dl.btn-link-arrow-right-dark:after > dt, .dl.btn-link-arrow-right-dark:before > dt, .dl.btn-link-arrow-left-dark:after > dt, .dl.btn-link-arrow-left-dark:before > dt, .dl.bg-dark > dd, .dl.btn-link-arrow-right-dark:after > dd, .dl.btn-link-arrow-right-dark:before > dd, .dl.btn-link-arrow-left-dark:after > dd, .dl.btn-link-arrow-left-dark:before > dd, .btn-link-arrow-right-primary:after, .btn-link-arrow-right-primary:before, .btn-link-arrow-right-secondary:after, .btn-link-arrow-right-secondary:before, .btn-link-arrow-right-success:after, .btn-link-arrow-right-success:before, .btn-link-arrow-right-info:after, .btn-link-arrow-right-info:before, .btn-link-arrow-right-warning:after, .btn-link-arrow-right-warning:before, .btn-link-arrow-right-danger:after, .btn-link-arrow-right-danger:before, .btn-link-arrow-right-light:after, .btn-link-arrow-right-light:before, .btn-link-arrow-right-dark:after, .btn-link-arrow-right-dark:before, .btn-link-arrow-right-clay:after, .btn-link-arrow-right-clay:before, .btn-link-arrow-right-orange:after, .btn-link-arrow-right-orange:before, .btn-link-arrow-right-sun:after, .btn-link-arrow-right-sun:before, .btn-link-arrow-right-mint:after, .btn-link-arrow-right-mint:before, .btn-link-arrow-right-grass:after, .btn-link-arrow-right-grass:before, .btn-link-arrow-right-leaf:after, .btn-link-arrow-right-leaf:before, .btn-link-arrow-right-ocean:after, .btn-link-arrow-right-ocean:before, .btn-link-arrow-right-sky:after, .btn-link-arrow-right-sky:before, .btn-link-arrow-right-saphire:after, .btn-link-arrow-right-saphire:before, .btn-link-arrow-right-robin-egg:after, .btn-link-arrow-right-robin-egg:before, .btn-link-arrow-right-blueberry:after, .btn-link-arrow-right-blueberry:before, .btn-link-arrow-right-grape:after, .btn-link-arrow-right-grape:before, .btn-link-arrow-right-indigo:after, .btn-link-arrow-right-indigo:before, .btn-link-arrow-right-lavander:after, .btn-link-arrow-right-lavander:before, .btn-link-arrow-right-sea:after, .btn-link-arrow-right-sea:before, .btn-link-arrow-right-water:after, .btn-link-arrow-right-water:before, .btn-link-arrow-right-white, .btn-link-arrow-right-white:after, .btn-link-arrow-right-white:before, .btn-link-arrow-right-cloud:after, .btn-link-arrow-right-cloud:before, .btn-link-arrow-right-moon:after, .btn-link-arrow-right-moon:before, .btn-link-arrow-right-milk:after, .btn-link-arrow-right-milk:before, .btn-link-arrow-right-fog:after, .btn-link-arrow-right-fog:before, .btn-link-arrow-right-concrete:after, .btn-link-arrow-right-concrete:before, .btn-link-arrow-right-ivory:after, .btn-link-arrow-right-ivory:before, .btn-link-arrow-right-aluminium:after, .btn-link-arrow-right-aluminium:before, .btn-link-arrow-right-elephant:after, .btn-link-arrow-right-elephant:before, .btn-link-arrow-right-slate:after, .btn-link-arrow-right-slate:before, .btn-link-arrow-right-midnight:after, .btn-link-arrow-right-midnight:before, .btn-link-arrow-right-black:after, .btn-link-arrow-right-black:before, .btn-link-arrow-left-primary:after, .btn-link-arrow-left-primary:before, .btn-link-arrow-left-secondary:after, .btn-link-arrow-left-secondary:before, .btn-link-arrow-left-success:after, .btn-link-arrow-left-success:before, .btn-link-arrow-left-info:after, .btn-link-arrow-left-info:before, .btn-link-arrow-left-warning:after, .btn-link-arrow-left-warning:before, .btn-link-arrow-left-danger:after, .btn-link-arrow-left-danger:before, .btn-link-arrow-left-light:after, .btn-link-arrow-left-light:before, .btn-link-arrow-left-dark:after, .btn-link-arrow-left-dark:before, .btn-link-arrow-left-clay:after, .btn-link-arrow-left-clay:before, .btn-link-arrow-left-orange:after, .btn-link-arrow-left-orange:before, .btn-link-arrow-left-sun:after, .btn-link-arrow-left-sun:before, .btn-link-arrow-left-mint:after, .btn-link-arrow-left-mint:before, .btn-link-arrow-left-grass:after, .btn-link-arrow-left-grass:before, .btn-link-arrow-left-leaf:after, .btn-link-arrow-left-leaf:before, .btn-link-arrow-left-ocean:after, .btn-link-arrow-left-ocean:before, .btn-link-arrow-left-sky:after, .btn-link-arrow-left-sky:before, .btn-link-arrow-left-saphire:after, .btn-link-arrow-left-saphire:before, .btn-link-arrow-left-robin-egg:after, .btn-link-arrow-left-robin-egg:before, .btn-link-arrow-left-blueberry:after, .btn-link-arrow-left-blueberry:before, .btn-link-arrow-left-grape:after, .btn-link-arrow-left-grape:before, .btn-link-arrow-left-indigo:after, .btn-link-arrow-left-indigo:before, .btn-link-arrow-left-lavander:after, .btn-link-arrow-left-lavander:before, .btn-link-arrow-left-sea:after, .btn-link-arrow-left-sea:before, .btn-link-arrow-left-water:after, .btn-link-arrow-left-water:before, .btn-link-arrow-left-white, .btn-link-arrow-left-white:after, .btn-link-arrow-left-white:before, .btn-link-arrow-left-cloud:after, .btn-link-arrow-left-cloud:before, .btn-link-arrow-left-moon:after, .btn-link-arrow-left-moon:before, .btn-link-arrow-left-milk:after, .btn-link-arrow-left-milk:before, .btn-link-arrow-left-fog:after, .btn-link-arrow-left-fog:before, .btn-link-arrow-left-concrete:after, .btn-link-arrow-left-concrete:before, .btn-link-arrow-left-ivory:after, .btn-link-arrow-left-ivory:before, .btn-link-arrow-left-aluminium:after, .btn-link-arrow-left-aluminium:before, .btn-link-arrow-left-elephant:after, .btn-link-arrow-left-elephant:before, .btn-link-arrow-left-slate:after, .btn-link-arrow-left-slate:before, .btn-link-arrow-left-midnight:after, .btn-link-arrow-left-midnight:before, .btn-link-arrow-left-black:after, .btn-link-arrow-left-black:before, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, .nav-pills .nav-item:hover, .campaign-list header .nav .nav-item:hover, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover, .campaign-list header .portfolio-list .card nav .nav-item:hover, .portfolio-list .card .campaign-list header nav .nav-item:hover, .nav-pills .nav-item:hover .nav-link, .campaign-list header .nav .nav-item:hover .nav-link, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover .nav-link, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover .nav-link, .campaign-list header .portfolio-list .card nav .nav-item:hover .nav-link, .portfolio-list .card .campaign-list header nav .nav-item:hover .nav-link, .nav-pills .nav-item:hover .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-pills .nav-item:hover nav > a, .campaign-list header .nav .nav-item:hover .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .campaign-list header .nav .nav-item:hover nav > a, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover nav > a, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover nav > a, .campaign-list header .portfolio-list .card nav .nav-item:hover .card-total-holdings nav > a, .portfolio-list .card .campaign-list header nav .nav-item:hover .card-total-holdings nav > a, .nav-pills .nav-item:hover .portfolio-list .card nav > a, .portfolio-list .card .nav-pills .nav-item:hover nav > a, .campaign-list header .nav .nav-item:hover .portfolio-list .card nav > a, .portfolio-list .card .campaign-list header .nav .nav-item:hover nav > a, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover .card nav > a, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover .card nav > a, .campaign-list header .portfolio-list .card nav .nav-item:hover nav > a, .portfolio-list .card .campaign-list header nav .nav-item:hover nav > a, .portfolio-list .card-total-holdings .item-info-feed article.quote, .portfolio-list .card .item-info-feed article.quote, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote p, .portfolio-list .card .item-info-feed article.quote blockquote p {
   color: #ffffff !important; }
 
 .text-primary, .btn-link-arrow-right-primary, .btn-link-arrow-left-primary, .jumbotron small, .jumbotron-fluid small, .campaign-list .campaign .card .card-body small, .campaign-list .campaign .card-total-holdings .card-body small {
@@ -14798,10 +15129,10 @@ a.text-sea:hover, a.btn-link-arrow-right-sea:hover, a.btn-link-arrow-left-sea:ho
 a.text-water:hover, a.btn-link-arrow-right-water:hover, a.btn-link-arrow-left-water:hover, a.text-water:focus, a.btn-link-arrow-right-water:focus, a.btn-link-arrow-left-water:focus {
   color: #98e0f6 !important; }
 
-.text-white, .btn-link-arrow-right-primary:after, .btn-link-arrow-right-primary:before, .btn-link-arrow-right-secondary:after, .btn-link-arrow-right-secondary:before, .btn-link-arrow-right-success:after, .btn-link-arrow-right-success:before, .btn-link-arrow-right-info:after, .btn-link-arrow-right-info:before, .btn-link-arrow-right-warning:after, .btn-link-arrow-right-warning:before, .btn-link-arrow-right-danger:after, .btn-link-arrow-right-danger:before, .btn-link-arrow-right-light:after, .btn-link-arrow-right-light:before, .btn-link-arrow-right-dark:after, .btn-link-arrow-right-dark:before, .btn-link-arrow-right-clay:after, .btn-link-arrow-right-clay:before, .btn-link-arrow-right-orange:after, .btn-link-arrow-right-orange:before, .btn-link-arrow-right-sun:after, .btn-link-arrow-right-sun:before, .btn-link-arrow-right-mint:after, .btn-link-arrow-right-mint:before, .btn-link-arrow-right-grass:after, .btn-link-arrow-right-grass:before, .btn-link-arrow-right-leaf:after, .btn-link-arrow-right-leaf:before, .btn-link-arrow-right-ocean:after, .btn-link-arrow-right-ocean:before, .btn-link-arrow-right-sky:after, .btn-link-arrow-right-sky:before, .btn-link-arrow-right-saphire:after, .btn-link-arrow-right-saphire:before, .btn-link-arrow-right-robin-egg:after, .btn-link-arrow-right-robin-egg:before, .btn-link-arrow-right-blueberry:after, .btn-link-arrow-right-blueberry:before, .btn-link-arrow-right-grape:after, .btn-link-arrow-right-grape:before, .btn-link-arrow-right-indigo:after, .btn-link-arrow-right-indigo:before, .btn-link-arrow-right-lavander:after, .btn-link-arrow-right-lavander:before, .btn-link-arrow-right-sea:after, .btn-link-arrow-right-sea:before, .btn-link-arrow-right-water:after, .btn-link-arrow-right-water:before, .btn-link-arrow-right-white, .btn-link-arrow-right-white:after, .btn-link-arrow-right-white:before, .btn-link-arrow-right-cloud:after, .btn-link-arrow-right-cloud:before, .btn-link-arrow-right-moon:after, .btn-link-arrow-right-moon:before, .btn-link-arrow-right-milk:after, .btn-link-arrow-right-milk:before, .btn-link-arrow-right-fog:after, .btn-link-arrow-right-fog:before, .btn-link-arrow-right-concrete:after, .btn-link-arrow-right-concrete:before, .btn-link-arrow-right-ivory:after, .btn-link-arrow-right-ivory:before, .btn-link-arrow-right-aluminium:after, .btn-link-arrow-right-aluminium:before, .btn-link-arrow-right-elephant:after, .btn-link-arrow-right-elephant:before, .btn-link-arrow-right-slate:after, .btn-link-arrow-right-slate:before, .btn-link-arrow-right-midnight:after, .btn-link-arrow-right-midnight:before, .btn-link-arrow-right-black:after, .btn-link-arrow-right-black:before, .btn-link-arrow-left-primary:after, .btn-link-arrow-left-primary:before, .btn-link-arrow-left-secondary:after, .btn-link-arrow-left-secondary:before, .btn-link-arrow-left-success:after, .btn-link-arrow-left-success:before, .btn-link-arrow-left-info:after, .btn-link-arrow-left-info:before, .btn-link-arrow-left-warning:after, .btn-link-arrow-left-warning:before, .btn-link-arrow-left-danger:after, .btn-link-arrow-left-danger:before, .btn-link-arrow-left-light:after, .btn-link-arrow-left-light:before, .btn-link-arrow-left-dark:after, .btn-link-arrow-left-dark:before, .btn-link-arrow-left-clay:after, .btn-link-arrow-left-clay:before, .btn-link-arrow-left-orange:after, .btn-link-arrow-left-orange:before, .btn-link-arrow-left-sun:after, .btn-link-arrow-left-sun:before, .btn-link-arrow-left-mint:after, .btn-link-arrow-left-mint:before, .btn-link-arrow-left-grass:after, .btn-link-arrow-left-grass:before, .btn-link-arrow-left-leaf:after, .btn-link-arrow-left-leaf:before, .btn-link-arrow-left-ocean:after, .btn-link-arrow-left-ocean:before, .btn-link-arrow-left-sky:after, .btn-link-arrow-left-sky:before, .btn-link-arrow-left-saphire:after, .btn-link-arrow-left-saphire:before, .btn-link-arrow-left-robin-egg:after, .btn-link-arrow-left-robin-egg:before, .btn-link-arrow-left-blueberry:after, .btn-link-arrow-left-blueberry:before, .btn-link-arrow-left-grape:after, .btn-link-arrow-left-grape:before, .btn-link-arrow-left-indigo:after, .btn-link-arrow-left-indigo:before, .btn-link-arrow-left-lavander:after, .btn-link-arrow-left-lavander:before, .btn-link-arrow-left-sea:after, .btn-link-arrow-left-sea:before, .btn-link-arrow-left-water:after, .btn-link-arrow-left-water:before, .btn-link-arrow-left-white, .btn-link-arrow-left-white:after, .btn-link-arrow-left-white:before, .btn-link-arrow-left-cloud:after, .btn-link-arrow-left-cloud:before, .btn-link-arrow-left-moon:after, .btn-link-arrow-left-moon:before, .btn-link-arrow-left-milk:after, .btn-link-arrow-left-milk:before, .btn-link-arrow-left-fog:after, .btn-link-arrow-left-fog:before, .btn-link-arrow-left-concrete:after, .btn-link-arrow-left-concrete:before, .btn-link-arrow-left-ivory:after, .btn-link-arrow-left-ivory:before, .btn-link-arrow-left-aluminium:after, .btn-link-arrow-left-aluminium:before, .btn-link-arrow-left-elephant:after, .btn-link-arrow-left-elephant:before, .btn-link-arrow-left-slate:after, .btn-link-arrow-left-slate:before, .btn-link-arrow-left-midnight:after, .btn-link-arrow-left-midnight:before, .btn-link-arrow-left-black:after, .btn-link-arrow-left-black:before, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, .nav-pills .nav-item:hover, .campaign-list header .nav .nav-item:hover, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover, .campaign-list header .portfolio-list .card nav .nav-item:hover, .portfolio-list .card .campaign-list header nav .nav-item:hover, .nav-pills .nav-item:hover .nav-link, .campaign-list header .nav .nav-item:hover .nav-link, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover .nav-link, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover .nav-link, .campaign-list header .portfolio-list .card nav .nav-item:hover .nav-link, .portfolio-list .card .campaign-list header nav .nav-item:hover .nav-link, .nav-pills .nav-item:hover .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-pills .nav-item:hover nav > a, .campaign-list header .nav .nav-item:hover .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .campaign-list header .nav .nav-item:hover nav > a, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover nav > a, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover nav > a, .campaign-list header .portfolio-list .card nav .nav-item:hover .card-total-holdings nav > a, .portfolio-list .card .campaign-list header nav .nav-item:hover .card-total-holdings nav > a, .nav-pills .nav-item:hover .portfolio-list .card nav > a, .portfolio-list .card .nav-pills .nav-item:hover nav > a, .campaign-list header .nav .nav-item:hover .portfolio-list .card nav > a, .portfolio-list .card .campaign-list header .nav .nav-item:hover nav > a, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover .card nav > a, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover .card nav > a, .campaign-list header .portfolio-list .card nav .nav-item:hover nav > a, .portfolio-list .card .campaign-list header nav .nav-item:hover nav > a, .portfolio-list .card-total-holdings .item-info-feed article.quote, .portfolio-list .card .item-info-feed article.quote, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote p, .portfolio-list .card .item-info-feed article.quote blockquote p {
+.text-white, .dl.bg-dark, .dl.btn-link-arrow-right-dark:after, .dl.btn-link-arrow-right-dark:before, .dl.btn-link-arrow-left-dark:after, .dl.btn-link-arrow-left-dark:before, .dl.bg-dark > dt, .dl.btn-link-arrow-right-dark:after > dt, .dl.btn-link-arrow-right-dark:before > dt, .dl.btn-link-arrow-left-dark:after > dt, .dl.btn-link-arrow-left-dark:before > dt, .dl.bg-dark > dd, .dl.btn-link-arrow-right-dark:after > dd, .dl.btn-link-arrow-right-dark:before > dd, .dl.btn-link-arrow-left-dark:after > dd, .dl.btn-link-arrow-left-dark:before > dd, .btn-link-arrow-right-primary:after, .btn-link-arrow-right-primary:before, .btn-link-arrow-right-secondary:after, .btn-link-arrow-right-secondary:before, .btn-link-arrow-right-success:after, .btn-link-arrow-right-success:before, .btn-link-arrow-right-info:after, .btn-link-arrow-right-info:before, .btn-link-arrow-right-warning:after, .btn-link-arrow-right-warning:before, .btn-link-arrow-right-danger:after, .btn-link-arrow-right-danger:before, .btn-link-arrow-right-light:after, .btn-link-arrow-right-light:before, .btn-link-arrow-right-dark:after, .btn-link-arrow-right-dark:before, .btn-link-arrow-right-clay:after, .btn-link-arrow-right-clay:before, .btn-link-arrow-right-orange:after, .btn-link-arrow-right-orange:before, .btn-link-arrow-right-sun:after, .btn-link-arrow-right-sun:before, .btn-link-arrow-right-mint:after, .btn-link-arrow-right-mint:before, .btn-link-arrow-right-grass:after, .btn-link-arrow-right-grass:before, .btn-link-arrow-right-leaf:after, .btn-link-arrow-right-leaf:before, .btn-link-arrow-right-ocean:after, .btn-link-arrow-right-ocean:before, .btn-link-arrow-right-sky:after, .btn-link-arrow-right-sky:before, .btn-link-arrow-right-saphire:after, .btn-link-arrow-right-saphire:before, .btn-link-arrow-right-robin-egg:after, .btn-link-arrow-right-robin-egg:before, .btn-link-arrow-right-blueberry:after, .btn-link-arrow-right-blueberry:before, .btn-link-arrow-right-grape:after, .btn-link-arrow-right-grape:before, .btn-link-arrow-right-indigo:after, .btn-link-arrow-right-indigo:before, .btn-link-arrow-right-lavander:after, .btn-link-arrow-right-lavander:before, .btn-link-arrow-right-sea:after, .btn-link-arrow-right-sea:before, .btn-link-arrow-right-water:after, .btn-link-arrow-right-water:before, .btn-link-arrow-right-white, .btn-link-arrow-right-white:after, .btn-link-arrow-right-white:before, .btn-link-arrow-right-cloud:after, .btn-link-arrow-right-cloud:before, .btn-link-arrow-right-moon:after, .btn-link-arrow-right-moon:before, .btn-link-arrow-right-milk:after, .btn-link-arrow-right-milk:before, .btn-link-arrow-right-fog:after, .btn-link-arrow-right-fog:before, .btn-link-arrow-right-concrete:after, .btn-link-arrow-right-concrete:before, .btn-link-arrow-right-ivory:after, .btn-link-arrow-right-ivory:before, .btn-link-arrow-right-aluminium:after, .btn-link-arrow-right-aluminium:before, .btn-link-arrow-right-elephant:after, .btn-link-arrow-right-elephant:before, .btn-link-arrow-right-slate:after, .btn-link-arrow-right-slate:before, .btn-link-arrow-right-midnight:after, .btn-link-arrow-right-midnight:before, .btn-link-arrow-right-black:after, .btn-link-arrow-right-black:before, .btn-link-arrow-left-primary:after, .btn-link-arrow-left-primary:before, .btn-link-arrow-left-secondary:after, .btn-link-arrow-left-secondary:before, .btn-link-arrow-left-success:after, .btn-link-arrow-left-success:before, .btn-link-arrow-left-info:after, .btn-link-arrow-left-info:before, .btn-link-arrow-left-warning:after, .btn-link-arrow-left-warning:before, .btn-link-arrow-left-danger:after, .btn-link-arrow-left-danger:before, .btn-link-arrow-left-light:after, .btn-link-arrow-left-light:before, .btn-link-arrow-left-dark:after, .btn-link-arrow-left-dark:before, .btn-link-arrow-left-clay:after, .btn-link-arrow-left-clay:before, .btn-link-arrow-left-orange:after, .btn-link-arrow-left-orange:before, .btn-link-arrow-left-sun:after, .btn-link-arrow-left-sun:before, .btn-link-arrow-left-mint:after, .btn-link-arrow-left-mint:before, .btn-link-arrow-left-grass:after, .btn-link-arrow-left-grass:before, .btn-link-arrow-left-leaf:after, .btn-link-arrow-left-leaf:before, .btn-link-arrow-left-ocean:after, .btn-link-arrow-left-ocean:before, .btn-link-arrow-left-sky:after, .btn-link-arrow-left-sky:before, .btn-link-arrow-left-saphire:after, .btn-link-arrow-left-saphire:before, .btn-link-arrow-left-robin-egg:after, .btn-link-arrow-left-robin-egg:before, .btn-link-arrow-left-blueberry:after, .btn-link-arrow-left-blueberry:before, .btn-link-arrow-left-grape:after, .btn-link-arrow-left-grape:before, .btn-link-arrow-left-indigo:after, .btn-link-arrow-left-indigo:before, .btn-link-arrow-left-lavander:after, .btn-link-arrow-left-lavander:before, .btn-link-arrow-left-sea:after, .btn-link-arrow-left-sea:before, .btn-link-arrow-left-water:after, .btn-link-arrow-left-water:before, .btn-link-arrow-left-white, .btn-link-arrow-left-white:after, .btn-link-arrow-left-white:before, .btn-link-arrow-left-cloud:after, .btn-link-arrow-left-cloud:before, .btn-link-arrow-left-moon:after, .btn-link-arrow-left-moon:before, .btn-link-arrow-left-milk:after, .btn-link-arrow-left-milk:before, .btn-link-arrow-left-fog:after, .btn-link-arrow-left-fog:before, .btn-link-arrow-left-concrete:after, .btn-link-arrow-left-concrete:before, .btn-link-arrow-left-ivory:after, .btn-link-arrow-left-ivory:before, .btn-link-arrow-left-aluminium:after, .btn-link-arrow-left-aluminium:before, .btn-link-arrow-left-elephant:after, .btn-link-arrow-left-elephant:before, .btn-link-arrow-left-slate:after, .btn-link-arrow-left-slate:before, .btn-link-arrow-left-midnight:after, .btn-link-arrow-left-midnight:before, .btn-link-arrow-left-black:after, .btn-link-arrow-left-black:before, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, .nav-pills .nav-item:hover, .campaign-list header .nav .nav-item:hover, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover, .campaign-list header .portfolio-list .card nav .nav-item:hover, .portfolio-list .card .campaign-list header nav .nav-item:hover, .nav-pills .nav-item:hover .nav-link, .campaign-list header .nav .nav-item:hover .nav-link, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover .nav-link, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover .nav-link, .campaign-list header .portfolio-list .card nav .nav-item:hover .nav-link, .portfolio-list .card .campaign-list header nav .nav-item:hover .nav-link, .nav-pills .nav-item:hover .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-pills .nav-item:hover nav > a, .campaign-list header .nav .nav-item:hover .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .campaign-list header .nav .nav-item:hover nav > a, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover nav > a, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover nav > a, .campaign-list header .portfolio-list .card nav .nav-item:hover .card-total-holdings nav > a, .portfolio-list .card .campaign-list header nav .nav-item:hover .card-total-holdings nav > a, .nav-pills .nav-item:hover .portfolio-list .card nav > a, .portfolio-list .card .nav-pills .nav-item:hover nav > a, .campaign-list header .nav .nav-item:hover .portfolio-list .card nav > a, .portfolio-list .card .campaign-list header .nav .nav-item:hover nav > a, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover .card nav > a, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover .card nav > a, .campaign-list header .portfolio-list .card nav .nav-item:hover nav > a, .portfolio-list .card .campaign-list header nav .nav-item:hover nav > a, .portfolio-list .card-total-holdings .item-info-feed article.quote, .portfolio-list .card .item-info-feed article.quote, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote p, .portfolio-list .card .item-info-feed article.quote blockquote p {
   color: #ffffff !important; }
 
-a.text-white:hover, a.btn-link-arrow-right-primary:hover:after, a.btn-link-arrow-right-primary:hover:before, a.btn-link-arrow-right-secondary:hover:after, a.btn-link-arrow-right-secondary:hover:before, a.btn-link-arrow-right-success:hover:after, a.btn-link-arrow-right-success:hover:before, a.btn-link-arrow-right-info:hover:after, a.btn-link-arrow-right-info:hover:before, a.btn-link-arrow-right-warning:hover:after, a.btn-link-arrow-right-warning:hover:before, a.btn-link-arrow-right-danger:hover:after, a.btn-link-arrow-right-danger:hover:before, a.btn-link-arrow-right-light:hover:after, a.btn-link-arrow-right-light:hover:before, a.btn-link-arrow-right-dark:hover:after, a.btn-link-arrow-right-dark:hover:before, a.btn-link-arrow-right-clay:hover:after, a.btn-link-arrow-right-clay:hover:before, a.btn-link-arrow-right-orange:hover:after, a.btn-link-arrow-right-orange:hover:before, a.btn-link-arrow-right-sun:hover:after, a.btn-link-arrow-right-sun:hover:before, a.btn-link-arrow-right-mint:hover:after, a.btn-link-arrow-right-mint:hover:before, a.btn-link-arrow-right-grass:hover:after, a.btn-link-arrow-right-grass:hover:before, a.btn-link-arrow-right-leaf:hover:after, a.btn-link-arrow-right-leaf:hover:before, a.btn-link-arrow-right-ocean:hover:after, a.btn-link-arrow-right-ocean:hover:before, a.btn-link-arrow-right-sky:hover:after, a.btn-link-arrow-right-sky:hover:before, a.btn-link-arrow-right-saphire:hover:after, a.btn-link-arrow-right-saphire:hover:before, a.btn-link-arrow-right-robin-egg:hover:after, a.btn-link-arrow-right-robin-egg:hover:before, a.btn-link-arrow-right-blueberry:hover:after, a.btn-link-arrow-right-blueberry:hover:before, a.btn-link-arrow-right-grape:hover:after, a.btn-link-arrow-right-grape:hover:before, a.btn-link-arrow-right-indigo:hover:after, a.btn-link-arrow-right-indigo:hover:before, a.btn-link-arrow-right-lavander:hover:after, a.btn-link-arrow-right-lavander:hover:before, a.btn-link-arrow-right-sea:hover:after, a.btn-link-arrow-right-sea:hover:before, a.btn-link-arrow-right-water:hover:after, a.btn-link-arrow-right-water:hover:before, a.btn-link-arrow-right-white:hover, a.btn-link-arrow-right-white:hover:after, a.btn-link-arrow-right-white:hover:before, a.btn-link-arrow-right-cloud:hover:after, a.btn-link-arrow-right-cloud:hover:before, a.btn-link-arrow-right-moon:hover:after, a.btn-link-arrow-right-moon:hover:before, a.btn-link-arrow-right-milk:hover:after, a.btn-link-arrow-right-milk:hover:before, a.btn-link-arrow-right-fog:hover:after, a.btn-link-arrow-right-fog:hover:before, a.btn-link-arrow-right-concrete:hover:after, a.btn-link-arrow-right-concrete:hover:before, a.btn-link-arrow-right-ivory:hover:after, a.btn-link-arrow-right-ivory:hover:before, a.btn-link-arrow-right-aluminium:hover:after, a.btn-link-arrow-right-aluminium:hover:before, a.btn-link-arrow-right-elephant:hover:after, a.btn-link-arrow-right-elephant:hover:before, a.btn-link-arrow-right-slate:hover:after, a.btn-link-arrow-right-slate:hover:before, a.btn-link-arrow-right-midnight:hover:after, a.btn-link-arrow-right-midnight:hover:before, a.btn-link-arrow-right-black:hover:after, a.btn-link-arrow-right-black:hover:before, a.btn-link-arrow-left-primary:hover:after, a.btn-link-arrow-left-primary:hover:before, a.btn-link-arrow-left-secondary:hover:after, a.btn-link-arrow-left-secondary:hover:before, a.btn-link-arrow-left-success:hover:after, a.btn-link-arrow-left-success:hover:before, a.btn-link-arrow-left-info:hover:after, a.btn-link-arrow-left-info:hover:before, a.btn-link-arrow-left-warning:hover:after, a.btn-link-arrow-left-warning:hover:before, a.btn-link-arrow-left-danger:hover:after, a.btn-link-arrow-left-danger:hover:before, a.btn-link-arrow-left-light:hover:after, a.btn-link-arrow-left-light:hover:before, a.btn-link-arrow-left-dark:hover:after, a.btn-link-arrow-left-dark:hover:before, a.btn-link-arrow-left-clay:hover:after, a.btn-link-arrow-left-clay:hover:before, a.btn-link-arrow-left-orange:hover:after, a.btn-link-arrow-left-orange:hover:before, a.btn-link-arrow-left-sun:hover:after, a.btn-link-arrow-left-sun:hover:before, a.btn-link-arrow-left-mint:hover:after, a.btn-link-arrow-left-mint:hover:before, a.btn-link-arrow-left-grass:hover:after, a.btn-link-arrow-left-grass:hover:before, a.btn-link-arrow-left-leaf:hover:after, a.btn-link-arrow-left-leaf:hover:before, a.btn-link-arrow-left-ocean:hover:after, a.btn-link-arrow-left-ocean:hover:before, a.btn-link-arrow-left-sky:hover:after, a.btn-link-arrow-left-sky:hover:before, a.btn-link-arrow-left-saphire:hover:after, a.btn-link-arrow-left-saphire:hover:before, a.btn-link-arrow-left-robin-egg:hover:after, a.btn-link-arrow-left-robin-egg:hover:before, a.btn-link-arrow-left-blueberry:hover:after, a.btn-link-arrow-left-blueberry:hover:before, a.btn-link-arrow-left-grape:hover:after, a.btn-link-arrow-left-grape:hover:before, a.btn-link-arrow-left-indigo:hover:after, a.btn-link-arrow-left-indigo:hover:before, a.btn-link-arrow-left-lavander:hover:after, a.btn-link-arrow-left-lavander:hover:before, a.btn-link-arrow-left-sea:hover:after, a.btn-link-arrow-left-sea:hover:before, a.btn-link-arrow-left-water:hover:after, a.btn-link-arrow-left-water:hover:before, a.btn-link-arrow-left-white:hover, a.btn-link-arrow-left-white:hover:after, a.btn-link-arrow-left-white:hover:before, a.btn-link-arrow-left-cloud:hover:after, a.btn-link-arrow-left-cloud:hover:before, a.btn-link-arrow-left-moon:hover:after, a.btn-link-arrow-left-moon:hover:before, a.btn-link-arrow-left-milk:hover:after, a.btn-link-arrow-left-milk:hover:before, a.btn-link-arrow-left-fog:hover:after, a.btn-link-arrow-left-fog:hover:before, a.btn-link-arrow-left-concrete:hover:after, a.btn-link-arrow-left-concrete:hover:before, a.btn-link-arrow-left-ivory:hover:after, a.btn-link-arrow-left-ivory:hover:before, a.btn-link-arrow-left-aluminium:hover:after, a.btn-link-arrow-left-aluminium:hover:before, a.btn-link-arrow-left-elephant:hover:after, a.btn-link-arrow-left-elephant:hover:before, a.btn-link-arrow-left-slate:hover:after, a.btn-link-arrow-left-slate:hover:before, a.btn-link-arrow-left-midnight:hover:after, a.btn-link-arrow-left-midnight:hover:before, a.btn-link-arrow-left-black:hover:after, a.btn-link-arrow-left-black:hover:before, a.btn-success-icon:hover, .portfolio-list .card-matured.card-total-holdings a.btn-wrap-left:hover, .portfolio-list .card-matured.card a.btn-wrap-left:hover, .nav-pills a.nav-item:hover, .campaign-list header .nav a.nav-item:hover, .campaign-list header .portfolio-list .card-total-holdings nav a.nav-item:hover, .portfolio-list .card-total-holdings .campaign-list header nav a.nav-item:hover, .campaign-list header .portfolio-list .card nav a.nav-item:hover, .portfolio-list .card .campaign-list header nav a.nav-item:hover, .nav-pills .nav-item:hover a.nav-link:hover, .campaign-list header .nav .nav-item:hover a.nav-link:hover, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover a.nav-link:hover, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover a.nav-link:hover, .campaign-list header .portfolio-list .card nav .nav-item:hover a.nav-link:hover, .portfolio-list .card .campaign-list header nav .nav-item:hover a.nav-link:hover, .nav-pills .nav-item:hover .portfolio-list .card-total-holdings nav > a:hover, .portfolio-list .card-total-holdings .nav-pills .nav-item:hover nav > a:hover, .campaign-list header .nav .nav-item:hover .portfolio-list .card-total-holdings nav > a:hover, .portfolio-list .card-total-holdings .campaign-list header .nav .nav-item:hover nav > a:hover, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover nav > a:hover, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover nav > a:hover, .campaign-list header .portfolio-list .card nav .nav-item:hover .card-total-holdings nav > a:hover, .portfolio-list .card .campaign-list header nav .nav-item:hover .card-total-holdings nav > a:hover, .nav-pills .nav-item:hover .portfolio-list .card nav > a:hover, .portfolio-list .card .nav-pills .nav-item:hover nav > a:hover, .campaign-list header .nav .nav-item:hover .portfolio-list .card nav > a:hover, .portfolio-list .card .campaign-list header .nav .nav-item:hover nav > a:hover, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover .card nav > a:hover, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover .card nav > a:hover, .campaign-list header .portfolio-list .card nav .nav-item:hover nav > a:hover, .portfolio-list .card .campaign-list header nav .nav-item:hover nav > a:hover, a.text-white:focus, a.btn-link-arrow-right-primary:focus:after, a.btn-link-arrow-right-primary:focus:before, a.btn-link-arrow-right-secondary:focus:after, a.btn-link-arrow-right-secondary:focus:before, a.btn-link-arrow-right-success:focus:after, a.btn-link-arrow-right-success:focus:before, a.btn-link-arrow-right-info:focus:after, a.btn-link-arrow-right-info:focus:before, a.btn-link-arrow-right-warning:focus:after, a.btn-link-arrow-right-warning:focus:before, a.btn-link-arrow-right-danger:focus:after, a.btn-link-arrow-right-danger:focus:before, a.btn-link-arrow-right-light:focus:after, a.btn-link-arrow-right-light:focus:before, a.btn-link-arrow-right-dark:focus:after, a.btn-link-arrow-right-dark:focus:before, a.btn-link-arrow-right-clay:focus:after, a.btn-link-arrow-right-clay:focus:before, a.btn-link-arrow-right-orange:focus:after, a.btn-link-arrow-right-orange:focus:before, a.btn-link-arrow-right-sun:focus:after, a.btn-link-arrow-right-sun:focus:before, a.btn-link-arrow-right-mint:focus:after, a.btn-link-arrow-right-mint:focus:before, a.btn-link-arrow-right-grass:focus:after, a.btn-link-arrow-right-grass:focus:before, a.btn-link-arrow-right-leaf:focus:after, a.btn-link-arrow-right-leaf:focus:before, a.btn-link-arrow-right-ocean:focus:after, a.btn-link-arrow-right-ocean:focus:before, a.btn-link-arrow-right-sky:focus:after, a.btn-link-arrow-right-sky:focus:before, a.btn-link-arrow-right-saphire:focus:after, a.btn-link-arrow-right-saphire:focus:before, a.btn-link-arrow-right-robin-egg:focus:after, a.btn-link-arrow-right-robin-egg:focus:before, a.btn-link-arrow-right-blueberry:focus:after, a.btn-link-arrow-right-blueberry:focus:before, a.btn-link-arrow-right-grape:focus:after, a.btn-link-arrow-right-grape:focus:before, a.btn-link-arrow-right-indigo:focus:after, a.btn-link-arrow-right-indigo:focus:before, a.btn-link-arrow-right-lavander:focus:after, a.btn-link-arrow-right-lavander:focus:before, a.btn-link-arrow-right-sea:focus:after, a.btn-link-arrow-right-sea:focus:before, a.btn-link-arrow-right-water:focus:after, a.btn-link-arrow-right-water:focus:before, a.btn-link-arrow-right-white:focus, a.btn-link-arrow-right-white:focus:after, a.btn-link-arrow-right-white:focus:before, a.btn-link-arrow-right-cloud:focus:after, a.btn-link-arrow-right-cloud:focus:before, a.btn-link-arrow-right-moon:focus:after, a.btn-link-arrow-right-moon:focus:before, a.btn-link-arrow-right-milk:focus:after, a.btn-link-arrow-right-milk:focus:before, a.btn-link-arrow-right-fog:focus:after, a.btn-link-arrow-right-fog:focus:before, a.btn-link-arrow-right-concrete:focus:after, a.btn-link-arrow-right-concrete:focus:before, a.btn-link-arrow-right-ivory:focus:after, a.btn-link-arrow-right-ivory:focus:before, a.btn-link-arrow-right-aluminium:focus:after, a.btn-link-arrow-right-aluminium:focus:before, a.btn-link-arrow-right-elephant:focus:after, a.btn-link-arrow-right-elephant:focus:before, a.btn-link-arrow-right-slate:focus:after, a.btn-link-arrow-right-slate:focus:before, a.btn-link-arrow-right-midnight:focus:after, a.btn-link-arrow-right-midnight:focus:before, a.btn-link-arrow-right-black:focus:after, a.btn-link-arrow-right-black:focus:before, a.btn-link-arrow-left-primary:focus:after, a.btn-link-arrow-left-primary:focus:before, a.btn-link-arrow-left-secondary:focus:after, a.btn-link-arrow-left-secondary:focus:before, a.btn-link-arrow-left-success:focus:after, a.btn-link-arrow-left-success:focus:before, a.btn-link-arrow-left-info:focus:after, a.btn-link-arrow-left-info:focus:before, a.btn-link-arrow-left-warning:focus:after, a.btn-link-arrow-left-warning:focus:before, a.btn-link-arrow-left-danger:focus:after, a.btn-link-arrow-left-danger:focus:before, a.btn-link-arrow-left-light:focus:after, a.btn-link-arrow-left-light:focus:before, a.btn-link-arrow-left-dark:focus:after, a.btn-link-arrow-left-dark:focus:before, a.btn-link-arrow-left-clay:focus:after, a.btn-link-arrow-left-clay:focus:before, a.btn-link-arrow-left-orange:focus:after, a.btn-link-arrow-left-orange:focus:before, a.btn-link-arrow-left-sun:focus:after, a.btn-link-arrow-left-sun:focus:before, a.btn-link-arrow-left-mint:focus:after, a.btn-link-arrow-left-mint:focus:before, a.btn-link-arrow-left-grass:focus:after, a.btn-link-arrow-left-grass:focus:before, a.btn-link-arrow-left-leaf:focus:after, a.btn-link-arrow-left-leaf:focus:before, a.btn-link-arrow-left-ocean:focus:after, a.btn-link-arrow-left-ocean:focus:before, a.btn-link-arrow-left-sky:focus:after, a.btn-link-arrow-left-sky:focus:before, a.btn-link-arrow-left-saphire:focus:after, a.btn-link-arrow-left-saphire:focus:before, a.btn-link-arrow-left-robin-egg:focus:after, a.btn-link-arrow-left-robin-egg:focus:before, a.btn-link-arrow-left-blueberry:focus:after, a.btn-link-arrow-left-blueberry:focus:before, a.btn-link-arrow-left-grape:focus:after, a.btn-link-arrow-left-grape:focus:before, a.btn-link-arrow-left-indigo:focus:after, a.btn-link-arrow-left-indigo:focus:before, a.btn-link-arrow-left-lavander:focus:after, a.btn-link-arrow-left-lavander:focus:before, a.btn-link-arrow-left-sea:focus:after, a.btn-link-arrow-left-sea:focus:before, a.btn-link-arrow-left-water:focus:after, a.btn-link-arrow-left-water:focus:before, a.btn-link-arrow-left-white:focus, a.btn-link-arrow-left-white:focus:after, a.btn-link-arrow-left-white:focus:before, a.btn-link-arrow-left-cloud:focus:after, a.btn-link-arrow-left-cloud:focus:before, a.btn-link-arrow-left-moon:focus:after, a.btn-link-arrow-left-moon:focus:before, a.btn-link-arrow-left-milk:focus:after, a.btn-link-arrow-left-milk:focus:before, a.btn-link-arrow-left-fog:focus:after, a.btn-link-arrow-left-fog:focus:before, a.btn-link-arrow-left-concrete:focus:after, a.btn-link-arrow-left-concrete:focus:before, a.btn-link-arrow-left-ivory:focus:after, a.btn-link-arrow-left-ivory:focus:before, a.btn-link-arrow-left-aluminium:focus:after, a.btn-link-arrow-left-aluminium:focus:before, a.btn-link-arrow-left-elephant:focus:after, a.btn-link-arrow-left-elephant:focus:before, a.btn-link-arrow-left-slate:focus:after, a.btn-link-arrow-left-slate:focus:before, a.btn-link-arrow-left-midnight:focus:after, a.btn-link-arrow-left-midnight:focus:before, a.btn-link-arrow-left-black:focus:after, a.btn-link-arrow-left-black:focus:before, a.btn-success-icon:focus, .portfolio-list .card-matured.card-total-holdings a.btn-wrap-left:focus, .portfolio-list .card-matured.card a.btn-wrap-left:focus, .nav-pills a.nav-item:focus:hover, .campaign-list header .nav a.nav-item:focus:hover, .campaign-list header .portfolio-list .card-total-holdings nav a.nav-item:focus:hover, .portfolio-list .card-total-holdings .campaign-list header nav a.nav-item:focus:hover, .campaign-list header .portfolio-list .card nav a.nav-item:focus:hover, .portfolio-list .card .campaign-list header nav a.nav-item:focus:hover, .nav-pills .nav-item:hover a.nav-link:focus, .campaign-list header .nav .nav-item:hover a.nav-link:focus, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover a.nav-link:focus, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover a.nav-link:focus, .campaign-list header .portfolio-list .card nav .nav-item:hover a.nav-link:focus, .portfolio-list .card .campaign-list header nav .nav-item:hover a.nav-link:focus, .nav-pills .nav-item:hover .portfolio-list .card-total-holdings nav > a:focus, .portfolio-list .card-total-holdings .nav-pills .nav-item:hover nav > a:focus, .campaign-list header .nav .nav-item:hover .portfolio-list .card-total-holdings nav > a:focus, .portfolio-list .card-total-holdings .campaign-list header .nav .nav-item:hover nav > a:focus, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover nav > a:focus, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover nav > a:focus, .campaign-list header .portfolio-list .card nav .nav-item:hover .card-total-holdings nav > a:focus, .portfolio-list .card .campaign-list header nav .nav-item:hover .card-total-holdings nav > a:focus, .nav-pills .nav-item:hover .portfolio-list .card nav > a:focus, .portfolio-list .card .nav-pills .nav-item:hover nav > a:focus, .campaign-list header .nav .nav-item:hover .portfolio-list .card nav > a:focus, .portfolio-list .card .campaign-list header .nav .nav-item:hover nav > a:focus, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover .card nav > a:focus, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover .card nav > a:focus, .campaign-list header .portfolio-list .card nav .nav-item:hover nav > a:focus, .portfolio-list .card .campaign-list header nav .nav-item:hover nav > a:focus {
+a.text-white:hover, a.dl.bg-dark:hover, a.dl.btn-link-arrow-right-dark:hover:after, a.dl.btn-link-arrow-right-dark:hover:before, a.dl.btn-link-arrow-left-dark:hover:after, a.dl.btn-link-arrow-left-dark:hover:before, a.btn-link-arrow-right-primary:hover:after, a.btn-link-arrow-right-primary:hover:before, a.btn-link-arrow-right-secondary:hover:after, a.btn-link-arrow-right-secondary:hover:before, a.btn-link-arrow-right-success:hover:after, a.btn-link-arrow-right-success:hover:before, a.btn-link-arrow-right-info:hover:after, a.btn-link-arrow-right-info:hover:before, a.btn-link-arrow-right-warning:hover:after, a.btn-link-arrow-right-warning:hover:before, a.btn-link-arrow-right-danger:hover:after, a.btn-link-arrow-right-danger:hover:before, a.btn-link-arrow-right-light:hover:after, a.btn-link-arrow-right-light:hover:before, a.btn-link-arrow-right-dark:hover:after, a.btn-link-arrow-right-dark:hover:before, a.btn-link-arrow-right-clay:hover:after, a.btn-link-arrow-right-clay:hover:before, a.btn-link-arrow-right-orange:hover:after, a.btn-link-arrow-right-orange:hover:before, a.btn-link-arrow-right-sun:hover:after, a.btn-link-arrow-right-sun:hover:before, a.btn-link-arrow-right-mint:hover:after, a.btn-link-arrow-right-mint:hover:before, a.btn-link-arrow-right-grass:hover:after, a.btn-link-arrow-right-grass:hover:before, a.btn-link-arrow-right-leaf:hover:after, a.btn-link-arrow-right-leaf:hover:before, a.btn-link-arrow-right-ocean:hover:after, a.btn-link-arrow-right-ocean:hover:before, a.btn-link-arrow-right-sky:hover:after, a.btn-link-arrow-right-sky:hover:before, a.btn-link-arrow-right-saphire:hover:after, a.btn-link-arrow-right-saphire:hover:before, a.btn-link-arrow-right-robin-egg:hover:after, a.btn-link-arrow-right-robin-egg:hover:before, a.btn-link-arrow-right-blueberry:hover:after, a.btn-link-arrow-right-blueberry:hover:before, a.btn-link-arrow-right-grape:hover:after, a.btn-link-arrow-right-grape:hover:before, a.btn-link-arrow-right-indigo:hover:after, a.btn-link-arrow-right-indigo:hover:before, a.btn-link-arrow-right-lavander:hover:after, a.btn-link-arrow-right-lavander:hover:before, a.btn-link-arrow-right-sea:hover:after, a.btn-link-arrow-right-sea:hover:before, a.btn-link-arrow-right-water:hover:after, a.btn-link-arrow-right-water:hover:before, a.btn-link-arrow-right-white:hover, a.btn-link-arrow-right-white:hover:after, a.btn-link-arrow-right-white:hover:before, a.btn-link-arrow-right-cloud:hover:after, a.btn-link-arrow-right-cloud:hover:before, a.btn-link-arrow-right-moon:hover:after, a.btn-link-arrow-right-moon:hover:before, a.btn-link-arrow-right-milk:hover:after, a.btn-link-arrow-right-milk:hover:before, a.btn-link-arrow-right-fog:hover:after, a.btn-link-arrow-right-fog:hover:before, a.btn-link-arrow-right-concrete:hover:after, a.btn-link-arrow-right-concrete:hover:before, a.btn-link-arrow-right-ivory:hover:after, a.btn-link-arrow-right-ivory:hover:before, a.btn-link-arrow-right-aluminium:hover:after, a.btn-link-arrow-right-aluminium:hover:before, a.btn-link-arrow-right-elephant:hover:after, a.btn-link-arrow-right-elephant:hover:before, a.btn-link-arrow-right-slate:hover:after, a.btn-link-arrow-right-slate:hover:before, a.btn-link-arrow-right-midnight:hover:after, a.btn-link-arrow-right-midnight:hover:before, a.btn-link-arrow-right-black:hover:after, a.btn-link-arrow-right-black:hover:before, a.btn-link-arrow-left-primary:hover:after, a.btn-link-arrow-left-primary:hover:before, a.btn-link-arrow-left-secondary:hover:after, a.btn-link-arrow-left-secondary:hover:before, a.btn-link-arrow-left-success:hover:after, a.btn-link-arrow-left-success:hover:before, a.btn-link-arrow-left-info:hover:after, a.btn-link-arrow-left-info:hover:before, a.btn-link-arrow-left-warning:hover:after, a.btn-link-arrow-left-warning:hover:before, a.btn-link-arrow-left-danger:hover:after, a.btn-link-arrow-left-danger:hover:before, a.btn-link-arrow-left-light:hover:after, a.btn-link-arrow-left-light:hover:before, a.btn-link-arrow-left-dark:hover:after, a.btn-link-arrow-left-dark:hover:before, a.btn-link-arrow-left-clay:hover:after, a.btn-link-arrow-left-clay:hover:before, a.btn-link-arrow-left-orange:hover:after, a.btn-link-arrow-left-orange:hover:before, a.btn-link-arrow-left-sun:hover:after, a.btn-link-arrow-left-sun:hover:before, a.btn-link-arrow-left-mint:hover:after, a.btn-link-arrow-left-mint:hover:before, a.btn-link-arrow-left-grass:hover:after, a.btn-link-arrow-left-grass:hover:before, a.btn-link-arrow-left-leaf:hover:after, a.btn-link-arrow-left-leaf:hover:before, a.btn-link-arrow-left-ocean:hover:after, a.btn-link-arrow-left-ocean:hover:before, a.btn-link-arrow-left-sky:hover:after, a.btn-link-arrow-left-sky:hover:before, a.btn-link-arrow-left-saphire:hover:after, a.btn-link-arrow-left-saphire:hover:before, a.btn-link-arrow-left-robin-egg:hover:after, a.btn-link-arrow-left-robin-egg:hover:before, a.btn-link-arrow-left-blueberry:hover:after, a.btn-link-arrow-left-blueberry:hover:before, a.btn-link-arrow-left-grape:hover:after, a.btn-link-arrow-left-grape:hover:before, a.btn-link-arrow-left-indigo:hover:after, a.btn-link-arrow-left-indigo:hover:before, a.btn-link-arrow-left-lavander:hover:after, a.btn-link-arrow-left-lavander:hover:before, a.btn-link-arrow-left-sea:hover:after, a.btn-link-arrow-left-sea:hover:before, a.btn-link-arrow-left-water:hover:after, a.btn-link-arrow-left-water:hover:before, a.btn-link-arrow-left-white:hover, a.btn-link-arrow-left-white:hover:after, a.btn-link-arrow-left-white:hover:before, a.btn-link-arrow-left-cloud:hover:after, a.btn-link-arrow-left-cloud:hover:before, a.btn-link-arrow-left-moon:hover:after, a.btn-link-arrow-left-moon:hover:before, a.btn-link-arrow-left-milk:hover:after, a.btn-link-arrow-left-milk:hover:before, a.btn-link-arrow-left-fog:hover:after, a.btn-link-arrow-left-fog:hover:before, a.btn-link-arrow-left-concrete:hover:after, a.btn-link-arrow-left-concrete:hover:before, a.btn-link-arrow-left-ivory:hover:after, a.btn-link-arrow-left-ivory:hover:before, a.btn-link-arrow-left-aluminium:hover:after, a.btn-link-arrow-left-aluminium:hover:before, a.btn-link-arrow-left-elephant:hover:after, a.btn-link-arrow-left-elephant:hover:before, a.btn-link-arrow-left-slate:hover:after, a.btn-link-arrow-left-slate:hover:before, a.btn-link-arrow-left-midnight:hover:after, a.btn-link-arrow-left-midnight:hover:before, a.btn-link-arrow-left-black:hover:after, a.btn-link-arrow-left-black:hover:before, a.btn-success-icon:hover, .portfolio-list .card-matured.card-total-holdings a.btn-wrap-left:hover, .portfolio-list .card-matured.card a.btn-wrap-left:hover, .nav-pills a.nav-item:hover, .campaign-list header .nav a.nav-item:hover, .campaign-list header .portfolio-list .card-total-holdings nav a.nav-item:hover, .portfolio-list .card-total-holdings .campaign-list header nav a.nav-item:hover, .campaign-list header .portfolio-list .card nav a.nav-item:hover, .portfolio-list .card .campaign-list header nav a.nav-item:hover, .nav-pills .nav-item:hover a.nav-link:hover, .campaign-list header .nav .nav-item:hover a.nav-link:hover, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover a.nav-link:hover, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover a.nav-link:hover, .campaign-list header .portfolio-list .card nav .nav-item:hover a.nav-link:hover, .portfolio-list .card .campaign-list header nav .nav-item:hover a.nav-link:hover, .nav-pills .nav-item:hover .portfolio-list .card-total-holdings nav > a:hover, .portfolio-list .card-total-holdings .nav-pills .nav-item:hover nav > a:hover, .campaign-list header .nav .nav-item:hover .portfolio-list .card-total-holdings nav > a:hover, .portfolio-list .card-total-holdings .campaign-list header .nav .nav-item:hover nav > a:hover, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover nav > a:hover, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover nav > a:hover, .campaign-list header .portfolio-list .card nav .nav-item:hover .card-total-holdings nav > a:hover, .portfolio-list .card .campaign-list header nav .nav-item:hover .card-total-holdings nav > a:hover, .nav-pills .nav-item:hover .portfolio-list .card nav > a:hover, .portfolio-list .card .nav-pills .nav-item:hover nav > a:hover, .campaign-list header .nav .nav-item:hover .portfolio-list .card nav > a:hover, .portfolio-list .card .campaign-list header .nav .nav-item:hover nav > a:hover, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover .card nav > a:hover, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover .card nav > a:hover, .campaign-list header .portfolio-list .card nav .nav-item:hover nav > a:hover, .portfolio-list .card .campaign-list header nav .nav-item:hover nav > a:hover, a.text-white:focus, a.dl.bg-dark:focus, a.dl.btn-link-arrow-right-dark:focus:after, a.dl.btn-link-arrow-right-dark:focus:before, a.dl.btn-link-arrow-left-dark:focus:after, a.dl.btn-link-arrow-left-dark:focus:before, a.btn-link-arrow-right-primary:focus:after, a.btn-link-arrow-right-primary:focus:before, a.btn-link-arrow-right-secondary:focus:after, a.btn-link-arrow-right-secondary:focus:before, a.btn-link-arrow-right-success:focus:after, a.btn-link-arrow-right-success:focus:before, a.btn-link-arrow-right-info:focus:after, a.btn-link-arrow-right-info:focus:before, a.btn-link-arrow-right-warning:focus:after, a.btn-link-arrow-right-warning:focus:before, a.btn-link-arrow-right-danger:focus:after, a.btn-link-arrow-right-danger:focus:before, a.btn-link-arrow-right-light:focus:after, a.btn-link-arrow-right-light:focus:before, a.btn-link-arrow-right-dark:focus:after, a.btn-link-arrow-right-dark:focus:before, a.btn-link-arrow-right-clay:focus:after, a.btn-link-arrow-right-clay:focus:before, a.btn-link-arrow-right-orange:focus:after, a.btn-link-arrow-right-orange:focus:before, a.btn-link-arrow-right-sun:focus:after, a.btn-link-arrow-right-sun:focus:before, a.btn-link-arrow-right-mint:focus:after, a.btn-link-arrow-right-mint:focus:before, a.btn-link-arrow-right-grass:focus:after, a.btn-link-arrow-right-grass:focus:before, a.btn-link-arrow-right-leaf:focus:after, a.btn-link-arrow-right-leaf:focus:before, a.btn-link-arrow-right-ocean:focus:after, a.btn-link-arrow-right-ocean:focus:before, a.btn-link-arrow-right-sky:focus:after, a.btn-link-arrow-right-sky:focus:before, a.btn-link-arrow-right-saphire:focus:after, a.btn-link-arrow-right-saphire:focus:before, a.btn-link-arrow-right-robin-egg:focus:after, a.btn-link-arrow-right-robin-egg:focus:before, a.btn-link-arrow-right-blueberry:focus:after, a.btn-link-arrow-right-blueberry:focus:before, a.btn-link-arrow-right-grape:focus:after, a.btn-link-arrow-right-grape:focus:before, a.btn-link-arrow-right-indigo:focus:after, a.btn-link-arrow-right-indigo:focus:before, a.btn-link-arrow-right-lavander:focus:after, a.btn-link-arrow-right-lavander:focus:before, a.btn-link-arrow-right-sea:focus:after, a.btn-link-arrow-right-sea:focus:before, a.btn-link-arrow-right-water:focus:after, a.btn-link-arrow-right-water:focus:before, a.btn-link-arrow-right-white:focus, a.btn-link-arrow-right-white:focus:after, a.btn-link-arrow-right-white:focus:before, a.btn-link-arrow-right-cloud:focus:after, a.btn-link-arrow-right-cloud:focus:before, a.btn-link-arrow-right-moon:focus:after, a.btn-link-arrow-right-moon:focus:before, a.btn-link-arrow-right-milk:focus:after, a.btn-link-arrow-right-milk:focus:before, a.btn-link-arrow-right-fog:focus:after, a.btn-link-arrow-right-fog:focus:before, a.btn-link-arrow-right-concrete:focus:after, a.btn-link-arrow-right-concrete:focus:before, a.btn-link-arrow-right-ivory:focus:after, a.btn-link-arrow-right-ivory:focus:before, a.btn-link-arrow-right-aluminium:focus:after, a.btn-link-arrow-right-aluminium:focus:before, a.btn-link-arrow-right-elephant:focus:after, a.btn-link-arrow-right-elephant:focus:before, a.btn-link-arrow-right-slate:focus:after, a.btn-link-arrow-right-slate:focus:before, a.btn-link-arrow-right-midnight:focus:after, a.btn-link-arrow-right-midnight:focus:before, a.btn-link-arrow-right-black:focus:after, a.btn-link-arrow-right-black:focus:before, a.btn-link-arrow-left-primary:focus:after, a.btn-link-arrow-left-primary:focus:before, a.btn-link-arrow-left-secondary:focus:after, a.btn-link-arrow-left-secondary:focus:before, a.btn-link-arrow-left-success:focus:after, a.btn-link-arrow-left-success:focus:before, a.btn-link-arrow-left-info:focus:after, a.btn-link-arrow-left-info:focus:before, a.btn-link-arrow-left-warning:focus:after, a.btn-link-arrow-left-warning:focus:before, a.btn-link-arrow-left-danger:focus:after, a.btn-link-arrow-left-danger:focus:before, a.btn-link-arrow-left-light:focus:after, a.btn-link-arrow-left-light:focus:before, a.btn-link-arrow-left-dark:focus:after, a.btn-link-arrow-left-dark:focus:before, a.btn-link-arrow-left-clay:focus:after, a.btn-link-arrow-left-clay:focus:before, a.btn-link-arrow-left-orange:focus:after, a.btn-link-arrow-left-orange:focus:before, a.btn-link-arrow-left-sun:focus:after, a.btn-link-arrow-left-sun:focus:before, a.btn-link-arrow-left-mint:focus:after, a.btn-link-arrow-left-mint:focus:before, a.btn-link-arrow-left-grass:focus:after, a.btn-link-arrow-left-grass:focus:before, a.btn-link-arrow-left-leaf:focus:after, a.btn-link-arrow-left-leaf:focus:before, a.btn-link-arrow-left-ocean:focus:after, a.btn-link-arrow-left-ocean:focus:before, a.btn-link-arrow-left-sky:focus:after, a.btn-link-arrow-left-sky:focus:before, a.btn-link-arrow-left-saphire:focus:after, a.btn-link-arrow-left-saphire:focus:before, a.btn-link-arrow-left-robin-egg:focus:after, a.btn-link-arrow-left-robin-egg:focus:before, a.btn-link-arrow-left-blueberry:focus:after, a.btn-link-arrow-left-blueberry:focus:before, a.btn-link-arrow-left-grape:focus:after, a.btn-link-arrow-left-grape:focus:before, a.btn-link-arrow-left-indigo:focus:after, a.btn-link-arrow-left-indigo:focus:before, a.btn-link-arrow-left-lavander:focus:after, a.btn-link-arrow-left-lavander:focus:before, a.btn-link-arrow-left-sea:focus:after, a.btn-link-arrow-left-sea:focus:before, a.btn-link-arrow-left-water:focus:after, a.btn-link-arrow-left-water:focus:before, a.btn-link-arrow-left-white:focus, a.btn-link-arrow-left-white:focus:after, a.btn-link-arrow-left-white:focus:before, a.btn-link-arrow-left-cloud:focus:after, a.btn-link-arrow-left-cloud:focus:before, a.btn-link-arrow-left-moon:focus:after, a.btn-link-arrow-left-moon:focus:before, a.btn-link-arrow-left-milk:focus:after, a.btn-link-arrow-left-milk:focus:before, a.btn-link-arrow-left-fog:focus:after, a.btn-link-arrow-left-fog:focus:before, a.btn-link-arrow-left-concrete:focus:after, a.btn-link-arrow-left-concrete:focus:before, a.btn-link-arrow-left-ivory:focus:after, a.btn-link-arrow-left-ivory:focus:before, a.btn-link-arrow-left-aluminium:focus:after, a.btn-link-arrow-left-aluminium:focus:before, a.btn-link-arrow-left-elephant:focus:after, a.btn-link-arrow-left-elephant:focus:before, a.btn-link-arrow-left-slate:focus:after, a.btn-link-arrow-left-slate:focus:before, a.btn-link-arrow-left-midnight:focus:after, a.btn-link-arrow-left-midnight:focus:before, a.btn-link-arrow-left-black:focus:after, a.btn-link-arrow-left-black:focus:before, a.btn-success-icon:focus, .portfolio-list .card-matured.card-total-holdings a.btn-wrap-left:focus, .portfolio-list .card-matured.card a.btn-wrap-left:focus, .nav-pills a.nav-item:focus:hover, .campaign-list header .nav a.nav-item:focus:hover, .campaign-list header .portfolio-list .card-total-holdings nav a.nav-item:focus:hover, .portfolio-list .card-total-holdings .campaign-list header nav a.nav-item:focus:hover, .campaign-list header .portfolio-list .card nav a.nav-item:focus:hover, .portfolio-list .card .campaign-list header nav a.nav-item:focus:hover, .nav-pills .nav-item:hover a.nav-link:focus, .campaign-list header .nav .nav-item:hover a.nav-link:focus, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover a.nav-link:focus, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover a.nav-link:focus, .campaign-list header .portfolio-list .card nav .nav-item:hover a.nav-link:focus, .portfolio-list .card .campaign-list header nav .nav-item:hover a.nav-link:focus, .nav-pills .nav-item:hover .portfolio-list .card-total-holdings nav > a:focus, .portfolio-list .card-total-holdings .nav-pills .nav-item:hover nav > a:focus, .campaign-list header .nav .nav-item:hover .portfolio-list .card-total-holdings nav > a:focus, .portfolio-list .card-total-holdings .campaign-list header .nav .nav-item:hover nav > a:focus, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover nav > a:focus, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover nav > a:focus, .campaign-list header .portfolio-list .card nav .nav-item:hover .card-total-holdings nav > a:focus, .portfolio-list .card .campaign-list header nav .nav-item:hover .card-total-holdings nav > a:focus, .nav-pills .nav-item:hover .portfolio-list .card nav > a:focus, .portfolio-list .card .nav-pills .nav-item:hover nav > a:focus, .campaign-list header .nav .nav-item:hover .portfolio-list .card nav > a:focus, .portfolio-list .card .campaign-list header .nav .nav-item:hover nav > a:focus, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover .card nav > a:focus, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover .card nav > a:focus, .campaign-list header .portfolio-list .card nav .nav-item:hover nav > a:focus, .portfolio-list .card .campaign-list header nav .nav-item:hover nav > a:focus {
   color: #d9d9d9 !important; }
 
 .text-cloud, .btn-link-arrow-right-cloud, .btn-link-arrow-left-cloud {
@@ -14846,7 +15177,7 @@ a.text-ivory:hover, a.btn-link-arrow-right-ivory:hover, a.btn-link-arrow-left-iv
 a.text-aluminium:hover, a.btn-link-arrow-right-aluminium:hover, a.btn-link-arrow-left-aluminium:hover, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote a.blockquote-footer:hover, .portfolio-list .card .item-info-feed article.quote blockquote a.blockquote-footer:hover, a.text-aluminium:focus, a.btn-link-arrow-right-aluminium:focus, a.btn-link-arrow-left-aluminium:focus, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote a.blockquote-footer:focus, .portfolio-list .card .item-info-feed article.quote blockquote a.blockquote-footer:focus {
   color: #6d7882 !important; }
 
-.text-elephant, .dl > dt, .btn-link-arrow-right-elephant, .btn-link-arrow-left-elephant {
+.text-elephant, :not(.bg-dark):not(.btn-link-arrow-right-dark:after):not(.btn-link-arrow-right-dark:before):not(.btn-link-arrow-left-dark:after):not(.btn-link-arrow-left-dark:before) dt, .btn-link-arrow-right-elephant, .btn-link-arrow-left-elephant {
   color: #7a807f !important; }
 
 a.text-elephant:hover, a.btn-link-arrow-right-elephant:hover, a.btn-link-arrow-left-elephant:hover, a.text-elephant:focus, a.btn-link-arrow-right-elephant:focus, a.btn-link-arrow-left-elephant:focus {
@@ -14858,7 +15189,7 @@ a.text-elephant:hover, a.btn-link-arrow-right-elephant:hover, a.btn-link-arrow-l
 a.text-slate:hover, a.btn-link-arrow-right-slate:hover, a.btn-link-arrow-left-slate:hover, a.text-slate:focus, a.btn-link-arrow-right-slate:focus, a.btn-link-arrow-left-slate:focus {
   color: #161819 !important; }
 
-.text-midnight, .dl > dd, .btn-link-arrow-right-midnight, .btn-link-arrow-left-midnight, .card-total-holdings h2, .portfolio aside section header h3, .portfolio-list .card-total-holdings header h2, .portfolio-list .card header h2, .portfolio-list .card-total-holdings .item-info-feed h3, .portfolio-list .card .item-info-feed h3 {
+.text-midnight, :not(.bg-dark):not(.btn-link-arrow-right-dark:after):not(.btn-link-arrow-right-dark:before):not(.btn-link-arrow-left-dark:after):not(.btn-link-arrow-left-dark:before) dd, .btn-link-arrow-right-midnight, .btn-link-arrow-left-midnight, .card-total-holdings h2, .portfolio aside section header h3, .portfolio-list .card-total-holdings header h2, .portfolio-list .card header h2, .portfolio-list .card-total-holdings .item-info-feed h3, .portfolio-list .card .item-info-feed h3 {
   color: #192228 !important; }
 
 a.text-midnight:hover, a.btn-link-arrow-right-midnight:hover, a.btn-link-arrow-left-midnight:hover, a.text-midnight:focus, a.btn-link-arrow-right-midnight:focus, a.btn-link-arrow-left-midnight:focus {
@@ -14871,7 +15202,7 @@ a.text-black:hover, a.btn-link-arrow-right-black:hover, a.btn-link-arrow-left-bl
   color: black !important; }
 
 .text-body {
-  color: #192228 !important; }
+  color: #3a3f42 !important; }
 
 .text-muted, .portfolio aside section .list-group-flush > li p, .portfolio aside section ul.list-unstyled > li .media-body small, .portfolio-list > header ul li {
   color: #7a807f !important; }

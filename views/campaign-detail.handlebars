@@ -45,16 +45,30 @@
     <img class="img-splash" src="/images/campaign-hero-ocean.png" />
     <div class="container">
       <div class="row">
-        <ul class="nav nav-tabs">
-          <a class="nav-link active" href="#">Overview</a>
-          <a class="nav-link" href="#">Financial</a>
-          <a class="nav-link" href="#">Project</a>
-          <a class="nav-link" href="#">Issuer</a>
-          <a class="nav-link" href="#">Compliance</a>
-          <a class="nav-link" href="#">Legal</a>
-        </nav>
+        <div class="col">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Financial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Issuer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Compliance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Legal</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="tab-content">
+      <main class="tab-content">
         <div class="tab overview">
           {{> campaign-detail/tab-overview}}
         </div>
@@ -73,7 +87,7 @@
         <div class="tab legal">
           {{> campaign-detail/tab-legal}}
         </div>
-      </div>
+      </main>
     </div>
   </article>
   {{/content}}

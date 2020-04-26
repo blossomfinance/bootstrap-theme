@@ -18,10 +18,6 @@ $slate:       #3a3f42;
 $midnight:    #192228;
 $black:       #000000;
 
-$other:       #9ba3a9;
-
-$other-one:   rgba($other, 0.15);
-
 // mapping blossom grays->bootstrap default grays
 $gray-100:    $cloud;
 $gray-200:    $milk;
@@ -158,7 +154,9 @@ $spacers: map-merge(
     3: 16px,
     4: 32px,
     5: $spacer,
-    6: 48px
+    6: 48px,
+    7: 64px,
+    8: 80px
   ),
   $spacers
 );
@@ -193,7 +191,7 @@ $sizes: (
 //
 $body-bg:                   $milk;
 $body-bg-bleed:             $white;
-$body-color:                $gray-900;
+$body-color:                $gray-800;
 //
 //
 // // Links
@@ -339,20 +337,20 @@ $headings-color:              $blueberry;
 //
 // $display1-size:               6rem !default;
 // $display2-size:               5.5rem !default;
-// $display3-size:               4.5rem !default;
-// $display4-size:               3.5rem !default;
-//
+$display3-size:               4rem;
+$display4-size:               3rem;
+
 $display1-weight:             $font-weight-bold;
 $display2-weight:             $font-weight-bold;
 $display3-weight:             $font-weight-bold;
 $display4-weight:             $font-weight-bold;
 // $display-line-height:         $headings-line-height !default;
 //
-// $lead-font-size:              $font-size-base * 1.25 !default;
-// $lead-font-weight:            300 !default;
-//
+$lead-font-size:              $font-size-base * 1.15;
+$lead-font-weight:            $font-weight-normal;
+
 $small-font-size:             80%;
-//
+
 $text-muted:                  $gray-700;
 //
 // $blockquote-small-color:      $gray-600 !default;
@@ -728,15 +726,15 @@ $btn-border-radius-sm:        5px;
 // $nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                .5rem;
 // $nav-link-disabled-color:           $gray-600 !default;
-//
-// $nav-tabs-border-color:             $gray-300 !default;
-// $nav-tabs-border-width:             $border-width !default;
-// $nav-tabs-border-radius:            $border-radius !default;
-// $nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color !default;
-// $nav-tabs-link-active-color:        $gray-700 !default;
-// $nav-tabs-link-active-bg:           $body-bg !default;
-// $nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
-//
+
+$nav-tabs-border-color:             $white;
+$nav-tabs-border-width:             6px;
+$nav-tabs-border-radius:            0;
+$nav-tabs-link-hover-border-color:  $primary;
+$nav-tabs-link-active-color:        $secondary;
+$nav-tabs-link-active-bg:           $white;
+$nav-tabs-link-active-border-color: $nav-tabs-link-active-color;
+
 $nav-pills-border-radius:           1000px; // fully circular
 // $nav-pills-link-active-color:       $component-active-color !default;
 // $nav-pills-link-active-bg:          $component-active-bg !default;

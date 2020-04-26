@@ -156,3 +156,65 @@ $nav-pills-border-width: 2px;
     }
   }
 }
+
+/**
+ * Tabs
+ *
+ * Tabular navigation
+ *
+ * @section
+ * @page Nav
+ *
+ * @example
+ * <ul class="nav nav-tabs">
+ *   <li class="nav-item">
+ *     <a class="nav-link active" href="#">Active</a>
+ *   </li>
+ *   <li class="nav-item">
+ *     <a class="nav-link" href="#">Link</a>
+ *   </li>
+ *   <li class="nav-item">
+ *     <a class="nav-link disabled" href="#">Disabled</a>
+ *   </li>
+ * </ul>
+ */
+.nav-tabs {
+  @extend .d-flex;
+  @extend .m-0;
+  @extend .p-0;
+  width: 100%;
+  .nav-item {
+    @extend .text-center;
+    @extend .flex-fill;
+    @extend .text-uppercase;
+    font-size: 13px;
+    .nav-link {
+      @extend .text-center;
+      @extend .py-4;
+      @extend .font-weight-bold;
+      @extend .text-fog;
+      border-right: none;
+      border-bottom: none;
+      border-left: none;
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        @extend .text-fog;
+      }
+
+      &.active {
+        @extend .text-secondary;
+        border-right: none;
+        border-bottom: none;
+        border-left: none;
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+          @extend .text-secondary;
+        }
+      }
+    }
+  }
+}

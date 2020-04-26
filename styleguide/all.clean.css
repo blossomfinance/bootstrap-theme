@@ -5522,13 +5522,13 @@ h6, .h6 {
   font-weight: 600;
   line-height: 1.2; }
 
-.display-3 {
-  font-size: 4.5rem;
+.display-3, .campaign header h1 {
+  font-size: 4rem;
   font-weight: 600;
   line-height: 1.2; }
 
-.display-4, .campaign header h1, .campaign main h2 {
-  font-size: 3.5rem;
+.display-4, .campaign main h2 {
+  font-size: 3rem;
   font-weight: 600;
   line-height: 1.2; }
 
@@ -8529,15 +8529,15 @@ input[type="button"].btn-block {
     cursor: default; }
 
 .nav-tabs {
-  border-bottom: 1px solid #c2c7cc; }
+  border-bottom: 6px solid #ffffff; }
   .nav-tabs .nav-item {
-    margin-bottom: -1px; }
+    margin-bottom: -6px; }
   .nav-tabs .nav-link, .nav-tabs .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-tabs nav > a, .nav-tabs .portfolio-list .card nav > a, .portfolio-list .card .nav-tabs nav > a {
-    border: 1px solid transparent;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px; }
+    border: 6px solid transparent;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
     .nav-tabs .nav-link:hover, .nav-tabs .portfolio-list .card-total-holdings nav > a:hover, .portfolio-list .card-total-holdings .nav-tabs nav > a:hover, .nav-tabs .portfolio-list .card nav > a:hover, .portfolio-list .card .nav-tabs nav > a:hover, .nav-tabs .nav-link:focus, .nav-tabs .portfolio-list .card-total-holdings nav > a:focus, .portfolio-list .card-total-holdings .nav-tabs nav > a:focus, .nav-tabs .portfolio-list .card nav > a:focus, .portfolio-list .card .nav-tabs nav > a:focus {
-      border-color: #f8f9fa #f8f9fa #c2c7cc; }
+      border-color: #58cfee; }
     .nav-tabs .nav-link.disabled, .nav-tabs .portfolio-list .card-total-holdings nav > a.disabled, .portfolio-list .card-total-holdings .nav-tabs nav > a.disabled, .nav-tabs .portfolio-list .card nav > a.disabled, .portfolio-list .card .nav-tabs nav > a.disabled {
       color: #959ea6;
       background-color: transparent;
@@ -8548,11 +8548,11 @@ input[type="button"].btn-block {
   .portfolio-list .card-total-holdings .nav-tabs .nav-item.show nav > a,
   .nav-tabs .nav-item.show .portfolio-list .card nav > a,
   .portfolio-list .card .nav-tabs .nav-item.show nav > a {
-    color: #7a807f;
-    background-color: #f8f9fa;
-    border-color: #c2c7cc #c2c7cc #f8f9fa; }
+    color: #206f8a;
+    background-color: #ffffff;
+    border-color: #206f8a; }
   .nav-tabs .dropdown-menu {
-    margin-top: -1px;
+    margin-top: -6px;
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
 
@@ -8866,6 +8866,20 @@ input[type="button"].btn-block {
 .nav-pills .nav-item, .campaign-list header .nav .nav-item, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item, .campaign-list header .portfolio-list .card nav .nav-item, .portfolio-list .card .campaign-list header nav .nav-item {
   border: 2px solid #58cfee;
   border-radius: 1000px; }
+
+
+.nav-tabs {
+  width: 100%; }
+  .nav-tabs .nav-item {
+    font-size: 13px; }
+    .nav-tabs .nav-item .nav-link, .nav-tabs .nav-item .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-tabs .nav-item nav > a, .nav-tabs .nav-item .portfolio-list .card nav > a, .portfolio-list .card .nav-tabs .nav-item nav > a {
+      border-right: none;
+      border-bottom: none;
+      border-left: none; }
+      .nav-tabs .nav-item .nav-link.active, .nav-tabs .nav-item .portfolio-list .card-total-holdings nav > a.active, .portfolio-list .card-total-holdings .nav-tabs .nav-item nav > a.active, .nav-tabs .nav-item .portfolio-list .card nav > a.active, .portfolio-list .card .nav-tabs .nav-item nav > a.active {
+        border-right: none;
+        border-bottom: none;
+        border-left: none; }
 
 
 .navbar {
@@ -12374,7 +12388,7 @@ button.btn-link-arrow-left-black:focus:before {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .dl.dl-horizontal, .btn-arrow-right, .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-active.card-total-holdings .btn-wrap-left, .portfolio-list .card-active.card .btn-wrap-left, .btn-arrow-left, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, header nav .navbar-nav .nav-item.avatar, .campaign-list header .nav, .campaign-list header .portfolio-list .card-total-holdings nav, .portfolio-list .card-total-holdings .campaign-list header nav, .campaign-list header .portfolio-list .card nav, .portfolio-list .card .campaign-list header nav, .portfolio aside section .list-group-flush > li, .item-summary, .portfolio-list > header, .portfolio-list .card-total-holdings .item-details, .portfolio-list .card .item-details, .portfolio-list .card-total-holdings .item-info-feed article.quote, .portfolio-list .card .item-info-feed article.quote {
+.d-flex, .dl.dl-horizontal, .btn-arrow-right, .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-active.card-total-holdings .btn-wrap-left, .portfolio-list .card-active.card .btn-wrap-left, .btn-arrow-left, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, .nav-tabs, header nav .navbar-nav .nav-item.avatar, .campaign-list header .nav, .campaign-list header .portfolio-list .card-total-holdings nav, .portfolio-list .card-total-holdings .campaign-list header nav, .campaign-list header .portfolio-list .card nav, .portfolio-list .card .campaign-list header nav, .portfolio aside section .list-group-flush > li, .item-summary, .portfolio-list > header, .portfolio-list .card-total-holdings .item-details, .portfolio-list .card .item-details, .portfolio-list .card-total-holdings .item-info-feed article.quote, .portfolio-list .card .item-info-feed article.quote {
   display: flex !important; }
 
 .d-inline-flex {
@@ -12535,7 +12549,7 @@ button.btn-link-arrow-left-black:focus:before {
 .flex-wrap-reverse {
   flex-wrap: wrap-reverse !important; }
 
-.flex-fill {
+.flex-fill, .nav-tabs .nav-item {
   flex: 1 1 auto !important; }
 
 .flex-grow-0 {
@@ -13116,7 +13130,7 @@ button.btn-link-arrow-left-black:focus:before {
   content: "";
   background-color: rgba(0, 0, 0, 0); }
 
-.m-0, .dl, .dl > *, .dl.dl-horizontal > *, .portfolio-list .card-total-holdings .item-info-feed article.caption-image img + p, .portfolio-list .card .item-info-feed article.caption-image img + p {
+.m-0, .dl, .dl > *, .dl.dl-horizontal > *, .nav-tabs, .portfolio-list .card-total-holdings .item-info-feed article.caption-image img + p, .portfolio-list .card .item-info-feed article.caption-image img + p {
   margin: 0 !important; }
 
 .mt-0, .portfolio aside section:first-child, .portfolio-list > header h1,
@@ -13233,7 +13247,7 @@ button.btn-link-arrow-left-black:focus:before {
 .mx-4 {
   margin-right: 32px !important; }
 
-.mb-4, .dl dd + dt, .campaign-list header h1, .campaign-list .campaign, .campaign main section, .portfolio .alert-info .alert-heading, .portfolio-list .card-total-holdings header, .portfolio-list .card header,
+.mb-4, .dl dd + dt, .campaign-list header h1, .campaign-list .campaign, .portfolio .alert-info .alert-heading, .portfolio-list .card-total-holdings header, .portfolio-list .card header,
 .my-4 {
   margin-bottom: 32px !important; }
 
@@ -13273,7 +13287,7 @@ button.btn-link-arrow-left-black:focus:before {
 .mx-6 {
   margin-right: 48px !important; }
 
-.mb-6,
+.mb-6, .campaign main h2, .campaign p,
 .my-6 {
   margin-bottom: 48px !important; }
 
@@ -13281,7 +13295,45 @@ button.btn-link-arrow-left-black:focus:before {
 .mx-6 {
   margin-left: 48px !important; }
 
-.p-0, .dl {
+.m-7 {
+  margin: 64px !important; }
+
+.mt-7, .campaign main h2,
+.my-7 {
+  margin-top: 64px !important; }
+
+.mr-7,
+.mx-7 {
+  margin-right: 64px !important; }
+
+.mb-7,
+.my-7 {
+  margin-bottom: 64px !important; }
+
+.ml-7,
+.mx-7 {
+  margin-left: 64px !important; }
+
+.m-8 {
+  margin: 80px !important; }
+
+.mt-8,
+.my-8 {
+  margin-top: 80px !important; }
+
+.mr-8,
+.mx-8 {
+  margin-right: 80px !important; }
+
+.mb-8,
+.my-8 {
+  margin-bottom: 80px !important; }
+
+.ml-8,
+.mx-8 {
+  margin-left: 80px !important; }
+
+.p-0, .dl, .nav-tabs {
   padding: 0 !important; }
 
 .pt-0, .portfolio-list .card,
@@ -13524,6 +13576,11 @@ button.btn-link-arrow-left-black:focus:before {
 
 .pt-4, .portfolio aside section ul.list-unstyled > li,
 .py-4,
+.nav-tabs .nav-item .nav-link,
+.nav-tabs .nav-item .portfolio-list .card-total-holdings nav > a,
+.portfolio-list .card-total-holdings .nav-tabs .nav-item nav > a,
+.nav-tabs .nav-item .portfolio-list .card nav > a,
+.portfolio-list .card .nav-tabs .nav-item nav > a,
 .portfolio aside section .list-group-flush > li {
   padding-top: 32px !important; }
 
@@ -13533,6 +13590,11 @@ button.btn-link-arrow-left-black:focus:before {
 
 .pb-4, .portfolio aside section ul.list-unstyled > li,
 .py-4,
+.nav-tabs .nav-item .nav-link,
+.nav-tabs .nav-item .portfolio-list .card-total-holdings nav > a,
+.portfolio-list .card-total-holdings .nav-tabs .nav-item nav > a,
+.nav-tabs .nav-item .portfolio-list .card nav > a,
+.portfolio-list .card .nav-tabs .nav-item nav > a,
 .portfolio aside section .list-group-flush > li {
   padding-bottom: 32px !important; }
 
@@ -13579,6 +13641,44 @@ button.btn-link-arrow-left-black:focus:before {
 .pl-6,
 .px-6 {
   padding-left: 48px !important; }
+
+.p-7 {
+  padding: 64px !important; }
+
+.pt-7,
+.py-7 {
+  padding-top: 64px !important; }
+
+.pr-7,
+.px-7 {
+  padding-right: 64px !important; }
+
+.pb-7,
+.py-7 {
+  padding-bottom: 64px !important; }
+
+.pl-7,
+.px-7 {
+  padding-left: 64px !important; }
+
+.p-8 {
+  padding: 80px !important; }
+
+.pt-8,
+.py-8 {
+  padding-top: 80px !important; }
+
+.pr-8,
+.px-8 {
+  padding-right: 80px !important; }
+
+.pb-8,
+.py-8 {
+  padding-bottom: 80px !important; }
+
+.pl-8,
+.px-8 {
+  padding-left: 80px !important; }
 
 .m-n1 {
   margin: -4px !important; }
@@ -13693,6 +13793,44 @@ button.btn-link-arrow-left-black:focus:before {
 .ml-n6,
 .mx-n6 {
   margin-left: -48px !important; }
+
+.m-n7 {
+  margin: -64px !important; }
+
+.mt-n7,
+.my-n7 {
+  margin-top: -64px !important; }
+
+.mr-n7,
+.mx-n7 {
+  margin-right: -64px !important; }
+
+.mb-n7,
+.my-n7 {
+  margin-bottom: -64px !important; }
+
+.ml-n7,
+.mx-n7 {
+  margin-left: -64px !important; }
+
+.m-n8 {
+  margin: -80px !important; }
+
+.mt-n8,
+.my-n8 {
+  margin-top: -80px !important; }
+
+.mr-n8,
+.mx-n8 {
+  margin-right: -80px !important; }
+
+.mb-n8,
+.my-n8 {
+  margin-bottom: -80px !important; }
+
+.ml-n8,
+.mx-n8 {
+  margin-left: -80px !important; }
 
 .m-auto {
   margin: auto !important; }
@@ -13812,6 +13950,34 @@ button.btn-link-arrow-left-black:focus:before {
   .ml-sm-6,
   .mx-sm-6 {
     margin-left: 48px !important; }
+  .m-sm-7 {
+    margin: 64px !important; }
+  .mt-sm-7,
+  .my-sm-7 {
+    margin-top: 64px !important; }
+  .mr-sm-7,
+  .mx-sm-7 {
+    margin-right: 64px !important; }
+  .mb-sm-7,
+  .my-sm-7 {
+    margin-bottom: 64px !important; }
+  .ml-sm-7,
+  .mx-sm-7 {
+    margin-left: 64px !important; }
+  .m-sm-8 {
+    margin: 80px !important; }
+  .mt-sm-8,
+  .my-sm-8 {
+    margin-top: 80px !important; }
+  .mr-sm-8,
+  .mx-sm-8 {
+    margin-right: 80px !important; }
+  .mb-sm-8,
+  .my-sm-8 {
+    margin-bottom: 80px !important; }
+  .ml-sm-8,
+  .mx-sm-8 {
+    margin-left: 80px !important; }
   .p-sm-0 {
     padding: 0 !important; }
   .pt-sm-0,
@@ -13910,6 +14076,34 @@ button.btn-link-arrow-left-black:focus:before {
   .pl-sm-6,
   .px-sm-6 {
     padding-left: 48px !important; }
+  .p-sm-7 {
+    padding: 64px !important; }
+  .pt-sm-7,
+  .py-sm-7 {
+    padding-top: 64px !important; }
+  .pr-sm-7,
+  .px-sm-7 {
+    padding-right: 64px !important; }
+  .pb-sm-7,
+  .py-sm-7 {
+    padding-bottom: 64px !important; }
+  .pl-sm-7,
+  .px-sm-7 {
+    padding-left: 64px !important; }
+  .p-sm-8 {
+    padding: 80px !important; }
+  .pt-sm-8,
+  .py-sm-8 {
+    padding-top: 80px !important; }
+  .pr-sm-8,
+  .px-sm-8 {
+    padding-right: 80px !important; }
+  .pb-sm-8,
+  .py-sm-8 {
+    padding-bottom: 80px !important; }
+  .pl-sm-8,
+  .px-sm-8 {
+    padding-left: 80px !important; }
   .m-sm-n1 {
     margin: -4px !important; }
   .mt-sm-n1,
@@ -13994,6 +14188,34 @@ button.btn-link-arrow-left-black:focus:before {
   .ml-sm-n6,
   .mx-sm-n6 {
     margin-left: -48px !important; }
+  .m-sm-n7 {
+    margin: -64px !important; }
+  .mt-sm-n7,
+  .my-sm-n7 {
+    margin-top: -64px !important; }
+  .mr-sm-n7,
+  .mx-sm-n7 {
+    margin-right: -64px !important; }
+  .mb-sm-n7,
+  .my-sm-n7 {
+    margin-bottom: -64px !important; }
+  .ml-sm-n7,
+  .mx-sm-n7 {
+    margin-left: -64px !important; }
+  .m-sm-n8 {
+    margin: -80px !important; }
+  .mt-sm-n8,
+  .my-sm-n8 {
+    margin-top: -80px !important; }
+  .mr-sm-n8,
+  .mx-sm-n8 {
+    margin-right: -80px !important; }
+  .mb-sm-n8,
+  .my-sm-n8 {
+    margin-bottom: -80px !important; }
+  .ml-sm-n8,
+  .mx-sm-n8 {
+    margin-left: -80px !important; }
   .m-sm-auto {
     margin: auto !important; }
   .mt-sm-auto,
@@ -14108,6 +14330,34 @@ button.btn-link-arrow-left-black:focus:before {
   .ml-md-6,
   .mx-md-6 {
     margin-left: 48px !important; }
+  .m-md-7 {
+    margin: 64px !important; }
+  .mt-md-7,
+  .my-md-7 {
+    margin-top: 64px !important; }
+  .mr-md-7,
+  .mx-md-7 {
+    margin-right: 64px !important; }
+  .mb-md-7,
+  .my-md-7 {
+    margin-bottom: 64px !important; }
+  .ml-md-7,
+  .mx-md-7 {
+    margin-left: 64px !important; }
+  .m-md-8 {
+    margin: 80px !important; }
+  .mt-md-8,
+  .my-md-8 {
+    margin-top: 80px !important; }
+  .mr-md-8,
+  .mx-md-8 {
+    margin-right: 80px !important; }
+  .mb-md-8,
+  .my-md-8 {
+    margin-bottom: 80px !important; }
+  .ml-md-8,
+  .mx-md-8 {
+    margin-left: 80px !important; }
   .p-md-0 {
     padding: 0 !important; }
   .pt-md-0,
@@ -14206,6 +14456,34 @@ button.btn-link-arrow-left-black:focus:before {
   .pl-md-6,
   .px-md-6 {
     padding-left: 48px !important; }
+  .p-md-7 {
+    padding: 64px !important; }
+  .pt-md-7,
+  .py-md-7 {
+    padding-top: 64px !important; }
+  .pr-md-7,
+  .px-md-7 {
+    padding-right: 64px !important; }
+  .pb-md-7,
+  .py-md-7 {
+    padding-bottom: 64px !important; }
+  .pl-md-7,
+  .px-md-7 {
+    padding-left: 64px !important; }
+  .p-md-8 {
+    padding: 80px !important; }
+  .pt-md-8,
+  .py-md-8 {
+    padding-top: 80px !important; }
+  .pr-md-8,
+  .px-md-8 {
+    padding-right: 80px !important; }
+  .pb-md-8,
+  .py-md-8 {
+    padding-bottom: 80px !important; }
+  .pl-md-8,
+  .px-md-8 {
+    padding-left: 80px !important; }
   .m-md-n1 {
     margin: -4px !important; }
   .mt-md-n1,
@@ -14290,6 +14568,34 @@ button.btn-link-arrow-left-black:focus:before {
   .ml-md-n6,
   .mx-md-n6 {
     margin-left: -48px !important; }
+  .m-md-n7 {
+    margin: -64px !important; }
+  .mt-md-n7,
+  .my-md-n7 {
+    margin-top: -64px !important; }
+  .mr-md-n7,
+  .mx-md-n7 {
+    margin-right: -64px !important; }
+  .mb-md-n7,
+  .my-md-n7 {
+    margin-bottom: -64px !important; }
+  .ml-md-n7,
+  .mx-md-n7 {
+    margin-left: -64px !important; }
+  .m-md-n8 {
+    margin: -80px !important; }
+  .mt-md-n8,
+  .my-md-n8 {
+    margin-top: -80px !important; }
+  .mr-md-n8,
+  .mx-md-n8 {
+    margin-right: -80px !important; }
+  .mb-md-n8,
+  .my-md-n8 {
+    margin-bottom: -80px !important; }
+  .ml-md-n8,
+  .mx-md-n8 {
+    margin-left: -80px !important; }
   .m-md-auto {
     margin: auto !important; }
   .mt-md-auto,
@@ -14404,6 +14710,34 @@ button.btn-link-arrow-left-black:focus:before {
   .ml-lg-6,
   .mx-lg-6 {
     margin-left: 48px !important; }
+  .m-lg-7 {
+    margin: 64px !important; }
+  .mt-lg-7,
+  .my-lg-7 {
+    margin-top: 64px !important; }
+  .mr-lg-7,
+  .mx-lg-7 {
+    margin-right: 64px !important; }
+  .mb-lg-7,
+  .my-lg-7 {
+    margin-bottom: 64px !important; }
+  .ml-lg-7,
+  .mx-lg-7 {
+    margin-left: 64px !important; }
+  .m-lg-8 {
+    margin: 80px !important; }
+  .mt-lg-8,
+  .my-lg-8 {
+    margin-top: 80px !important; }
+  .mr-lg-8,
+  .mx-lg-8 {
+    margin-right: 80px !important; }
+  .mb-lg-8,
+  .my-lg-8 {
+    margin-bottom: 80px !important; }
+  .ml-lg-8,
+  .mx-lg-8 {
+    margin-left: 80px !important; }
   .p-lg-0 {
     padding: 0 !important; }
   .pt-lg-0,
@@ -14502,6 +14836,34 @@ button.btn-link-arrow-left-black:focus:before {
   .pl-lg-6,
   .px-lg-6 {
     padding-left: 48px !important; }
+  .p-lg-7 {
+    padding: 64px !important; }
+  .pt-lg-7,
+  .py-lg-7 {
+    padding-top: 64px !important; }
+  .pr-lg-7,
+  .px-lg-7 {
+    padding-right: 64px !important; }
+  .pb-lg-7,
+  .py-lg-7 {
+    padding-bottom: 64px !important; }
+  .pl-lg-7,
+  .px-lg-7 {
+    padding-left: 64px !important; }
+  .p-lg-8 {
+    padding: 80px !important; }
+  .pt-lg-8,
+  .py-lg-8 {
+    padding-top: 80px !important; }
+  .pr-lg-8,
+  .px-lg-8 {
+    padding-right: 80px !important; }
+  .pb-lg-8,
+  .py-lg-8 {
+    padding-bottom: 80px !important; }
+  .pl-lg-8,
+  .px-lg-8 {
+    padding-left: 80px !important; }
   .m-lg-n1 {
     margin: -4px !important; }
   .mt-lg-n1,
@@ -14586,6 +14948,34 @@ button.btn-link-arrow-left-black:focus:before {
   .ml-lg-n6,
   .mx-lg-n6 {
     margin-left: -48px !important; }
+  .m-lg-n7 {
+    margin: -64px !important; }
+  .mt-lg-n7,
+  .my-lg-n7 {
+    margin-top: -64px !important; }
+  .mr-lg-n7,
+  .mx-lg-n7 {
+    margin-right: -64px !important; }
+  .mb-lg-n7,
+  .my-lg-n7 {
+    margin-bottom: -64px !important; }
+  .ml-lg-n7,
+  .mx-lg-n7 {
+    margin-left: -64px !important; }
+  .m-lg-n8 {
+    margin: -80px !important; }
+  .mt-lg-n8,
+  .my-lg-n8 {
+    margin-top: -80px !important; }
+  .mr-lg-n8,
+  .mx-lg-n8 {
+    margin-right: -80px !important; }
+  .mb-lg-n8,
+  .my-lg-n8 {
+    margin-bottom: -80px !important; }
+  .ml-lg-n8,
+  .mx-lg-n8 {
+    margin-left: -80px !important; }
   .m-lg-auto {
     margin: auto !important; }
   .mt-lg-auto,
@@ -14700,6 +15090,34 @@ button.btn-link-arrow-left-black:focus:before {
   .ml-xl-6,
   .mx-xl-6 {
     margin-left: 48px !important; }
+  .m-xl-7 {
+    margin: 64px !important; }
+  .mt-xl-7,
+  .my-xl-7 {
+    margin-top: 64px !important; }
+  .mr-xl-7,
+  .mx-xl-7 {
+    margin-right: 64px !important; }
+  .mb-xl-7,
+  .my-xl-7 {
+    margin-bottom: 64px !important; }
+  .ml-xl-7,
+  .mx-xl-7 {
+    margin-left: 64px !important; }
+  .m-xl-8 {
+    margin: 80px !important; }
+  .mt-xl-8,
+  .my-xl-8 {
+    margin-top: 80px !important; }
+  .mr-xl-8,
+  .mx-xl-8 {
+    margin-right: 80px !important; }
+  .mb-xl-8,
+  .my-xl-8 {
+    margin-bottom: 80px !important; }
+  .ml-xl-8,
+  .mx-xl-8 {
+    margin-left: 80px !important; }
   .p-xl-0 {
     padding: 0 !important; }
   .pt-xl-0,
@@ -14798,6 +15216,34 @@ button.btn-link-arrow-left-black:focus:before {
   .pl-xl-6,
   .px-xl-6 {
     padding-left: 48px !important; }
+  .p-xl-7 {
+    padding: 64px !important; }
+  .pt-xl-7,
+  .py-xl-7 {
+    padding-top: 64px !important; }
+  .pr-xl-7,
+  .px-xl-7 {
+    padding-right: 64px !important; }
+  .pb-xl-7,
+  .py-xl-7 {
+    padding-bottom: 64px !important; }
+  .pl-xl-7,
+  .px-xl-7 {
+    padding-left: 64px !important; }
+  .p-xl-8 {
+    padding: 80px !important; }
+  .pt-xl-8,
+  .py-xl-8 {
+    padding-top: 80px !important; }
+  .pr-xl-8,
+  .px-xl-8 {
+    padding-right: 80px !important; }
+  .pb-xl-8,
+  .py-xl-8 {
+    padding-bottom: 80px !important; }
+  .pl-xl-8,
+  .px-xl-8 {
+    padding-left: 80px !important; }
   .m-xl-n1 {
     margin: -4px !important; }
   .mt-xl-n1,
@@ -14882,6 +15328,34 @@ button.btn-link-arrow-left-black:focus:before {
   .ml-xl-n6,
   .mx-xl-n6 {
     margin-left: -48px !important; }
+  .m-xl-n7 {
+    margin: -64px !important; }
+  .mt-xl-n7,
+  .my-xl-n7 {
+    margin-top: -64px !important; }
+  .mr-xl-n7,
+  .mx-xl-n7 {
+    margin-right: -64px !important; }
+  .mb-xl-n7,
+  .my-xl-n7 {
+    margin-bottom: -64px !important; }
+  .ml-xl-n7,
+  .mx-xl-n7 {
+    margin-left: -64px !important; }
+  .m-xl-n8 {
+    margin: -80px !important; }
+  .mt-xl-n8,
+  .my-xl-n8 {
+    margin-top: -80px !important; }
+  .mr-xl-n8,
+  .mx-xl-n8 {
+    margin-right: -80px !important; }
+  .mb-xl-n8,
+  .my-xl-n8 {
+    margin-bottom: -80px !important; }
+  .ml-xl-n8,
+  .mx-xl-n8 {
+    margin-left: -80px !important; }
   .m-xl-auto {
     margin: auto !important; }
   .mt-xl-auto,
@@ -14920,7 +15394,7 @@ button.btn-link-arrow-left-black:focus:before {
 .text-right, .item-summary .amount-principal, .item-summary .amount-profit, .item-summary .percent-apr, .item-summary .amount-current-value-info, .item-summary .portfolio-list .card-funding.card-total-holdings .amount-current-value, .portfolio-list .card-funding.card-total-holdings .item-summary .amount-current-value, .item-summary .portfolio-list .card-funding.card .amount-current-value, .portfolio-list .card-funding.card .item-summary .amount-current-value, .item-summary .amount-current-value-secondary, .item-summary .portfolio-list .card-active.card-total-holdings .amount-current-value, .portfolio-list .card-active.card-total-holdings .item-summary .amount-current-value, .item-summary .portfolio-list .card-active.card .amount-current-value, .portfolio-list .card-active.card .item-summary .amount-current-value, .item-summary .amount-current-value-success, .item-summary .portfolio-list .card-matured.card-total-holdings .amount-current-value, .portfolio-list .card-matured.card-total-holdings .item-summary .amount-current-value, .item-summary .portfolio-list .card-matured.card .amount-current-value, .portfolio-list .card-matured.card .item-summary .amount-current-value {
   text-align: right !important; }
 
-.text-center, .btn-link-arrow-left-primary:after, .btn-link-arrow-left-secondary:after, .btn-link-arrow-left-success:after, .btn-link-arrow-left-info:after, .btn-link-arrow-left-warning:after, .btn-link-arrow-left-danger:after, .btn-link-arrow-left-light:after, .btn-link-arrow-left-dark:after, .btn-link-arrow-left-clay:after, .btn-link-arrow-left-orange:after, .btn-link-arrow-left-sun:after, .btn-link-arrow-left-mint:after, .btn-link-arrow-left-grass:after, .btn-link-arrow-left-leaf:after, .btn-link-arrow-left-ocean:after, .btn-link-arrow-left-sky:after, .btn-link-arrow-left-saphire:after, .btn-link-arrow-left-robin-egg:after, .btn-link-arrow-left-blueberry:after, .btn-link-arrow-left-grape:after, .btn-link-arrow-left-indigo:after, .btn-link-arrow-left-lavander:after, .btn-link-arrow-left-sea:after, .btn-link-arrow-left-water:after, .btn-link-arrow-left-white:after, .btn-link-arrow-left-cloud:after, .btn-link-arrow-left-moon:after, .btn-link-arrow-left-milk:after, .btn-link-arrow-left-fog:after, .btn-link-arrow-left-concrete:after, .btn-link-arrow-left-ivory:after, .btn-link-arrow-left-aluminium:after, .btn-link-arrow-left-elephant:after, .btn-link-arrow-left-slate:after, .btn-link-arrow-left-midnight:after, .btn-link-arrow-left-black:after, .btn-link-arrow-right-primary:before, .btn-link-arrow-right-secondary:before, .btn-link-arrow-right-success:before, .btn-link-arrow-right-info:before, .btn-link-arrow-right-warning:before, .btn-link-arrow-right-danger:before, .btn-link-arrow-right-light:before, .btn-link-arrow-right-dark:before, .btn-link-arrow-right-clay:before, .btn-link-arrow-right-orange:before, .btn-link-arrow-right-sun:before, .btn-link-arrow-right-mint:before, .btn-link-arrow-right-grass:before, .btn-link-arrow-right-leaf:before, .btn-link-arrow-right-ocean:before, .btn-link-arrow-right-sky:before, .btn-link-arrow-right-saphire:before, .btn-link-arrow-right-robin-egg:before, .btn-link-arrow-right-blueberry:before, .btn-link-arrow-right-grape:before, .btn-link-arrow-right-indigo:before, .btn-link-arrow-right-lavander:before, .btn-link-arrow-right-sea:before, .btn-link-arrow-right-water:before, .btn-link-arrow-right-white:before, .btn-link-arrow-right-cloud:before, .btn-link-arrow-right-moon:before, .btn-link-arrow-right-milk:before, .btn-link-arrow-right-fog:before, .btn-link-arrow-right-concrete:before, .btn-link-arrow-right-ivory:before, .btn-link-arrow-right-aluminium:before, .btn-link-arrow-right-elephant:before, .btn-link-arrow-right-slate:before, .btn-link-arrow-right-midnight:before, .btn-link-arrow-right-black:before, .badge-sq, .campaign-list header h1, .campaign main h2, .card-total-holdings {
+.text-center, .btn-link-arrow-left-primary:after, .btn-link-arrow-left-secondary:after, .btn-link-arrow-left-success:after, .btn-link-arrow-left-info:after, .btn-link-arrow-left-warning:after, .btn-link-arrow-left-danger:after, .btn-link-arrow-left-light:after, .btn-link-arrow-left-dark:after, .btn-link-arrow-left-clay:after, .btn-link-arrow-left-orange:after, .btn-link-arrow-left-sun:after, .btn-link-arrow-left-mint:after, .btn-link-arrow-left-grass:after, .btn-link-arrow-left-leaf:after, .btn-link-arrow-left-ocean:after, .btn-link-arrow-left-sky:after, .btn-link-arrow-left-saphire:after, .btn-link-arrow-left-robin-egg:after, .btn-link-arrow-left-blueberry:after, .btn-link-arrow-left-grape:after, .btn-link-arrow-left-indigo:after, .btn-link-arrow-left-lavander:after, .btn-link-arrow-left-sea:after, .btn-link-arrow-left-water:after, .btn-link-arrow-left-white:after, .btn-link-arrow-left-cloud:after, .btn-link-arrow-left-moon:after, .btn-link-arrow-left-milk:after, .btn-link-arrow-left-fog:after, .btn-link-arrow-left-concrete:after, .btn-link-arrow-left-ivory:after, .btn-link-arrow-left-aluminium:after, .btn-link-arrow-left-elephant:after, .btn-link-arrow-left-slate:after, .btn-link-arrow-left-midnight:after, .btn-link-arrow-left-black:after, .btn-link-arrow-right-primary:before, .btn-link-arrow-right-secondary:before, .btn-link-arrow-right-success:before, .btn-link-arrow-right-info:before, .btn-link-arrow-right-warning:before, .btn-link-arrow-right-danger:before, .btn-link-arrow-right-light:before, .btn-link-arrow-right-dark:before, .btn-link-arrow-right-clay:before, .btn-link-arrow-right-orange:before, .btn-link-arrow-right-sun:before, .btn-link-arrow-right-mint:before, .btn-link-arrow-right-grass:before, .btn-link-arrow-right-leaf:before, .btn-link-arrow-right-ocean:before, .btn-link-arrow-right-sky:before, .btn-link-arrow-right-saphire:before, .btn-link-arrow-right-robin-egg:before, .btn-link-arrow-right-blueberry:before, .btn-link-arrow-right-grape:before, .btn-link-arrow-right-indigo:before, .btn-link-arrow-right-lavander:before, .btn-link-arrow-right-sea:before, .btn-link-arrow-right-water:before, .btn-link-arrow-right-white:before, .btn-link-arrow-right-cloud:before, .btn-link-arrow-right-moon:before, .btn-link-arrow-right-milk:before, .btn-link-arrow-right-fog:before, .btn-link-arrow-right-concrete:before, .btn-link-arrow-right-ivory:before, .btn-link-arrow-right-aluminium:before, .btn-link-arrow-right-elephant:before, .btn-link-arrow-right-slate:before, .btn-link-arrow-right-midnight:before, .btn-link-arrow-right-black:before, .nav-tabs .nav-item, .nav-tabs .nav-item .nav-link, .nav-tabs .nav-item .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-tabs .nav-item nav > a, .nav-tabs .nav-item .portfolio-list .card nav > a, .portfolio-list .card .nav-tabs .nav-item nav > a, .badge-sq, .campaign-list header h1, .campaign main h2, .card-total-holdings {
   text-align: center !important; }
 
 @media (min-width: 576px) {
@@ -14958,7 +15432,7 @@ button.btn-link-arrow-left-black:focus:before {
 .text-lowercase {
   text-transform: lowercase !important; }
 
-.text-uppercase, .card .btn-wrap-left, .card-total-holdings .btn-wrap-left, .card .btn-wrap-right, .card-total-holdings .btn-wrap-right, .jumbotron small, .jumbotron-fluid small, .campaign-list .campaign .card .card-body small, .campaign-list .campaign .card-total-holdings .card-body small, .card-total-holdings .card-title, .card-total-holdings h2 small:last-child, .item-summary .amount-principal small, .item-summary .amount-profit small, .item-summary .percent-apr small, .item-summary .amount-current-value-info small, .item-summary .portfolio-list .card-funding.card-total-holdings .amount-current-value small, .portfolio-list .card-funding.card-total-holdings .item-summary .amount-current-value small, .item-summary .portfolio-list .card-funding.card .amount-current-value small, .portfolio-list .card-funding.card .item-summary .amount-current-value small, .item-summary .amount-current-value-secondary small, .item-summary .portfolio-list .card-active.card-total-holdings .amount-current-value small, .portfolio-list .card-active.card-total-holdings .item-summary .amount-current-value small, .item-summary .portfolio-list .card-active.card .amount-current-value small, .portfolio-list .card-active.card .item-summary .amount-current-value small, .item-summary .amount-current-value-success small, .item-summary .portfolio-list .card-matured.card-total-holdings .amount-current-value small, .portfolio-list .card-matured.card-total-holdings .item-summary .amount-current-value small, .item-summary .portfolio-list .card-matured.card .amount-current-value small, .portfolio-list .card-matured.card .item-summary .amount-current-value small, .portfolio-list > header h1 {
+.text-uppercase, .card .btn-wrap-left, .card-total-holdings .btn-wrap-left, .card .btn-wrap-right, .card-total-holdings .btn-wrap-right, .nav-tabs .nav-item, .jumbotron small, .jumbotron-fluid small, .campaign-list .campaign .card .card-body small, .campaign-list .campaign .card-total-holdings .card-body small, .card-total-holdings .card-title, .card-total-holdings h2 small:last-child, .item-summary .amount-principal small, .item-summary .amount-profit small, .item-summary .percent-apr small, .item-summary .amount-current-value-info small, .item-summary .portfolio-list .card-funding.card-total-holdings .amount-current-value small, .portfolio-list .card-funding.card-total-holdings .item-summary .amount-current-value small, .item-summary .portfolio-list .card-funding.card .amount-current-value small, .portfolio-list .card-funding.card .item-summary .amount-current-value small, .item-summary .amount-current-value-secondary small, .item-summary .portfolio-list .card-active.card-total-holdings .amount-current-value small, .portfolio-list .card-active.card-total-holdings .item-summary .amount-current-value small, .item-summary .portfolio-list .card-active.card .amount-current-value small, .portfolio-list .card-active.card .item-summary .amount-current-value small, .item-summary .amount-current-value-success small, .item-summary .portfolio-list .card-matured.card-total-holdings .amount-current-value small, .portfolio-list .card-matured.card-total-holdings .item-summary .amount-current-value small, .item-summary .portfolio-list .card-matured.card .amount-current-value small, .portfolio-list .card-matured.card .item-summary .amount-current-value small, .portfolio-list > header h1 {
   text-transform: uppercase !important; }
 
 .text-capitalize, .item-summary .percent-apr small {
@@ -14973,7 +15447,7 @@ button.btn-link-arrow-left-black:focus:before {
 .font-weight-normal, .portfolio .alert-info .alert-heading {
   font-weight: 400 !important; }
 
-.font-weight-bold, .card .btn-wrap-left, .card-total-holdings .btn-wrap-left, .card .btn-wrap-right, .card-total-holdings .btn-wrap-right, header nav .navbar-nav, .card-total-holdings h2, .portfolio .alert-info .badge, .portfolio-list > header h1, .portfolio-list > header ul li, .portfolio-list .card-total-holdings .item-info-feed h3, .portfolio-list .card .item-info-feed h3 {
+.font-weight-bold, .card .btn-wrap-left, .card-total-holdings .btn-wrap-left, .card .btn-wrap-right, .card-total-holdings .btn-wrap-right, .nav-tabs .nav-item .nav-link, .nav-tabs .nav-item .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-tabs .nav-item nav > a, .nav-tabs .nav-item .portfolio-list .card nav > a, .portfolio-list .card .nav-tabs .nav-item nav > a, header nav .navbar-nav, .card-total-holdings h2, .portfolio .alert-info .badge, .portfolio-list > header h1, .portfolio-list > header ul li, .portfolio-list .card-total-holdings .item-info-feed h3, .portfolio-list .card .item-info-feed h3 {
   font-weight: 600 !important; }
 
 .font-weight-bolder, .dl dd {
@@ -14985,16 +15459,16 @@ button.btn-link-arrow-left-black:focus:before {
 .text-white, .dl.bg-dark, .dl.btn-link-arrow-right-dark:after, .dl.btn-link-arrow-right-dark:before, .dl.btn-link-arrow-left-dark:after, .dl.btn-link-arrow-left-dark:before, .dl.bg-dark > dt, .dl.btn-link-arrow-right-dark:after > dt, .dl.btn-link-arrow-right-dark:before > dt, .dl.btn-link-arrow-left-dark:after > dt, .dl.btn-link-arrow-left-dark:before > dt, .dl.bg-dark > dd, .dl.btn-link-arrow-right-dark:after > dd, .dl.btn-link-arrow-right-dark:before > dd, .dl.btn-link-arrow-left-dark:after > dd, .dl.btn-link-arrow-left-dark:before > dd, .btn-link-arrow-right-primary:after, .btn-link-arrow-right-primary:before, .btn-link-arrow-right-secondary:after, .btn-link-arrow-right-secondary:before, .btn-link-arrow-right-success:after, .btn-link-arrow-right-success:before, .btn-link-arrow-right-info:after, .btn-link-arrow-right-info:before, .btn-link-arrow-right-warning:after, .btn-link-arrow-right-warning:before, .btn-link-arrow-right-danger:after, .btn-link-arrow-right-danger:before, .btn-link-arrow-right-light:after, .btn-link-arrow-right-light:before, .btn-link-arrow-right-dark:after, .btn-link-arrow-right-dark:before, .btn-link-arrow-right-clay:after, .btn-link-arrow-right-clay:before, .btn-link-arrow-right-orange:after, .btn-link-arrow-right-orange:before, .btn-link-arrow-right-sun:after, .btn-link-arrow-right-sun:before, .btn-link-arrow-right-mint:after, .btn-link-arrow-right-mint:before, .btn-link-arrow-right-grass:after, .btn-link-arrow-right-grass:before, .btn-link-arrow-right-leaf:after, .btn-link-arrow-right-leaf:before, .btn-link-arrow-right-ocean:after, .btn-link-arrow-right-ocean:before, .btn-link-arrow-right-sky:after, .btn-link-arrow-right-sky:before, .btn-link-arrow-right-saphire:after, .btn-link-arrow-right-saphire:before, .btn-link-arrow-right-robin-egg:after, .btn-link-arrow-right-robin-egg:before, .btn-link-arrow-right-blueberry:after, .btn-link-arrow-right-blueberry:before, .btn-link-arrow-right-grape:after, .btn-link-arrow-right-grape:before, .btn-link-arrow-right-indigo:after, .btn-link-arrow-right-indigo:before, .btn-link-arrow-right-lavander:after, .btn-link-arrow-right-lavander:before, .btn-link-arrow-right-sea:after, .btn-link-arrow-right-sea:before, .btn-link-arrow-right-water:after, .btn-link-arrow-right-water:before, .btn-link-arrow-right-white, .btn-link-arrow-right-white:after, .btn-link-arrow-right-white:before, .btn-link-arrow-right-cloud:after, .btn-link-arrow-right-cloud:before, .btn-link-arrow-right-moon:after, .btn-link-arrow-right-moon:before, .btn-link-arrow-right-milk:after, .btn-link-arrow-right-milk:before, .btn-link-arrow-right-fog:after, .btn-link-arrow-right-fog:before, .btn-link-arrow-right-concrete:after, .btn-link-arrow-right-concrete:before, .btn-link-arrow-right-ivory:after, .btn-link-arrow-right-ivory:before, .btn-link-arrow-right-aluminium:after, .btn-link-arrow-right-aluminium:before, .btn-link-arrow-right-elephant:after, .btn-link-arrow-right-elephant:before, .btn-link-arrow-right-slate:after, .btn-link-arrow-right-slate:before, .btn-link-arrow-right-midnight:after, .btn-link-arrow-right-midnight:before, .btn-link-arrow-right-black:after, .btn-link-arrow-right-black:before, .btn-link-arrow-left-primary:after, .btn-link-arrow-left-primary:before, .btn-link-arrow-left-secondary:after, .btn-link-arrow-left-secondary:before, .btn-link-arrow-left-success:after, .btn-link-arrow-left-success:before, .btn-link-arrow-left-info:after, .btn-link-arrow-left-info:before, .btn-link-arrow-left-warning:after, .btn-link-arrow-left-warning:before, .btn-link-arrow-left-danger:after, .btn-link-arrow-left-danger:before, .btn-link-arrow-left-light:after, .btn-link-arrow-left-light:before, .btn-link-arrow-left-dark:after, .btn-link-arrow-left-dark:before, .btn-link-arrow-left-clay:after, .btn-link-arrow-left-clay:before, .btn-link-arrow-left-orange:after, .btn-link-arrow-left-orange:before, .btn-link-arrow-left-sun:after, .btn-link-arrow-left-sun:before, .btn-link-arrow-left-mint:after, .btn-link-arrow-left-mint:before, .btn-link-arrow-left-grass:after, .btn-link-arrow-left-grass:before, .btn-link-arrow-left-leaf:after, .btn-link-arrow-left-leaf:before, .btn-link-arrow-left-ocean:after, .btn-link-arrow-left-ocean:before, .btn-link-arrow-left-sky:after, .btn-link-arrow-left-sky:before, .btn-link-arrow-left-saphire:after, .btn-link-arrow-left-saphire:before, .btn-link-arrow-left-robin-egg:after, .btn-link-arrow-left-robin-egg:before, .btn-link-arrow-left-blueberry:after, .btn-link-arrow-left-blueberry:before, .btn-link-arrow-left-grape:after, .btn-link-arrow-left-grape:before, .btn-link-arrow-left-indigo:after, .btn-link-arrow-left-indigo:before, .btn-link-arrow-left-lavander:after, .btn-link-arrow-left-lavander:before, .btn-link-arrow-left-sea:after, .btn-link-arrow-left-sea:before, .btn-link-arrow-left-water:after, .btn-link-arrow-left-water:before, .btn-link-arrow-left-white, .btn-link-arrow-left-white:after, .btn-link-arrow-left-white:before, .btn-link-arrow-left-cloud:after, .btn-link-arrow-left-cloud:before, .btn-link-arrow-left-moon:after, .btn-link-arrow-left-moon:before, .btn-link-arrow-left-milk:after, .btn-link-arrow-left-milk:before, .btn-link-arrow-left-fog:after, .btn-link-arrow-left-fog:before, .btn-link-arrow-left-concrete:after, .btn-link-arrow-left-concrete:before, .btn-link-arrow-left-ivory:after, .btn-link-arrow-left-ivory:before, .btn-link-arrow-left-aluminium:after, .btn-link-arrow-left-aluminium:before, .btn-link-arrow-left-elephant:after, .btn-link-arrow-left-elephant:before, .btn-link-arrow-left-slate:after, .btn-link-arrow-left-slate:before, .btn-link-arrow-left-midnight:after, .btn-link-arrow-left-midnight:before, .btn-link-arrow-left-black:after, .btn-link-arrow-left-black:before, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, .nav-pills .nav-item:hover, .campaign-list header .nav .nav-item:hover, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover, .campaign-list header .portfolio-list .card nav .nav-item:hover, .portfolio-list .card .campaign-list header nav .nav-item:hover, .nav-pills .nav-item:hover .nav-link, .campaign-list header .nav .nav-item:hover .nav-link, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover .nav-link, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover .nav-link, .campaign-list header .portfolio-list .card nav .nav-item:hover .nav-link, .portfolio-list .card .campaign-list header nav .nav-item:hover .nav-link, .nav-pills .nav-item:hover .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-pills .nav-item:hover nav > a, .campaign-list header .nav .nav-item:hover .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .campaign-list header .nav .nav-item:hover nav > a, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover nav > a, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover nav > a, .campaign-list header .portfolio-list .card nav .nav-item:hover .card-total-holdings nav > a, .portfolio-list .card .campaign-list header nav .nav-item:hover .card-total-holdings nav > a, .nav-pills .nav-item:hover .portfolio-list .card nav > a, .portfolio-list .card .nav-pills .nav-item:hover nav > a, .campaign-list header .nav .nav-item:hover .portfolio-list .card nav > a, .portfolio-list .card .campaign-list header .nav .nav-item:hover nav > a, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover .card nav > a, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover .card nav > a, .campaign-list header .portfolio-list .card nav .nav-item:hover nav > a, .portfolio-list .card .campaign-list header nav .nav-item:hover nav > a, .portfolio-list .card-total-holdings .item-info-feed article.quote, .portfolio-list .card .item-info-feed article.quote, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote p, .portfolio-list .card .item-info-feed article.quote blockquote p {
   color: #ffffff !important; }
 
-.text-primary, .btn-link-arrow-right-primary, .btn-link-arrow-left-primary, .jumbotron small, .jumbotron-fluid small, .campaign-list .campaign .card .card-body small, .campaign-list .campaign .card-total-holdings .card-body small {
+.text-primary, .btn-link-arrow-right-primary, .btn-link-arrow-left-primary, .nav-tabs .nav-item .nav-link:hover, .nav-tabs .nav-item .portfolio-list .card-total-holdings nav > a:hover, .portfolio-list .card-total-holdings .nav-tabs .nav-item nav > a:hover, .nav-tabs .nav-item .portfolio-list .card nav > a:hover, .portfolio-list .card .nav-tabs .nav-item nav > a:hover, .jumbotron small, .jumbotron-fluid small, .campaign-list .campaign .card .card-body small, .campaign-list .campaign .card-total-holdings .card-body small {
   color: #58cfee !important; }
 
-a.text-primary:hover, a.btn-link-arrow-right-primary:hover, a.btn-link-arrow-left-primary:hover, a.text-primary:focus, a.btn-link-arrow-right-primary:focus, a.btn-link-arrow-left-primary:focus {
+a.text-primary:hover, a.btn-link-arrow-right-primary:hover, a.btn-link-arrow-left-primary:hover, .nav-tabs .nav-item a.nav-link:hover, .nav-tabs .nav-item .portfolio-list .card-total-holdings nav > a:hover, .portfolio-list .card-total-holdings .nav-tabs .nav-item nav > a:hover, .nav-tabs .nav-item .portfolio-list .card nav > a:hover, .portfolio-list .card .nav-tabs .nav-item nav > a:hover, a.text-primary:focus, a.btn-link-arrow-right-primary:focus, a.btn-link-arrow-left-primary:focus, .nav-tabs .nav-item a.nav-link:focus:hover, .nav-tabs .nav-item .portfolio-list .card-total-holdings nav > a:focus:hover, .portfolio-list .card-total-holdings .nav-tabs .nav-item nav > a:focus:hover, .nav-tabs .nav-item .portfolio-list .card nav > a:focus:hover, .portfolio-list .card .nav-tabs .nav-item nav > a:focus:hover {
   color: #17b8e2 !important; }
 
-.text-secondary, .btn-link-arrow-right-secondary, .btn-link-arrow-left-secondary {
+.text-secondary, .btn-link-arrow-right-secondary, .btn-link-arrow-left-secondary, .nav-tabs .nav-item .nav-link.active, .nav-tabs .nav-item .portfolio-list .card-total-holdings nav > a.active, .portfolio-list .card-total-holdings .nav-tabs .nav-item nav > a.active, .nav-tabs .nav-item .portfolio-list .card nav > a.active, .portfolio-list .card .nav-tabs .nav-item nav > a.active, .nav-tabs .nav-item .nav-link.active:link, .nav-tabs .nav-item .nav-link.active:visited, .nav-tabs .nav-item .nav-link.active:hover, .nav-tabs .nav-item .nav-link.active:active {
   color: #206f8a !important; }
 
-a.text-secondary:hover, a.btn-link-arrow-right-secondary:hover, a.btn-link-arrow-left-secondary:hover, a.text-secondary:focus, a.btn-link-arrow-right-secondary:focus, a.btn-link-arrow-left-secondary:focus {
+a.text-secondary:hover, a.btn-link-arrow-right-secondary:hover, a.btn-link-arrow-left-secondary:hover, .nav-tabs .nav-item a.nav-link.active:hover, .nav-tabs .nav-item .portfolio-list .card nav > a.active:hover, .portfolio-list .card .nav-tabs .nav-item nav > a.active:hover, .nav-tabs .nav-item .portfolio-list .card-total-holdings nav > a.active:hover, .portfolio-list .card-total-holdings .nav-tabs .nav-item nav > a.active:hover, a.text-secondary:focus, a.btn-link-arrow-right-secondary:focus, a.btn-link-arrow-left-secondary:focus, .nav-tabs .nav-item a.nav-link.active:focus, .nav-tabs .nav-item .portfolio-list .card-total-holdings nav > a.active:focus, .portfolio-list .card-total-holdings .nav-tabs .nav-item nav > a.active:focus, .nav-tabs .nav-item .portfolio-list .card nav > a.active:focus, .portfolio-list .card .nav-tabs .nav-item nav > a.active:focus {
   color: #123d4c !important; }
 
 .text-success, .btn-link-arrow-right-success, .btn-link-arrow-left-success {
@@ -15153,10 +15627,10 @@ a.text-moon:hover, a.btn-link-arrow-right-moon:hover, a.btn-link-arrow-left-moon
 a.text-milk:hover, a.btn-link-arrow-right-milk:hover, a.btn-link-arrow-left-milk:hover, a.text-milk:focus, a.btn-link-arrow-right-milk:focus, a.btn-link-arrow-left-milk:focus {
   color: #cbd3da !important; }
 
-.text-fog, .btn-link-arrow-right-fog, .btn-link-arrow-left-fog {
+.text-fog, .btn-link-arrow-right-fog, .btn-link-arrow-left-fog, .nav-tabs .nav-item .nav-link, .nav-tabs .nav-item .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-tabs .nav-item nav > a, .nav-tabs .nav-item .portfolio-list .card nav > a, .portfolio-list .card .nav-tabs .nav-item nav > a, .nav-tabs .nav-item .nav-link:link, .nav-tabs .nav-item .nav-link:visited, .nav-tabs .nav-item .nav-link:active {
   color: #c2c7cc !important; }
 
-a.text-fog:hover, a.btn-link-arrow-right-fog:hover, a.btn-link-arrow-left-fog:hover, a.text-fog:focus, a.btn-link-arrow-right-fog:focus, a.btn-link-arrow-left-fog:focus {
+a.text-fog:hover, a.btn-link-arrow-right-fog:hover, a.btn-link-arrow-left-fog:hover, .nav-tabs .nav-item a.nav-link:hover, .nav-tabs .nav-item .portfolio-list .card-total-holdings nav > a:hover, .portfolio-list .card-total-holdings .nav-tabs .nav-item nav > a:hover, .nav-tabs .nav-item .portfolio-list .card nav > a:hover, .portfolio-list .card .nav-tabs .nav-item nav > a:hover, a.text-fog:focus, a.btn-link-arrow-right-fog:focus, a.btn-link-arrow-left-fog:focus, .nav-tabs .nav-item a.nav-link:focus, .nav-tabs .nav-item .portfolio-list .card-total-holdings nav > a:focus, .portfolio-list .card-total-holdings .nav-tabs .nav-item nav > a:focus, .nav-tabs .nav-item .portfolio-list .card nav > a:focus, .portfolio-list .card .nav-tabs .nav-item nav > a:focus {
   color: #98a1a9 !important; }
 
 .text-concrete, .btn-link-arrow-right-concrete, .btn-link-arrow-left-concrete {
@@ -15237,6 +15711,18 @@ a.text-black:hover, a.btn-link-arrow-right-black:hover, a.btn-link-arrow-left-bl
   visibility: hidden !important; }
 
 
+
+.pull-up {
+  margin-top: -40px; }
+
+.pull-down {
+  margin-bottom: -40px; }
+
+.pull-left {
+  margin-left: -40px; }
+
+.pull-right {
+  margin-right: -40px; }
 
 
 

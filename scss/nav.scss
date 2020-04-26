@@ -197,8 +197,12 @@ $nav-pills-border-width: 2px;
       border-bottom: none;
       border-left: none;
       &:link,
-      &:visited,
-      &:hover,
+      &:visited {
+        @extend .text-fog;
+      }
+      &:hover {
+        @extend .text-primary;
+      }
       &:active {
         @extend .text-fog;
       }

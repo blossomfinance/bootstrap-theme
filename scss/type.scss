@@ -202,9 +202,14 @@ p {
     }
   }
 
-  &.dl-grid {
-    // @extend .d-flex;
-  }
+  // &.dl-grid {
+  //   @extend .d-flex;
+  //   @extend .flex-wrap;
+  //   & > dd,
+  //   & > dt {
+  //     width: 36%;
+  //   }
+  // }
 
   &.dl-icon {
     @extend .px-5;

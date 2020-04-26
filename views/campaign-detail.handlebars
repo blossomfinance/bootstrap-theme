@@ -2,6 +2,20 @@
 
   {{#content "bodyClass"}}bleed{{/content}}
 
+  {{#content "extraScripts"}}
+  <script>
+  $(window).on('load', function() {
+    console.log('Page loaded (campaign-detail).');
+    var $tabs = $('#campaign-detail-tabs a');
+    console.log($tabs);
+    $tabs.on('click', function (e) {
+      // e.preventDefault();
+      $(this).tab('show');
+    });
+  });
+  </script>
+  {{/content}}
+
   {{#content "main"}}
   <article class="campaign">
     <div class="container">
@@ -46,45 +60,45 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <ul class="nav nav-tabs">
+          <ul id="campaign-detail-tabs" class="nav nav-tabs" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Overview</a>
+              <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Financial</a>
+              <a class="nav-link" id="financial-tab" data-toggle="tab" href="#financial" role="tab" aria-controls="financial" aria-selected="false">Financial</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Project</a>
+              <a class="nav-link" id="project-tab" data-toggle="tab" href="#project" role="tab" aria-controls="project" aria-selected="false">Project</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Issuer</a>
+              <a class="nav-link" id="issuer-tab" data-toggle="tab" href="#issuer" role="tab" aria-controls="issuer" aria-selected="false">Issuer</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Compliance</a>
+              <a class="nav-link" id="compliance-tab" data-toggle="tab" href="#compliance" role="tab" aria-controls="compliance" aria-selected="false">Compliance</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Legal</a>
+              <a class="nav-link" id="legal-tab" data-toggle="tab" href="#legal" role="tab" aria-controls="legal" aria-selected="false">Legal</a>
             </li>
           </ul>
         </div>
       </div>
       <main class="tab-content">
-        <div class="tab overview">
+        <div class="tab-pane fade show active overview" id="overview" role="tabpanel" aria-labelledby="overview-tab">
           {{> campaign-detail/tab-overview}}
         </div>
-        <div class="tab financial">
+        <div class="tab-pane fade financial" id="financial" role="tabpanel" aria-labelledby="financial-tab">
           {{> campaign-detail/tab-financial}}
         </div>
-        <div class="tab project">
+        <div class="tab-pane fade project" id="project" role="tabpanel" aria-labelledby="project-tab">
           {{> campaign-detail/tab-project}}
         </div>
-        <div class="tab issuer">
+        <div class="tab-pane fade issuer" id="issuer" role="tabpanel" aria-labelledby="issuer-tab">
           {{> campaign-detail/tab-issuer}}
         </div>
-        <div class="tab compliance">
+        <div class="tab-pane fade compliance" id="compliance" role="tabpanel" aria-labelledby="compliance-tab">
           {{> campaign-detail/tab-compliance}}
         </div>
-        <div class="tab legal">
+        <div class="tab-pane fade legal" id="legal" role="tabpanel" aria-labelledby="legal-tab">
           {{> campaign-detail/tab-legal}}
         </div>
       </main>

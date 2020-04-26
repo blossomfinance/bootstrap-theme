@@ -1,16 +1,53 @@
-@import "../node_modules/bootstrap/scss/jumbotron";
-
+// @import "../node_modules/bootstrap/scss/jumbotron";
 /**
  * Jumbotron
  *
  * Heading area introducing the project
  *
  * @section
- * @page Campaign Detail
+ * @page Jumbotron
  *
  * @example
  * <div class="jumbotron">
  *   <small>Microfinance</small>
- *   <h1>Zero-emission Waste Incineration Facility in Bali</h1>
+ *   <h1 class="display-3">Zero-emission Waste Incineration Facility in Bali</h1>
  * </div>
  */
+
+.jumbotron {
+  padding: $jumbotron-padding-y ($jumbotron-padding-x / 2);
+  margin-bottom: $jumbotron-padding-y;
+  @include media-breakpoint-up(sm) {
+    padding: ($jumbotron-padding-y * 2) $jumbotron-padding-x;
+  }
+
+  color: $jumbotron-color;
+  background-color: $jumbotron-bg;
+  @include border-radius($border-radius-lg);
+
+  small {
+    @extend .text-uppercase;
+    @extend .text-primary;
+  }
+}
+
+.jumbotron-fluid {
+  padding-left: 0;
+  padding-right: 0;
+
+  padding-top: $jumbotron-padding-y;
+  padding-bottom: $jumbotron-padding-y;
+
+  @include media-breakpoint-up(sm) {
+    padding-top: $jumbotron-padding-y * 2;
+    padding-bottom: $jumbotron-padding-y * 2;
+  }
+
+  background-color: $jumbotron-bg;
+  @include border-radius(0);
+
+  small {
+    @extend .text-uppercase;
+    @extend .text-primary;
+  }
+}

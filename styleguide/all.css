@@ -5187,6 +5187,9 @@ template {
 [hidden] {
   display: none !important; }
 
+body.bleed {
+  background-color: #ffffff; }
+
 /**
  * Getting Started
  *
@@ -5238,22 +5241,22 @@ h6, .h6 {
 
 .display-1 {
   font-size: 6rem;
-  font-weight: 300;
+  font-weight: 600;
   line-height: 1.2; }
 
 .display-2 {
   font-size: 5.5rem;
-  font-weight: 300;
+  font-weight: 600;
   line-height: 1.2; }
 
 .display-3 {
   font-size: 4.5rem;
-  font-weight: 300;
+  font-weight: 600;
   line-height: 1.2; }
 
-.display-4 {
+.display-4, .campaign header .jumbotron h1 {
   font-size: 3.5rem;
-  font-weight: 300;
+  font-weight: 600;
   line-height: 1.2; }
 
 hr {
@@ -5388,12 +5391,60 @@ p {
  * @page Typeography
  *
  * @example
- * <p class="text-xsmall"
+ * <p class="text-xsmall">Something smaller</p>
  */
 .text-xsmall, .campaign-list .campaign .card .card-body small, .campaign-list .campaign .card-total-holdings .card-body small {
   font-size: 11px; }
 
-.img-fluid, .portfolio-list .card-total-holdings .item-info-feed article.caption-image img, .portfolio-list .card .item-info-feed article.caption-image img {
+/**
+ * Definition List
+ *
+ * Define a key-value pair of information
+ *
+ * @section
+ * @page Typeography
+ *
+ * @example
+ * <dl class="dl">
+ *   <dd>13%</dd>
+ *     <dt>Gross AROI<sup>1</sup></dt>
+ *   <dd>12 Months</dd>
+ *     <dt>Maturity / Term</dt>
+ *   <dd>Bali, Indonesia</dd>
+ *     <dt>Project Location</dt>
+ *   <dd>Indonesia</dd>
+ *     <dt>Governing Law</dt>
+ * </dl>
+ */
+/**
+ * Horizontal Definition List
+ *
+ * List of definitions running left to right
+ *
+ * @section
+ * @page Typeography
+ *
+ * @example
+ * <dl class="dl dl-horizontal">
+ *   <dd>13%</dd>
+ *     <dt>Gross AROI<sup>1</sup></dt>
+ *   <dd>12 Months</dd>
+ *     <dt>Maturity / Term</dt>
+ *   <dd>Bali, Indonesia</dd>
+ *     <dt>Project Location</dt>
+ *   <dd>Indonesia</dd>
+ *     <dt>Governing Law</dt>
+ * </dl>
+ */
+.dl > * {
+  font-size: 1rem;
+  line-height: 1rem; }
+
+.dl.dl-horizontal {
+  flex-flow: column wrap;
+  max-height: 48px; }
+
+.img-fluid, .campaign .img-splash, .portfolio-list .card-total-holdings .item-info-feed article.caption-image img, .portfolio-list .card .item-info-feed article.caption-image img {
   max-width: 100%;
   height: auto; }
 
@@ -8107,86 +8158,6 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%; }
 
-.btn-primary {
-  color: #ffffff; }
-
-.bg-grape .btn-grape, .btn-link-arrow-right-grape:after .btn-grape, .btn-link-arrow-right-grape:before .btn-grape, .btn-link-arrow-left-grape:after .btn-grape, .btn-link-arrow-left-grape:before .btn-grape, .bg-grape .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .bg-grape .btn-wrap-left, .btn-link-arrow-right-grape:after .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .btn-link-arrow-right-grape:after .btn-wrap-left, .btn-link-arrow-right-grape:before .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .btn-link-arrow-right-grape:before .btn-wrap-left, .btn-link-arrow-left-grape:after .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .btn-link-arrow-left-grape:after .btn-wrap-left, .btn-link-arrow-left-grape:before .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .btn-link-arrow-left-grape:before .btn-wrap-left, .bg-grape .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .bg-grape .btn-wrap-left, .btn-link-arrow-right-grape:after .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .btn-link-arrow-right-grape:after .btn-wrap-left, .btn-link-arrow-right-grape:before .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .btn-link-arrow-right-grape:before .btn-wrap-left, .btn-link-arrow-left-grape:after .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .btn-link-arrow-left-grape:after .btn-wrap-left, .btn-link-arrow-left-grape:before .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .btn-link-arrow-left-grape:before .btn-wrap-left,
-.alert-info .btn-info,
-.portfolio .alert-info .btn,
-.portfolio .alert-info .btn-link-arrow-left-primary,
-.portfolio .alert-info .btn-link-arrow-left-secondary,
-.portfolio .alert-info .btn-link-arrow-left-success,
-.portfolio .alert-info .btn-link-arrow-left-info,
-.portfolio .alert-info .btn-link-arrow-left-warning,
-.portfolio .alert-info .btn-link-arrow-left-danger,
-.portfolio .alert-info .btn-link-arrow-left-light,
-.portfolio .alert-info .btn-link-arrow-left-dark,
-.portfolio .alert-info .btn-link-arrow-left-clay,
-.portfolio .alert-info .btn-link-arrow-left-orange,
-.portfolio .alert-info .btn-link-arrow-left-sun,
-.portfolio .alert-info .btn-link-arrow-left-mint,
-.portfolio .alert-info .btn-link-arrow-left-grass,
-.portfolio .alert-info .btn-link-arrow-left-leaf,
-.portfolio .alert-info .btn-link-arrow-left-ocean,
-.portfolio .alert-info .btn-link-arrow-left-sky,
-.portfolio .alert-info .btn-link-arrow-left-saphire,
-.portfolio .alert-info .btn-link-arrow-left-robin-egg,
-.portfolio .alert-info .btn-link-arrow-left-blueberry,
-.portfolio .alert-info .btn-link-arrow-left-grape,
-.portfolio .alert-info .btn-link-arrow-left-indigo,
-.portfolio .alert-info .btn-link-arrow-left-lavander,
-.portfolio .alert-info .btn-link-arrow-left-sea,
-.portfolio .alert-info .btn-link-arrow-left-water,
-.portfolio .alert-info .btn-link-arrow-left-white,
-.portfolio .alert-info .btn-link-arrow-left-cloud,
-.portfolio .alert-info .btn-link-arrow-left-moon,
-.portfolio .alert-info .btn-link-arrow-left-milk,
-.portfolio .alert-info .btn-link-arrow-left-fog,
-.portfolio .alert-info .btn-link-arrow-left-concrete,
-.portfolio .alert-info .btn-link-arrow-left-ivory,
-.portfolio .alert-info .btn-link-arrow-left-aluminium,
-.portfolio .alert-info .btn-link-arrow-left-elephant,
-.portfolio .alert-info .btn-link-arrow-left-slate,
-.portfolio .alert-info .btn-link-arrow-left-midnight,
-.portfolio .alert-info .btn-link-arrow-left-black,
-.portfolio .alert-info .btn-link-arrow-right-primary,
-.portfolio .alert-info .btn-link-arrow-right-secondary,
-.portfolio .alert-info .btn-link-arrow-right-success,
-.portfolio .alert-info .btn-link-arrow-right-info,
-.portfolio .alert-info .btn-link-arrow-right-warning,
-.portfolio .alert-info .btn-link-arrow-right-danger,
-.portfolio .alert-info .btn-link-arrow-right-light,
-.portfolio .alert-info .btn-link-arrow-right-dark,
-.portfolio .alert-info .btn-link-arrow-right-clay,
-.portfolio .alert-info .btn-link-arrow-right-orange,
-.portfolio .alert-info .btn-link-arrow-right-sun,
-.portfolio .alert-info .btn-link-arrow-right-mint,
-.portfolio .alert-info .btn-link-arrow-right-grass,
-.portfolio .alert-info .btn-link-arrow-right-leaf,
-.portfolio .alert-info .btn-link-arrow-right-ocean,
-.portfolio .alert-info .btn-link-arrow-right-sky,
-.portfolio .alert-info .btn-link-arrow-right-saphire,
-.portfolio .alert-info .btn-link-arrow-right-robin-egg,
-.portfolio .alert-info .btn-link-arrow-right-blueberry,
-.portfolio .alert-info .btn-link-arrow-right-grape,
-.portfolio .alert-info .btn-link-arrow-right-indigo,
-.portfolio .alert-info .btn-link-arrow-right-lavander,
-.portfolio .alert-info .btn-link-arrow-right-sea,
-.portfolio .alert-info .btn-link-arrow-right-water,
-.portfolio .alert-info .btn-link-arrow-right-white,
-.portfolio .alert-info .btn-link-arrow-right-cloud,
-.portfolio .alert-info .btn-link-arrow-right-moon,
-.portfolio .alert-info .btn-link-arrow-right-milk,
-.portfolio .alert-info .btn-link-arrow-right-fog,
-.portfolio .alert-info .btn-link-arrow-right-concrete,
-.portfolio .alert-info .btn-link-arrow-right-ivory,
-.portfolio .alert-info .btn-link-arrow-right-aluminium,
-.portfolio .alert-info .btn-link-arrow-right-elephant,
-.portfolio .alert-info .btn-link-arrow-right-slate,
-.portfolio .alert-info .btn-link-arrow-right-midnight,
-.portfolio .alert-info .btn-link-arrow-right-black {
-  background-color: rgba(255, 255, 255, 0.16) !important; }
-
 /**
  * Arrows
  *
@@ -8392,6 +8363,92 @@ input[type="button"].btn-block {
   margin-right: -32px; }
   .card .btn-wrap-right:after, .card-total-holdings .btn-wrap-right:after {
     padding-left: 64px; }
+
+.btn-pill {
+  border-top-right-radius: 1000px !important;
+  border-bottom-right-radius: 1000px !important;
+  border-top-left-radius: 1000px !important;
+  border-bottom-left-radius: 1000px !important; }
+
+.btn-primary {
+  color: #ffffff !important; }
+
+.bg-grape .btn-grape, .btn-link-arrow-right-grape:after .btn-grape, .btn-link-arrow-right-grape:before .btn-grape, .btn-link-arrow-left-grape:after .btn-grape, .btn-link-arrow-left-grape:before .btn-grape, .bg-grape .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .bg-grape .btn-wrap-left, .btn-link-arrow-right-grape:after .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .btn-link-arrow-right-grape:after .btn-wrap-left, .btn-link-arrow-right-grape:before .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .btn-link-arrow-right-grape:before .btn-wrap-left, .btn-link-arrow-left-grape:after .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .btn-link-arrow-left-grape:after .btn-wrap-left, .btn-link-arrow-left-grape:before .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .btn-link-arrow-left-grape:before .btn-wrap-left, .bg-grape .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .bg-grape .btn-wrap-left, .btn-link-arrow-right-grape:after .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .btn-link-arrow-right-grape:after .btn-wrap-left, .btn-link-arrow-right-grape:before .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .btn-link-arrow-right-grape:before .btn-wrap-left, .btn-link-arrow-left-grape:after .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .btn-link-arrow-left-grape:after .btn-wrap-left, .btn-link-arrow-left-grape:before .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .btn-link-arrow-left-grape:before .btn-wrap-left,
+.alert-info .btn-info,
+.portfolio .alert-info .btn,
+.portfolio .alert-info .btn-link-arrow-left-primary,
+.portfolio .alert-info .btn-link-arrow-left-secondary,
+.portfolio .alert-info .btn-link-arrow-left-success,
+.portfolio .alert-info .btn-link-arrow-left-info,
+.portfolio .alert-info .btn-link-arrow-left-warning,
+.portfolio .alert-info .btn-link-arrow-left-danger,
+.portfolio .alert-info .btn-link-arrow-left-light,
+.portfolio .alert-info .btn-link-arrow-left-dark,
+.portfolio .alert-info .btn-link-arrow-left-clay,
+.portfolio .alert-info .btn-link-arrow-left-orange,
+.portfolio .alert-info .btn-link-arrow-left-sun,
+.portfolio .alert-info .btn-link-arrow-left-mint,
+.portfolio .alert-info .btn-link-arrow-left-grass,
+.portfolio .alert-info .btn-link-arrow-left-leaf,
+.portfolio .alert-info .btn-link-arrow-left-ocean,
+.portfolio .alert-info .btn-link-arrow-left-sky,
+.portfolio .alert-info .btn-link-arrow-left-saphire,
+.portfolio .alert-info .btn-link-arrow-left-robin-egg,
+.portfolio .alert-info .btn-link-arrow-left-blueberry,
+.portfolio .alert-info .btn-link-arrow-left-grape,
+.portfolio .alert-info .btn-link-arrow-left-indigo,
+.portfolio .alert-info .btn-link-arrow-left-lavander,
+.portfolio .alert-info .btn-link-arrow-left-sea,
+.portfolio .alert-info .btn-link-arrow-left-water,
+.portfolio .alert-info .btn-link-arrow-left-white,
+.portfolio .alert-info .btn-link-arrow-left-cloud,
+.portfolio .alert-info .btn-link-arrow-left-moon,
+.portfolio .alert-info .btn-link-arrow-left-milk,
+.portfolio .alert-info .btn-link-arrow-left-fog,
+.portfolio .alert-info .btn-link-arrow-left-concrete,
+.portfolio .alert-info .btn-link-arrow-left-ivory,
+.portfolio .alert-info .btn-link-arrow-left-aluminium,
+.portfolio .alert-info .btn-link-arrow-left-elephant,
+.portfolio .alert-info .btn-link-arrow-left-slate,
+.portfolio .alert-info .btn-link-arrow-left-midnight,
+.portfolio .alert-info .btn-link-arrow-left-black,
+.portfolio .alert-info .btn-link-arrow-right-primary,
+.portfolio .alert-info .btn-link-arrow-right-secondary,
+.portfolio .alert-info .btn-link-arrow-right-success,
+.portfolio .alert-info .btn-link-arrow-right-info,
+.portfolio .alert-info .btn-link-arrow-right-warning,
+.portfolio .alert-info .btn-link-arrow-right-danger,
+.portfolio .alert-info .btn-link-arrow-right-light,
+.portfolio .alert-info .btn-link-arrow-right-dark,
+.portfolio .alert-info .btn-link-arrow-right-clay,
+.portfolio .alert-info .btn-link-arrow-right-orange,
+.portfolio .alert-info .btn-link-arrow-right-sun,
+.portfolio .alert-info .btn-link-arrow-right-mint,
+.portfolio .alert-info .btn-link-arrow-right-grass,
+.portfolio .alert-info .btn-link-arrow-right-leaf,
+.portfolio .alert-info .btn-link-arrow-right-ocean,
+.portfolio .alert-info .btn-link-arrow-right-sky,
+.portfolio .alert-info .btn-link-arrow-right-saphire,
+.portfolio .alert-info .btn-link-arrow-right-robin-egg,
+.portfolio .alert-info .btn-link-arrow-right-blueberry,
+.portfolio .alert-info .btn-link-arrow-right-grape,
+.portfolio .alert-info .btn-link-arrow-right-indigo,
+.portfolio .alert-info .btn-link-arrow-right-lavander,
+.portfolio .alert-info .btn-link-arrow-right-sea,
+.portfolio .alert-info .btn-link-arrow-right-water,
+.portfolio .alert-info .btn-link-arrow-right-white,
+.portfolio .alert-info .btn-link-arrow-right-cloud,
+.portfolio .alert-info .btn-link-arrow-right-moon,
+.portfolio .alert-info .btn-link-arrow-right-milk,
+.portfolio .alert-info .btn-link-arrow-right-fog,
+.portfolio .alert-info .btn-link-arrow-right-concrete,
+.portfolio .alert-info .btn-link-arrow-right-ivory,
+.portfolio .alert-info .btn-link-arrow-right-aluminium,
+.portfolio .alert-info .btn-link-arrow-right-elephant,
+.portfolio .alert-info .btn-link-arrow-right-slate,
+.portfolio .alert-info .btn-link-arrow-right-midnight,
+.portfolio .alert-info .btn-link-arrow-right-black {
+  background-color: rgba(255, 255, 255, 0.16) !important; }
 
 .nav, .portfolio-list .card-total-holdings nav, .portfolio-list .card nav {
   display: flex;
@@ -10081,34 +10138,41 @@ header nav {
       line-height: 48px;
       height: 48px; }
 
-.jumbotron {
-  padding: 2rem 1rem;
-  margin-bottom: 2rem;
-  background-color: #f8f9fa;
-  border-radius: 14px; }
-  @media (min-width: 576px) {
-    .jumbotron {
-      padding: 4rem 2rem; } }
-
-.jumbotron-fluid {
-  padding-right: 0;
-  padding-left: 0;
-  border-radius: 0; }
-
 /**
  * Jumbotron
  *
  * Heading area introducing the project
  *
  * @section
- * @page Campaign Detail
+ * @page Jumbotron
  *
  * @example
  * <div class="jumbotron">
  *   <small>Microfinance</small>
- *   <h1>Zero-emission Waste Incineration Facility in Bali</h1>
+ *   <h1 class="display-3">Zero-emission Waste Incineration Facility in Bali</h1>
  * </div>
  */
+.jumbotron {
+  padding: 40px 0;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  border-radius: 14px; }
+  @media (min-width: 576px) {
+    .jumbotron {
+      padding: 80px 0; } }
+
+.jumbotron-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+  border-radius: 0; }
+  @media (min-width: 576px) {
+    .jumbotron-fluid {
+      padding-top: 80px;
+      padding-bottom: 80px; } }
+
 .alert {
   position: relative;
   padding: 1.5rem 1.25rem;
@@ -12646,7 +12710,7 @@ button.btn-link-arrow-left-black:focus:before {
 .d-inline-block, .btn-link-arrow-left-primary:after, .btn-link-arrow-left-secondary:after, .btn-link-arrow-left-success:after, .btn-link-arrow-left-info:after, .btn-link-arrow-left-warning:after, .btn-link-arrow-left-danger:after, .btn-link-arrow-left-light:after, .btn-link-arrow-left-dark:after, .btn-link-arrow-left-clay:after, .btn-link-arrow-left-orange:after, .btn-link-arrow-left-sun:after, .btn-link-arrow-left-mint:after, .btn-link-arrow-left-grass:after, .btn-link-arrow-left-leaf:after, .btn-link-arrow-left-ocean:after, .btn-link-arrow-left-sky:after, .btn-link-arrow-left-saphire:after, .btn-link-arrow-left-robin-egg:after, .btn-link-arrow-left-blueberry:after, .btn-link-arrow-left-grape:after, .btn-link-arrow-left-indigo:after, .btn-link-arrow-left-lavander:after, .btn-link-arrow-left-sea:after, .btn-link-arrow-left-water:after, .btn-link-arrow-left-white:after, .btn-link-arrow-left-cloud:after, .btn-link-arrow-left-moon:after, .btn-link-arrow-left-milk:after, .btn-link-arrow-left-fog:after, .btn-link-arrow-left-concrete:after, .btn-link-arrow-left-ivory:after, .btn-link-arrow-left-aluminium:after, .btn-link-arrow-left-elephant:after, .btn-link-arrow-left-slate:after, .btn-link-arrow-left-midnight:after, .btn-link-arrow-left-black:after, .btn-link-arrow-right-primary:before, .btn-link-arrow-right-secondary:before, .btn-link-arrow-right-success:before, .btn-link-arrow-right-info:before, .btn-link-arrow-right-warning:before, .btn-link-arrow-right-danger:before, .btn-link-arrow-right-light:before, .btn-link-arrow-right-dark:before, .btn-link-arrow-right-clay:before, .btn-link-arrow-right-orange:before, .btn-link-arrow-right-sun:before, .btn-link-arrow-right-mint:before, .btn-link-arrow-right-grass:before, .btn-link-arrow-right-leaf:before, .btn-link-arrow-right-ocean:before, .btn-link-arrow-right-sky:before, .btn-link-arrow-right-saphire:before, .btn-link-arrow-right-robin-egg:before, .btn-link-arrow-right-blueberry:before, .btn-link-arrow-right-grape:before, .btn-link-arrow-right-indigo:before, .btn-link-arrow-right-lavander:before, .btn-link-arrow-right-sea:before, .btn-link-arrow-right-water:before, .btn-link-arrow-right-white:before, .btn-link-arrow-right-cloud:before, .btn-link-arrow-right-moon:before, .btn-link-arrow-right-milk:before, .btn-link-arrow-right-fog:before, .btn-link-arrow-right-concrete:before, .btn-link-arrow-right-ivory:before, .btn-link-arrow-right-aluminium:before, .btn-link-arrow-right-elephant:before, .btn-link-arrow-right-slate:before, .btn-link-arrow-right-midnight:before, .btn-link-arrow-right-black:before, header nav .navbar-nav .nav-item a, .portfolio-list > header ul li .badge, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote .blockquote-footer cite, .portfolio-list .card .item-info-feed article.quote blockquote .blockquote-footer cite {
   display: inline-block !important; }
 
-.d-block, .campaign-list .campaign .card .card-body small, .campaign-list .campaign .card-total-holdings .card-body small, .portfolio aside section .list-group-flush > li:before {
+.d-block, .campaign-list .campaign .card .card-body small, .campaign-list .campaign .card-total-holdings .card-body small, .campaign header .jumbotron small, .portfolio aside section .list-group-flush > li:before {
   display: block !important; }
 
 .d-table {
@@ -12658,7 +12722,7 @@ button.btn-link-arrow-left-black:focus:before {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .btn-arrow-right, .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-active.card-total-holdings .btn-wrap-left, .portfolio-list .card-active.card .btn-wrap-left, .btn-arrow-left, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, header nav .navbar-nav .nav-item.avatar, .campaign-list header .nav, .campaign-list header .portfolio-list .card-total-holdings nav, .portfolio-list .card-total-holdings .campaign-list header nav, .campaign-list header .portfolio-list .card nav, .portfolio-list .card .campaign-list header nav, .portfolio aside section .list-group-flush > li, .item-summary, .portfolio-list > header, .portfolio-list .card-total-holdings .item-details, .portfolio-list .card .item-details, .portfolio-list .card-total-holdings .item-info-feed article.quote, .portfolio-list .card .item-info-feed article.quote {
+.d-flex, .dl.dl-horizontal, .btn-arrow-right, .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-active.card-total-holdings .btn-wrap-left, .portfolio-list .card-active.card .btn-wrap-left, .btn-arrow-left, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, header nav .navbar-nav .nav-item.avatar, .campaign-list header .nav, .campaign-list header .portfolio-list .card-total-holdings nav, .portfolio-list .card-total-holdings .campaign-list header nav, .campaign-list header .portfolio-list .card nav, .portfolio-list .card .campaign-list header nav, .portfolio aside section .list-group-flush > li, .item-summary, .portfolio-list > header, .portfolio-list .card-total-holdings .item-details, .portfolio-list .card .item-details, .portfolio-list .card-total-holdings .item-info-feed article.quote, .portfolio-list .card .item-info-feed article.quote {
   display: flex !important; }
 
 .d-inline-flex {
@@ -13400,7 +13464,7 @@ button.btn-link-arrow-left-black:focus:before {
   content: "";
   background-color: rgba(0, 0, 0, 0); }
 
-.m-0, .portfolio-list .card-total-holdings .item-info-feed article.caption-image img + p, .portfolio-list .card .item-info-feed article.caption-image img + p {
+.m-0, .dl, .dl > *, .dl.dl-horizontal > *, .portfolio-list .card-total-holdings .item-info-feed article.caption-image img + p, .portfolio-list .card .item-info-feed article.caption-image img + p {
   margin: 0 !important; }
 
 .mt-0, .portfolio aside section:first-child, .portfolio-list > header h1,
@@ -13411,7 +13475,7 @@ button.btn-link-arrow-left-black:focus:before {
 .mx-0 {
   margin-right: 0 !important; }
 
-.mb-0, .alert-small p:last-child, .card-total-holdings h2, .card-total-holdings h2 small:last-child, .portfolio aside section .list-group-flush, .portfolio aside section .list-group-flush > li:last-child, .portfolio aside section .list-group-flush > li p,
+.mb-0, .dl.dl-horizontal > *, .dl.dl-horizontal dd + dt, .alert-small p:last-child, .campaign header .jumbotron, .card-total-holdings h2, .card-total-holdings h2 small:last-child, .portfolio aside section .list-group-flush, .portfolio aside section .list-group-flush > li:last-child, .portfolio aside section .list-group-flush > li p,
 .my-0 {
   margin-bottom: 0 !important; }
 
@@ -13517,7 +13581,7 @@ button.btn-link-arrow-left-black:focus:before {
 .mx-4 {
   margin-right: 32px !important; }
 
-.mb-4, .campaign-list header h1, .campaign-list .campaign, .portfolio .alert-info .alert-heading, .portfolio-list .card-total-holdings header, .portfolio-list .card header,
+.mb-4, .dl dd + dt, .campaign-list header h1, .campaign-list .campaign, .campaign header .jumbotron small, .portfolio .alert-info .alert-heading, .portfolio-list .card-total-holdings header, .portfolio-list .card header,
 .my-4 {
   margin-bottom: 32px !important; }
 
@@ -13537,7 +13601,7 @@ button.btn-link-arrow-left-black:focus:before {
 .mx-5 {
   margin-right: 40px !important; }
 
-.mb-5, .portfolio aside section, .portfolio-list .card,
+.mb-5, .campaign header, .portfolio aside section, .portfolio-list .card,
 .my-5,
 .campaign-list header {
   margin-bottom: 40px !important; }
@@ -13565,7 +13629,7 @@ button.btn-link-arrow-left-black:focus:before {
 .mx-6 {
   margin-left: 48px !important; }
 
-.p-0 {
+.p-0, .dl {
   padding: 0 !important; }
 
 .pt-0, .portfolio-list .card,
@@ -13606,7 +13670,7 @@ button.btn-link-arrow-left-black:focus:before {
 .px-0 {
   padding-right: 0 !important; }
 
-.pb-0, .portfolio aside section .list-group-flush > li:last-child,
+.pb-0, .campaign header, .campaign header .jumbotron, .portfolio aside section .list-group-flush > li:last-child,
 .py-0,
 .nav-pills.nav-sm .nav-link,
 .campaign-list header .nav .nav-link,
@@ -13648,7 +13712,8 @@ button.btn-link-arrow-left-black:focus:before {
   padding: 4px !important; }
 
 .pt-1,
-.py-1 {
+.py-1,
+.dl > * {
   padding-top: 4px !important; }
 
 .pr-1,
@@ -13680,7 +13745,8 @@ button.btn-link-arrow-left-black:focus:before {
   padding-right: 4px !important; }
 
 .pb-1,
-.py-1 {
+.py-1,
+.dl > * {
   padding-bottom: 4px !important; }
 
 .pl-1,
@@ -15194,7 +15260,7 @@ button.btn-link-arrow-left-black:focus:before {
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.text-left {
+.text-left, .dl > * {
   text-align: left !important; }
 
 .text-right, .item-summary .amount-principal, .item-summary .amount-profit, .item-summary .percent-apr, .item-summary .amount-current-value-info, .item-summary .portfolio-list .card-funding.card-total-holdings .amount-current-value, .portfolio-list .card-funding.card-total-holdings .item-summary .amount-current-value, .item-summary .portfolio-list .card-funding.card .amount-current-value, .portfolio-list .card-funding.card .item-summary .amount-current-value, .item-summary .amount-current-value-secondary, .item-summary .portfolio-list .card-active.card-total-holdings .amount-current-value, .portfolio-list .card-active.card-total-holdings .item-summary .amount-current-value, .item-summary .portfolio-list .card-active.card .amount-current-value, .portfolio-list .card-active.card .item-summary .amount-current-value, .item-summary .amount-current-value-success, .item-summary .portfolio-list .card-matured.card-total-holdings .amount-current-value, .portfolio-list .card-matured.card-total-holdings .item-summary .amount-current-value, .item-summary .portfolio-list .card-matured.card .amount-current-value, .portfolio-list .card-matured.card .item-summary .amount-current-value {
@@ -15238,13 +15304,13 @@ button.btn-link-arrow-left-black:focus:before {
 .text-lowercase {
   text-transform: lowercase !important; }
 
-.text-uppercase, .card .btn-wrap-left, .card-total-holdings .btn-wrap-left, .card .btn-wrap-right, .card-total-holdings .btn-wrap-right, .campaign-list .campaign .card .card-body small, .campaign-list .campaign .card-total-holdings .card-body small, .card-total-holdings .card-title, .card-total-holdings h2 small:last-child, .item-summary .amount-principal small, .item-summary .amount-profit small, .item-summary .percent-apr small, .item-summary .amount-current-value-info small, .item-summary .portfolio-list .card-funding.card-total-holdings .amount-current-value small, .portfolio-list .card-funding.card-total-holdings .item-summary .amount-current-value small, .item-summary .portfolio-list .card-funding.card .amount-current-value small, .portfolio-list .card-funding.card .item-summary .amount-current-value small, .item-summary .amount-current-value-secondary small, .item-summary .portfolio-list .card-active.card-total-holdings .amount-current-value small, .portfolio-list .card-active.card-total-holdings .item-summary .amount-current-value small, .item-summary .portfolio-list .card-active.card .amount-current-value small, .portfolio-list .card-active.card .item-summary .amount-current-value small, .item-summary .amount-current-value-success small, .item-summary .portfolio-list .card-matured.card-total-holdings .amount-current-value small, .portfolio-list .card-matured.card-total-holdings .item-summary .amount-current-value small, .item-summary .portfolio-list .card-matured.card .amount-current-value small, .portfolio-list .card-matured.card .item-summary .amount-current-value small, .portfolio-list > header h1 {
+.text-uppercase, .card .btn-wrap-left, .card-total-holdings .btn-wrap-left, .card .btn-wrap-right, .card-total-holdings .btn-wrap-right, .jumbotron small, .jumbotron-fluid small, .campaign-list .campaign .card .card-body small, .campaign-list .campaign .card-total-holdings .card-body small, .card-total-holdings .card-title, .card-total-holdings h2 small:last-child, .item-summary .amount-principal small, .item-summary .amount-profit small, .item-summary .percent-apr small, .item-summary .amount-current-value-info small, .item-summary .portfolio-list .card-funding.card-total-holdings .amount-current-value small, .portfolio-list .card-funding.card-total-holdings .item-summary .amount-current-value small, .item-summary .portfolio-list .card-funding.card .amount-current-value small, .portfolio-list .card-funding.card .item-summary .amount-current-value small, .item-summary .amount-current-value-secondary small, .item-summary .portfolio-list .card-active.card-total-holdings .amount-current-value small, .portfolio-list .card-active.card-total-holdings .item-summary .amount-current-value small, .item-summary .portfolio-list .card-active.card .amount-current-value small, .portfolio-list .card-active.card .item-summary .amount-current-value small, .item-summary .amount-current-value-success small, .item-summary .portfolio-list .card-matured.card-total-holdings .amount-current-value small, .portfolio-list .card-matured.card-total-holdings .item-summary .amount-current-value small, .item-summary .portfolio-list .card-matured.card .amount-current-value small, .portfolio-list .card-matured.card .item-summary .amount-current-value small, .portfolio-list > header h1 {
   text-transform: uppercase !important; }
 
 .text-capitalize, .item-summary .percent-apr small {
   text-transform: capitalize !important; }
 
-.font-weight-light, .portfolio-list .card-total-holdings .item-info-feed, .portfolio-list .card .item-info-feed {
+.font-weight-light, .dl > dt, .campaign header aside, .portfolio-list .card-total-holdings .item-info-feed, .portfolio-list .card .item-info-feed {
   font-weight: 300 !important; }
 
 .font-weight-lighter {
@@ -15256,7 +15322,7 @@ button.btn-link-arrow-left-black:focus:before {
 .font-weight-bold, .card .btn-wrap-left, .card-total-holdings .btn-wrap-left, .card .btn-wrap-right, .card-total-holdings .btn-wrap-right, header nav .navbar-nav, .card-total-holdings h2, .portfolio .alert-info .badge, .portfolio-list > header h1, .portfolio-list > header ul li, .portfolio-list .card-total-holdings .item-info-feed h3, .portfolio-list .card .item-info-feed h3 {
   font-weight: 600 !important; }
 
-.font-weight-bolder {
+.font-weight-bolder, .dl > dd {
   font-weight: 700 !important; }
 
 .font-italic, .item-summary .percent-apr, .portfolio-list .card-total-holdings .item-info-feed h3, .portfolio-list .card .item-info-feed h3, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote, .portfolio-list .card .item-info-feed article.quote blockquote {
@@ -15265,7 +15331,7 @@ button.btn-link-arrow-left-black:focus:before {
 .text-white, .btn-link-arrow-right-primary:after, .btn-link-arrow-right-primary:before, .btn-link-arrow-right-secondary:after, .btn-link-arrow-right-secondary:before, .btn-link-arrow-right-success:after, .btn-link-arrow-right-success:before, .btn-link-arrow-right-info:after, .btn-link-arrow-right-info:before, .btn-link-arrow-right-warning:after, .btn-link-arrow-right-warning:before, .btn-link-arrow-right-danger:after, .btn-link-arrow-right-danger:before, .btn-link-arrow-right-light:after, .btn-link-arrow-right-light:before, .btn-link-arrow-right-dark:after, .btn-link-arrow-right-dark:before, .btn-link-arrow-right-clay:after, .btn-link-arrow-right-clay:before, .btn-link-arrow-right-orange:after, .btn-link-arrow-right-orange:before, .btn-link-arrow-right-sun:after, .btn-link-arrow-right-sun:before, .btn-link-arrow-right-mint:after, .btn-link-arrow-right-mint:before, .btn-link-arrow-right-grass:after, .btn-link-arrow-right-grass:before, .btn-link-arrow-right-leaf:after, .btn-link-arrow-right-leaf:before, .btn-link-arrow-right-ocean:after, .btn-link-arrow-right-ocean:before, .btn-link-arrow-right-sky:after, .btn-link-arrow-right-sky:before, .btn-link-arrow-right-saphire:after, .btn-link-arrow-right-saphire:before, .btn-link-arrow-right-robin-egg:after, .btn-link-arrow-right-robin-egg:before, .btn-link-arrow-right-blueberry:after, .btn-link-arrow-right-blueberry:before, .btn-link-arrow-right-grape:after, .btn-link-arrow-right-grape:before, .btn-link-arrow-right-indigo:after, .btn-link-arrow-right-indigo:before, .btn-link-arrow-right-lavander:after, .btn-link-arrow-right-lavander:before, .btn-link-arrow-right-sea:after, .btn-link-arrow-right-sea:before, .btn-link-arrow-right-water:after, .btn-link-arrow-right-water:before, .btn-link-arrow-right-white, .btn-link-arrow-right-white:after, .btn-link-arrow-right-white:before, .btn-link-arrow-right-cloud:after, .btn-link-arrow-right-cloud:before, .btn-link-arrow-right-moon:after, .btn-link-arrow-right-moon:before, .btn-link-arrow-right-milk:after, .btn-link-arrow-right-milk:before, .btn-link-arrow-right-fog:after, .btn-link-arrow-right-fog:before, .btn-link-arrow-right-concrete:after, .btn-link-arrow-right-concrete:before, .btn-link-arrow-right-ivory:after, .btn-link-arrow-right-ivory:before, .btn-link-arrow-right-aluminium:after, .btn-link-arrow-right-aluminium:before, .btn-link-arrow-right-elephant:after, .btn-link-arrow-right-elephant:before, .btn-link-arrow-right-slate:after, .btn-link-arrow-right-slate:before, .btn-link-arrow-right-midnight:after, .btn-link-arrow-right-midnight:before, .btn-link-arrow-right-black:after, .btn-link-arrow-right-black:before, .btn-link-arrow-left-primary:after, .btn-link-arrow-left-primary:before, .btn-link-arrow-left-secondary:after, .btn-link-arrow-left-secondary:before, .btn-link-arrow-left-success:after, .btn-link-arrow-left-success:before, .btn-link-arrow-left-info:after, .btn-link-arrow-left-info:before, .btn-link-arrow-left-warning:after, .btn-link-arrow-left-warning:before, .btn-link-arrow-left-danger:after, .btn-link-arrow-left-danger:before, .btn-link-arrow-left-light:after, .btn-link-arrow-left-light:before, .btn-link-arrow-left-dark:after, .btn-link-arrow-left-dark:before, .btn-link-arrow-left-clay:after, .btn-link-arrow-left-clay:before, .btn-link-arrow-left-orange:after, .btn-link-arrow-left-orange:before, .btn-link-arrow-left-sun:after, .btn-link-arrow-left-sun:before, .btn-link-arrow-left-mint:after, .btn-link-arrow-left-mint:before, .btn-link-arrow-left-grass:after, .btn-link-arrow-left-grass:before, .btn-link-arrow-left-leaf:after, .btn-link-arrow-left-leaf:before, .btn-link-arrow-left-ocean:after, .btn-link-arrow-left-ocean:before, .btn-link-arrow-left-sky:after, .btn-link-arrow-left-sky:before, .btn-link-arrow-left-saphire:after, .btn-link-arrow-left-saphire:before, .btn-link-arrow-left-robin-egg:after, .btn-link-arrow-left-robin-egg:before, .btn-link-arrow-left-blueberry:after, .btn-link-arrow-left-blueberry:before, .btn-link-arrow-left-grape:after, .btn-link-arrow-left-grape:before, .btn-link-arrow-left-indigo:after, .btn-link-arrow-left-indigo:before, .btn-link-arrow-left-lavander:after, .btn-link-arrow-left-lavander:before, .btn-link-arrow-left-sea:after, .btn-link-arrow-left-sea:before, .btn-link-arrow-left-water:after, .btn-link-arrow-left-water:before, .btn-link-arrow-left-white, .btn-link-arrow-left-white:after, .btn-link-arrow-left-white:before, .btn-link-arrow-left-cloud:after, .btn-link-arrow-left-cloud:before, .btn-link-arrow-left-moon:after, .btn-link-arrow-left-moon:before, .btn-link-arrow-left-milk:after, .btn-link-arrow-left-milk:before, .btn-link-arrow-left-fog:after, .btn-link-arrow-left-fog:before, .btn-link-arrow-left-concrete:after, .btn-link-arrow-left-concrete:before, .btn-link-arrow-left-ivory:after, .btn-link-arrow-left-ivory:before, .btn-link-arrow-left-aluminium:after, .btn-link-arrow-left-aluminium:before, .btn-link-arrow-left-elephant:after, .btn-link-arrow-left-elephant:before, .btn-link-arrow-left-slate:after, .btn-link-arrow-left-slate:before, .btn-link-arrow-left-midnight:after, .btn-link-arrow-left-midnight:before, .btn-link-arrow-left-black:after, .btn-link-arrow-left-black:before, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, .nav-pills .nav-item:hover, .campaign-list header .nav .nav-item:hover, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover, .campaign-list header .portfolio-list .card nav .nav-item:hover, .portfolio-list .card .campaign-list header nav .nav-item:hover, .nav-pills .nav-item:hover .nav-link, .campaign-list header .nav .nav-item:hover .nav-link, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover .nav-link, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover .nav-link, .campaign-list header .portfolio-list .card nav .nav-item:hover .nav-link, .portfolio-list .card .campaign-list header nav .nav-item:hover .nav-link, .nav-pills .nav-item:hover .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-pills .nav-item:hover nav > a, .campaign-list header .nav .nav-item:hover .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .campaign-list header .nav .nav-item:hover nav > a, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover nav > a, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover nav > a, .campaign-list header .portfolio-list .card nav .nav-item:hover .card-total-holdings nav > a, .portfolio-list .card .campaign-list header nav .nav-item:hover .card-total-holdings nav > a, .nav-pills .nav-item:hover .portfolio-list .card nav > a, .portfolio-list .card .nav-pills .nav-item:hover nav > a, .campaign-list header .nav .nav-item:hover .portfolio-list .card nav > a, .portfolio-list .card .campaign-list header .nav .nav-item:hover nav > a, .campaign-list header .portfolio-list .card-total-holdings nav .nav-item:hover .card nav > a, .portfolio-list .card-total-holdings .campaign-list header nav .nav-item:hover .card nav > a, .campaign-list header .portfolio-list .card nav .nav-item:hover nav > a, .portfolio-list .card .campaign-list header nav .nav-item:hover nav > a, .portfolio-list .card-total-holdings .item-info-feed article.quote, .portfolio-list .card .item-info-feed article.quote, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote p, .portfolio-list .card .item-info-feed article.quote blockquote p {
   color: #ffffff !important; }
 
-.text-primary, .btn-link-arrow-right-primary, .btn-link-arrow-left-primary, .campaign-list .campaign .card .card-body small, .campaign-list .campaign .card-total-holdings .card-body small {
+.text-primary, .btn-link-arrow-right-primary, .btn-link-arrow-left-primary, .jumbotron small, .jumbotron-fluid small, .campaign-list .campaign .card .card-body small, .campaign-list .campaign .card-total-holdings .card-body small {
   color: #58cfee !important; }
 
 a.text-primary:hover, a.btn-link-arrow-right-primary:hover, a.btn-link-arrow-left-primary:hover, a.text-primary:focus, a.btn-link-arrow-right-primary:focus, a.btn-link-arrow-left-primary:focus {
@@ -15457,7 +15523,7 @@ a.text-ivory:hover, a.btn-link-arrow-right-ivory:hover, a.btn-link-arrow-left-iv
 a.text-aluminium:hover, a.btn-link-arrow-right-aluminium:hover, a.btn-link-arrow-left-aluminium:hover, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote a.blockquote-footer:hover, .portfolio-list .card .item-info-feed article.quote blockquote a.blockquote-footer:hover, a.text-aluminium:focus, a.btn-link-arrow-right-aluminium:focus, a.btn-link-arrow-left-aluminium:focus, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote a.blockquote-footer:focus, .portfolio-list .card .item-info-feed article.quote blockquote a.blockquote-footer:focus {
   color: #6d7882 !important; }
 
-.text-elephant, .btn-link-arrow-right-elephant, .btn-link-arrow-left-elephant {
+.text-elephant, .dl > dt, .btn-link-arrow-right-elephant, .btn-link-arrow-left-elephant {
   color: #7a807f !important; }
 
 a.text-elephant:hover, a.btn-link-arrow-right-elephant:hover, a.btn-link-arrow-left-elephant:hover, a.text-elephant:focus, a.btn-link-arrow-right-elephant:focus, a.btn-link-arrow-left-elephant:focus {
@@ -15469,7 +15535,7 @@ a.text-elephant:hover, a.btn-link-arrow-right-elephant:hover, a.btn-link-arrow-l
 a.text-slate:hover, a.btn-link-arrow-right-slate:hover, a.btn-link-arrow-left-slate:hover, a.text-slate:focus, a.btn-link-arrow-right-slate:focus, a.btn-link-arrow-left-slate:focus {
   color: #161819 !important; }
 
-.text-midnight, .btn-link-arrow-right-midnight, .btn-link-arrow-left-midnight, .card-total-holdings h2, .portfolio aside section header h3, .portfolio-list .card-total-holdings header h2, .portfolio-list .card header h2, .portfolio-list .card-total-holdings .item-info-feed h3, .portfolio-list .card .item-info-feed h3 {
+.text-midnight, .dl > dd, .btn-link-arrow-right-midnight, .btn-link-arrow-left-midnight, .card-total-holdings h2, .portfolio aside section header h3, .portfolio-list .card-total-holdings header h2, .portfolio-list .card header h2, .portfolio-list .card-total-holdings .item-info-feed h3, .portfolio-list .card .item-info-feed h3 {
   color: #192228 !important; }
 
 a.text-midnight:hover, a.btn-link-arrow-right-midnight:hover, a.btn-link-arrow-left-midnight:hover, a.text-midnight:focus, a.btn-link-arrow-right-midnight:focus, a.btn-link-arrow-left-midnight:focus {
@@ -15566,15 +15632,6 @@ a.text-black:hover, a.btn-link-arrow-right-black:hover, a.btn-link-arrow-left-bl
   *     </article>
   *   </div>
   * </div>
-  */
-/**
-  * Full Example
-  *
-  * @section
-  * @page Campaign Detail
-  *
-  * @example
-  * <code>// TODO: implement me</code>
   */
 /**
  * Full Example

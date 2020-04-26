@@ -106,8 +106,86 @@ p {
  * @page Typeography
  *
  * @example
- * <p class="text-xsmall"
+ * <p class="text-xsmall">Something smaller</p>
  */
 .text-xsmall {
   font-size: 11px;
+}
+
+/**
+ * Definition List
+ *
+ * Define a key-value pair of information
+ *
+ * @section
+ * @page Typeography
+ *
+ * @example
+ * <dl class="dl">
+ *   <dd>13%</dd>
+ *     <dt>Gross AROI<sup>1</sup></dt>
+ *   <dd>12 Months</dd>
+ *     <dt>Maturity / Term</dt>
+ *   <dd>Bali, Indonesia</dd>
+ *     <dt>Project Location</dt>
+ *   <dd>Indonesia</dd>
+ *     <dt>Governing Law</dt>
+ * </dl>
+ */
+
+/**
+ * Horizontal Definition List
+ *
+ * List of definitions running left to right
+ *
+ * @section
+ * @page Typeography
+ *
+ * @example
+ * <dl class="dl dl-horizontal">
+ *   <dd>13%</dd>
+ *     <dt>Gross AROI<sup>1</sup></dt>
+ *   <dd>12 Months</dd>
+ *     <dt>Maturity / Term</dt>
+ *   <dd>Bali, Indonesia</dd>
+ *     <dt>Project Location</dt>
+ *   <dd>Indonesia</dd>
+ *     <dt>Governing Law</dt>
+ * </dl>
+ */
+
+.dl {
+  @extend .m-0;
+  @extend .p-0;
+  & > * {
+    @extend .m-0;
+    @extend .py-1;
+    @extend .text-left;
+    font-size: $font-size-base;
+    line-height: $font-size-base;
+  }
+  & > dt {
+    @extend .text-elephant;
+    @extend .font-weight-light;
+  }
+  & > dd {
+    @extend .text-midnight;
+    @extend .font-weight-bolder;
+  }
+  dd + dt {
+    @extend .mb-4;
+  }
+
+  &.dl-horizontal {
+    @extend .d-flex;
+    flex-flow: column wrap;
+    max-height: 48px;
+    & > * {
+      @extend .m-0;
+      @extend .mb-0;
+    }
+    dd + dt {
+      @extend .mb-0;
+    }
+  }
 }

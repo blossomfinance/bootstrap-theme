@@ -1,16 +1,6 @@
 
 @import "../node_modules/bootstrap/scss/buttons";
 
-// overide calcualted btn color via color-yiq() function
-.btn-primary {
-  color: $white;
-}
-
-.bg-grape .btn-grape,
-.alert-info .btn-info {
-  background-color: rgba($white, 0.16) !important;
-}
-
 /**
  * Arrows
  *
@@ -314,4 +304,21 @@ $btn-icon-line-height: 1.5rem !default;
   .btn-wrap-right {
     @include btn-wrap-variant('right', $card-spacer-x);
   }
+}
+
+.btn-pill {
+  border-top-right-radius: 1000px !important;
+  border-bottom-right-radius: 1000px !important;
+  border-top-left-radius: 1000px !important;
+  border-bottom-left-radius: 1000px !important;
+}
+
+// overide calculated btn color via color-yiq() function
+.btn-primary {
+  color: $white !important;
+}
+
+.bg-grape .btn-grape,
+.alert-info .btn-info {
+  background-color: rgba($white, 0.16) !important;
 }

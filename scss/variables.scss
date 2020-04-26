@@ -18,6 +18,10 @@ $slate:       #3a3f42;
 $midnight:    #192228;
 $black:       #000000;
 
+$other:       #9ba3a9;
+
+$other-one:   rgba($other, 0.15);
+
 // mapping blossom grays->bootstrap default grays
 $gray-100:    $cloud;
 $gray-200:    $milk;
@@ -188,6 +192,7 @@ $sizes: (
 // // Settings for the `<body>` element.
 //
 $body-bg:                   $milk;
+$body-bg-bleed:             $white;
 $body-color:                $gray-900;
 //
 //
@@ -337,10 +342,10 @@ $headings-color:              $blueberry;
 // $display3-size:               4.5rem !default;
 // $display4-size:               3.5rem !default;
 //
-// $display1-weight:             300 !default;
-// $display2-weight:             300 !default;
-// $display3-weight:             300 !default;
-// $display4-weight:             300 !default;
+$display1-weight:             $font-weight-bold;
+$display2-weight:             $font-weight-bold;
+$display3-weight:             $font-weight-bold;
+$display4-weight:             $font-weight-bold;
 // $display-line-height:         $headings-line-height !default;
 //
 // $lead-font-size:              $font-size-base * 1.25 !default;
@@ -844,9 +849,11 @@ $navbar-light-active-color:         $gray-900;
 //
 // // Jumbotron
 //
-// $jumbotron-padding:                 2rem !default;
+// $jumbotron-padding:                 0;
+$jumbotron-padding-x:               0;
+$jumbotron-padding-y:               $spacer;
 // $jumbotron-color:                   null !default;
-// $jumbotron-bg:                      $gray-200 !default;
+$jumbotron-bg:                      $white;
 //
 //
 // // Cards

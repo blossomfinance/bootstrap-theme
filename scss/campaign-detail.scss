@@ -1,10 +1,33 @@
 
- /**
-  * Full Example
-  *
-  * @section
-  * @page Campaign Detail
-  *
-  * @example
-  * <code>// TODO: implement me</code>
-  */
+.campaign {
+  header {
+    @extend .mb-5;
+    @extend .pb-0;
+    .jumbotron {
+      @extend .pb-0;
+      @extend .mb-0;
+      small {
+        @extend .d-block;
+        @extend .mb-4;
+      }
+      h1 {
+        @extend .display-4;
+      }
+    }
+    aside {
+      @extend .font-weight-light;
+    }
+  }
+
+  // TODO: splash image shadow
+  .img-splash {
+    @extend .img-fluid;
+    // box-shadow: inset 0px 2px 10px 0 rgba($gray-600, 0.15);
+    // box-shadow: inset 0px 2px 10px 0 rgba(0, 0, 0, 1);
+    // @extend .d-block;
+    // &:before {
+    //   @extend .d-block;
+    //   box-shadow: 0px 2px 10px -10px rgba($gray-600, 0.15);
+    // }
+  }
+}

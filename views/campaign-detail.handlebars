@@ -1,62 +1,77 @@
 {{#extend "layout"}}
+
+  {{#content "bodyClass"}}bleed{{/content}}
+
   {{#content "main"}}
   <article class="campaign">
-    <header class="container">
-      <div class="row">
-        <div class="col-8">
-          <small>microfinance</small>
-          <h1>Traditional Market Sellers &amp; Micro-Businesses</h1>
-          <dl class="campaign-summary-list">
-            <dt>13%</dt>
-              <dd>Gross AROI<a class="footnote">1</a></dd>
-            <dt>12 Months</dt>
-              <dd>Maturity / Term</dd>
-            <dt>Bali, Indonesia</dt>
-              <dd>Project Location</dd>
-            <dt>Indonesia</dt>
-              <dd>Governing Law</dd>
-          </dl>
-        </div>
-        <aside class="col-4">
-          <p>
-            Microfinance helps increase overall household income by supporting
-            micro-entrepreneurship. The Issuer finances business owners to
-            purchase inventory and capital equipment.
-          </p>
-          <a class="btn btn-primary btn-pill btn-arrow">Start Investment</a>
-        </aside>
-      </div>
-    </header>
-    <section class="splash-image">
-      <img />
-    </section>
     <div class="container">
-      <ul class="nav nav-tabs">
-        <a class="nav-link active" href="#">Overview</a>
-        <a class="nav-link" href="#">Financial</a>
-        <a class="nav-link" href="#">Project</a>
-        <a class="nav-link" href="#">Issuer</a>
-        <a class="nav-link" href="#">Compliance</a>
-        <a class="nav-link" href="#">Legal</a>
-      </nav>
+      <header class="jumbotron">
+        <div class="row">
+          <div class="col-8">
+            <small>microfinance</small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <h1>Traditional Market Sellers &amp; Micro-Businesses</h1>
+          </div>
+          <aside class="col-4">
+            <p>
+              Microfinance helps increase overall household income by supporting
+              micro-entrepreneurship. The Issuer finances business owners to
+              purchase inventory and capital equipment.
+            </p>
+          </aside>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <dl class="dl dl-horizontal">
+              <dd>13%</dd>
+                <dt>Gross AROI<sup>1</sup></dt>
+              <dd>12 Months</dd>
+                <dt>Maturity / Term</dt>
+              <dd>Bali, Indonesia</dd>
+                <dt>Project Location</dt>
+              <dd>Indonesia</dd>
+                <dt>Governing Law</dt>
+            </dl>
+          </div>
+          <aside class="col-4">
+            <a class="btn btn-primary btn-pill btn-arrow-right">Start Investment</a>
+          </aside>
+        </div>
+      </header>
+    </div>
+    <img class="img-splash" src="/images/campaign-hero-ocean.png" />
+    <div class="container">
+      <div class="row">
+        <ul class="nav nav-tabs">
+          <a class="nav-link active" href="#">Overview</a>
+          <a class="nav-link" href="#">Financial</a>
+          <a class="nav-link" href="#">Project</a>
+          <a class="nav-link" href="#">Issuer</a>
+          <a class="nav-link" href="#">Compliance</a>
+          <a class="nav-link" href="#">Legal</a>
+        </nav>
+      </div>
       <div class="tab-content">
         <div class="tab overview">
-          {{> campaign-detail-tab-overview}}
+          {{> campaign-detail/tab-overview}}
         </div>
         <div class="tab financial">
-          {{> campaign-detail-tab-financial}}
+          {{> campaign-detail/tab-financial}}
         </div>
         <div class="tab project">
-          {{> campaign-detail-tab-project}}
+          {{> campaign-detail/tab-project}}
         </div>
         <div class="tab issuer">
-          {{> campaign-detail-tab-issuer}}
+          {{> campaign-detail/tab-issuer}}
         </div>
         <div class="tab compliance">
-          {{> campaign-detail-tab-compliance}}
+          {{> campaign-detail/tab-compliance}}
         </div>
         <div class="tab legal">
-          {{> campaign-detail-tab-legal}}
+          {{> campaign-detail/tab-legal}}
         </div>
       </div>
     </div>

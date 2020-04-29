@@ -56,8 +56,9 @@
     "ci": true,
     "git": {
       "commit": true,
-      "tag": true,
-      "push": true
+      "push": true,
+      "requireCleanWorkingDir": false,
+      "tag": true
     },
     "github": {
       "release": true

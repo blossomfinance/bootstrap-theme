@@ -192,11 +192,14 @@
 
 @mixin btn-link-arrow-color-variant($color, $arrow-color: 'white') {
   @extend .text-#{$color};
+  $arrow-color-value: theme-color($arrow-color);
   &:after {
+    color: $arrow-color-value !important;
     @extend .text-#{$arrow-color};
     @extend .bg-#{$color};
   }
   &:before {
+    color: $arrow-color-value !important;
     @extend .text-#{$arrow-color};
     @extend .bg-#{$color};
   }
@@ -269,32 +272,36 @@ $btn-icon-line-height: 1.5rem !default;
  * </main>
  */
 
- @mixin btn-wrap-variant(
-   $direction,
-   $spacing-x,
-   $font-size: $font-size-sm,
-   $height: $spacer
- ) {
-   @extend .text-uppercase;
-   @extend .font-weight-bold;
-   padding-left: $btn-padding-x * 2;
-   padding-right: $btn-padding-x * 2;
-   height: $height;
-   border-top-right-radius: 1000px;
-   border-bottom-right-radius: 1000px;
-   font-size: $font-size;
-   line-height: $font-size;
-   @if $direction == 'left' {
-     margin-left: -1 * $card-spacer-x;
-     &:after {
-       padding-left: 2 * $card-spacer-x;
-     }
-   } @else {
-     margin-right: -1 * $card-spacer-x;
-     &:after {
-       padding-left: 2 * $card-spacer-x;
-     }
-   }
+@mixin btn-wrap-variant(
+  $direction,
+  $spacing-x,
+  $font-size: $font-size-sm,
+  $height: $spacer
+) {
+  @extend .text-uppercase;
+  @extend .font-weight-bold;
+  padding-left: $btn-padding-x * 2;
+  padding-right: $btn-padding-x * 2;
+  height: $height;
+  font-size: $font-size;
+  line-height: $font-size;
+  @if $direction == 'left' {
+    float: left;
+    border-top-right-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+    margin-left: -1 * $card-spacer-x;
+    &:after {
+      padding-left: 2 * $card-spacer-x;
+    }
+  } @else {
+    float: right;
+    border-top-left-radius: 1000px;
+    border-bottom-left-radius: 1000px;
+    margin-right: -1 * $card-spacer-x;
+    &:after {
+      padding-right: 2 * $card-spacer-x;
+    }
+  }
  }
 
 .card {

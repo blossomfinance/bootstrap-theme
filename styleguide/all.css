@@ -4764,8 +4764,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("../webfonts/fa-solid-900.eot");
-  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+  src: url("/webfonts/fa-solid-900.eot");
+  src: url("/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/webfonts/fa-solid-900.woff2") format("woff2"), url("/webfonts/fa-solid-900.woff") format("woff"), url("/webfonts/fa-solid-900.ttf") format("truetype"), url("/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
 
 .fa,
 .fas,
@@ -4862,8 +4862,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../webfonts/fa-brands-400.eot");
-  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+  src: url("/webfonts/fa-brands-400.eot");
+  src: url("/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("/webfonts/fa-brands-400.woff2") format("woff2"), url("/webfonts/fa-brands-400.woff") format("woff"), url("/webfonts/fa-brands-400.ttf") format("truetype"), url("/webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands';
@@ -4871,8 +4871,8 @@ readers do not read off random characters that represent icons */
 
 @font-face {
   font-family: "icons";
-  src: url("../fonts/icons.eot?39508ce7e7167b4a13c9bb76c8849648");
-  src: url("../fonts/icons.eot?39508ce7e7167b4a13c9bb76c8849648#iefix") format("embedded-opentype"), url("../fonts/icons.woff?39508ce7e7167b4a13c9bb76c8849648") format("woff"), url("../fonts/icons.ttf?39508ce7e7167b4a13c9bb76c8849648") format("truetype");
+  src: url("/fonts/icons.eot?d7d3ad7aff203cafad44d6f14744c8f3");
+  src: url("/fonts/icons.eot?d7d3ad7aff203cafad44d6f14744c8f3#iefix") format("embedded-opentype"), url("/fonts/icons.woff?d7d3ad7aff203cafad44d6f14744c8f3") format("woff"), url("/fonts/icons.ttf?d7d3ad7aff203cafad44d6f14744c8f3") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -8630,6 +8630,438 @@ input[type="button"].btn-block {
   width: 32px;
   height: 32px; }
 
+.btn-link-arrow-right-primary:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-primary:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-secondary:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-secondary:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-success:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-success:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-info:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-info:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-warning:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-warning:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-danger:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-danger:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-light:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-light:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-dark:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-dark:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-clay:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-clay:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-orange:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-orange:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-sun:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-sun:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-mint:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-mint:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-grass:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-grass:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-leaf:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-leaf:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-ocean:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-ocean:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-sky:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-sky:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-saphire:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-saphire:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-robin-egg:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-robin-egg:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-blueberry:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-blueberry:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-grape:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-grape:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-indigo:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-indigo:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-lavander:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-lavander:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-sea:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-sea:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-water:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-water:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-white:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-white:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-cloud:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-cloud:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-moon:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-moon:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-milk:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-milk:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-fog:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-fog:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-concrete:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-concrete:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-ivory:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-ivory:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-aluminium:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-aluminium:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-elephant:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-elephant:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-slate:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-slate:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-midnight:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-midnight:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-black:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-right-black:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-primary:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-primary:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-secondary:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-secondary:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-success:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-success:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-info:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-info:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-warning:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-warning:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-danger:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-danger:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-light:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-light:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-dark:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-dark:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-clay:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-clay:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-orange:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-orange:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-sun:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-sun:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-mint:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-mint:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-grass:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-grass:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-leaf:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-leaf:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-ocean:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-ocean:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-sky:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-sky:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-saphire:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-saphire:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-robin-egg:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-robin-egg:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-blueberry:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-blueberry:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-grape:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-grape:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-indigo:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-indigo:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-lavander:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-lavander:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-sea:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-sea:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-water:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-water:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-white:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-white:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-cloud:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-cloud:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-moon:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-moon:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-milk:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-milk:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-fog:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-fog:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-concrete:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-concrete:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-ivory:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-ivory:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-aluminium:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-aluminium:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-elephant:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-elephant:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-slate:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-slate:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-midnight:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-midnight:before {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-black:after {
+  color: #ffffff !important; }
+
+.btn-link-arrow-left-black:before {
+  color: #ffffff !important; }
+
 /**
  * Button Success
  *
@@ -8674,10 +9106,11 @@ input[type="button"].btn-block {
   padding-left: 2rem;
   padding-right: 2rem;
   height: 40px;
-  border-top-right-radius: 1000px;
-  border-bottom-right-radius: 1000px;
   font-size: 0.75rem;
   line-height: 0.75rem;
+  float: left;
+  border-top-right-radius: 1000px;
+  border-bottom-right-radius: 1000px;
   margin-left: -32px; }
   .card .btn-wrap-left:after, .card-total-holdings .btn-wrap-left:after {
     padding-left: 64px; }
@@ -8686,13 +9119,14 @@ input[type="button"].btn-block {
   padding-left: 2rem;
   padding-right: 2rem;
   height: 40px;
-  border-top-right-radius: 1000px;
-  border-bottom-right-radius: 1000px;
   font-size: 0.75rem;
   line-height: 0.75rem;
+  float: right;
+  border-top-left-radius: 1000px;
+  border-bottom-left-radius: 1000px;
   margin-right: -32px; }
   .card .btn-wrap-right:after, .card-total-holdings .btn-wrap-right:after {
-    padding-left: 64px; }
+    padding-right: 64px; }
 
 .btn-pill {
   border-top-right-radius: 1000px !important;

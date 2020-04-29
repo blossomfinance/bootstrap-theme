@@ -9090,12 +9090,12 @@ input[type="button"].btn-block {
  *
  * @example
  * <main class="p-5">
- *   <div class="card mb-4">
+ *   <div class="card mb-4 shadow">
  *     <div class="card-body">
  *       <button class="btn btn-wrap-left btn-concrete btn-arrow-right">More fun games I know</button>
  *     </div>
  *   </div>
- *   <div class="card mb-4">
+ *   <div class="card mb-4 shadow">
  *     <div class="card-body">
  *       <button class="btn btn-wrap-right btn-success">All completed!</button>
  *     </div>

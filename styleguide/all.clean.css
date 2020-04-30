@@ -5367,7 +5367,7 @@ th {
 
 label {
   display: inline-block;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.1rem; }
 
 button {
   border-radius: 0; }
@@ -6362,6 +6362,384 @@ p {
     margin-left: 83.33333%; }
   .offset-xl-11 {
     margin-left: 91.66667%; } }
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #192228;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #dfe1e2;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+  @media (prefers-reduced-motion: reduce) {
+    .form-control {
+      transition: none; } }
+  .form-control::-ms-expand {
+    background-color: transparent;
+    border: 0; }
+  .form-control:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #192228; }
+  .form-control:focus {
+    color: #192228;
+    background-color: #ffffff;
+    border-color: #ccf0fa;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(88, 207, 238, 0.25); }
+  .form-control::placeholder {
+    color: #959ea6;
+    opacity: 1; }
+  .form-control:disabled, .form-control[readonly] {
+    background-color: #f8f9fa;
+    opacity: 1; }
+
+select.form-control:focus::-ms-value {
+  color: #192228;
+  background-color: #ffffff; }
+
+.form-control-file,
+.form-control-range {
+  display: block;
+  width: 100%; }
+
+.col-form-label {
+  padding-top: calc(0.375rem + 1px);
+  padding-bottom: calc(0.375rem + 1px);
+  margin-bottom: 0;
+  font-size: inherit;
+  line-height: 1.5; }
+
+.col-form-label-lg {
+  padding-top: calc(0.375rem + 1px);
+  padding-bottom: calc(0.375rem + 1px);
+  font-size: 1.5rem;
+  line-height: 1; }
+
+.col-form-label-sm {
+  padding-top: calc(0.25rem + 1px);
+  padding-bottom: calc(0.25rem + 1px);
+  font-size: 0.75rem;
+  line-height: 1.5; }
+
+.form-control-plaintext {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0;
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #3a3f42;
+  background-color: transparent;
+  border: solid transparent;
+  border-width: 1px 0; }
+  .form-control-plaintext.form-control-sm, .form-control-plaintext.form-control-lg {
+    padding-right: 0;
+    padding-left: 0; }
+
+.form-control-sm {
+  height: calc(1.5em + 0.5rem + 2px);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  border-radius: 0.2rem; }
+
+.form-control-lg {
+  height: calc(1em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1.5rem;
+  line-height: 1;
+  border-radius: 4px; }
+
+select.form-control[size], select.form-control[multiple] {
+  height: auto; }
+
+textarea.form-control {
+  height: auto; }
+
+.form-group, .form-group-stacked {
+  margin-bottom: 1rem; }
+
+.form-text {
+  display: block;
+  margin-top: 0.25rem; }
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px; }
+  .form-row > .col, .item-summary .form-row > .amount-principal, .item-summary .form-row > .amount-profit, .item-summary .form-row > .percent-apr, .item-summary .form-row > .amount-current-value-info, .item-summary .portfolio-list .card-funding.card-total-holdings .form-row > .amount-current-value, .portfolio-list .card-funding.card-total-holdings .item-summary .form-row > .amount-current-value, .item-summary .portfolio-list .card-funding.card .form-row > .amount-current-value, .portfolio-list .card-funding.card .item-summary .form-row > .amount-current-value, .item-summary .form-row > .amount-current-value-secondary, .item-summary .portfolio-list .card-active.card-total-holdings .form-row > .amount-current-value, .portfolio-list .card-active.card-total-holdings .item-summary .form-row > .amount-current-value, .item-summary .portfolio-list .card-active.card .form-row > .amount-current-value, .portfolio-list .card-active.card .item-summary .form-row > .amount-current-value, .item-summary .form-row > .amount-current-value-success, .item-summary .portfolio-list .card-matured.card-total-holdings .form-row > .amount-current-value, .portfolio-list .card-matured.card-total-holdings .item-summary .form-row > .amount-current-value, .item-summary .portfolio-list .card-matured.card .form-row > .amount-current-value, .portfolio-list .card-matured.card .item-summary .form-row > .amount-current-value, .portfolio-list .card-total-holdings .item-details .form-row > .alert, .portfolio-list .card .item-details .form-row > .alert, .portfolio-list .card-total-holdings .item-info-feed .form-row > article.caption-image, .portfolio-list .card .item-info-feed .form-row > article.caption-image, .portfolio-list .card-total-holdings .item-info-feed .form-row > article.quote, .portfolio-list .card .item-info-feed .form-row > article.quote,
+  .form-row > [class*="col-"] {
+    padding-right: 5px;
+    padding-left: 5px; }
+
+.form-check {
+  position: relative;
+  display: block;
+  padding-left: 1.25rem; }
+
+.form-check-input {
+  position: absolute;
+  margin-top: 0.3rem;
+  margin-left: -1.25rem; }
+  .form-check-input[disabled] ~ .form-check-label,
+  .form-check-input:disabled ~ .form-check-label {
+    color: #7a807f; }
+
+.form-check-label {
+  margin-bottom: 0; }
+
+.form-check-inline {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 0;
+  margin-right: 0.75rem; }
+  .form-check-inline .form-check-input {
+    position: static;
+    margin-top: 0;
+    margin-right: 0.3125rem;
+    margin-left: 0; }
+
+.valid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #23be5f; }
+
+.valid-tooltip {
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+  display: none;
+  max-width: 100%;
+  padding: 0.25rem 0.5rem;
+  margin-top: .1rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: rgba(35, 190, 95, 0.9);
+  border-radius: 4px; }
+
+.was-validated :valid ~ .valid-feedback,
+.was-validated :valid ~ .valid-tooltip,
+.is-valid ~ .valid-feedback,
+.is-valid ~ .valid-tooltip {
+  display: block; }
+
+.was-validated .form-control:valid, .form-control.is-valid {
+  border-color: #23be5f;
+  padding-right: calc(1.5em + 0.75rem);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2323be5f' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem); }
+  .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
+    border-color: #23be5f;
+    box-shadow: 0 0 0 0.2rem rgba(35, 190, 95, 0.25); }
+
+.was-validated textarea.form-control:valid, textarea.form-control.is-valid {
+  padding-right: calc(1.5em + 0.75rem);
+  background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem); }
+
+.was-validated .custom-select:valid, .custom-select.is-valid {
+  border-color: #23be5f;
+  padding-right: calc(0.75em + 2.3125rem);
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%233a3f42' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2323be5f' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e") #ffffff no-repeat center right 1.75rem/calc(0.75em + 0.375rem) calc(0.75em + 0.375rem); }
+  .was-validated .custom-select:valid:focus, .custom-select.is-valid:focus {
+    border-color: #23be5f;
+    box-shadow: 0 0 0 0.2rem rgba(35, 190, 95, 0.25); }
+
+.was-validated .form-check-input:valid ~ .form-check-label, .form-check-input.is-valid ~ .form-check-label {
+  color: #23be5f; }
+
+.was-validated .form-check-input:valid ~ .valid-feedback,
+.was-validated .form-check-input:valid ~ .valid-tooltip, .form-check-input.is-valid ~ .valid-feedback,
+.form-check-input.is-valid ~ .valid-tooltip {
+  display: block; }
+
+.was-validated .custom-control-input:valid ~ .custom-control-label, .custom-control-input.is-valid ~ .custom-control-label {
+  color: #23be5f; }
+  .was-validated .custom-control-input:valid ~ .custom-control-label::before, .custom-control-input.is-valid ~ .custom-control-label::before {
+    border-color: #23be5f; }
+
+.was-validated .custom-control-input:valid:checked ~ .custom-control-label::before, .custom-control-input.is-valid:checked ~ .custom-control-label::before {
+  border-color: #39db78;
+  background-color: #39db78; }
+
+.was-validated .custom-control-input:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgba(35, 190, 95, 0.25); }
+
+.was-validated .custom-control-input:valid:focus:not(:checked) ~ .custom-control-label::before, .custom-control-input.is-valid:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: #23be5f; }
+
+.was-validated .custom-file-input:valid ~ .custom-file-label, .custom-file-input.is-valid ~ .custom-file-label {
+  border-color: #23be5f; }
+
+.was-validated .custom-file-input:valid:focus ~ .custom-file-label, .custom-file-input.is-valid:focus ~ .custom-file-label {
+  border-color: #23be5f;
+  box-shadow: 0 0 0 0.2rem rgba(35, 190, 95, 0.25); }
+
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #e04c2d; }
+
+.invalid-tooltip {
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+  display: none;
+  max-width: 100%;
+  padding: 0.25rem 0.5rem;
+  margin-top: .1rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: rgba(224, 76, 45, 0.9);
+  border-radius: 4px; }
+
+.was-validated :invalid ~ .invalid-feedback,
+.was-validated :invalid ~ .invalid-tooltip,
+.is-invalid ~ .invalid-feedback,
+.is-invalid ~ .invalid-tooltip {
+  display: block; }
+
+.was-validated .form-control:invalid, .form-control.is-invalid {
+  border-color: #e04c2d;
+  padding-right: calc(1.5em + 0.75rem);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23e04c2d' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23e04c2d' stroke='none'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem); }
+  .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
+    border-color: #e04c2d;
+    box-shadow: 0 0 0 0.2rem rgba(224, 76, 45, 0.25); }
+
+.was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
+  padding-right: calc(1.5em + 0.75rem);
+  background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem); }
+
+.was-validated .custom-select:invalid, .custom-select.is-invalid {
+  border-color: #e04c2d;
+  padding-right: calc(0.75em + 2.3125rem);
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%233a3f42' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23e04c2d' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23e04c2d' stroke='none'/%3e%3c/svg%3e") #ffffff no-repeat center right 1.75rem/calc(0.75em + 0.375rem) calc(0.75em + 0.375rem); }
+  .was-validated .custom-select:invalid:focus, .custom-select.is-invalid:focus {
+    border-color: #e04c2d;
+    box-shadow: 0 0 0 0.2rem rgba(224, 76, 45, 0.25); }
+
+.was-validated .form-check-input:invalid ~ .form-check-label, .form-check-input.is-invalid ~ .form-check-label {
+  color: #e04c2d; }
+
+.was-validated .form-check-input:invalid ~ .invalid-feedback,
+.was-validated .form-check-input:invalid ~ .invalid-tooltip, .form-check-input.is-invalid ~ .invalid-feedback,
+.form-check-input.is-invalid ~ .invalid-tooltip {
+  display: block; }
+
+.was-validated .custom-control-input:invalid ~ .custom-control-label, .custom-control-input.is-invalid ~ .custom-control-label {
+  color: #e04c2d; }
+  .was-validated .custom-control-input:invalid ~ .custom-control-label::before, .custom-control-input.is-invalid ~ .custom-control-label::before {
+    border-color: #e04c2d; }
+
+.was-validated .custom-control-input:invalid:checked ~ .custom-control-label::before, .custom-control-input.is-invalid:checked ~ .custom-control-label::before {
+  border-color: #e77259;
+  background-color: #e77259; }
+
+.was-validated .custom-control-input:invalid:focus ~ .custom-control-label::before, .custom-control-input.is-invalid:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgba(224, 76, 45, 0.25); }
+
+.was-validated .custom-control-input:invalid:focus:not(:checked) ~ .custom-control-label::before, .custom-control-input.is-invalid:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: #e04c2d; }
+
+.was-validated .custom-file-input:invalid ~ .custom-file-label, .custom-file-input.is-invalid ~ .custom-file-label {
+  border-color: #e04c2d; }
+
+.was-validated .custom-file-input:invalid:focus ~ .custom-file-label, .custom-file-input.is-invalid:focus ~ .custom-file-label {
+  border-color: #e04c2d;
+  box-shadow: 0 0 0 0.2rem rgba(224, 76, 45, 0.25); }
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center; }
+  .form-inline .form-check {
+    width: 100%; }
+  @media (min-width: 576px) {
+    .form-inline label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0; }
+    .form-inline .form-group, .form-inline .form-group-stacked {
+      display: flex;
+      flex: 0 0 auto;
+      flex-flow: row wrap;
+      align-items: center;
+      margin-bottom: 0; }
+    .form-inline .form-control {
+      display: inline-block;
+      width: auto;
+      vertical-align: middle; }
+    .form-inline .form-control-plaintext {
+      display: inline-block; }
+    .form-inline .input-group,
+    .form-inline .custom-select {
+      width: auto; }
+    .form-inline .form-check {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      padding-left: 0; }
+    .form-inline .form-check-input {
+      position: relative;
+      flex-shrink: 0;
+      margin-top: 0;
+      margin-right: 0.25rem;
+      margin-left: 0; }
+    .form-inline .custom-control {
+      align-items: center;
+      justify-content: center; }
+    .form-inline .custom-control-label {
+      margin-bottom: 0; } }
+
+
+.form-group-stacked {
+  border-style: solid;
+  border-color: #dfe1e2;
+  border-width: 1px;
+  border-radius: 4px;
+  line-height: 1em;
+  min-height: 80px; }
+  .form-group-stacked label {
+    padding-left: 0.75rem;
+    font-size: 0.75rem; }
+  .form-group-stacked .form-control {
+    border: none; }
+    .form-group-stacked .form-control:focus {
+      border: none;
+      box-shadow: none; }
+  .form-group-stacked .form-text {
+    padding-left: 0.75rem; }
+  .form-group-stacked .invalid-feedback {
+    padding-left: 0.75rem; }
+
+.was-validated .form-control:valid:focus {
+  border: none;
+  box-shadow: none; }
+
+.was-validated .form-control:invalid:focus, .was-validated .form-control.invalid:focus {
+  border: none;
+  box-shadow: none; }
+
 
 .btn, .btn-link-arrow-left-primary, .btn-link-arrow-left-secondary, .btn-link-arrow-left-success, .btn-link-arrow-left-info, .btn-link-arrow-left-warning, .btn-link-arrow-left-danger, .btn-link-arrow-left-light, .btn-link-arrow-left-dark, .btn-link-arrow-left-clay, .btn-link-arrow-left-orange, .btn-link-arrow-left-sun, .btn-link-arrow-left-mint, .btn-link-arrow-left-grass, .btn-link-arrow-left-leaf, .btn-link-arrow-left-ocean, .btn-link-arrow-left-sky, .btn-link-arrow-left-saphire, .btn-link-arrow-left-robin-egg, .btn-link-arrow-left-blueberry, .btn-link-arrow-left-grape, .btn-link-arrow-left-indigo, .btn-link-arrow-left-lavander, .btn-link-arrow-left-sea, .btn-link-arrow-left-water, .btn-link-arrow-left-white, .btn-link-arrow-left-cloud, .btn-link-arrow-left-moon, .btn-link-arrow-left-milk, .btn-link-arrow-left-fog, .btn-link-arrow-left-concrete, .btn-link-arrow-left-ivory, .btn-link-arrow-left-aluminium, .btn-link-arrow-left-elephant, .btn-link-arrow-left-slate, .btn-link-arrow-left-midnight, .btn-link-arrow-left-black, .btn-link-arrow-right-primary, .btn-link-arrow-right-secondary, .btn-link-arrow-right-success, .btn-link-arrow-right-info, .btn-link-arrow-right-warning, .btn-link-arrow-right-danger, .btn-link-arrow-right-light, .btn-link-arrow-right-dark, .btn-link-arrow-right-clay, .btn-link-arrow-right-orange, .btn-link-arrow-right-sun, .btn-link-arrow-right-mint, .btn-link-arrow-right-grass, .btn-link-arrow-right-leaf, .btn-link-arrow-right-ocean, .btn-link-arrow-right-sky, .btn-link-arrow-right-saphire, .btn-link-arrow-right-robin-egg, .btn-link-arrow-right-blueberry, .btn-link-arrow-right-grape, .btn-link-arrow-right-indigo, .btn-link-arrow-right-lavander, .btn-link-arrow-right-sea, .btn-link-arrow-right-water, .btn-link-arrow-right-white, .btn-link-arrow-right-cloud, .btn-link-arrow-right-moon, .btn-link-arrow-right-milk, .btn-link-arrow-right-fog, .btn-link-arrow-right-concrete, .btn-link-arrow-right-ivory, .btn-link-arrow-right-aluminium, .btn-link-arrow-right-elephant, .btn-link-arrow-right-slate, .btn-link-arrow-right-midnight, .btn-link-arrow-right-black {
   display: inline-block;
@@ -8944,6 +9322,331 @@ input[type="button"].btn-block {
 .portfolio .alert-info .btn-link-arrow-right-midnight,
 .portfolio .alert-info .btn-link-arrow-right-black {
   background-color: rgba(255, 255, 255, 0.16) !important; }
+
+.custom-control {
+  position: relative;
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5rem; }
+
+.custom-control-inline {
+  display: inline-flex;
+  margin-right: 1rem; }
+
+.custom-control-input {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 1rem;
+  height: 1.25rem;
+  opacity: 0; }
+  .custom-control-input:checked ~ .custom-control-label::before {
+    color: #ffffff;
+    border-color: #58cfee;
+    background-color: #58cfee; }
+  .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem rgba(88, 207, 238, 0.25); }
+  .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+    border-color: #ccf0fa; }
+  .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+    color: #ffffff;
+    background-color: #fafefe;
+    border-color: #fafefe; }
+  .custom-control-input[disabled] ~ .custom-control-label, .custom-control-input:disabled ~ .custom-control-label {
+    color: #959ea6; }
+    .custom-control-input[disabled] ~ .custom-control-label::before, .custom-control-input:disabled ~ .custom-control-label::before {
+      background-color: #f8f9fa; }
+
+.custom-control-label {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top; }
+  .custom-control-label::before {
+    position: absolute;
+    top: 0.25rem;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    content: "";
+    background-color: #ffffff;
+    border: #dfe1e2 solid 1px; }
+  .custom-control-label::after {
+    position: absolute;
+    top: 0.25rem;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    background: no-repeat 50% / 50% 50%; }
+
+.custom-checkbox .custom-control-label::before {
+  border-radius: 4px; }
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%23ffffff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3e%3c/svg%3e"); }
+
+.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
+  border-color: #58cfee;
+  background-color: #58cfee; }
+
+.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3e%3cpath stroke='%23ffffff' d='M0 2h4'/%3e%3c/svg%3e"); }
+
+.custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
+  background-color: rgba(88, 207, 238, 0.5); }
+
+.custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before {
+  background-color: rgba(88, 207, 238, 0.5); }
+
+.custom-radio .custom-control-label::before {
+  border-radius: 50%; }
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23ffffff'/%3e%3c/svg%3e"); }
+
+.custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
+  background-color: rgba(88, 207, 238, 0.5); }
+
+.custom-switch {
+  padding-left: 2.25rem; }
+  .custom-switch .custom-control-label::before {
+    left: -2.25rem;
+    width: 1.75rem;
+    pointer-events: all;
+    border-radius: 0.5rem; }
+  .custom-switch .custom-control-label::after {
+    top: calc(0.25rem + 2px);
+    left: calc(-2.25rem + 2px);
+    width: calc(1rem - 4px);
+    height: calc(1rem - 4px);
+    background-color: #dfe1e2;
+    border-radius: 0.5rem;
+    transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+    @media (prefers-reduced-motion: reduce) {
+      .custom-switch .custom-control-label::after {
+        transition: none; } }
+  .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+    background-color: #ffffff;
+    transform: translateX(0.75rem); }
+  .custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before {
+    background-color: rgba(88, 207, 238, 0.5); }
+
+.custom-select {
+  display: inline-block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #192228;
+  vertical-align: middle;
+  background: #ffffff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%233a3f42' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
+  border: 1px solid #dfe1e2;
+  border-radius: 4px;
+  appearance: none; }
+  .custom-select:focus {
+    border-color: #ccf0fa;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(88, 207, 238, 0.25); }
+    .custom-select:focus::-ms-value {
+      color: #192228;
+      background-color: #ffffff; }
+  .custom-select[multiple], .custom-select[size]:not([size="1"]) {
+    height: auto;
+    padding-right: 0.75rem;
+    background-image: none; }
+  .custom-select:disabled {
+    color: #959ea6;
+    background-color: #f8f9fa; }
+  .custom-select::-ms-expand {
+    display: none; }
+  .custom-select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #192228; }
+
+.custom-select-sm {
+  height: calc(1.5em + 0.5rem + 2px);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  font-size: 0.75rem; }
+
+.custom-select-lg {
+  height: calc(1em + 0.75rem + 2px);
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.75rem;
+  font-size: 1.5rem; }
+
+.custom-file {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  margin-bottom: 0; }
+
+.custom-file-input {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  margin: 0;
+  opacity: 0; }
+  .custom-file-input:focus ~ .custom-file-label {
+    border-color: #ccf0fa;
+    box-shadow: 0 0 0 0.2rem rgba(88, 207, 238, 0.25); }
+  .custom-file-input[disabled] ~ .custom-file-label,
+  .custom-file-input:disabled ~ .custom-file-label {
+    background-color: #f8f9fa; }
+  .custom-file-input:lang(en) ~ .custom-file-label::after {
+    content: "Browse"; }
+  .custom-file-input ~ .custom-file-label[data-browse]::after {
+    content: attr(data-browse); }
+
+.custom-file-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #192228;
+  background-color: #ffffff;
+  border: 1px solid #dfe1e2;
+  border-radius: 4px; }
+  .custom-file-label::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: block;
+    height: calc(1.5em + 0.75rem);
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    color: #192228;
+    content: "Browse";
+    background-color: #f8f9fa;
+    border-left: inherit;
+    border-radius: 0 4px 4px 0; }
+
+.custom-range {
+  width: 100%;
+  height: 1.4rem;
+  padding: 0;
+  background-color: transparent;
+  appearance: none; }
+  .custom-range:focus {
+    outline: none; }
+    .custom-range:focus::-webkit-slider-thumb {
+      box-shadow: 0 0 0 1px #f8f9fa, 0 0 0 0.2rem rgba(88, 207, 238, 0.25); }
+    .custom-range:focus::-moz-range-thumb {
+      box-shadow: 0 0 0 1px #f8f9fa, 0 0 0 0.2rem rgba(88, 207, 238, 0.25); }
+    .custom-range:focus::-ms-thumb {
+      box-shadow: 0 0 0 1px #f8f9fa, 0 0 0 0.2rem rgba(88, 207, 238, 0.25); }
+  .custom-range::-moz-focus-outer {
+    border: 0; }
+  .custom-range::-webkit-slider-thumb {
+    width: 1rem;
+    height: 1rem;
+    margin-top: -0.25rem;
+    background-color: #58cfee;
+    border: 0;
+    border-radius: 1rem;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    appearance: none; }
+    @media (prefers-reduced-motion: reduce) {
+      .custom-range::-webkit-slider-thumb {
+        transition: none; } }
+    .custom-range::-webkit-slider-thumb:active {
+      background-color: #fafefe; }
+  .custom-range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 0.5rem;
+    color: transparent;
+    cursor: pointer;
+    background-color: #c2c7cc;
+    border-color: transparent;
+    border-radius: 1rem; }
+  .custom-range::-moz-range-thumb {
+    width: 1rem;
+    height: 1rem;
+    background-color: #58cfee;
+    border: 0;
+    border-radius: 1rem;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    appearance: none; }
+    @media (prefers-reduced-motion: reduce) {
+      .custom-range::-moz-range-thumb {
+        transition: none; } }
+    .custom-range::-moz-range-thumb:active {
+      background-color: #fafefe; }
+  .custom-range::-moz-range-track {
+    width: 100%;
+    height: 0.5rem;
+    color: transparent;
+    cursor: pointer;
+    background-color: #c2c7cc;
+    border-color: transparent;
+    border-radius: 1rem; }
+  .custom-range::-ms-thumb {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0;
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
+    background-color: #58cfee;
+    border: 0;
+    border-radius: 1rem;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    appearance: none; }
+    @media (prefers-reduced-motion: reduce) {
+      .custom-range::-ms-thumb {
+        transition: none; } }
+    .custom-range::-ms-thumb:active {
+      background-color: #fafefe; }
+  .custom-range::-ms-track {
+    width: 100%;
+    height: 0.5rem;
+    color: transparent;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    border-width: 0.5rem; }
+  .custom-range::-ms-fill-lower {
+    background-color: #c2c7cc;
+    border-radius: 1rem; }
+  .custom-range::-ms-fill-upper {
+    margin-right: 15px;
+    background-color: #c2c7cc;
+    border-radius: 1rem; }
+  .custom-range:disabled::-webkit-slider-thumb {
+    background-color: #dfe1e2; }
+  .custom-range:disabled::-webkit-slider-runnable-track {
+    cursor: default; }
+  .custom-range:disabled::-moz-range-thumb {
+    background-color: #dfe1e2; }
+  .custom-range:disabled::-moz-range-track {
+    cursor: default; }
+  .custom-range:disabled::-ms-thumb {
+    background-color: #dfe1e2; }
+
+.custom-control-label::before,
+.custom-file-label,
+.custom-select {
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+  @media (prefers-reduced-motion: reduce) {
+    .custom-control-label::before,
+    .custom-file-label,
+    .custom-select {
+      transition: none; } }
 
 .nav, .portfolio-list .card-total-holdings nav, .portfolio-list .card nav {
   display: flex;
@@ -12423,16 +13126,18 @@ button.btn-link-arrow-left-water:focus:after,
 button.btn-link-arrow-left-water:focus:before {
   background-color: #afe7f8 !important; }
 
-.bg-white, .btn-link-arrow-right-white:after, .btn-link-arrow-right-white:before, .btn-link-arrow-left-white:after, .btn-link-arrow-left-white:before {
+.bg-white, .form-group-stacked, .btn-link-arrow-right-white:after, .btn-link-arrow-right-white:before, .btn-link-arrow-left-white:after, .btn-link-arrow-left-white:before {
   background-color: #ffffff !important; }
 
-a.bg-white:hover, a.btn-link-arrow-right-white:hover:after, a.btn-link-arrow-right-white:hover:before, a.btn-link-arrow-left-white:hover:after, a.btn-link-arrow-left-white:hover:before, a.bg-white:focus, a.btn-link-arrow-right-white:focus:after, a.btn-link-arrow-right-white:focus:before, a.btn-link-arrow-left-white:focus:after, a.btn-link-arrow-left-white:focus:before,
+a.bg-white:hover, a.form-group-stacked:hover, a.btn-link-arrow-right-white:hover:after, a.btn-link-arrow-right-white:hover:before, a.btn-link-arrow-left-white:hover:after, a.btn-link-arrow-left-white:hover:before, a.bg-white:focus, a.form-group-stacked:focus, a.btn-link-arrow-right-white:focus:after, a.btn-link-arrow-right-white:focus:before, a.btn-link-arrow-left-white:focus:after, a.btn-link-arrow-left-white:focus:before,
 button.bg-white:hover,
+button.form-group-stacked:hover,
 button.btn-link-arrow-right-white:hover:after,
 button.btn-link-arrow-right-white:hover:before,
 button.btn-link-arrow-left-white:hover:after,
 button.btn-link-arrow-left-white:hover:before,
 button.bg-white:focus,
+button.form-group-stacked:focus,
 button.btn-link-arrow-right-white:focus:after,
 button.btn-link-arrow-right-white:focus:before,
 button.btn-link-arrow-left-white:focus:after,
@@ -12615,7 +13320,7 @@ button.btn-link-arrow-left-black:focus:after,
 button.btn-link-arrow-left-black:focus:before {
   background-color: black !important; }
 
-.bg-white, .btn-link-arrow-right-white:after, .btn-link-arrow-right-white:before, .btn-link-arrow-left-white:after, .btn-link-arrow-left-white:before {
+.bg-white, .form-group-stacked, .btn-link-arrow-right-white:after, .btn-link-arrow-right-white:before, .btn-link-arrow-left-white:after, .btn-link-arrow-left-white:before {
   background-color: #ffffff !important; }
 
 .bg-transparent {
@@ -13567,8 +14272,10 @@ button.btn-link-arrow-left-black:focus:before {
 .m-0, .dl, .dl > *, .dl.dl-horizontal > *, .nav-tabs, .portfolio-list .card-total-holdings .item-info-feed article.caption-image img + p, .portfolio-list .card .item-info-feed article.caption-image img + p {
   margin: 0 !important; }
 
-.mt-0, .portfolio aside section:first-child, .portfolio-list > header h1,
-.my-0 {
+.mt-0, .form-group-stacked .invalid-feedback, .portfolio aside section:first-child, .portfolio-list > header h1,
+.my-0,
+.form-group-stacked label,
+.form-group-stacked .form-control {
   margin-top: 0 !important; }
 
 .mr-0, .portfolio-list .card-total-holdings .item-details .alert:last-child, .portfolio-list .card .item-details .alert:last-child,
@@ -13576,7 +14283,9 @@ button.btn-link-arrow-left-black:focus:before {
   margin-right: 0 !important; }
 
 .mb-0, .dl.dl-horizontal > *, .dl.dl-horizontal dd + dt, .alert-small p:last-child, .card-total-holdings h2, .card-total-holdings h2 small:last-child, .portfolio aside section .list-group-flush, .portfolio aside section .list-group-flush > li:last-child, .portfolio aside section .list-group-flush > li p,
-.my-0 {
+.my-0,
+.form-group-stacked label,
+.form-group-stacked .form-control {
   margin-bottom: 0 !important; }
 
 .ml-0, .nav-link-primary a.nav-link:first-child, .nav-link-primary .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-primary nav > a:first-child, .nav-link-primary .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-primary nav > a:first-child, .nav-link-secondary a.nav-link:first-child, .nav-link-secondary .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-secondary nav > a:first-child, .nav-link-secondary .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-secondary nav > a:first-child, .nav-link-success a.nav-link:first-child, .nav-link-success .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-success nav > a:first-child, .nav-link-success .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-success nav > a:first-child, .nav-link-info a.nav-link:first-child, .nav-link-info .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-info nav > a:first-child, .nav-link-info .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-info nav > a:first-child, .nav-link-warning a.nav-link:first-child, .nav-link-warning .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-warning nav > a:first-child, .nav-link-warning .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-warning nav > a:first-child, .nav-link-danger a.nav-link:first-child, .nav-link-danger .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-danger nav > a:first-child, .nav-link-danger .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-danger nav > a:first-child, .nav-link-light a.nav-link:first-child, .nav-link-light .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-light nav > a:first-child, .nav-link-light .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-light nav > a:first-child, .nav-link-dark a.nav-link:first-child, .nav-link-dark .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-dark nav > a:first-child, .nav-link-dark .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-dark nav > a:first-child, .nav-link-clay a.nav-link:first-child, .nav-link-clay .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-clay nav > a:first-child, .nav-link-clay .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-clay nav > a:first-child, .nav-link-orange a.nav-link:first-child, .nav-link-orange .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-orange nav > a:first-child, .nav-link-orange .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-orange nav > a:first-child, .nav-link-sun a.nav-link:first-child, .nav-link-sun .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-sun nav > a:first-child, .nav-link-sun .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-sun nav > a:first-child, .nav-link-mint a.nav-link:first-child, .nav-link-mint .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-mint nav > a:first-child, .nav-link-mint .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-mint nav > a:first-child, .nav-link-grass a.nav-link:first-child, .nav-link-grass .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-grass nav > a:first-child, .nav-link-grass .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-grass nav > a:first-child, .nav-link-leaf a.nav-link:first-child, .nav-link-leaf .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-leaf nav > a:first-child, .nav-link-leaf .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-leaf nav > a:first-child, .nav-link-ocean a.nav-link:first-child, .nav-link-ocean .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-ocean nav > a:first-child, .nav-link-ocean .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-ocean nav > a:first-child, .nav-link-sky a.nav-link:first-child, .nav-link-sky .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-sky nav > a:first-child, .nav-link-sky .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-sky nav > a:first-child, .nav-link-saphire a.nav-link:first-child, .nav-link-saphire .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-saphire nav > a:first-child, .nav-link-saphire .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-saphire nav > a:first-child, .nav-link-robin-egg a.nav-link:first-child, .nav-link-robin-egg .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-robin-egg nav > a:first-child, .nav-link-robin-egg .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-robin-egg nav > a:first-child, .nav-link-blueberry a.nav-link:first-child, .nav-link-blueberry .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-blueberry nav > a:first-child, .nav-link-blueberry .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-blueberry nav > a:first-child, .nav-link-grape a.nav-link:first-child, .nav-link-grape .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-grape nav > a:first-child, .nav-link-grape .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-grape nav > a:first-child, .nav-link-indigo a.nav-link:first-child, .nav-link-indigo .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-indigo nav > a:first-child, .nav-link-indigo .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-indigo nav > a:first-child, .nav-link-lavander a.nav-link:first-child, .nav-link-lavander .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-lavander nav > a:first-child, .nav-link-lavander .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-lavander nav > a:first-child, .nav-link-sea a.nav-link:first-child, .nav-link-sea .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-sea nav > a:first-child, .nav-link-sea .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-sea nav > a:first-child, .nav-link-water a.nav-link:first-child, .nav-link-water .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-water nav > a:first-child, .nav-link-water .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-water nav > a:first-child, .nav-link-white a.nav-link:first-child, .nav-link-white .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-white nav > a:first-child, .nav-link-white .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-white nav > a:first-child, .nav-link-cloud a.nav-link:first-child, .nav-link-cloud .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-cloud nav > a:first-child, .nav-link-cloud .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-cloud nav > a:first-child, .nav-link-moon a.nav-link:first-child, .nav-link-moon .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-moon nav > a:first-child, .nav-link-moon .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-moon nav > a:first-child, .nav-link-milk a.nav-link:first-child, .nav-link-milk .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-milk nav > a:first-child, .nav-link-milk .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-milk nav > a:first-child, .nav-link-fog a.nav-link:first-child, .nav-link-fog .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-fog nav > a:first-child, .nav-link-fog .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-fog nav > a:first-child, .nav-link-concrete a.nav-link:first-child, .nav-link-concrete .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-concrete nav > a:first-child, .nav-link-concrete .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-concrete nav > a:first-child, .nav-link-ivory a.nav-link:first-child, .nav-link-ivory .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-ivory nav > a:first-child, .nav-link-ivory .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-ivory nav > a:first-child, .nav-link-aluminium a.nav-link:first-child, .nav-link-aluminium .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-aluminium nav > a:first-child, .nav-link-aluminium .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-aluminium nav > a:first-child, .nav-link-elephant a.nav-link:first-child, .portfolio-list .card-total-holdings nav a.nav-link:first-child, .portfolio-list .card nav a.nav-link:first-child, .portfolio-list .card-total-holdings .nav-link-elephant nav > a:first-child, .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card .nav-link-elephant nav > a:first-child, .portfolio-list .card nav > a:first-child, .nav-link-slate a.nav-link:first-child, .nav-link-slate .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-slate nav > a:first-child, .nav-link-slate .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-slate nav > a:first-child, .nav-link-midnight a.nav-link:first-child, .nav-link-midnight .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-midnight nav > a:first-child, .nav-link-midnight .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-midnight nav > a:first-child, .nav-link-black a.nav-link:first-child, .nav-link-black .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-black nav > a:first-child, .nav-link-black .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-black nav > a:first-child,
@@ -13772,6 +14481,10 @@ button.btn-link-arrow-left-black:focus:before {
 
 .pt-0, .portfolio-list .card,
 .py-0,
+.form-group-stacked,
+.form-group-stacked label,
+.form-group-stacked .form-control,
+.form-group-stacked .invalid-feedback,
 .nav-pills.nav-sm .nav-link,
 .campaign-list header .nav .nav-link,
 .campaign-list header .portfolio-list .card-total-holdings nav .nav-link,
@@ -13810,6 +14523,10 @@ button.btn-link-arrow-left-black:focus:before {
 
 .pb-0, .campaign header, .portfolio aside section .list-group-flush > li:last-child,
 .py-0,
+.form-group-stacked,
+.form-group-stacked label,
+.form-group-stacked .form-control,
+.form-group-stacked .invalid-feedback,
 .nav-pills.nav-sm .nav-link,
 .campaign-list header .nav .nav-link,
 .campaign-list header .portfolio-list .card-total-holdings nav .nav-link,
@@ -15905,10 +16622,10 @@ a.text-primary:hover, a.btn-link-arrow-right-primary:hover, a.btn-link-arrow-lef
 a.text-secondary:hover, a.btn-link-arrow-right-secondary:hover, a.btn-link-arrow-left-secondary:hover, .nav-tabs .nav-item a.nav-link.active:hover, .nav-tabs .nav-item .portfolio-list .card nav > a.active:hover, .portfolio-list .card .nav-tabs .nav-item nav > a.active:hover, .nav-tabs .nav-item .portfolio-list .card-total-holdings nav > a.active:hover, .portfolio-list .card-total-holdings .nav-tabs .nav-item nav > a.active:hover, a.text-secondary:focus, a.btn-link-arrow-right-secondary:focus, a.btn-link-arrow-left-secondary:focus, .nav-tabs .nav-item a.nav-link.active:focus, .nav-tabs .nav-item .portfolio-list .card-total-holdings nav > a.active:focus, .portfolio-list .card-total-holdings .nav-tabs .nav-item nav > a.active:focus, .nav-tabs .nav-item .portfolio-list .card nav > a.active:focus, .portfolio-list .card .nav-tabs .nav-item nav > a.active:focus {
   color: #123d4c !important; }
 
-.text-success, .btn-link-arrow-right-success, .btn-link-arrow-left-success {
+.text-success, .was-validated .form-control:valid, .was-validated .form-control:valid:focus, .btn-link-arrow-right-success, .btn-link-arrow-left-success {
   color: #23be5f !important; }
 
-a.text-success:hover, a.btn-link-arrow-right-success:hover, a.btn-link-arrow-left-success:hover, a.text-success:focus, a.btn-link-arrow-right-success:focus, a.btn-link-arrow-left-success:focus {
+a.text-success:hover, .was-validated a.form-control:hover:valid, a.btn-link-arrow-right-success:hover, a.btn-link-arrow-left-success:hover, a.text-success:focus, .was-validated a.form-control:focus:valid, a.btn-link-arrow-right-success:focus, a.btn-link-arrow-left-success:focus {
   color: #177d3f !important; }
 
 .text-info, .btn-link-arrow-right-info, .btn-link-arrow-left-info {
@@ -15923,10 +16640,10 @@ a.text-info:hover, a.btn-link-arrow-right-info:hover, a.btn-link-arrow-left-info
 a.text-warning:hover, a.btn-link-arrow-right-warning:hover, a.btn-link-arrow-left-warning:hover, a.text-warning:focus, a.btn-link-arrow-right-warning:focus, a.btn-link-arrow-left-warning:focus {
   color: #e2b500 !important; }
 
-.text-danger, .btn-link-arrow-right-danger, .btn-link-arrow-left-danger {
+.text-danger, .was-validated .form-control:invalid, .was-validated .form-control.invalid, .was-validated .form-control:invalid:focus, .was-validated .form-control.invalid:focus, .btn-link-arrow-right-danger, .btn-link-arrow-left-danger {
   color: #e04c2d !important; }
 
-a.text-danger:hover, a.btn-link-arrow-right-danger:hover, a.btn-link-arrow-left-danger:hover, a.text-danger:focus, a.btn-link-arrow-right-danger:focus, a.btn-link-arrow-left-danger:focus {
+a.text-danger:hover, .was-validated a.form-control:hover:invalid, .was-validated a.form-control.invalid:hover, a.btn-link-arrow-right-danger:hover, a.btn-link-arrow-left-danger:hover, a.text-danger:focus, .was-validated a.form-control:focus:invalid, .was-validated a.form-control.invalid:focus, a.btn-link-arrow-right-danger:focus, a.btn-link-arrow-left-danger:focus {
   color: #a83219 !important; }
 
 .text-light, .btn-link-arrow-right-light, .btn-link-arrow-left-light {

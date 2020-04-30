@@ -1,0 +1,11 @@
+
+.page-standalone {
+  @extend .text-center;
+}
+
+main.page-standalone {
+  @extend .pt-5;
+  form {
+    @extend .text-left;
+  }
+}

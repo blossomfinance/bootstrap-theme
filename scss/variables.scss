@@ -429,7 +429,7 @@ $input-btn-line-height:       $line-height-base;
 // $input-btn-padding-x-sm:      .5rem !default;
 $input-btn-font-size-sm:      $font-size-sm;
 // $input-btn-line-height-sm:    $line-height-sm !default;
-//
+
 $input-btn-padding-y-lg:      1.07rem;
 $input-btn-padding-x-lg:      2rem;
 $input-btn-font-size-lg:      $font-size-lg;
@@ -496,7 +496,7 @@ $input-padding-x:                       $input-btn-padding-x !default;
 $input-font-size-sm:                    $input-btn-font-size-sm;
 // $input-line-height-sm:                  $input-btn-line-height-sm !default;
 
-$input-padding-y-lg:                    $input-padding-y;
+$input-padding-y-lg:                    $input-btn-padding-y-lg;
 $input-padding-x-lg:                    $input-padding-x;
 $input-font-size-lg:                    $font-size-xl;
 $input-line-height-lg:                  1;

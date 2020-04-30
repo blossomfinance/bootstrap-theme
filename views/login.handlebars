@@ -1,0 +1,41 @@
+{{#extend "layout"}}
+
+  {{#content "header"}}
+<header>
+  <nav class="navbar navbar-nav navbar-expand-sm navbar-light navbar-page-standalone">
+    <a class="navbar-brand" href="/">
+      <img src="/images/blossom-logo-horizontal-blue.svg" height="40" alt="">
+    </a>
+  </nav>
+</header>
+  {{/content}}
+
+  {{#content "main"}}
+<div class="container">
+  <main class="page-standalone">
+    <h1>
+      Login
+    </h1>
+    <div class="row">
+      <!-- .col-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
+      <form class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </main>
+</div>
+  {{/content}}
+
+{{/extend}}

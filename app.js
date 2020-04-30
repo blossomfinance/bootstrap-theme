@@ -33,6 +33,12 @@ app.get('/', function (req, res) {
   res.redirect('/portfolio');
 });
 
+app.get('/login', function (req, res) {
+  res.render('login', {
+    portfolio: true,
+  });
+});
+
 app.get('/portfolio', function (req, res) {
   res.render('portfolio', {
     portfolio: true,

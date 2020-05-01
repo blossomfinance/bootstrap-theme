@@ -1,4 +1,17 @@
 @charset "UTF-8";
+/**
+ * Font Awesome
+ *
+ * All (free) font awesome variants are supported
+ *
+ * @section
+ * @page Icons
+ *
+ * @example
+ * <div class="p-4">
+ *   <i class="fas fa-paper-plane h1"></i>
+ * </div>
+ */
 /*!
  * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -4858,22 +4871,6 @@ readers do not read off random characters that represent icons */
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face {
-  font-family: 'Font Awesome 5 Free';
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url("/webfonts/fa-regular-400.eot");
-  src: url("/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("/webfonts/fa-regular-400.woff2") format("woff2"), url("/webfonts/fa-regular-400.woff") format("woff"), url("/webfonts/fa-regular-400.ttf") format("truetype"), url("/webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
-
-.far {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 400; }
-
-/*!
- * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
-@font-face {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: 400;
@@ -4885,6 +4882,19 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands';
   font-weight: 400; }
 
+/**
+ * Blossom Icons
+ *
+ * Custom set of (crudely) generated icons from SVG
+ *
+ * @section
+ * @page Icons
+ *
+ * @example
+ * <div class="p-4">
+ *   <i class="icon icon-microfinance h1"></i>
+ * </div>
+ */
 @font-face {
   font-family: "icons";
   src: url("/fonts/icons.eot?d7d3ad7aff203cafad44d6f14744c8f3");

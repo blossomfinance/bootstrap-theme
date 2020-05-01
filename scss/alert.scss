@@ -2,6 +2,8 @@
 @mixin alert-variant($background, $border, $color) {
   $text-color: rgba($color, 0.6);
   @include gradient-bg($background);
+
+  color: $text-color;
   border-color: $border;
 
   hr {
@@ -23,6 +25,10 @@
     color: $text-color;
   }
 
+  p:last-child {
+    @extend .mb-0;
+    @extend .pb-0;
+  }
 }
 
 .alert {
@@ -115,12 +121,18 @@
  * </div>
  */
 @each $color, $value in $theme-colors {
+  $bg-color: theme-color-level($color, $alert-bg-level);
+  $border-color: theme-color-level($color, $alert-border-level);
+  $text-color: theme-color-level($color, $alert-color-level);
   .alert-#{$color} {
-    @include alert-variant(
-      theme-color-level($color, $alert-bg-level),
-      theme-color-level($color, $alert-border-level),
-      theme-color-level($color, $alert-color-level)
-    );
+    @include alert-variant($bg-color, $border-color, $text-color);
+    &.alert-icon,
+    &.alert-icon-sm,
+    &.alert-icon-lg {
+      i {
+        color: lighten($text-color, 10%);
+      }
+    }
   }
 }
 
@@ -237,5 +249,42 @@
     &:last-child {
       @extend .mb-0;
     }
+  }
+}
+
+/**
+ * Alert Icons
+ *
+ * @section
+ * @page Alert
+ *
+ * @example
+ * <div class="alert alert-info alert-icon" role="alert">
+ *   <i class="fas fa-envelope-open-text"></i>
+ *   <p>Sent! Check your email&mdash;we've sent you an email with a link to reset your password.</p>
+ * </div>
+ * <div class="alert alert-danger alert-icon" role="alert">
+ *   <i class="fas fa-exclamation-circle"></i>
+ *   <p>Sent! Check your email&mdash;we've sent you an email with a link to reset your password.</p>
+ * </div>
+ * <div class="alert alert-success alert-icon" role="alert">
+ *   <i class="fas fa-check"></i>
+ *   <div>
+ *     <h4 class="alert-heading">Great job!</h4>
+ *     <p>You did a good thing. Good job. You deserve a cookie.</p>
+ *   </div>
+ * </div>
+ */
+.alert-icon {
+  @extend .d-flex;
+  @extend .justify-content-start;
+  @extend .align-items-center;
+  .alert-heading {
+    @extend .mb-0;
+  }
+  i {
+    @extend .d-block;
+    @extend .mr-3;
+    font-size: $h1-font-size;
   }
 }

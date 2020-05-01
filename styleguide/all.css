@@ -11837,6 +11837,7 @@ header nav {
  */
 .alert-primary {
   background-color: #58cfee;
+  color: rgba(222, 245, 252, 0.6);
   border-color: #d0f2fa; }
   .alert-primary hr {
     border-top-color: #b9ecf8; }
@@ -11848,9 +11849,12 @@ header nav {
     color: #def5fc !important; }
   .alert-primary p {
     color: rgba(222, 245, 252, 0.6); }
+  .alert-primary.alert-icon i, .alert-primary.alert-icon-sm i, .alert-primary.alert-icon-lg i {
+    color: white; }
 
 .alert-secondary {
   background-color: #206f8a;
+  color: rgba(210, 226, 232, 0.6);
   border-color: #c1d7de; }
   .alert-secondary hr {
     border-top-color: #b0ccd5; }
@@ -11862,9 +11866,12 @@ header nav {
     color: #d2e2e8 !important; }
   .alert-secondary p {
     color: rgba(210, 226, 232, 0.6); }
+  .alert-secondary.alert-icon i, .alert-secondary.alert-icon-sm i, .alert-secondary.alert-icon-lg i {
+    color: #f4f8f9; }
 
 .alert-success {
   background-color: #23be5f;
+  color: rgba(211, 242, 223, 0.6);
   border-color: #c1edd2; }
   .alert-success hr {
     border-top-color: #ade7c4; }
@@ -11876,9 +11883,12 @@ header nav {
     color: #d3f2df !important; }
   .alert-success p {
     color: rgba(211, 242, 223, 0.6); }
+  .alert-success.alert-icon i, .alert-success.alert-icon-sm i, .alert-success.alert-icon-lg i {
+    color: #fafefc; }
 
 .alert-info {
   background-color: #5b6bb6;
+  color: rgba(222, 225, 240, 0.6);
   border-color: #d1d6eb; }
   .alert-info hr {
     border-top-color: #bfc6e3; }
@@ -11890,9 +11900,12 @@ header nav {
     color: #dee1f0 !important; }
   .alert-info p {
     color: rgba(222, 225, 240, 0.6); }
+  .alert-info.alert-icon i, .alert-info.alert-icon-sm i, .alert-info.alert-icon-lg i {
+    color: white; }
 
 .alert-warning {
   background-color: #ffd62f;
+  color: rgba(255, 247, 213, 0.6);
   border-color: #fff4c5; }
   .alert-warning hr {
     border-top-color: #ffefac; }
@@ -11904,9 +11917,12 @@ header nav {
     color: #fff7d5 !important; }
   .alert-warning p {
     color: rgba(255, 247, 213, 0.6); }
+  .alert-warning.alert-icon i, .alert-warning.alert-icon-sm i, .alert-warning.alert-icon-lg i {
+    color: white; }
 
 .alert-danger {
   background-color: #e04c2d;
+  color: rgba(249, 219, 213, 0.6);
   border-color: #f6cdc4; }
   .alert-danger hr {
     border-top-color: #f3baae; }
@@ -11918,9 +11934,12 @@ header nav {
     color: #f9dbd5 !important; }
   .alert-danger p {
     color: rgba(249, 219, 213, 0.6); }
+  .alert-danger.alert-icon i, .alert-danger.alert-icon-sm i, .alert-danger.alert-icon-lg i {
+    color: white; }
 
 .alert-light {
   background-color: #f3f4f5;
+  color: rgba(253, 253, 253, 0.6);
   border-color: #fcfcfc; }
   .alert-light hr {
     border-top-color: #efefef; }
@@ -11932,9 +11951,12 @@ header nav {
     color: #fdfdfd !important; }
   .alert-light p {
     color: rgba(253, 253, 253, 0.6); }
+  .alert-light.alert-icon i, .alert-light.alert-icon-sm i, .alert-light.alert-icon-lg i {
+    color: white; }
 
 .alert-dark {
   background-color: #3a3f42;
+  color: rgba(216, 217, 217, 0.6);
   border-color: #c8c9ca; }
   .alert-dark hr {
     border-top-color: #bbbcbd; }
@@ -11946,9 +11968,12 @@ header nav {
     color: #d8d9d9 !important; }
   .alert-dark p {
     color: rgba(216, 217, 217, 0.6); }
+  .alert-dark.alert-icon i, .alert-dark.alert-icon-sm i, .alert-dark.alert-icon-lg i {
+    color: #f2f2f2; }
 
 .alert-clay {
   background-color: #e04c2d;
+  color: rgba(249, 219, 213, 0.6);
   border-color: #f6cdc4; }
   .alert-clay hr {
     border-top-color: #f3baae; }
@@ -11960,9 +11985,12 @@ header nav {
     color: #f9dbd5 !important; }
   .alert-clay p {
     color: rgba(249, 219, 213, 0.6); }
+  .alert-clay.alert-icon i, .alert-clay.alert-icon-sm i, .alert-clay.alert-icon-lg i {
+    color: white; }
 
 .alert-orange {
   background-color: #fd7e14;
+  color: rgba(255, 229, 208, 0.6);
   border-color: #fedbbd; }
   .alert-orange hr {
     border-top-color: #fecda4; }
@@ -11974,9 +12002,12 @@ header nav {
     color: #ffe5d0 !important; }
   .alert-orange p {
     color: rgba(255, 229, 208, 0.6); }
+  .alert-orange.alert-icon i, .alert-orange.alert-icon-sm i, .alert-orange.alert-icon-lg i {
+    color: white; }
 
 .alert-sun {
   background-color: #ffd62f;
+  color: rgba(255, 247, 213, 0.6);
   border-color: #fff4c5; }
   .alert-sun hr {
     border-top-color: #ffefac; }
@@ -11988,9 +12019,12 @@ header nav {
     color: #fff7d5 !important; }
   .alert-sun p {
     color: rgba(255, 247, 213, 0.6); }
+  .alert-sun.alert-icon i, .alert-sun.alert-icon-sm i, .alert-sun.alert-icon-lg i {
+    color: white; }
 
 .alert-mint {
   background-color: #23be5f;
+  color: rgba(211, 242, 223, 0.6);
   border-color: #c1edd2; }
   .alert-mint hr {
     border-top-color: #ade7c4; }
@@ -12002,9 +12036,12 @@ header nav {
     color: #d3f2df !important; }
   .alert-mint p {
     color: rgba(211, 242, 223, 0.6); }
+  .alert-mint.alert-icon i, .alert-mint.alert-icon-sm i, .alert-mint.alert-icon-lg i {
+    color: #fafefc; }
 
 .alert-grass {
   background-color: #3ec300;
+  color: rgba(216, 243, 204, 0.6);
   border-color: #c9eeb8; }
   .alert-grass hr {
     border-top-color: #b9e9a3; }
@@ -12016,9 +12053,12 @@ header nav {
     color: #d8f3cc !important; }
   .alert-grass p {
     color: rgba(216, 243, 204, 0.6); }
+  .alert-grass.alert-icon i, .alert-grass.alert-icon-sm i, .alert-grass.alert-icon-lg i {
+    color: #f8fdf5; }
 
 .alert-leaf {
   background-color: #34c36b;
+  color: rgba(214, 243, 225, 0.6);
   border-color: #c6eed6; }
   .alert-leaf hr {
     border-top-color: #b2e8c8; }
@@ -12030,9 +12070,12 @@ header nav {
     color: #d6f3e1 !important; }
   .alert-leaf p {
     color: rgba(214, 243, 225, 0.6); }
+  .alert-leaf.alert-icon i, .alert-leaf.alert-icon-sm i, .alert-leaf.alert-icon-lg i {
+    color: #fdfffe; }
 
 .alert-ocean {
   background-color: #04b5a6;
+  color: rgba(205, 240, 237, 0.6);
   border-color: #b9eae6; }
   .alert-ocean hr {
     border-top-color: #a5e4df; }
@@ -12044,9 +12087,12 @@ header nav {
     color: #cdf0ed !important; }
   .alert-ocean p {
     color: rgba(205, 240, 237, 0.6); }
+  .alert-ocean.alert-icon i, .alert-ocean.alert-icon-sm i, .alert-ocean.alert-icon-lg i {
+    color: #f4fcfb; }
 
 .alert-sky {
   background-color: #58cfee;
+  color: rgba(222, 245, 252, 0.6);
   border-color: #d0f2fa; }
   .alert-sky hr {
     border-top-color: #b9ecf8; }
@@ -12058,9 +12104,12 @@ header nav {
     color: #def5fc !important; }
   .alert-sky p {
     color: rgba(222, 245, 252, 0.6); }
+  .alert-sky.alert-icon i, .alert-sky.alert-icon-sm i, .alert-sky.alert-icon-lg i {
+    color: white; }
 
 .alert-saphire {
   background-color: #1d96bf;
+  color: rgba(210, 234, 242, 0.6);
   border-color: #c0e2ed; }
   .alert-saphire hr {
     border-top-color: #acd9e7; }
@@ -12072,9 +12121,12 @@ header nav {
     color: #d2eaf2 !important; }
   .alert-saphire p {
     color: rgba(210, 234, 242, 0.6); }
+  .alert-saphire.alert-icon i, .alert-saphire.alert-icon-sm i, .alert-saphire.alert-icon-lg i {
+    color: #fafcfd; }
 
 .alert-robin-egg {
   background-color: rgba(29, 150, 191, 0.2);
+  color: rgba(249, 252, 253, 0.6);
   border-color: rgba(246, 251, 252, 0.776); }
   .alert-robin-egg hr {
     border-top-color: rgba(227, 243, 246, 0.776); }
@@ -12086,9 +12138,12 @@ header nav {
     color: rgba(249, 252, 253, 0.84) !important; }
   .alert-robin-egg p {
     color: rgba(249, 252, 253, 0.6); }
+  .alert-robin-egg.alert-icon i, .alert-robin-egg.alert-icon-sm i, .alert-robin-egg.alert-icon-lg i {
+    color: rgba(255, 255, 255, 0.84); }
 
 .alert-blueberry {
   background-color: #206f8a;
+  color: rgba(210, 226, 232, 0.6);
   border-color: #c1d7de; }
   .alert-blueberry hr {
     border-top-color: #b0ccd5; }
@@ -12100,9 +12155,12 @@ header nav {
     color: #d2e2e8 !important; }
   .alert-blueberry p {
     color: rgba(210, 226, 232, 0.6); }
+  .alert-blueberry.alert-icon i, .alert-blueberry.alert-icon-sm i, .alert-blueberry.alert-icon-lg i {
+    color: #f4f8f9; }
 
 .alert-grape {
   background-color: #5b6bb6;
+  color: rgba(222, 225, 240, 0.6);
   border-color: #d1d6eb; }
   .alert-grape hr {
     border-top-color: #bfc6e3; }
@@ -12114,9 +12172,12 @@ header nav {
     color: #dee1f0 !important; }
   .alert-grape p {
     color: rgba(222, 225, 240, 0.6); }
+  .alert-grape.alert-icon i, .alert-grape.alert-icon-sm i, .alert-grape.alert-icon-lg i {
+    color: white; }
 
 .alert-indigo {
   background-color: #6610f2;
+  color: rgba(224, 207, 252, 0.6);
   border-color: #d4bcfb; }
   .alert-indigo hr {
     border-top-color: #c5a4fa; }
@@ -12128,9 +12189,12 @@ header nav {
     color: #e0cffc !important; }
   .alert-indigo p {
     color: rgba(224, 207, 252, 0.6); }
+  .alert-indigo.alert-icon i, .alert-indigo.alert-icon-sm i, .alert-indigo.alert-icon-lg i {
+    color: white; }
 
 .alert-lavander {
   background-color: #dee1f0;
+  color: rgba(248, 249, 252, 0.6);
   border-color: #f6f7fb; }
   .alert-lavander hr {
     border-top-color: #e4e7f3; }
@@ -12142,9 +12206,12 @@ header nav {
     color: #f8f9fc !important; }
   .alert-lavander p {
     color: rgba(248, 249, 252, 0.6); }
+  .alert-lavander.alert-icon i, .alert-lavander.alert-icon-sm i, .alert-lavander.alert-icon-lg i {
+    color: white; }
 
 .alert-sea {
   background-color: #d2eaf2;
+  color: rgba(246, 251, 252, 0.6);
   border-color: #f2f9fb; }
   .alert-sea hr {
     border-top-color: #dff0f5; }
@@ -12156,9 +12223,12 @@ header nav {
     color: #f6fbfc !important; }
   .alert-sea p {
     color: rgba(246, 251, 252, 0.6); }
+  .alert-sea.alert-icon i, .alert-sea.alert-icon-sm i, .alert-sea.alert-icon-lg i {
+    color: white; }
 
 .alert-water {
   background-color: #def5fc;
+  color: rgba(248, 253, 254, 0.6);
   border-color: #f6fcfe; }
   .alert-water hr {
     border-top-color: #dff4fb; }
@@ -12170,9 +12240,12 @@ header nav {
     color: #f8fdfe !important; }
   .alert-water p {
     color: rgba(248, 253, 254, 0.6); }
+  .alert-water.alert-icon i, .alert-water.alert-icon-sm i, .alert-water.alert-icon-lg i {
+    color: white; }
 
 .alert-white {
   background-color: white;
+  color: rgba(255, 255, 255, 0.6);
   border-color: white; }
   .alert-white hr {
     border-top-color: #f2f2f2; }
@@ -12184,9 +12257,12 @@ header nav {
     color: white !important; }
   .alert-white p {
     color: rgba(255, 255, 255, 0.6); }
+  .alert-white.alert-icon i, .alert-white.alert-icon-sm i, .alert-white.alert-icon-lg i {
+    color: white; }
 
 .alert-cloud {
   background-color: #f3f4f5;
+  color: rgba(253, 253, 253, 0.6);
   border-color: #fcfcfc; }
   .alert-cloud hr {
     border-top-color: #efefef; }
@@ -12198,9 +12274,12 @@ header nav {
     color: #fdfdfd !important; }
   .alert-cloud p {
     color: rgba(253, 253, 253, 0.6); }
+  .alert-cloud.alert-icon i, .alert-cloud.alert-icon-sm i, .alert-cloud.alert-icon-lg i {
+    color: white; }
 
 .alert-moon {
   background-color: #f7f8f9;
+  color: rgba(253, 254, 254, 0.6);
   border-color: #fdfdfd; }
   .alert-moon hr {
     border-top-color: #f0f0f0; }
@@ -12212,9 +12291,12 @@ header nav {
     color: #fdfefe !important; }
   .alert-moon p {
     color: rgba(253, 254, 254, 0.6); }
+  .alert-moon.alert-icon i, .alert-moon.alert-icon-sm i, .alert-moon.alert-icon-lg i {
+    color: white; }
 
 .alert-milk {
   background-color: #f8f9fa;
+  color: rgba(254, 254, 254, 0.6);
   border-color: #fdfdfe; }
   .alert-milk hr {
     border-top-color: #ececf6; }
@@ -12226,9 +12308,12 @@ header nav {
     color: #fefefe !important; }
   .alert-milk p {
     color: rgba(254, 254, 254, 0.6); }
+  .alert-milk.alert-icon i, .alert-milk.alert-icon-sm i, .alert-milk.alert-icon-lg i {
+    color: white; }
 
 .alert-fog {
   background-color: #c2c7cc;
+  color: rgba(243, 244, 245, 0.6);
   border-color: #eeeff1; }
   .alert-fog hr {
     border-top-color: #e0e2e5; }
@@ -12240,9 +12325,12 @@ header nav {
     color: #f3f4f5 !important; }
   .alert-fog p {
     color: rgba(243, 244, 245, 0.6); }
+  .alert-fog.alert-icon i, .alert-fog.alert-icon-sm i, .alert-fog.alert-icon-lg i {
+    color: white; }
 
 .alert-concrete {
   background-color: #dde4eb;
+  color: rgba(248, 250, 251, 0.6);
   border-color: #f5f7f9; }
   .alert-concrete hr {
     border-top-color: #e5eaef; }
@@ -12254,9 +12342,12 @@ header nav {
     color: #f8fafb !important; }
   .alert-concrete p {
     color: rgba(248, 250, 251, 0.6); }
+  .alert-concrete.alert-icon i, .alert-concrete.alert-icon-sm i, .alert-concrete.alert-icon-lg i {
+    color: white; }
 
 .alert-ivory {
   background-color: #dfe1e2;
+  color: rgba(249, 249, 249, 0.6);
   border-color: #f6f7f7; }
   .alert-ivory hr {
     border-top-color: #e9ebeb; }
@@ -12268,9 +12359,12 @@ header nav {
     color: #f9f9f9 !important; }
   .alert-ivory p {
     color: rgba(249, 249, 249, 0.6); }
+  .alert-ivory.alert-icon i, .alert-ivory.alert-icon-sm i, .alert-ivory.alert-icon-lg i {
+    color: white; }
 
 .alert-aluminium {
   background-color: #959ea6;
+  color: rgba(234, 236, 237, 0.6);
   border-color: #e1e4e6; }
   .alert-aluminium hr {
     border-top-color: #d3d7da; }
@@ -12282,9 +12376,12 @@ header nav {
     color: #eaeced !important; }
   .alert-aluminium p {
     color: rgba(234, 236, 237, 0.6); }
+  .alert-aluminium.alert-icon i, .alert-aluminium.alert-icon-sm i, .alert-aluminium.alert-icon-lg i {
+    color: white; }
 
 .alert-elephant {
   background-color: #7a807f;
+  color: rgba(228, 230, 229, 0.6);
   border-color: #dadbdb; }
   .alert-elephant hr {
     border-top-color: #cdcece; }
@@ -12296,9 +12393,12 @@ header nav {
     color: #e4e6e5 !important; }
   .alert-elephant p {
     color: rgba(228, 230, 229, 0.6); }
+  .alert-elephant.alert-icon i, .alert-elephant.alert-icon-sm i, .alert-elephant.alert-icon-lg i {
+    color: #feffff; }
 
 .alert-slate {
   background-color: #3a3f42;
+  color: rgba(216, 217, 217, 0.6);
   border-color: #c8c9ca; }
   .alert-slate hr {
     border-top-color: #bbbcbd; }
@@ -12310,9 +12410,12 @@ header nav {
     color: #d8d9d9 !important; }
   .alert-slate p {
     color: rgba(216, 217, 217, 0.6); }
+  .alert-slate.alert-icon i, .alert-slate.alert-icon-sm i, .alert-slate.alert-icon-lg i {
+    color: #f2f2f2; }
 
 .alert-midnight {
   background-color: #192228;
+  color: rgba(209, 211, 212, 0.6);
   border-color: #bfc1c3; }
   .alert-midnight hr {
     border-top-color: #b2b4b7; }
@@ -12324,9 +12427,12 @@ header nav {
     color: #d1d3d4 !important; }
   .alert-midnight p {
     color: rgba(209, 211, 212, 0.6); }
+  .alert-midnight.alert-icon i, .alert-midnight.alert-icon-sm i, .alert-midnight.alert-icon-lg i {
+    color: #ebeced; }
 
 .alert-black {
   background-color: black;
+  color: rgba(204, 204, 204, 0.6);
   border-color: #b8b8b8; }
   .alert-black hr {
     border-top-color: #ababab; }
@@ -12338,6 +12444,8 @@ header nav {
     color: #cccccc !important; }
   .alert-black p {
     color: rgba(204, 204, 204, 0.6); }
+  .alert-black.alert-icon i, .alert-black.alert-icon-sm i, .alert-black.alert-icon-lg i {
+    color: #e6e6e6; }
 
 /**
   * Subtle
@@ -12398,6 +12506,7 @@ header nav {
   */
 .alert-subtle-primary {
   background-color: #def5fc;
+  color: rgba(46, 108, 124, 0.6);
   border-color: #d0f2fa; }
   .alert-subtle-primary hr {
     border-top-color: #b9ecf8; }
@@ -12412,6 +12521,7 @@ header nav {
 
 .alert-subtle-secondary {
   background-color: #d2e2e8;
+  color: rgba(17, 58, 72, 0.6);
   border-color: #c1d7de; }
   .alert-subtle-secondary hr {
     border-top-color: #b0ccd5; }
@@ -12426,6 +12536,7 @@ header nav {
 
 .alert-subtle-success {
   background-color: #d3f2df;
+  color: rgba(18, 99, 49, 0.6);
   border-color: #c1edd2; }
   .alert-subtle-success hr {
     border-top-color: #ade7c4; }
@@ -12440,6 +12551,7 @@ header nav {
 
 .alert-subtle-info {
   background-color: #dee1f0;
+  color: rgba(47, 56, 95, 0.6);
   border-color: #d1d6eb; }
   .alert-subtle-info hr {
     border-top-color: #bfc6e3; }
@@ -12454,6 +12566,7 @@ header nav {
 
 .alert-subtle-warning {
   background-color: #fff7d5;
+  color: rgba(133, 111, 24, 0.6);
   border-color: #fff4c5; }
   .alert-subtle-warning hr {
     border-top-color: #ffefac; }
@@ -12468,6 +12581,7 @@ header nav {
 
 .alert-subtle-danger {
   background-color: #f9dbd5;
+  color: rgba(116, 40, 23, 0.6);
   border-color: #f6cdc4; }
   .alert-subtle-danger hr {
     border-top-color: #f3baae; }
@@ -12482,6 +12596,7 @@ header nav {
 
 .alert-subtle-light {
   background-color: #fdfdfd;
+  color: rgba(126, 127, 127, 0.6);
   border-color: #fcfcfc; }
   .alert-subtle-light hr {
     border-top-color: #efefef; }
@@ -12496,6 +12611,7 @@ header nav {
 
 .alert-subtle-dark {
   background-color: #d8d9d9;
+  color: rgba(30, 33, 34, 0.6);
   border-color: #c8c9ca; }
   .alert-subtle-dark hr {
     border-top-color: #bbbcbd; }
@@ -12510,6 +12626,7 @@ header nav {
 
 .alert-subtle-clay {
   background-color: #f9dbd5;
+  color: rgba(116, 40, 23, 0.6);
   border-color: #f6cdc4; }
   .alert-subtle-clay hr {
     border-top-color: #f3baae; }
@@ -12524,6 +12641,7 @@ header nav {
 
 .alert-subtle-orange {
   background-color: #ffe5d0;
+  color: rgba(132, 66, 10, 0.6);
   border-color: #fedbbd; }
   .alert-subtle-orange hr {
     border-top-color: #fecda4; }
@@ -12538,6 +12656,7 @@ header nav {
 
 .alert-subtle-sun {
   background-color: #fff7d5;
+  color: rgba(133, 111, 24, 0.6);
   border-color: #fff4c5; }
   .alert-subtle-sun hr {
     border-top-color: #ffefac; }
@@ -12552,6 +12671,7 @@ header nav {
 
 .alert-subtle-mint {
   background-color: #d3f2df;
+  color: rgba(18, 99, 49, 0.6);
   border-color: #c1edd2; }
   .alert-subtle-mint hr {
     border-top-color: #ade7c4; }
@@ -12566,6 +12686,7 @@ header nav {
 
 .alert-subtle-grass {
   background-color: #d8f3cc;
+  color: rgba(32, 101, 0, 0.6);
   border-color: #c9eeb8; }
   .alert-subtle-grass hr {
     border-top-color: #b9e9a3; }
@@ -12580,6 +12701,7 @@ header nav {
 
 .alert-subtle-leaf {
   background-color: #d6f3e1;
+  color: rgba(27, 101, 56, 0.6);
   border-color: #c6eed6; }
   .alert-subtle-leaf hr {
     border-top-color: #b2e8c8; }
@@ -12594,6 +12716,7 @@ header nav {
 
 .alert-subtle-ocean {
   background-color: #cdf0ed;
+  color: rgba(2, 94, 86, 0.6);
   border-color: #b9eae6; }
   .alert-subtle-ocean hr {
     border-top-color: #a5e4df; }
@@ -12608,6 +12731,7 @@ header nav {
 
 .alert-subtle-sky {
   background-color: #def5fc;
+  color: rgba(46, 108, 124, 0.6);
   border-color: #d0f2fa; }
   .alert-subtle-sky hr {
     border-top-color: #b9ecf8; }
@@ -12622,6 +12746,7 @@ header nav {
 
 .alert-subtle-saphire {
   background-color: #d2eaf2;
+  color: rgba(15, 78, 99, 0.6);
   border-color: #c0e2ed; }
   .alert-subtle-saphire hr {
     border-top-color: #acd9e7; }
@@ -12636,6 +12761,7 @@ header nav {
 
 .alert-subtle-robin-egg {
   background-color: rgba(249, 252, 253, 0.84);
+  color: rgba(3, 16, 21, 0.6);
   border-color: rgba(246, 251, 252, 0.776); }
   .alert-subtle-robin-egg hr {
     border-top-color: rgba(227, 243, 246, 0.776); }
@@ -12650,6 +12776,7 @@ header nav {
 
 .alert-subtle-blueberry {
   background-color: #d2e2e8;
+  color: rgba(17, 58, 72, 0.6);
   border-color: #c1d7de; }
   .alert-subtle-blueberry hr {
     border-top-color: #b0ccd5; }
@@ -12664,6 +12791,7 @@ header nav {
 
 .alert-subtle-grape {
   background-color: #dee1f0;
+  color: rgba(47, 56, 95, 0.6);
   border-color: #d1d6eb; }
   .alert-subtle-grape hr {
     border-top-color: #bfc6e3; }
@@ -12678,6 +12806,7 @@ header nav {
 
 .alert-subtle-indigo {
   background-color: #e0cffc;
+  color: rgba(53, 8, 126, 0.6);
   border-color: #d4bcfb; }
   .alert-subtle-indigo hr {
     border-top-color: #c5a4fa; }
@@ -12692,6 +12821,7 @@ header nav {
 
 .alert-subtle-lavander {
   background-color: #f8f9fc;
+  color: rgba(115, 117, 125, 0.6);
   border-color: #f6f7fb; }
   .alert-subtle-lavander hr {
     border-top-color: #e4e7f3; }
@@ -12706,6 +12836,7 @@ header nav {
 
 .alert-subtle-sea {
   background-color: #f6fbfc;
+  color: rgba(109, 122, 126, 0.6);
   border-color: #f2f9fb; }
   .alert-subtle-sea hr {
     border-top-color: #dff0f5; }
@@ -12720,6 +12851,7 @@ header nav {
 
 .alert-subtle-water {
   background-color: #f8fdfe;
+  color: rgba(115, 127, 131, 0.6);
   border-color: #f6fcfe; }
   .alert-subtle-water hr {
     border-top-color: #dff4fb; }
@@ -12734,6 +12866,7 @@ header nav {
 
 .alert-subtle-white {
   background-color: white;
+  color: rgba(133, 133, 133, 0.6);
   border-color: white; }
   .alert-subtle-white hr {
     border-top-color: #f2f2f2; }
@@ -12748,6 +12881,7 @@ header nav {
 
 .alert-subtle-cloud {
   background-color: #fdfdfd;
+  color: rgba(126, 127, 127, 0.6);
   border-color: #fcfcfc; }
   .alert-subtle-cloud hr {
     border-top-color: #efefef; }
@@ -12762,6 +12896,7 @@ header nav {
 
 .alert-subtle-moon {
   background-color: #fdfefe;
+  color: rgba(128, 129, 129, 0.6);
   border-color: #fdfdfd; }
   .alert-subtle-moon hr {
     border-top-color: #f0f0f0; }
@@ -12776,6 +12911,7 @@ header nav {
 
 .alert-subtle-milk {
   background-color: #fefefe;
+  color: rgba(129, 129, 130, 0.6);
   border-color: #fdfdfe; }
   .alert-subtle-milk hr {
     border-top-color: #ececf6; }
@@ -12790,6 +12926,7 @@ header nav {
 
 .alert-subtle-fog {
   background-color: #f3f4f5;
+  color: rgba(101, 103, 106, 0.6);
   border-color: #eeeff1; }
   .alert-subtle-fog hr {
     border-top-color: #e0e2e5; }
@@ -12804,6 +12941,7 @@ header nav {
 
 .alert-subtle-concrete {
   background-color: #f8fafb;
+  color: rgba(115, 119, 122, 0.6);
   border-color: #f5f7f9; }
   .alert-subtle-concrete hr {
     border-top-color: #e5eaef; }
@@ -12818,6 +12956,7 @@ header nav {
 
 .alert-subtle-ivory {
   background-color: #f9f9f9;
+  color: rgba(116, 117, 118, 0.6);
   border-color: #f6f7f7; }
   .alert-subtle-ivory hr {
     border-top-color: #e9ebeb; }
@@ -12832,6 +12971,7 @@ header nav {
 
 .alert-subtle-aluminium {
   background-color: #eaeced;
+  color: rgba(77, 82, 86, 0.6);
   border-color: #e1e4e6; }
   .alert-subtle-aluminium hr {
     border-top-color: #d3d7da; }
@@ -12846,6 +12986,7 @@ header nav {
 
 .alert-subtle-elephant {
   background-color: #e4e6e5;
+  color: rgba(63, 67, 66, 0.6);
   border-color: #dadbdb; }
   .alert-subtle-elephant hr {
     border-top-color: #cdcece; }
@@ -12860,6 +13001,7 @@ header nav {
 
 .alert-subtle-slate {
   background-color: #d8d9d9;
+  color: rgba(30, 33, 34, 0.6);
   border-color: #c8c9ca; }
   .alert-subtle-slate hr {
     border-top-color: #bbbcbd; }
@@ -12874,6 +13016,7 @@ header nav {
 
 .alert-subtle-midnight {
   background-color: #d1d3d4;
+  color: rgba(13, 18, 21, 0.6);
   border-color: #bfc1c3; }
   .alert-subtle-midnight hr {
     border-top-color: #b2b4b7; }
@@ -12888,6 +13031,7 @@ header nav {
 
 .alert-subtle-black {
   background-color: #cccccc;
+  color: rgba(0, 0, 0, 0.6);
   border-color: #b8b8b8; }
   .alert-subtle-black hr {
     border-top-color: #ababab; }
@@ -12942,6 +13086,32 @@ header nav {
   .alert-small p {
     font-size: 0.75rem !important;
     line-height: 0.9375rem; }
+
+/**
+ * Alert Icons
+ *
+ * @section
+ * @page Alert
+ *
+ * @example
+ * <div class="alert alert-info alert-icon" role="alert">
+ *   <i class="fas fa-envelope-open-text"></i>
+ *   <p>Sent! Check your email&mdash;we've sent you an email with a link to reset your password.</p>
+ * </div>
+ * <div class="alert alert-danger alert-icon" role="alert">
+ *   <i class="fas fa-exclamation-circle"></i>
+ *   <p>Sent! Check your email&mdash;we've sent you an email with a link to reset your password.</p>
+ * </div>
+ * <div class="alert alert-success alert-icon" role="alert">
+ *   <i class="fas fa-check"></i>
+ *   <div>
+ *     <h4 class="alert-heading">Great job!</h4>
+ *     <p>You did a good thing. Good job. You deserve a cookie.</p>
+ *   </div>
+ * </div>
+ */
+.alert-icon i {
+  font-size: 2.5rem; }
 
 .media, .portfolio aside section ul.list-unstyled > li {
   display: flex;
@@ -14114,19 +14284,19 @@ button.btn-link-arrow-left-black:focus:before {
   background-color: transparent !important; }
 
 .border, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote .blockquote-footer img, .portfolio-list .card .item-info-feed article.quote blockquote .blockquote-footer img {
-  border: 1px solid rgba(149, 158, 166, 0.3) !important; }
+  border: 1px solid #b8b8b8 !important; }
 
 .border-top {
-  border-top: 1px solid rgba(149, 158, 166, 0.3) !important; }
+  border-top: 1px solid #b8b8b8 !important; }
 
 .border-right {
-  border-right: 1px solid rgba(149, 158, 166, 0.3) !important; }
+  border-right: 1px solid #b8b8b8 !important; }
 
 .border-bottom, .portfolio aside section header, .portfolio aside section .list-group-flush > li:before, .portfolio-list .card-expanded.card-total-holdings nav, .portfolio-list .card-expanded.card nav {
-  border-bottom: 1px solid rgba(149, 158, 166, 0.3) !important; }
+  border-bottom: 1px solid #b8b8b8 !important; }
 
 .border-left {
-  border-left: 1px solid rgba(149, 158, 166, 0.3) !important; }
+  border-left: 1px solid #b8b8b8 !important; }
 
 .border-0, .portfolio aside section .list-group-flush > li {
   border: 0 !important; }
@@ -14302,7 +14472,7 @@ button.btn-link-arrow-left-black:focus:before {
 .d-inline-block, .btn-link-arrow-left-primary:after, .btn-link-arrow-left-secondary:after, .btn-link-arrow-left-success:after, .btn-link-arrow-left-info:after, .btn-link-arrow-left-warning:after, .btn-link-arrow-left-danger:after, .btn-link-arrow-left-light:after, .btn-link-arrow-left-dark:after, .btn-link-arrow-left-clay:after, .btn-link-arrow-left-orange:after, .btn-link-arrow-left-sun:after, .btn-link-arrow-left-mint:after, .btn-link-arrow-left-grass:after, .btn-link-arrow-left-leaf:after, .btn-link-arrow-left-ocean:after, .btn-link-arrow-left-sky:after, .btn-link-arrow-left-saphire:after, .btn-link-arrow-left-robin-egg:after, .btn-link-arrow-left-blueberry:after, .btn-link-arrow-left-grape:after, .btn-link-arrow-left-indigo:after, .btn-link-arrow-left-lavander:after, .btn-link-arrow-left-sea:after, .btn-link-arrow-left-water:after, .btn-link-arrow-left-white:after, .btn-link-arrow-left-cloud:after, .btn-link-arrow-left-moon:after, .btn-link-arrow-left-milk:after, .btn-link-arrow-left-fog:after, .btn-link-arrow-left-concrete:after, .btn-link-arrow-left-ivory:after, .btn-link-arrow-left-aluminium:after, .btn-link-arrow-left-elephant:after, .btn-link-arrow-left-slate:after, .btn-link-arrow-left-midnight:after, .btn-link-arrow-left-black:after, .btn-link-arrow-right-primary:before, .btn-link-arrow-right-secondary:before, .btn-link-arrow-right-success:before, .btn-link-arrow-right-info:before, .btn-link-arrow-right-warning:before, .btn-link-arrow-right-danger:before, .btn-link-arrow-right-light:before, .btn-link-arrow-right-dark:before, .btn-link-arrow-right-clay:before, .btn-link-arrow-right-orange:before, .btn-link-arrow-right-sun:before, .btn-link-arrow-right-mint:before, .btn-link-arrow-right-grass:before, .btn-link-arrow-right-leaf:before, .btn-link-arrow-right-ocean:before, .btn-link-arrow-right-sky:before, .btn-link-arrow-right-saphire:before, .btn-link-arrow-right-robin-egg:before, .btn-link-arrow-right-blueberry:before, .btn-link-arrow-right-grape:before, .btn-link-arrow-right-indigo:before, .btn-link-arrow-right-lavander:before, .btn-link-arrow-right-sea:before, .btn-link-arrow-right-water:before, .btn-link-arrow-right-white:before, .btn-link-arrow-right-cloud:before, .btn-link-arrow-right-moon:before, .btn-link-arrow-right-milk:before, .btn-link-arrow-right-fog:before, .btn-link-arrow-right-concrete:before, .btn-link-arrow-right-ivory:before, .btn-link-arrow-right-aluminium:before, .btn-link-arrow-right-elephant:before, .btn-link-arrow-right-slate:before, .btn-link-arrow-right-midnight:before, .btn-link-arrow-right-black:before, .navbar-nav .nav-item a, .portfolio-list > header ul li .badge, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote .blockquote-footer cite, .portfolio-list .card .item-info-feed article.quote blockquote .blockquote-footer cite {
   display: inline-block !important; }
 
-.d-block, .campaign-list .campaign .card .card-body small, .campaign-list .campaign .card-total-holdings .card-body small, .campaign header small, .portfolio aside section .list-group-flush > li:before {
+.d-block, .alert-icon i, .campaign-list .campaign .card .card-body small, .campaign-list .campaign .card-total-holdings .card-body small, .campaign header small, .portfolio aside section .list-group-flush > li:before {
   display: block !important; }
 
 .d-table {
@@ -14314,7 +14484,7 @@ button.btn-link-arrow-left-black:focus:before {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .dl.dl-horizontal, .btn-arrow-right, .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-active.card-total-holdings .btn-wrap-left, .portfolio-list .card-active.card .btn-wrap-left, .btn-arrow-left, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, .nav-tabs, .navbar-nav .nav-item.avatar, .navbar-page-standalone, .campaign-list header .nav, .campaign-list header .portfolio-list .card-total-holdings nav, .portfolio-list .card-total-holdings .campaign-list header nav, .campaign-list header .portfolio-list .card nav, .portfolio-list .card .campaign-list header nav, .portfolio aside section .list-group-flush > li, .item-summary, .portfolio-list > header, .portfolio-list .card-total-holdings .item-details, .portfolio-list .card .item-details, .portfolio-list .card-total-holdings .item-info-feed article.quote, .portfolio-list .card .item-info-feed article.quote {
+.d-flex, .dl.dl-horizontal, .btn-arrow-right, .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-active.card-total-holdings .btn-wrap-left, .portfolio-list .card-active.card .btn-wrap-left, .btn-arrow-left, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, .nav-tabs, .navbar-nav .nav-item.avatar, .navbar-page-standalone, .alert-icon, .campaign-list header .nav, .campaign-list header .portfolio-list .card-total-holdings nav, .portfolio-list .card-total-holdings .campaign-list header nav, .campaign-list header .portfolio-list .card nav, .portfolio-list .card .campaign-list header nav, .portfolio aside section .list-group-flush > li, .item-summary, .portfolio-list > header, .portfolio-list .card-total-holdings .item-details, .portfolio-list .card .item-details, .portfolio-list .card-total-holdings .item-info-feed article.quote, .portfolio-list .card .item-info-feed article.quote {
   display: flex !important; }
 
 .d-inline-flex {
@@ -14490,7 +14660,7 @@ button.btn-link-arrow-left-black:focus:before {
 .flex-shrink-1 {
   flex-shrink: 1 !important; }
 
-.justify-content-start, .nav-link-primary a.nav-link, .nav-link-primary .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-primary nav > a, .nav-link-primary .portfolio-list .card nav > a, .portfolio-list .card .nav-link-primary nav > a, .nav-link-secondary a.nav-link, .nav-link-secondary .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-secondary nav > a, .nav-link-secondary .portfolio-list .card nav > a, .portfolio-list .card .nav-link-secondary nav > a, .nav-link-success a.nav-link, .nav-link-success .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-success nav > a, .nav-link-success .portfolio-list .card nav > a, .portfolio-list .card .nav-link-success nav > a, .nav-link-info a.nav-link, .nav-link-info .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-info nav > a, .nav-link-info .portfolio-list .card nav > a, .portfolio-list .card .nav-link-info nav > a, .nav-link-warning a.nav-link, .nav-link-warning .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-warning nav > a, .nav-link-warning .portfolio-list .card nav > a, .portfolio-list .card .nav-link-warning nav > a, .nav-link-danger a.nav-link, .nav-link-danger .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-danger nav > a, .nav-link-danger .portfolio-list .card nav > a, .portfolio-list .card .nav-link-danger nav > a, .nav-link-light a.nav-link, .nav-link-light .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-light nav > a, .nav-link-light .portfolio-list .card nav > a, .portfolio-list .card .nav-link-light nav > a, .nav-link-dark a.nav-link, .nav-link-dark .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-dark nav > a, .nav-link-dark .portfolio-list .card nav > a, .portfolio-list .card .nav-link-dark nav > a, .nav-link-clay a.nav-link, .nav-link-clay .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-clay nav > a, .nav-link-clay .portfolio-list .card nav > a, .portfolio-list .card .nav-link-clay nav > a, .nav-link-orange a.nav-link, .nav-link-orange .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-orange nav > a, .nav-link-orange .portfolio-list .card nav > a, .portfolio-list .card .nav-link-orange nav > a, .nav-link-sun a.nav-link, .nav-link-sun .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-sun nav > a, .nav-link-sun .portfolio-list .card nav > a, .portfolio-list .card .nav-link-sun nav > a, .nav-link-mint a.nav-link, .nav-link-mint .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-mint nav > a, .nav-link-mint .portfolio-list .card nav > a, .portfolio-list .card .nav-link-mint nav > a, .nav-link-grass a.nav-link, .nav-link-grass .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-grass nav > a, .nav-link-grass .portfolio-list .card nav > a, .portfolio-list .card .nav-link-grass nav > a, .nav-link-leaf a.nav-link, .nav-link-leaf .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-leaf nav > a, .nav-link-leaf .portfolio-list .card nav > a, .portfolio-list .card .nav-link-leaf nav > a, .nav-link-ocean a.nav-link, .nav-link-ocean .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-ocean nav > a, .nav-link-ocean .portfolio-list .card nav > a, .portfolio-list .card .nav-link-ocean nav > a, .nav-link-sky a.nav-link, .nav-link-sky .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-sky nav > a, .nav-link-sky .portfolio-list .card nav > a, .portfolio-list .card .nav-link-sky nav > a, .nav-link-saphire a.nav-link, .nav-link-saphire .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-saphire nav > a, .nav-link-saphire .portfolio-list .card nav > a, .portfolio-list .card .nav-link-saphire nav > a, .nav-link-robin-egg a.nav-link, .nav-link-robin-egg .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-robin-egg nav > a, .nav-link-robin-egg .portfolio-list .card nav > a, .portfolio-list .card .nav-link-robin-egg nav > a, .nav-link-blueberry a.nav-link, .nav-link-blueberry .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-blueberry nav > a, .nav-link-blueberry .portfolio-list .card nav > a, .portfolio-list .card .nav-link-blueberry nav > a, .nav-link-grape a.nav-link, .nav-link-grape .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-grape nav > a, .nav-link-grape .portfolio-list .card nav > a, .portfolio-list .card .nav-link-grape nav > a, .nav-link-indigo a.nav-link, .nav-link-indigo .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-indigo nav > a, .nav-link-indigo .portfolio-list .card nav > a, .portfolio-list .card .nav-link-indigo nav > a, .nav-link-lavander a.nav-link, .nav-link-lavander .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-lavander nav > a, .nav-link-lavander .portfolio-list .card nav > a, .portfolio-list .card .nav-link-lavander nav > a, .nav-link-sea a.nav-link, .nav-link-sea .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-sea nav > a, .nav-link-sea .portfolio-list .card nav > a, .portfolio-list .card .nav-link-sea nav > a, .nav-link-water a.nav-link, .nav-link-water .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-water nav > a, .nav-link-water .portfolio-list .card nav > a, .portfolio-list .card .nav-link-water nav > a, .nav-link-white a.nav-link, .nav-link-white .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-white nav > a, .nav-link-white .portfolio-list .card nav > a, .portfolio-list .card .nav-link-white nav > a, .nav-link-cloud a.nav-link, .nav-link-cloud .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-cloud nav > a, .nav-link-cloud .portfolio-list .card nav > a, .portfolio-list .card .nav-link-cloud nav > a, .nav-link-moon a.nav-link, .nav-link-moon .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-moon nav > a, .nav-link-moon .portfolio-list .card nav > a, .portfolio-list .card .nav-link-moon nav > a, .nav-link-milk a.nav-link, .nav-link-milk .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-milk nav > a, .nav-link-milk .portfolio-list .card nav > a, .portfolio-list .card .nav-link-milk nav > a, .nav-link-fog a.nav-link, .nav-link-fog .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-fog nav > a, .nav-link-fog .portfolio-list .card nav > a, .portfolio-list .card .nav-link-fog nav > a, .nav-link-concrete a.nav-link, .nav-link-concrete .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-concrete nav > a, .nav-link-concrete .portfolio-list .card nav > a, .portfolio-list .card .nav-link-concrete nav > a, .nav-link-ivory a.nav-link, .nav-link-ivory .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-ivory nav > a, .nav-link-ivory .portfolio-list .card nav > a, .portfolio-list .card .nav-link-ivory nav > a, .nav-link-aluminium a.nav-link, .nav-link-aluminium .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-aluminium nav > a, .nav-link-aluminium .portfolio-list .card nav > a, .portfolio-list .card .nav-link-aluminium nav > a, .nav-link-elephant a.nav-link, .portfolio-list .card-total-holdings nav a.nav-link, .portfolio-list .card nav a.nav-link, .portfolio-list .card-total-holdings .nav-link-elephant nav > a, .portfolio-list .card-total-holdings nav > a, .portfolio-list .card .nav-link-elephant nav > a, .portfolio-list .card nav > a, .nav-link-slate a.nav-link, .nav-link-slate .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-slate nav > a, .nav-link-slate .portfolio-list .card nav > a, .portfolio-list .card .nav-link-slate nav > a, .nav-link-midnight a.nav-link, .nav-link-midnight .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-midnight nav > a, .nav-link-midnight .portfolio-list .card nav > a, .portfolio-list .card .nav-link-midnight nav > a, .nav-link-black a.nav-link, .nav-link-black .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-black nav > a, .nav-link-black .portfolio-list .card nav > a, .portfolio-list .card .nav-link-black nav > a {
+.justify-content-start, .nav-link-primary a.nav-link, .nav-link-primary .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-primary nav > a, .nav-link-primary .portfolio-list .card nav > a, .portfolio-list .card .nav-link-primary nav > a, .nav-link-secondary a.nav-link, .nav-link-secondary .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-secondary nav > a, .nav-link-secondary .portfolio-list .card nav > a, .portfolio-list .card .nav-link-secondary nav > a, .nav-link-success a.nav-link, .nav-link-success .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-success nav > a, .nav-link-success .portfolio-list .card nav > a, .portfolio-list .card .nav-link-success nav > a, .nav-link-info a.nav-link, .nav-link-info .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-info nav > a, .nav-link-info .portfolio-list .card nav > a, .portfolio-list .card .nav-link-info nav > a, .nav-link-warning a.nav-link, .nav-link-warning .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-warning nav > a, .nav-link-warning .portfolio-list .card nav > a, .portfolio-list .card .nav-link-warning nav > a, .nav-link-danger a.nav-link, .nav-link-danger .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-danger nav > a, .nav-link-danger .portfolio-list .card nav > a, .portfolio-list .card .nav-link-danger nav > a, .nav-link-light a.nav-link, .nav-link-light .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-light nav > a, .nav-link-light .portfolio-list .card nav > a, .portfolio-list .card .nav-link-light nav > a, .nav-link-dark a.nav-link, .nav-link-dark .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-dark nav > a, .nav-link-dark .portfolio-list .card nav > a, .portfolio-list .card .nav-link-dark nav > a, .nav-link-clay a.nav-link, .nav-link-clay .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-clay nav > a, .nav-link-clay .portfolio-list .card nav > a, .portfolio-list .card .nav-link-clay nav > a, .nav-link-orange a.nav-link, .nav-link-orange .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-orange nav > a, .nav-link-orange .portfolio-list .card nav > a, .portfolio-list .card .nav-link-orange nav > a, .nav-link-sun a.nav-link, .nav-link-sun .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-sun nav > a, .nav-link-sun .portfolio-list .card nav > a, .portfolio-list .card .nav-link-sun nav > a, .nav-link-mint a.nav-link, .nav-link-mint .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-mint nav > a, .nav-link-mint .portfolio-list .card nav > a, .portfolio-list .card .nav-link-mint nav > a, .nav-link-grass a.nav-link, .nav-link-grass .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-grass nav > a, .nav-link-grass .portfolio-list .card nav > a, .portfolio-list .card .nav-link-grass nav > a, .nav-link-leaf a.nav-link, .nav-link-leaf .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-leaf nav > a, .nav-link-leaf .portfolio-list .card nav > a, .portfolio-list .card .nav-link-leaf nav > a, .nav-link-ocean a.nav-link, .nav-link-ocean .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-ocean nav > a, .nav-link-ocean .portfolio-list .card nav > a, .portfolio-list .card .nav-link-ocean nav > a, .nav-link-sky a.nav-link, .nav-link-sky .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-sky nav > a, .nav-link-sky .portfolio-list .card nav > a, .portfolio-list .card .nav-link-sky nav > a, .nav-link-saphire a.nav-link, .nav-link-saphire .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-saphire nav > a, .nav-link-saphire .portfolio-list .card nav > a, .portfolio-list .card .nav-link-saphire nav > a, .nav-link-robin-egg a.nav-link, .nav-link-robin-egg .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-robin-egg nav > a, .nav-link-robin-egg .portfolio-list .card nav > a, .portfolio-list .card .nav-link-robin-egg nav > a, .nav-link-blueberry a.nav-link, .nav-link-blueberry .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-blueberry nav > a, .nav-link-blueberry .portfolio-list .card nav > a, .portfolio-list .card .nav-link-blueberry nav > a, .nav-link-grape a.nav-link, .nav-link-grape .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-grape nav > a, .nav-link-grape .portfolio-list .card nav > a, .portfolio-list .card .nav-link-grape nav > a, .nav-link-indigo a.nav-link, .nav-link-indigo .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-indigo nav > a, .nav-link-indigo .portfolio-list .card nav > a, .portfolio-list .card .nav-link-indigo nav > a, .nav-link-lavander a.nav-link, .nav-link-lavander .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-lavander nav > a, .nav-link-lavander .portfolio-list .card nav > a, .portfolio-list .card .nav-link-lavander nav > a, .nav-link-sea a.nav-link, .nav-link-sea .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-sea nav > a, .nav-link-sea .portfolio-list .card nav > a, .portfolio-list .card .nav-link-sea nav > a, .nav-link-water a.nav-link, .nav-link-water .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-water nav > a, .nav-link-water .portfolio-list .card nav > a, .portfolio-list .card .nav-link-water nav > a, .nav-link-white a.nav-link, .nav-link-white .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-white nav > a, .nav-link-white .portfolio-list .card nav > a, .portfolio-list .card .nav-link-white nav > a, .nav-link-cloud a.nav-link, .nav-link-cloud .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-cloud nav > a, .nav-link-cloud .portfolio-list .card nav > a, .portfolio-list .card .nav-link-cloud nav > a, .nav-link-moon a.nav-link, .nav-link-moon .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-moon nav > a, .nav-link-moon .portfolio-list .card nav > a, .portfolio-list .card .nav-link-moon nav > a, .nav-link-milk a.nav-link, .nav-link-milk .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-milk nav > a, .nav-link-milk .portfolio-list .card nav > a, .portfolio-list .card .nav-link-milk nav > a, .nav-link-fog a.nav-link, .nav-link-fog .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-fog nav > a, .nav-link-fog .portfolio-list .card nav > a, .portfolio-list .card .nav-link-fog nav > a, .nav-link-concrete a.nav-link, .nav-link-concrete .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-concrete nav > a, .nav-link-concrete .portfolio-list .card nav > a, .portfolio-list .card .nav-link-concrete nav > a, .nav-link-ivory a.nav-link, .nav-link-ivory .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-ivory nav > a, .nav-link-ivory .portfolio-list .card nav > a, .portfolio-list .card .nav-link-ivory nav > a, .nav-link-aluminium a.nav-link, .nav-link-aluminium .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-aluminium nav > a, .nav-link-aluminium .portfolio-list .card nav > a, .portfolio-list .card .nav-link-aluminium nav > a, .nav-link-elephant a.nav-link, .portfolio-list .card-total-holdings nav a.nav-link, .portfolio-list .card nav a.nav-link, .portfolio-list .card-total-holdings .nav-link-elephant nav > a, .portfolio-list .card-total-holdings nav > a, .portfolio-list .card .nav-link-elephant nav > a, .portfolio-list .card nav > a, .nav-link-slate a.nav-link, .nav-link-slate .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-slate nav > a, .nav-link-slate .portfolio-list .card nav > a, .portfolio-list .card .nav-link-slate nav > a, .nav-link-midnight a.nav-link, .nav-link-midnight .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-midnight nav > a, .nav-link-midnight .portfolio-list .card nav > a, .portfolio-list .card .nav-link-midnight nav > a, .nav-link-black a.nav-link, .nav-link-black .portfolio-list .card-total-holdings nav > a, .portfolio-list .card-total-holdings .nav-link-black nav > a, .nav-link-black .portfolio-list .card nav > a, .portfolio-list .card .nav-link-black nav > a, .alert-icon {
   justify-content: flex-start !important; }
 
 .justify-content-end, .item-summary {
@@ -14511,7 +14681,7 @@ button.btn-link-arrow-left-black:focus:before {
 .align-items-end {
   align-items: flex-end !important; }
 
-.align-items-center, .btn-arrow-right, .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-active.card-total-holdings .btn-wrap-left, .portfolio-list .card-active.card .btn-wrap-left, .btn-arrow-left, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, .navbar-nav .nav-item.avatar, .portfolio aside section .list-group-flush > li {
+.align-items-center, .btn-arrow-right, .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-active.card-total-holdings .btn-wrap-left, .portfolio-list .card-active.card .btn-wrap-left, .btn-arrow-left, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, .navbar-nav .nav-item.avatar, .alert-icon, .portfolio aside section .list-group-flush > li {
   align-items: center !important; }
 
 .align-items-baseline {
@@ -15069,7 +15239,7 @@ button.btn-link-arrow-left-black:focus:before {
 .mx-0 {
   margin-right: 0 !important; }
 
-.mb-0, .dl.dl-horizontal > *, .dl.dl-horizontal dd + dt, .alert-small p:last-child, .card-total-holdings h2, .card-total-holdings h2 small:last-child, .portfolio aside section .list-group-flush, .portfolio aside section .list-group-flush > li:last-child, .portfolio aside section .list-group-flush > li p,
+.mb-0, .dl.dl-horizontal > *, .dl.dl-horizontal dd + dt, .alert-primary p:last-child, .alert-secondary p:last-child, .alert-success p:last-child, .alert-info p:last-child, .alert-warning p:last-child, .alert-danger p:last-child, .alert-light p:last-child, .alert-dark p:last-child, .alert-clay p:last-child, .alert-orange p:last-child, .alert-sun p:last-child, .alert-mint p:last-child, .alert-grass p:last-child, .alert-leaf p:last-child, .alert-ocean p:last-child, .alert-sky p:last-child, .alert-saphire p:last-child, .alert-robin-egg p:last-child, .alert-blueberry p:last-child, .alert-grape p:last-child, .alert-indigo p:last-child, .alert-lavander p:last-child, .alert-sea p:last-child, .alert-water p:last-child, .alert-white p:last-child, .alert-cloud p:last-child, .alert-moon p:last-child, .alert-milk p:last-child, .alert-fog p:last-child, .alert-concrete p:last-child, .alert-ivory p:last-child, .alert-aluminium p:last-child, .alert-elephant p:last-child, .alert-slate p:last-child, .alert-midnight p:last-child, .alert-black p:last-child, .alert-subtle-primary p:last-child, .alert-subtle-secondary p:last-child, .alert-subtle-success p:last-child, .alert-subtle-info p:last-child, .alert-subtle-warning p:last-child, .alert-subtle-danger p:last-child, .alert-subtle-light p:last-child, .alert-subtle-dark p:last-child, .alert-subtle-clay p:last-child, .alert-subtle-orange p:last-child, .alert-subtle-sun p:last-child, .alert-subtle-mint p:last-child, .alert-subtle-grass p:last-child, .alert-subtle-leaf p:last-child, .alert-subtle-ocean p:last-child, .alert-subtle-sky p:last-child, .alert-subtle-saphire p:last-child, .alert-subtle-robin-egg p:last-child, .alert-subtle-blueberry p:last-child, .alert-subtle-grape p:last-child, .alert-subtle-indigo p:last-child, .alert-subtle-lavander p:last-child, .alert-subtle-sea p:last-child, .alert-subtle-water p:last-child, .alert-subtle-white p:last-child, .alert-subtle-cloud p:last-child, .alert-subtle-moon p:last-child, .alert-subtle-milk p:last-child, .alert-subtle-fog p:last-child, .alert-subtle-concrete p:last-child, .alert-subtle-ivory p:last-child, .alert-subtle-aluminium p:last-child, .alert-subtle-elephant p:last-child, .alert-subtle-slate p:last-child, .alert-subtle-midnight p:last-child, .alert-subtle-black p:last-child, .alert-small p:last-child, .alert-icon .alert-heading, .card-total-holdings h2, .card-total-holdings h2 small:last-child, .portfolio aside section .list-group-flush, .portfolio aside section .list-group-flush > li:last-child, .portfolio aside section .list-group-flush > li p,
 .my-0,
 .form-group-stacked label,
 .form-group-stacked .form-control {
@@ -15154,7 +15324,7 @@ button.btn-link-arrow-left-black:focus:before {
 .my-3 {
   margin-top: 16px !important; }
 
-.mr-3, .portfolio aside section .list-group-flush > li .badge, .portfolio aside section ul.list-unstyled > li img, .portfolio-list .card-total-holdings .item-details .alert, .portfolio-list .card .item-details .alert, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote .blockquote-footer img, .portfolio-list .card .item-info-feed article.quote blockquote .blockquote-footer img,
+.mr-3, .alert-icon i, .portfolio aside section .list-group-flush > li .badge, .portfolio aside section ul.list-unstyled > li img, .portfolio-list .card-total-holdings .item-details .alert, .portfolio-list .card .item-details .alert, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote .blockquote-footer img, .portfolio-list .card .item-info-feed article.quote blockquote .blockquote-footer img,
 .mx-3 {
   margin-right: 16px !important; }
 
@@ -15308,7 +15478,7 @@ button.btn-link-arrow-left-black:focus:before {
 .px-0 {
   padding-right: 0 !important; }
 
-.pb-0, .campaign header, .portfolio aside section .list-group-flush > li:last-child,
+.pb-0, .alert-primary p:last-child, .alert-secondary p:last-child, .alert-success p:last-child, .alert-info p:last-child, .alert-warning p:last-child, .alert-danger p:last-child, .alert-light p:last-child, .alert-dark p:last-child, .alert-clay p:last-child, .alert-orange p:last-child, .alert-sun p:last-child, .alert-mint p:last-child, .alert-grass p:last-child, .alert-leaf p:last-child, .alert-ocean p:last-child, .alert-sky p:last-child, .alert-saphire p:last-child, .alert-robin-egg p:last-child, .alert-blueberry p:last-child, .alert-grape p:last-child, .alert-indigo p:last-child, .alert-lavander p:last-child, .alert-sea p:last-child, .alert-water p:last-child, .alert-white p:last-child, .alert-cloud p:last-child, .alert-moon p:last-child, .alert-milk p:last-child, .alert-fog p:last-child, .alert-concrete p:last-child, .alert-ivory p:last-child, .alert-aluminium p:last-child, .alert-elephant p:last-child, .alert-slate p:last-child, .alert-midnight p:last-child, .alert-black p:last-child, .alert-subtle-primary p:last-child, .alert-subtle-secondary p:last-child, .alert-subtle-success p:last-child, .alert-subtle-info p:last-child, .alert-subtle-warning p:last-child, .alert-subtle-danger p:last-child, .alert-subtle-light p:last-child, .alert-subtle-dark p:last-child, .alert-subtle-clay p:last-child, .alert-subtle-orange p:last-child, .alert-subtle-sun p:last-child, .alert-subtle-mint p:last-child, .alert-subtle-grass p:last-child, .alert-subtle-leaf p:last-child, .alert-subtle-ocean p:last-child, .alert-subtle-sky p:last-child, .alert-subtle-saphire p:last-child, .alert-subtle-robin-egg p:last-child, .alert-subtle-blueberry p:last-child, .alert-subtle-grape p:last-child, .alert-subtle-indigo p:last-child, .alert-subtle-lavander p:last-child, .alert-subtle-sea p:last-child, .alert-subtle-water p:last-child, .alert-subtle-white p:last-child, .alert-subtle-cloud p:last-child, .alert-subtle-moon p:last-child, .alert-subtle-milk p:last-child, .alert-subtle-fog p:last-child, .alert-subtle-concrete p:last-child, .alert-subtle-ivory p:last-child, .alert-subtle-aluminium p:last-child, .alert-subtle-elephant p:last-child, .alert-subtle-slate p:last-child, .alert-subtle-midnight p:last-child, .alert-subtle-black p:last-child, .campaign header, .portfolio aside section .list-group-flush > li:last-child,
 .py-0,
 .form-group-stacked,
 .form-group-stacked label,

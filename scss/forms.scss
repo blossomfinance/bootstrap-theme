@@ -2,7 +2,7 @@
 @import "../node_modules/bootstrap/scss/forms";
 
 /**
- * Overview
+ * Stacked Form Group
  *
  * @section
  * @page Forms
@@ -10,14 +10,15 @@
  * @example
  * <div class="p-4">
  *   <form class="was-validated">
- *     <div class="form-group-stacked">
+ *     <div class="form-group-stacked valid">
  *       <label for="exampleInputEmail1">Email address</label>
- *       <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+ *       <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
  *       <div class="invalid-feedback">Please enter a valid item</div>
  *     </div>
- *     <div class="form-group-stacked">
+ *     <div class="form-group-stacked has-error">
  *       <label for="exampleInputPassword1">Password</label>
- *       <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+ *       <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" required />
+ *       <div class="invalid-feedback">Please enter a valid item</div>
  *     </div>
  *     <div class="form-check">
  *       <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -31,34 +32,75 @@
   @extend .form-group;
   @extend .bg-white;
   @extend .py-0;
+  @include transition($input-transition);
   border-style: solid;
   border-color: $input-border-color;
   border-width: $input-border-width;
   border-radius: $input-border-radius;
   line-height: 1em;
-  min-height: 80px;
+  min-height: 60px;
+
   label {
     @extend .py-0;
     @extend .my-0;
     padding-left: $input-padding-x;
     font-size: $input-font-size-sm;
   }
+
   .form-control {
     @extend .py-0;
     @extend .my-0;
+    @extend .align-top;
     border: none;
+    height: 24px;
     &:focus {
       border: none;
       box-shadow: none;
     }
   }
+
   .form-text {
     padding-left: $input-padding-x;
   }
+
   .invalid-feedback {
     @extend .py-0;
     @extend .mt-0;
+    display: none;
     padding-left: $input-padding-x;
+  }
+
+  &.has-error {
+    border-color: $danger;
+    @include box-shadow($input-box-shadow-error);
+    label {
+      color: $danger;
+    }
+    .form-control {
+      &::placeholder {
+        color: $danger;
+      }
+    }
+    .invalid-feedback {
+      color: $danger;
+      @extend .d-block;
+    }
+  }
+
+  &.valid {
+    border-color: $success;
+    @include box-shadow($input-box-shadow-success);
+    label {
+      color: $success;
+    }
+    .form-control {
+      &::placeholder {
+        color: $success;
+      }
+    }
+    .invalid-feedback {
+      display: none;
+    }
   }
 }
 

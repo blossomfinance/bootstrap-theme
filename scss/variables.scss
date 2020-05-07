@@ -508,6 +508,9 @@ $input-color:                           $gray-900;
 $input-border-color:                    $gray-500;
 $input-border-width:                    1px;
 // $input-box-shadow:                      inset 0 1px 1px rgba($black, .075) !default;
+$input-box-shadow-success:              inset 0 1px 1px rgba($success, 0.075);
+$input-box-shadow-error:                inset 0 1px 1px rgba($danger, 0.075);
+
 //
 $input-border-radius:                   $border-radius;
 $input-border-radius-lg:                $input-border-radius;
@@ -532,7 +535,7 @@ $input-border-radius-lg:                $input-border-radius;
 // $input-height-sm:                       add($input-line-height-sm * 1em, add($input-padding-y-sm * 2, $input-height-border, false)) !default;
 // $input-height-lg:                       add($input-line-height-lg * 1em, add($input-padding-y-lg * 2, $input-height-border, false)) !default;
 //
-// $input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+$input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 //
 // $form-text-margin-top:                  .25rem !default;
 //

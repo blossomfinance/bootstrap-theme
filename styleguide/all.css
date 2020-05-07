@@ -6871,7 +6871,7 @@ textarea.form-control {
       margin-bottom: 0; } }
 
 /**
- * Overview
+ * Stacked Form Group
  *
  * @section
  * @page Forms
@@ -6879,14 +6879,15 @@ textarea.form-control {
  * @example
  * <div class="p-4">
  *   <form class="was-validated">
- *     <div class="form-group-stacked">
+ *     <div class="form-group-stacked valid">
  *       <label for="exampleInputEmail1">Email address</label>
- *       <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+ *       <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
  *       <div class="invalid-feedback">Please enter a valid item</div>
  *     </div>
- *     <div class="form-group-stacked">
+ *     <div class="form-group-stacked has-error">
  *       <label for="exampleInputPassword1">Password</label>
- *       <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+ *       <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" required />
+ *       <div class="invalid-feedback">Please enter a valid item</div>
  *     </div>
  *     <div class="form-check">
  *       <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -6897,24 +6898,46 @@ textarea.form-control {
  * </div>
  */
 .form-group-stacked {
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   border-style: solid;
   border-color: #dfe1e2;
   border-width: 1px;
   border-radius: 4px;
   line-height: 1em;
-  min-height: 80px; }
+  min-height: 60px; }
+  @media (prefers-reduced-motion: reduce) {
+    .form-group-stacked {
+      transition: none; } }
   .form-group-stacked label {
     padding-left: 0.75rem;
     font-size: 0.75rem; }
   .form-group-stacked .form-control {
-    border: none; }
+    border: none;
+    height: 24px; }
     .form-group-stacked .form-control:focus {
       border: none;
       box-shadow: none; }
   .form-group-stacked .form-text {
     padding-left: 0.75rem; }
   .form-group-stacked .invalid-feedback {
+    display: none;
     padding-left: 0.75rem; }
+  .form-group-stacked.has-error {
+    border-color: #e04c2d; }
+    .form-group-stacked.has-error label {
+      color: #e04c2d; }
+    .form-group-stacked.has-error .form-control::placeholder {
+      color: #e04c2d; }
+    .form-group-stacked.has-error .invalid-feedback {
+      color: #e04c2d; }
+  .form-group-stacked.valid {
+    border-color: #23be5f; }
+    .form-group-stacked.valid label {
+      color: #23be5f; }
+    .form-group-stacked.valid .form-control::placeholder {
+      color: #23be5f; }
+    .form-group-stacked.valid .invalid-feedback {
+      display: none; }
 
 .was-validated .form-control:valid:focus {
   border: none;
@@ -13690,7 +13713,7 @@ header nav {
 .align-baseline {
   vertical-align: baseline !important; }
 
-.align-top {
+.align-top, .form-group-stacked .form-control {
   vertical-align: top !important; }
 
 .align-middle, .portfolio aside section .list-group-flush > li p, .portfolio-list > header ul li {
@@ -14498,7 +14521,7 @@ button.btn-link-arrow-left-black:focus:before {
 .d-inline-block, .btn-link-arrow-left-primary:after, .btn-link-arrow-left-secondary:after, .btn-link-arrow-left-success:after, .btn-link-arrow-left-info:after, .btn-link-arrow-left-warning:after, .btn-link-arrow-left-danger:after, .btn-link-arrow-left-light:after, .btn-link-arrow-left-dark:after, .btn-link-arrow-left-clay:after, .btn-link-arrow-left-orange:after, .btn-link-arrow-left-sun:after, .btn-link-arrow-left-mint:after, .btn-link-arrow-left-grass:after, .btn-link-arrow-left-leaf:after, .btn-link-arrow-left-ocean:after, .btn-link-arrow-left-sky:after, .btn-link-arrow-left-saphire:after, .btn-link-arrow-left-robin-egg:after, .btn-link-arrow-left-blueberry:after, .btn-link-arrow-left-grape:after, .btn-link-arrow-left-indigo:after, .btn-link-arrow-left-lavander:after, .btn-link-arrow-left-sea:after, .btn-link-arrow-left-water:after, .btn-link-arrow-left-white:after, .btn-link-arrow-left-cloud:after, .btn-link-arrow-left-moon:after, .btn-link-arrow-left-milk:after, .btn-link-arrow-left-fog:after, .btn-link-arrow-left-concrete:after, .btn-link-arrow-left-ivory:after, .btn-link-arrow-left-aluminium:after, .btn-link-arrow-left-elephant:after, .btn-link-arrow-left-slate:after, .btn-link-arrow-left-midnight:after, .btn-link-arrow-left-black:after, .btn-link-arrow-right-primary:before, .btn-link-arrow-right-secondary:before, .btn-link-arrow-right-success:before, .btn-link-arrow-right-info:before, .btn-link-arrow-right-warning:before, .btn-link-arrow-right-danger:before, .btn-link-arrow-right-light:before, .btn-link-arrow-right-dark:before, .btn-link-arrow-right-clay:before, .btn-link-arrow-right-orange:before, .btn-link-arrow-right-sun:before, .btn-link-arrow-right-mint:before, .btn-link-arrow-right-grass:before, .btn-link-arrow-right-leaf:before, .btn-link-arrow-right-ocean:before, .btn-link-arrow-right-sky:before, .btn-link-arrow-right-saphire:before, .btn-link-arrow-right-robin-egg:before, .btn-link-arrow-right-blueberry:before, .btn-link-arrow-right-grape:before, .btn-link-arrow-right-indigo:before, .btn-link-arrow-right-lavander:before, .btn-link-arrow-right-sea:before, .btn-link-arrow-right-water:before, .btn-link-arrow-right-white:before, .btn-link-arrow-right-cloud:before, .btn-link-arrow-right-moon:before, .btn-link-arrow-right-milk:before, .btn-link-arrow-right-fog:before, .btn-link-arrow-right-concrete:before, .btn-link-arrow-right-ivory:before, .btn-link-arrow-right-aluminium:before, .btn-link-arrow-right-elephant:before, .btn-link-arrow-right-slate:before, .btn-link-arrow-right-midnight:before, .btn-link-arrow-right-black:before, .navbar-nav .nav-item a, .portfolio-list > header ul li .badge, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote .blockquote-footer cite, .portfolio-list .card .item-info-feed article.quote blockquote .blockquote-footer cite {
   display: inline-block !important; }
 
-.d-block, .alert-icon i, .campaign-list .campaign .card .card-body small, .campaign-list .campaign .card-total-holdings .card-body small, .campaign header small, .portfolio aside section .list-group-flush > li:before {
+.d-block, .form-group-stacked.has-error .invalid-feedback, .alert-icon i, .campaign-list .campaign .card .card-body small, .campaign-list .campaign .card-total-holdings .card-body small, .campaign header small, .portfolio aside section .list-group-flush > li:before {
   display: block !important; }
 
 .d-table {

@@ -6743,10 +6743,14 @@ textarea.form-control {
     border-color: #e04c2d; }
     .form-group-stacked.has-error label {
       color: #e04c2d; }
-    .form-group-stacked.has-error .form-control::placeholder {
+    .form-group-stacked.has-error .form-control {
       color: #e04c2d; }
+      .form-group-stacked.has-error .form-control::placeholder {
+        color: #e04c2d; }
     .form-group-stacked.has-error .invalid-feedback {
       color: #e04c2d; }
+      .form-group-stacked.has-error .invalid-feedback::placeholder {
+        color: #e04c2d; }
   .form-group-stacked.valid {
     border-color: #23be5f; }
     .form-group-stacked.valid label {

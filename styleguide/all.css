@@ -6881,16 +6881,16 @@ textarea.form-control {
  *   <form class="was-validated">
  *     <div class="form-group-stacked valid">
  *       <label for="exampleInputEmail1">Email address</label>
- *       <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+ *       <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="foo@bar.com" />
  *       <div class="invalid-feedback">Please enter a valid item</div>
  *     </div>
  *     <div class="form-group-stacked has-error">
  *       <label for="exampleInputPassword1">Password</label>
- *       <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" required />
+ *       <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" required minlength="10" value="123" />
  *       <div class="invalid-feedback">Please enter a valid item</div>
  *     </div>
  *     <div class="form-check">
- *       <input type="checkbox" class="form-check-input" id="exampleCheck1">
+ *       <input type="checkbox" class="form-check-input" id="exampleCheck1" required />
  *       <label class="form-check-label" for="exampleCheck1">Check me out</label>
  *     </div>
  *     <button type="submit" class="btn btn-primary">Submit</button>
@@ -6926,10 +6926,14 @@ textarea.form-control {
     border-color: #e04c2d; }
     .form-group-stacked.has-error label {
       color: #e04c2d; }
-    .form-group-stacked.has-error .form-control::placeholder {
+    .form-group-stacked.has-error .form-control {
       color: #e04c2d; }
+      .form-group-stacked.has-error .form-control::placeholder {
+        color: #e04c2d; }
     .form-group-stacked.has-error .invalid-feedback {
       color: #e04c2d; }
+      .form-group-stacked.has-error .invalid-feedback::placeholder {
+        color: #e04c2d; }
   .form-group-stacked.valid {
     border-color: #23be5f; }
     .form-group-stacked.valid label {

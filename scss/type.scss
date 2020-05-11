@@ -176,7 +176,10 @@ p {
 .dl {
   @extend .m-0;
   @extend .p-0;
-  & > * {
+  & > dd,
+  & > dt,
+  & > * > dd,
+  & > * > dt {
     @extend .m-0;
     @extend .py-1;
     @extend .text-left;
@@ -192,7 +195,10 @@ p {
     @extend .d-flex;
     flex-flow: column wrap;
     max-height: 48px;
-    & > * {
+    & > dd,
+    & > dt,
+    & > * > dd,
+    & > * > dt {
       @extend .m-0;
       @extend .mb-0;
     }
@@ -240,10 +246,12 @@ p {
 
 // colors
 :not(.bg-dark) {
-  * > dt {
+  & > dt,
+  & > * > dt {
     color: $elephant;
   }
-  & > dd {
+  & > dd,
+  & > * > dd {
     color: $midnight;
   }
 }
@@ -283,10 +291,12 @@ p {
  */
 .bg-dark {
   color: $white !important;
-  & > dt {
+  & > dt,
+  & > * > dt {
     color: $white !important;
   }
-  & > dd {
+  & > dd,
+  & > * > dd {
     color: $white !important;
   }
 }

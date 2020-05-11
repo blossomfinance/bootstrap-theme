@@ -212,8 +212,8 @@ p {
 
   &.dl-icon {
     @extend .px-5;
-    & > dd,
-    & > dt {
+    dd,
+    dt {
       margin-left: 56px !important;
     }
 

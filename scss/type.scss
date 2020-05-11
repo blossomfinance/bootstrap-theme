@@ -173,7 +173,6 @@ p {
  *     <dt>Governing Law</dt>
  * </dl>
  */
-
 .dl {
   @extend .m-0;
   @extend .p-0;
@@ -241,24 +240,53 @@ p {
 
 // colors
 :not(.bg-dark) {
-  dt {
-    @extend .text-elephant;
+  * > dt {
+    color: $elephant;
   }
-  dd {
-    @extend .text-midnight;
+  & > dd {
+    color: $midnight;
   }
 }
 
-.dl.bg-dark {
-  @extend .text-white;
+
+/**
+ * Dark Definition List
+ *
+ * Reverse type with light icons and text
+ *
+ * @section
+ * @page Typeography
+ *
+ * @example
+ * <dl class="dl dl-list dl-icon bg-dark pt-5 pb-6">
+ *   <dd>13%</dd>
+ *     <dt>
+ *       <i class="icon icon-growth"></i>
+ *       Gross AROI<sup>1</sup>
+ *    </dt>
+ *   <dd>12 Months</dd>
+ *     <dt>
+ *       <i class="icon icon-calendar"></i>
+ *       Maturity / Term
+ *     </dt>
+ *   <dd>Bali, Indonesia</dd>
+ *     <dt>
+ *       <i class="icon icon-globe"></i>
+ *       Project Location
+ *     </dt>
+ *   <dd>Indonesia</dd>
+ *     <dt>
+ *       <i class="icon icon-scales-of-justice"></i>
+ *       Governing Law
+ *     </dt>
+ * </dl>
+ */
+.bg-dark {
   color: $white !important;
-  & > * {
+  & > dt {
     color: $white !important;
   }
-  & > dt {
-    @extend .text-white;
-  }
   & > dd {
-    @extend .text-white;
+    color: $white !important;
   }
 }

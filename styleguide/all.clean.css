@@ -5626,8 +5626,8 @@ p {
   flex-flow: column wrap;
   max-height: 48px; }
 
-.dl.dl-icon > dd,
-.dl.dl-icon > dt {
+.dl.dl-icon dd,
+.dl.dl-icon dt {
   margin-left: 56px !important; }
 
 .dl.dl-icon dt {

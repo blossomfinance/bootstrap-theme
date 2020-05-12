@@ -5764,7 +5764,7 @@ p {
  * @page Typeography
  *
  * @example
- * <dl class="dl dl-horizontal">
+ * <dl class="dl dl-horizontal mb-5">
  *   <dd>13%</dd>
  *     <dt>Gross AROI<sup>1</sup></dt>
  *   <dd>12 Months</dd>
@@ -5798,12 +5798,10 @@ p {
     bottom: 8px;
     font-size: 40px; }
 
-:not(.bg-dark):not(.btn-link-arrow-right-dark:after):not(.btn-link-arrow-right-dark:before):not(.btn-link-arrow-left-dark:after):not(.btn-link-arrow-left-dark:before) > dt,
-:not(.bg-dark):not(.btn-link-arrow-right-dark:after):not(.btn-link-arrow-right-dark:before):not(.btn-link-arrow-left-dark:after):not(.btn-link-arrow-left-dark:before) > * > dt {
+:not(.bg-dark):not(.btn-link-arrow-right-dark:after):not(.btn-link-arrow-right-dark:before):not(.btn-link-arrow-left-dark:after):not(.btn-link-arrow-left-dark:before) > dt {
   color: #7a807f; }
 
-:not(.bg-dark):not(.btn-link-arrow-right-dark:after):not(.btn-link-arrow-right-dark:before):not(.btn-link-arrow-left-dark:after):not(.btn-link-arrow-left-dark:before) > dd,
-:not(.bg-dark):not(.btn-link-arrow-right-dark:after):not(.btn-link-arrow-right-dark:before):not(.btn-link-arrow-left-dark:after):not(.btn-link-arrow-left-dark:before) > * > dd {
+:not(.bg-dark):not(.btn-link-arrow-right-dark:after):not(.btn-link-arrow-right-dark:before):not(.btn-link-arrow-left-dark:after):not(.btn-link-arrow-left-dark:before) > dd {
   color: #192228; }
 
 /**
@@ -5840,19 +5838,9 @@ p {
  */
 .bg-dark, .btn-link-arrow-right-dark:after, .btn-link-arrow-right-dark:before, .btn-link-arrow-left-dark:after, .btn-link-arrow-left-dark:before {
   color: #ffffff !important; }
-  .bg-dark > dt, .btn-link-arrow-right-dark:after > dt, .btn-link-arrow-right-dark:before > dt, .btn-link-arrow-left-dark:after > dt, .btn-link-arrow-left-dark:before > dt,
-  .bg-dark > * > dt,
-  .btn-link-arrow-right-dark:after > * > dt,
-  .btn-link-arrow-right-dark:before > * > dt,
-  .btn-link-arrow-left-dark:after > * > dt,
-  .btn-link-arrow-left-dark:before > * > dt {
+  .bg-dark > dt, .btn-link-arrow-right-dark:after > dt, .btn-link-arrow-right-dark:before > dt, .btn-link-arrow-left-dark:after > dt, .btn-link-arrow-left-dark:before > dt {
     color: #ffffff !important; }
-  .bg-dark > dd, .btn-link-arrow-right-dark:after > dd, .btn-link-arrow-right-dark:before > dd, .btn-link-arrow-left-dark:after > dd, .btn-link-arrow-left-dark:before > dd,
-  .bg-dark > * > dd,
-  .btn-link-arrow-right-dark:after > * > dd,
-  .btn-link-arrow-right-dark:before > * > dd,
-  .btn-link-arrow-left-dark:after > * > dd,
-  .btn-link-arrow-left-dark:before > * > dd {
+  .bg-dark > dd, .btn-link-arrow-right-dark:after > dd, .btn-link-arrow-right-dark:before > dd, .btn-link-arrow-left-dark:after > dd, .btn-link-arrow-left-dark:before > dd {
     color: #ffffff !important; }
 
 .img-fluid, .campaign-detail .img-splash, .portfolio-list .card-total-holdings .item-info-feed article.caption-image img, .portfolio-list .card .item-info-feed article.caption-image img {
@@ -15337,10 +15325,8 @@ button.btn-link-arrow-left-black:focus:before {
 .m-0, .dl, .dl > dd,
 .dl > dt,
 .dl > * > dd,
-.dl > * > dt, .dl.dl-horizontal > dd,
-.dl.dl-horizontal > dt,
-.dl.dl-horizontal > * > dd,
-.dl.dl-horizontal > * > dt, .nav-tabs, .portfolio-list .card-total-holdings .item-info-feed article.caption-image img + p, .portfolio-list .card .item-info-feed article.caption-image img + p {
+.dl > * > dt, .dl.dl-horizontal dd,
+.dl.dl-horizontal dt, .nav-tabs, .portfolio-list .card-total-holdings .item-info-feed article.caption-image img + p, .portfolio-list .card .item-info-feed article.caption-image img + p {
   margin: 0 !important; }
 
 .mt-0, .form-group-stacked .invalid-feedback, .portfolio aside section:first-child, .portfolio-list > header h1,
@@ -15353,10 +15339,8 @@ button.btn-link-arrow-left-black:focus:before {
 .mx-0 {
   margin-right: 0 !important; }
 
-.mb-0, .dl.dl-horizontal > dd,
-.dl.dl-horizontal > dt,
-.dl.dl-horizontal > * > dd,
-.dl.dl-horizontal > * > dt, .dl.dl-horizontal dd + dt, .alert-primary p:last-child, .alert-secondary p:last-child, .alert-success p:last-child, .alert-info p:last-child, .alert-warning p:last-child, .alert-danger p:last-child, .alert-light p:last-child, .alert-dark p:last-child, .alert-clay p:last-child, .alert-orange p:last-child, .alert-sun p:last-child, .alert-mint p:last-child, .alert-grass p:last-child, .alert-leaf p:last-child, .alert-ocean p:last-child, .alert-sky p:last-child, .alert-saphire p:last-child, .alert-robin-egg p:last-child, .alert-blueberry p:last-child, .alert-grape p:last-child, .alert-indigo p:last-child, .alert-lavander p:last-child, .alert-sea p:last-child, .alert-water p:last-child, .alert-white p:last-child, .alert-cloud p:last-child, .alert-moon p:last-child, .alert-milk p:last-child, .alert-fog p:last-child, .alert-concrete p:last-child, .alert-ivory p:last-child, .alert-aluminium p:last-child, .alert-elephant p:last-child, .alert-slate p:last-child, .alert-midnight p:last-child, .alert-black p:last-child, .alert-subtle-primary p:last-child, .alert-subtle-secondary p:last-child, .alert-subtle-success p:last-child, .alert-subtle-info p:last-child, .alert-subtle-warning p:last-child, .alert-subtle-danger p:last-child, .alert-subtle-light p:last-child, .alert-subtle-dark p:last-child, .alert-subtle-clay p:last-child, .alert-subtle-orange p:last-child, .alert-subtle-sun p:last-child, .alert-subtle-mint p:last-child, .alert-subtle-grass p:last-child, .alert-subtle-leaf p:last-child, .alert-subtle-ocean p:last-child, .alert-subtle-sky p:last-child, .alert-subtle-saphire p:last-child, .alert-subtle-robin-egg p:last-child, .alert-subtle-blueberry p:last-child, .alert-subtle-grape p:last-child, .alert-subtle-indigo p:last-child, .alert-subtle-lavander p:last-child, .alert-subtle-sea p:last-child, .alert-subtle-water p:last-child, .alert-subtle-white p:last-child, .alert-subtle-cloud p:last-child, .alert-subtle-moon p:last-child, .alert-subtle-milk p:last-child, .alert-subtle-fog p:last-child, .alert-subtle-concrete p:last-child, .alert-subtle-ivory p:last-child, .alert-subtle-aluminium p:last-child, .alert-subtle-elephant p:last-child, .alert-subtle-slate p:last-child, .alert-subtle-midnight p:last-child, .alert-subtle-black p:last-child, .alert-small p:last-child, .alert-icon .alert-heading, .card-total-holdings h2, .card-total-holdings h2 small:last-child, .portfolio aside section .list-group-flush, .portfolio aside section .list-group-flush > li:last-child, .portfolio aside section .list-group-flush > li p,
+.mb-0, .dl.dl-horizontal dd,
+.dl.dl-horizontal dt, .dl.dl-horizontal dd + dt, .alert-primary p:last-child, .alert-secondary p:last-child, .alert-success p:last-child, .alert-info p:last-child, .alert-warning p:last-child, .alert-danger p:last-child, .alert-light p:last-child, .alert-dark p:last-child, .alert-clay p:last-child, .alert-orange p:last-child, .alert-sun p:last-child, .alert-mint p:last-child, .alert-grass p:last-child, .alert-leaf p:last-child, .alert-ocean p:last-child, .alert-sky p:last-child, .alert-saphire p:last-child, .alert-robin-egg p:last-child, .alert-blueberry p:last-child, .alert-grape p:last-child, .alert-indigo p:last-child, .alert-lavander p:last-child, .alert-sea p:last-child, .alert-water p:last-child, .alert-white p:last-child, .alert-cloud p:last-child, .alert-moon p:last-child, .alert-milk p:last-child, .alert-fog p:last-child, .alert-concrete p:last-child, .alert-ivory p:last-child, .alert-aluminium p:last-child, .alert-elephant p:last-child, .alert-slate p:last-child, .alert-midnight p:last-child, .alert-black p:last-child, .alert-subtle-primary p:last-child, .alert-subtle-secondary p:last-child, .alert-subtle-success p:last-child, .alert-subtle-info p:last-child, .alert-subtle-warning p:last-child, .alert-subtle-danger p:last-child, .alert-subtle-light p:last-child, .alert-subtle-dark p:last-child, .alert-subtle-clay p:last-child, .alert-subtle-orange p:last-child, .alert-subtle-sun p:last-child, .alert-subtle-mint p:last-child, .alert-subtle-grass p:last-child, .alert-subtle-leaf p:last-child, .alert-subtle-ocean p:last-child, .alert-subtle-sky p:last-child, .alert-subtle-saphire p:last-child, .alert-subtle-robin-egg p:last-child, .alert-subtle-blueberry p:last-child, .alert-subtle-grape p:last-child, .alert-subtle-indigo p:last-child, .alert-subtle-lavander p:last-child, .alert-subtle-sea p:last-child, .alert-subtle-water p:last-child, .alert-subtle-white p:last-child, .alert-subtle-cloud p:last-child, .alert-subtle-moon p:last-child, .alert-subtle-milk p:last-child, .alert-subtle-fog p:last-child, .alert-subtle-concrete p:last-child, .alert-subtle-ivory p:last-child, .alert-subtle-aluminium p:last-child, .alert-subtle-elephant p:last-child, .alert-subtle-slate p:last-child, .alert-subtle-midnight p:last-child, .alert-subtle-black p:last-child, .alert-small p:last-child, .alert-icon .alert-heading, .card-total-holdings h2, .card-total-holdings h2 small:last-child, .portfolio aside section .list-group-flush, .portfolio aside section .list-group-flush > li:last-child, .portfolio aside section .list-group-flush > li p,
 .my-0,
 .form-group-stacked label,
 .form-group-stacked .form-control {

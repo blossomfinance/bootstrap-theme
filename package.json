@@ -1,6 +1,6 @@
 {
   "name": "blossom-bootstrap-theme",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "description": "Blossom base branded theme for Bootstrap 4",
   "main": "index.js",
   "srcDir": "scss",

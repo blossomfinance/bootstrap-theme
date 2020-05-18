@@ -1,0 +1,68 @@
+
+$steps-circle-size: 14px;
+$steps-circle-border-width: 2px;
+$steps-circle-color: $gray-700;
+$steps-circle-color-active: $primary;
+$steps-circle-color-completed: $primary;
+
+$steps-circle-size-lg: $steps-circle-size * 1.5;
+$steps-circle-border-width-lg: $steps-circle-border-width * 1.5;
+
+/**
+ * Circular Steps Indicator
+ *
+ * @section
+ * @page Multi-Step Flow
+ *
+ * @example
+ * <ol class="steps-circle">
+ *   <li class="completed">1</li>
+ *   <li class="active">2</li>
+ *   <li>3</li>
+ * </ol>
+ */
+
+.steps {
+  @extend .m-0;
+  @extend .p-0;
+  @extend .d-flex;
+  @extend .justify-content-center;
+  @extend .align-items-center;
+}
+
+.steps-circle {
+  @extend .steps;
+  & > li {
+    @extend .p-0;
+    @extend .mx-3;
+    @extend .my-3;
+    @extend .d-block;
+    color: transparent !important;
+    list-style-type: none !important;
+    border-width: $steps-circle-border-width;
+    border-radius: $steps-circle-size;
+    border-color: $steps-circle-color;
+    border-style: solid;
+    width: $steps-circle-size;
+    height: $steps-circle-size;
+    background-color: transparent;
+    // display: inline-block;
+    &.active {
+      border-color: $steps-circle-color-active !important;
+      background-color: transparent;
+    }
+    &.completed {
+      border-color: $steps-circle-color-completed !important;
+      background-color: $steps-circle-color-completed !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    & > li {      
+      border-width: $steps-circle-border-width-lg !important;
+      width: $steps-circle-size-lg !important;
+      height: $steps-circle-size-lg !important;
+      border-radius: $steps-circle-size-lg !important;
+    }
+  }
+}

@@ -14568,7 +14568,7 @@ button.btn-link-arrow-left-black:focus:before {
 .d-inline-block, .btn-link-arrow-left-primary:after, .btn-link-arrow-left-secondary:after, .btn-link-arrow-left-success:after, .btn-link-arrow-left-info:after, .btn-link-arrow-left-warning:after, .btn-link-arrow-left-danger:after, .btn-link-arrow-left-light:after, .btn-link-arrow-left-dark:after, .btn-link-arrow-left-clay:after, .btn-link-arrow-left-orange:after, .btn-link-arrow-left-sun:after, .btn-link-arrow-left-mint:after, .btn-link-arrow-left-grass:after, .btn-link-arrow-left-leaf:after, .btn-link-arrow-left-ocean:after, .btn-link-arrow-left-sky:after, .btn-link-arrow-left-saphire:after, .btn-link-arrow-left-robin-egg:after, .btn-link-arrow-left-blueberry:after, .btn-link-arrow-left-grape:after, .btn-link-arrow-left-indigo:after, .btn-link-arrow-left-lavander:after, .btn-link-arrow-left-sea:after, .btn-link-arrow-left-water:after, .btn-link-arrow-left-white:after, .btn-link-arrow-left-cloud:after, .btn-link-arrow-left-moon:after, .btn-link-arrow-left-milk:after, .btn-link-arrow-left-fog:after, .btn-link-arrow-left-concrete:after, .btn-link-arrow-left-ivory:after, .btn-link-arrow-left-aluminium:after, .btn-link-arrow-left-elephant:after, .btn-link-arrow-left-slate:after, .btn-link-arrow-left-midnight:after, .btn-link-arrow-left-black:after, .btn-link-arrow-right-primary:before, .btn-link-arrow-right-secondary:before, .btn-link-arrow-right-success:before, .btn-link-arrow-right-info:before, .btn-link-arrow-right-warning:before, .btn-link-arrow-right-danger:before, .btn-link-arrow-right-light:before, .btn-link-arrow-right-dark:before, .btn-link-arrow-right-clay:before, .btn-link-arrow-right-orange:before, .btn-link-arrow-right-sun:before, .btn-link-arrow-right-mint:before, .btn-link-arrow-right-grass:before, .btn-link-arrow-right-leaf:before, .btn-link-arrow-right-ocean:before, .btn-link-arrow-right-sky:before, .btn-link-arrow-right-saphire:before, .btn-link-arrow-right-robin-egg:before, .btn-link-arrow-right-blueberry:before, .btn-link-arrow-right-grape:before, .btn-link-arrow-right-indigo:before, .btn-link-arrow-right-lavander:before, .btn-link-arrow-right-sea:before, .btn-link-arrow-right-water:before, .btn-link-arrow-right-white:before, .btn-link-arrow-right-cloud:before, .btn-link-arrow-right-moon:before, .btn-link-arrow-right-milk:before, .btn-link-arrow-right-fog:before, .btn-link-arrow-right-concrete:before, .btn-link-arrow-right-ivory:before, .btn-link-arrow-right-aluminium:before, .btn-link-arrow-right-elephant:before, .btn-link-arrow-right-slate:before, .btn-link-arrow-right-midnight:before, .btn-link-arrow-right-black:before, .navbar-nav .nav-item a, .portfolio-list > header ul li .badge, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote .blockquote-footer cite, .portfolio-list .card .item-info-feed article.quote blockquote .blockquote-footer cite {
   display: inline-block !important; }
 
-.d-block, .form-group-stacked.has-error .invalid-feedback, .alert-icon i, .campaign-list .campaign-list-item .card .card-body small, .campaign-list .campaign-list-item .card-total-holdings .card-body small, .campaign-detail header small, .portfolio aside section .list-group-flush > li:before {
+.d-block, .form-group-stacked.has-error .invalid-feedback, .alert-icon i, .campaign-list .campaign-list-item .card .card-body small, .campaign-list .campaign-list-item .card-total-holdings .card-body small, .campaign-detail header small, .steps-circle > li, .portfolio aside section .list-group-flush > li:before {
   display: block !important; }
 
 .d-table {
@@ -14580,7 +14580,7 @@ button.btn-link-arrow-left-black:focus:before {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .dl.dl-horizontal, .btn-arrow-right, .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-active.card-total-holdings .btn-wrap-left, .portfolio-list .card-active.card .btn-wrap-left, .btn-arrow-left, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, .nav-tabs, .navbar-nav .nav-item.avatar, .navbar-page-standalone, .alert-icon, .campaign-list header .nav, .campaign-list header .portfolio-list .card-total-holdings nav, .portfolio-list .card-total-holdings .campaign-list header nav, .campaign-list header .portfolio-list .card nav, .portfolio-list .card .campaign-list header nav, .portfolio aside section .list-group-flush > li, .item-summary, .portfolio-list > header, .portfolio-list .card-total-holdings .item-details, .portfolio-list .card .item-details, .portfolio-list .card-total-holdings .item-info-feed article.quote, .portfolio-list .card .item-info-feed article.quote {
+.d-flex, .dl.dl-horizontal, .btn-arrow-right, .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-active.card-total-holdings .btn-wrap-left, .portfolio-list .card-active.card .btn-wrap-left, .btn-arrow-left, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, .nav-tabs, .navbar-nav .nav-item.avatar, .navbar-page-standalone, .alert-icon, .campaign-list header .nav, .campaign-list header .portfolio-list .card-total-holdings nav, .portfolio-list .card-total-holdings .campaign-list header nav, .campaign-list header .portfolio-list .card nav, .portfolio-list .card .campaign-list header nav, .steps, .steps-circle, .portfolio aside section .list-group-flush > li, .item-summary, .portfolio-list > header, .portfolio-list .card-total-holdings .item-details, .portfolio-list .card .item-details, .portfolio-list .card-total-holdings .item-info-feed article.quote, .portfolio-list .card .item-info-feed article.quote {
   display: flex !important; }
 
 .d-inline-flex {
@@ -14762,7 +14762,7 @@ button.btn-link-arrow-left-black:focus:before {
 .justify-content-end, .item-summary {
   justify-content: flex-end !important; }
 
-.justify-content-center, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, .navbar-page-standalone, .campaign-list header .nav, .campaign-list header .portfolio-list .card-total-holdings nav, .portfolio-list .card-total-holdings .campaign-list header nav, .campaign-list header .portfolio-list .card nav, .portfolio-list .card .campaign-list header nav {
+.justify-content-center, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, .navbar-page-standalone, .campaign-list header .nav, .campaign-list header .portfolio-list .card-total-holdings nav, .portfolio-list .card-total-holdings .campaign-list header nav, .campaign-list header .portfolio-list .card nav, .portfolio-list .card .campaign-list header nav, .steps, .steps-circle {
   justify-content: center !important; }
 
 .justify-content-between, .btn-arrow-right, .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-active.card-total-holdings .btn-wrap-left, .portfolio-list .card-active.card .btn-wrap-left, .btn-arrow-left, .portfolio-list > header {
@@ -14777,7 +14777,7 @@ button.btn-link-arrow-left-black:focus:before {
 .align-items-end {
   align-items: flex-end !important; }
 
-.align-items-center, .btn-arrow-right, .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-active.card-total-holdings .btn-wrap-left, .portfolio-list .card-active.card .btn-wrap-left, .btn-arrow-left, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, .navbar-nav .nav-item.avatar, .alert-icon, .portfolio aside section .list-group-flush > li {
+.align-items-center, .btn-arrow-right, .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-active.card-total-holdings .btn-wrap-left, .portfolio-list .card-active.card .btn-wrap-left, .btn-arrow-left, .btn-success-icon, .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card .btn-wrap-left, .navbar-nav .nav-item.avatar, .alert-icon, .steps, .steps-circle, .portfolio aside section .list-group-flush > li {
   align-items: center !important; }
 
 .align-items-baseline {
@@ -15326,7 +15326,7 @@ button.btn-link-arrow-left-black:focus:before {
 .dl > dt,
 .dl > * > dd,
 .dl > * > dt, .dl.dl-horizontal dd,
-.dl.dl-horizontal dt, .nav-tabs, .portfolio-list .card-total-holdings .item-info-feed article.caption-image img + p, .portfolio-list .card .item-info-feed article.caption-image img + p {
+.dl.dl-horizontal dt, .nav-tabs, .steps, .steps-circle, .portfolio-list .card-total-holdings .item-info-feed article.caption-image img + p, .portfolio-list .card .item-info-feed article.caption-image img + p {
   margin: 0 !important; }
 
 .mt-0, .form-group-stacked .invalid-feedback, .portfolio aside section:first-child, .portfolio-list > header h1,
@@ -15422,19 +15422,23 @@ button.btn-link-arrow-left-black:focus:before {
   margin: 16px !important; }
 
 .mt-3, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote .blockquote-footer cite, .portfolio-list .card .item-info-feed article.quote blockquote .blockquote-footer cite,
-.my-3 {
+.my-3,
+.steps-circle > li {
   margin-top: 16px !important; }
 
 .mr-3, .alert-icon i, .portfolio aside section .list-group-flush > li .badge, .portfolio aside section ul.list-unstyled > li img, .portfolio-list .card-total-holdings .item-details .alert, .portfolio-list .card .item-details .alert, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote .blockquote-footer img, .portfolio-list .card .item-info-feed article.quote blockquote .blockquote-footer img,
-.mx-3 {
+.mx-3,
+.steps-circle > li {
   margin-right: 16px !important; }
 
 .mb-3, .item-summary, .portfolio-list > header h1, .portfolio-list .card-total-holdings .item-details .alert, .portfolio-list .card .item-details .alert,
-.my-3 {
+.my-3,
+.steps-circle > li {
   margin-bottom: 16px !important; }
 
 .ml-3,
-.mx-3 {
+.mx-3,
+.steps-circle > li {
   margin-left: 16px !important; }
 
 .m-4 {
@@ -15534,7 +15538,7 @@ button.btn-link-arrow-left-black:focus:before {
 .mx-8 {
   margin-left: 80px !important; }
 
-.p-0, .dl, .nav-tabs {
+.p-0, .dl, .nav-tabs, .steps, .steps-circle, .steps-circle > li {
   padding: 0 !important; }
 
 .pt-0, .portfolio-list .card,
@@ -17990,6 +17994,43 @@ a.text-black:hover, a.btn-link-arrow-right-black:hover, a.btn-link-arrow-left-bl
 
 .pull-right {
   margin-right: -40px; }
+
+/**
+ * Circular Steps Indicator
+ *
+ * @section
+ * @page Multi-Step Flow
+ *
+ * @example
+ * <ol class="steps-circle">
+ *   <li class="completed">1</li>
+ *   <li class="active">2</li>
+ *   <li>3</li>
+ * </ol>
+ */
+.steps-circle > li {
+  color: transparent !important;
+  list-style-type: none !important;
+  border-width: 2px;
+  border-radius: 14px;
+  border-color: #7a807f;
+  border-style: solid;
+  width: 14px;
+  height: 14px;
+  background-color: transparent; }
+  .steps-circle > li.active {
+    border-color: #58cfee !important;
+    background-color: transparent; }
+  .steps-circle > li.completed {
+    border-color: #58cfee !important;
+    background-color: #58cfee !important; }
+
+@media (min-width: 768px) {
+  .steps-circle > li {
+    border-width: 3px !important;
+    width: 21px !important;
+    height: 21px !important;
+    border-radius: 21px !important; } }
 
 /**
  * Full Example

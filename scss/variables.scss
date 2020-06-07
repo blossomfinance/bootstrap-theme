@@ -270,7 +270,7 @@ $border-radius-lg:            14px;
 // $rounded-pill:                50rem !default;
 
 $box-shadow-color-sm:         rgba($midnight, 0.05);
-$box-shadow-sm:               0 1rem 3rem $box-shadow-color-sm;
+$box-shadow-sm:               0 1rem 1rem $box-shadow-color-sm;
 $box-shadow-color:            rgba($midnight, 0.15);
 $box-shadow:                  0 1rem 3rem $box-shadow-color;
 $box-shadow-color-lg:         rgba($midnight, 0.3);
@@ -1179,3 +1179,11 @@ $list-group-item-padding-y:         2rem;
 //
 // $print-page-size:                   a3 !default;
 // $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
+
+
+// Blossom Custom
+
+// definition list with icons
+$dl-icon-margin-left: 56px !default;
+$dl-icon-font-size: 40px !default;
+$dl-icon-bottom: 8px !default;

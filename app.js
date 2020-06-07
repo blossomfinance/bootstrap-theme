@@ -57,6 +57,10 @@ app.get('/investments/bmt-bin-ummah-2-variable-profit-rate-sukuk', function (req
   });
 });
 
+app.get('/new-investment', function (req, res) {
+  res.render('new-investment');
+});
+
 const port = process.env.PORT || 9191;
 app.listen(port);
 // eslint-disable-next-line no-console

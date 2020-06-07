@@ -218,16 +218,16 @@ p {
     @extend .px-5;
     dd,
     dt {
-      margin-left: 56px !important;
+      margin-left: $dl-icon-margin-left !important;
     }
 
     dt {
       position: relative;
       i {
         position: absolute;
-        left: -54px;
-        bottom: 8px;
-        font-size: 40px;
+        left: -1 * $dl-icon-margin-left;
+        bottom: $dl-icon-bottom;
+        font-size: $dl-icon-font-size;
       }
     }
   }
@@ -238,6 +238,23 @@ p {
   }
   dd {
     @extend .font-weight-bolder;
+  }
+
+  &.dl-border-bottom {
+    dd {
+      @extend .mt-0;
+      @extend .pt-3;
+      border-top: 1px solid rgba($gray-600, 0.3) !important;
+      &:first-child {
+        border: none !important;
+      }
+      margin-left: -1 * $grid-gutter-width !important;
+      padding-left: ($dl-icon-margin-left + $grid-gutter-width) !important;
+    }
+
+    dt {
+      @extend .mb-2;
+    }
   }
 }
 

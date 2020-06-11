@@ -66,12 +66,16 @@
   * </div>
   */
 .campaign-list {
+  @extend .align-self-stretch;
   .campaign-list-item {
-    @extend .col-4;
+    @extend .col-12;
+    @extend .col-md-6;
+    @extend .col-lg-4;
     @extend .mb-4;
-
+    @extend .align-self-stretch;
     .card {
       @extend .shadow;
+      height: 100%;
       img {
         @extend .card-img-top;
       }

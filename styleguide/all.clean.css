@@ -9293,82 +9293,114 @@ input[type="button"].btn-block {
 .btn-primary {
   color: #ffffff !important; }
 
-.bg-grape .btn-grape, .btn-link-arrow-right-grape:after .btn-grape, .btn-link-arrow-right-grape:before .btn-grape, .btn-link-arrow-left-grape:after .btn-grape, .btn-link-arrow-left-grape:before .btn-grape, .bg-grape .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .bg-grape .btn-wrap-left, .btn-link-arrow-right-grape:after .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .btn-link-arrow-right-grape:after .btn-wrap-left, .btn-link-arrow-right-grape:before .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .btn-link-arrow-right-grape:before .btn-wrap-left, .btn-link-arrow-left-grape:after .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .btn-link-arrow-left-grape:after .btn-wrap-left, .btn-link-arrow-left-grape:before .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .btn-link-arrow-left-grape:before .btn-wrap-left, .bg-grape .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .bg-grape .btn-wrap-left, .btn-link-arrow-right-grape:after .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .btn-link-arrow-right-grape:after .btn-wrap-left, .btn-link-arrow-right-grape:before .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .btn-link-arrow-right-grape:before .btn-wrap-left, .btn-link-arrow-left-grape:after .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .btn-link-arrow-left-grape:after .btn-wrap-left, .btn-link-arrow-left-grape:before .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .btn-link-arrow-left-grape:before .btn-wrap-left,
-.alert-info .btn-info,
-.portfolio .alert-info .btn,
-.portfolio .alert-info .btn-link-arrow-left-primary,
-.portfolio .alert-info .btn-link-arrow-left-secondary,
-.portfolio .alert-info .btn-link-arrow-left-success,
-.portfolio .alert-info .btn-link-arrow-left-info,
-.portfolio .alert-info .btn-link-arrow-left-warning,
-.portfolio .alert-info .btn-link-arrow-left-danger,
-.portfolio .alert-info .btn-link-arrow-left-light,
-.portfolio .alert-info .btn-link-arrow-left-dark,
-.portfolio .alert-info .btn-link-arrow-left-clay,
-.portfolio .alert-info .btn-link-arrow-left-orange,
-.portfolio .alert-info .btn-link-arrow-left-sun,
-.portfolio .alert-info .btn-link-arrow-left-mint,
-.portfolio .alert-info .btn-link-arrow-left-grass,
-.portfolio .alert-info .btn-link-arrow-left-leaf,
-.portfolio .alert-info .btn-link-arrow-left-ocean,
-.portfolio .alert-info .btn-link-arrow-left-sky,
-.portfolio .alert-info .btn-link-arrow-left-saphire,
-.portfolio .alert-info .btn-link-arrow-left-robin-egg,
-.portfolio .alert-info .btn-link-arrow-left-blueberry,
-.portfolio .alert-info .btn-link-arrow-left-grape,
-.portfolio .alert-info .btn-link-arrow-left-indigo,
-.portfolio .alert-info .btn-link-arrow-left-lavander,
-.portfolio .alert-info .btn-link-arrow-left-sea,
-.portfolio .alert-info .btn-link-arrow-left-water,
-.portfolio .alert-info .btn-link-arrow-left-white,
-.portfolio .alert-info .btn-link-arrow-left-cloud,
-.portfolio .alert-info .btn-link-arrow-left-moon,
-.portfolio .alert-info .btn-link-arrow-left-milk,
-.portfolio .alert-info .btn-link-arrow-left-fog,
-.portfolio .alert-info .btn-link-arrow-left-concrete,
-.portfolio .alert-info .btn-link-arrow-left-ivory,
-.portfolio .alert-info .btn-link-arrow-left-aluminium,
-.portfolio .alert-info .btn-link-arrow-left-elephant,
-.portfolio .alert-info .btn-link-arrow-left-slate,
-.portfolio .alert-info .btn-link-arrow-left-midnight,
-.portfolio .alert-info .btn-link-arrow-left-black,
-.portfolio .alert-info .btn-link-arrow-right-primary,
-.portfolio .alert-info .btn-link-arrow-right-secondary,
-.portfolio .alert-info .btn-link-arrow-right-success,
-.portfolio .alert-info .btn-link-arrow-right-info,
-.portfolio .alert-info .btn-link-arrow-right-warning,
-.portfolio .alert-info .btn-link-arrow-right-danger,
-.portfolio .alert-info .btn-link-arrow-right-light,
-.portfolio .alert-info .btn-link-arrow-right-dark,
-.portfolio .alert-info .btn-link-arrow-right-clay,
-.portfolio .alert-info .btn-link-arrow-right-orange,
-.portfolio .alert-info .btn-link-arrow-right-sun,
-.portfolio .alert-info .btn-link-arrow-right-mint,
-.portfolio .alert-info .btn-link-arrow-right-grass,
-.portfolio .alert-info .btn-link-arrow-right-leaf,
-.portfolio .alert-info .btn-link-arrow-right-ocean,
-.portfolio .alert-info .btn-link-arrow-right-sky,
-.portfolio .alert-info .btn-link-arrow-right-saphire,
-.portfolio .alert-info .btn-link-arrow-right-robin-egg,
-.portfolio .alert-info .btn-link-arrow-right-blueberry,
-.portfolio .alert-info .btn-link-arrow-right-grape,
-.portfolio .alert-info .btn-link-arrow-right-indigo,
-.portfolio .alert-info .btn-link-arrow-right-lavander,
-.portfolio .alert-info .btn-link-arrow-right-sea,
-.portfolio .alert-info .btn-link-arrow-right-water,
-.portfolio .alert-info .btn-link-arrow-right-white,
-.portfolio .alert-info .btn-link-arrow-right-cloud,
-.portfolio .alert-info .btn-link-arrow-right-moon,
-.portfolio .alert-info .btn-link-arrow-right-milk,
-.portfolio .alert-info .btn-link-arrow-right-fog,
-.portfolio .alert-info .btn-link-arrow-right-concrete,
-.portfolio .alert-info .btn-link-arrow-right-ivory,
-.portfolio .alert-info .btn-link-arrow-right-aluminium,
-.portfolio .alert-info .btn-link-arrow-right-elephant,
-.portfolio .alert-info .btn-link-arrow-right-slate,
-.portfolio .alert-info .btn-link-arrow-right-midnight,
-.portfolio .alert-info .btn-link-arrow-right-black {
-  background-color: rgba(255, 255, 255, 0.16) !important; }
+
+.alert-primary .btn-primary {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-secondary .btn-secondary {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-success .btn-success, .alert-success .btn-success-icon, .alert-success .portfolio-list .card-matured.card-total-holdings .btn-wrap-left, .portfolio-list .card-matured.card-total-holdings .alert-success .btn-wrap-left, .alert-success .portfolio-list .card-matured.card .btn-wrap-left, .portfolio-list .card-matured.card .alert-success .btn-wrap-left {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-info .btn-info, .portfolio .alert-info .btn, .portfolio .alert-info .btn-link-arrow-left-primary, .portfolio .alert-info .btn-link-arrow-left-secondary, .portfolio .alert-info .btn-link-arrow-left-success, .portfolio .alert-info .btn-link-arrow-left-info, .portfolio .alert-info .btn-link-arrow-left-warning, .portfolio .alert-info .btn-link-arrow-left-danger, .portfolio .alert-info .btn-link-arrow-left-light, .portfolio .alert-info .btn-link-arrow-left-dark, .portfolio .alert-info .btn-link-arrow-left-clay, .portfolio .alert-info .btn-link-arrow-left-orange, .portfolio .alert-info .btn-link-arrow-left-sun, .portfolio .alert-info .btn-link-arrow-left-mint, .portfolio .alert-info .btn-link-arrow-left-grass, .portfolio .alert-info .btn-link-arrow-left-leaf, .portfolio .alert-info .btn-link-arrow-left-ocean, .portfolio .alert-info .btn-link-arrow-left-sky, .portfolio .alert-info .btn-link-arrow-left-saphire, .portfolio .alert-info .btn-link-arrow-left-robin-egg, .portfolio .alert-info .btn-link-arrow-left-blueberry, .portfolio .alert-info .btn-link-arrow-left-grape, .portfolio .alert-info .btn-link-arrow-left-indigo, .portfolio .alert-info .btn-link-arrow-left-lavander, .portfolio .alert-info .btn-link-arrow-left-sea, .portfolio .alert-info .btn-link-arrow-left-water, .portfolio .alert-info .btn-link-arrow-left-white, .portfolio .alert-info .btn-link-arrow-left-cloud, .portfolio .alert-info .btn-link-arrow-left-moon, .portfolio .alert-info .btn-link-arrow-left-milk, .portfolio .alert-info .btn-link-arrow-left-fog, .portfolio .alert-info .btn-link-arrow-left-concrete, .portfolio .alert-info .btn-link-arrow-left-ivory, .portfolio .alert-info .btn-link-arrow-left-aluminium, .portfolio .alert-info .btn-link-arrow-left-elephant, .portfolio .alert-info .btn-link-arrow-left-slate, .portfolio .alert-info .btn-link-arrow-left-midnight, .portfolio .alert-info .btn-link-arrow-left-black, .portfolio .alert-info .btn-link-arrow-right-primary, .portfolio .alert-info .btn-link-arrow-right-secondary, .portfolio .alert-info .btn-link-arrow-right-success, .portfolio .alert-info .btn-link-arrow-right-info, .portfolio .alert-info .btn-link-arrow-right-warning, .portfolio .alert-info .btn-link-arrow-right-danger, .portfolio .alert-info .btn-link-arrow-right-light, .portfolio .alert-info .btn-link-arrow-right-dark, .portfolio .alert-info .btn-link-arrow-right-clay, .portfolio .alert-info .btn-link-arrow-right-orange, .portfolio .alert-info .btn-link-arrow-right-sun, .portfolio .alert-info .btn-link-arrow-right-mint, .portfolio .alert-info .btn-link-arrow-right-grass, .portfolio .alert-info .btn-link-arrow-right-leaf, .portfolio .alert-info .btn-link-arrow-right-ocean, .portfolio .alert-info .btn-link-arrow-right-sky, .portfolio .alert-info .btn-link-arrow-right-saphire, .portfolio .alert-info .btn-link-arrow-right-robin-egg, .portfolio .alert-info .btn-link-arrow-right-blueberry, .portfolio .alert-info .btn-link-arrow-right-grape, .portfolio .alert-info .btn-link-arrow-right-indigo, .portfolio .alert-info .btn-link-arrow-right-lavander, .portfolio .alert-info .btn-link-arrow-right-sea, .portfolio .alert-info .btn-link-arrow-right-water, .portfolio .alert-info .btn-link-arrow-right-white, .portfolio .alert-info .btn-link-arrow-right-cloud, .portfolio .alert-info .btn-link-arrow-right-moon, .portfolio .alert-info .btn-link-arrow-right-milk, .portfolio .alert-info .btn-link-arrow-right-fog, .portfolio .alert-info .btn-link-arrow-right-concrete, .portfolio .alert-info .btn-link-arrow-right-ivory, .portfolio .alert-info .btn-link-arrow-right-aluminium, .portfolio .alert-info .btn-link-arrow-right-elephant, .portfolio .alert-info .btn-link-arrow-right-slate, .portfolio .alert-info .btn-link-arrow-right-midnight, .portfolio .alert-info .btn-link-arrow-right-black {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-warning .btn-warning {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-danger .btn-danger {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-light .btn-light {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-dark .btn-dark {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-clay .btn-clay {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-orange .btn-orange {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-sun .btn-sun {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-mint .btn-mint {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-grass .btn-grass {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-leaf .btn-leaf {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-ocean .btn-ocean {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-sky .btn-sky {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-saphire .btn-saphire {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-robin-egg .btn-robin-egg {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-blueberry .btn-blueberry {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-grape .btn-grape, .alert-grape .portfolio-list .card-funding.card-total-holdings .btn-wrap-left, .portfolio-list .card-funding.card-total-holdings .alert-grape .btn-wrap-left, .alert-grape .portfolio-list .card-funding.card .btn-wrap-left, .portfolio-list .card-funding.card .alert-grape .btn-wrap-left {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-indigo .btn-indigo {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-lavander .btn-lavander {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-sea .btn-sea {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-water .btn-water {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-white .btn-white {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-cloud .btn-cloud {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-moon .btn-moon {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-milk .btn-milk {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-fog .btn-fog {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-concrete .btn-concrete, .alert-concrete .portfolio-list .card-active.card-total-holdings .btn-wrap-left, .portfolio-list .card-active.card-total-holdings .alert-concrete .btn-wrap-left, .alert-concrete .portfolio-list .card-active.card .btn-wrap-left, .portfolio-list .card-active.card .alert-concrete .btn-wrap-left {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-ivory .btn-ivory {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-aluminium .btn-aluminium {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-elephant .btn-elephant {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-slate .btn-slate {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-midnight .btn-midnight {
+  background-color: rgba(255, 255, 255, 0.16); }
+
+.alert-black .btn-black {
+  background-color: rgba(255, 255, 255, 0.16); }
 
 .custom-control {
   position: relative;
@@ -13532,13 +13564,13 @@ button.btn-link-arrow-left-black:focus:before {
 .border-right {
   border-right: 1px solid #b8b8b8 !important; }
 
-.border-bottom, .portfolio aside section header, .portfolio aside section .list-group-flush > li:before, .portfolio-list .card-expanded.card-total-holdings nav, .portfolio-list .card-expanded.card nav {
+.border-bottom, .portfolio aside section header, .portfolio aside section .list-group-flush > li, .portfolio-list .card-expanded.card-total-holdings nav, .portfolio-list .card-expanded.card nav {
   border-bottom: 1px solid #b8b8b8 !important; }
 
 .border-left {
   border-left: 1px solid #b8b8b8 !important; }
 
-.border-0, .portfolio aside section .list-group-flush > li {
+.border-0 {
   border: 0 !important; }
 
 .border-top-0 {
@@ -13547,7 +13579,7 @@ button.btn-link-arrow-left-black:focus:before {
 .border-right-0 {
   border-right: 0 !important; }
 
-.border-bottom-0 {
+.border-bottom-0, .portfolio aside section .list-group-flush > li:last-child {
   border-bottom: 0 !important; }
 
 .border-left-0 {
@@ -13712,7 +13744,7 @@ button.btn-link-arrow-left-black:focus:before {
 .d-inline-block, .btn-link-arrow-left-primary:after, .btn-link-arrow-left-secondary:after, .btn-link-arrow-left-success:after, .btn-link-arrow-left-info:after, .btn-link-arrow-left-warning:after, .btn-link-arrow-left-danger:after, .btn-link-arrow-left-light:after, .btn-link-arrow-left-dark:after, .btn-link-arrow-left-clay:after, .btn-link-arrow-left-orange:after, .btn-link-arrow-left-sun:after, .btn-link-arrow-left-mint:after, .btn-link-arrow-left-grass:after, .btn-link-arrow-left-leaf:after, .btn-link-arrow-left-ocean:after, .btn-link-arrow-left-sky:after, .btn-link-arrow-left-saphire:after, .btn-link-arrow-left-robin-egg:after, .btn-link-arrow-left-blueberry:after, .btn-link-arrow-left-grape:after, .btn-link-arrow-left-indigo:after, .btn-link-arrow-left-lavander:after, .btn-link-arrow-left-sea:after, .btn-link-arrow-left-water:after, .btn-link-arrow-left-white:after, .btn-link-arrow-left-cloud:after, .btn-link-arrow-left-moon:after, .btn-link-arrow-left-milk:after, .btn-link-arrow-left-fog:after, .btn-link-arrow-left-concrete:after, .btn-link-arrow-left-ivory:after, .btn-link-arrow-left-aluminium:after, .btn-link-arrow-left-elephant:after, .btn-link-arrow-left-slate:after, .btn-link-arrow-left-midnight:after, .btn-link-arrow-left-black:after, .btn-link-arrow-right-primary:before, .btn-link-arrow-right-secondary:before, .btn-link-arrow-right-success:before, .btn-link-arrow-right-info:before, .btn-link-arrow-right-warning:before, .btn-link-arrow-right-danger:before, .btn-link-arrow-right-light:before, .btn-link-arrow-right-dark:before, .btn-link-arrow-right-clay:before, .btn-link-arrow-right-orange:before, .btn-link-arrow-right-sun:before, .btn-link-arrow-right-mint:before, .btn-link-arrow-right-grass:before, .btn-link-arrow-right-leaf:before, .btn-link-arrow-right-ocean:before, .btn-link-arrow-right-sky:before, .btn-link-arrow-right-saphire:before, .btn-link-arrow-right-robin-egg:before, .btn-link-arrow-right-blueberry:before, .btn-link-arrow-right-grape:before, .btn-link-arrow-right-indigo:before, .btn-link-arrow-right-lavander:before, .btn-link-arrow-right-sea:before, .btn-link-arrow-right-water:before, .btn-link-arrow-right-white:before, .btn-link-arrow-right-cloud:before, .btn-link-arrow-right-moon:before, .btn-link-arrow-right-milk:before, .btn-link-arrow-right-fog:before, .btn-link-arrow-right-concrete:before, .btn-link-arrow-right-ivory:before, .btn-link-arrow-right-aluminium:before, .btn-link-arrow-right-elephant:before, .btn-link-arrow-right-slate:before, .btn-link-arrow-right-midnight:before, .btn-link-arrow-right-black:before, .navbar-nav .nav-item a, .portfolio-list > header ul li .badge, .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote .blockquote-footer cite, .portfolio-list .card .item-info-feed article.quote blockquote .blockquote-footer cite {
   display: inline-block !important; }
 
-.d-block, .form-group-stacked.has-error .invalid-feedback, .alert-icon i, .campaign-list .campaign-list-item .card .card-body small, .campaign-list .campaign-list-item .card-total-holdings .card-body small, .campaign-detail header small, .steps-circle > li, .new-investment aside header small, .portfolio aside section .list-group-flush > li:before {
+.d-block, .form-group-stacked.has-error .invalid-feedback, .alert-icon i, .campaign-list .campaign-list-item .card .card-body small, .campaign-list .campaign-list-item .card-total-holdings .card-body small, .campaign-detail header small, .steps-circle > li, .new-investment aside header small {
   display: block !important; }
 
 .d-table {
@@ -14802,7 +14834,7 @@ button.btn-link-arrow-left-black:focus:before {
 .px-0 {
   padding-right: 0 !important; }
 
-.pb-0, .alert-primary p:last-child, .alert-secondary p:last-child, .alert-success p:last-child, .alert-info p:last-child, .alert-warning p:last-child, .alert-danger p:last-child, .alert-light p:last-child, .alert-dark p:last-child, .alert-clay p:last-child, .alert-orange p:last-child, .alert-sun p:last-child, .alert-mint p:last-child, .alert-grass p:last-child, .alert-leaf p:last-child, .alert-ocean p:last-child, .alert-sky p:last-child, .alert-saphire p:last-child, .alert-robin-egg p:last-child, .alert-blueberry p:last-child, .alert-grape p:last-child, .alert-indigo p:last-child, .alert-lavander p:last-child, .alert-sea p:last-child, .alert-water p:last-child, .alert-white p:last-child, .alert-cloud p:last-child, .alert-moon p:last-child, .alert-milk p:last-child, .alert-fog p:last-child, .alert-concrete p:last-child, .alert-ivory p:last-child, .alert-aluminium p:last-child, .alert-elephant p:last-child, .alert-slate p:last-child, .alert-midnight p:last-child, .alert-black p:last-child, .alert-subtle-primary p:last-child, .alert-subtle-secondary p:last-child, .alert-subtle-success p:last-child, .alert-subtle-info p:last-child, .alert-subtle-warning p:last-child, .alert-subtle-danger p:last-child, .alert-subtle-light p:last-child, .alert-subtle-dark p:last-child, .alert-subtle-clay p:last-child, .alert-subtle-orange p:last-child, .alert-subtle-sun p:last-child, .alert-subtle-mint p:last-child, .alert-subtle-grass p:last-child, .alert-subtle-leaf p:last-child, .alert-subtle-ocean p:last-child, .alert-subtle-sky p:last-child, .alert-subtle-saphire p:last-child, .alert-subtle-robin-egg p:last-child, .alert-subtle-blueberry p:last-child, .alert-subtle-grape p:last-child, .alert-subtle-indigo p:last-child, .alert-subtle-lavander p:last-child, .alert-subtle-sea p:last-child, .alert-subtle-water p:last-child, .alert-subtle-white p:last-child, .alert-subtle-cloud p:last-child, .alert-subtle-moon p:last-child, .alert-subtle-milk p:last-child, .alert-subtle-fog p:last-child, .alert-subtle-concrete p:last-child, .alert-subtle-ivory p:last-child, .alert-subtle-aluminium p:last-child, .alert-subtle-elephant p:last-child, .alert-subtle-slate p:last-child, .alert-subtle-midnight p:last-child, .alert-subtle-black p:last-child, .campaign-detail header, .portfolio aside section .list-group-flush > li:last-child,
+.pb-0, .alert-primary p:last-child, .alert-secondary p:last-child, .alert-success p:last-child, .alert-info p:last-child, .alert-warning p:last-child, .alert-danger p:last-child, .alert-light p:last-child, .alert-dark p:last-child, .alert-clay p:last-child, .alert-orange p:last-child, .alert-sun p:last-child, .alert-mint p:last-child, .alert-grass p:last-child, .alert-leaf p:last-child, .alert-ocean p:last-child, .alert-sky p:last-child, .alert-saphire p:last-child, .alert-robin-egg p:last-child, .alert-blueberry p:last-child, .alert-grape p:last-child, .alert-indigo p:last-child, .alert-lavander p:last-child, .alert-sea p:last-child, .alert-water p:last-child, .alert-white p:last-child, .alert-cloud p:last-child, .alert-moon p:last-child, .alert-milk p:last-child, .alert-fog p:last-child, .alert-concrete p:last-child, .alert-ivory p:last-child, .alert-aluminium p:last-child, .alert-elephant p:last-child, .alert-slate p:last-child, .alert-midnight p:last-child, .alert-black p:last-child, .alert-subtle-primary p:last-child, .alert-subtle-secondary p:last-child, .alert-subtle-success p:last-child, .alert-subtle-info p:last-child, .alert-subtle-warning p:last-child, .alert-subtle-danger p:last-child, .alert-subtle-light p:last-child, .alert-subtle-dark p:last-child, .alert-subtle-clay p:last-child, .alert-subtle-orange p:last-child, .alert-subtle-sun p:last-child, .alert-subtle-mint p:last-child, .alert-subtle-grass p:last-child, .alert-subtle-leaf p:last-child, .alert-subtle-ocean p:last-child, .alert-subtle-sky p:last-child, .alert-subtle-saphire p:last-child, .alert-subtle-robin-egg p:last-child, .alert-subtle-blueberry p:last-child, .alert-subtle-grape p:last-child, .alert-subtle-indigo p:last-child, .alert-subtle-lavander p:last-child, .alert-subtle-sea p:last-child, .alert-subtle-water p:last-child, .alert-subtle-white p:last-child, .alert-subtle-cloud p:last-child, .alert-subtle-moon p:last-child, .alert-subtle-milk p:last-child, .alert-subtle-fog p:last-child, .alert-subtle-concrete p:last-child, .alert-subtle-ivory p:last-child, .alert-subtle-aluminium p:last-child, .alert-subtle-elephant p:last-child, .alert-subtle-slate p:last-child, .alert-subtle-midnight p:last-child, .alert-subtle-black p:last-child, .campaign-detail header,
 .py-0,
 .form-group-stacked,
 .form-group-stacked label,
@@ -14915,7 +14947,7 @@ button.btn-link-arrow-left-black:focus:before {
 .badge-sq {
   padding-bottom: 0 !important; }
 
-.pl-0, .btn-link-arrow-left-primary, .btn-link-arrow-left-secondary, .btn-link-arrow-left-success, .btn-link-arrow-left-info, .btn-link-arrow-left-warning, .btn-link-arrow-left-danger, .btn-link-arrow-left-light, .btn-link-arrow-left-dark, .btn-link-arrow-left-clay, .btn-link-arrow-left-orange, .btn-link-arrow-left-sun, .btn-link-arrow-left-mint, .btn-link-arrow-left-grass, .btn-link-arrow-left-leaf, .btn-link-arrow-left-ocean, .btn-link-arrow-left-sky, .btn-link-arrow-left-saphire, .btn-link-arrow-left-robin-egg, .btn-link-arrow-left-blueberry, .btn-link-arrow-left-grape, .btn-link-arrow-left-indigo, .btn-link-arrow-left-lavander, .btn-link-arrow-left-sea, .btn-link-arrow-left-water, .btn-link-arrow-left-white, .btn-link-arrow-left-cloud, .btn-link-arrow-left-moon, .btn-link-arrow-left-milk, .btn-link-arrow-left-fog, .btn-link-arrow-left-concrete, .btn-link-arrow-left-ivory, .btn-link-arrow-left-aluminium, .btn-link-arrow-left-elephant, .btn-link-arrow-left-slate, .btn-link-arrow-left-midnight, .btn-link-arrow-left-black, .btn-link-arrow-right-primary, .btn-link-arrow-right-secondary, .btn-link-arrow-right-success, .btn-link-arrow-right-info, .btn-link-arrow-right-warning, .btn-link-arrow-right-danger, .btn-link-arrow-right-light, .btn-link-arrow-right-dark, .btn-link-arrow-right-clay, .btn-link-arrow-right-orange, .btn-link-arrow-right-sun, .btn-link-arrow-right-mint, .btn-link-arrow-right-grass, .btn-link-arrow-right-leaf, .btn-link-arrow-right-ocean, .btn-link-arrow-right-sky, .btn-link-arrow-right-saphire, .btn-link-arrow-right-robin-egg, .btn-link-arrow-right-blueberry, .btn-link-arrow-right-grape, .btn-link-arrow-right-indigo, .btn-link-arrow-right-lavander, .btn-link-arrow-right-sea, .btn-link-arrow-right-water, .btn-link-arrow-right-white, .btn-link-arrow-right-cloud, .btn-link-arrow-right-moon, .btn-link-arrow-right-milk, .btn-link-arrow-right-fog, .btn-link-arrow-right-concrete, .btn-link-arrow-right-ivory, .btn-link-arrow-right-aluminium, .btn-link-arrow-right-elephant, .btn-link-arrow-right-slate, .btn-link-arrow-right-midnight, .btn-link-arrow-right-black, .nav-link-primary a.nav-link:first-child, .nav-link-primary .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-primary nav > a:first-child, .nav-link-primary .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-primary nav > a:first-child, .nav-link-secondary a.nav-link:first-child, .nav-link-secondary .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-secondary nav > a:first-child, .nav-link-secondary .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-secondary nav > a:first-child, .nav-link-success a.nav-link:first-child, .nav-link-success .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-success nav > a:first-child, .nav-link-success .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-success nav > a:first-child, .nav-link-info a.nav-link:first-child, .nav-link-info .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-info nav > a:first-child, .nav-link-info .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-info nav > a:first-child, .nav-link-warning a.nav-link:first-child, .nav-link-warning .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-warning nav > a:first-child, .nav-link-warning .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-warning nav > a:first-child, .nav-link-danger a.nav-link:first-child, .nav-link-danger .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-danger nav > a:first-child, .nav-link-danger .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-danger nav > a:first-child, .nav-link-light a.nav-link:first-child, .nav-link-light .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-light nav > a:first-child, .nav-link-light .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-light nav > a:first-child, .nav-link-dark a.nav-link:first-child, .nav-link-dark .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-dark nav > a:first-child, .nav-link-dark .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-dark nav > a:first-child, .nav-link-clay a.nav-link:first-child, .nav-link-clay .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-clay nav > a:first-child, .nav-link-clay .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-clay nav > a:first-child, .nav-link-orange a.nav-link:first-child, .nav-link-orange .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-orange nav > a:first-child, .nav-link-orange .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-orange nav > a:first-child, .nav-link-sun a.nav-link:first-child, .nav-link-sun .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-sun nav > a:first-child, .nav-link-sun .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-sun nav > a:first-child, .nav-link-mint a.nav-link:first-child, .nav-link-mint .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-mint nav > a:first-child, .nav-link-mint .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-mint nav > a:first-child, .nav-link-grass a.nav-link:first-child, .nav-link-grass .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-grass nav > a:first-child, .nav-link-grass .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-grass nav > a:first-child, .nav-link-leaf a.nav-link:first-child, .nav-link-leaf .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-leaf nav > a:first-child, .nav-link-leaf .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-leaf nav > a:first-child, .nav-link-ocean a.nav-link:first-child, .nav-link-ocean .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-ocean nav > a:first-child, .nav-link-ocean .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-ocean nav > a:first-child, .nav-link-sky a.nav-link:first-child, .nav-link-sky .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-sky nav > a:first-child, .nav-link-sky .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-sky nav > a:first-child, .nav-link-saphire a.nav-link:first-child, .nav-link-saphire .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-saphire nav > a:first-child, .nav-link-saphire .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-saphire nav > a:first-child, .nav-link-robin-egg a.nav-link:first-child, .nav-link-robin-egg .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-robin-egg nav > a:first-child, .nav-link-robin-egg .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-robin-egg nav > a:first-child, .nav-link-blueberry a.nav-link:first-child, .nav-link-blueberry .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-blueberry nav > a:first-child, .nav-link-blueberry .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-blueberry nav > a:first-child, .nav-link-grape a.nav-link:first-child, .nav-link-grape .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-grape nav > a:first-child, .nav-link-grape .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-grape nav > a:first-child, .nav-link-indigo a.nav-link:first-child, .nav-link-indigo .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-indigo nav > a:first-child, .nav-link-indigo .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-indigo nav > a:first-child, .nav-link-lavander a.nav-link:first-child, .nav-link-lavander .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-lavander nav > a:first-child, .nav-link-lavander .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-lavander nav > a:first-child, .nav-link-sea a.nav-link:first-child, .nav-link-sea .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-sea nav > a:first-child, .nav-link-sea .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-sea nav > a:first-child, .nav-link-water a.nav-link:first-child, .nav-link-water .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-water nav > a:first-child, .nav-link-water .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-water nav > a:first-child, .nav-link-white a.nav-link:first-child, .nav-link-white .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-white nav > a:first-child, .nav-link-white .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-white nav > a:first-child, .nav-link-cloud a.nav-link:first-child, .nav-link-cloud .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-cloud nav > a:first-child, .nav-link-cloud .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-cloud nav > a:first-child, .nav-link-moon a.nav-link:first-child, .nav-link-moon .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-moon nav > a:first-child, .nav-link-moon .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-moon nav > a:first-child, .nav-link-milk a.nav-link:first-child, .nav-link-milk .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-milk nav > a:first-child, .nav-link-milk .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-milk nav > a:first-child, .nav-link-fog a.nav-link:first-child, .nav-link-fog .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-fog nav > a:first-child, .nav-link-fog .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-fog nav > a:first-child, .nav-link-concrete a.nav-link:first-child, .nav-link-concrete .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-concrete nav > a:first-child, .nav-link-concrete .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-concrete nav > a:first-child, .nav-link-ivory a.nav-link:first-child, .nav-link-ivory .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-ivory nav > a:first-child, .nav-link-ivory .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-ivory nav > a:first-child, .nav-link-aluminium a.nav-link:first-child, .nav-link-aluminium .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-aluminium nav > a:first-child, .nav-link-aluminium .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-aluminium nav > a:first-child, .nav-link-elephant a.nav-link:first-child, .portfolio-list .card-total-holdings nav a.nav-link:first-child, .portfolio-list .card nav a.nav-link:first-child, .portfolio-list .card-total-holdings .nav-link-elephant nav > a:first-child, .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card .nav-link-elephant nav > a:first-child, .portfolio-list .card nav > a:first-child, .nav-link-slate a.nav-link:first-child, .nav-link-slate .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-slate nav > a:first-child, .nav-link-slate .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-slate nav > a:first-child, .nav-link-midnight a.nav-link:first-child, .nav-link-midnight .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-midnight nav > a:first-child, .nav-link-midnight .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-midnight nav > a:first-child, .nav-link-black a.nav-link:first-child, .nav-link-black .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-black nav > a:first-child, .nav-link-black .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-black nav > a:first-child, .portfolio aside section .list-group-flush > li,
+.pl-0, .btn-link-arrow-left-primary, .btn-link-arrow-left-secondary, .btn-link-arrow-left-success, .btn-link-arrow-left-info, .btn-link-arrow-left-warning, .btn-link-arrow-left-danger, .btn-link-arrow-left-light, .btn-link-arrow-left-dark, .btn-link-arrow-left-clay, .btn-link-arrow-left-orange, .btn-link-arrow-left-sun, .btn-link-arrow-left-mint, .btn-link-arrow-left-grass, .btn-link-arrow-left-leaf, .btn-link-arrow-left-ocean, .btn-link-arrow-left-sky, .btn-link-arrow-left-saphire, .btn-link-arrow-left-robin-egg, .btn-link-arrow-left-blueberry, .btn-link-arrow-left-grape, .btn-link-arrow-left-indigo, .btn-link-arrow-left-lavander, .btn-link-arrow-left-sea, .btn-link-arrow-left-water, .btn-link-arrow-left-white, .btn-link-arrow-left-cloud, .btn-link-arrow-left-moon, .btn-link-arrow-left-milk, .btn-link-arrow-left-fog, .btn-link-arrow-left-concrete, .btn-link-arrow-left-ivory, .btn-link-arrow-left-aluminium, .btn-link-arrow-left-elephant, .btn-link-arrow-left-slate, .btn-link-arrow-left-midnight, .btn-link-arrow-left-black, .btn-link-arrow-right-primary, .btn-link-arrow-right-secondary, .btn-link-arrow-right-success, .btn-link-arrow-right-info, .btn-link-arrow-right-warning, .btn-link-arrow-right-danger, .btn-link-arrow-right-light, .btn-link-arrow-right-dark, .btn-link-arrow-right-clay, .btn-link-arrow-right-orange, .btn-link-arrow-right-sun, .btn-link-arrow-right-mint, .btn-link-arrow-right-grass, .btn-link-arrow-right-leaf, .btn-link-arrow-right-ocean, .btn-link-arrow-right-sky, .btn-link-arrow-right-saphire, .btn-link-arrow-right-robin-egg, .btn-link-arrow-right-blueberry, .btn-link-arrow-right-grape, .btn-link-arrow-right-indigo, .btn-link-arrow-right-lavander, .btn-link-arrow-right-sea, .btn-link-arrow-right-water, .btn-link-arrow-right-white, .btn-link-arrow-right-cloud, .btn-link-arrow-right-moon, .btn-link-arrow-right-milk, .btn-link-arrow-right-fog, .btn-link-arrow-right-concrete, .btn-link-arrow-right-ivory, .btn-link-arrow-right-aluminium, .btn-link-arrow-right-elephant, .btn-link-arrow-right-slate, .btn-link-arrow-right-midnight, .btn-link-arrow-right-black, .nav-link-primary a.nav-link:first-child, .nav-link-primary .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-primary nav > a:first-child, .nav-link-primary .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-primary nav > a:first-child, .nav-link-secondary a.nav-link:first-child, .nav-link-secondary .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-secondary nav > a:first-child, .nav-link-secondary .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-secondary nav > a:first-child, .nav-link-success a.nav-link:first-child, .nav-link-success .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-success nav > a:first-child, .nav-link-success .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-success nav > a:first-child, .nav-link-info a.nav-link:first-child, .nav-link-info .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-info nav > a:first-child, .nav-link-info .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-info nav > a:first-child, .nav-link-warning a.nav-link:first-child, .nav-link-warning .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-warning nav > a:first-child, .nav-link-warning .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-warning nav > a:first-child, .nav-link-danger a.nav-link:first-child, .nav-link-danger .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-danger nav > a:first-child, .nav-link-danger .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-danger nav > a:first-child, .nav-link-light a.nav-link:first-child, .nav-link-light .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-light nav > a:first-child, .nav-link-light .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-light nav > a:first-child, .nav-link-dark a.nav-link:first-child, .nav-link-dark .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-dark nav > a:first-child, .nav-link-dark .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-dark nav > a:first-child, .nav-link-clay a.nav-link:first-child, .nav-link-clay .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-clay nav > a:first-child, .nav-link-clay .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-clay nav > a:first-child, .nav-link-orange a.nav-link:first-child, .nav-link-orange .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-orange nav > a:first-child, .nav-link-orange .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-orange nav > a:first-child, .nav-link-sun a.nav-link:first-child, .nav-link-sun .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-sun nav > a:first-child, .nav-link-sun .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-sun nav > a:first-child, .nav-link-mint a.nav-link:first-child, .nav-link-mint .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-mint nav > a:first-child, .nav-link-mint .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-mint nav > a:first-child, .nav-link-grass a.nav-link:first-child, .nav-link-grass .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-grass nav > a:first-child, .nav-link-grass .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-grass nav > a:first-child, .nav-link-leaf a.nav-link:first-child, .nav-link-leaf .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-leaf nav > a:first-child, .nav-link-leaf .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-leaf nav > a:first-child, .nav-link-ocean a.nav-link:first-child, .nav-link-ocean .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-ocean nav > a:first-child, .nav-link-ocean .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-ocean nav > a:first-child, .nav-link-sky a.nav-link:first-child, .nav-link-sky .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-sky nav > a:first-child, .nav-link-sky .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-sky nav > a:first-child, .nav-link-saphire a.nav-link:first-child, .nav-link-saphire .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-saphire nav > a:first-child, .nav-link-saphire .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-saphire nav > a:first-child, .nav-link-robin-egg a.nav-link:first-child, .nav-link-robin-egg .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-robin-egg nav > a:first-child, .nav-link-robin-egg .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-robin-egg nav > a:first-child, .nav-link-blueberry a.nav-link:first-child, .nav-link-blueberry .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-blueberry nav > a:first-child, .nav-link-blueberry .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-blueberry nav > a:first-child, .nav-link-grape a.nav-link:first-child, .nav-link-grape .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-grape nav > a:first-child, .nav-link-grape .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-grape nav > a:first-child, .nav-link-indigo a.nav-link:first-child, .nav-link-indigo .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-indigo nav > a:first-child, .nav-link-indigo .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-indigo nav > a:first-child, .nav-link-lavander a.nav-link:first-child, .nav-link-lavander .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-lavander nav > a:first-child, .nav-link-lavander .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-lavander nav > a:first-child, .nav-link-sea a.nav-link:first-child, .nav-link-sea .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-sea nav > a:first-child, .nav-link-sea .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-sea nav > a:first-child, .nav-link-water a.nav-link:first-child, .nav-link-water .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-water nav > a:first-child, .nav-link-water .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-water nav > a:first-child, .nav-link-white a.nav-link:first-child, .nav-link-white .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-white nav > a:first-child, .nav-link-white .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-white nav > a:first-child, .nav-link-cloud a.nav-link:first-child, .nav-link-cloud .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-cloud nav > a:first-child, .nav-link-cloud .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-cloud nav > a:first-child, .nav-link-moon a.nav-link:first-child, .nav-link-moon .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-moon nav > a:first-child, .nav-link-moon .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-moon nav > a:first-child, .nav-link-milk a.nav-link:first-child, .nav-link-milk .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-milk nav > a:first-child, .nav-link-milk .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-milk nav > a:first-child, .nav-link-fog a.nav-link:first-child, .nav-link-fog .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-fog nav > a:first-child, .nav-link-fog .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-fog nav > a:first-child, .nav-link-concrete a.nav-link:first-child, .nav-link-concrete .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-concrete nav > a:first-child, .nav-link-concrete .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-concrete nav > a:first-child, .nav-link-ivory a.nav-link:first-child, .nav-link-ivory .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-ivory nav > a:first-child, .nav-link-ivory .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-ivory nav > a:first-child, .nav-link-aluminium a.nav-link:first-child, .nav-link-aluminium .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-aluminium nav > a:first-child, .nav-link-aluminium .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-aluminium nav > a:first-child, .nav-link-elephant a.nav-link:first-child, .portfolio-list .card-total-holdings nav a.nav-link:first-child, .portfolio-list .card nav a.nav-link:first-child, .portfolio-list .card-total-holdings .nav-link-elephant nav > a:first-child, .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card .nav-link-elephant nav > a:first-child, .portfolio-list .card nav > a:first-child, .nav-link-slate a.nav-link:first-child, .nav-link-slate .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-slate nav > a:first-child, .nav-link-slate .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-slate nav > a:first-child, .nav-link-midnight a.nav-link:first-child, .nav-link-midnight .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-midnight nav > a:first-child, .nav-link-midnight .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-midnight nav > a:first-child, .nav-link-black a.nav-link:first-child, .nav-link-black .portfolio-list .card-total-holdings nav > a:first-child, .portfolio-list .card-total-holdings .nav-link-black nav > a:first-child, .nav-link-black .portfolio-list .card nav > a:first-child, .portfolio-list .card .nav-link-black nav > a:first-child,
 .px-0 {
   padding-left: 0 !important; }
 
@@ -15087,28 +15119,26 @@ button.btn-link-arrow-left-black:focus:before {
 .p-4 {
   padding: 32px !important; }
 
-.pt-4, .portfolio aside section ul.list-unstyled > li,
+.pt-4, .portfolio aside section .list-group-flush > li, .portfolio aside section ul.list-unstyled > li,
 .py-4,
 .nav-tabs .nav-item .nav-link,
 .nav-tabs .nav-item .portfolio-list .card-total-holdings nav > a,
 .portfolio-list .card-total-holdings .nav-tabs .nav-item nav > a,
 .nav-tabs .nav-item .portfolio-list .card nav > a,
-.portfolio-list .card .nav-tabs .nav-item nav > a,
-.portfolio aside section .list-group-flush > li {
+.portfolio-list .card .nav-tabs .nav-item nav > a {
   padding-top: 32px !important; }
 
-.pr-4,
+.pr-4, .portfolio aside section .list-group-flush > li,
 .px-4 {
   padding-right: 32px !important; }
 
-.pb-4, .portfolio aside section ul.list-unstyled > li,
+.pb-4, .portfolio aside section .list-group-flush > li, .portfolio aside section ul.list-unstyled > li,
 .py-4,
 .nav-tabs .nav-item .nav-link,
 .nav-tabs .nav-item .portfolio-list .card-total-holdings nav > a,
 .portfolio-list .card-total-holdings .nav-tabs .nav-item nav > a,
 .nav-tabs .nav-item .portfolio-list .card nav > a,
-.portfolio-list .card .nav-tabs .nav-item nav > a,
-.portfolio aside section .list-group-flush > li {
+.portfolio-list .card .nav-tabs .nav-item nav > a {
   padding-bottom: 32px !important; }
 
 .pl-4,
@@ -17327,11 +17357,12 @@ a.text-black:hover, a.btn-link-arrow-right-black:hover, a.btn-link-arrow-left-bl
       .portfolio aside section header h3 small {
         font-size: 1.5rem;
         font-weight: 300; }
-  .portfolio aside section .list-group-flush > li:last-child {
-    background: none; }
-  .portfolio aside section .list-group-flush > li p {
-    font-size: 11px;
-    line-height: 14px; }
+  .portfolio aside section .list-group-flush > li {
+    margin-left: -20px !important;
+    padding-left: 20px !important; }
+    .portfolio aside section .list-group-flush > li p {
+      font-size: 11px;
+      line-height: 14px; }
 
 
 .item-summary .amount-principal {

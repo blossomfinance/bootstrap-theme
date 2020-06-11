@@ -326,7 +326,33 @@ $btn-icon-line-height: 1.5rem !default;
   color: $white !important;
 }
 
-.bg-grape .btn-grape,
-.alert-info .btn-info {
-  background-color: rgba($white, 0.16) !important;
+/**
+ * Button Inside Alert
+ *
+ * Buttons can be the same theme color within an alert
+ *
+ * @page buttons
+ * @section
+ *
+ * @example
+ * <div class="alert alert-info mb-4">
+ *   <h5 class="alert-heading">Ready for Withdrawl</h5>
+ *   <p>You should take the following action:</p>
+ *   <button class="btn btn-info">Withdraw Funds</button>
+ * </div>
+ * <div class="alert alert-success mb-4">
+ *   <h5 class="alert-heading">Ready for Withdrawl</h5>
+ *   <p>Hey! How do you like this button?</p>
+ *   <button class="btn btn-success">Do Something</button>
+ * </div>
+ * <div class="alert alert-danger mb-4">
+ *   <h5 class="alert-heading">Ready for Withdrawl</h5>
+ *   <p>This is some other text:</p>
+ *   <button class="btn btn-danger">Another Button</button>
+ * </div>
+ */
+@each $color, $value in $theme-colors {
+  .alert-#{$color} .btn-#{$color} {
+    background-color: rgba($white, 0.16);
+  }
 }

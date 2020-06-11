@@ -262,7 +262,6 @@
        *         </li>
        *       </ul>
        *     </section>
-
        *     <section>
        *       <header>
        *         <h3>
@@ -307,30 +306,23 @@
         & > li {
           @extend .list-group-item;
           @extend .d-flex;
-          @extend .pl-0;
-          @extend .py-4;
           @extend .align-items-center;
+          @extend .pt-4;
+          @extend .pb-4;
+          @extend .pr-4;
+          @extend .border-bottom;
+          margin-left: -1 * ($grid-gutter-width / 2) !important;
+          padding-left: ($grid-gutter-width / 2) !important;
 
-          &:before {
-            @extend .border-bottom;
-            @extend .d-block;
-          }
-          // TODO: border bottom as pseudo element
-          // <---- 40px       8px ---->
-          // border: none;
-          // background: linear-gradient($list-group-border-color, $list-group-border-color) bottom no-repeat;
-          // // TODO: is there a width - 32px
-          // background-size: 85% 1px;
-          // background-position: left bottom;
-          @extend .border-0;
           &:last-child {
-            background: none;
             @extend .mb-0;
-            @extend .pb-0;
+            @extend .border-bottom-0;
           }
+
           .badge {
             @extend .mr-3;
           }
+
           p {
             @extend .text-muted;
             @extend .align-middle;

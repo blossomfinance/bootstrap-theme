@@ -141,16 +141,16 @@
  * @example
  * <div class="p-2">
  *   <p>
- *     <a href="#" class="btn btn-link-arrow-left-primary">View Project Details</a>
+ *     <a href="javascript:;" class="btn btn-link-arrow-left-primary">View Project Details</a>
  *   </p>
  *   <p>
- *     <a href="#" class="btn btn-link-arrow-right-secondary">View Project Details</a>
+ *     <button href="javascript:;" class="btn btn-link-arrow-right-secondary">View Project Details</button>
  *   </p>
  *   <p>
- *     <a href="#" class="btn btn-link-arrow-left-warning">View Project Details</a>
+ *     <a href="javascript:;" class="btn btn-link-arrow-left-warning">View Project Details</a>
  *   </p>
  *   <p>
- *     <a href="#" class="btn btn-link-arrow-right-grass">View Project Details</a>
+ *     <button href="javascript:;" class="btn btn-link-arrow-right-grass">View Project Details</button>
  *   </p>
  * </div>
  */
@@ -158,6 +158,7 @@
 %btn-link-arrow {
   @extend .btn;
   @extend .btn-link;
+  @extend .py-0;
   @extend .pl-0;
   @extend .pr-0;
   font-size: 14px;

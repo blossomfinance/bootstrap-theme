@@ -11169,26 +11169,6 @@ header nav {
  * </div>
  */
 /**
- * Backround Color
- *
- * @section
- * @page Card
- *
- * @example
- * <div class="card bg-light m-4" style="width: 18rem;">
- *   <div class="card-body">
- *     Some card text
- *   </div>
- * </div>
- * <div class="card bg-grape text-white m-4" style="width: 18rem;">
- *   <div class="card-body">
- *     <h5 class="card-title">Ready for Withdrawal</h5>
- *     <p>You should withdrawl to your bank account or reinvest into another holding.</p>
- *     <button type="button" class="btn btn-grape btn-block btn-lg btn-arrow-right">Withdraw Funds</button>
- *   </div>
- * </div>
- */
-/**
  * Shadow
  *
  * @section

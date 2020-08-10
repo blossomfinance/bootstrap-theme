@@ -18210,10 +18210,10 @@ a.text-black:hover, a.btn-link-arrow-right-black:hover, a.btn-link-arrow-left-bl
   margin-right: -40px; }
 
 /**
- * Circular Steps Indicator
+ * Steps Indicator
  *
  * @section
- * @page Multi-Step Flow
+ * @page Custom Form Elements
  *
  * @example
  * <ol class="steps-circle">
@@ -18945,3 +18945,18 @@ a.text-black:hover, a.btn-link-arrow-right-black:hover, a.btn-link-arrow-left-bl
           max-width: 40px; }
         .portfolio-list .card-total-holdings .item-info-feed article.quote blockquote .blockquote-footer cite, .portfolio-list .card .item-info-feed article.quote blockquote .blockquote-footer cite {
           font-size: 13px; }
+
+/**
+ * Icon Item Select
+ *
+ * Present multiple options with an image or icon
+ *
+ * @page Custom Form Elements
+ * @section
+ *
+ * @example
+ * <div class="m-4">
+ *   <div class="col">
+ *   </div>
+ * </div>
+ */

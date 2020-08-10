@@ -9,10 +9,10 @@ $steps-circle-size-lg: $steps-circle-size * 1.5;
 $steps-circle-border-width-lg: $steps-circle-border-width * 1.5;
 
 /**
- * Circular Steps Indicator
+ * Steps Indicator
  *
  * @section
- * @page Multi-Step Flow
+ * @page Custom Form Elements
  *
  * @example
  * <ol class="steps-circle">
@@ -58,7 +58,7 @@ $steps-circle-border-width-lg: $steps-circle-border-width * 1.5;
   }
 
   @media (min-width: 768px) {
-    & > li {      
+    & > li {
       border-width: $steps-circle-border-width-lg !important;
       width: $steps-circle-size-lg !important;
       height: $steps-circle-size-lg !important;

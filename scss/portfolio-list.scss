@@ -15,12 +15,12 @@ $portfolio-list-card-details-article-line-height: 20px !default;
 $portfolio-list-card-details-article-blockquote-font-size: 16px !default;
 $portfolio-list-card-details-article-blockquote-line-height: 28px !default;
 
-$portfolio-states: () !default;
-$portfolio-states: map-merge((
-    'funding': 'info',
-    'active': 'secondary',
-    'matured': 'success'
-), $portfolio-states);
+// $portfolio-states: () !default;
+// $portfolio-states: map-merge((
+//     'funding': 'info',
+//     'active': 'secondary',
+//     'matured': 'success'
+// ), $portfolio-states);
 
 $amount-current-value-variants: () !default;
 $amount-current-value-variants: map-merge((
@@ -63,7 +63,7 @@ $amount-current-value-variants-colors: map-merge((
  *       </li>
  *     </ul>
  *   </header>
- *   <article class="card card-active card-expanded">
+ *   <article class="card card-expanded">
  *     <div class="card-body">
  *       <div class="row">
  *         <div class="col-4">
@@ -72,7 +72,9 @@ $amount-current-value-variants-colors: map-merge((
  *             <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
  *             <small class="status">Activated: January 1, 2019</small>
  *           </header>
- *           <button class="btn btn-wrap-left">Invest More</button>
+ *           <div class="clearfix">
+ *             <button class="btn btn-wrap-left btn-concrete btn-arrow-right">Invest More</button>
+ *           </div>
  *           <nav>
  *             <a href="#">Sell/Trade</a>
  *             <a href="#">Offering Docs</a>
@@ -93,7 +95,7 @@ $amount-current-value-variants-colors: map-merge((
  *               11.90%
  *               <small>Projected Return<sup>&dagger;</sup></small>
  *             </div>
- *             <div class="amount-current-value">
+ *             <div class="amount-current-value-secondary">
  *               <div>
  *                 $100,000
  *                 <small>Currently Worth</small>
@@ -133,7 +135,7 @@ $amount-current-value-variants-colors: map-merge((
  *       </aside>
  *     </div>
  *   </article>
- *   <article class="card card-funding card-collapsed">
+ *   <article class="card card-collapsed">
  *     <div class="card-body">
  *       <div class="row">
  *         <div class="col-4">
@@ -142,9 +144,11 @@ $amount-current-value-variants-colors: map-merge((
  *             <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
  *             <small class="status">Activates: August 31, 2019</small>
  *           </header>
- *           <button class="btn btn-wrap-left">
- *             Complete Investment
- *           </button>
+ *           <div class="clearfix">
+ *             <button class="btn btn-wrap-left btn-grape btn-arrow-right">
+ *               Complete Investment
+ *             </button>
+ *           </div>
  *           <nav>
  *             <a href="#">Offering Docs</a>
  *             <a href="#">Financials</a>
@@ -164,7 +168,7 @@ $amount-current-value-variants-colors: map-merge((
  *               11.90%
  *               <small>Projected Return<sup>&dagger;</sup></small>
  *             </div>
- *             <div class="amount-current-value">
+ *             <div class="amount-current-value-info">
  *               <div>
  *                 $100,000
  *                 <small>Currently Worth</small>
@@ -194,7 +198,7 @@ $amount-current-value-variants-colors: map-merge((
  *       </div>
  *     </div>
  *   </article>
- *   <article class="card card-matured card-collapsed">
+ *   <article class="card card-collapsed">
  *     <div class="card-body">
  *       <div class="row">
  *         <div class="col-4">
@@ -203,9 +207,11 @@ $amount-current-value-variants-colors: map-merge((
  *             <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
  *             <small class="status">Fully Matured: August 31, 2019</small>
  *           </header>
- *           <button class="btn btn-wrap-left">
- *             Investment Matured
- *           </button>
+ *           <div class="clearfix">
+ *             <button class="btn btn-success-icon btn-wrap-left">
+ *               Investment Matured
+ *             </button>
+ *           </div>
  *           <nav>
  *             <a href="#">Offering Docs</a>
  *             <a href="#">Financials</a>
@@ -225,7 +231,7 @@ $amount-current-value-variants-colors: map-merge((
  *               11.90%
  *               <small>Projected Return<super>&dagger;</super></small>
  *             </div>
- *             <div class="amount-current-value">
+ *             <div class="amount-current-value-success">
  *               <div>
  *                 $100,000
  *                 <small>Currently Worth</small>
@@ -297,10 +303,10 @@ $amount-current-value-variants-colors: map-merge((
     @include item-summary-label-value-variant($color, $color);
     background-color: $bg-color;
   }
-  @each $variant, $bg-color in $amount-current-value-variants {
-    .amount-current-value-#{$variant} {
-      $color: map-get($amount-current-value-variants-colors, $variant);
-      @include amount-current-value-variant($variant, $color, $bg-color);
+  @each $name, $bg-color in $amount-current-value-variants {
+    .amount-current-value-#{$name} {
+      $color: map-get($amount-current-value-variants-colors, $name);
+      @include amount-current-value-variant($name, $color, $bg-color);
     }
   }
 }
@@ -461,40 +467,6 @@ $amount-current-value-variants-colors: map-merge((
     &.card-expanded {
       nav {
         @extend .border-bottom;
-      }
-    }
-
-    /////////////////////////////////////////////////////////////////////////
-    // Automatically adjust styles of:
-    //   - current value
-    //   - CTA button
-    // based on overall card state variant
-    /////////////////////////////////////////////////////////////////////////
-    @each $state, $style-name in $portfolio-states {
-      &.card-#{$state} {
-        .amount-current-value {
-          @extend .amount-current-value-#{$style-name};
-        }
-      }
-    }
-
-    &.card-funding {
-      .btn-wrap-left {
-        @extend .btn-grape;
-        @extend .btn-arrow-right;
-      }
-    }
-
-    &.card-active {
-      .btn-wrap-left {
-        @extend .btn-concrete;
-        @extend .btn-arrow-right;
-      }
-    }
-
-    &.card-matured {
-      .btn-wrap-left {
-        @extend .btn-success-icon;
       }
     }
 

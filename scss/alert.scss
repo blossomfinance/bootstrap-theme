@@ -261,7 +261,10 @@
  * @example
  * <div class="alert alert-info alert-icon" role="alert">
  *   <i class="fas fa-envelope-open-text"></i>
- *   <p>Sent! Check your email&mdash;we've sent you an email with a link to reset your password.</p>
+ *   <div>
+ *     <h4 class="alert-heading">Sent!</h4>
+ *     <p>Check your email&mdash;we've sent you an email with a link to reset your password.</p>
+ *   </div>
  * </div>
  * <div class="alert alert-danger alert-icon" role="alert">
  *   <i class="fas fa-exclamation-circle"></i>

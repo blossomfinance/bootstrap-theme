@@ -17211,8 +17211,7 @@ a.text-black:hover, a.btn-link-arrow-right-black:hover, a.btn-link-arrow-left-bl
     line-height: 20px; }
 
 .item-summary .amount-current-value-info, .item-summary .amount-current-value-secondary, .item-summary .amount-current-value-success {
-  font-size: 20px;
-  margin-right: -32px; }
+  font-size: 20px; }
 
 .item-summary .amount-current-value-info {
   color: #5b6bb6;

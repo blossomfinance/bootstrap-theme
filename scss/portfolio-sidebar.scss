@@ -140,49 +140,6 @@
   }
 }
 
-/**
- * Actionable Alert
- *
- * @section
- * @page Portfolio Sidebar
- *
- * @example
- * <div class="portfolio" style="width: 20rem;">
- *   <div class="alert alert-info" role="alert">
- *     <span class="badge">$89,423</span>
- *     <h5 class="alert-heading">Ready for Withdrawl</h5>
- *     <p>You should withdrawl to your bank account or reinvest into another holding.</p>
- *     <button type="button" class="btn btn-lg btn-arrow-right btn-block">
- *       Withdraw Funds
- *     </button>
- *   </div>
- * </div>
- */
-.portfolio {
-  .alert-info {
-    .badge {
-      @extend .badge-warning;
-      @extend .float-right;
-      @extend .font-weight-bold;
-      @extend .py-2;
-      @extend .px-3;
-      font-size: $font-size-base;
-      line-height: $font-size-base * 1.25;
-      color: $slate;
-    }
-    .alert-heading {
-      @extend .mb-4;
-      @extend .font-weight-normal;
-      font-size: $font-size-base;
-      line-height: $font-size-base * 1.25;
-      @extend .py-2;
-    }
-    .btn {
-      @extend .btn-info;
-    }
-  }
-}
-
 .portfolio {
   aside {
 

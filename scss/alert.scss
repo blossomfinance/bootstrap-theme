@@ -288,3 +288,41 @@
     font-size: $h1-font-size;
   }
 }
+
+/**
+ * Alert Badge
+ *
+ * @section
+ * @page Alert
+ *
+ * @example
+ * <div style="width: 20rem;">
+ *   <div class="alert alert-badge alert-info" role="alert">
+ *     <span class="badge badge-warning">$89,423</span>
+ *     <h5 class="alert-heading">Ready for Withdrawl</h5>
+ *     <p>You should withdrawl to your bank account or reinvest into another holding.</p>
+ *     <button type="button" class="btn btn-info btn-lg btn-arrow-right btn-block">
+ *       Withdraw Funds
+ *     </button>
+ *   </div>
+ * </div>
+ */
+.alert.alert-badge {
+  .badge {
+    // @extend .badge-warning;
+    @extend .float-right;
+    @extend .font-weight-bold;
+    @extend .py-2;
+    @extend .px-3;
+    font-size: $font-size-base;
+    line-height: $font-size-base * 1.25;
+    // color: $slate;
+  }
+  .alert-heading {
+    @extend .mb-3;
+    @extend .font-weight-normal;
+    font-size: $font-size-base;
+    line-height: $font-size-base * 1.25;
+    @extend .py-2;
+  }
+}

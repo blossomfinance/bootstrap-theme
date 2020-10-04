@@ -8124,14 +8124,14 @@
       <div class="livingcss__main-nav-container">
         <nav class="livingcss__container livingcss__main-nav">
           <a class="livingcss__nav-link livingcss__nav-link--main " href="alert.html">Alert</a>
-          <a class="livingcss__nav-link livingcss__nav-link--main livingcss__nav-link--active" href="badge.html">Badge</a>
+          <a class="livingcss__nav-link livingcss__nav-link--main " href="badge.html">Badge</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="buttons.html">Buttons</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="campaign-list.html">Campaign List</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="card.html">Card</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="overview.html">Overview</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="forms.html">Forms</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="icons.html">Icons</a>
-          <a class="livingcss__nav-link livingcss__nav-link--main " href="input-group.html">Input Group</a>
+          <a class="livingcss__nav-link livingcss__nav-link--main livingcss__nav-link--active" href="input-group.html">Input Group</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="jumbotron.html">Jumbotron</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="multi-step-flow.html">Multi-Step Flow</a>
           <a class="livingcss__nav-link livingcss__nav-link--main " href="nav.html">Nav</a>
@@ -8149,47 +8149,67 @@
 
       <main class="livingcss__main" role="main">
 
-        <article class="livingcss__article" id="subtle-badge">
-          <h1 class="livingcss__article-title">Subtle Badge</h1><div class="livingcss__section-description"><p>Reverse the colors to create a more subtle effect</p></div>
+        <article class="livingcss__article" id="stacked-form-button-group">
+          <h1 class="livingcss__article-title">Stacked Form Button Group</h1><div class="livingcss__section-description"><p>Add a toggle to the end of an input</p></div>
 
-<livingcss-example><h1>
-  Money!
-  <span class="badge badge-subtle-mint">$</span>
-</h1>
-<p>
-  Status
-  <span class="badge badge-subtle-sky">active</span>
-</p>
-<h3>
-  <span class="badge badge-subtle-warning">active</span>
-</h3></livingcss-example>
-
-<div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;h1&gt;
-  Money!
-  &lt;span class&#x3D;&quot;badge badge-subtle-mint&quot;&gt;$&lt;/span&gt;
-&lt;/h1&gt;
-&lt;p&gt;
-  Status
-  &lt;span class&#x3D;&quot;badge badge-subtle-sky&quot;&gt;active&lt;/span&gt;
-&lt;/p&gt;
-&lt;h3&gt;
-  &lt;span class&#x3D;&quot;badge badge-subtle-warning&quot;&gt;active&lt;/span&gt;
-&lt;/h3&gt;</code></pre>
-</div>
-
-        </article>
-        <article class="livingcss__article" id="square-icon-badge">
-          <h1 class="livingcss__article-title">Square Icon Badge</h1><div class="livingcss__section-description"><p>Make a nicely squared badge with large icon in the center</p></div>
-
-<livingcss-example><span class="badge badge-subtle-mint badge-lg badge-sq">
-  <i class="fas fa-money-bill-wave-alt"></i>
-</span></livingcss-example>
+<livingcss-example><form class="p-2 mb-2">
+  <div class="input-group">
+    <div class="form-group-stacked">
+      <label for="value-input">Enter amount here</label>
+      <input id="value-input" class="form-control" type="string" />
+      <div class="invalid-feedback">Required</div>
+      <small class="form-text text-muted">Minimum is $1,000.00</small>
+    </div>
+    <div class="input-group-append">
+      <button class="btn btn-secondary" type="button">USD</button>
+      <button class="btn btn-outline-secondary" type="button">ETH</button>
+    </div>
+  </div>
+</form>
+<form class="p-2 mb-2">
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <button class="btn btn-outline-secondary" type="button">USD</button>
+      <button class="btn btn-secondary" type="button">ETH</button>
+    </div>
+    <div class="form-group-stacked">
+      <label for="value-input">Enter amount here</label>
+      <input id="value-input" class="form-control" type="string" />
+      <div class="invalid-feedback">Required</div>
+      <small class="form-text text-muted">Minimum is $1,000.00</small>
+    </div>
+  </div>
+</form></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;span class&#x3D;&quot;badge badge-subtle-mint badge-lg badge-sq&quot;&gt;
-  &lt;i class&#x3D;&quot;fas fa-money-bill-wave-alt&quot;&gt;&lt;/i&gt;
-&lt;/span&gt;</code></pre>
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;form class&#x3D;&quot;p-2 mb-2&quot;&gt;
+  &lt;div class&#x3D;&quot;input-group&quot;&gt;
+    &lt;div class&#x3D;&quot;form-group-stacked&quot;&gt;
+      &lt;label for&#x3D;&quot;value-input&quot;&gt;Enter amount here&lt;/label&gt;
+      &lt;input id&#x3D;&quot;value-input&quot; class&#x3D;&quot;form-control&quot; type&#x3D;&quot;string&quot; /&gt;
+      &lt;div class&#x3D;&quot;invalid-feedback&quot;&gt;Required&lt;/div&gt;
+      &lt;small class&#x3D;&quot;form-text text-muted&quot;&gt;Minimum is $1,000.00&lt;/small&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;input-group-append&quot;&gt;
+      &lt;button class&#x3D;&quot;btn btn-secondary&quot; type&#x3D;&quot;button&quot;&gt;USD&lt;/button&gt;
+      &lt;button class&#x3D;&quot;btn btn-outline-secondary&quot; type&#x3D;&quot;button&quot;&gt;ETH&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+&lt;form class&#x3D;&quot;p-2 mb-2&quot;&gt;
+  &lt;div class&#x3D;&quot;input-group&quot;&gt;
+    &lt;div class&#x3D;&quot;input-group-prepend&quot;&gt;
+      &lt;button class&#x3D;&quot;btn btn-outline-secondary&quot; type&#x3D;&quot;button&quot;&gt;USD&lt;/button&gt;
+      &lt;button class&#x3D;&quot;btn btn-secondary&quot; type&#x3D;&quot;button&quot;&gt;ETH&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;form-group-stacked&quot;&gt;
+      &lt;label for&#x3D;&quot;value-input&quot;&gt;Enter amount here&lt;/label&gt;
+      &lt;input id&#x3D;&quot;value-input&quot; class&#x3D;&quot;form-control&quot; type&#x3D;&quot;string&quot; /&gt;
+      &lt;div class&#x3D;&quot;invalid-feedback&quot;&gt;Required&lt;/div&gt;
+      &lt;small class&#x3D;&quot;form-text text-muted&quot;&gt;Minimum is $1,000.00&lt;/small&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
 </div>
 
         </article>
@@ -8198,8 +8218,7 @@
 
       <nav class="livingcss__nav">
         <div class="livingcss__nav-container">
-          <a class="livingcss__nav-link" href="#subtle-badge">Subtle Badge</a>
-          <a class="livingcss__nav-link" href="#square-icon-badge">Square Icon Badge</a>
+          <a class="livingcss__nav-link" href="#stacked-form-button-group">Stacked Form Button Group</a>
         </div>
       </nav>
 

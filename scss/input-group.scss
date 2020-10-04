@@ -43,6 +43,14 @@
 
   .form-group-stacked {
     margin-bottom: 0;
+    
+    // fill entire width letting group fill rest
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+
     &:first-child {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;

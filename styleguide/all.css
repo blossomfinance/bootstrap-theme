@@ -17261,7 +17261,12 @@ input[type="button"].btn-block {
 .input-group {
   margin-bottom: 1rem; }
   .input-group .form-group-stacked {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%; }
     .input-group .form-group-stacked:first-child {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0; }

@@ -8156,10 +8156,10 @@
   <a class="navbar-brand" href="#">
     <img src="/images/blossom-logo-horizontal-blue.svg" height="40" alt="">
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navigation-items" aria-controls="main-navigation-items" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="main-navigation-items">
+  <div class="navbar-collapse collapse" id="main-navigation-items">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">Portfolio</span></a>
@@ -8170,10 +8170,22 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Cash</a>
       </li>
-      <li class="nav-item avatar">
-        <a class="nav-link">
+      <li class="nav-item dropdown avatar">
+        <a id="navbar-dropdown-menu-link"
+           class="nav-link dropdown-toggle"
+           href="#"
+           role="button"
+           data-toggle="dropdown"
+           aria-haspopup="true"
+           aria-expanded="false"
+        >
           <img src="/images/worker-with-cloth-headgear.png" />
         </a>
+        <div class="dropdown-menu" aria-labelledby="navbar-dropdown-menu-link">
+          <a class="dropdown-item" href="#">Action 1</a>
+          <a class="dropdown-item" href="#">Action 2</a>
+          <a class="dropdown-item" href="#">Action 3</a>
+        </div>
       </li>
     </ul>
   </div>
@@ -8184,10 +8196,10 @@
   &lt;a class&#x3D;&quot;navbar-brand&quot; href&#x3D;&quot;#&quot;&gt;
     &lt;img src&#x3D;&quot;/images/blossom-logo-horizontal-blue.svg&quot; height&#x3D;&quot;40&quot; alt&#x3D;&quot;&quot;&gt;
   &lt;/a&gt;
-  &lt;button class&#x3D;&quot;navbar-toggler&quot; type&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;collapse&quot; data-target&#x3D;&quot;#navbarNav&quot; aria-controls&#x3D;&quot;navbarNav&quot; aria-expanded&#x3D;&quot;false&quot; aria-label&#x3D;&quot;Toggle navigation&quot;&gt;
+  &lt;button class&#x3D;&quot;navbar-toggler&quot; type&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;collapse&quot; data-target&#x3D;&quot;#main-navigation-items&quot; aria-controls&#x3D;&quot;main-navigation-items&quot; aria-expanded&#x3D;&quot;false&quot; aria-label&#x3D;&quot;Toggle navigation&quot;&gt;
     &lt;span class&#x3D;&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
   &lt;/button&gt;
-  &lt;div class&#x3D;&quot;collapse navbar-collapse&quot; id&#x3D;&quot;main-navigation-items&quot;&gt;
+  &lt;div class&#x3D;&quot;navbar-collapse collapse&quot; id&#x3D;&quot;main-navigation-items&quot;&gt;
     &lt;ul class&#x3D;&quot;navbar-nav ml-auto&quot;&gt;
       &lt;li class&#x3D;&quot;nav-item active&quot;&gt;
         &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Portfolio&lt;/span&gt;&lt;/a&gt;
@@ -8198,10 +8210,22 @@
       &lt;li class&#x3D;&quot;nav-item&quot;&gt;
         &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Cash&lt;/a&gt;
       &lt;/li&gt;
-      &lt;li class&#x3D;&quot;nav-item avatar&quot;&gt;
-        &lt;a class&#x3D;&quot;nav-link&quot;&gt;
+      &lt;li class&#x3D;&quot;nav-item dropdown avatar&quot;&gt;
+        &lt;a id&#x3D;&quot;navbar-dropdown-menu-link&quot;
+           class&#x3D;&quot;nav-link dropdown-toggle&quot;
+           href&#x3D;&quot;#&quot;
+           role&#x3D;&quot;button&quot;
+           data-toggle&#x3D;&quot;dropdown&quot;
+           aria-haspopup&#x3D;&quot;true&quot;
+           aria-expanded&#x3D;&quot;false&quot;
+        &gt;
           &lt;img src&#x3D;&quot;/images/worker-with-cloth-headgear.png&quot; /&gt;
         &lt;/a&gt;
+        &lt;div class&#x3D;&quot;dropdown-menu&quot; aria-labelledby&#x3D;&quot;navbar-dropdown-menu-link&quot;&gt;
+          &lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action 1&lt;/a&gt;
+          &lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action 2&lt;/a&gt;
+          &lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action 3&lt;/a&gt;
+        &lt;/div&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/div&gt;

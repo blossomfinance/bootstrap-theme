@@ -36,6 +36,7 @@
   "homepage": "https://github.com/blossomfinance/bootstrap-theme#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
+    "@popperjs/core": "^2.5.3",
     "blossom-svg-webfont-icons": "^1.1.0",
     "bootstrap": "^4.4.1"
   },

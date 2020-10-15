@@ -58,6 +58,7 @@ function buildStyleguide() {
       context.globalStylesheets = [
         cssDestWebUrl(),
       ];
+      context.scripts.push('https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js');
     },
   });
 }

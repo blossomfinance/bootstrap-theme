@@ -1,0 +1,32 @@
+
+@mixin card-small-text($color) {
+  font-size: $portfolio-list-sm-font-size;
+  line-height: $portfolio-list-sm-font-size;
+  letter-spacing: $portfolio-list-sm-letter-spacing;
+  color: $color;
+}
+
+@mixin item-summary-dt-item-variant($label-color) {
+  @include make-col-ready();
+  @include make-col(7);
+  @extend .text-uppercase;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  padding-right: 0 !important;
+  color: $label-color;
+  font-size: $portfolio-list-card-item-dl-label-font-size;
+  line-height: $portfolio-list-card-item-dl-label-line-height;
+}
+
+@mixin item-summary-dd-item-variant($value-color) {
+  @include make-col-ready();
+  @include make-col(5);
+  @extend .text-right;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: $value-color;
+  font-size: $portfolio-list-card-item-value-font-size;
+  line-height: $portfolio-list-card-item-dl-label-line-height;
+  font-weight: $portfolio-list-card-item-value-font-weight;
+}

@@ -1,0 +1,119 @@
+
+.portfolio-list-item-summary {
+
+  @extend .col-12;
+  @extend .col-lg-8;
+
+  // for smaller browsers
+  .portfolio-list-item-summary-md {
+    @extend .d-block;
+    @extend .d-lg-none;
+
+    & > dl {
+      @include make-row();
+      // TODO: variable for top adjustment margin
+      margin-top: -26px;
+
+      dt.amount-principal {
+        @include item-summary-dt-item-variant($gray-600);
+      }
+      dd.amount-principal {
+        @include item-summary-dd-item-variant($gray-900);
+      }
+
+      dt.amount-profit {
+        @include item-summary-dt-item-variant($gray-600);
+      }
+      dd.amount-profit {
+        @include item-summary-dd-item-variant($ocean);
+      }
+
+      dt.percent-apr {
+        @include item-summary-dt-item-variant($blueberry);
+        @extend .font-italic;
+        text-transform: none;
+      }
+      dd.percent-apr {
+        @include item-summary-dd-item-variant($blueberry);
+        @extend .font-italic;
+        text-transform: none;
+      }
+
+      @each $name, $bg-color in $amount-current-value-variants {
+        $color: map-get($amount-current-value-variants-colors, $name);
+        dt.amount-current-value-#{$name} {
+          @include item-summary-dt-item-variant($color);
+        }
+        dd.amount-current-value-#{$name} {
+          $color: map-get($amount-current-value-variants-colors, $name);
+          @extend .rounded;
+          @include item-summary-dd-item-variant($color);
+          font-size: $portfolio-list-card-item-value-font-size * (1 + (1/9));
+          background-color: $bg-color;
+          padding-right: 10px !important;
+          margin-left: -8px !important;
+          border-top-right-radius: 0 !important;
+          border-bottom-right-radius: 0 !important;
+        }
+      }
+    }
+  }
+
+  // for large browsers
+  .portfolio-list-item-summary-lg {
+    @extend .d-none;
+    @extend .d-lg-flex;
+    @extend .justify-content-end;
+    @extend .mb-3;
+    // @extend .row;
+    // @include make-row();
+
+    @mixin item-summary-label-value-variant($label-color, $value-color) {
+      @extend .col;
+      // @include make-col-ready();
+      // @include make-col(3);
+      @extend .text-right;
+      @extend .p-3;
+      color: $value-color;
+      font-size: $portfolio-list-card-item-value-font-size;
+      line-height: $portfolio-list-card-item-value-line-height;
+      font-weight: $portfolio-list-card-item-value-font-weight;
+
+      small {
+        display: block;
+        color: $label-color;
+        font-size: $portfolio-list-card-item-label-font-size;
+        line-height: $portfolio-list-card-item-label-line-height;
+        @extend .text-uppercase;
+      }
+    }
+
+    .amount-principal {
+      @include item-summary-label-value-variant($gray-600, $gray-900);
+    }
+
+    .amount-profit {
+      @include item-summary-label-value-variant($gray-600, $ocean);
+    }
+
+    .percent-apr {
+      @include item-summary-label-value-variant($blueberry, $blueberry);
+      @extend .font-italic;
+
+      small {
+        @extend .text-capitalize;
+      }
+    }
+
+    // current-value has multiple variants of color
+    @each $name, $bg-color in $amount-current-value-variants {
+      .amount-current-value-#{$name} {
+        @extend .rounded;
+        $color: map-get($amount-current-value-variants-colors, $name);
+        @include item-summary-label-value-variant($color, $color);
+        font-size: $portfolio-list-card-item-value-font-size * (1 + (1/9));
+        background-color: $bg-color;
+      }
+    }
+  }
+}

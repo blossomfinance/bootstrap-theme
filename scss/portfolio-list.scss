@@ -1,567 +1,67 @@
-$portfolio-list-sm-font-size: 11px !default;
-$portfolio-list-sm-letter-spacing: 0.5px !default;
-$portfolio-list-card-item-heading-font-size: 22px !default;
-$portfolio-list-card-item-heading-line-height: 26px !default;
-$portfolio-list-card-item-heading-margin-bottom: 6px !default;
-$portfolio-list-card-item-label-font-size: 10px !default;
-$portfolio-list-card-item-label-line-height: 20px !default;
-$portfolio-list-card-item-value-font-size: 18px !default;
-$portfolio-list-card-item-value-font-weight: $font-weight-bold !default;
-$portfolio-list-card-item-value-line-height: 20px !default;
-$portfolio-list-card-details-heading-font-size: 18px !default;
-$portfolio-list-card-details-article-font-size: 14px !default;
-$portfolio-list-card-details-article-font-weight: $font-weight-bold !default;
-$portfolio-list-card-details-article-line-height: 20px !default;
-$portfolio-list-card-details-article-blockquote-font-size: 16px !default;
-$portfolio-list-card-details-article-blockquote-line-height: 28px !default;
 
-$amount-current-value-variants: () !default;
-$amount-current-value-variants: map-merge((
-  'info': rgba($info, 0.2),
-  'secondary': rgba($secondary, 0.2),
-  'success': $success
-), $amount-current-value-variants);
+@import 'pieces/portfolio-list-variables';
+@import 'pieces/portfolio-list-mixins';
 
-$amount-current-value-variants-colors: () !default;
-$amount-current-value-variants-colors: map-merge((
-  'info': $info,
-  'secondary': $secondary,
-  'success': $white
-), $amount-current-value-variants-colors);
+.portfolio {
 
-/**
- * Full Example
- *
- * Put it all together and what do you get?
- *
- * @section
- * @page Portfolio List
- *
- * @example
- * <main class="portfolio-list">
- *   <header class="d-flex justify-content-between w-100">
- *     <h1>Portfolio Holdings</h1>
- *     <ul class="list-inline small">
- *       <li>
- *         <span class="badge badge-primary"></span>
- *         Actual
- *       </li>
- *       <li>
- *         <span class="badge badge-light"></span>
- *         Target
- *       </li>
- *       <li>
- *         <span class="badge badge-secondary"></span>
- *         Projected Return
- *       </li>
- *     </ul>
- *   </header>
- *   <article class="card card-expanded">
- *     <div class="card-body">
- *       <div class="row">
- *         <div class="col-4">
- *           <header>
- *             <small class="symbol">BLS:ZWIB</small>
- *             <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
- *             <small class="status">Activated: January 1, 2019</small>
- *           </header>
- *           <div class="clearfix">
- *             <button class="btn btn-wrap-left btn-concrete btn-arrow-right">Invest More</button>
- *           </div>
- *           <nav>
- *             <a href="#">Sell/Trade</a>
- *             <a href="#">Offering Docs</a>
- *             <a href="#">Financials</a>
- *           </nav>
- *         </div>
- *         <div class="col-8">
- *           <section class="item-summary">
- *             <div class="amount-principal">
- *               $100,000
- *               <small>You Invested</small>
- *             </div>
- *             <div class="amount-profit">
- *               + $4,000
- *               <small>You've Earned</small>
- *             </div>
- *             <div class="percent-apr">
- *               11.90%
- *               <small>Projected Return<sup>&dagger;</sup></small>
- *             </div>
- *             <div class="amount-current-value-secondary">
- *               <div>
- *                 $100,000
- *                 <small>Currently Worth</small>
- *               </div>
- *             </div>
- *           </section>
- *           <section class="item-details">
- *             <img src="/images/performance-graph.png" class="img-fluid" />
- *           </section>
- *         </div>
- *       </div>
- *       <aside class="item-info-feed">
- *         <h3>Your investment at work</h3>
- *         <div class="row">
- *           <article class="caption-image">
- *             <img src="/images/donuts.jpg" />
- *             <p>
- *               Siti Fatimah Sweet Treats & Baked Goods Street Cart
- *             </p>
- *           </article>
- *           <article class="caption-image">
- *             <img src="/images/chinese-street-food.jpg" />
- *             <p>
- *               Making a difference and transforming a passion into a business
- *             </p>
- *           </article>
- *           <article class="quote">
- *             <blockquote class="quote">
- *               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
- *               <footer class="blockquote-footer">
- *                 <img src="/images/worker-with-cloth-headgear.png" />
- *                 <cite title="Source Title">Famega Sulianto</cite>
- *               </footer>
- *             </blockquote>
- *           </article>
- *         </div>
- *       </aside>
- *     </div>
- *   </article>
- *   <article class="card card-collapsed">
- *     <div class="card-body">
- *       <div class="row">
- *         <div class="col-4">
- *           <header>
- *             <small class="symbol">BLS:ZWIB</small>
- *             <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
- *             <small class="status">Activates: August 31, 2019</small>
- *           </header>
- *           <div class="clearfix">
- *             <button class="btn btn-wrap-left btn-grape btn-arrow-right">
- *               Complete Investment
- *             </button>
- *           </div>
- *           <nav>
- *             <a href="#">Offering Docs</a>
- *             <a href="#">Financials</a>
- *           </nav>
- *         </div>
- *         <div class="col-8">
- *           <section class="item-summary">
- *             <div class="amount-principal">
- *               $100,000
- *               <small>You Invested</small>
- *             </div>
- *             <div class="amount-profit">
- *               + $4,000
- *               <small>You've Earned</small>
- *             </div>
- *             <div class="percent-apr">
- *               11.90%
- *               <small>Projected Return<sup>&dagger;</sup></small>
- *             </div>
- *             <div class="amount-current-value-info">
- *               <div>
- *                 $100,000
- *                 <small>Currently Worth</small>
- *               </div>
- *             </div>
- *           </section>
- *           <section class="item-details">
- *             <div class="alert alert-small alert-subtle-primary">
- *               <h4 class="alert-heading">
- *                 Signature Required
- *               </h4>
- *               <p>
- *                 <a class="alert-link" href="#">Sign your investment paperwork</a>
- *                 before the investment activates.
- *               </p>
- *             </div>
- *             <div class="alert alert-small alert-subtle-dark">
- *               <h4 class="alert-heading">
- *                 Launching Soon!
- *               </h4>
- *               <p>
- *                 This investment will activate on January 1, 2020. Check back often for pre-launch news and updates.
- *               </p>
- *             </div>
- *           </section>
- *         </div>
- *       </div>
- *     </div>
- *   </article>
- *   <article class="card card-collapsed">
- *     <div class="card-body">
- *       <div class="row">
- *         <div class="col-4">
- *           <header>
- *             <small class="symbol">BLS:ZWIB</small>
- *             <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
- *             <small class="status">Fully Matured: August 31, 2019</small>
- *           </header>
- *           <div class="clearfix">
- *             <button class="btn btn-success-icon btn-wrap-left">
- *               Investment Matured
- *             </button>
- *           </div>
- *           <nav>
- *             <a href="#">Offering Docs</a>
- *             <a href="#">Financials</a>
- *           </nav>
- *         </div>
- *         <div class="col-8">
- *           <section class="item-summary">
- *             <div class="amount-principal">
- *               $100,000
- *               <small>You Invested</small>
- *             </div>
- *             <div class="amount-profit">
- *               + $4,000
- *               <small>You've Earned</small>
- *             </div>
- *             <div class="percent-apr">
- *               11.90%
- *               <small>Projected Return<super>&dagger;</super></small>
- *             </div>
- *             <div class="amount-current-value-success">
- *               <div>
- *                 $100,000
- *                 <small>Currently Worth</small>
- *               </div>
- *             </div>
- *           </section>
- *           <section class="item-details">
- *             <img src="/images/performance-graph.png" class="img-fluid" />
- *           </section>
- *         </div>
- *       </div>
- *     </div>
- *   </article>
- * </main>
- */
+  .portfolio-sidebar {
+    @extend .col-12;
+    @extend .col-md-3;
+    @extend .bg-white;
+    @extend .pt-4;
 
-@mixin card-small-text($color) {
-  font-size: $portfolio-list-sm-font-size;
-  line-height: $portfolio-list-sm-font-size;
-  letter-spacing: $portfolio-list-sm-letter-spacing;
-  color: $color;
-}
+    .card-total-holdings {}
 
-.item-summary {
-  @extend .d-flex;
-  @extend .justify-content-end;
-  @extend .mb-3;
-  @mixin item-summary-label-value-variant($label-color, $value-color) {
-    @extend .col;
-    @extend .text-right;
-    @extend .p-3;
-    color: $value-color;
-    font-size: $portfolio-list-card-item-value-font-size;
-    line-height: $portfolio-list-card-item-value-line-height;
-    font-weight: $portfolio-list-card-item-value-font-weight;
+    .portfolio-withdrawl-alert {}
 
-    small {
-      display: block;
-      color: $label-color;
-      font-size: $portfolio-list-card-item-label-font-size;
-      line-height: $portfolio-list-card-item-label-line-height;
-      @extend .text-uppercase;
-    }
-  }
-
-  .amount-principal {
-    @include item-summary-label-value-variant($gray-600, $gray-900);
-  }
-
-  .amount-profit {
-    @include item-summary-label-value-variant($gray-600, $ocean);
-  }
-
-  .percent-apr {
-    @include item-summary-label-value-variant($blueberry, $blueberry);
-    @extend .font-italic;
-
-    small {
-      @extend .text-capitalize;
-    }
-  }
-
-  %amount-current-value {
-    @extend .rounded;
-    font-size: $portfolio-list-card-item-value-font-size * (1 + (1/9));
-  }
-  @mixin amount-current-value-variant($state, $color, $bg-color) {
-    @extend %amount-current-value;
-    @include item-summary-label-value-variant($color, $color);
-    background-color: $bg-color;
-  }
-  @each $name, $bg-color in $amount-current-value-variants {
-    .amount-current-value-#{$name} {
-      $color: map-get($amount-current-value-variants-colors, $name);
-      @include amount-current-value-variant($name, $color, $bg-color);
-    }
-  }
-}
-
-.portfolio-list {
-  /**
-   * Header
-   *
-   * Label and legend for the chart
-   *
-   * @section
-   * @page Portfolio List
-   *
-   * @example
-   * <main class="portfolio-list">
-   *   <header>
-   *     <h1>Portfolio Holdings</h1>
-   *     <ul>
-   *       <li>
-   *         <span class="badge badge-primary"></span>
-   *         Actual
-   *       </li>
-   *       <li>
-   *         <span class="badge badge-light"></span>
-   *         Target
-   *       </li>
-   *       <li>
-   *         <span class="badge badge-secondary"></span>
-   *         Projected Return
-   *       </li>
-   *     </ul>
-   *   </header>
-   *   <article class="card">
-   *     <div class="card-body">
-   *       CARD CONTENT HERE
-   *     </div>
-   *   </article>
-   * </main>
-   */
-  & > header {
-    @extend .d-flex;
-    @extend .justify-content-between;
-    @extend .w-100;
-
-    h1 {
-      font-size: $font-size-base;
-      color: $gray-600;
-      @extend .font-weight-bold;
-      @extend .text-uppercase;
-      @extend .mt-0;
-      @extend .mb-3;
-    }
-
-    ul {
-      @extend .list-inline;
-      @extend .small;
-
-      li {
-        @extend .list-inline-item;
-        @extend .font-weight-bold;
-        @extend .align-middle;
-        @extend .text-muted;
-        @extend .mr-4;
-
-        .badge {
-          @extend .badge-pill;
-          @extend .d-inline-block;
-          @extend .mr-2;
-          height: 14px;
-          width: 14px;
-          margin-bottom: -3px;
-        }
-      }
-    }
-  }
-  /**
-   * Card
-   *
-   * Each portfolio item is represented as a card
-   *
-   * @section
-   * @page Portfolio List
-   *
-   * @example
-   * <main class="portfolio-list">
-   *   <article class="card">
-   *     <div class="card-body">
-   *       CARD CONTENT HERE
-   *     </div>
-   *   </article>
-   * </main>
-   */
-  .card {
-    @extend .card;
-    @extend .pt-0;
-    @extend .mb-5;
-    @extend .shadow-sm;
-
-    .card-body {
-      // TODO: spacing variable
-      padding-top: 20px !important;
-    }
-
-    /**
-     * Card Header
-     *
-     * Provides an overview of the asset type including its status
-     *
-     * @section
-     * @page Portfolio List
-     *
-     * @example
-     * <main class="portfolio-list">
-     *   <article class="card">
-     *     <div class="card-body">
-     *       <header>
-     *         <small class="symbol">BLS:ZWIB</small>
-     *         <h2 class="card-title">Zero-emission Waste Incineration Facility in Bali</h2>
-     *         <small class="status">Activated: January 1, 2019</small>
-     *       </header>
-     *     </div>
-     *   </article>
-     * </main>
-     */
-    header {
-      @extend .mb-4;
-
-      .symbol {
-        text-transform: uppercase;
-        @include card-small-text($gray-700);
-      }
-
-      .status {
-        @include card-small-text($gray-600);
-      }
-
-      h2 {
-        @extend .text-midnight;
-        font-size: $portfolio-list-card-item-heading-font-size;
-        line-height: $portfolio-list-card-item-heading-line-height;
-        margin-bottom: $portfolio-list-card-item-heading-margin-bottom;
+    .action-items {
+      ul {
+        @extend .list-group-flush;
       }
     }
 
-    nav {
-      @extend .nav;
-      @extend .nav-xs;
-      @extend .nav-link-elephant;
-      @extend .mt-4;
-      margin-left: -1 * $card-spacer-x;
-      padding-left: $card-spacer-x;
-
-      & > a {
-        @extend .nav-link;
+    .new-offerings {
+      @extend .d-none;
+      @extend .d-lg-block;
+      ul {
+        @extend .list-unstyled;
       }
     }
+  }
 
-    &.card-expanded {
-      nav {
-        @extend .border-bottom;
-      }
-    }
+  .portfolio-list {
+    @extend .col-12;
+    @extend .col-md-9;
+    @extend .mt-3;
+    @extend .mt-md-4;
 
-    /////////////////////////////////////////////////////////////////////////
-    // Alerts and other items inside the card should fill the space
-    /////////////////////////////////////////////////////////////////////////
-    .item-details {
-      @extend .d-flex;
-      @extend .align-items-stretch;
-      .alert {
-        // @extend .flex-fill;
-        @extend .col;
-        @extend .mb-3;
-        @extend .mr-3;
-        &:last-child {
-          @extend .mr-0;
-        }
-      }
-    }
+    @import 'pieces/portfolio-list-header';
 
-    /////////////////////////////////////////////////////////////////////////
-    // Bottom news feed area
-    /////////////////////////////////////////////////////////////////////////
-    .item-info-feed {
-      @extend .mt-4;
-      @extend .font-weight-light;
+    .card {
+      @extend .card;
+      @extend .pt-0;
+      @extend .mb-5;
+      @extend .shadow-sm;
 
-      h3 {
-        @extend .text-midnight;
-        @extend .font-italic;
-        @extend .font-weight-bold;
-        font-size: $portfolio-list-card-details-heading-font-size;
-      }
+      .card-body {
 
-      article {
-        &.caption-image {
-          @extend .col;
-          font-size: $portfolio-list-card-details-article-font-size;
-          font-weight: $portfolio-list-card-details-article-font-weight;
-          line-height: $portfolio-list-card-details-article-line-height;
-
-          img {
-            @extend .img-fluid;
-            @extend .rounded;
-            @extend .mb-2;
-          }
-
-          img + p {
-            @extend .m-0;
-            @extend .text-slate;
-          }
+        @include media-breakpoint-down(md) {
+          margin-top: -6px;
         }
 
-        &.quote {
-          @extend .col;
-          @extend .d-flex;
-          @extend .align-items-stretch;
-          @extend .rounded;
-          @extend .pb-6;
-          @extend .text-white;
+        @include media-breakpoint-up(lg) {
+          padding-top: 20px !important;
+        }
 
-          blockquote {
-            @extend .font-italic;
-            @extend .rounded;
-            @extend .py-2;
-            @extend .px-3;
+        @import 'pieces/portfolio-list-item-overview';
+        @import 'pieces/portfolio-list-item-summary';
+        @import 'pieces/portfolio-list-item-details';
+        @import 'pieces/portfolio-list-item-info-feed';
+      }
 
-            p {
-              @extend .text-white;
-            }
-            background-image: url("/images/quote-bg-grape.jpg");
-            font-size: $portfolio-list-card-details-article-blockquote-font-size;
-            line-height: $portfolio-list-card-details-article-blockquote-line-height;
-            letter-spacing: -0.5px;
-            position: relative;
-            $blockquote-footer-offset: map-get($spacers, '5');
-
-            .blockquote-footer {
-              @extend .text-aluminium;
-              position: absolute;
-              bottom: -30px;
-
-              &:before {
-                content: '';
-              }
-
-              img {
-                @extend .float-left;
-                @extend .rounded-pill;
-                @extend .border;
-                @extend .border-white;
-                @extend .mr-3;
-                max-width: 40px;
-              }
-
-              cite {
-                @extend .mt-3;
-                @extend .d-inline-block;
-                font-size: 13px;
-              }
-            }
-          }
+      &.card-expanded {
+        nav {
+          @extend .border-bottom;
         }
       }
     }

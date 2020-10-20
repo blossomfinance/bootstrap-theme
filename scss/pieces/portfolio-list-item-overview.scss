@@ -1,0 +1,40 @@
+
+.portfolio-list-item-overview {
+  @extend .col-12;
+  @extend .col-md-4;
+
+  .portfolio-list-item-overview-header {
+    @extend .mb-4;
+
+    .symbol {
+      text-transform: uppercase;
+      @include card-small-text($gray-700);
+    }
+
+    .status {
+      @include card-small-text($gray-600);
+    }
+
+    .card-title {
+      @extend .text-midnight;
+      font-size: $portfolio-list-card-item-heading-font-size;
+      line-height: $portfolio-list-card-item-heading-line-height;
+      margin-bottom: $portfolio-list-card-item-heading-margin-bottom;
+    }
+  }
+
+  nav {
+    @extend .nav;
+    @extend .nav-xs;
+    @extend .nav-link-elephant;
+    @extend .mt-4;
+    @extend .d-none;
+    @extend .d-md-block;
+    margin-left: -1 * $card-spacer-x;
+    padding-left: $card-spacer-x;
+
+    & > a {
+      @extend .nav-link;
+    }
+  }
+}

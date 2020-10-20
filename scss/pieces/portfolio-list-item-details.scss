@@ -1,0 +1,30 @@
+
+.portfolio-list-item-details {
+
+  @extend .col-12;
+  @extend .col-lg-8;
+
+  .portfolio-list-item-alerts {
+    @extend .d-flex;
+    @extend .align-items-stretch;
+    .alert {
+      @extend .col;
+      @extend .float-right;
+      @extend .mb-3;
+      @extend .mr-3;
+      &:last-child {
+        @extend .mr-0;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      .alert:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .item-performance-chart {
+
+  }
+}

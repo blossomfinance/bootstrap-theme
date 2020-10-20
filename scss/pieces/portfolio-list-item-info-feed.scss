@@ -1,0 +1,83 @@
+
+.item-info-feed {
+  @extend .mt-4;
+  @extend .font-weight-light;
+
+  h3 {
+    @extend .text-midnight;
+    @extend .font-italic;
+    @extend .font-weight-bold;
+    font-size: $portfolio-list-card-details-heading-font-size;
+  }
+
+  article {
+    &.caption-image {
+      @extend .col;
+      font-size: $portfolio-list-card-details-article-font-size;
+      font-weight: $portfolio-list-card-details-article-font-weight;
+      line-height: $portfolio-list-card-details-article-line-height;
+
+      img {
+        @extend .img-fluid;
+        @extend .rounded;
+        @extend .mb-2;
+      }
+
+      img + p {
+        @extend .m-0;
+        @extend .text-slate;
+      }
+    }
+
+    &.quote {
+      @extend .col;
+      @extend .d-flex;
+      @extend .align-items-stretch;
+      @extend .rounded;
+      @extend .pb-6;
+      @extend .text-white;
+
+      blockquote {
+        @extend .font-italic;
+        @extend .rounded;
+        @extend .py-2;
+        @extend .px-3;
+
+        p {
+          @extend .text-white;
+        }
+        background-image: url("/images/quote-bg-grape.jpg");
+        font-size: $portfolio-list-card-details-article-blockquote-font-size;
+        line-height: $portfolio-list-card-details-article-blockquote-line-height;
+        letter-spacing: -0.5px;
+        position: relative;
+        $blockquote-footer-offset: map-get($spacers, '5');
+
+        .blockquote-footer {
+          @extend .text-aluminium;
+          position: absolute;
+          bottom: -30px;
+
+          &:before {
+            content: '';
+          }
+
+          img {
+            @extend .float-left;
+            @extend .rounded-pill;
+            @extend .border;
+            @extend .border-white;
+            @extend .mr-3;
+            max-width: 40px;
+          }
+
+          cite {
+            @extend .mt-3;
+            @extend .d-inline-block;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}

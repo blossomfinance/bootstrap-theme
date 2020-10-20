@@ -147,4 +147,10 @@
       border-bottom-right-radius: $card-border-radius !important;
     }
   }
+
+  @include media-breakpoint-down(md) {
+    .card-body {
+      padding: 12px !important;
+    }
+  }
 }

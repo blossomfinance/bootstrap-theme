@@ -144,8 +144,12 @@
   aside {
 
     section {
-      @extend .mt-5;
-      @extend .mb-5;
+      @extend .mb-3;
+      
+      @include media-breakpoint-up(lg) {
+        margin-top: $spacer * 3;
+        margin-bottom: $spacer * 3;
+      }
 
       &:first-child {
         @extend .mt-0;

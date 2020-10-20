@@ -1,0 +1,32 @@
+$portfolio-list-sm-font-size: 11px !default;
+$portfolio-list-sm-letter-spacing: 0.5px !default;
+$portfolio-list-card-item-heading-font-size: 22px !default;
+$portfolio-list-card-item-heading-line-height: 26px !default;
+$portfolio-list-card-item-heading-margin-bottom: 6px !default;
+$portfolio-list-card-item-label-font-size: 10px !default;
+$portfolio-list-card-item-label-line-height: 20px !default;
+$portfolio-list-card-item-dl-label-font-size: 12px !default;
+$portfolio-list-card-item-dl-label-line-height: 28px !default;
+$portfolio-list-card-item-value-font-size: 18px !default;
+$portfolio-list-card-item-value-font-weight: $font-weight-bold !default;
+$portfolio-list-card-item-value-line-height: 20px !default;
+$portfolio-list-card-details-heading-font-size: 18px !default;
+$portfolio-list-card-details-article-font-size: 14px !default;
+$portfolio-list-card-details-article-font-weight: $font-weight-bold !default;
+$portfolio-list-card-details-article-line-height: 20px !default;
+$portfolio-list-card-details-article-blockquote-font-size: 16px !default;
+$portfolio-list-card-details-article-blockquote-line-height: 28px !default;
+
+$amount-current-value-variants: () !default;
+$amount-current-value-variants: map-merge((
+  'info': rgba($info, 0.2),
+  'secondary': rgba($secondary, 0.2),
+  'success': $success
+), $amount-current-value-variants);
+
+$amount-current-value-variants-colors: () !default;
+$amount-current-value-variants-colors: map-merge((
+  'info': $info,
+  'secondary': $secondary,
+  'success': $white
+), $amount-current-value-variants-colors);

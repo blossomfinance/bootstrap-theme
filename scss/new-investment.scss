@@ -42,7 +42,14 @@
   }
 
   main {
-    @extend .pt-5;
+
+    $spacer-5: map-get($spacers, '5');
+    @include media-breakpoint-down(sm) {
+      padding-top: 0;
+    }
+    @include media-breakpoint-up(md) {
+      padding-top: $spacer-5;
+    }
 
     & > * {
       @extend .text-center;

@@ -57,6 +57,16 @@
         @import 'pieces/portfolio-list-item-summary';
         @import 'pieces/portfolio-list-item-details';
         @import 'pieces/portfolio-list-item-info-feed';
+
+        .btn-details {
+          @extend .btn;
+          @extend .btn-wrap-left;
+          @extend .btn-concrete;
+          @extend .btn-arrow-right;
+          @include media-breakpoint-up(lg) {
+            display: none !important;
+          }
+        }
       }
 
       &.card-expanded {

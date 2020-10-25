@@ -1,7 +1,7 @@
 
 .portfolio-list-item-overview {
   @extend .col-12;
-  @extend .col-md-4;
+  @extend .col-lg-4;
 
   .portfolio-list-item-overview-header {
     @extend .mb-4;
@@ -29,7 +29,7 @@
     @extend .nav-link-elephant;
     @extend .mt-4;
     @extend .d-none;
-    @extend .d-md-block;
+    @extend .d-lg-flex;
     margin-left: -1 * $card-spacer-x;
     padding-left: $card-spacer-x;
 

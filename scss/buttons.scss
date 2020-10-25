@@ -276,6 +276,7 @@ $btn-icon-line-height: 1.5rem !default;
 @mixin btn-wrap-variant(
   $direction,
   $spacing-x,
+  $spacing-md-x,
   $font-size: $font-size-sm,
   $height: $spacer
 ) {
@@ -290,27 +291,46 @@ $btn-icon-line-height: 1.5rem !default;
     float: left;
     border-top-right-radius: 1000px;
     border-bottom-right-radius: 1000px;
-    margin-left: -1 * $card-spacer-x;
-    &:after {
-      padding-left: 2 * $card-spacer-x;
+    @include media-breakpoint-down(md) {
+      margin-left: 7px;
+      padding-left: $spacing-md-x;
+      &:after {
+        padding-left: $spacing-md-x;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      margin-left: -1 * $spacing-x;
+      &:after {
+        padding-left: 2 * $spacing-x;
+      }
     }
   } @else {
     float: right;
     border-top-left-radius: 1000px;
     border-bottom-left-radius: 1000px;
-    margin-right: -1 * $card-spacer-x;
-    &:after {
-      padding-right: 2 * $card-spacer-x;
+
+    @include media-breakpoint-down(md) {
+      margin-right: 7px;
+      padding-right: $spacing-md-x;
+      &:after {
+        padding-right: $spacing-md-x;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      margin-right: -1 * $spacing-x;
+      &:after {
+        padding-right: 2 * $spacing-x;
+      }
     }
   }
  }
 
 .card {
   .btn-wrap-left {
-    @include btn-wrap-variant('left', $card-spacer-x);
+    @include btn-wrap-variant('left', $card-spacer-x, $card-md-spacer-x);
   }
   .btn-wrap-right {
-    @include btn-wrap-variant('right', $card-spacer-x);
+    @include btn-wrap-variant('right', $card-spacer-x, $card-md-spacer-x);
   }
 }
 

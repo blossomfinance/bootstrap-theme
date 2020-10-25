@@ -150,7 +150,7 @@
 
   @include media-breakpoint-down(md) {
     .card-body {
-      padding: 12px !important;
+      padding: $card-md-spacer-y $card-md-spacer-x !important;
     }
   }
 }

@@ -183,12 +183,28 @@ $nav-pills-border-width: 2px;
   @extend .m-0;
   @extend .p-0;
   width: 100%;
+
   .nav-item {
     @extend .text-center;
     @extend .flex-fill;
     @extend .text-uppercase;
-    font-size: 13px;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 10px;
+      &:first-child {
+        margin-left: -0.5 * $spacer;
+      }
+      &:last-child {
+        margin-right: -0.5 * $spacer;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 13px;
+    }
+
     .nav-link {
+
       @extend .text-center;
       @extend .py-4;
       @extend .font-weight-bold;
@@ -196,6 +212,12 @@ $nav-pills-border-width: 2px;
       border-right: none;
       border-bottom: none;
       border-left: none;
+
+      @include media-breakpoint-down(sm) {
+        padding-top: $spacer * 0.25;
+        padding-bottom: $spacer * 0.25;
+      }
+
       &:link,
       &:visited {
         @extend .text-fog;

@@ -286,9 +286,14 @@
     @extend .mb-0;
   }
   i {
-    @extend .d-block;
     @extend .mr-3;
     font-size: $h1-font-size;
+    @include media-breakpoint-down(sm) {
+      display: none !important;
+    }
+    @include media-breakpoint-up(md) {
+      display: block !important;
+    }
   }
 }
 
@@ -327,5 +332,12 @@
     font-size: $font-size-base;
     line-height: $font-size-base * 1.25;
     @extend .py-2;
+  }
+}
+
+.alert {
+  h1, h2, h3, h4, h5, h6, p, a, strong {
+    // word-break: break-all;
+    word-break: break-word;
   }
 }

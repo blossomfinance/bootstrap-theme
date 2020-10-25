@@ -3,9 +3,27 @@
   @extend .text-center;
 }
 
+$page-standalone-sm-h1-font-size: $h3-font-size;
+$page-standalone-sm-h2-font-size: $h4-font-size;
+
 main.page-standalone {
-  @extend .pt-5;
+  @extend .pt-0;
+  @extend .pt-md-4;
+  @extend .pt-lg-5;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: -1 * $spacer;
+    h1 {
+      font-size: $page-standalone-sm-h1-font-size !important;
+    }
+  }
+
   form {
     @extend .text-left;
   }
+}
+
+.multi-step-flow,
+.new-investment {
+  @extend .pb-4;
 }

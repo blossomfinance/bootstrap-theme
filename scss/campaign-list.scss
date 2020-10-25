@@ -70,7 +70,8 @@
   .campaign-list-item {
     @extend .col-12;
     @extend .col-md-6;
-    @extend .col-lg-4;
+    @extend .col-lg-6;
+    @extend .col-xl-4;
     @extend .mb-4;
     @extend .align-self-stretch;
     .card {

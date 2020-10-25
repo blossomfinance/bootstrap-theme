@@ -215,7 +215,13 @@ p {
   // }
 
   &.dl-icon {
-    @extend .px-5;
+
+    $spacer-5: map-get($spacers, '5');
+    @include media-breakpoint-up(md) {
+      padding-left: $spacer-5 !important;
+      padding-right: $spacer-5 !important;
+    }
+
     dd,
     dt {
       margin-left: $dl-icon-margin-left !important;
@@ -228,6 +234,9 @@ p {
         left: -1 * $dl-icon-margin-left;
         bottom: $dl-icon-bottom;
         font-size: $dl-icon-font-size;
+        @include media-breakpoint-down(sm) {
+          left: -0.5 * $dl-icon-margin-left;
+        }
       }
     }
   }

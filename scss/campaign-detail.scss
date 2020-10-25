@@ -7,9 +7,20 @@
       @extend .d-block;
       @extend .mb-1;
     }
+
     h1 {
-      @extend .display-3;
+      @include media-breakpoint-down(sm) {
+        font-size: $h1-font-size * 0.9;
+        font-weight: $display4-weight;
+        line-height: $display-line-height;
+      }
+      @include media-breakpoint-up(md) {
+        font-size: $display3-size;
+        font-weight: $display3-weight;
+        line-height: $display-line-height;
+      }
     }
+
     aside {
       @extend .font-weight-light;
     }
@@ -33,6 +44,21 @@
       @extend .mt-7;
       @extend .mb-6;
       @extend .text-center;
+
+      @include media-breakpoint-down(md) {
+        font-size: $h2-font-size;
+        line-height: $h2-font-size;
+        margin-top: 0 !important;
+        margin-bottom: $spacer;
+        text-align: left !important;
+      }
+    }
+
+    h3 {
+      @include media-breakpoint-down(md) {
+        font-size: $h4-font-size;
+        line-height: $h4-font-size;
+      }
     }
   }
 

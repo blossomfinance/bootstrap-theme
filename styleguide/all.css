@@ -5772,8 +5772,8 @@ p {
 
 @media (min-width: 768px) {
   .dl.dl-icon {
-    padding-left: !important;
-    padding-right: !important; } }
+    padding-left: 40px !important;
+    padding-right: 40px !important; } }
 
 .dl.dl-icon dd,
 .dl.dl-icon dt {

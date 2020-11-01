@@ -5621,6 +5621,10 @@ p {
 .dl.dl-icon dd,
 .dl.dl-icon dt {
   margin-left: 56px !important; }
+  @media (max-width: 767.98px) {
+    .dl.dl-icon dd,
+    .dl.dl-icon dt {
+      padding-left: 20px; } }
 
 .dl.dl-icon dt {
   position: relative; }
@@ -5631,7 +5635,7 @@ p {
     font-size: 40px; }
     @media (max-width: 767.98px) {
       .dl.dl-icon dt i {
-        left: -28px; } }
+        left: -38px; } }
 
 .dl.dl-border-bottom dd {
   border-top: 1px solid rgba(149, 158, 166, 0.3) !important;

@@ -216,10 +216,9 @@ p {
 
   &.dl-icon {
 
-    $spacer-5: map-get($spacers, '5');
     @include media-breakpoint-up(md) {
-      padding-left: $spacer-5 !important;
-      padding-right: $spacer-5 !important;
+      padding-left: $spacer !important;
+      padding-right: $spacer !important;
     }
 
     dd,

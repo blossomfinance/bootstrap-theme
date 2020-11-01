@@ -224,6 +224,9 @@ p {
     dd,
     dt {
       margin-left: $dl-icon-margin-left !important;
+      @include media-breakpoint-down(sm) {
+        padding-left: 20px;
+      }
     }
 
     dt {
@@ -234,7 +237,7 @@ p {
         bottom: $dl-icon-bottom;
         font-size: $dl-icon-font-size;
         @include media-breakpoint-down(sm) {
-          left: -0.5 * $dl-icon-margin-left;
+          left: -38px;
         }
       }
     }

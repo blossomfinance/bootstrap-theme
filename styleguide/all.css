@@ -24458,8 +24458,8 @@ button.btn-link-arrow-left-black:focus:before {
 .px-4 {
   padding-right: 32px !important; }
 
-.pb-4, .portfolio aside section .list-group-flush > li, .portfolio aside section .portfolio-sidebar .action-items ul > li, .portfolio .portfolio-sidebar .action-items aside section ul > li, .portfolio aside section ul.list-unstyled > li, .portfolio aside section .portfolio-sidebar .new-offerings ul > li, .portfolio .portfolio-sidebar .new-offerings aside section ul > li, .multi-step-flow,
-.new-investment,
+.pb-4, .portfolio aside section .list-group-flush > li, .portfolio aside section .portfolio-sidebar .action-items ul > li, .portfolio .portfolio-sidebar .action-items aside section ul > li, .portfolio aside section ul.list-unstyled > li, .portfolio aside section .portfolio-sidebar .new-offerings ul > li, .portfolio .portfolio-sidebar .new-offerings aside section ul > li, .multi-step-flow main,
+.new-investment main,
 .py-4,
 .nav-tabs .nav-item .nav-link,
 .nav-tabs .nav-item .portfolio .portfolio-list .card-total-holdings .card-body .portfolio-list-item-overview nav > a,

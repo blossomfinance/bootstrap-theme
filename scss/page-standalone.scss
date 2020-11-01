@@ -25,5 +25,7 @@ main.page-standalone {
 
 .multi-step-flow,
 .new-investment {
-  @extend .pb-4;
+  main {
+    @extend .pb-4;
+  }
 }

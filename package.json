@@ -1,5 +1,5 @@
 {
-  "name": "blossom-bootstrap-theme",
+  "name": "@blossomfinance/bootstrap-theme",
   "version": "0.15.4",
   "description": "Blossom base branded theme for Bootstrap 4",
   "main": "index.js",

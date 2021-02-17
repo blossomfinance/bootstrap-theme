@@ -5771,27 +5771,29 @@ p {
   max-height: 48px; }
 
 @media (min-width: 768px) {
-  .dl.dl-icon {
+  .dl.dl-icon, .dl.dl-icon.dl-border-bottom {
     padding-left: 40px !important;
     padding-right: 40px !important; } }
 
 .dl.dl-icon dd,
-.dl.dl-icon dt {
+.dl.dl-icon dt, .dl.dl-icon.dl-border-bottom dd,
+.dl.dl-icon.dl-border-bottom dt {
   margin-left: 56px !important; }
   @media (max-width: 767.98px) {
     .dl.dl-icon dd,
-    .dl.dl-icon dt {
-      padding-left: 20px; } }
+    .dl.dl-icon dt, .dl.dl-icon.dl-border-bottom dd,
+    .dl.dl-icon.dl-border-bottom dt {
+      padding-left: 20px !important; } }
 
-.dl.dl-icon dt {
+.dl.dl-icon dt, .dl.dl-icon.dl-border-bottom dt {
   position: relative; }
-  .dl.dl-icon dt i {
+  .dl.dl-icon dt i, .dl.dl-icon.dl-border-bottom dt i {
     position: absolute;
     left: -56px;
     bottom: 8px;
     font-size: 40px; }
     @media (max-width: 767.98px) {
-      .dl.dl-icon dt i {
+      .dl.dl-icon dt i, .dl.dl-icon.dl-border-bottom dt i {
         left: -38px; } }
 
 .dl.dl-border-bottom dd {

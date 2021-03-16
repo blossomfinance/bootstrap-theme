@@ -25868,6 +25868,12 @@ a.text-black:hover, a.btn-link-arrow-right-black:hover, a.btn-link-arrow-left-bl
   margin-left: -32px;
   padding-left: 32px; }
 
+@media (max-width: 767.98px) {
+  .portfolio .portfolio-list .card-total-holdings .card-body .portfolio-list-item-overview .btn-wrap-left, .portfolio .portfolio-list .card .card-body .portfolio-list-item-overview .btn-wrap-left, .portfolio .portfolio-list .card-total-holdings .card-body .portfolio-list-item-overview .btn-details, .portfolio .portfolio-list .card .card-body .portfolio-list-item-overview .btn-details {
+    position: relative;
+    top: -30px;
+    left: -20px; } }
+
 .portfolio .portfolio-list .card-total-holdings .card-body .portfolio-list-item-summary .portfolio-list-item-summary-md > dl, .portfolio .portfolio-list .card .card-body .portfolio-list-item-summary .portfolio-list-item-summary-md > dl {
   display: flex;
   flex-wrap: wrap;

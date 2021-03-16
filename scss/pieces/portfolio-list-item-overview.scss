@@ -37,4 +37,12 @@
       @extend .nav-link;
     }
   }
+
+  @include media-breakpoint-down(sm) {
+    .btn-wrap-left {
+      position: relative;
+      top: -30px;
+      left: -20px;
+    }
+  }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@blossomfinance/bootstrap-theme",
-  "version": "0.17.0",
+  "version": "0.17.1",
   "description": "Blossom base branded theme for Bootstrap 4",
   "main": "index.js",
   "srcDir": "scss",

@@ -1,6 +1,6 @@
 {
   "name": "@blossomfinance/bootstrap-theme",
-  "version": "0.15.10",
+  "version": "0.15.11",
   "description": "Blossom base branded theme for Bootstrap 4",
   "main": "index.js",
   "srcDir": "scss",
@@ -22,8 +22,7 @@
   },
   "keywords": [
     "Bootstrap",
-    "Bootstrap",
-    "4",
+    "Bootstrap 4",
     "theme",
     "style",
     "scss"

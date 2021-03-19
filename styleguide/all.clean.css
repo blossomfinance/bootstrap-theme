@@ -4856,8 +4856,8 @@
 
 @font-face {
   font-family: "icons";
-  src: url("/fonts/icons.eot?d7d3ad7aff203cafad44d6f14744c8f3");
-  src: url("/fonts/icons.eot?d7d3ad7aff203cafad44d6f14744c8f3#iefix") format("embedded-opentype"), url("/fonts/icons.woff?d7d3ad7aff203cafad44d6f14744c8f3") format("woff"), url("/fonts/icons.ttf?d7d3ad7aff203cafad44d6f14744c8f3") format("truetype");
+  src: url("/fonts/icons.eot?4d599a56deb95e18ce1984cb96fd1fc6");
+  src: url("/fonts/icons.eot?4d599a56deb95e18ce1984cb96fd1fc6#iefix") format("embedded-opentype"), url("/fonts/icons.woff?4d599a56deb95e18ce1984cb96fd1fc6") format("woff"), url("/fonts/icons.ttf?4d599a56deb95e18ce1984cb96fd1fc6") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -4910,212 +4910,218 @@
 .icon-charity:before {
   content: "\f10c"; }
 
-.icon-construction:before {
+.icon-checked:before {
   content: "\f10d"; }
 
-.icon-curved-arrow:before {
+.icon-construction:before {
   content: "\f10e"; }
 
-.icon-down-arrow-outline:before {
+.icon-curved-arrow:before {
   content: "\f10f"; }
 
-.icon-envelope:before {
+.icon-down-arrow-outline:before {
   content: "\f110"; }
 
-.icon-extrnal-link:before {
+.icon-envelope:before {
   content: "\f111"; }
 
-.icon-fast:before {
+.icon-extrnal-link:before {
   content: "\f112"; }
 
-.icon-financial-statement:before {
+.icon-fast:before {
   content: "\f113"; }
 
-.icon-finish-flag:before {
+.icon-financial-statement:before {
   content: "\f114"; }
 
-.icon-globe:before {
+.icon-finish-flag:before {
   content: "\f115"; }
 
-.icon-good-people:before {
+.icon-globe:before {
   content: "\f116"; }
 
-.icon-growth-graph:before {
+.icon-good-people:before {
   content: "\f117"; }
 
-.icon-growth-icon:before {
+.icon-growth-graph:before {
   content: "\f118"; }
 
-.icon-growth:before {
+.icon-growth-icon:before {
   content: "\f119"; }
 
-.icon-halal:before {
+.icon-growth:before {
   content: "\f11a"; }
 
-.icon-hello-sign-logo:before {
+.icon-halal:before {
   content: "\f11b"; }
 
-.icon-hijabi:before {
+.icon-hello-sign-logo:before {
   content: "\f11c"; }
 
-.icon-house:before {
+.icon-hijabi:before {
   content: "\f11d"; }
 
-.icon-identification:before {
+.icon-house:before {
   content: "\f11e"; }
 
-.icon-indonesia-national-monument:before {
+.icon-identification:before {
   content: "\f11f"; }
 
-.icon-indonesia-underwriters:before {
+.icon-indonesia-national-monument:before {
   content: "\f120"; }
 
-.icon-indonesia1:before {
+.icon-indonesia-underwriters:before {
   content: "\f121"; }
 
-.icon-institution:before {
+.icon-indonesia1:before {
   content: "\f122"; }
 
-.icon-insurance:before {
+.icon-institution:before {
   content: "\f123"; }
 
-.icon-invest-in-indonesia:before {
+.icon-insurance:before {
   content: "\f124"; }
 
-.icon-investment:before {
+.icon-invest-in-indonesia:before {
   content: "\f125"; }
 
-.icon-jakarta-people:before {
+.icon-investment:before {
   content: "\f126"; }
 
-.icon-link-wallet:before {
+.icon-jakarta-people:before {
   content: "\f127"; }
 
-.icon-locations:before {
+.icon-link-wallet:before {
   content: "\f128"; }
 
-.icon-lock-password:before {
+.icon-locations:before {
   content: "\f129"; }
 
-.icon-mans-clothing:before {
+.icon-lock-password:before {
   content: "\f12a"; }
 
-.icon-market-l:before {
+.icon-mans-clothing:before {
   content: "\f12b"; }
 
-.icon-market:before {
+.icon-market-l:before {
   content: "\f12c"; }
 
-.icon-maximum:before {
+.icon-market:before {
   content: "\f12d"; }
 
-.icon-metamask:before {
+.icon-maximum:before {
   content: "\f12e"; }
 
-.icon-microfinance:before {
+.icon-metamask:before {
   content: "\f12f"; }
 
-.icon-min-icon:before {
+.icon-microfinance:before {
   content: "\f130"; }
 
-.icon-minimum:before {
+.icon-min-icon:before {
   content: "\f131"; }
 
-.icon-owner:before {
+.icon-minimum:before {
   content: "\f132"; }
 
-.icon-passport:before {
+.icon-owner:before {
   content: "\f133"; }
 
-.icon-percentage-of-pie:before {
+.icon-passport:before {
   content: "\f134"; }
 
-.icon-person-report:before {
+.icon-percentage-of-pie:before {
   content: "\f135"; }
 
-.icon-personal-interview:before {
+.icon-person-report:before {
   content: "\f136"; }
 
-.icon-personal-story:before {
+.icon-personal-interview:before {
   content: "\f137"; }
 
-.icon-price-discount:before {
+.icon-personal-story:before {
   content: "\f138"; }
 
-.icon-protect-family:before {
+.icon-price-discount:before {
   content: "\f139"; }
 
-.icon-qr-code:before {
+.icon-protect-family:before {
   content: "\f13a"; }
 
-.icon-rupiah:before {
+.icon-qr-code:before {
   content: "\f13b"; }
 
-.icon-scales-of-justice:before {
+.icon-rupiah:before {
   content: "\f13c"; }
 
-.icon-select-checkbox:before {
+.icon-scales-of-justice:before {
   content: "\f13d"; }
 
-.icon-settings-icon:before {
+.icon-select-checkbox:before {
   content: "\f13e"; }
 
-.icon-settings-l:before {
+.icon-settings-icon:before {
   content: "\f13f"; }
 
-.icon-settings:before {
+.icon-settings-l:before {
   content: "\f140"; }
 
-.icon-shake-hands:before {
+.icon-settings:before {
   content: "\f141"; }
 
-.icon-sign:before {
+.icon-shake-hands:before {
   content: "\f142"; }
 
-.icon-signed:before {
+.icon-sign:before {
   content: "\f143"; }
 
-.icon-social-uplift:before {
+.icon-signed:before {
   content: "\f144"; }
 
-.icon-stable-exchange-rate:before {
+.icon-social-uplift:before {
   content: "\f145"; }
 
-.icon-stock-trading:before {
+.icon-stable-exchange-rate:before {
   content: "\f146"; }
 
-.icon-tax:before {
+.icon-stock-trading:before {
   content: "\f147"; }
 
-.icon-toggle-drawer:before {
+.icon-tax:before {
   content: "\f148"; }
 
-.icon-tr-pend:before {
+.icon-toggle-drawer:before {
   content: "\f149"; }
 
-.icon-trading-bars:before {
+.icon-tr-pend:before {
   content: "\f14a"; }
 
-.icon-user:before {
+.icon-trading-bars:before {
   content: "\f14b"; }
 
-.icon-verify-convo:before {
+.icon-unchecked:before {
   content: "\f14c"; }
 
-.icon-verify-questions:before {
+.icon-user:before {
   content: "\f14d"; }
 
-.icon-wallet-l:before {
+.icon-verify-convo:before {
   content: "\f14e"; }
 
-.icon-wallet-linked:before {
+.icon-verify-questions:before {
   content: "\f14f"; }
 
-.icon-wallet:before {
+.icon-wallet-l:before {
   content: "\f150"; }
 
-.icon-world-map:before {
+.icon-wallet-linked:before {
   content: "\f151"; }
+
+.icon-wallet:before {
+  content: "\f152"; }
+
+.icon-world-map:before {
+  content: "\f153"; }
 
 .icon-growth {
   position: relative; }

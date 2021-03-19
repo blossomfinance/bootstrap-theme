@@ -4881,8 +4881,8 @@ readers do not read off random characters that represent icons */
  */
 @font-face {
   font-family: "icons";
-  src: url("/fonts/icons.eot?4d599a56deb95e18ce1984cb96fd1fc6");
-  src: url("/fonts/icons.eot?4d599a56deb95e18ce1984cb96fd1fc6#iefix") format("embedded-opentype"), url("/fonts/icons.woff?4d599a56deb95e18ce1984cb96fd1fc6") format("woff"), url("/fonts/icons.ttf?4d599a56deb95e18ce1984cb96fd1fc6") format("truetype");
+  src: url("/fonts/icons.eot?d1faee7f70690dc98342122ed79fbc4b");
+  src: url("/fonts/icons.eot?d1faee7f70690dc98342122ed79fbc4b#iefix") format("embedded-opentype"), url("/fonts/icons.woff?d1faee7f70690dc98342122ed79fbc4b") format("woff"), url("/fonts/icons.ttf?d1faee7f70690dc98342122ed79fbc4b") format("truetype");
   font-weight: normal;
   font-style: normal; }
 

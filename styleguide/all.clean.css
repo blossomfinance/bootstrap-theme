@@ -5639,7 +5639,8 @@ p {
       font-size: 40px; }
       @media (max-width: 767.98px) {
         .dl.dl-icon dt i, .dl.dl-icon.dl-border-bottom dt i {
-          left: -38px; } }
+          left: -44px;
+          font-size: 30px; } }
   .dl.dl-icon dd, .dl.dl-icon.dl-border-bottom dd {
     margin-left: 0 !important;
     padding-left: 56px !important; }

@@ -278,7 +278,7 @@ p {
       padding-left: $spacer !important;
       padding-right: $spacer !important;
     }
-    
+
     dt {
       position: relative;
       margin-left: $dl-icon-margin-left !important;
@@ -288,7 +288,8 @@ p {
         bottom: $dl-icon-bottom;
         font-size: $dl-icon-font-size;
         @include media-breakpoint-down(sm) {
-          left: -38px;
+          left: -44px;
+          font-size: 30px;
         }
       }
     }

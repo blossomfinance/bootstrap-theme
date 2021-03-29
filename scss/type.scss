@@ -214,36 +214,6 @@ p {
   //   }
   // }
 
-  &.dl-icon,
-  &.dl-icon.dl-border-bottom {
-
-    @include media-breakpoint-up(md) {
-      padding-left: $spacer !important;
-      padding-right: $spacer !important;
-    }
-
-    dd,
-    dt {
-      margin-left: $dl-icon-margin-left !important;
-      @include media-breakpoint-down(sm) {
-        padding-left: 20px !important;
-      }
-    }
-
-    dt {
-      position: relative;
-      i {
-        position: absolute;
-        left: -1 * $dl-icon-margin-left;
-        bottom: $dl-icon-bottom;
-        font-size: $dl-icon-font-size;
-        @include media-breakpoint-down(sm) {
-          left: -38px;
-        }
-      }
-    }
-  }
-
   // typography
   dt {
     @extend .font-weight-light;
@@ -268,6 +238,66 @@ p {
       @extend .mb-2;
     }
   }
+
+  /**
+  * Underlined Icon Definition List
+  *
+  * Icons with underlines separating each pair
+  *
+  * @section
+  * @page Typeography
+  *
+  * @example
+  * <dl class="dl dl-list dl-icon dl-border-bottom pt-5 pb-6">
+  *   <dd>13%</dd>
+  *     <dt>
+  *       <i class="icon icon-growth"></i>
+  *       Gross AROI<sup>1</sup>
+  *    </dt>
+  *   <dd>12 Months</dd>
+  *     <dt>
+  *       <i class="icon icon-calendar"></i>
+  *       Maturity / Term
+  *     </dt>
+  *   <dd>Bali, Indonesia</dd>
+  *     <dt>
+  *       <i class="icon icon-globe"></i>
+  *       Project Location
+  *     </dt>
+  *   <dd>Indonesia</dd>
+  *     <dt>
+  *       <i class="icon icon-scales-of-justice"></i>
+  *       Governing Law
+  *     </dt>
+  * </dl>
+  */
+  &.dl-icon,
+  &.dl-icon.dl-border-bottom {
+
+    @include media-breakpoint-up(md) {
+      padding-left: $spacer !important;
+      padding-right: $spacer !important;
+    }
+    
+    dt {
+      position: relative;
+      margin-left: $dl-icon-margin-left !important;
+      i {
+        position: absolute;
+        left: -1 * $dl-icon-margin-left;
+        bottom: $dl-icon-bottom;
+        font-size: $dl-icon-font-size;
+        @include media-breakpoint-down(sm) {
+          left: -38px;
+        }
+      }
+    }
+
+    dd {
+      margin-left: 0 !important;
+      padding-left: $dl-icon-margin-left !important;
+    }
+  }
 }
 
 
@@ -280,7 +310,6 @@ p {
     color: $midnight;
   }
 }
-
 
 /**
  * Dark Definition List

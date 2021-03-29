@@ -5608,49 +5608,41 @@ p {
 
 
 
-.dl > dd,
-.dl > dt,
-.dl > * > dd,
-.dl > * > dt {
-  font-size: 1rem;
-  line-height: 1rem; }
-
-.dl.dl-horizontal {
-  flex-flow: column wrap;
-  max-height: 48px; }
-
-@media (min-width: 768px) {
-  .dl.dl-icon, .dl.dl-icon.dl-border-bottom {
-    padding-left: 40px !important;
-    padding-right: 40px !important; } }
-
-.dl.dl-icon dd,
-.dl.dl-icon dt, .dl.dl-icon.dl-border-bottom dd,
-.dl.dl-icon.dl-border-bottom dt {
-  margin-left: 56px !important; }
-  @media (max-width: 767.98px) {
-    .dl.dl-icon dd,
-    .dl.dl-icon dt, .dl.dl-icon.dl-border-bottom dd,
-    .dl.dl-icon.dl-border-bottom dt {
-      padding-left: 20px !important; } }
-
-.dl.dl-icon dt, .dl.dl-icon.dl-border-bottom dt {
-  position: relative; }
-  .dl.dl-icon dt i, .dl.dl-icon.dl-border-bottom dt i {
-    position: absolute;
-    left: -56px;
-    bottom: 8px;
-    font-size: 40px; }
-    @media (max-width: 767.98px) {
-      .dl.dl-icon dt i, .dl.dl-icon.dl-border-bottom dt i {
-        left: -38px; } }
-
-.dl.dl-border-bottom dd {
-  border-top: 1px solid rgba(149, 158, 166, 0.3) !important;
-  margin-left: -40px !important;
-  padding-left: 96px !important; }
-  .dl.dl-border-bottom dd:first-child {
-    border: none !important; }
+.dl {
+   }
+  .dl > dd,
+  .dl > dt,
+  .dl > * > dd,
+  .dl > * > dt {
+    font-size: 1rem;
+    line-height: 1rem; }
+  .dl.dl-horizontal {
+    flex-flow: column wrap;
+    max-height: 48px; }
+  .dl.dl-border-bottom dd {
+    border-top: 1px solid rgba(149, 158, 166, 0.3) !important;
+    margin-left: -40px !important;
+    padding-left: 96px !important; }
+    .dl.dl-border-bottom dd:first-child {
+      border: none !important; }
+  @media (min-width: 768px) {
+    .dl.dl-icon, .dl.dl-icon.dl-border-bottom {
+      padding-left: 40px !important;
+      padding-right: 40px !important; } }
+  .dl.dl-icon dt, .dl.dl-icon.dl-border-bottom dt {
+    position: relative;
+    margin-left: 56px !important; }
+    .dl.dl-icon dt i, .dl.dl-icon.dl-border-bottom dt i {
+      position: absolute;
+      left: -56px;
+      bottom: 8px;
+      font-size: 40px; }
+      @media (max-width: 767.98px) {
+        .dl.dl-icon dt i, .dl.dl-icon.dl-border-bottom dt i {
+          left: -38px; } }
+  .dl.dl-icon dd, .dl.dl-icon.dl-border-bottom dd {
+    margin-left: 0 !important;
+    padding-left: 56px !important; }
 
 :not(.bg-dark):not(.btn-link-arrow-right-dark:after):not(.btn-link-arrow-right-dark:before):not(.btn-link-arrow-left-dark:after):not(.btn-link-arrow-left-dark:before) > dt {
   color: #7a807f; }

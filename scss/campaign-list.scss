@@ -42,6 +42,7 @@
   }
 }
 
+
  /**
   * Card
   *
@@ -49,24 +50,63 @@
   * @page Campaign List
   *
   * @example
-  * <div class="campaign-list">
-  *   <div class="row">
-  *     <article class="campaign">
-  *       <div class="card rounded-bottom">
-  *         <img class="card-img-top" src="/images/chinese-street-food.jpg" />
-  *         <div class="card-body">
-  *           <small class="card-text">Microfinance</small>
-  *           <h2 class="card-title">Traditional Market Sellers & Micro-Businesses</h2>
-  *           <p class="card-text">Invest in traditional market traders in Indonesia's cultural heartland.</p>
-  *           <a href="#" class="btn btn-link-arrow-right-secondary">View Project Details</a>
+  * <div class="p-5">
+  *   <div class="campaign-list">
+  *     <div class="row">
+  *       <article class="campaign">
+  *         <div class="card rounded-bottom">
+  *           <img class="card-img-top" src="/images/chinese-street-food.jpg" />
+  *           <div class="card-body">
+  *             <small class="card-text">Microfinance</small>
+  *             <h2 class="card-title">Traditional Market Sellers & Micro-Businesses</h2>
+  *             <p class="card-text">Invest in traditional market traders in Indonesia's cultural heartland.</p>
+  *             <a href="#" class="btn btn-link-arrow-right-secondary">View Project Details</a>
+  *           </div>
   *         </div>
-  *       </div>
-  *     </article>
+  *       </article>
+  *       <article class="campaign">
+  *         <div class="card rounded-bottom">
+  *           <img class="card-img-top" src="/images/chinese-street-food.jpg" />
+  *           <div class="card-body">
+  *             <small class="card-text">Microfinance</small>
+  *             <h2 class="card-title">Traditional Market Sellers & Micro-Businesses</h2>
+  *             <p class="card-text">Invest in traditional market traders in Indonesia's cultural heartland.</p>
+  *             <a href="#" class="btn btn-link-arrow-right-secondary">View Project Details</a>
+  *           </div>
+  *         </div>
+  *       </article>
+  *       <article class="campaign">
+  *         <div class="card rounded-bottom">
+  *           <img class="card-img-top" src="/images/chinese-street-food.jpg" />
+  *           <div class="card-body">
+  *             <small class="card-text">Microfinance</small>
+  *             <h2 class="card-title">Traditional Market Sellers & Micro-Businesses</h2>
+  *             <p class="card-text">Invest in traditional market traders in Indonesia's cultural heartland.</p>
+  *             <a href="#" class="btn btn-link-arrow-right-secondary">View Project Details</a>
+  *           </div>
+  *         </div>
+  *       </article>
+  *       <article class="campaign">
+  *         <div class="card rounded-bottom">
+  *           <img class="card-img-top" src="/images/chinese-street-food.jpg" />
+  *           <div class="card-body">
+  *             <small class="card-text">Microfinance</small>
+  *             <h2 class="card-title">Traditional Market Sellers & Micro-Businesses</h2>
+  *             <p class="card-text">Invest in traditional market traders in Indonesia's cultural heartland.</p>
+  *             <a href="#" class="btn btn-link-arrow-right-secondary">View Project Details</a>
+  *           </div>
+  *         </div>
+  *       </article>
+  *     </div>
   *   </div>
   * </div>
   */
 .campaign-list {
   @extend .align-self-stretch;
+  .row {
+    @extend .d-flex;
+    @extend .justify-content-around;
+  }
   .campaign-list-item {
     @extend .col-12;
     @extend .col-md-6;

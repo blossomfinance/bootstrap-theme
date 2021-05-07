@@ -22160,7 +22160,7 @@ button.btn-link-arrow-left-black:focus:before {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .dl.dl-horizontal, .btn-arrow-right, .portfolio .portfolio-list .card-total-holdings .card-body .btn-details, .portfolio .portfolio-list .card .card-body .btn-details, .btn-arrow-left, .btn-success-icon, .nav-tabs, .navbar-nav .nav-item.avatar, .navbar-page-standalone, .alert-icon, .campaign-list header .nav, .campaign-list header .portfolio .portfolio-list .card-total-holdings .card-body .portfolio-list-item-overview nav, .portfolio .portfolio-list .card-total-holdings .card-body .portfolio-list-item-overview .campaign-list header nav, .campaign-list header .portfolio .portfolio-list .card .card-body .portfolio-list-item-overview nav, .portfolio .portfolio-list .card .card-body .portfolio-list-item-overview .campaign-list header nav, .steps, .steps-circle, .portfolio aside section .list-group-flush > li, .portfolio aside section .portfolio-sidebar .action-items ul > li, .portfolio .portfolio-sidebar .action-items aside section ul > li, .portfolio .portfolio-list .card-total-holdings .card-body .portfolio-list-item-details .portfolio-list-item-alerts, .portfolio .portfolio-list .card .card-body .portfolio-list-item-details .portfolio-list-item-alerts, .portfolio .portfolio-list .card-total-holdings .card-body .item-info-feed article.quote, .portfolio .portfolio-list .card .card-body .item-info-feed article.quote {
+.d-flex, .dl.dl-horizontal, .btn-arrow-right, .portfolio .portfolio-list .card-total-holdings .card-body .btn-details, .portfolio .portfolio-list .card .card-body .btn-details, .btn-arrow-left, .btn-success-icon, .nav-tabs, .navbar-nav .nav-item.avatar, .navbar-page-standalone, .alert-icon, .campaign-list header .nav, .campaign-list header .portfolio .portfolio-list .card-total-holdings .card-body .portfolio-list-item-overview nav, .portfolio .portfolio-list .card-total-holdings .card-body .portfolio-list-item-overview .campaign-list header nav, .campaign-list header .portfolio .portfolio-list .card .card-body .portfolio-list-item-overview nav, .portfolio .portfolio-list .card .card-body .portfolio-list-item-overview .campaign-list header nav, .campaign-list .row, .steps, .steps-circle, .portfolio aside section .list-group-flush > li, .portfolio aside section .portfolio-sidebar .action-items ul > li, .portfolio .portfolio-sidebar .action-items aside section ul > li, .portfolio .portfolio-list .card-total-holdings .card-body .portfolio-list-item-details .portfolio-list-item-alerts, .portfolio .portfolio-list .card .card-body .portfolio-list-item-details .portfolio-list-item-alerts, .portfolio .portfolio-list .card-total-holdings .card-body .item-info-feed article.quote, .portfolio .portfolio-list .card .card-body .item-info-feed article.quote {
   display: flex !important; }
 
 .d-inline-flex {
@@ -22348,7 +22348,7 @@ button.btn-link-arrow-left-black:focus:before {
 .justify-content-between, .btn-arrow-right, .portfolio .portfolio-list .card-total-holdings .card-body .btn-details, .portfolio .portfolio-list .card .card-body .btn-details, .btn-arrow-left, .portfolio .portfolio-list .portfolio-list-header {
   justify-content: space-between !important; }
 
-.justify-content-around {
+.justify-content-around, .campaign-list .row {
   justify-content: space-around !important; }
 
 .align-items-start {

@@ -19768,7 +19768,7 @@ header nav {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 14px;
+  border-radius: 4px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
     .badge {
@@ -19783,8 +19783,8 @@ header nav {
   top: -1px; }
 
 .badge-pill, .portfolio .portfolio-list .portfolio-list-header ul li .badge {
-  padding-right: 0.6em;
-  padding-left: 0.6em;
+  padding-right: 1em;
+  padding-left: 1em;
   border-radius: 10rem; }
 
 .badge-primary {
@@ -20300,17 +20300,20 @@ header nav {
  * @section
  *
  * @example
- * <h1>
- *   Money!
- *   <span class="badge badge-subtle-mint">$</span>
- * </h1>
- * <p>
- *   Status
- *   <span class="badge badge-subtle-sky">active</span>
- * </p>
- * <h3>
- *   <span class="badge badge-subtle-warning">active</span>
- * </h3>
+ * <div class="p-5">
+ *   <h1>
+ *     Money!
+ *     <span class="badge badge-subtle-mint">$</span>
+ *   </h1>
+ *   <p>
+ *     Status
+ *     <span class="badge badge-subtle-sky">active</span>
+ *   </p>
+ *   <h3>
+ *     H3
+ *     <span class="badge badge-subtle-warning">active</span>
+ *   </h3>
+ * </div>
  */
 /**
  * Square Icon Badge
@@ -20321,9 +20324,11 @@ header nav {
  * @section
  *
  * @example
- * <span class="badge badge-subtle-mint badge-lg badge-sq">
- *   <i class="fas fa-money-bill-wave-alt"></i>
- * </span>
+ * <div class="p-5">
+ *   <span class="badge badge-subtle-mint badge-lg badge-sq">
+ *     <i class="fas fa-money-bill-wave-alt"></i>
+ *   </span>
+ * </div>
  */
 .badge-sq {
   font-size: 1.25rem;
@@ -20332,7 +20337,8 @@ header nav {
   width: 48px;
   box-sizing: border-box;
   padding-left: 14px;
-  padding-right: 14px; }
+  padding-right: 14px;
+  border-radius: 14px !important; }
   .badge-sq i {
     box-sizing: border-box;
     min-width: 22px; }
@@ -20342,6 +20348,20 @@ header nav {
       line-height: 48px;
       height: 48px; }
 
+/**
+ * Pill Badge
+ *
+ * Create a pill shaped button
+ *
+ * @page Badge
+ * @section
+ *
+ * @example
+ * <div class="p-5">
+ *   <span class="badge badge-pill badge-danger">Warning</span>
+ *   <span class="badge badge-pill badge-success">Success</span>
+ * </div>
+ */
 /**
  * Jumbotron
  *

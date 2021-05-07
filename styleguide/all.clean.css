@@ -19018,7 +19018,7 @@ header nav {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 14px;
+  border-radius: 4px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
     .badge {
@@ -19033,8 +19033,8 @@ header nav {
   top: -1px; }
 
 .badge-pill, .portfolio .portfolio-list .portfolio-list-header ul li .badge {
-  padding-right: 0.6em;
-  padding-left: 0.6em;
+  padding-right: 1em;
+  padding-left: 1em;
   border-radius: 10rem; }
 
 .badge-primary {
@@ -19550,7 +19550,8 @@ header nav {
   width: 48px;
   box-sizing: border-box;
   padding-left: 14px;
-  padding-right: 14px; }
+  padding-right: 14px;
+  border-radius: 14px !important; }
   .badge-sq i {
     box-sizing: border-box;
     min-width: 22px; }
@@ -19559,6 +19560,7 @@ header nav {
       width: 100%;
       line-height: 48px;
       height: 48px; }
+
 
 
 .jumbotron {

@@ -6600,6 +6600,739 @@ p {
   .offset-xl-11 {
     margin-left: 91.66667%; } }
 
+.table {
+  width: 100%;
+  margin-bottom: 40px;
+  color: #3a3f42; }
+  .table th,
+  .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid rgba(149, 158, 166, 0.3); }
+  .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid rgba(149, 158, 166, 0.3); }
+  .table tbody + tbody {
+    border-top: 2px solid rgba(149, 158, 166, 0.3); }
+
+.table-sm th,
+.table-sm td {
+  padding: 0.3rem; }
+
+.table-bordered {
+  border: 1px solid rgba(149, 158, 166, 0.3); }
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid rgba(149, 158, 166, 0.3); }
+  .table-bordered thead th,
+  .table-bordered thead td {
+    border-bottom-width: 2px; }
+
+.table-borderless th,
+.table-borderless td,
+.table-borderless thead th,
+.table-borderless tbody + tbody {
+  border: 0; }
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05); }
+
+.table-hover tbody tr:hover {
+  color: #3a3f42;
+  background-color: rgba(0, 0, 0, 0.075); }
+
+.table-primary,
+.table-primary > th,
+.table-primary > td {
+  background-color: #d0f2fa; }
+
+.table-primary th,
+.table-primary td,
+.table-primary thead th,
+.table-primary tbody + tbody {
+  border-color: #a8e6f6; }
+
+.table-hover .table-primary:hover {
+  background-color: #b9ecf8; }
+  .table-hover .table-primary:hover > td,
+  .table-hover .table-primary:hover > th {
+    background-color: #b9ecf8; }
+
+.table-secondary,
+.table-secondary > th,
+.table-secondary > td {
+  background-color: #c1d7de; }
+
+.table-secondary th,
+.table-secondary td,
+.table-secondary thead th,
+.table-secondary tbody + tbody {
+  border-color: #8bb4c2; }
+
+.table-hover .table-secondary:hover {
+  background-color: #b0ccd5; }
+  .table-hover .table-secondary:hover > td,
+  .table-hover .table-secondary:hover > th {
+    background-color: #b0ccd5; }
+
+.table-success,
+.table-success > th,
+.table-success > td {
+  background-color: #c1edd2; }
+
+.table-success th,
+.table-success td,
+.table-success thead th,
+.table-success tbody + tbody {
+  border-color: #8dddac; }
+
+.table-hover .table-success:hover {
+  background-color: #ade7c4; }
+  .table-hover .table-success:hover > td,
+  .table-hover .table-success:hover > th {
+    background-color: #ade7c4; }
+
+.table-info,
+.table-info > th,
+.table-info > td {
+  background-color: #d1d6eb; }
+
+.table-info th,
+.table-info td,
+.table-info thead th,
+.table-info tbody + tbody {
+  border-color: #aab2d9; }
+
+.table-hover .table-info:hover {
+  background-color: #bfc6e3; }
+  .table-hover .table-info:hover > td,
+  .table-hover .table-info:hover > th {
+    background-color: #bfc6e3; }
+
+.table-warning,
+.table-warning > th,
+.table-warning > td {
+  background-color: #fff4c5; }
+
+.table-warning th,
+.table-warning td,
+.table-warning thead th,
+.table-warning tbody + tbody {
+  border-color: #ffea93; }
+
+.table-hover .table-warning:hover {
+  background-color: #ffefac; }
+  .table-hover .table-warning:hover > td,
+  .table-hover .table-warning:hover > th {
+    background-color: #ffefac; }
+
+.table-danger,
+.table-danger > th,
+.table-danger > td {
+  background-color: #f6cdc4; }
+
+.table-danger th,
+.table-danger td,
+.table-danger thead th,
+.table-danger tbody + tbody {
+  border-color: #efa292; }
+
+.table-hover .table-danger:hover {
+  background-color: #f3baae; }
+  .table-hover .table-danger:hover > td,
+  .table-hover .table-danger:hover > th {
+    background-color: #f3baae; }
+
+.table-light,
+.table-light > th,
+.table-light > td {
+  background-color: #fcfcfc; }
+
+.table-light th,
+.table-light td,
+.table-light thead th,
+.table-light tbody + tbody {
+  border-color: #f9f9fa; }
+
+.table-hover .table-light:hover {
+  background-color: #efefef; }
+  .table-hover .table-light:hover > td,
+  .table-hover .table-light:hover > th {
+    background-color: #efefef; }
+
+.table-dark,
+.table-dark > th,
+.table-dark > td {
+  background-color: #c8c9ca; }
+
+.table-dark th,
+.table-dark td,
+.table-dark thead th,
+.table-dark tbody + tbody {
+  border-color: #999b9d; }
+
+.table-hover .table-dark:hover {
+  background-color: #bbbcbd; }
+  .table-hover .table-dark:hover > td,
+  .table-hover .table-dark:hover > th {
+    background-color: #bbbcbd; }
+
+.table-clay,
+.table-clay > th,
+.table-clay > td {
+  background-color: #f6cdc4; }
+
+.table-clay th,
+.table-clay td,
+.table-clay thead th,
+.table-clay tbody + tbody {
+  border-color: #efa292; }
+
+.table-hover .table-clay:hover {
+  background-color: #f3baae; }
+  .table-hover .table-clay:hover > td,
+  .table-hover .table-clay:hover > th {
+    background-color: #f3baae; }
+
+.table-orange,
+.table-orange > th,
+.table-orange > td {
+  background-color: #fedbbd; }
+
+.table-orange th,
+.table-orange td,
+.table-orange thead th,
+.table-orange tbody + tbody {
+  border-color: #febc85; }
+
+.table-hover .table-orange:hover {
+  background-color: #fecda4; }
+  .table-hover .table-orange:hover > td,
+  .table-hover .table-orange:hover > th {
+    background-color: #fecda4; }
+
+.table-sun,
+.table-sun > th,
+.table-sun > td {
+  background-color: #fff4c5; }
+
+.table-sun th,
+.table-sun td,
+.table-sun thead th,
+.table-sun tbody + tbody {
+  border-color: #ffea93; }
+
+.table-hover .table-sun:hover {
+  background-color: #ffefac; }
+  .table-hover .table-sun:hover > td,
+  .table-hover .table-sun:hover > th {
+    background-color: #ffefac; }
+
+.table-mint,
+.table-mint > th,
+.table-mint > td {
+  background-color: #c1edd2; }
+
+.table-mint th,
+.table-mint td,
+.table-mint thead th,
+.table-mint tbody + tbody {
+  border-color: #8dddac; }
+
+.table-hover .table-mint:hover {
+  background-color: #ade7c4; }
+  .table-hover .table-mint:hover > td,
+  .table-hover .table-mint:hover > th {
+    background-color: #ade7c4; }
+
+.table-grass,
+.table-grass > th,
+.table-grass > td {
+  background-color: #c9eeb8; }
+
+.table-grass th,
+.table-grass td,
+.table-grass thead th,
+.table-grass tbody + tbody {
+  border-color: #9be07a; }
+
+.table-hover .table-grass:hover {
+  background-color: #b9e9a3; }
+  .table-hover .table-grass:hover > td,
+  .table-hover .table-grass:hover > th {
+    background-color: #b9e9a3; }
+
+.table-leaf,
+.table-leaf > th,
+.table-leaf > td {
+  background-color: #c6eed6; }
+
+.table-leaf th,
+.table-leaf td,
+.table-leaf thead th,
+.table-leaf tbody + tbody {
+  border-color: #95e0b2; }
+
+.table-hover .table-leaf:hover {
+  background-color: #b2e8c8; }
+  .table-hover .table-leaf:hover > td,
+  .table-hover .table-leaf:hover > th {
+    background-color: #b2e8c8; }
+
+.table-ocean,
+.table-ocean > th,
+.table-ocean > td {
+  background-color: #b9eae6; }
+
+.table-ocean th,
+.table-ocean td,
+.table-ocean thead th,
+.table-ocean tbody + tbody {
+  border-color: #7cd9d1; }
+
+.table-hover .table-ocean:hover {
+  background-color: #a5e4df; }
+  .table-hover .table-ocean:hover > td,
+  .table-hover .table-ocean:hover > th {
+    background-color: #a5e4df; }
+
+.table-sky,
+.table-sky > th,
+.table-sky > td {
+  background-color: #d0f2fa; }
+
+.table-sky th,
+.table-sky td,
+.table-sky thead th,
+.table-sky tbody + tbody {
+  border-color: #a8e6f6; }
+
+.table-hover .table-sky:hover {
+  background-color: #b9ecf8; }
+  .table-hover .table-sky:hover > td,
+  .table-hover .table-sky:hover > th {
+    background-color: #b9ecf8; }
+
+.table-saphire,
+.table-saphire > th,
+.table-saphire > td {
+  background-color: #c0e2ed; }
+
+.table-saphire th,
+.table-saphire td,
+.table-saphire thead th,
+.table-saphire tbody + tbody {
+  border-color: #89c8de; }
+
+.table-hover .table-saphire:hover {
+  background-color: #acd9e7; }
+  .table-hover .table-saphire:hover > td,
+  .table-hover .table-saphire:hover > th {
+    background-color: #acd9e7; }
+
+.table-robin-egg,
+.table-robin-egg > th,
+.table-robin-egg > td {
+  background-color: rgba(246, 251, 252, 0.776); }
+
+.table-robin-egg th,
+.table-robin-egg td,
+.table-robin-egg thead th,
+.table-robin-egg tbody + tbody {
+  border-color: rgba(231, 244, 248, 0.584); }
+
+.table-hover .table-robin-egg:hover {
+  background-color: rgba(227, 243, 246, 0.776); }
+  .table-hover .table-robin-egg:hover > td,
+  .table-hover .table-robin-egg:hover > th {
+    background-color: rgba(227, 243, 246, 0.776); }
+
+.table-blueberry,
+.table-blueberry > th,
+.table-blueberry > td {
+  background-color: #c1d7de; }
+
+.table-blueberry th,
+.table-blueberry td,
+.table-blueberry thead th,
+.table-blueberry tbody + tbody {
+  border-color: #8bb4c2; }
+
+.table-hover .table-blueberry:hover {
+  background-color: #b0ccd5; }
+  .table-hover .table-blueberry:hover > td,
+  .table-hover .table-blueberry:hover > th {
+    background-color: #b0ccd5; }
+
+.table-grape,
+.table-grape > th,
+.table-grape > td {
+  background-color: #d1d6eb; }
+
+.table-grape th,
+.table-grape td,
+.table-grape thead th,
+.table-grape tbody + tbody {
+  border-color: #aab2d9; }
+
+.table-hover .table-grape:hover {
+  background-color: #bfc6e3; }
+  .table-hover .table-grape:hover > td,
+  .table-hover .table-grape:hover > th {
+    background-color: #bfc6e3; }
+
+.table-indigo,
+.table-indigo > th,
+.table-indigo > td {
+  background-color: #d4bcfb; }
+
+.table-indigo th,
+.table-indigo td,
+.table-indigo thead th,
+.table-indigo tbody + tbody {
+  border-color: #af83f8; }
+
+.table-hover .table-indigo:hover {
+  background-color: #c5a4fa; }
+  .table-hover .table-indigo:hover > td,
+  .table-hover .table-indigo:hover > th {
+    background-color: #c5a4fa; }
+
+.table-lavander,
+.table-lavander > th,
+.table-lavander > td {
+  background-color: #f6f7fb; }
+
+.table-lavander th,
+.table-lavander td,
+.table-lavander thead th,
+.table-lavander tbody + tbody {
+  border-color: #eeeff7; }
+
+.table-hover .table-lavander:hover {
+  background-color: #e4e7f3; }
+  .table-hover .table-lavander:hover > td,
+  .table-hover .table-lavander:hover > th {
+    background-color: #e4e7f3; }
+
+.table-sea,
+.table-sea > th,
+.table-sea > td {
+  background-color: #f2f9fb; }
+
+.table-sea th,
+.table-sea td,
+.table-sea thead th,
+.table-sea tbody + tbody {
+  border-color: #e8f4f8; }
+
+.table-hover .table-sea:hover {
+  background-color: #dff0f5; }
+  .table-hover .table-sea:hover > td,
+  .table-hover .table-sea:hover > th {
+    background-color: #dff0f5; }
+
+.table-water,
+.table-water > th,
+.table-water > td {
+  background-color: #f6fcfe; }
+
+.table-water th,
+.table-water td,
+.table-water thead th,
+.table-water tbody + tbody {
+  border-color: #eefafd; }
+
+.table-hover .table-water:hover {
+  background-color: #dff4fb; }
+  .table-hover .table-water:hover > td,
+  .table-hover .table-water:hover > th {
+    background-color: #dff4fb; }
+
+.table-white,
+.table-white > th,
+.table-white > td {
+  background-color: white; }
+
+.table-white th,
+.table-white td,
+.table-white thead th,
+.table-white tbody + tbody {
+  border-color: white; }
+
+.table-hover .table-white:hover {
+  background-color: #f2f2f2; }
+  .table-hover .table-white:hover > td,
+  .table-hover .table-white:hover > th {
+    background-color: #f2f2f2; }
+
+.table-cloud,
+.table-cloud > th,
+.table-cloud > td {
+  background-color: #fcfcfc; }
+
+.table-cloud th,
+.table-cloud td,
+.table-cloud thead th,
+.table-cloud tbody + tbody {
+  border-color: #f9f9fa; }
+
+.table-hover .table-cloud:hover {
+  background-color: #efefef; }
+  .table-hover .table-cloud:hover > td,
+  .table-hover .table-cloud:hover > th {
+    background-color: #efefef; }
+
+.table-moon,
+.table-moon > th,
+.table-moon > td {
+  background-color: #fdfdfd; }
+
+.table-moon th,
+.table-moon td,
+.table-moon thead th,
+.table-moon tbody + tbody {
+  border-color: #fbfbfc; }
+
+.table-hover .table-moon:hover {
+  background-color: #f0f0f0; }
+  .table-hover .table-moon:hover > td,
+  .table-hover .table-moon:hover > th {
+    background-color: #f0f0f0; }
+
+.table-milk,
+.table-milk > th,
+.table-milk > td {
+  background-color: #fdfdfe; }
+
+.table-milk th,
+.table-milk td,
+.table-milk thead th,
+.table-milk tbody + tbody {
+  border-color: #fbfcfc; }
+
+.table-hover .table-milk:hover {
+  background-color: #ececf6; }
+  .table-hover .table-milk:hover > td,
+  .table-hover .table-milk:hover > th {
+    background-color: #ececf6; }
+
+.table-fog,
+.table-fog > th,
+.table-fog > td {
+  background-color: #eeeff1; }
+
+.table-fog th,
+.table-fog td,
+.table-fog thead th,
+.table-fog tbody + tbody {
+  border-color: #dfe2e4; }
+
+.table-hover .table-fog:hover {
+  background-color: #e0e2e5; }
+  .table-hover .table-fog:hover > td,
+  .table-hover .table-fog:hover > th {
+    background-color: #e0e2e5; }
+
+.table-concrete,
+.table-concrete > th,
+.table-concrete > td {
+  background-color: #f5f7f9; }
+
+.table-concrete th,
+.table-concrete td,
+.table-concrete thead th,
+.table-concrete tbody + tbody {
+  border-color: #edf1f5; }
+
+.table-hover .table-concrete:hover {
+  background-color: #e5eaef; }
+  .table-hover .table-concrete:hover > td,
+  .table-hover .table-concrete:hover > th {
+    background-color: #e5eaef; }
+
+.table-ivory,
+.table-ivory > th,
+.table-ivory > td {
+  background-color: #f6f7f7; }
+
+.table-ivory th,
+.table-ivory td,
+.table-ivory thead th,
+.table-ivory tbody + tbody {
+  border-color: #eeeff0; }
+
+.table-hover .table-ivory:hover {
+  background-color: #e9ebeb; }
+  .table-hover .table-ivory:hover > td,
+  .table-hover .table-ivory:hover > th {
+    background-color: #e9ebeb; }
+
+.table-aluminium,
+.table-aluminium > th,
+.table-aluminium > td {
+  background-color: #e1e4e6; }
+
+.table-aluminium th,
+.table-aluminium td,
+.table-aluminium thead th,
+.table-aluminium tbody + tbody {
+  border-color: #c8cdd1; }
+
+.table-hover .table-aluminium:hover {
+  background-color: #d3d7da; }
+  .table-hover .table-aluminium:hover > td,
+  .table-hover .table-aluminium:hover > th {
+    background-color: #d3d7da; }
+
+.table-elephant,
+.table-elephant > th,
+.table-elephant > td {
+  background-color: #dadbdb; }
+
+.table-elephant th,
+.table-elephant td,
+.table-elephant thead th,
+.table-elephant tbody + tbody {
+  border-color: #babdbc; }
+
+.table-hover .table-elephant:hover {
+  background-color: #cdcece; }
+  .table-hover .table-elephant:hover > td,
+  .table-hover .table-elephant:hover > th {
+    background-color: #cdcece; }
+
+.table-slate,
+.table-slate > th,
+.table-slate > td {
+  background-color: #c8c9ca; }
+
+.table-slate th,
+.table-slate td,
+.table-slate thead th,
+.table-slate tbody + tbody {
+  border-color: #999b9d; }
+
+.table-hover .table-slate:hover {
+  background-color: #bbbcbd; }
+  .table-hover .table-slate:hover > td,
+  .table-hover .table-slate:hover > th {
+    background-color: #bbbcbd; }
+
+.table-midnight,
+.table-midnight > th,
+.table-midnight > td {
+  background-color: #bfc1c3; }
+
+.table-midnight th,
+.table-midnight td,
+.table-midnight thead th,
+.table-midnight tbody + tbody {
+  border-color: #878c8f; }
+
+.table-hover .table-midnight:hover {
+  background-color: #b2b4b7; }
+  .table-hover .table-midnight:hover > td,
+  .table-hover .table-midnight:hover > th {
+    background-color: #b2b4b7; }
+
+.table-black,
+.table-black > th,
+.table-black > td {
+  background-color: #b8b8b8; }
+
+.table-black th,
+.table-black td,
+.table-black thead th,
+.table-black tbody + tbody {
+  border-color: #7a7a7a; }
+
+.table-hover .table-black:hover {
+  background-color: #ababab; }
+  .table-hover .table-black:hover > td,
+  .table-hover .table-black:hover > th {
+    background-color: #ababab; }
+
+.table-active,
+.table-active > th,
+.table-active > td {
+  background-color: rgba(0, 0, 0, 0.075); }
+
+.table-hover .table-active:hover {
+  background-color: rgba(0, 0, 0, 0.075); }
+  .table-hover .table-active:hover > td,
+  .table-hover .table-active:hover > th {
+    background-color: rgba(0, 0, 0, 0.075); }
+
+.table .thead-dark th {
+  color: #ffffff;
+  background-color: #3a3f42;
+  border-color: #4c5256; }
+
+.table .thead-light th {
+  color: #7a807f;
+  background-color: #f8f9fa;
+  border-color: rgba(149, 158, 166, 0.3); }
+
+.table-dark {
+  color: #ffffff;
+  background-color: #3a3f42; }
+  .table-dark th,
+  .table-dark td,
+  .table-dark thead th {
+    border-color: #4c5256; }
+  .table-dark.table-bordered {
+    border: 0; }
+  .table-dark.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05); }
+  .table-dark.table-hover tbody tr:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.075); }
+
+@media (max-width: 575.98px) {
+  .table-responsive-sm {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; }
+    .table-responsive-sm > .table-bordered {
+      border: 0; } }
+
+@media (max-width: 767.98px) {
+  .table-responsive-md {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; }
+    .table-responsive-md > .table-bordered {
+      border: 0; } }
+
+@media (max-width: 991.98px) {
+  .table-responsive-lg {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; }
+    .table-responsive-lg > .table-bordered {
+      border: 0; } }
+
+@media (max-width: 1199.98px) {
+  .table-responsive-xl {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; }
+    .table-responsive-xl > .table-bordered {
+      border: 0; } }
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; }
+  .table-responsive > .table-bordered {
+    border: 0; }
+
 .form-control {
   display: block;
   width: 100%;

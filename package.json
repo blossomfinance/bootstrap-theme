@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/blossomfinance/bootstrap-theme#readme",
   "dependencies": {
-    "@blossomfinance/svg-webfont-icons": "^1.2.1",
+    "@blossomfinance/svg-webfont-icons": "git+https://github.com/blossomfinance/svg-webfont-icons.git",
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@popperjs/core": "^2.5.3",
     "bootstrap": "^4.4.1"
